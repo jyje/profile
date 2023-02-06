@@ -57,7 +57,7 @@ legal:
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             Jeayoung Jeon © 2023
+copyright:             ⓒ 2023 jyje.me with Jeayoung Jeon
 
 # Format of the permalinks
 permalink:             /:categories/:title/ # /:categories/:year-:month-:day-:title/
