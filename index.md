@@ -7,9 +7,9 @@ cover: true
 **Jeayoung Jeon** is a software engineer for computer vison in [MAXST]{:.heading.flip-title} of South Korea. He has a following scholarly and engineering stacks:
 
 - **Computer Vision:** Visual-SLAM, SfM and ADAS with FPGA
-- **Data Science:** Supervised Learning, MCTS and Rating Systems
-- **Engineering Math:** Signal Processing, Estimation and Optimization
-- **Dev.:** C# MAUI, C++ WinUI3, Python Jupyter, Unity and Kubernetes
+- **Data Engineering:** Supervised Learning, Optimization and Rating Systems
+- **Visualization:** Python Jupyter, C++ WinUI3, C# MAUI and Unity
+- **DevOps:** On-premise Kubernetes and Workflows for Engineering
 {: style="margin: 1rem;"}
 
 
