@@ -2,7 +2,7 @@
 layout: welcome
 cover: true
 ---
-<h1><abbr title="'Too Long; Don't Read' means 'This is a summary' 😎" style="font-size:2rem;">TL;DR</abbr></h1>
+<h1><abbr title="'Too Long; Don't Read' means 'This is a summary'" style="font-size:2rem;">TL;DR</abbr></h1>
 
 **Jeayoung Jeon** is a software engineer for computer vison in [MAXST]{:.heading.flip-title} of South Korea. He has a following scholarly and engineering stacks:
 
@@ -13,7 +13,7 @@ cover: true
 {: style="margin: 1rem;"}
 
 
-Currently, with enthusiasm, he uses **SfM** to build computer vision apps for **Digital Twin** systems and also builds **DevOps** pipelines for engineering.
+Currently, with enthusiasm, he solves some problems of computer vision and makes digital twin systems and also builds DevOps pipelines for engineering.
 FYI, you can see also [Résumé]{:.heading.flip-title}, [CV]{:.heading.flip-title} and [more contents](#welcome){:.heading.flip-title} about him.
 
 Have a nice day 😊
@@ -54,7 +54,7 @@ If there are suggestions or errata, please comment or [mail me]. I'd really appr
 [Blog]: blog/
 [MAXST]: https://www.linkedin.com/company/maxst/ "LinkedIn profile of MAXST Co., Ltd."
 
-[Mail Me]: mailto:jyjeon@outlook.com?subject=To&nbsp;jyje
+[Mail Me]: mailto:jyjeon@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
 
 
