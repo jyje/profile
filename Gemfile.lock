@@ -12,7 +12,6 @@ GEM
     eventmachine (1.2.7)
     execjs (2.8.1)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (0.9.5)
@@ -72,7 +71,7 @@ GEM
       kramdown (~> 2.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    liquid (4.0.3)
+    liquid (4.0.4)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -127,4 +126,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.4.1
+   2.4.12
