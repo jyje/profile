@@ -11,3 +11,4 @@ accent_image:
   overlay: false
 ---
 
+I studied a visual light communication systems in the underwater environment. The contents is avaliable in [Google Scholar](https://scholar.google.com/citations?view_op=view_citation&hl=ko&user=gwCPQM8AAAAJ&citation_for_view=gwCPQM8AAAAJ:u5HHmVD_uO8C){:.heading.flip-title} but it was written in Korean for the domestic symposium. Thus, it's hard to find the details. The summerized contents are available soon.
