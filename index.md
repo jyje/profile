@@ -2,7 +2,7 @@
 layout: welcome
 cover: true
 ---
-# Jeayoung Jeon
+# jyje: Jeayoung Jeon
 
 **Jeayoung Jeon** is a software engineer specializing in DevOps and Computer Vision in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
 
