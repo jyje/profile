@@ -15,10 +15,11 @@ cover: true
 <!-- **The annual interval stands for the focused duration of his full efforts*
 {:.faded} -->
 With a background in computer vision, he enhances cloud-native environments to create cost-efficient systems. His current occupation includes both DevOps and Computer Vision, involving the following responsibilities:
-- Managing cloud-based and on-premise clusters
-- Developing CI/CD pipelines
-- Creating computer vision workflows
-- Building machine learning pipelines in cloud-native environments
+
+- Managing Cloud-Based and On-Premise Clusters
+- Developing CI/CD Pipelines
+- Creating Computer Vision Workflows
+- Designing Machine Learning Pipelines in Cloud-Native Environments
 
 For more information, please visit [about]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [mail]{:.heading.flip-title}.
 
