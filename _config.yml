@@ -17,13 +17,13 @@ title:                 jyje
 
 # A short description (~150 chars) of the page used for the meta description tag. Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  CVE, Computer Vision Engineer; Clueless Vision Engineer
+  I'm a software engineer majoring in DevOps and Computer Vision
 
 # A shorter description for the sidebar.
-tagline:               Clueless Vision Engineer
+tagline:               Daily-Growing Software Engineer
 
 # A list of keywords for your blog
-keywords:              [CV, Computer Vision, ADAS, AR/VR, Rating System, Resume]
+keywords:              [DevOps, Computer Vision, ADAS, AR/VR, Rating System, CV, Resume]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -64,7 +64,7 @@ legal:
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             ⓒ 2023 jyje.me with Jeayoung Jeon
+copyright:             Since 2022 ⓒ jyje.me with Jeayoung Jeon
 
 # Format of the permalinks
 permalink:             /:categories/:title/ # /:categories/:year-:month-:day-:title/
