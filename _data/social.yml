@@ -5,7 +5,7 @@ email:
   prepend: 'mailto:'
 blog:
   name: Blog
-  icon: icon-edit
+  icon: icon-bubble
 amazon:
   name: Amazon
   icon: icon-amazon
@@ -165,7 +165,7 @@ wikipedia:
   icon: icon-wikipedia
 linkedin:
   name: LinkedIn
-  icon: icon-linkedin2
+  icon: icon-linkedin
   prepend: "https://www.linkedin.com/in/"
 lastfm:
   name: Last.fm

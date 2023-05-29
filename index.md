@@ -21,7 +21,7 @@ With a background in computer vision, he enhances cloud-native environments to c
 - Creating Computer Vision Workflows
 - Designing Machine Learning Pipelines in Cloud-Native Environments
 
-For more information, please visit [about]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [mail]{:.heading.flip-title}.
+For more information, please visit [About]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [Mail]{:.heading.flip-title}.
 
 <!-- Top -->
 <div>

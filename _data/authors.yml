@@ -27,10 +27,10 @@ jyje:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    email:           jyjeon@outlook.com
-    linkedin:        jyje
-    github:          jyje
     blog:            https://blog.jyje.me/
+    github:          jyje
+    linkedin:        jyje
+    email:           jyjeon@outlook.com
     # stackshare:      jyje/jyje-pro-stack
     # google-scholar:  gwCPQM8AAAAJ
     # twitter:         jyjeonline
