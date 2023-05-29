@@ -4,24 +4,23 @@ cover: true
 ---
 # Jeayoung Jeon
 
-**Jeayoung Jeon** is a software engineer for DevOps and Computer Vison in South Korea. He has full-time jobs in MAXST. He currently is now in focus on solving vision and data science problems using cluster computing. To do that, he have following skills:
+**Jeayoung Jeon** is a software engineer specializing in DevOps and Computer Vision in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
 
-- DevOps and Infrastructure (2023 - Now)
-- Visual-SLAM and Digital Twin (2018 - Now)
+- DevOps and Infrastructure (2023 - Present)
+- Visual-SLAM and Digital Twin (2018 - Present)
 - Automotive Computer Vision (2012 - 2020)
 - Digital Signal Processing and Machine Learning (2008 - 2018)
 - Analog and Digital Communications (2008 - 2012)
 
 <!-- **The annual interval stands for the focused duration of his full efforts*
 {:.faded} -->
-Based-on computer vision experiences, he enhance the cloud native environments to make a cost-efficient systems.
-Current occupation is contains **DevOps** and **Computer Vision**:
-- Manage cloud-based and on-premise clusters
-- Develop CI/CD pipelines
-- Develop computer vision workflows
-- Develop machine learning pipelines in cloud natives
+With a background in computer vision, he enhances cloud-native environments to create cost-efficient systems. His current occupation includes both DevOps and Computer Vision, involving the following responsibilities:
+- Managing cloud-based and on-premise clusters
+- Developing CI/CD pipelines
+- Creating computer vision workflows
+- Building machine learning pipelines in cloud-native environments
 
-For more information, check out [about]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [mail]{:.heading.flip-title}.
+For more information, please visit [about]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [mail]{:.heading.flip-title}.
 
 <!-- Top -->
 <div>
