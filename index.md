@@ -4,17 +4,18 @@ cover: true
 ---
 # jyje: Jeayoung Jeon
 
-**Jeayoung Jeon** is a software engineer specializing in DevOps and Computer Vision in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
+**Jeayoung Jeon** is a software engineer specializing in **DevOps** and **Computer Vision** in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
 
 - DevOps and Infrastructure (2023 - Present)
 - Visual-SLAM and Digital Twin (2018 - Present)
 - Automotive Computer Vision (2012 - 2020)
+- FPGA for Advanced Driver's Assistant Systems (2012 - 2018)
 - Digital Signal Processing and Machine Learning (2008 - 2018)
 - Analog and Digital Communications (2008 - 2012)
 
 <!-- **The annual interval stands for the focused duration of his full efforts*
 {:.faded} -->
-With a background in computer vision, he enhances cloud-native environments to create cost-efficient systems. His current occupation includes both DevOps and Computer Vision, involving the following responsibilities:
+With a background in computer vision, he enhances cloud-native environments to create cost-efficient vision systems. His current occupation includes both DevOps and Computer Vision, involving the following responsibilities:
 
 - Managing Cloud-Based and On-Premise Clusters
 - Developing CI/CD Pipelines
