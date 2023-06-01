@@ -1,7 +1,6 @@
 ---
 layout: welcome
 cover: true
-title: Home
 ---
 
 # Jeayoung Jeon
