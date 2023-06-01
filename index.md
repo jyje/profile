@@ -26,7 +26,7 @@ For more information, please visit [About]{:.heading.flip-title} page. Questions
 
 <!-- Top -->
 <div>
-    If you are busy, my résumé and cv are available here:
+    If you're looking for my résumé and cv, here you are:
     <div>
         <a href="/about/resume/" class="btn btn-sm btn-primary mt1">
             <small class="icon-file-pdf"></small>
@@ -38,7 +38,7 @@ For more information, please visit [About]{:.heading.flip-title} page. Questions
         </a>
     </div>
 </div>
-{:.note title="TL;DR"}
+{:.note title="Link"}
 
 
 
