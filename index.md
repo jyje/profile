@@ -56,5 +56,9 @@ For more information, please visit [About]{:.heading.flip-title} page. Questions
 
 [Mail]: mailto:jyjeon@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
+<!-- Update server -->
+<!-- bundle install -->
+<!-- bundle update --bundler -->
+
 <!-- Exec server -->
 <!-- bundle exec jekyll s -->
