@@ -60,11 +60,11 @@ legal:
   - title:             Credits
     url:               /credits/
   - title:             Manage
-    url:               https://github.com/jyje/jyje.me
+    url:               https://github.com/jyje/jyje.online
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             Since 2022 ⓒ jyje.me with Jeayoung Jeon
+copyright:             Since 2022 ⓒ jyje.online with Jeayoung Jeon
 
 # Format of the permalinks
 permalink:             /:categories/:title/ # /:categories/:year-:month-:day-:title/
