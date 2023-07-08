@@ -11,7 +11,7 @@ basics:
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: >
-    This is Jeayoung Jeon [🇰🇷전제영]. And I'm self-motivated-i-think computer vision engineer. AR/VR, automotives, digital twin and data analysis are my major competences. Recently, I dived into DevOps and cross-platform applications providing computer vision app and services 👩‍🏭.
+    This is Jeayoung Jeon [🇰🇷전제영]. And I'm self-motivated-i-think devops and computer vision engineer. Massive cluster computing, AR/VR, automotives, digital twin and data analysis are my major competences. Recently, I dived into devops and cross-platform applications providing computer vision app and services 👩‍🏭.
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -25,9 +25,12 @@ basics:
     - network: "Github"
       username: "jyje"
       url: "http://github.com/jyje/"
-    # - network: "Google Scholar"
-    #   username: "Jeayoung Jeon"
-    #   url: "https://scholar.google.com/citations?user=gwCPQM8AAAAJ"
+    - network: "Stackshare"
+      username: "jyje"
+      url: "https://stackshare.io/jyje/jyje-pro-stack"
+    - network: "Google Scholar"
+      username: "Jeayoung Jeon"
+      url: "https://scholar.google.com/citations?user=gwCPQM8AAAAJ"
 work:
   - company: "MAXST"
     position: "Software Engineer"
@@ -35,29 +38,40 @@ work:
     startDate: "2021-01-16"
     endDate: 
     summary: >
-      Computer Vision and DevOps Engineer
+      DevOps and Computer Vision Engineer with:
     highlights:
-      - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
+      - "[2023 - Present] DevOps and Infrastructure from Cloud Services to On-Premise Clusters"
+      - "[2021 - Present] Visual-SLAM and SfM for Digital Twin Systems"
   - company: "POSTECH"
     position: "Graduate Student with Integrated Program"
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
     summary: >
-      When I was a graduate student, I worked in several classes .
+      During my time as a graduate student at POSTECH, I had the privilege of working in two renowned research labs:
     highlights:
-      - 2012-2018 Advanced Signal Processing Lab.
-      - 2018-2020 Computing and Control Engineering Lab.
+      - "[2012-2018] Advanced Signal Processing Lab."
+      - "[2018-2020] Computing and Control Engineering Lab."
   - company: "POSTECH"
     position: "Teaching Assistant"
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-09-01"
     endDate: "2014-02-28"
     summary: >
-      When I was a graduate student, I worked in several classes:
+      While pursuing my graduate studies, I also served as a Teaching Assistant for various courses, including:
     highlights:
-      - 2012 EECE233 Signals and Systems
-      - 2013 EECE454 PC Interface
+      - "[2012] EECE233 Signals and Systems"
+      - "[2013] EECE454 PC Interface"
+  - company: "GIST"
+    position: "Undergraduate Internship"
+    website: "https://me.gist.ac.kr/biomems/index.do"
+    startDate: "2010-07-26"
+    endDate: "2010-08-15"
+    summary: >
+      As an undergraduate student, I participated in an internship program at the BioMEMS Lab in GIST, where I engaged in the following tasks:
+    highlights:
+      - Study on BioMEMSs equivarant to Electronic RLC circuits
+      - Preview of Graduate Program and Experiments
 # volunteer:
 #   - organization: "CoderDojo"
 #     position: "Teacher"
