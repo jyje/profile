@@ -59,6 +59,8 @@ legal:
     url:               /about/cv/
   - title:             Credits
     url:               /credits/
+  - title:             Blog
+    url:               https://blog.jyje.online
   - title:             Manage
     url:               https://github.com/jyje/jyje.online
 
