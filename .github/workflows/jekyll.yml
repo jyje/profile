@@ -52,13 +52,15 @@ jobs:
       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       env:
         JEKYLL_ENV: production
+    - name: Cat build
+      run: |
+        ls /home/runner/work/jyje.online/jyje.online/_site/about
     - name: Compose resume to pdf
       uses: docker://pandoc/core:3.1-alpine
       with:
-        args: | # allows you to break string into multiple lines
-          --standalone
+        args: |
+          --from=/home/runner/work/jyje.online/jyje.online/_site/about/resume/index.html
           --output=/home/runner/work/jyje.online/jyje.online/_site/assets/jyje_resume.pdf
-          /home/runner/work/jyje.online/jyje.online/_site/about/resume/index.html
     - name: Upload artifact
       # Automatically uploads an artifact from the './_site' directory by default
       uses: actions/upload-pages-artifact@v1
