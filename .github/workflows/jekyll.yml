@@ -28,33 +28,40 @@ concurrency:
 jobs:
   # Build job
   build:
-    name: Build 🔥
-    runs-on: ubuntu-latest
+    name: Build 🧑🏼‍🔧
+    runs-on: ubuntu-22.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1 # ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
-        with:
-          ruby-version: '3.2' # Not needed with a .ruby-version file
-          bundler-cache: false # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: Setup Bundle
-        run: |
-          bundle lock --add-platform ruby
-          bundle lock --add-platform x86_64-linux
-          bundle install --no-cache
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v2
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v1
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1 # ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
+      with:
+        ruby-version: '3.2' # Not needed with a .ruby-version file
+        bundler-cache: false # runs 'bundle install' and caches installed gems automatically
+        cache-version: 0 # Increment this number if you need to re-download cached gems
+    - name: Setup Bundle
+      run: |
+        bundle lock --add-platform ruby
+        bundle lock --add-platform x86_64-linux
+        bundle install --no-cache
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v2
+    - name: Build with Jekyll
+      # Outputs to the './_site' directory by default
+      run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      env:
+        JEKYLL_ENV: production
+    - name: Compose resume to pdf
+      uses: docker://pandoc/core:3.1-alpine
+      with:
+        args: | # allows you to break string into multiple lines
+          --standalone
+          --output=/home/runner/work/jyje.online/jyje.online/_site/assets/jyje_resume.pdf
+          /home/runner/work/jyje.online/jyje.online/_site/about/resume/index.html
+    - name: Upload artifact
+      # Automatically uploads an artifact from the './_site' directory by default
+      uses: actions/upload-pages-artifact@v1
 
   # Deployment job
   deploy:
@@ -62,9 +69,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
