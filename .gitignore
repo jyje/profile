@@ -4,5 +4,12 @@ _site
 .jekyll-metadata
 vendor
 node_modules
+
+# OS generated files
+.DS_Store
+
+# ruby
 Gemfile.lock
+
+# vscode
 .vscode
