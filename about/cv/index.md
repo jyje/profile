@@ -1,6 +1,6 @@
 ---
 layout: cv
-title: CV
+title: Curriculum Vitae
 description: >
   This is the `description` of your resume page, as it will be seen by search engines.
   You'll probably want to modify it in `resume.md`, and maybe set `hide_description` to `true` in the front matter.
@@ -12,10 +12,10 @@ left_column:
   - awards
   - publications
   # - references
-  - languages
 right_column:
   - skills
   - interests
+  - languages
 no_language_icons: true
 no_skill_icons: true
 buttons:
@@ -25,5 +25,5 @@ buttons:
   # or use `h2vx.com` to generate a vCard on the fly based on the structured data of the resume page.
   # The later requires `hydejack.no_structured_data: false` and only works once the site is deployed to a public URL.
   # vcf: http://h2vx.com/vcf/<!--url-->
-  json: /assets/resume.json
+  # json: /assets/resume.json
 ---
