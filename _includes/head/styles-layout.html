@@ -3,9 +3,7 @@
   {% include_cached head/css/inline %}
   {% if layout == "projects" or layout == "project" or layout == "home" or layout == "welcome" or layout == "grid" or layout == "post" %}
     {% include_cached head/css/projects %}
-  {% elsif layout == "resume" %}
+  {% elsif layout == "resume" or layout == "cv" %}
     {% include_cached head/css/resume %}
-  {% elsif layout == "cv" %}
-    {% include_cached head/css/cv %}
   {% endif %}
 </style>
