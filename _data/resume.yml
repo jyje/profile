@@ -31,12 +31,20 @@ basics:
     - network: "Google Scholar"
       username: "Jeayoung Jeon"
       url: "https://scholar.google.com/citations?user=gwCPQM8AAAAJ"
+  contents:
+    formatting:
+      separator: ": "
+    resume:
+      title: "Résumé"
+      summary: ""
+    cv:
+      title: "Curriculum Vitae"
+      summary: "cv-summary"
 work:
   - company: "MAXST"
     position: "Software Engineer"
     website: "https://maxst.com/en/"
     startDate: "2021-01-16"
-    endDate: 
     summary: >
       DevOps and Computer Vision Engineer with:
     highlights:
