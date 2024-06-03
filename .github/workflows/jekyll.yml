@@ -29,14 +29,14 @@ jobs:
   # Build job
   build:
     name: Build 🧑🏼‍🔧
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v1 # ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.2' # Not needed with a .ruby-version file
+        ruby-version: '3.3' # Not needed with a .ruby-version file
         bundler-cache: false # runs 'bundle install' and caches installed gems automatically
         cache-version: 0 # Increment this number if you need to re-download cached gems
     - name: Setup Bundle
@@ -44,9 +44,13 @@ jobs:
         bundle lock --add-platform ruby
         bundle lock --add-platform x86_64-linux
         bundle install --no-cache
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
     - name: Setup Pages
       id: pages
-      uses: actions/configure-pages@v2
+      uses: actions/configure-pages@v5
     - name: Build with Jekyll
       # Outputs to the './_site' directory by default
       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -62,7 +66,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     needs: build
     steps:
     - name: Deploy to GitHub Pages
