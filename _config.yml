@@ -17,13 +17,13 @@ title:                 jyje
 
 # A short description (~150 chars) of the page used for the meta description tag. Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  I'm a software engineer majoring in DevOps and Computer Vision
+  I'm a software engineer majoring in MLOps, Computer Vision and Cloud-Native Software Engineering. I'm currently working at MAXST as a MLOps, DevOps and Backend Engineer.
 
 # A shorter description for the sidebar.
 tagline:               Daily-Growing Software Engineer
 
 # A list of keywords for your blog
-keywords:              [DevOps, Computer Vision, ADAS, AR/VR, Rating System, CV, Resume]
+keywords:              [MLOps, DevOps, Computer Vision, Cloud-Native, Kubernetes, ADAS, AR/VR, CV, Resume]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -34,7 +34,7 @@ logo:                  /assets/icons/icon-128x128.png
 author:
   # Used by `jekyll-feed`:
   name:                Jeayoung Jeon
-  email:               jyjeon@outlook.com
+  email:               jyjeon+online@outlook.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
   linkedin:            jyje

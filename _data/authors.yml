@@ -2,8 +2,8 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 jyje:
-  name:              Jeayoung Jeon
-  email:             jyjeon@outlook.com
+  name:  Jeayoung Jeon
+  email: jyjeon@outlook.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -27,12 +27,12 @@ jyje:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    blog:            https://blog.jyje.online/
+    blog:            https://blog.jyje.online
     github:          jyje
     linkedin:        jyje
-    email:           jyjeon@outlook.com
+    email:           jyjeon+online@outlook.com
     # stackshare:      jyje/jyje-pro-stack
-    # google-scholar:  gwCPQM8AAAAJ
+    # googlescholar:  gwCPQM8AAAAJ
     # twitter:         jyjeonline
     # google:          gwCPQM8AAAAJ
 

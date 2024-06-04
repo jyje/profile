@@ -5,7 +5,7 @@ cover: true
 
 # Jeayoung Jeon
 
-**Jeayoung Jeon** is a software engineer specializing in **DevOps** and **Computer Vision** in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
+**Jeayoung Jeon** is a software engineer specializing in **MLOps** and **Computer Vision** in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
 
 - DevOps and Infrastructure (2023 - Present)
 - Visual-SLAM and Digital Twin (2018 - Present)
@@ -54,7 +54,7 @@ For more information, please visit [About]{:.heading.flip-title} page. Questions
 [Blog]: blog/
 [MAXST]: https://www.linkedin.com/company/maxst/ "LinkedIn profile of MAXST Co., Ltd."
 
-[Mail]: mailto:jyjeon@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[Mail]: mailto:jyjeon+online@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
 <!-- Update server -->
 <!-- bundle install -->

@@ -11,6 +11,7 @@ left_column:
   - education
   - awards
   - publications
+  - certifications
   # - references
 right_column:
   - skills

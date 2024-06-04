@@ -3,7 +3,7 @@
 # See also: <https://jsonresume.org/>.
 basics:
   name: "Jeayoung Jeon"
-  label: "Software Engineer"
+  label: "MLOps and Cloud-Native Software Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
   # phone: "+82-10-5069-1328"
@@ -19,18 +19,18 @@ basics:
     countryCode: "KR" # "US"
     region: "" # "California"
   profiles:
-    - network: "LinkedIn"
-      username: "jyje"
-      url: "https://linkedin.com/in/jyje/"
-    - network: "Github"
-      username: "jyje"
-      url: "http://github.com/jyje/"
-    - network: "Stackshare"
-      username: "jyje"
-      url: "https://stackshare.io/jyje/jyje-pro-stack"
-    - network: "Google Scholar"
-      username: "Jeayoung Jeon"
-      url: "https://scholar.google.com/citations?user=gwCPQM8AAAAJ"
+    - network: LinkedIn
+      username: jyje
+      url: https://linkedin.com/in/jyje/
+    - network: Github
+      username: jyje
+      url: http://github.com/jyje/
+    - network: Stackshare
+      username: jyje
+      url: https://stackshare.io/jyje/jyje-pro-stack
+    - network: GoogleScholar
+      username: Jeayoung Jeon
+      url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
     formatting:
       separator: ": "
@@ -89,6 +89,11 @@ work:
 #     summary: "Global movement of free coding clubs for young people."
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
+certificates:
+  - title: "CKA: Certified Kubernetes Administrator"
+    provider: "The Linux Foundation"
+    date: "2024-06-01"
+    website: ""
 education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
