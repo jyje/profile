@@ -14,6 +14,6 @@
 
 {% if basics.contents.resume.summary.size > 0 %}
   <p class="note p-note" property="description">
-    {{ basics.contents.cv.summary | markdownify | replace:'<p>','' | replace:'</p>','' }}
+    {{ basics.contents.resume.summary | markdownify | replace:'<p>','' | replace:'</p>','' }}
   </p>
 {% endif %}

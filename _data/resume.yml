@@ -36,7 +36,8 @@ basics:
       separator: ": "
     resume:
       title: "Résumé"
-      summary: ""
+      summary: >
+        Currently, I'm working at MAXST as a DevOps and Computer Vision Engineer. I'm responsible for the infrastructure from cloud services to on-premise clusters and visual-SLAM and SfM for digital twin systems. I have a Master's degree in Electrical Engineering from POSTECH, where I worked in two renowned research labs. I also served as a Teaching Assistant for various courses. I have a Bachelor's degree in Electronic Communication from KIT. I'm a Certified Kubernetes Administrator.
     cv:
       title: "Curriculum Vitae"
       summary: "cv-summary"
@@ -146,7 +147,7 @@ languages:
   - language: "Korean"
     fluency: "Native speaker"
   - language: "English"
-    fluency: "Limited working proficiency"
+    fluency: "Working proficiency"
 # interests:
 #   - name: "Wildlife"
 #     keywords:

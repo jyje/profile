@@ -1,9 +1,9 @@
 ---
 layout: welcome
+title: jyje.online
 cover: true
 ---
-
-# Jeayoung Jeon
+## 🎉 Hello, World!
 
 **Jeayoung Jeon** is a software engineer specializing in **MLOps** and **Computer Vision** in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
 
@@ -23,17 +23,17 @@ With a background in computer vision, he enhances cloud-native environments to c
 - Creating Computer Vision Workflows
 - Designing Machine Learning Pipelines in Cloud-Native Environments
 
-For more information, please visit [About]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [Mail]{:.heading.flip-title}.
+For more information, please visit [Profile]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [Mail]{:.heading.flip-title}.
 
 <!-- Top -->
 <div>
     If you're looking for my résumé and cv, here you are:
     <div>
-        <a href="/about/resume/" class="btn btn-sm btn-primary mt1">
+        <a href="/profile/resume" class="btn btn-sm btn-primary mt1">
             <small class="icon-file-pdf"></small>
             Résumé
         </a>
-        <a href="/about/cv/" class="btn btn-sm btn-primary mt1">
+        <a href="/profile/cv" class="btn btn-sm btn-primary mt1">
             <small class="icon-file-pdf"></small>
             CV
         </a>
@@ -45,14 +45,14 @@ For more information, please visit [About]{:.heading.flip-title} page. Questions
 
 ![Logo of this site](assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 
-[About]: about/ "my-profile --verbose"
-[Résumé]: about/resume/ "my-profile resume"
-[Curriculum Vitae]: about/cv/ "my-profile cv"
-[CV]: about/cv/ "my-profile cv"
-[Works]: works/
-[Articles]: articles/
-[Blog]: blog/
-[MAXST]: https://www.linkedin.com/company/maxst/ "LinkedIn profile of MAXST Co., Ltd."
+[Profile]: profile "my-profile --verbose"
+[Résumé]: profile/resume "my-profile resume"
+[Curriculum Vitae]: profile/cv "my-profile cv"
+[CV]: profile/cv "my-profile cv"
+[Works]: works
+[Articles]: articles
+[Blog]: blog
+[MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
 [Mail]: mailto:jyjeon+online@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 

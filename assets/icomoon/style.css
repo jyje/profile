@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xitbo');
-  src:  url('fonts/icomoon.eot?xitbo#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xitbo') format('truetype'),
-    url('fonts/icomoon.woff?xitbo') format('woff'),
-    url('fonts/icomoon.svg?xitbo#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?xm271p');
+  src:  url('fonts/icomoon.eot?xm271p#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xm271p') format('truetype'),
+    url('fonts/icomoon.woff?xm271p') format('woff'),
+    url('fonts/icomoon.svg?xm271p#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -19,6 +19,16 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -28,11 +38,8 @@
 .icon-notion:before {
   content: "\e901";
 }
-.icon-googlescholar:before {
+.icon-scholar:before {
   content: "\e904";
-}
-.icon-edit:before {
-  content: "\e903";
 }
 .icon-book:before {
   content: "\e91f";
@@ -232,6 +239,9 @@
 .icon-bubble:before {
   content: "\e96b";
 }
+.icon-user:before {
+  content: "\e971";
+}
 .icon-terminal:before {
   content: "\ea81";
 }
@@ -240,4 +250,7 @@
 }
 .icon-linkedin:before {
   content: "\eac9";
+}
+.icon-edit:before {
+  content: "\e903";
 }
