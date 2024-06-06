@@ -204,6 +204,7 @@ $grid-gutter-width:           30px !default;
 
 $line-height-lg:              $root-line-height !default;
 $line-height-sm:              $root-line-height !default;
+$line-height-inline:          $root-line-height !default;
 
 $border-width:                1px;
 $border-color:                var(--border-color);
@@ -335,6 +336,10 @@ $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
+$input-btn-padding-y-inline:   .0rem !default;
+$input-btn-padding-x-inline:   .5rem !default;
+$input-btn-line-height-inline: $line-height-inline !default;
+
 $input-btn-padding-y-lg:      .5rem !default;
 $input-btn-padding-x-lg:      1rem !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
@@ -353,6 +358,10 @@ $btn-line-height:             $input-btn-line-height !default;
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
 $btn-line-height-sm:          $input-btn-line-height-sm !default;
+
+$btn-padding-y-inline:        $input-btn-padding-y-inline !default;
+$btn-padding-x-inline:        $input-btn-padding-x-inline !default;
+$btn-line-height-inline:      $input-btn-line-height-inline !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;

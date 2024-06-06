@@ -5,42 +5,31 @@ cover: true
 ---
 ## 🎉 Hello, World!
 
-**Jeayoung Jeon** is a software engineer specializing in **MLOps** and **Computer Vision** in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
+Welcome! I'm **jyje**. I'm software engineer in South Korea and this is my formal portfolio site. You can navigate all my records along with my experience and career. It provides following sections:
 
-- DevOps and Infrastructure (2023 - Present)
-- Visual-SLAM and Digital Twin (2018 - Present)
-- Automotive Computer Vision (2012 - 2020)
-- FPGA for Advanced Driver's Assistant Systems (2012 - 2018)
-- Digital Signal Processing and Machine Learning (2008 - 2018)
-- Analog and Digital Communications (2008 - 2012)
+- [Profile]{:.heading.flip-title}
+    - My introduction and career overview
+    -   <div>
+            My official documents including résumé and CV: 
+            <a href="/profile/resume" class="btn btn-inline btn-primary">
+                <small class="icon-briefcase"></small>
+                Résumé
+            </a>
+            <a href="/profile/cv" class="btn btn-inline btn-primary">
+                <small class="icon-scholar"></small>
+                CV
+            </a>
+        </div>
 
-<!-- **The annual interval stands for the focused duration of his full efforts*
-{:.faded} -->
-With a background in computer vision, he enhances cloud-native environments to create cost-efficient vision systems. His current occupation includes both DevOps and Computer Vision, involving the following responsibilities:
+- [Works]{:.heading.flip-title}
+    - My activities and achievements
+    - My projects with live demo (if available)
 
-- Managing Cloud-Based and On-Premise Clusters
-- Developing CI/CD Pipelines
-- Creating Computer Vision Workflows
-- Designing Machine Learning Pipelines in Cloud-Native Environments
+- [Articles]{:.heading.flip-title}
+    - My formal posts
+    - My publications
 
-For more information, please visit [Profile]{:.heading.flip-title} page. Questions or suggestions are always welcome. If you have any questions, please feel free to send a contact [Mail]{:.heading.flip-title}.
-
-<!-- Top -->
-<div>
-    If you're looking for my résumé and cv, here you are:
-    <div>
-        <a href="/profile/resume" class="btn btn-sm btn-primary mt1">
-            <small class="icon-file-pdf"></small>
-            Résumé
-        </a>
-        <a href="/profile/cv" class="btn btn-sm btn-primary mt1">
-            <small class="icon-file-pdf"></small>
-            CV
-        </a>
-    </div>
-</div>
-{:.note title="Link"}
-
+Thank you for visiting my site. If you have any questions or want to contact me, please feel free to [Mail] me. Have a nice day! 🌤️
 
 
 ![Logo of this site](assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}

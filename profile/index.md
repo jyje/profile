@@ -32,7 +32,7 @@ This site is my live portfolio. It's open to everyone who get interest of me. Th
 ![Logo of this site](../assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
 
-## Experience Overview
+## Career Overview
 
 **Jeayoung Jeon** is a software engineer specializing in **MLOps** and **Computer Vision** in South Korea. He holds a full-time position at MAXST. Currently, his primary focus is on solving vision and data science problems using cluster computing. His skill set includes the following:
 
