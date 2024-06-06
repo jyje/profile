@@ -9,7 +9,7 @@ accent_image:
 
 ## Introduction
 
-I am [Jeayoung Jeon]{:.heading.flip-title} and I work at [MAXST]{:.heading.flip-title} in South Korea. My current position is a **MLOps Engineer** and **Cloud-Native Software Developer**. My primary focus is on solving engineering problems using cluster technologies such as **Kubernetes Clusters**, **Machine Learning Pipelines**.
+My name is [Jeayoung Jeon]{:.heading.flip-title}, and I work at [MAXST]{:.heading.flip-title} in South Korea as an **MLOps Engineer** and **Cloud-Native Software Developer**. My primary focus is solving engineering problems using cluster technologies such as **Kubernetes clusters** and **machine learning pipelines**. On my days off, I enjoy walking my dog and building clusters with Raspberry Pi.
 
 *If you are interested in my carrer please feel free to contact me.*
 
