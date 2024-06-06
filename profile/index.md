@@ -48,6 +48,7 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
     - Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
 
 - **as a Cloud-Native Software Developer 🧑🏼‍💻**
+    - Adapting applications to cloud-native environments
     - Developing applications ensuring high availability and scalability
 
 - **Solving Big Problems 🧐**
