@@ -11,7 +11,7 @@ accent_image:
 
 My name is [Jeayoung Jeon]{:.heading.flip-title}. I'm an **MLOps/DevOps Engineer** in South Korea. I have an academic background in **Computer Vision**, **Digital Twin**, and **Machine Learning**.
 
-Since 2012, I have accumulated deep experience, starting as a **Graduate Student Researcher** in the field of computer science and advancing to an **MLOps engineer**. From 2023, I am dedicating significant effort to solving problems based on **Kubernetes Clusters & Cloud-Native Applications** and **Machine Learning Pipelines**.
+Since 2012, I have accumulated deep experience, starting as a **Graduate Student Researcher** in the field of computer science and advancing to an **MLOps engineer**. From early of 2023, I am dedicating significant effort to solving problems based on **Kubernetes Clusters & Cloud-Native Applications** and **Machine Learning Pipelines**. Recently I have been interested in **Optimizing Power/Cost Infrastructure** using **Hybrid <sup>*public+onprem*</sup> Clusters**.
 
 In my spare time, I enjoy walking my dog and writing blog how to build clusters with **Raspberry Pis** at home.
 
@@ -40,20 +40,25 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 <!-- Itemized list of responsibilities -->
 - **as an MLOps Engineer 👨🏼‍🔬**
     - Creating ML pipelines<sup>*1*</sup> for computer vision problems
-    - Deploy Katib AutoML<sup>*2*</sup> for hyperparameter tuning
-    - Providing JupyterHub<sup>*1*</sup> for remote Python kernels
+    - Deploying Katib AutoML<sup>*2*</sup> for hyperparameter tuning
+    - Providing remote Python kernels using JupyterHub
 
 - **as an DevOps Engineer 🧑🏼‍🔧**
     - Creating private pipelines<sup>*1*</sup> for internal services
-    - Providing private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
+    - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
     - Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
+    - Reducing cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
 
 - **as a Cloud-Native Software Developer 🧑🏼‍💻**
-    - Developing CI/CD pipelines for Kubernetes clusters
+    - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
     - Building computer vision workflows in cloud-native environments
 
 <i>
-  <sup>**1**</sup>: Argo Workflows, <sup>**2**</sup>: Kubeflow, <sup>**3**</sup>: Bitbucket, <sup>**4**</sup>: Terraform
+  <sup>**1**</sup>: Argo Workflows,
+  <sup>**2**</sup>: Kubeflow,
+  <sup>**3**</sup>: Bitbucket,
+  <sup>**4**</sup>: Terraform,
+  <sup>**5**</sup>: AWS EKS
 </i>
 {:.faded}
 
@@ -65,13 +70,13 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 Following is a brief summary of my career in time order:
 
-- <a class="btn btn-inline btn-primary">**2024 - Present**</a> - **Cloud-Native Software Development (FE, BE, DB)**
-- <a class="btn btn-inline btn-primary">**2023 - Present**</a> - **MLOps**, **DevOps** using **Kubernetes Clusters**
-- <a class="btn btn-inline btn-primary">**2018 - 2023**</a> - Research of **Visual-SLAM and Digital Twin**
-- <a class="btn btn-inline btn-primary">**2012 - 2020**</a> - Research of **Automotive Computer Vision**
-- <a class="btn btn-inline btn-primary">**2012 - 2018**</a> - Research of **FPGA for Advanced Driver's Assistant Systems** 
-- <a class="btn btn-inline btn-primary">**2008 - 2018**</a> - Research of **Digital Signal Processing** and **Machine Learning**
-- <a class="btn btn-inline btn-primary">**2008 - 2012**</a> - Study for **Analog and Digital Communications**
+- <span class="emph btn-inline btn-primary">**2024 - Present**</span> - **Cloud-Native Software Development (FE, BE, DB)**
+- <span class="emph btn-inline btn-primary">**2023 - Present**</span> - **MLOps**, **DevOps** using **Kubernetes Clusters**
+- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> - Research of **Visual-SLAM and Digital Twin**
+- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> - Research of **Automotive Computer Vision**
+- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> - Research of **FPGA for Advanced Driver's Assistant Systems** 
+- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> - Research of **Digital Signal Processing** and **Machine Learning**
+- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> - Study for **Analog and Digital Communications**
 
 **The annual interval stands for the focused duration of my full efforts*
 {:.faded}

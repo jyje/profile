@@ -25,10 +25,10 @@ basics:
     - network: Github
       username: jyje
       url: http://github.com/jyje/
-    - network: Stackshare
+    - network: StackShare
       username: jyje
       url: https://stackshare.io/jyje/jyje-pro-stack
-    - network: GoogleScholar
+    - network: Google Scholar
       username: Jeayoung Jeon
       url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
@@ -49,8 +49,12 @@ work:
     summary: >
       DevOps and Computer Vision Engineer with:
     highlights:
-      - "[2023 - Present] DevOps and Infrastructure from Cloud Services to On-Premise Clusters"
-      - "[2021 - Present] Visual-SLAM and SfM for Digital Twin Systems"
+      - >
+        <span class="btn btn-inline btn-primary">2024 - Present</span>
+          DevOps and Infrastructure from Cloud Services to On-Premise Clusters
+      - >
+        <span class="btn btn-inline btn-primary">2021 - Present</span>
+          Visual-SLAM and SfM for Digital Twin Systems
   - company: "POSTECH"
     position: "Graduate Student with Integrated Program"
     website: "https://eee.postech.ac.kr/"
