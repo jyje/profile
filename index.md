@@ -5,7 +5,7 @@ cover: true
 ---
 ## 🎉 Hello, World!
 
-Welcome! I'm Jeayoung Jeon (**jyje**). I'm a software engineer from South Korea, and this is my formal portfolio site. Here, you can explore my records, experience, and career in detail. I've provided specific and clear information about myself. Hope you enjoy it 🥰
+Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and this is my formal portfolio site. Here, you can explore my records, experience, and career in detail. I've provided specific and clear information about myself. Hope you enjoy it 🥰
 
 It provides following sections:
 
