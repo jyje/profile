@@ -35,7 +35,7 @@ In my spare time, I enjoy walking my dog and writing blog how to build clusters 
 
 ## 🧑🏼‍🔧 Current Position
 
-Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software engineer with two roles: **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**. Followings are my major responsibilities:
+Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software engineer with two roles: **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**. Followings are my major responsibilities and roles in the company:
 
 <!-- Itemized list of responsibilities -->
 - **as an MLOps Engineer 👨🏼‍🔬**
@@ -48,6 +48,9 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
     - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
     - Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
     - Reducing cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
+    - Certified Engineer
+        - CKA<sup>*6*</sup>:  Certified Kubernetes Administrator
+        - CKAD<sup>*6*</sup>: Certified Kubernetes Application Developer
 
 - **as a Cloud-Native Software Developer 🧑🏼‍💻**
     - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
@@ -58,7 +61,8 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
   <sup>**2**</sup>: Kubeflow,
   <sup>**3**</sup>: Bitbucket,
   <sup>**4**</sup>: Terraform,
-  <sup>**5**</sup>: AWS EKS
+  <sup>**5**</sup>: AWS EKS,
+  <sup>**6**</sup>: The Linux Foundation
 </i>
 {:.faded}
 
@@ -70,7 +74,7 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 Following is a brief summary of my career in time order:
 
-- <span class="emph btn-inline btn-primary">**2024 - Present**</span> - **Cloud-Native Software Development (FE, BE, DB)**
+- <span class="emph btn-inline btn-primary">**2024 - Present**</span> - **Cloud-Native Software Development (FE, BE, Infra)**
 - <span class="emph btn-inline btn-primary">**2023 - Present**</span> - **MLOps**, **DevOps** using **Kubernetes Clusters**
 - <span class="emph btn-inline btn-primary">**2018 - 2023**</span> - Research of **Visual-SLAM and Digital Twin**
 - <span class="emph btn-inline btn-primary">**2012 - 2020**</span> - Research of **Automotive Computer Vision**
@@ -82,7 +86,16 @@ Following is a brief summary of my career in time order:
 {:.faded}
 
 
+### Highlights
+
+- Certifications of Kubernetes Family
+  - Certified Kubernetes Administrator (CKA)
+  - Certified Kubernetes Application Developer (CKAD)
+
+
 ### Documents
+
+
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted works
 - [CV]{:.heading.flip-title}: Full description of my career and training

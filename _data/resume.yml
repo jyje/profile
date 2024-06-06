@@ -50,10 +50,10 @@ work:
       DevOps and Computer Vision Engineer with:
     highlights:
       - >
-        <span class="btn btn-inline btn-primary">2024 - Present</span>
+        <span class="emph btn-inline btn-primary">2024 - Present</span>
           DevOps and Infrastructure from Cloud Services to On-Premise Clusters
       - >
-        <span class="btn btn-inline btn-primary">2021 - Present</span>
+        <span class="emph btn-inline btn-primary">2021 - Present</span>
           Visual-SLAM and SfM for Digital Twin Systems
   - company: "POSTECH"
     position: "Graduate Student with Integrated Program"
