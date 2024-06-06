@@ -44,25 +44,22 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
     - Providing remote Python kernels using JupyterHub
 
 - **as an DevOps Engineer 🧑🏼‍🔧**
-    - Creating private pipelines<sup>*1*</sup> for internal services
     - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
     - Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
-    - Reducing cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
-    - Certified Engineer
-        - CKA<sup>*6*</sup>:  Certified Kubernetes Administrator
-        - CKAD<sup>*6*</sup>: Certified Kubernetes Application Developer
 
 - **as a Cloud-Native Software Developer 🧑🏼‍💻**
-    - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
-    - Building computer vision workflows in cloud-native environments
+    - Developing applications ensuring high availability and scalability
+
+- **Solving Big Problems 🧐**
+    - Distributed training of ML models using Kubernetes<sup>*1,2*</sup>
+    - Optimize power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
 
 <i>
   <sup>**1**</sup>: Argo Workflows,
   <sup>**2**</sup>: Kubeflow,
   <sup>**3**</sup>: Bitbucket,
   <sup>**4**</sup>: Terraform,
-  <sup>**5**</sup>: AWS EKS,
-  <sup>**6**</sup>: The Linux Foundation
+  <sup>**5**</sup>: AWS EKS
 </i>
 {:.faded}
 
