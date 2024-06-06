@@ -72,13 +72,13 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 Following is a brief summary of my career in time order:
 
-- <span class="emph btn-inline btn-primary">**2024 - Present**</span> - **Cloud-Native Software Development (FE, BE, Infra)**
-- <span class="emph btn-inline btn-primary">**2023 - Present**</span> - **MLOps**, **DevOps** using **Kubernetes Clusters**
-- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> - Research of **Visual-SLAM and Digital Twin**
-- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> - Research of **Automotive Computer Vision**
-- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> - Research of **FPGA for Advanced Driver's Assistant Systems** 
-- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> - Research of **Digital Signal Processing** and **Machine Learning**
-- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> - Study for **Analog and Digital Communications**
+- <span class="emph btn-inline btn-primary">**2024 - Present**</span> : **Cloud-Native Software Development (FE, BE, Infra)**
+- <span class="emph btn-inline btn-primary">**2023 - Present**</span> : **MLOps**, **DevOps** using **Kubernetes Clusters**
+- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research of **Visual-SLAM and Digital Twin**
+- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research of **Automotive Computer Vision**
+- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> : Research of **FPGA for Advanced Driver's Assistant Systems** 
+- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> : Research of **Digital Signal Processing** and **Machine Learning**
+- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> : Study for **Analog and Digital Communications**
 
 **The annual interval stands for the focused duration of my full efforts*
 {:.faded}
