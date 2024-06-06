@@ -5,7 +5,9 @@ cover: true
 ---
 ## 🎉 Hello, World!
 
-Welcome! I'm **jyje**. I'm software engineer in South Korea and this is my formal portfolio site. You can navigate all my records along with my experience and career. It provides following sections:
+Welcome! I'm Jeayoung Jeon (**jyje**). I'm software engineer in South Korea and this is my formal portfolio site. You can navigate all my records along with my experience and career. I wrote details about me as specfic/clear as possible. Hope you enjoy it 🥰
+
+It provides following sections:
 
 - [Profile]{:.heading.flip-title}
     - My introduction and career overview
@@ -29,8 +31,8 @@ Welcome! I'm **jyje**. I'm software engineer in South Korea and this is my forma
     - My formal posts
     - My publications
 
-Thank you for visiting my site. If you have any questions or want to contact me, please feel free to [Mail] me. Have a nice day! 🌤️
 
+Thank you for visiting my site. If you have any questions or want to contact me, please feel free to [Mail] me. Have a nice day! 🌤️
 
 ![Logo of this site](assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 

@@ -1,9 +1,8 @@
 ---
 layout: profile
 title: Profile
-image: /assets/img/common/grand-ferris-wheel-night.jpg
-accent_image:
-  background: url('/assets/img/common/grand-ferris-wheel-night.jpg') center/cover
+accent_image: 
+  background: url('/assets/img/profile/c5a3b242-36b2-427a-a335-889548c1f282.jpg') center/cover
   overlay: false
 ---
 
@@ -12,16 +11,14 @@ accent_image:
 
 I am [Jeayoung Jeon]{:.heading.flip-title} and I work at [MAXST]{:.heading.flip-title} in South Korea. My current position is a **MLOps Engineer** and **Cloud-Native Software Developer**. My primary focus is on solving engineering problems using cluster technologies such as **Kubernetes Clusters**, **Machine Learning Pipelines**.
 
-This site is my live portfolio. It's open to everyone who get interest of me. This site contains my carrer and my works. I wrote full-details about me as specfic/clear as possible. Hope you enjoy it 🥰.
-
 *If you are interested in my carrer please feel free to contact me.*
 
 <div class="screen-only">
-  <a href="/profile/resume/" class="btn btn-sm btn-primary mt1">
+  <a href="/profile/resume" class="btn btn-sm btn-primary mt1">
     <small class="icon-briefcase"></small>
     Résumé
   </a>
-  <a href="/profile/cv/" class="btn btn-sm btn-primary mt1">
+  <a href="/profile/cv" class="btn btn-sm btn-primary mt1">
     <small class="icon-briefcase"></small>
     CV
   </a>
