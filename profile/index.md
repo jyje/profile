@@ -9,7 +9,7 @@ accent_image:
 
 ## ✨ Introduction
 
-My name is [Jeayoung Jeon]{:.heading.flip-title}. I'm an **MLOps/DevOps Engineer** in South Korea. I have an academic background in **Computer Vision**, **Digital Twin**, and **Machine Learning**.
+My name is [Jeayoung Jeon]{:.heading.flip-title}. I'm an **MLOps/DevOps Engineer** in South Korea. I have an academic background in **Computer Vision**, **Digital Twins**, and **Machine Learning**.
 
 Since 2012, I have accumulated deep experience, starting as a **Graduate Student Researcher** in the field of computer science and advancing to an **MLOps engineer**. From early of 2023, I am dedicating significant effort to solving problems based on **Kubernetes Clusters & Cloud-Native Applications** and **Machine Learning Pipelines**. Recently I have been interested in **Optimizing Power/Cost Infrastructure** using **Hybrid <sup>*public+onprem*</sup> Clusters**.
 
