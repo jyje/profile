@@ -39,21 +39,23 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 <!-- Itemized list of responsibilities -->
 - **as an MLOps Engineer 👨🏼‍🔬**
-    - Creating ML pipelines<sup>*1*</sup> for computer vision problems
-    - Deploying Katib AutoML<sup>*2*</sup> for hyperparameter tuning
-    - Providing remote Python kernels using JupyterHub
+    - <span class="emph btn-inline btn-primary">**Pipelines**</span> : Creating ML pipelines<sup>*1*</sup> for computer vision problems
+    - <span class="emph btn-inline btn-primary">**AutoML**</span> : Deploying Katib AutoML<sup>*1,2*</sup> for hyperparameter tuning
+    - <span class="emph btn-inline btn-primary">**Notebooks**</span> : Providing remote Python notebook kernels using JupyterHub
 
 - **as an DevOps Engineer 🧑🏼‍🔧**
-    - Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
-    - Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
+    - <span class="emph btn-inline btn-primary">**Pipelines**</span> : Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
+    - <span class="emph btn-inline btn-primary">**IaC**</span> : Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
+    - <span class="emph btn-inline btn-primary">**Monitoring**</span> : Monitoring applications using LGTM stacks
 
 - **as a Cloud-Native Software Developer 🧑🏼‍💻**
-    - Adapting applications to cloud-native environments
-    - Developing applications ensuring high availability and scalability
+    - <span class="emph btn-inline btn-primary">**MSA**</span>
+        - Adapting applications to cloud-native environments
+        - Developing applications ensuring high availability and scalability
 
 - **Solving Big Problems 🧐**
-    - Distributed training of ML models using Kubernetes<sup>*1,2*</sup>
-    - Optimize power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
+    - <span class="emph btn-inline btn-primary">**MLOps**</span> : Distributed training of ML models using Kubernetes<sup>*1,2*</sup>
+    - <span class="emph btn-inline btn-primary">**DevOps**</span> : Optimize power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
 
 <i>
   <sup>**1**</sup>: Argo Workflows,
