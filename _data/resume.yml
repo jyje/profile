@@ -20,16 +20,16 @@ basics:
     region: "" # "California"
   profiles:
     - network: LinkedIn
-      username: jyje
+      username: "LinkedIn: jyje"
       url: https://linkedin.com/in/jyje/
     - network: Github
-      username: jyje
+      username: "Github: jyje"
       url: http://github.com/jyje/
     - network: StackShare
-      username: jyje
+      username: "StackShare: jyje"
       url: https://stackshare.io/jyje/jyje-pro-stack
-    - network: Google Scholar
-      username: Jeayoung Jeon
+    - network: GoogleScholar
+      username: "Google Scholar: Jeayoung Jeon"
       url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
     formatting:
@@ -42,6 +42,7 @@ basics:
       title: "Curriculum Vitae"
       summary: "cv-summary"
 work:
+
   - company: "MAXST"
     position: "Software Engineer"
     website: "https://maxst.com/en/"
@@ -50,11 +51,12 @@ work:
       DevOps and Computer Vision Engineer with:
     highlights:
       - >
-        <span class="emph btn-inline btn-primary">2024 - Present</span>
+        <span class="emph btn-inline btn-primary"><b>2023 - Present</b></span> :
           DevOps and Infrastructure from Cloud Services to On-Premise Clusters
       - >
-        <span class="emph btn-inline btn-primary">2021 - Present</span>
+        <span class="emph btn-inline btn-primary"><b>2021 - 2023</b></span> :
           Visual-SLAM and SfM for Digital Twin Systems
+
   - company: "POSTECH"
     position: "Graduate Student with Integrated Program"
     website: "https://eee.postech.ac.kr/"

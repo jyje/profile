@@ -965,7 +965,7 @@ That being said, you should be aware of these (small) breaking changes:
   To change the order in the output, change to order in the array.
   You can also drop entries from the output by removing them from the list.
 
-* Added an error page that is shown when client-side network errors occur. It contains a link to retry loading the page.
+* Added an error page that is shown when client-side  errors occur. It contains a link to retry loading the page.
   Previously, the browser's default error page would have been shown.
 
 * Added `hide_description` option to pages to prevent the content of `description` fields to show up in the output.
@@ -1296,7 +1296,7 @@ May 3 2017
 Hydejack has always featured a JavaScript-heavy sidebar, but other than that, JS has been used sparingly. This changes with this release, which adds a ton of (optional) code that changes the feel of the theme dramatically.
 
 ### Major
-Pages are now loaded and swapped through JavaScript. This has a number of effects. First of all, it looks cool, but the animations aren't just about aesthetics: They also help to hide the network time of fetching the next page, making the entire site feel faster. At the same time, the FOUC introduced in the last release will no longer occur (except on the initial page load).
+Pages are now loaded and swapped through JavaScript. This has a number of effects. First of all, it looks cool, but the animations aren't just about aesthetics: They also help to hide the  time of fetching the next page, making the entire site feel faster. At the same time, the FOUC introduced in the last release will no longer occur (except on the initial page load).
 
 * Most JS is now unified in the `_js` directory and written in ES2016.
 * The `blog-by-tag` layout has been renamed to `list`.

@@ -39,12 +39,12 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 <!-- Itemized list of responsibilities -->
 - **as an MLOps Engineer 👨🏼‍🔬**
-    - <span class="emph btn-inline btn-primary">**Pipelines**</span> : Creating ML pipelines<sup>*1*</sup> for computer vision problems
+    - <span class="emph btn-inline btn-primary">**ML Pipelines**</span> : Creating ML pipelines<sup>*1*</sup> for computer vision problems
     - <span class="emph btn-inline btn-primary">**AutoML**</span> : Deploying Katib AutoML<sup>*1,2*</sup> for hyperparameter tuning
     - <span class="emph btn-inline btn-primary">**Notebooks**</span> : Providing remote Python notebook kernels using JupyterHub
 
 - **as an DevOps Engineer 🧑🏼‍🔧**
-    - <span class="emph btn-inline btn-primary">**Pipelines**</span> : Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
+    - <span class="emph btn-inline btn-primary">**CI/CD Pipelines**</span> : Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
     - <span class="emph btn-inline btn-primary">**IaC**</span> : Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
     - <span class="emph btn-inline btn-primary">**Monitoring**</span> : Monitoring applications using LGTM stacks
 
