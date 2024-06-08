@@ -9,11 +9,11 @@ accent_image:
 
 ## ✨ Introduction
 
-My name is [Jeayoung Jeon]{:.heading.flip-title}. I'm an **MLOps/DevOps Engineer** in South Korea. I have an academic background in **Computer Vision**, **Digital Twins**, and **Machine Learning**.
+My name is [Jeayoung Jeon]{:.heading.flip-title}, and I'm a software engineer living in South Korea.
+I work at [MAXST]{:.heading.flip-title} as an **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**.
+I get up early in the morning and work out after work. In my spare time, I enjoy walking my dog and diving into the world of the **Kubernetes Community**.
 
-Since 2012, I have accumulated deep experience, starting as a **Graduate Student Researcher** in the field of computer science and advancing to an **MLOps engineer**. From early of 2023, I am dedicating significant effort to solving problems based on **Kubernetes Clusters & Cloud-Native Applications** and **Machine Learning Pipelines**. Recently I have been interested in **Optimizing Power/Cost Infrastructure** using **Hybrid <sup>*public+onprem*</sup> Clusters**.
-
-In my spare time, I enjoy walking my dog and writing blog how to build clusters with **Raspberry Pis** at home.
+To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.heading.flip-title}, and the following sections.
 
 <div class="screen-only">
   <a href="/profile/resume" class="btn btn-sm btn-primary mt1">
@@ -35,15 +35,14 @@ In my spare time, I enjoy walking my dog and writing blog how to build clusters 
 
 ## 🧑🏼‍🔧 Current Position
 
-Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software engineer with two roles: **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**. Followings are my major responsibilities and roles in the company:
+Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software engineer with two roles: **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**. My major responsibilities and roles in the company include:
 
-<!-- Itemized list of responsibilities -->
 - **as an MLOps Engineer 👨🏼‍🔬**
     - <span class="emph btn-inline btn-primary">**ML Pipelines**</span> : Creating ML pipelines<sup>*1*</sup> for computer vision problems
     - <span class="emph btn-inline btn-primary">**AutoML**</span> : Deploying Katib AutoML<sup>*1,2*</sup> for hyperparameter tuning
     - <span class="emph btn-inline btn-primary">**Notebooks**</span> : Providing remote Python notebook kernels using JupyterHub
 
-- **as an DevOps Engineer 🧑🏼‍🔧**
+- **as a DevOps Engineer 🧑🏼‍🔧**
     - <span class="emph btn-inline btn-primary">**CI/CD Pipelines**</span> : Deploying applications using private<sup>*1*</sup> and public<sup>*3*</sup> CI/CD pipelines
     - <span class="emph btn-inline btn-primary">**IaC**</span> : Managing public and on-premise clusters using IaC methodology<sup>*1,4*</sup>
     - <span class="emph btn-inline btn-primary">**Monitoring**</span> : Monitoring applications using LGTM stacks
@@ -55,7 +54,7 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 - **Solving Big Problems 🧐**
     - <span class="emph btn-inline btn-primary">**MLOps**</span> : Distributed training of ML models using Kubernetes<sup>*1,2*</sup>
-    - <span class="emph btn-inline btn-primary">**DevOps**</span> : Optimize power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
+    - <span class="emph btn-inline btn-primary">**DevOps**</span> : Optimizing power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
 
 <i>
   <sup>**1**</sup>: Argo Workflows,
@@ -72,30 +71,26 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 ### Timeline
 
-Following is a brief summary of my career in time order:
+Following is a brief summary of my career in chronological order:
 
 - <span class="emph btn-inline btn-primary">**2024 - Present**</span> : **Cloud-Native Software Development (FE, BE, Infra)**
 - <span class="emph btn-inline btn-primary">**2023 - Present**</span> : **MLOps**, **DevOps** using **Kubernetes Clusters**
-- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research of **Visual-SLAM and Digital Twin**
-- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research of **Automotive Computer Vision**
-- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> : Research of **FPGA for Advanced Driver's Assistant Systems** 
-- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> : Research of **Digital Signal Processing** and **Machine Learning**
-- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> : Study for **Analog and Digital Communications**
+- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM and Digital Twin**
+- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
+- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
+- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
+- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
 
-**The annual interval stands for the focused duration of my full efforts*
+*The annual interval stands for the focused duration of my full efforts*
 {:.faded}
-
 
 ### Highlights
 
-- Certifications of Kubernetes Family
+- **Certifications of Kubernetes Family**
   - Certified Kubernetes Administrator (CKA)
   - Certified Kubernetes Application Developer (CKAD)
 
-
 ### Documents
-
-
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted works
 - [CV]{:.heading.flip-title}: Full description of my career and training
