@@ -10,8 +10,12 @@ accent_image:
 ## ✨ Introduction
 
 My name is [Jeayoung Jeon]{:.heading.flip-title}, and I'm a software engineer living in South Korea.
-I work at [MAXST]{:.heading.flip-title} as an **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**.
-I get up early in the morning and work out after work. In my spare time, I enjoy walking my dog and diving into the world of the **Kubernetes Community**.
+
+- I work at [MAXST]{:.heading.flip-title} as an **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**.
+- I always study and work hard to solve big problems in my field.
+    - Run endurable and scalable applications in cloud-native environments.
+    - Create pipelines for computer vision problems in minimal cost.
+- In my spare time, I enjoy walking my dog and diving into the world of the **Kubernetes Community**.
 
 To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.heading.flip-title}, and the following sections.
 
