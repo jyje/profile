@@ -88,7 +88,7 @@ permalink:             /:categories/:title # /:categories/:year-:month-:day-:tit
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/blog/eggroom-2022summer-darkblur.jpg # /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/common/5fe0646a-8736-4401-929f-21eee9b64dae.jpg # /assets/img/sidebar-bg.jpg
 accent_color:          rgb(104, 12, 44)
 
 # This is used for the `theme-color` meta tag,
