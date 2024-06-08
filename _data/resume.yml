@@ -65,8 +65,19 @@ work:
     summary: >
       During my time as a graduate student at POSTECH, I had the privilege of working in two renowned research labs:
     highlights:
-      - "[2012-2018] Advanced Signal Processing Lab."
-      - "[2018-2020] Computing and Control Engineering Lab."
+      - >
+        <span class="emph btn-inline btn-primary"><b>2018 - 2020</b></span> :
+            <b>Computing and Control Engineering Lab.</b>
+        <ul>
+          <li>
+            <span class="emph btn-inline btn-primary"><b>2018 - 2020</b></span> :
+              <b>Computing and Control Engineering Lab.</b>
+          </li>
+        </ul>
+
+      - >
+        <span class="emph btn-inline btn-primary"><b>2012 - 2018</b></span> :
+          <b>Advanced Signal Processing Lab.</b>
   - company: "POSTECH"
     position: "Teaching Assistant"
     website: "https://eee.postech.ac.kr/"
