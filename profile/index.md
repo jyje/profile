@@ -2,7 +2,7 @@
 layout: profile
 title: Profile
 accent_image: 
-  background: url('/assets/img/profile/c5a3b242-36b2-427a-a335-889548c1f282.jpg') center/cover
+  background: url('/assets/img/profile/f3e0772a-f39b-4c14-8fc1-114bc1780d10.jpg') center/cover
   overlay: false
 ---
 
