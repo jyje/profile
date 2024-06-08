@@ -13,3 +13,6 @@ Gemfile.lock
 
 # vscode
 .vscode
+
+# python
+.python-version
