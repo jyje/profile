@@ -73,6 +73,11 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 ## 💼 Career
 
+### Documents
+
+- [Résumé]{:.heading.flip-title}: Recent highlighted works
+- [CV]{:.heading.flip-title}: Full description of my career and training
+
 ### Timeline
 
 Following is a brief summary of my career:
@@ -88,12 +93,16 @@ Following is a brief summary of my career:
 *The annual interval stands for the focused duration of my full efforts*
 {:.faded}
 
+### Certifications
+
+- CKA: Certified Kubernetes Administrator
+- CKAD: Certified Kubernetes Application Developer
+
+
 ---
 
 ## 📜 Anothor Documents
 
-- [Résumé]{:.heading.flip-title}: Recent highlighted works
-- [CV]{:.heading.flip-title}: Full description of my career and training
 - [Blog]{:.heading.flip-title}: My blog posts written in Korean
 
 ![Logo of this site](../assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
