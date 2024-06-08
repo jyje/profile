@@ -20,7 +20,7 @@ google-drive:
   name: Google Drive
   icon: icon-google-drive
 google-scholar:
-  name: GoogleScholar
+  name: Google Scholar
   icon: icon-scholar
   prepend: 'https://scholar.google.com/citations?user='
 facebook:

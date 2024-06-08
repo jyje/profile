@@ -28,7 +28,7 @@ basics:
     - network: StackShare
       username: "StackShare: jyje"
       url: https://stackshare.io/jyje/jyje-pro-stack
-    - network: GoogleScholar
+    - network: google-scholar
       username: "Google Scholar: Jeayoung Jeon"
       url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
