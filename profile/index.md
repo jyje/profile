@@ -75,7 +75,7 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 ### Timeline
 
-Following is a brief summary of my career in chronological order:
+Following is a brief summary of my career:
 
 - <span class="emph btn-inline btn-primary">**2024 - Present**</span> : **Cloud-Native Software Development (FE, BE, Infra)**
 - <span class="emph btn-inline btn-primary">**2023 - Present**</span> : **MLOps**, **DevOps** using **Kubernetes Clusters**
@@ -88,13 +88,9 @@ Following is a brief summary of my career in chronological order:
 *The annual interval stands for the focused duration of my full efforts*
 {:.faded}
 
-### Highlights
+---
 
-- **Certifications of Kubernetes Family**
-  - Certified Kubernetes Administrator (CKA)
-  - Certified Kubernetes Application Developer (CKAD)
-
-### Documents
+## 📜 Anothor Documents
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted works
 - [CV]{:.heading.flip-title}: Full description of my career and training
