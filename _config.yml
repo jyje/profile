@@ -16,7 +16,7 @@ lang:                  en-US, ko-KR
 title:                 jyje
 
 # A short description (~150 chars) of the page used for the meta description tag. Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
+description: >
   I'm a software engineer majoring in MLOps, Computer Vision and Cloud-Native Software Engineering. I'm currently working at MAXST as a MLOps, DevOps and Backend Engineer.
 
 # A shorter description for the sidebar.
@@ -47,8 +47,8 @@ menu:
     url:               /works
   - title:             Articles
     url:               /articles
-  - title:             Tags
-    url:               /tags
+  - title:             Index
+    url:               /indice
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

@@ -1,4 +1,5 @@
 ---
+type: category
 layout: grid
 title: Articles
 slug: articles

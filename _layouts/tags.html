@@ -4,7 +4,7 @@ layout: page
 
 {{ content }}
 
-{% assign documents = site.documents %}
+<!-- {% assign documents = site.documents %}
 {% assign featured_categories = documents | where: "type", "category" | sort %}
 {% assign featured_tags = documents | where: "type", "tag" | sort %}
 
@@ -35,4 +35,51 @@ layout: page
       {% endif %}
     {% endfor %}
   </ul>
-{% endfor %}
+{% endfor %} -->
+
+<h2>Categories</h2>
+
+{% assign documents = site.documents %}
+{% assign featured_categories = documents | where: "type", "category" | sort %}
+{% assign categories = site.categories | sort %}
+
+<!-- make div with left margin 20px -->
+<div style="margin-left: 1rem;">
+  <ul class="related-posts">
+    {% for category in featured_categories %}
+      <li>
+        <a href="{{ category.url | relative_url }}">{{ category.title }}</a>
+        {% for site_category in categories %}
+          {% if site_category[0] == category.slug %}
+            <span class="faded fine">({{ site_category | last | size }})</span>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<hr class="hr">
+
+<h2>Tags</h2>
+
+{% assign documents = site.documents %}
+{% assign featured_tags = documents | where: "type", "tag" | sort %}
+{% assign tags = site.tags | sort %}
+
+<div style="margin-left: 1rem;">
+  <ul class="related-posts">
+    {% for tag in featured_tags %}
+      <li>
+        <a href="{{ tag.url | relative_url }}">{{ tag.title }}</a>
+        {% for site_tag in tags %}
+          {% if site_tag[0] == tag.slug %}
+            <span class="faded fine">({{ site_tag | last | size }})</span>
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

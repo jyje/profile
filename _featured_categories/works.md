@@ -1,4 +1,5 @@
 ---
+type: category
 layout: list
 title: Works
 slug: works

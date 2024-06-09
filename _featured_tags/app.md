@@ -1,6 +1,6 @@
 ---
-layout: tag-list
 type: tag
+layout: tag-list
 title: App
 slug: app
 sidebar: true

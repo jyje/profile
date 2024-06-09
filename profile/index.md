@@ -97,10 +97,10 @@ Following is a brief summary of my career:
 
 ### Certifications
 
-See my [Certifications]{:.heading.flip-title} for more details.
+- [CKA](../certifications/cka-certified-kubernetes-administrator){:.heading.flip-title}: Certified Kubernetes Administrator
+- [CKAD](../certifications/ckad-certified-kubernetes-application-developer){:.heading.flip-title}: Certified Kubernetes Application Developer
 
-- CKA: Certified Kubernetes Administrator
-- CKAD: Certified Kubernetes Application Developer
+See my [certifications]{:.heading.flip-title} for more details.
 
 
 ---
