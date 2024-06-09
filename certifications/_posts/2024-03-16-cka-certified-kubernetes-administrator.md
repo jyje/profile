@@ -39,3 +39,11 @@ To aid my preparation, I enrolled in the [Certified Kubernetes Administrator (CK
 ![KodeKloud Course Completion Certificate](/assets/img/certtifications/3ca76e29-fec9-4b5d-9fad-dd7e0b33b1dc.jpg){:.lead width="500" height="100" loading="lazy"}
 
 You can verify this course completion certificate [here](https://kodekloud.com/certificate-verification/2D0D53315009-2D0D590835C9-2D0D4CFE3F61).
+
+
+## 3. Share to the World
+
+<p align="center">
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7175108596026781696" height="700px" width="90%" frameborder="0" allowfullscreen="" title="Excited to share that I've successfully completed the Certified Kubernetes Administrator (CKA) program from The Linux Foundation"></iframe>
+</p>
+
