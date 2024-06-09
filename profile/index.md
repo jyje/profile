@@ -95,6 +95,8 @@ Following is a brief summary of my career:
 
 ### Certifications
 
+See my [Certifications]{:.heading.flip-title} for more details.
+
 - CKA: Certified Kubernetes Administrator
 - CKAD: Certified Kubernetes Application Developer
 
@@ -108,12 +110,13 @@ Following is a brief summary of my career:
 ![Logo of this site](../assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
-[Profile]: profile "my-profile --verbose"
-[Résumé]: profile/resume "my-profile resume"
-[Curriculum Vitae]: profile/cv "my-profile cv"
-[CV]: profile/cv "my-profile cv"
-[Works]: works
-[Articles]: articles
+[Profile]: / "my-profile --verbose"
+[Résumé]: resume "my-profile resume"
+[Curriculum Vitae]: cv "my-profile cv"
+[CV]: cv "my-profile cv"
+[Certifications]: ../certifications
+[Works]: ../works
+[Articles]: ../articles
 [Blog]: https://blog.jyje.online "My blog"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
