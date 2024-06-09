@@ -56,16 +56,18 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
         - Adapting applications to cloud-native environments
         - Developing applications ensuring high availability and scalability
 
-- **Solving Big Problems 🧐**
+- **Chanllenges 🧐**
     - <span class="emph btn-inline btn-primary">**MLOps**</span> : Distributed training of ML models using Kubernetes<sup>*1,2*</sup>
     - <span class="emph btn-inline btn-primary">**DevOps**</span> : Optimizing power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
+    - <span class="emph btn-inline btn-primary">**ChatOps**</span> : Upgrade chatbots with Open Sourced LLMs<sup>*6*</sup> to automate boring and danger routines
 
 <i>
   <sup>**1**</sup>: Argo Workflows,
   <sup>**2**</sup>: Kubeflow,
   <sup>**3**</sup>: Bitbucket,
   <sup>**4**</sup>: Terraform,
-  <sup>**5**</sup>: AWS EKS
+  <sup>**5**</sup>: AWS EKS,
+  <sup>**6**</sup>: Llama 3 with Ollama
 </i>
 {:.faded}
 
