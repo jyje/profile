@@ -1,10 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: Paper
-slug: paper
-category: works
+title: kit
+slug: kit
 sidebar: true
 description: >
-   Paper Works
+   Study in kit
 ---

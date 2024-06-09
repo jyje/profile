@@ -1,10 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: Library
-slug: library
-category: works
+title: Math
+slug: math
 sidebar: true
 description: >
-   Library project
+   My math note
 ---

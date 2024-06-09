@@ -1,10 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: App
-slug: app
-category: works
+title: Awards
+slug: awards
 sidebar: true
 description: >
-   Application project
+   Awards and achievements 🎉
 ---

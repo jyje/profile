@@ -1,10 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: Thesis
-slug: thesis
-category: works
+title: Paper
+slug: paper
 sidebar: true
 description: >
-   Thesis for degree
+   Paper Works
 ---

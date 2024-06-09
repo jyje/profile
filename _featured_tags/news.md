@@ -1,10 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: MAXST
-slug: maxst
-category: works
+title: News
+slug: news
 sidebar: true
 description: >
-   Works in MAXST
+   Personal updates
 ---
