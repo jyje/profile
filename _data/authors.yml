@@ -27,9 +27,9 @@ jyje:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    blog:            https://blog.jyje.online
-    github:          jyje
     linkedin:        jyje
+    github:          jyje
+    blog:            https://blog.jyje.online
     email:           jyjeon+online@outlook.com
     # stackshare:      jyje/jyje-pro-stack
     # googlescholar:  gwCPQM8AAAAJ
