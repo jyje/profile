@@ -73,18 +73,13 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 ## 💼 Career
 
-### Documents
-
-- [Résumé]{:.heading.flip-title}: Recent highlighted works
-- [CV]{:.heading.flip-title}: Full description of my career and training
-
 ### Timeline
 
 Following is a brief summary of my career:
 
 - <span class="emph btn-inline btn-primary">**2024 - Present**</span> : **Cloud-Native Software Development (FE, BE, Infra)**
 - <span class="emph btn-inline btn-primary">**2023 - Present**</span> : **MLOps**, **DevOps** using **Kubernetes Clusters**
-- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM and Digital Twin**
+- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM and Digital Twins**
 - <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
 - <span class="emph btn-inline btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
 - <span class="emph btn-inline btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
@@ -92,6 +87,11 @@ Following is a brief summary of my career:
 
 *The annual interval stands for the focused duration of my full efforts*
 {:.faded}
+
+### Biographies
+
+- [Résumé]{:.heading.flip-title}: Recent highlighted works
+- [CV]{:.heading.flip-title}: Full description of my career and training
 
 ### Certifications
 
@@ -103,7 +103,7 @@ See my [Certifications]{:.heading.flip-title} for more details.
 
 ---
 
-## 📜 Anothor Documents
+## 📜 etc.
 
 - [Blog]{:.heading.flip-title}: My blog posts written in Korean
 
