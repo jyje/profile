@@ -11,7 +11,10 @@ basics:
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: >
-    This is Jeayoung Jeon [🇰🇷전제영]. And I'm self-motivated-i-think devops and computer vision engineer. Massive cluster computing, AR/VR, automotives, digital twins and data analysis are my major competences. Recently, I dived into devops and cross-platform applications providing computer vision app and services 👩‍🏭.
+    This is Jeayoung Jeon [🇰🇷전제영].
+    I'm a software engineer in South Korea.
+    I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
+    I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -70,8 +73,9 @@ work:
             <b>Computing and Control Engineering Lab.</b>
         <ul>
           <li>
-            <span class="emph btn-inline btn-primary"><b>2018 - 2020</b></span> :
-              <b>Computing and Control Engineering Lab.</b>
+            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+              Visual-SLAM for Digital Twin Systems
+            </a>
           </li>
         </ul>
 
@@ -124,7 +128,7 @@ education:
     #   - "DB1101 - Basic SQL"
     #   - "CS2011 - Java Introduction"
   - institution: "Kumoh National Institute of Technology (kit)"
-    website: "https://eng.kumoh.ac.kr/eng/"
+    website: "https://eng.kumoh.ac.kr/eng"
     area: "School of Electronic Engineering, Electronic Communication"
     studyType: "Bachelor"
     startDate: "2008-03-01"

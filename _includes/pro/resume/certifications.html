@@ -1,11 +1,11 @@
-{% if resume.certifications.size > 0 %}
+{% if resume.certificates.size > 0 %}
 <section>
   <div class="npb">
-  <h2 id="certifications" class="h3 hr-bottom">
-    {{ strings.resume.certifications | default:"certifications" }}
-    <span class="symbol {{ icons.certifications | default:'icon-library' }}"></span>
+  <h2 id="certificates" class="h3 hr-bottom">
+    {{ strings.resume.certificates | default:"certifications" }}
+    <span class="symbol {{ icons.certificates | default:'icon-library' }}"></span>
   </h2>
-  {% for cert in resume.certifications %}
+  {% for cert in resume.certificates %}
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
       {% if cert.startDate.size > 0 %}
@@ -18,7 +18,7 @@
         {% capture area %}<span class="bc">{{ cert.area }}</span>{% endcapture %}
         {% capture institution %}<span class="bc" {% if cert.endDate.size > 0 %}property="name"{% endif %}>{{ cert.institution }}</span>{% endcapture %}
         {% capture gpa %}<span class="bc">{{ cert.gpa }}</span>{% endcapture %}
-        {{ strings.resume.certifications_title
+        {{ strings.resume.certificates_title
           | default:"<!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->"
           | replace:"<!--study_type-->", study_type
           | replace:"<!--area-->", area

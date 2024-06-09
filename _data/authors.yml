@@ -9,10 +9,9 @@ jyje:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
     This is Jeayoung Jeon [🇰🇷전제영].
-    I'm self-motivated-i-think software engineer with computer vision.
-    Computer vision and data science are my major competences.
-    Tasks for my current vocation is focused on AR, VR and automotives.
-    Recently, I has been dived into DevOps and cross-platform engineering
+    I'm a software engineer in South Korea.
+    I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
+    I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
   # The user I mentioned supposed to be common customers and vivid developers.
 
   # This photo will be used in the about section
