@@ -41,7 +41,7 @@ To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.hea
 
 ---
 
-## 🧑🏼‍🔧 Current Position
+## 🧑🏼‍💻 Current Position
 
 Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software engineer with two roles: **MLOps/DevOps Engineer** and **Cloud-Native Software Developer**. My major responsibilities and roles in the company include:
 
@@ -57,21 +57,23 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 - **as a Cloud-Native Software Developer 🧑🏼‍💻**
     - <span class="emph btn-inline btn-primary">**MSA**</span>
-        - Adapting applications to cloud-native environments
+        - Developing APIs<sup>*5*</sup> for life-cycle management of ML pipelines<sup>*1*</sup> 
         - Developing applications ensuring high availability and scalability
+        - Adapting applications to cloud-native environments
 
 - **Challenges 🧐**
     - <span class="emph btn-inline btn-primary">**MLOps**</span> : Distributed training of ML models using Kubernetes<sup>*1,2*</sup>
-    - <span class="emph btn-inline btn-primary">**DevOps**</span> : Optimizing power/cost of public<sup>*5*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
-    - <span class="emph btn-inline btn-primary">**ChatOps**</span> : Upgrade chatbots with open-source LLMs<sup>*6*</sup> to automate boring and danger routines
+    - <span class="emph btn-inline btn-primary">**DevOps**</span> : Optimizing power/cost of public<sup>*6*</sup> clusters using hybrid <sup>*public+onprem*</sup> clusters
+    - <span class="emph btn-inline btn-primary">**ChatOps**</span> : Upgrade chatbots with open-source LLMs<sup>*7*</sup> to automate boring and danger routines
 
 <i>
   <sup>**1**</sup>: Argo Workflows,
   <sup>**2**</sup>: Kubeflow,
-  <sup>**3**</sup>: Bitbucket,
-  <sup>**4**</sup>: Terraform,
-  <sup>**5**</sup>: AWS EKS,
-  <sup>**6**</sup>: Llama 3 with Ollama
+  <sup>**3**</sup>: Bitbucket Pipeline and GitHub Actions
+  <sup>**4**</sup>: Ansible and Terraform,
+  <sup>**5**</sup>: FastAPI,
+  <sup>**6**</sup>: AWS EKS,
+  <sup>**7**</sup>: Llama 3 with Ollama
 </i>
 {:.faded}
 
