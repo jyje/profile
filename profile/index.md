@@ -69,7 +69,7 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 <i>
   <sup>**1**</sup>: Argo Workflows,
   <sup>**2**</sup>: Kubeflow,
-  <sup>**3**</sup>: Bitbucket Pipeline and GitHub Actions
+  <sup>**3**</sup>: Bitbucket Pipeline and GitHub Actions,
   <sup>**4**</sup>: Ansible and Terraform,
   <sup>**5**</sup>: FastAPI,
   <sup>**6**</sup>: AWS EKS,
