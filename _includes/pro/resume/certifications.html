@@ -3,7 +3,7 @@
   <div class="npb">
   <h2 id="certificates" class="h3 hr-bottom">
     {{ strings.resume.certificates | default:"Certifications" }}
-    <span class="symbol {{ icons.certificates | default:'icon-library' }}"></span>
+    <span class="symbol {{ icons.certifications | default:'icon-library' }}"></span>
   </h2>
   {% for cert in resume.certificates %}
   <section>
@@ -14,14 +14,16 @@
         </p>
       {% endif %}
       <h3 class="h4 faded" {% if cert.endDate.size > 0 %}property="alumniOf" typeof="certificationOrganization"{% endif %}>
-        {% capture title %}<span class="bc">{{ cert.title }}</span>{% endcapture %}
-        {% capture provider %}<span class="bc">{{ cert.provider }}</span>{% endcapture %}
-        {% capture institution %}<span class="bc" {% if cert.endDate.size > 0 %}property="name"{% endif %}>{{ cert.institution }}</span>{% endcapture %}
-        {% capture gpa %}<span class="bc">{{ cert.gpa }}</span>{% endcapture %}
+        {% if cert.website.size > 0 %}
+          {% capture title %}{% include components/link.html title=cert.title href=cert.website class="h-card" span_class="bc" property="sameAs" %}{% endcapture %}
+        {% else %}
+          {% capture title %}<span class="bc">{{ cert.title }}</span>{% endcapture %}
+        {% endif %}
+        {% capture organization %}<span class="bc">{{ cert.organization }}</span>{% endcapture %}
         {{ strings.resume.certifications_title
-          | default:"<!--title--> from <!--provider-->"
+          | default:"<!--title--> from <!--organization-->"
           | replace:"<!--title-->", title
-          | replace:"<!--provider-->", provider
+          | replace:"<!--organization-->", organization
         }}
       </h3>
     </header>

@@ -119,53 +119,54 @@ welcome:
   more_posts:          See <!--posts_title--> for more
 
 resume:
-  location:            Location
-  location_separator:  ', '
-  email:               Email
-  phone:               Phone
-  website:             Website
-  work:                Work
-  work_title:          <!--position--> at <!--company-->
-  highlights:          Highlights
-  volunteer:           Volunteer
-  volunteer_title:     <!--position--> at <!--organization-->
-  education:           Education & Experience
-  education_title:     <!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->
-  certifications:      Certifications
-  certifications_title: <!--title--> from <!--provider-->
-  courses:             Courses
-  awards:              Awards
-  awards_title:        <!--title--> from <!--awarder-->
-  publications:        Publications
-  publications_title:  <!--name--> by <!--publisher-->
-  references:          References
-  languages:           Languages
-  fluency:             Fluency
-  skills:              Skills
-  level:               Level
-  interests:           Interests
-  summary:             Summary
-  keywords:            Keywords
-  print:               Print
-  download_pdf:        PDF
-  download_vcf:        vCard
-  download_json:       JSON
+  location:              Location
+  location_separator:    ', '
+  email:                 Email
+  phone:                 Phone
+  website:               Website
+  work:                  Work
+  work_title:            <!--position--> at <!--company-->
+  highlights:            Highlights
+  volunteer:             Volunteer
+  volunteer_title:       <!--position--> at <!--organization-->
+  education:             Education & Experience
+  education_title:       <!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->
+  certifications:        Certifications
+  certifications_title:  <!--title--> from <!--organization-->
+  expired_in:            Expired in
+  courses:               Courses
+  awards:                Awards
+  awards_title:          <!--title--> from <!--awarder-->
+  publications:          Publications
+  publications_title:    <!--name--> by <!--publisher-->
+  references:            References
+  languages:             Languages
+  fluency:               Fluency
+  skills:                Skills
+  level:                 Level
+  interests:             Interests
+  summary:               Summary
+  keywords:              Keywords
+  print:                 Print
+  download_pdf:          PDF
+  download_vcf:          vCard
+  download_json:         JSON
   icons:
-    fallback:          icon-link
-    location:          icon-location
-    born:              icon-quill
-    citizenship:       icon-flag
-    maritalStatus:     icon-man-woman
-    email:             icon-envelop
-    phone:             icon-phone
-    website:           icon-home3
-    work:              icon-briefcase
-    volunteer:         icon-earth
-    certifications:    icon-library
-    education:         icon-library
-    awards:            icon-trophy
-    publications:      icon-book
-    references:        icon-quotes-right
-    languages:         icon-bubbles
-    skills:            icon-wrench
-    interests:         icon-heart
+    fallback:            icon-link
+    location:            icon-location
+    born:                icon-quill
+    citizenship:         icon-flag
+    maritalStatus:       icon-man-woman
+    email:               icon-envelop
+    phone:               icon-phone
+    website:             icon-home3
+    work:                icon-briefcase
+    volunteer:           icon-earth
+    certifications:      icon-checkmark
+    education:           icon-library
+    awards:              icon-trophy
+    publications:        icon-book
+    references:          icon-quotes-right
+    languages:           icon-bubbles
+    skills:              icon-wrench
+    interests:           icon-heart

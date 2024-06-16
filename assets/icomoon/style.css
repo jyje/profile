@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rzmmer');
-  src:  url('fonts/icomoon.eot?rzmmer#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rzmmer') format('truetype'),
-    url('fonts/icomoon.woff?rzmmer') format('woff'),
-    url('fonts/icomoon.svg?rzmmer#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fns21r');
+  src:  url('fonts/icomoon.eot?fns21r#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fns21r') format('truetype'),
+    url('fonts/icomoon.woff?fns21r') format('woff'),
+    url('fonts/icomoon.svg?fns21r#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -35,6 +35,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-certificate:before {
+  content: "\e906";
+}
+.icon-drivers-license:before {
+  content: "\f2c2";
+}
+.icon-id-card:before {
+  content: "\f2c2";
+}
+.icon-drivers-license-o:before {
+  content: "\f2c3";
+}
+.icon-id-card-o:before {
+  content: "\f2c3";
+}
 .icon-notion:before {
   content: "\e901";
 }
@@ -233,6 +248,9 @@
 .icon-library1:before {
   content: "\e922";
 }
+.icon-profile:before {
+  content: "\e923";
+}
 .icon-map2:before {
   content: "\e94c";
 }
@@ -247,6 +265,9 @@
 }
 .icon-user-tie:before {
   content: "\e976";
+}
+.icon-mug:before {
+  content: "\e9a2";
 }
 .icon-rocket:before {
   content: "\e9a5";
