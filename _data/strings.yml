@@ -45,7 +45,7 @@ continue_reading:      >
 
 cookies_banner:
   text:                > # This site uses cookies. [Cookies Policy](/cookies-policy/).
-    NOTICE👩‍🔧🔧:: **THIS SITE IS UNDER CONSTRUCTION**. Until remaining this section, None of contents in my portfolio is not offitially clearfied. And this site uses only one cookie for this message.
+    NOTICE 🔧:: **THIS SITE IS UNDER CONSTRUCTION**. Until remaining this section, None of contents in my portfolio is not offitially clearfied. And this site uses only one cookie for this message.
   okay:                GOT IT
 
 not_found:
@@ -132,7 +132,7 @@ resume:
   education:           Education & Experience
   education_title:     <!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->
   certifications:      Certifications
-  certification_title: <!--title--> from <!--provider-->
+  certifications_title: <!--title--> from <!--provider-->
   courses:             Courses
   awards:              Awards
   awards_title:        <!--title--> from <!--awarder-->

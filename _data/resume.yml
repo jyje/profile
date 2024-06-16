@@ -14,6 +14,7 @@ basics:
     This is Jeayoung Jeon [🇰🇷전제영].
     I'm a software engineer in South Korea.
     I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
+    I always want to be a good co-worker and prove it every day.
     I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
   location:
     address: "" # "2712 Broadway St"
@@ -23,32 +24,42 @@ basics:
     region: "" # "California"
   profiles:
     - network: LinkedIn
-      username: "LinkedIn: jyje"
-      url: https://linkedin.com/in/jyje/
+      username: "jyje"
+      url: https://linkedin.com/in/jyje
     - network: Github
-      username: "Github: jyje"
-      url: http://github.com/jyje/
+      username: "jyje"
+      url: http://github.com/jyje
     - network: StackShare
-      username: "StackShare: jyje"
+      username: "jyje"
       url: https://stackshare.io/jyje/jyje-pro-stack
     - network: google-scholar
-      username: "Google Scholar: Jeayoung Jeon"
+      username: "Jeayoung Jeon"
       url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
-    formatting:
-      separator: ": "
     resume:
-      title: "Résumé"
+      title: Résumé
       summary: >
-        Currently, I'm working at MAXST as a DevOps and Computer Vision Engineer. I'm responsible for the infrastructure from cloud services to on-premise clusters and visual-SLAM and SfM for digital twin systems. I have a Master's degree in Electrical Engineering from POSTECH, where I worked in two renowned research labs. I also served as a Teaching Assistant for various courses. I have a Bachelor's degree in Electronic Communication from KIT. I'm a Certified Kubernetes Administrator.
+        My name is Jeayoung Jeon [🇰🇷전제영]. I'm working at MAXST as an **MLOps** and **Cloud-Native Software Engineer**.
+
+        - 🧑‍💻 Current Roles
+          - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
+          - Making **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
+          - Making **Team Services** to increase team productivity with **DevOps**, **GitOps**, **ChatOps** and **MLOps**.
+        - 🎉 Achievements
+          - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
+          - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines** and Daily usages for 10+ teammates 🥳.
+        - 🧐 Challenges
+          - Finding the best-practice-way between team culture and new technologies.
+          - Finding the optimal way between better performance and less cost.
     cv:
-      title: "Curriculum Vitae"
-      summary: "cv-summary"
+      title: Curriculum Vitae
+      summary: >
+        My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
 work:
 
-  - company: "MAXST"
-    position: "Software Engineer"
-    website: "https://maxst.com/en/"
+  - company: MAXST
+    position: Software Engineer
+    website: "https://maxst.com/en"
     startDate: "2021-01-16"
     summary: >
       DevOps and Computer Vision Engineer with:
@@ -56,6 +67,7 @@ work:
       - >
         <span class="emph btn-inline btn-primary"><b>2023 - Present</b></span> :
           DevOps and Infrastructure from Cloud Services to On-Premise Clusters
+          
       - >
         <span class="emph btn-inline btn-primary"><b>2021 - 2023</b></span> :
           Visual-SLAM and SfM for Digital Twin Systems
@@ -114,8 +126,13 @@ work:
 certificates:
   - title: "CKA: Certified Kubernetes Administrator"
     provider: "The Linux Foundation"
-    date: "2024-06-01"
-    website: ""
+    verified: "2024-06-01"
+    expired: "2027-05-31"
+    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
+  - title: "CKAD: Certified Kubernetes Administrator"
+    provider: "The Linux Foundation"
+    verified: "2024-06-01"
+    website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
 education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
@@ -166,9 +183,9 @@ education:
 #       - "GIF"
 languages:
   - language: "Korean"
-    fluency: "Native speaker"
+    fluency: "Native"
   - language: "English"
-    fluency: "Working proficiency"
+    fluency: "Working Proficiency"
 # interests:
 #   - name: "Wildlife"
 #     keywords:

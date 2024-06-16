@@ -1,0 +1,7 @@
+{% assign from_to_separator = strings.from_to_separator | default:strings.resume.from_to_separator | default:"–" %}
+
+<time datetime="{{ include.verified | date_to_xmlschema }}">{{ include.verified | date:include.format }}</time>
+{% if include.expired.size > 0 %}
+  {{from_to_separator}}
+  <time datetime="{{ include.expired | date_to_xmlschema }}">{{ include.expired | date:include.format }}</time>
+{% endif %}

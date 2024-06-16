@@ -47,9 +47,8 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 
 [Mail]: mailto:jyjeon+online@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
-<!-- Update server -->
+<!-- 🧑‍💻 Set-up and Run -->
+
 <!-- bundle install -->
 <!-- bundle update --bundler -->
-
-<!-- Exec server -->
-<!-- bundle exec jekyll s -->
+<!-- bundle exec jekyll serve --force_polling --livereload -->

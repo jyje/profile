@@ -2,28 +2,26 @@
 <section>
   <div class="npb">
   <h2 id="certificates" class="h3 hr-bottom">
-    {{ strings.resume.certificates | default:"certifications" }}
+    {{ strings.resume.certificates | default:"Certifications" }}
     <span class="symbol {{ icons.certificates | default:'icon-library' }}"></span>
   </h2>
   {% for cert in resume.certificates %}
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
-      {% if cert.startDate.size > 0 %}
+      {% if cert.verified.size > 0 %}
         <p class="faded">
-          {% include components/from-to.html from=edu.startDate to=edu.endDate format=from_to_format %}
+          {% include components/verified-expired.html verified=cert.verified expired=cert.expired format=from_to_format %}
         </p>
       {% endif %}
       <h3 class="h4 faded" {% if cert.endDate.size > 0 %}property="alumniOf" typeof="certificationOrganization"{% endif %}>
-        {% capture study_type %}<span class="bc">{{ cert.studyType }}</span>{% endcapture %}
-        {% capture area %}<span class="bc">{{ cert.area }}</span>{% endcapture %}
+        {% capture title %}<span class="bc">{{ cert.title }}</span>{% endcapture %}
+        {% capture provider %}<span class="bc">{{ cert.provider }}</span>{% endcapture %}
         {% capture institution %}<span class="bc" {% if cert.endDate.size > 0 %}property="name"{% endif %}>{{ cert.institution }}</span>{% endcapture %}
         {% capture gpa %}<span class="bc">{{ cert.gpa }}</span>{% endcapture %}
-        {{ strings.resume.certificates_title
-          | default:"<!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->"
-          | replace:"<!--study_type-->", study_type
-          | replace:"<!--area-->", area
-          | replace:"<!--institution-->", institution
-          | replace:"<!--gpa-->", gpa
+        {{ strings.resume.certifications_title
+          | default:"<!--title--> from <!--provider-->"
+          | replace:"<!--title-->", title
+          | replace:"<!--provider-->", provider
         }}
       </h3>
     </header>
