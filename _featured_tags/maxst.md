@@ -5,5 +5,5 @@ title: MAXST
 slug: maxst
 sidebar: true
 description: >
-   Works in MAXST
+   Works in [MAXST](https://www.linkedin.com/company/maxst). 
 ---
