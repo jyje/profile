@@ -1,2 +1,2 @@
 
-# jyje.online powered by Hydejack
+# jyje.live powered by Hydejack

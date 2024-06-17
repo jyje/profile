@@ -32,7 +32,7 @@ To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.hea
     <small class="icon-checkmark"></small>
     Certifications
   </a>
-  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary mt1">
+  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary mt1">
     <small class="icon-bubble"></small>
     Blog (in Korean)
   </a>
@@ -125,7 +125,7 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Certifications]: ../certifications
 [Works]: ../works
 [Articles]: ../articles
-[Blog]: https://blog.jyje.online "My blog"
+[Blog]: https://blog.jyje.live "My blog"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
 [Mail]: mailto:jyjeon+online@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon

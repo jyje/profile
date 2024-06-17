@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   https://jyje.online
+url:                   https://jyje.live
 
 # General settings
 # ---------------------------------------------------------------------------------------
@@ -62,13 +62,13 @@ legal:
   - title:             Credits
     url:               /credits
   - title:             Blog
-    url:               https://blog.jyje.online
+    url:               https://blog.jyje.live
   - title:             Manage
-    url:               https://github.com/jyje/jyje.online
+    url:               https://github.com/jyje/jyje.live
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             "jyje.online ⓒ 2024"
+copyright:             "jyje.live ⓒ 2024"
 
 # Format of the permalinks
 permalink:             /:categories/:title # /:categories/:year-:month-:day-:title/

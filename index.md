@@ -1,6 +1,6 @@
 ---
 layout: welcome
-title: jyje.online
+title: jyje.live
 cover: true
 ---
 ## 🎉 Hello, World!
