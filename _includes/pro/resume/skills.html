@@ -48,9 +48,9 @@
           <span class="sr-only">{{ strings.resume.keywords | default:"Keywords" }}{{ colon }}</span>
           <ul class="skill-tags">
             {% for key in skl.keywords %}
-              <!-- if key starts with '^' set highlight class -->
-              {% if key contains '^' %}
-                <li class="skill-tag-highlight">{{ key | remove_first: '^' }}</li>
+              <!-- if key contains '*' set highlight class -->
+              {% if key contains '*' %}
+                <li class="skill-tag-highlight">{{ key | remove_first: '*' }}</li>
               {% else %}
                 <li class="skill-tag">{{ key }}</li>
               {% endif %}

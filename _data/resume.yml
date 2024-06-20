@@ -225,9 +225,9 @@ skills:
   - name: DevOps
     keywords:
       - Docker
-      - ^Kubernetes
-      - ^Argo CD
-      - ^Argo Workflows
+      - Kubernetes*
+      - Argo CD*
+      - Argo Workflows
       - Helm/Kustomize
       - Buildah/Kaniko
       - k3s/Minikube/MicroK8s
