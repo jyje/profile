@@ -56,21 +56,62 @@ basics:
       title: Curriculum Vitae
       summary: >
         My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
+    skills:
+      summary: >
+        More details about my skills can be found in <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 work:
 
   - company: MAXST
-    position: Software Engineer
+    position: MLOps/DevOps Engineer
     website: https://maxst.com/en
-    startDate: "2021-01-16"
+    startDate: "2023-01-01"
     summary: >
       DevOps and Computer Vision Engineer with
     highlights:
       - >
-        <span class="emph btn-inline btn-primary"><b>2023 - Present</b></span> :
-          DevOps and Infrastructure from Cloud Services to On-Premise Clusters
-          
+        <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
+          <b>MLOps, DevOps and Cloud-Native Software Development.</b>
+        <ul>
+          <li>
+            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+              Visual-SLAM for Digital Twin Systems
+            </a>
+          </li>
+        </ul>
       - >
-        <span class="emph btn-inline btn-primary"><b>2021 - 2023</b></span> :
+        <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
+          <b>MLOps, DevOps and Cloud-Native Software Development.</b>
+        <ul>
+          <li>
+            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+              Visual-SLAM for Digital Twin Systems
+            </a>
+          </li>
+        </ul>
+      - >
+        <span class="emph btn-inline btn-primary"><b>2023</b></span> :
+          Visual-SLAM and SfM for Digital Twin Systems
+
+  - company: MAXST
+    position: Computer Vison Engineer
+    website: https://maxst.com/en
+    startDate: "2021-01-16"
+    endDate: "2022-12-31"
+    summary: >
+      Developing computer vision algorithms for AR/VR and Digital Twin Systems.
+    highlights:
+      - >
+        <span class="emph btn-inline btn-primary"><b>2022</b></span> :
+          <b>MLOps, DevOps and Cloud-Native Software Development.</b>
+        <ul>
+          <li>
+            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+              Visual-SLAM for Digital Twin Systems
+            </a>
+          </li>
+        </ul>
+      - >
+        <span class="emph btn-inline btn-primary"><b>2021</b></span> :
           Visual-SLAM and SfM for Digital Twin Systems
 
   - company: POSTECH
@@ -171,29 +212,71 @@ education:
 #     releaseDate: "2014-10-01"
 #     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
-# skills:
-#   - name: "Web Development"
-#     level: "Master"
-#     keywords:
-#       - "HTML"
-#       - "CSS"
-#       - "Javascript"
-#   - name: "Compression"
-#     level: "Master"
-#     keywords:
-#       - "Mpeg"
-#       - "MP4"
-#       - "GIF"
+skills:
+
+  - name: MLOps
+    keywords:
+      - Kubeflow
+      - Ollama
+      - JupyterHub
+      - ML.NET
+      - AutoML
+      - Distributed Training
+  - name: DevOps
+    keywords:
+      - Docker
+      - ^Kubernetes
+      - ^Argo CD
+      - ^Argo Workflows
+      - Helm/Kustomize
+      - Buildah/Kaniko
+      - k3s/Minikube/MicroK8s
+  - name: Computer Vision and AI
+    keywords:
+      - Stereo Geometry
+      - SLAM
+      - Kalman Filter
+      - SfM
+      - PyTorch
+      - OpenCV
+  - name: Programming languages
+    keywords:
+      - Python
+      - C/C++
+      - C#
+      - Go
+  - name: Tools
+    keywords:
+      - Visual Studio Code
+      - Visual Studio
+      - Vim
+      - Jupyter Notebook
+      - Polyglot Notebook
+      - MATLAB/Simulink
+  - name: OS, Kernel and Terminal
+    keywords:
+      - Windows
+      - MacOS
+      - Alpine Linux
+      - Ubuntu Linux
+      - WSL2
+      - zsh
+      - pwsh
+  - name: Hardware
+    keywords:
+      - DIY Desktop
+      - Raspberry Pi
+      - FPGA
 languages:
   - language: "Korean"
     fluency: "Native"
   - language: "English"
     fluency: "Working Proficiency"
-interests:
-  - name: "Wildlife"
-    keywords:
-      - "Ferrets"
-      - "Unicorns"
+# interests:
+#   - name: "Wildlife"
+#     keywords:
+#       - "Ferrets"
+#       - "Unicorns"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

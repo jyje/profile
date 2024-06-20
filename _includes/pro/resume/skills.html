@@ -4,6 +4,7 @@
     {{ strings.resume.skills | default:"Skills" }}
     <span class="symbol {{ icons.skills | default:'icon-wrench' }}"></span>
   </h2>
+  {% include components/message.html class="note" text=basics.contents.skills.summary alt="" %}
   <dl class="skills">
     {% for skl in resume.skills %}
       <dt class="fl">{{ skl.name }}</dt>
@@ -45,9 +46,14 @@
         {% if skl.keywords.size > 0 %}
         <div>
           <span class="sr-only">{{ strings.resume.keywords | default:"Keywords" }}{{ colon }}</span>
-          <ul class="tags">
+          <ul class="skill-tags">
             {% for key in skl.keywords %}
-              <li class="tag">{{ key }}</li>
+              <!-- if key starts with '^' set highlight class -->
+              {% if key contains '^' %}
+                <li class="skill-tag-highlight">{{ key | remove_first: '^' }}</li>
+              {% else %}
+                <li class="skill-tag">{{ key }}</li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>

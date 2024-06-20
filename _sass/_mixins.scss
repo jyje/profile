@@ -14,6 +14,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @mixin light-mode() {
+  --accent-color: #{$accent-color};
+  --accent-color-high: #{$accent-color-high};
+  --accent-color-low: #{$accent-color-low};
   --body-color: #{$body-color};
   --body-bg: #{$body-bg};
   --border-color: #{$border-color};
