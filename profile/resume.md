@@ -12,9 +12,9 @@ left_column:
   - awards
   - publications
   - certifications
-  - skills
   # - references
 right_column:
+  - skills
   - interests
   - languages
 no_language_icons: true
