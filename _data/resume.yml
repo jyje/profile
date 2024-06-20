@@ -214,49 +214,59 @@ education:
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 skills:
 
-  - name: MLOps
+  - name: MLOps and LLM
     keywords:
       - JupyterHub*
       - Katib AutoML*
       - Distributed Training
       - Kubeflow
-      - ML.NET
-      - Ollama
+      - Ollama*
+      - RAG*
+
   - name: DevOps
     keywords:
       - Kubernetes*
-      - Argo CD*
       - Argo Workflows*
-      - CI/CD*
+      - IaC*
       - Helm/Kustomize
-      - Buildah/Kaniko
       - k3s/Minikube/MicroK8s
+
+  - name: GitOps
+    keywords:
+      - CI/CD*
+      - Argo CD*
+      - Bitbucket Pipelines*
+      - GitHub Actions
+      - Buildah/Kaniko
+      - Slackbot
+
   - name: Application Development
     keywords:
-      - FastAPI*
-      - Bitbucket Pipelines*
-      - GitHub Actions*
-      - Multi-stage Dockerization
+      - Python/FastAPI*
+      - Python/argparse
+      - Dockerization
       - Unit Testing
-      - Slackbot
+      - .NET/WPF
+      - .NET/MAUI
+
   - name: Computer Vision and Machine Learning
     keywords:
-      - PyTorch*
-      - OpenCV*
-      - Stereo Vision
+      - PyTorch
+      - OpenCV
+      - SfM
       - SLAM
       - Kalman Filter
-      - SfM
+      - Stereo Vision
   - name: Programming languages
     keywords:
-      - Python*
-      - C#*
-      - Go
+      - Python
+      - C#
       - C/C++
+      - MATLAB
   - name: Tools
     keywords:
-      - Visual Studio Code*
-      - Visual Studio*
+      - Visual Studio Code
+      - Visual Studio
       - Vim
       - Jupyter Notebook
       - Polyglot Notebook
@@ -264,16 +274,16 @@ skills:
       - MATLAB/Simulink
   - name: OS, Kernel and Terminal
     keywords:
-      - WSL2*
       - Windows
+      - WSL2
+      - Ubuntu
+      - Alpine
       - MacOS
-      - Alpine Linux
-      - Ubuntu Linux
       - zsh
       - pwsh
   - name: Hardware
     keywords:
-      - Raspberry Pi*
+      - Raspberry Pi
       - x86
       - FPGA
 languages:
