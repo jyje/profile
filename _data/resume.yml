@@ -216,56 +216,65 @@ skills:
 
   - name: MLOps
     keywords:
-      - Kubeflow
-      - Ollama
-      - JupyterHub
-      - ML.NET
-      - AutoML
+      - JupyterHub*
+      - Katib AutoML*
       - Distributed Training
+      - Kubeflow
+      - ML.NET
+      - Ollama
   - name: DevOps
     keywords:
-      - Docker
       - Kubernetes*
       - Argo CD*
-      - Argo Workflows
+      - Argo Workflows*
+      - CI/CD*
       - Helm/Kustomize
       - Buildah/Kaniko
       - k3s/Minikube/MicroK8s
-  - name: Computer Vision and AI
+  - name: Application Development
     keywords:
-      - Stereo Geometry
+      - FastAPI*
+      - Bitbucket Pipelines*
+      - GitHub Actions*
+      - Multi-stage Dockerization
+      - Unit Testing
+      - Slackbot
+  - name: Computer Vision and Machine Learning
+    keywords:
+      - PyTorch*
+      - OpenCV*
+      - Stereo Vision
       - SLAM
       - Kalman Filter
       - SfM
-      - PyTorch
-      - OpenCV
   - name: Programming languages
     keywords:
-      - Python
-      - C/C++
-      - C#
+      - Python*
+      - C#*
       - Go
+      - C/C++
   - name: Tools
     keywords:
-      - Visual Studio Code
-      - Visual Studio
+      - Visual Studio Code*
+      - Visual Studio*
       - Vim
       - Jupyter Notebook
       - Polyglot Notebook
+      - TensorBoard
       - MATLAB/Simulink
   - name: OS, Kernel and Terminal
     keywords:
+      - WSL2*
       - Windows
       - MacOS
       - Alpine Linux
       - Ubuntu Linux
-      - WSL2
       - zsh
       - pwsh
   - name: Hardware
     keywords:
-      - DIY Desktop
-      - Raspberry Pi
+      - Raspberry Pi*
+      - x86
       - FPGA
 languages:
   - language: "Korean"
