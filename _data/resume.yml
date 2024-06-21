@@ -58,7 +58,7 @@ basics:
         My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
     skills:
       summary: >
-        More details about my skills can be found in <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
+        More details about my skills can be found in <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>. Hightlighted skills are well-experienced and  industry-ready.
 work:
 
   - company: MAXST
@@ -214,22 +214,25 @@ education:
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 skills:
 
-  - name: MLOps and LLM
+  - name: MLOps and LLMOps
     keywords:
-      - JupyterHub*
-      - Katib AutoML*
-      - Distributed Training
-      - Kubeflow
-      - Ollama*
-      - RAG*
+      - Data Pipeline*
+      - AutoML Katib*
+      - Training Operator*
+      - Ollama
+      - RAG
 
   - name: DevOps
     keywords:
       - Kubernetes*
       - Argo Workflows*
       - IaC*
-      - Helm/Kustomize
-      - k3s/Minikube/MicroK8s
+      # - Helm
+      # - Kustomize
+      - Kubespray*
+      - Ansible
+      - Terraform
+      - MicroK8s
 
   - name: GitOps
     keywords:
@@ -237,7 +240,8 @@ skills:
       - Argo CD*
       - Bitbucket Pipelines*
       - GitHub Actions
-      - Buildah/Kaniko
+      - Buildah
+      - Kaniko
       - Slackbot
 
   - name: Application Development
@@ -248,30 +252,34 @@ skills:
       - Unit Testing
       - .NET/WPF
       - .NET/MAUI
+      - Unity
 
   - name: Computer Vision and Machine Learning
     keywords:
-      - PyTorch
-      - OpenCV
+      - PyTorch*
+      - OpenCV*
       - SfM
       - SLAM
-      - Kalman Filter
-      - Stereo Vision
+      - Kalman Filter*
+      - Stereo Vision*
+
   - name: Programming languages
     keywords:
-      - Python
-      - C#
+      - Python*
+      - C#*
+      - MATLAB*
       - C/C++
-      - MATLAB
+
   - name: Tools
     keywords:
       - Visual Studio Code
       - Visual Studio
-      - Vim
+      # - Vim
       - Jupyter Notebook
       - Polyglot Notebook
-      - TensorBoard
+      # - TensorBoard
       - MATLAB/Simulink
+
   - name: OS, Kernel and Terminal
     keywords:
       - Windows
@@ -281,11 +289,13 @@ skills:
       - MacOS
       - zsh
       - pwsh
+
   - name: Hardware
     keywords:
-      - Raspberry Pi
+      - ARM/Raspberry Pi*
       - x86
       - FPGA
+
 languages:
   - language: "Korean"
     fluency: "Native"
