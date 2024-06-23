@@ -87,7 +87,7 @@
 
   .skill-tag-highlight {
     @extend .color-transition;
-    border: 1px solid var(--menu-text);
+    border: 1.5px solid var(--accent-color-fill);
     border-radius: .5rem;
     display: inline-block;
     margin: .25rem .125rem;

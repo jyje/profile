@@ -24,13 +24,13 @@ basics:
     region: "" # "California"
   profiles:
     - network: LinkedIn
-      username: "jyje"
+      username: LinkedIn
       url: https://linkedin.com/in/jyje
     - network: Github
-      username: "jyje"
+      username: Github
       url: http://github.com/jyje
     - network: StackShare
-      username: "jyje"
+      username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
     # - network: google-scholar
     #   username: "Jeayoung Jeon"
@@ -41,6 +41,7 @@ basics:
       summary: >
         My name is Jeayoung Jeon [🇰🇷전제영].
         I'm working at MAXST as an **MLOps**, **DevOps** and **Cloud-Native Software Engineer**.
+        I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
 
       # - 🧑‍💻 Current Roles
       #   - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
@@ -59,7 +60,8 @@ basics:
         My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
     skills:
       summary: >
-        Here are my skills and industry-ready items are highlighted. More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
+        Here are my skills and highlighted items are industry-ready.
+        More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 work:
 
   - company: MAXST
@@ -219,11 +221,11 @@ skills:
     keywords:
       - Data Pipeline*
       - AutoML Katib*
-      - Training Operator*
+      - Training Operator
       - JupyterHub*
       - PyTorch*
       - OpenCV*
-      - Ollama
+      - Ollama*
       - RAG
 
   - name: DevOps
@@ -234,7 +236,7 @@ skills:
       - Ansible*
       - Terraform*
       - Kubespray*
-      - MicroK8s
+      - MicroK8s*
 
   - name: GitOps
     keywords:
@@ -243,25 +245,16 @@ skills:
       - Bitbucket Pipelines*
       - GitHub Actions*
       - Kaniko*
-      - Buildah*
+      - Docker/Multi-stage*
       - Slackbot*
 
   - name: Application Development
     keywords:
       - Python/FastAPI*
-      - Dockerization*
       - Unit Testing*
       - .NET/WPF*
       - .NET/MAUI*
       - Unity
-
-  # - name: Computer Vision and Machine Learning
-  #   keywords:
-  #     - Stereo Vision*
-  #     - OpenCV*
-  #     - Kalman Filter
-  #     - SLAM
-  #     - SfM
 
   - name: Programming languages
     keywords:
@@ -285,8 +278,8 @@ skills:
       - Ubuntu*
       - Alpine*
       - MacOS*
-      - ARM/Raspberry Pi*
-      - x86*
+      - ARM64/Raspberry Pi*
+      - AMD64/Bare Metal*
       - FPGA
 
 languages:
