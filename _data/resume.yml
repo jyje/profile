@@ -58,7 +58,7 @@ basics:
         My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
     skills:
       summary: >
-        More details about my skills can be found in <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>. Hightlighted skills are well-experienced and  industry-ready.
+        .  More details about my skills can be found in <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>. Hightlighted skills are well-experienced and  industry-ready.
 work:
 
   - company: MAXST
@@ -219,6 +219,7 @@ skills:
       - Data Pipeline*
       - AutoML Katib*
       - Training Operator*
+      - JupyterHub*
       - Ollama
       - RAG
 
@@ -227,11 +228,9 @@ skills:
       - Kubernetes*
       - Argo Workflows*
       - IaC*
-      # - Helm
-      # - Kustomize
+      - Ansible*
+      - Terraform*
       - Kubespray*
-      - Ansible
-      - Terraform
       - MicroK8s
 
   - name: GitOps
@@ -239,29 +238,28 @@ skills:
       - CI/CD*
       - Argo CD*
       - Bitbucket Pipelines*
-      - GitHub Actions
-      - Buildah
-      - Kaniko
-      - Slackbot
+      - GitHub Actions*
+      - Kaniko*
+      - Buildah*
+      - Slackbot*
 
   - name: Application Development
     keywords:
       - Python/FastAPI*
-      - Python/argparse
-      - Dockerization
-      - Unit Testing
+      - Dockerization*
+      - Unit Testing*
       - .NET/WPF
       - .NET/MAUI
       - Unity
 
   - name: Computer Vision and Machine Learning
     keywords:
+      - Stereo Vision*
       - PyTorch*
       - OpenCV*
-      - SfM
-      - SLAM
       - Kalman Filter*
-      - Stereo Vision*
+      - SLAM*
+      - SfM*
 
   - name: Programming languages
     keywords:
@@ -272,28 +270,23 @@ skills:
 
   - name: Tools
     keywords:
-      - Visual Studio Code
-      - Visual Studio
-      # - Vim
+      - Visual Studio Code*
+      - Visual Studio*
       - Jupyter Notebook
-      - Polyglot Notebook
-      # - TensorBoard
       - MATLAB/Simulink
 
-  - name: OS, Kernel and Terminal
+  - name: OSs and Kernels
     keywords:
-      - Windows
-      - WSL2
-      - Ubuntu
-      - Alpine
-      - MacOS
-      - zsh
-      - pwsh
+      - Windows*
+      - WSL2*
+      - Ubuntu*
+      - Alpine*
+      - MacOS*
 
   - name: Hardware
     keywords:
       - ARM/Raspberry Pi*
-      - x86
+      - x86*
       - FPGA
 
 languages:
