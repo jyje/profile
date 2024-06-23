@@ -6,7 +6,11 @@
   {% endif %}
 
   {% if basics.label %}
-    <p class="h3 faded subline title p-job-title" property="jobTitle">{{ basics.label }}</p>
+    {% assign updated_at = site.time | date: site.data.strings.date_formats.last_modified_at %}
+    <p class="h3 faded subline title p-job-title" property="jobTitle">
+      {{ basics.label }}
+      <time datetime="{{ updated_at }}" class="dt-published">({{ site.data.strings.last_modified_at }} {{ updated_at }})</time>
+    </p>
   {% endif %}
 
   {% include components/message.html text=page.description hide=page.hide_description %}
