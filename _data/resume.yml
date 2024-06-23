@@ -39,26 +39,27 @@ basics:
     resume:
       title: Résumé
       summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영]. I'm working at MAXST as an **MLOps** and **Cloud-Native Software Engineer**.
+        My name is Jeayoung Jeon [🇰🇷전제영].
+        I'm working at MAXST as an **MLOps**, **DevOps** and **Cloud-Native Software Engineer**.
 
-        - 🧑‍💻 Current Roles
-          - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
-          - Making **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - Making **Team Services** to increase team productivity with **DevOps**, **GitOps**, **ChatOps** and **MLOps**.
-        - 🎉 Achievements
-          - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
-          - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
-            - Daily usages for 10+ teammates 🥳.
-        - 🧐 Challenges
-          - Finding the best-practice-way between team culture and new technologies.
-          - Finding the optimal way between better performance and less cost.
+      # - 🧑‍💻 Current Roles
+      #   - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
+      #   - Making **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
+      #   - Making **Team Services** to increase team productivity with **DevOps**, **GitOps**, **ChatOps** and **MLOps**.
+      # - 🎉 Achievements
+      #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
+      #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
+      #     - Daily usages for 10+ teammates 🥳.
+      # - 🧐 Challenges
+      #   - Finding the best-practice-way between team culture and new technologies.
+      #   - Finding the optimal way between better performance and less cost.
     cv:
       title: Curriculum Vitae
       summary: >
         My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
     skills:
       summary: >
-        .  More details about my skills can be found in <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>. Hightlighted skills are well-experienced and  industry-ready.
+        Here are my skills and industry-ready items are highlighted. More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 work:
 
   - company: MAXST
@@ -214,12 +215,14 @@ education:
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 skills:
 
-  - name: MLOps and LLMOps
+  - name: MLOps and AI/LLMOps
     keywords:
       - Data Pipeline*
       - AutoML Katib*
       - Training Operator*
       - JupyterHub*
+      - PyTorch*
+      - OpenCV*
       - Ollama
       - RAG
 
@@ -248,25 +251,25 @@ skills:
       - Python/FastAPI*
       - Dockerization*
       - Unit Testing*
-      - .NET/WPF
-      - .NET/MAUI
+      - .NET/WPF*
+      - .NET/MAUI*
       - Unity
 
-  - name: Computer Vision and Machine Learning
-    keywords:
-      - Stereo Vision*
-      - PyTorch*
-      - OpenCV*
-      - Kalman Filter*
-      - SLAM*
-      - SfM*
+  # - name: Computer Vision and Machine Learning
+  #   keywords:
+  #     - Stereo Vision*
+  #     - OpenCV*
+  #     - Kalman Filter
+  #     - SLAM
+  #     - SfM
 
   - name: Programming languages
     keywords:
       - Python*
+      - Go*
       - C#*
-      - MATLAB*
       - C/C++
+      - MATLAB
 
   - name: Tools
     keywords:
@@ -275,16 +278,13 @@ skills:
       - Jupyter Notebook
       - MATLAB/Simulink
 
-  - name: OSs and Kernels
+  - name: OS and Hardware
     keywords:
       - Windows*
       - WSL2*
       - Ubuntu*
       - Alpine*
       - MacOS*
-
-  - name: Hardware
-    keywords:
       - ARM/Raspberry Pi*
       - x86*
       - FPGA

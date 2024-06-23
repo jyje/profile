@@ -216,6 +216,11 @@
       width: 9rem;
       height: 9rem;
     }
+
+    .skill-tag-highlight {
+      color: var(--accent-color-fill);
+      font-weight: bolder;
+    }
   }
 
   @media print and (min-width: 5.247in) {
