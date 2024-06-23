@@ -119,8 +119,8 @@ See my [certifications]{:.heading.flip-title} for more details.
 
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
 [Profile]: / "my-profile --verbose"
-[Résumé]: resume "my-profile resume"
-[Curriculum Vitae]: cv "my-profile cv"
+[Résumé]: /profile/resume "my-profile resume"
+[Curriculum Vitae]: /profile/cv "my-profile cv"
 [CV]: cv "my-profile cv"
 [Certifications]: ../certifications
 [Works]: ../works

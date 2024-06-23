@@ -32,9 +32,9 @@ basics:
     - network: StackShare
       username: "jyje"
       url: https://stackshare.io/jyje/jyje-pro-stack
-    - network: google-scholar
-      username: "Jeayoung Jeon"
-      url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
+    # - network: google-scholar
+    #   username: "Jeayoung Jeon"
+    #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
     resume:
       title: Résumé
