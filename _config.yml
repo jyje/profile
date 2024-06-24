@@ -188,6 +188,10 @@ google_analytics:      UA-257233721-1
 # PRO version only!
 # tinyletter:            <username>
 
+# Setting a ChannelIO ID will enable the chat widget.
+# https://docs.channel.io/help/en
+channel_io_plugin_key:  e99f88b7-5722-4f32-8771-08cff75455ee
+
 
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
