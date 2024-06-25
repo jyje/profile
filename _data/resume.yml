@@ -32,9 +32,9 @@ basics:
     - network: StackShare
       username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
-    - network: google-scholar
-      username: "Google Scholar"
-      url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
+    # - network: google-scholar
+    #   username: "Google Scholar"
+    #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
     resume:
       title: Résumé
@@ -49,6 +49,8 @@ basics:
         - 🧐 Challenges
           - Finding the best-practice-way between team culture and new technologies.
           - Finding the optimal way between better performance and less cost.
+
+        If you want to know more about me, please check <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
     # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
     # - 🎉 Achievements
     #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
@@ -64,22 +66,23 @@ basics:
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 work:
 
-  - company: MAXST, Widearth
-    position: "Project Widearth: ML Pipeline, APIs and Infrastructure Developement for Digital Twins"
-    website: https://widearth.world
+  - company: MAXST
+    position: "Widearth: ML Pipeline, APIs and Infrastructure Developement for Digital Twins"
+    website: https://maxst.com/en
     startDate: "2023-03-01"
     summary: >
+      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
       Point-cloud and mesh-based spatial map and studio for B2B, B2C digital twin platform. I am responsible for the development of ML pipelines, APIs and Infrastructure.
     highlights:
       - >
-        <b class="skill-tag-highlight">ML Pipeline</b> :
-          Design pipelines using Argo Workflows
+        <b class="skill-tag-highlight">ML Pipeline</b>
+          Design ML data pipelines using Argo Workflows and Hera Python SDK.
       - >
-        <b class="skill-tag-highlight">API</b> :
-          Making endpoints for the ML pipeline inference.
+        <b class="skill-tag-highlight">API</b>
+          Making endpoints for the ML pipeline inference based on Python FastAPI.
       - >
-        <b class="skill-tag-highlight">Infrastructure</b> :
-          Making hybrid Kubernetes Clusters with high reliability and low costs.
+        <b class="skill-tag-highlight">Infrastructure</b>
+          Making hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs and keep system reliabilities.
 
   - company: MAXST
     position: MLOps/DevOps Engineer
@@ -89,28 +92,14 @@ work:
       DevOps and Computer Vision Engineer with
     highlights:
       - >
-        <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
-          <b>Making On-Demand ML Development Platform as an MLOps Engineer</b>
-        <ul>
-          <li>
-            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Visual-SLAM for Digital Twin Systems
-            </a>
-          </li>
-        </ul>
+        <b class="skill-tag-highlight">AutoML</b>
+          Making AutoML platform with Kubeflow Katib.
       - >
-        <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
-          <b>Cloud-Native Software Development</b>
-        <ul>
-          <li>
-            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Visual-SLAM for Digital Twin Systems
-            </a>
-          </li>
-        </ul>
+        <b class="skill-tag-highlight">CI/CD</b>
+          Making AutoML platform with Kubeflow Katib.
       - >
-        <span class="emph btn-inline btn-primary"><b>2023</b></span> :
-          Visual-SLAM and SfM for Digital Twin Systems
+        <b class="skill-tag-highlight">On-Premise</b>
+          Making AutoML platform with Kubeflow Katib.
 
   # - company: MAXST
   #   position: DevOps Engineer
