@@ -128,4 +128,4 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Blog]: https://blog.jyje.live "My blog"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
-[Mail]: mailto:jyjeon+online@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon

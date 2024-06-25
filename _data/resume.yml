@@ -7,7 +7,7 @@ basics:
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
   # phone: "+82-10-5069-1328"
-  website: "https://jyje.live"
+  # website: "https://jyje.live"
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: >
@@ -32,28 +32,28 @@ basics:
     - network: StackShare
       username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
-    # - network: google-scholar
-    #   username: "Jeayoung Jeon"
-    #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
+    - network: google-scholar
+      username: "Google Scholar"
+      url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
     resume:
       title: Résumé
       summary: >
         My name is Jeayoung Jeon [🇰🇷전제영].
         I'm working at MAXST as an **MLOps**, **DevOps** and **Cloud-Native Software Engineer**.
-        I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
 
-      # - 🧑‍💻 Current Roles
-      #   - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
-      #   - Making **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-      #   - Making **Team Services** to increase team productivity with **DevOps**, **GitOps**, **ChatOps** and **MLOps**.
-      # - 🎉 Achievements
-      #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
-      #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
-      #     - Daily usages for 10+ teammates 🥳.
-      # - 🧐 Challenges
-      #   - Finding the best-practice-way between team culture and new technologies.
-      #   - Finding the optimal way between better performance and less cost.
+        - 🧑‍💻 Current Roles
+          - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
+          - Making **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
+          - Making **Team Services** to increase team productivity with **DevOps**, **GitOps**, **ChatOps** and **MLOps**.
+        - 🧐 Challenges
+          - Finding the best-practice-way between team culture and new technologies.
+          - Finding the optimal way between better performance and less cost.
+    # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
+    # - 🎉 Achievements
+    #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
+    #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
+    #     - Daily usages for 10+ teammates 🥳.
     cv:
       title: Curriculum Vitae
       summary: >
@@ -63,6 +63,23 @@ basics:
         Here are my skills and highlighted items are industry-ready.
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 work:
+
+  - company: MAXST, Widearth
+    position: "Project Widearth: ML Pipeline, APIs and Infrastructure Developement for Digital Twins"
+    website: https://widearth.world
+    startDate: "2023-03-01"
+    summary: >
+      Point-cloud and mesh-based spatial map and studio for B2B, B2C digital twin platform. I am responsible for the development of ML pipelines, APIs and Infrastructure.
+    highlights:
+      - >
+        <b class="skill-tag-highlight">ML Pipeline</b> :
+          Design pipelines using Argo Workflows
+      - >
+        <b class="skill-tag-highlight">API</b> :
+          Making endpoints for the ML pipeline inference.
+      - >
+        <b class="skill-tag-highlight">Infrastructure</b> :
+          Making hybrid Kubernetes Clusters with high reliability and low costs.
 
   - company: MAXST
     position: MLOps/DevOps Engineer
@@ -95,6 +112,37 @@ work:
         <span class="emph btn-inline btn-primary"><b>2023</b></span> :
           Visual-SLAM and SfM for Digital Twin Systems
 
+  # - company: MAXST
+  #   position: DevOps Engineer
+  #   website: https://maxst.com/en
+  #   startDate: "2023-01-01"
+  #   summary: >
+  #     DevOps and Computer Vision Engineer with
+  #   highlights:
+  #     - >
+  #       <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
+  #         <b>Making On-Demand ML Development Platform as an MLOps Engineer</b>
+  #       <ul>
+  #         <li>
+  #           <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+  #             Visual-SLAM for Digital Twin Systems
+  #           </a>
+  #         </li>
+  #       </ul>
+  #     - >
+  #       <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
+  #         <b>Cloud-Native Software Development</b>
+  #       <ul>
+  #         <li>
+  #           <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+  #             Visual-SLAM for Digital Twin Systems
+  #           </a>
+  #         </li>
+  #       </ul>
+  #     - >
+  #       <span class="emph btn-inline btn-primary"><b>2023</b></span> :
+  #         Visual-SLAM and SfM for Digital Twin Systems
+
   - company: MAXST
     position: Computer Vison Engineer
     website: https://maxst.com/en
@@ -103,19 +151,10 @@ work:
     summary: >
       Developing computer vision algorithms for AR/VR and Digital Twin Systems.
     highlights:
-      - >
-        <span class="emph btn-inline btn-primary"><b>2022</b></span> :
-          <b>MLOps, DevOps and Cloud-Native Software Development.</b>
-        <ul>
-          <li>
-            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Visual-SLAM for Digital Twin Systems
-            </a>
-          </li>
-        </ul>
-      - >
-        <span class="emph btn-inline btn-primary"><b>2021</b></span> :
-          Visual-SLAM and SfM for Digital Twin Systems
+      - Visual-SLAM Research for Digital Twin Systems
+      - Developing ICP Algorithm to Align 3D Point Clouds
+      - Developing a CMS for Spatial Map
+
 
   - company: POSTECH
     position: "Graduate Student with Integrated Program"
@@ -131,7 +170,7 @@ work:
         <ul>
           <li>
             <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Visual-SLAM for Digital Twin Systems
+              Virtual Visual-SLAM for Real-World Environments
             </a>
           </li>
         </ul>
@@ -139,26 +178,34 @@ work:
       - >
         <span class="emph btn-inline btn-primary"><b>2012 - 2018</b></span> :
           <b>Advanced Signal Processing Lab.</b>
-  - company: "POSTECH"
-    position: "Teaching Assistant"
-    website: "https://eee.postech.ac.kr/"
-    startDate: "2012-09-01"
-    endDate: "2014-02-28"
-    summary: >
-      While pursuing my graduate studies, I also served as a Teaching Assistant for various courses, including:
-    highlights:
-      - "[2012] EECE233 Signals and Systems"
-      - "[2013] EECE454 PC Interface"
-  - company: "GIST"
-    position: "Undergraduate Internship"
-    website: "https://me.gist.ac.kr/biomems/index.do"
-    startDate: "2010-07-26"
-    endDate: "2010-08-15"
-    summary: >
-      As an undergraduate student, I participated in an internship program at the BioMEMS Lab in GIST, where I engaged in the following tasks:
-    highlights:
-      - Study on BioMEMSs equivarant to Electronic RLC circuits
-      - Preview of Graduate Program and Experiments
+        <ul>
+          <li>
+            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+              Virtual Visual-SLAM for Real-World Environments
+            </a>
+          </li>
+        </ul>
+
+  # - company: "POSTECH"
+  #   position: "Teaching Assistant"
+  #   website: "https://eee.postech.ac.kr/"
+  #   startDate: "2012-09-01"
+  #   endDate: "2014-02-28"
+  #   summary: >
+  #     While pursuing my graduate studies, I also served as a Teaching Assistant for various courses, including:
+  #   highlights:
+  #     - "[2012] EECE233 Signals and Systems"
+  #     - "[2013] EECE454 PC Interface"
+  # - company: "GIST"
+  #   position: "Undergraduate Internship"
+  #   website: "https://me.gist.ac.kr/biomems/index.do"
+  #   startDate: "2010-07-26"
+  #   endDate: "2010-08-15"
+  #   summary: >
+  #     As an undergraduate student, I participated in an internship program at the BioMEMS Lab in GIST, where I engaged in the following tasks:
+  #   highlights:
+  #     - Study on BioMEMSs equivarant to Electronic RLC circuits
+  #     - Preview of Graduate Program and Experiments
 # volunteer:
 #   - organization: "CoderDojo"
 #     position: "Teacher"

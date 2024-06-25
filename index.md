@@ -45,7 +45,7 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 [Blog]: blog
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
-[Mail]: mailto:jyjeon+online@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
 <!-- 🧑‍💻 Set-up and Run -->
 
