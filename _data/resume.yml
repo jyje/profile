@@ -148,6 +148,7 @@ work:
 skills:
   - name: MLOps and AI/LLMOps
     keywords:
+      - Kubeflow*
       - Data Pipeline*
       - AutoML Katib*
       - Training Operator
