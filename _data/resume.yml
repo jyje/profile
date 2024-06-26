@@ -40,17 +40,16 @@ basics:
       title: Résumé
       summary: >
         My name is Jeayoung Jeon [🇰🇷전제영].
-        I'm working at MAXST as an **MLOps**, **DevOps** and **Cloud-Native Software Engineer**.
+        I'm working at MAXST as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
+        I specialize in:
 
-        - 🧑‍💻 Current Roles
-          - Making **Digital Twin Platforms** with **Cloud-Native APIs** and **ML pipelines**.
-          - Making **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - Making **Team Services** to increase team productivity with **DevOps**, **GitOps**, **ChatOps** and **MLOps**.
-        - 🧐 Challenges
-          - Finding the best-practice-way between team culture and new technologies.
-          - Finding the optimal way between better performance and less cost.
+          - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
+          - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
+          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
+          - 🧑‍💻 Identifying best practices to bridge team culture and new technologies.
+          - 🚀 Balancing performance and cost reduction optimally.
 
-        If you want to know more about me, please check <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
+        For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
     # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
     # - 🎉 Achievements
     #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
@@ -64,15 +63,15 @@ basics:
       summary: >
         Here are my skills and highlighted items are industry-ready.
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
-work:
 
+work:
   - company: MAXST
     position: "Widearth: ML Pipeline, APIs and Infrastructure Developement for Digital Twins"
     website: https://maxst.com/en
     startDate: "2023-03-01"
     summary: >
       <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud and mesh-based spatial map and studio for B2B, B2C digital twin platform. I am responsible for the development of ML pipelines, APIs and Infrastructure.
+      Point-cloud and mesh-based spatial map and studio for B2B, B2C digital twin platform. I am responsible for the development of ML pipelines, APIs and Infrastructure:
     highlights:
       - >
         <b class="skill-tag-highlight">ML Pipeline</b>
@@ -82,55 +81,27 @@ work:
           Making endpoints for the ML pipeline inference based on Python FastAPI.
       - >
         <b class="skill-tag-highlight">Infrastructure</b>
-          Making hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs and keep system reliabilities.
+          Making hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities.
 
   - company: MAXST
     position: MLOps/DevOps Engineer
     website: https://maxst.com/en
     startDate: "2023-01-01"
     summary: >
-      DevOps and Computer Vision Engineer with
+      Initial development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
     highlights:
       - >
         <b class="skill-tag-highlight">AutoML</b>
-          Making AutoML platform with Kubeflow Katib.
+          Making AutoML platforms finding hyperparameters with Kubeflow Katib and Argo Workflows without pre-build.
+      - >
+        <b class="skill-tag-highlight">JupyterHub</b>
+          Making On-Demand JupyterNotebook to distribute resources for ML researchers.
       - >
         <b class="skill-tag-highlight">CI/CD</b>
-          Making AutoML platform with Kubeflow Katib.
+          Making Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
       - >
         <b class="skill-tag-highlight">On-Premise</b>
-          Making AutoML platform with Kubeflow Katib.
-
-  # - company: MAXST
-  #   position: DevOps Engineer
-  #   website: https://maxst.com/en
-  #   startDate: "2023-01-01"
-  #   summary: >
-  #     DevOps and Computer Vision Engineer with
-  #   highlights:
-  #     - >
-  #       <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
-  #         <b>Making On-Demand ML Development Platform as an MLOps Engineer</b>
-  #       <ul>
-  #         <li>
-  #           <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-  #             Visual-SLAM for Digital Twin Systems
-  #           </a>
-  #         </li>
-  #       </ul>
-  #     - >
-  #       <span class="emph btn-inline btn-primary"><b>2024 - Present</b></span> :
-  #         <b>Cloud-Native Software Development</b>
-  #       <ul>
-  #         <li>
-  #           <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-  #             Visual-SLAM for Digital Twin Systems
-  #           </a>
-  #         </li>
-  #       </ul>
-  #     - >
-  #       <span class="emph btn-inline btn-primary"><b>2023</b></span> :
-  #         Visual-SLAM and SfM for Digital Twin Systems
+          Making bare-metal Kubernetes clusters using IaC tools such as Ansible.
 
   - company: MAXST
     position: Computer Vison Engineer
@@ -142,8 +113,6 @@ work:
     highlights:
       - Visual-SLAM Research for Digital Twin Systems
       - Developing ICP Algorithm to Align 3D Point Clouds
-      - Developing a CMS for Spatial Map
-
 
   - company: POSTECH
     position: "Graduate Student with Integrated Program"
@@ -154,7 +123,7 @@ work:
       During my time as a graduate student at POSTECH, I had the privilege of working in two renowned research labs:
     highlights:
       - >
-        <span class="emph btn-inline btn-primary"><b>2018 - 2020</b></span> :
+        <b class="skill-tag-highlight">2018 - 2020</b>
           <b>Computing and Control Engineering Lab.</b>
         <ul>
           <li>
@@ -165,7 +134,7 @@ work:
         </ul>
 
       - >
-        <span class="emph btn-inline btn-primary"><b>2012 - 2018</b></span> :
+        <b class="skill-tag-highlight">2012 - 2018</b>
           <b>Advanced Signal Processing Lab.</b>
         <ul>
           <li>
@@ -174,6 +143,72 @@ work:
             </a>
           </li>
         </ul>
+
+skills:
+  - name: MLOps and AI/LLMOps
+    keywords:
+      - Data Pipeline*
+      - AutoML Katib*
+      - Training Operator
+      - JupyterHub*
+      - PyTorch*
+      - OpenCV*
+      - Ollama*
+      - RAG
+
+  - name: DevOps
+    keywords:
+      - Kubernetes*
+      - Argo Workflows*
+      - IaC*
+      - Ansible*
+      - Terraform*
+      - Kubespray*
+      - MicroK8s*
+
+  - name: GitOps
+    keywords:
+      - CI/CD*
+      - Argo CD*
+      - Bitbucket Pipelines*
+      - GitHub Actions*
+      - Kaniko*
+      - Docker/Multi-stage*
+      - Slackbot*
+
+  - name: Application Development
+    keywords:
+      - Python/FastAPI*
+      - Unit Testing*
+      - .NET/WPF*
+      - .NET/MAUI*
+      - Unity
+
+  - name: Programming languages
+    keywords:
+      - Python*
+      - Go*
+      - C#*
+      - C/C++
+      - MATLAB
+
+  - name: Tools
+    keywords:
+      - Visual Studio Code*
+      - Visual Studio*
+      - Jupyter Notebook
+      - MATLAB/Simulink
+
+  - name: OS and Hardware
+    keywords:
+      - Windows*
+      - WSL2*
+      - Ubuntu*
+      - Alpine*
+      - MacOS*
+      - ARM64/Raspberry Pi*
+      - AMD64/Bare Metal*
+      - FPGA
 
   # - company: "POSTECH"
   #   position: "Teaching Assistant"
@@ -251,72 +286,7 @@ education:
 #     releaseDate: "2014-10-01"
 #     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
-skills:
 
-  - name: MLOps and AI/LLMOps
-    keywords:
-      - Data Pipeline*
-      - AutoML Katib*
-      - Training Operator
-      - JupyterHub*
-      - PyTorch*
-      - OpenCV*
-      - Ollama*
-      - RAG
-
-  - name: DevOps
-    keywords:
-      - Kubernetes*
-      - Argo Workflows*
-      - IaC*
-      - Ansible*
-      - Terraform*
-      - Kubespray*
-      - MicroK8s*
-
-  - name: GitOps
-    keywords:
-      - CI/CD*
-      - Argo CD*
-      - Bitbucket Pipelines*
-      - GitHub Actions*
-      - Kaniko*
-      - Docker/Multi-stage*
-      - Slackbot*
-
-  - name: Application Development
-    keywords:
-      - Python/FastAPI*
-      - Unit Testing*
-      - .NET/WPF*
-      - .NET/MAUI*
-      - Unity
-
-  - name: Programming languages
-    keywords:
-      - Python*
-      - Go*
-      - C#*
-      - C/C++
-      - MATLAB
-
-  - name: Tools
-    keywords:
-      - Visual Studio Code*
-      - Visual Studio*
-      - Jupyter Notebook
-      - MATLAB/Simulink
-
-  - name: OS and Hardware
-    keywords:
-      - Windows*
-      - WSL2*
-      - Ubuntu*
-      - Alpine*
-      - MacOS*
-      - ARM64/Raspberry Pi*
-      - AMD64/Bare Metal*
-      - FPGA
 
 languages:
   - language: "Korean"
