@@ -169,7 +169,7 @@ skills:
       - Ansible*
       - Terraform*
       - Kubespray*
-      - MicroK8s*
+      - Grafana*
 
   - name: GitOps
     keywords:
