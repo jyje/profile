@@ -66,12 +66,12 @@ basics:
 
 work:
   - company: MAXST
-    position: "Widearth: ML Pipeline, APIs and Infrastructure Developement for Digital Twins"
+    position: "Project Widearth: Digital Twin Platform with AR/VR"
     website: https://maxst.com/en
     startDate: "2024-03-01"
     summary: >
       <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud and mesh-based spatial map and studio for B2B, B2C digital twin platform. I am responsible for the development of ML pipelines, APIs and Infrastructure:
+      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
     highlights:
       - >
         <b class="skill-tag-highlight">ML Pipeline</b>
@@ -81,27 +81,30 @@ work:
           Making endpoints for the ML pipeline inference based on Python FastAPI.
       - >
         <b class="skill-tag-highlight">Infrastructure</b>
-          Making hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities.
+          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
 
   - company: MAXST
     position: MLOps/DevOps Engineer
     website: https://maxst.com/en
     startDate: "2023-01-01"
     summary: >
-      Initial development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
+      Development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
     highlights:
       - >
         <b class="skill-tag-highlight">AutoML</b>
-          Making AutoML platforms finding hyperparameters with Kubeflow Katib and Argo Workflows without pre-build.
+          Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+      - >
+        <b class="skill-tag-highlight">Data Lake</b>
+          Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
       - >
         <b class="skill-tag-highlight">JupyterHub</b>
-          Making On-Demand JupyterNotebook to distribute resources for ML researchers.
+          Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
       - >
         <b class="skill-tag-highlight">CI/CD</b>
-          Making Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
+          Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
       - >
         <b class="skill-tag-highlight">On-Premise</b>
-          Making bare-metal Kubernetes clusters using IaC tools such as Ansible.
+          Building bare-metal Kubernetes clusters using IaC tools such as Ansible.
 
   - company: MAXST
     position: Computer Vison Engineer
@@ -115,12 +118,12 @@ work:
       - Developing ICP Algorithm to Align 3D Point Clouds
 
   - company: POSTECH
-    position: "Graduate Student with Integrated Program"
+    position: "Student Researcher with Integrated Program"
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
     summary: >
-      During my time as a graduate student at POSTECH, I had the privilege of working in two renowned research labs:
+      Studying and researching in the field of digital signal processing and computer vision. During my time as a graduate student at POSTECH, I had the privilege of working in several projects:
     highlights:
       - >
         <b class="skill-tag-highlight">2018 - 2020</b>
@@ -140,8 +143,8 @@ work:
           <li>Stereo Vision Algorithms for Image Depth Estimation</li>
           <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
           <ul>
-            <li>Lane Mark Detection</li>
-            <li>Traffic Sign Recognition</li>
+            <li>Lane Mark and Traffic Sign Detection</li>
+            <li>Automotive Online Calibration in Stereo Vision</li>
           </ul>
         </ul>
 
@@ -257,26 +260,26 @@ education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
     area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-    studyType: "Integrated Program"
+    studyType: "Master's Degree (Integrated Program)"
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    # courses:
-    #   - "DB1101 - Basic SQL"
-    #   - "CS2011 - Java Introduction"
+    courses:
+      - Advanced Driver Assistance Systems (ADAS)
+      - Simultaneous Localization and Mapping (SLAM)
+      - Computer Vision Algorithms
   - institution: "Kumoh National Institute of Technology (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "Bachelor"
+    studyType: "Bachelor's Degree"
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    # courses:
-    #   - "DB1101 - Basic SQL"
-    #   - "CS2011 - Java Introduction"
-    keywords:
-      - "Advanced Signal Processing"
-      - "Electronic Communication"
+    courses:
+      - Advanced Digital Signal Processing
+      - Visual Light Communication
+      - Electronic Communication with Complex Analysis
+      - Finite Programmable Gate Array (FPGA)
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
