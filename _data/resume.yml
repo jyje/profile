@@ -39,9 +39,9 @@ basics:
     resume:
       title: Résumé
       summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영] and I'm a software engineer in South Korea. <br/>
-        I'm working at MAXST as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
-        I specialize in:
+        My name is Jeayoung Jeon [🇰🇷전제영], and I'm a software engineer in South Korea. <br/>
+        Currently, I'm working at **MAXST** as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
+        I also specialize in:
 
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
