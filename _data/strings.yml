@@ -45,7 +45,7 @@ continue_reading:      >
 
 cookies_banner:
   text:                > # This site uses cookies. [Cookies Policy](/cookies-policy/).
-    🍪 This site uses cookies for chat agent and google analytics to improve my resume and posts. If you don't want to save cookies, please close this message. 
+    🍪 This site uses cookies for chat functionality and Google Analytics to enhance the quality of my resume and posts. This site is not intended for commercial use. If you do not wish to save cookies, please close this site. Thank you!
   okay:                GOT IT
 
 not_found:
