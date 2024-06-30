@@ -55,14 +55,6 @@ basics:
     #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
     #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
     #     - Daily usages for 10+ teammates 🥳.
-    cv:
-      title: Curriculum Vitae
-      summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
-    skills:
-      summary: >
-        Here are my skills and highlighted items are industry-ready.
-        More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
 work:
   - company: MAXST
@@ -84,27 +76,39 @@ work:
           Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
 
   - company: MAXST
-    position: MLOps/DevOps Engineer
+    position: MLOps Engineer
     website: https://maxst.com/en
-    startDate: "2023-01-01"
+    startDate: "2024-01-01"
     summary: >
-      Development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
+      Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
     highlights:
       - >
         <b class="skill-tag-highlight">AutoML</b>
           Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-      - >
-        <b class="skill-tag-highlight">Data Lake</b>
-          Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
+      # - >
+      #   <b class="skill-tag-highlight">Data Lake</b>
+      #     Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
       - >
         <b class="skill-tag-highlight">JupyterHub</b>
           Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+
+  - company: MAXST
+    position: DevOps Engineer
+    website: https://maxst.com/en
+    startDate: "2023-01-01"
+    endDate: "2023-12-31"
+    summary: >
+      Developed hybrid clusters providing DevOps for the Technology Division at MAXST. Core projects were completed in 2023, but they are still being maintained and improved.
+    highlights:
       - >
         <b class="skill-tag-highlight">CI/CD</b>
           Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
       - >
+        <b class="skill-tag-highlight">Hybrid K8s</b>
+          Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
+      - >
         <b class="skill-tag-highlight">On-Premise</b>
-          Building bare-metal Kubernetes clusters using IaC tools such as Ansible.
+          Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
 
   - company: MAXST
     position: Computer Vison Engineer
