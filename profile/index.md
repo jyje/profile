@@ -28,9 +28,13 @@ To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.hea
     <small class="icon-scholar"></small>
     CV
   </a> -->
-    <a href="/certifications" class="btn btn-sm btn-primary mt1">
+  <a href="/certifications" class="btn btn-sm btn-primary mt1">
     <small class="icon-checkmark"></small>
     Certifications
+  </a>
+  <a href="https://app.jyje.live" class="btn btn-sm btn-primary mt1">
+    <small class="icon-wrench"></small>
+    Demo
   </a>
   <a href="https://blog.jyje.live" class="btn btn-sm btn-primary mt1">
     <small class="icon-bubble"></small>
