@@ -24,10 +24,10 @@ To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.hea
     <small class="icon-briefcase"></small>
     Résumé
   </a>
-  <a href="/profile/cv" class="btn btn-sm btn-primary mt1">
+  <!-- <a href="/profile/cv" class="btn btn-sm btn-primary mt1">
     <small class="icon-scholar"></small>
     CV
-  </a>
+  </a> -->
     <a href="/certifications" class="btn btn-sm btn-primary mt1">
     <small class="icon-checkmark"></small>
     Certifications

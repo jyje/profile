@@ -17,10 +17,10 @@ It provides following sections:
                 <small class="icon-briefcase"></small>
                 Résumé
             </a>
-            <a href="/profile/cv" class="btn btn-inline btn-primary">
+            <!-- <a href="/profile/cv" class="btn btn-inline btn-primary">
                 <small class="icon-scholar"></small>
                 CV
-            </a>
+            </a> -->
         </div>
 
 - [Works]{:.heading.flip-title}
