@@ -25,7 +25,13 @@ It provides following sections:
 
 - [Works]{:.heading.flip-title}
     - My activities and achievements
-    - My projects with live demo (if available)
+    -   <div>
+            My projects with live demo powered by Raspberry Pi cluster: 
+            <a href="https://app.jyje.live" class="btn btn-inline btn-primary">
+                <small class="icon-wrench"></small>
+                Demo
+            </a>
+        </div>
 
 - [Articles]{:.heading.flip-title}
     - My formal posts
