@@ -118,6 +118,7 @@ See my [certifications]{:.heading.flip-title} for more details.
 ## 📜 etc.
 
 - [Blog]{:.heading.flip-title}: My blog posts written in Korean
+- [Demo]{:.heading.flip-title}: Live demo powered by Raspberry Pi cluster (Can be down sometimes)
 
 ![Logo of this site](../assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
@@ -131,5 +132,6 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Articles]: ../articles
 [Blog]: https://blog.jyje.live "My blog"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
+[Demo]: https://app.jyje.live "Demo"
 
 [Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
