@@ -13,6 +13,9 @@
 .layout-cv .note-sm:before {
   content: "{{ site.data.strings.resume.summary | default:'Summary' }}";
 }
+.layout-cd .note-sm:before {
+  content: "{{ site.data.strings.resume.summary | default:'Summary' }}";
+}
 
 {% if site.hydejack.no_page_style %}
   {% assign color       = site.accent_color | default:'rgb(79,177,186)' %}

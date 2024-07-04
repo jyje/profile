@@ -103,7 +103,8 @@ Following is a brief summary of my career:
 ### Biographies
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted works
-- [CV]{:.heading.flip-title}: Full description of my career and training
+- [Career Description]{:.heading.flip-title}: Abstract of my experience and outcomes
+- [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training
 
 ### Certifications
 
@@ -125,8 +126,9 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
 [Profile]: / "my-profile --verbose"
 [Résumé]: /profile/resume "my-profile resume"
+[Career Description]: /profile/cd "my-profile career"
 [Curriculum Vitae]: /profile/cv "my-profile cv"
-[CV]: cv "my-profile cv"
+[CV]: /profile/cv "my-profile cv"
 [Certifications]: ../certifications
 [Works]: ../works
 [Articles]: ../articles

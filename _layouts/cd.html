@@ -15,17 +15,17 @@ layout: base
 {% assign from_to_format = strings.date_formats.resume | default:"%b %Y" %}
 
 {% assign nsd = site.hydejack.no_structured_data | default:site.no_structured_data %}
-{% assign resume = page.cv | default:site.data.cv %}
+{% assign resume = page.cd | default:site.data.cd %}
 {% assign basics = resume.basics %}
 {% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
 
 <article
-  id="cv"
+  id="cd"
   class="page {% unless nsd %}vcard h-card{% endunless %}"
   role="article"
-  {% unless nsd %}vocab="http://schema.org/" typeof="Person" resource="#cv"{% endunless %}
+  {% unless nsd %}vocab="http://schema.org/" typeof="Person" resource="#cd"{% endunless %}
   >
-  {% include pro/resume/header-cv.html %}
+  {% include pro/resume/header-cd.html %}
   {% include pro/resume/buttons.html %}
 
   <div class="columns contact {% unless no_third_column %}columns-break{% endunless %}">

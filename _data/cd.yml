@@ -50,10 +50,10 @@ basics:
     #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
     #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
     #     - Daily usages for 10+ teammates 🥳.
-    cv:
-      title: Curriculum Vitae
+    cd:
+      title: Career Description
       summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영]. I'm software engineer in South Korea.
+        CD
         
 
 
@@ -64,7 +64,7 @@ basics:
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
 work:
-  - company: MAXST11
+  - company: MAXST
     position: "Project Widearth: Digital Twin Platform with AR/VR"
     website: https://maxst.com/en
     startDate: "2024-03-01"
