@@ -2,19 +2,14 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Jeayoung Jeon1"
+  name: "전제영"
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
   # website: "https://jyje.live"
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
-  summary: >
-    This is Jeayoung Jeon [🇰🇷전제영].
-    I'm a software engineer in Seoul, South Korea.
-    I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
-    I always want to be a good co-worker and prove it every day.
-    I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
+  summary: {}
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -31,34 +26,22 @@ basics:
     - network: StackShare
       username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
-    # - network: google-scholar
-    #   username: "Google Scholar"
-    #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
+    - network: google-scholar
+      username: "Google Scholar"
+      url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
+    cd-ko:
+      title: 경력기술서
+      summary: >
+        CD
+        
+
+
+        For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
     skills:
       summary: >
         Here are my skills and highlighted items are industry-ready.
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
-
-    resume:
-      title: Résumé
-      summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영], and I'm a software engineer in South Korea. <br/>
-        Currently, I'm working at **MAXST** as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
-        I also specialize in:
-
-          - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
-          - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
-          - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
-          - 🚀 Balancing **performance** and **cost reduction** optimally.
-
-        For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
-    # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
-    # - 🎉 Achievements
-    #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
-    #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
-    #     - Daily usages for 10+ teammates 🥳.
 
 work:
   - company: MAXST
@@ -79,40 +62,47 @@ work:
         <b class="skill-tag-highlight">Infrastructure</b>
           Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
 
+
   - company: MAXST
-    position: MLOps Engineer
+    position: "Project Widearth: Digital Twin Platform with AR/VR"
     website: https://maxst.com/en
-    startDate: "2024-01-01"
+    startDate: "2024-03-01"
     summary: >
-      Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
+      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
+      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
+    highlights:
+      - >
+        <b class="skill-tag-highlight">ML Pipeline</b>
+          Design ML data pipelines using Argo Workflows and Hera Python SDK.
+      - >
+        <b class="skill-tag-highlight">API</b>
+          Making endpoints for the ML pipeline inference based on Python FastAPI.
+      - >
+        <b class="skill-tag-highlight">Infrastructure</b>
+          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
+
+  - company: MAXST
+    position: MLOps/DevOps Engineer
+    website: https://maxst.com/en
+    startDate: "2023-01-01"
+    summary: >
+      Development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
     highlights:
       - >
         <b class="skill-tag-highlight">AutoML</b>
           Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-      # - >
-      #   <b class="skill-tag-highlight">Data Lake</b>
-      #     Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
+      - >
+        <b class="skill-tag-highlight">Data Lake</b>
+          Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
       - >
         <b class="skill-tag-highlight">JupyterHub</b>
           Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
-
-  - company: MAXST
-    position: DevOps Engineer
-    website: https://maxst.com/en
-    startDate: "2023-01-01"
-    endDate: "2023-12-31"
-    summary: >
-      Developed hybrid clusters providing DevOps for the Technology Division at MAXST. Core projects were completed in 2023, but they are still being maintained and improved.
-    highlights:
       - >
         <b class="skill-tag-highlight">CI/CD</b>
           Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
       - >
-        <b class="skill-tag-highlight">Hybrid K8s</b>
-          Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
-      - >
         <b class="skill-tag-highlight">On-Premise</b>
-          Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+          Building bare-metal Kubernetes clusters using IaC tools such as Ansible.
 
   - company: MAXST
     position: Computer Vison Engineer
@@ -156,73 +146,78 @@ work:
           </ul>
         </ul>
 
-skills:
-  - name: MLOps & LLMOps
-    keywords:
-      - Kubeflow*
-      - Data Pipeline*
-      - AutoML Katib*
-      - Training Operator
-      - JupyterHub*
-      - PyTorch*
-      - OpenCV*
-      - Ollama*
-      - RAG
+# skills:
+#   - name: MLOps and AI/LLMOps
+#     keywords:
+#       - Kubeflow*
+#       - Data Pipeline*
+#       - AutoML Katib*
+#       - Training Operator
+#       - JupyterHub*
+#       - PyTorch*
+#       - OpenCV*
+#       - Ollama*
+#       - RAG
 
-  - name: DevOps
-    keywords:
-      - Kubernetes*
-      - Argo Workflows*
-      - IaC*
-      - Ansible*
-      - Terraform*
-      - Kubespray*
-      - Grafana*
-      - Karpenter
+#   - name: DevOps
+#     keywords:
+#       - Kubernetes*
+#       - Argo Workflows*
+#       - IaC*
+#       - Ansible*
+#       - Terraform*
+#       - Kubespray*
+#       - Grafana*
 
-  - name: GitOps
-    keywords:
-      - CI/CD*
-      - Argo CD*
-      - Bitbucket Pipelines*
-      - GitHub Actions*
-      - Kaniko*
-      - Docker/Multi-stage*
-      - Slackbot*
+#   - name: GitOps
+#     keywords:
+#       - CI/CD*
+#       - Argo CD*
+#       - Bitbucket Pipelines*
+#       - GitHub Actions*
+#       - Kaniko*
+#       - Docker/Multi-stage*
+#       - Slackbot*
 
-  - name: Application Development
-    keywords:
-      - Python/FastAPI*
-      - Unit Testing*
-      - .NET/WPF*
-      - .NET/MAUI*
-      - Unity
+#   - name: Application Development
+#     keywords:
+#       - Python/FastAPI*
+#       - Unit Testing*
+#       - .NET/WPF*
+#       - .NET/MAUI*
+#       - Unity
 
-  - name: Programming languages
-    keywords:
-      - Python*
-      - Go*
-      - C#*
-      - C/C++
-      - MATLAB
+#   - name: Programming languages
+#     keywords:
+#       - Python*
+#       - Go*
+#       - C#*
+#       - C/C++
+#       - MATLAB
 
-  - name: Tools
-    keywords:
-      - Visual Studio Code*
-      - Visual Studio*
-      - Jupyter Notebook
-      - MATLAB/Simulink
+#   - name: Tools
+#     keywords:
+#       - Visual Studio Code*
+#       - Visual Studio*
+#       - Jupyter Notebook
+#       - MATLAB/Simulink
 
-  - name: OS and Hardware
-    keywords:
-      - Windows*
-      - WSL2*
-      - Ubuntu*
-      - Alpine*
-      - MacOS*
-      - ARM64/Raspberry Pi*
-      - AMD64/Bare Metal*
-      - FPGA
+#   - name: OS and Hardware
+#     keywords:
+#       - Windows*
+#       - WSL2*
+#       - Ubuntu*
+#       - Alpine*
+#       - MacOS*
+#       - ARM64/Raspberry Pi*
+#       - AMD64/Bare Metal*
+#       - FPGA
+
+#   - name: OS and Hardware
+#     keywords:
+#       - Windows*
+#       - WSL2*
+
 
   # - company: "POSTECH"
   #   position: "Teaching Assistant"
@@ -253,42 +248,42 @@ skills:
 #     summary: "Global movement of free coding clubs for young people."
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
-certificates:
-  - title: "CKA: Certified Kubernetes Administrator"
-    organization: "The Linux Foundation"
-    verified: "2024-03-16"
-    expired: "2027-03-16"
-    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
-  - title: "CKAD: Certified Kubernetes Administrator"
-    organization: "The Linux Foundation"
-    verified: "2024-06-01"
-    expired: "2026-06-01"
-    website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
+# certificates:
+#   - title: "CKA: Certified Kubernetes Administrator"
+#     organization: "The Linux Foundation"
+#     verified: "2024-03-16"
+#     expired: "2027-03-16"
+#     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
+#   - title: "CKAD: Certified Kubernetes Administrator"
+#     organization: "The Linux Foundation"
+#     verified: "2024-06-01"
+#     expired: "2026-06-01"
+#     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
 
-education:
-  - institution: "Pohang University of Science and Technology (POSTECH)"
-    website: "https://eee.postech.ac.kr/"
-    area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-    studyType: "Master's Degree (Integrated Program)"
-    startDate: "2012-03-01"
-    endDate: "2020-08-31"
-    gpa: "3.2/4.3"
-    courses:
-      - Advanced Driver Assistance Systems (ADAS)
-      - Simultaneous Localization and Mapping (SLAM)
-      - Computer Vision Algorithms
-  - institution: "Kumoh National Institute of Technology (kit)"
-    website: "https://eng.kumoh.ac.kr/eng"
-    area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "Bachelor's Degree"
-    startDate: "2008-03-01"
-    endDate: "2012-02-28"
-    gpa: "4.3/4.5"
-    courses:
-      - Advanced Digital Signal Processing
-      - Visual Light Communication
-      - Electronic Communication with Complex Analysis
-      - Finite Programmable Gate Array (FPGA)
+# education:
+#   - institution: "Pohang University of Science and Technology (POSTECH)"
+#     website: "https://eee.postech.ac.kr/"
+#     area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
+#     studyType: "Master's Degree (Integrated Program)"
+#     startDate: "2012-03-01"
+#     endDate: "2020-08-31"
+#     gpa: "3.2/4.3"
+#     courses:
+#       - Advanced Driver Assistance Systems (ADAS)
+#       - Simultaneous Localization and Mapping (SLAM)
+#       - Computer Vision Algorithms
+#   - institution: "Kumoh National Institute of Technology (kit)"
+#     website: "https://eng.kumoh.ac.kr/eng"
+#     area: "School of Electronic Engineering, Electronic Communication"
+#     studyType: "Bachelor's Degree"
+#     startDate: "2008-03-01"
+#     endDate: "2012-02-28"
+#     gpa: "4.3/4.5"
+#     courses:
+#       - Advanced Digital Signal Processing
+#       - Visual Light Communication
+#       - Electronic Communication with Complex Analysis
+#       - Finite Programmable Gate Array (FPGA)
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -302,11 +297,11 @@ education:
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 
 
-languages:
-  - language: "Korean"
-    fluency: "Native"
-  - language: "English"
-    fluency: "Working Proficiency"
+# languages:
+#   - language: "Korean"
+#     fluency: "Native"
+#   - language: "English"
+#     fluency: "Working Proficiency"
 # interests:
 #   - name: "Wildlife"
 #     keywords:

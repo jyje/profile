@@ -2,11 +2,10 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Jeayoung Jeon"
+  name: "Jeayoung Jeon2"
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
-  # phone: "+82-10-5069-1328"
   # website: "https://jyje.live"
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
@@ -64,7 +63,7 @@ basics:
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
 work:
-  - company: MAXST11
+  - company: MAXST
     position: "Project Widearth: Digital Twin Platform with AR/VR"
     website: https://maxst.com/en
     startDate: "2024-03-01"

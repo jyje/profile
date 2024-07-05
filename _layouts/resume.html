@@ -14,7 +14,8 @@ layout: base
 {% assign from_to_format = strings.date_formats.resume | default:"%b %Y" %}
 
 {% assign nsd = site.hydejack.no_structured_data | default:site.no_structured_data %}
-{% assign resume = page.resume | default:site.data.resume %}
+{% assign data_file = page.data_file %}
+{% assign resume = page[data_file] | default:site.data[data_file] %}
 {% assign basics = resume.basics %}
 {% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
 
@@ -24,7 +25,7 @@ layout: base
   role="article"
   {% unless nsd %}vocab="http://schema.org/" typeof="Person" resource="#resume"{% endunless %}
   >
-  {% include pro/resume/header-resume.html %}
+  {% include pro/resume/header.html %}
   {% include pro/resume/buttons.html %}
 
   <div class="columns contact {% unless no_third_column %}columns-break{% endunless %}">

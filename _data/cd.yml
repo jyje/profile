@@ -2,11 +2,10 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Jeayoung Jeon"
+  name: "Jeayoung Jeon3"
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
-  # phone: "+82-10-5069-1328"
   # website: "https://jyje.live"
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
@@ -31,25 +30,6 @@ basics:
       username: "Google Scholar"
       url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
-    resume:
-      title: Résumé
-      summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영].
-        I'm working at MAXST as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
-        I specialize in:
-
-          - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
-          - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
-          - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
-          - 🚀 Balancing **performance** and **cost reduction** optimally.
-
-        
-    # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
-    # - 🎉 Achievements
-    #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
-    #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
-    #     - Daily usages for 10+ teammates 🥳.
     cd:
       title: Career Description
       summary: >
@@ -64,6 +44,25 @@ basics:
         More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
 work:
+  - company: MAXST
+    position: "Project Widearth: Digital Twin Platform with AR/VR"
+    website: https://maxst.com/en
+    startDate: "2024-03-01"
+    summary: >
+      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
+      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
+    highlights:
+      - >
+        <b class="skill-tag-highlight">ML Pipeline</b>
+          Design ML data pipelines using Argo Workflows and Hera Python SDK.
+      - >
+        <b class="skill-tag-highlight">API</b>
+          Making endpoints for the ML pipeline inference based on Python FastAPI.
+      - >
+        <b class="skill-tag-highlight">Infrastructure</b>
+          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
+
+
   - company: MAXST
     position: "Project Widearth: Digital Twin Platform with AR/VR"
     website: https://maxst.com/en

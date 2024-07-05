@@ -2,7 +2,7 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Jeayoung Jeon1"
+  name: 전제영
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
@@ -10,8 +10,8 @@ basics:
   github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: >
-    This is Jeayoung Jeon [🇰🇷전제영].
-    I'm a software engineer in Seoul, South Korea.
+    This is Jeayoung Jeon [🇰🇷 전제영].
+    I'm a software engineer in South Korea.
     I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
     I always want to be a good co-worker and prove it every day.
     I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
@@ -34,114 +34,125 @@ basics:
     # - network: google-scholar
     #   username: "Google Scholar"
     #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
+
+    # - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
+    # - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
+    # - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
+    # - 🚀 Balancing **performance** and **cost reduction** optimally.
+
   contents:
+
     skills:
       summary: >
-        Here are my skills and highlighted items are industry-ready.
-        More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
+        제 스킬 중 현업에 바로 쓸 수 있는 것은 강조하였습니다.
+        더 자세한 내용은 <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>을 참조해 주세요.
 
-    resume:
-      title: Résumé
+    resume-ko:
+      title: 이력서
       summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영], and I'm a software engineer in South Korea. <br/>
-        Currently, I'm working at **MAXST** as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
-        I also specialize in:
+        저는 대한민국에서 서울과 안양을 오가며 소프트웨어 엔지니어로 일하고 있는 전제영 [🇬🇧 Jeayoung Jeon] 입니다.
+        저는 지금 **맥스트**에서 **ML옵스**, **데브옵스**, and **클라우드 네이티브 소프트웨어 엔지니어**의 역할을 맡고 있습니다.
+        또한 다음과 같은 전문성을 가지고 있습니다:
 
-          - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
-          - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
-          - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
-          - 🚀 Balancing **performance** and **cost reduction** optimally.
+          - 🧑‍🔬 **클라우드 네이티브 API**과 **ML 파이프라인**을 개발하며 **디지털 트윈 플랫폼** 프로젝트에 참여하고 있습니다.
+          - 🐳 **온프레미스**와 **퍼블릭 클라우드**를 이용한 **하이브리드 쿠버네티스 클러스터**를 구축하고 있습니다.
+          - 🧑‍🔧 생산성 향상을 위해 **Git옵스**, **Chat옵스**, **ML옵스**를 활용한 **사내 서비스**를 만들고 있습니다.
+          - 🧑‍💻 **팀 문화**와 **새로운 기술**을 연결하는 **최고의 방법**을 찾고 있습니다.
+          - 🚀 **성능 향상**과 **비용 절감** 사이에서 **최적의 방법**을 찾고 있습니다.
 
-        For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
-    # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
-    # - 🎉 Achievements
-    #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
-    #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
-    #     - Daily usages for 10+ teammates 🥳.
+        제 경험과 성과를 바탕으로 좋은 커리어를 희망합니다.
+        더 자세한 내용은 <a href='https://jyje.live/profile/cd-ko'><b>경력기술서</b></a> 혹은 <a href='https://jyje.live/profile/cd-ko'><b>CV</b></a>를 참조해 주세요.
 
 work:
-  - company: MAXST
-    position: "Project Widearth: Digital Twin Platform with AR/VR"
+  - company: 맥스트
+    position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
     website: https://maxst.com/en
     startDate: "2024-03-01"
     summary: >
-      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
+      <a class="h-card" href="https://widearth.world"><b>프로젝트 와이더스</b></a>:
+      디지털 트윈을 위한 점군 기반의 공간맵 플랫폼을 개발하였습니다. 이 프로젝트에서 ML 파이프라인, API, 하이브리드 인프라 개발을 담당했습니다.
     highlights:
       - >
-        <b class="skill-tag-highlight">ML Pipeline</b>
-          Design ML data pipelines using Argo Workflows and Hera Python SDK.
+        <b class="skill-tag-highlight">ML 파이프라인</b>
+          Hera Python SDK를 적극 도입하여 Argo Workflows 기반의 ML 파이프라인을 설계하였습니다.
+
       - >
         <b class="skill-tag-highlight">API</b>
-          Making endpoints for the ML pipeline inference based on Python FastAPI.
-      - >
-        <b class="skill-tag-highlight">Infrastructure</b>
-          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
+          ML 파이프라인 제어를 위한 Python FastAPI를 개발하였습니다. 클라우드 환경에 최적화 하였습니다.
 
-  - company: MAXST
-    position: MLOps Engineer
+      - >
+        <b class="skill-tag-highlight">인프라</b>
+          시스템의 안정성을 지키면서 비용을 줄이기 위해 AWS EKS와 베어메탈 쿠버네티스를 함께 사용하는 하이브리드 클러스터를 개발하였습니다. 하이브리드 클러스터 도입으로 퍼블릭 클라우드 비용을 50% 이상 줄일 수 있었습니다.
+
+  - company: 맥스트
+    position: ML옵스 엔지니어
     website: https://maxst.com/en
     startDate: "2024-01-01"
     summary: >
-      Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
+      온프레미스 클러스터를 이용해 MLOps를 도입하고 정착시켰습니다. 사내 GPU 활용성을 증가시켰습니다.
     highlights:
       - >
         <b class="skill-tag-highlight">AutoML</b>
-          Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-      # - >
-      #   <b class="skill-tag-highlight">Data Lake</b>
-      #     Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
+          Katib와 Argo Workflows를 이용해 사전 빌드 없이 초매개변수를 튜닝하는 환경을 개발하였습니다.
       - >
         <b class="skill-tag-highlight">JupyterHub</b>
-          Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+          ML 연구원을 위한 주문형 Jupyter Notebook 관리 플랫폼을 개발하였습니다.
+      - >
+        <b class="skill-tag-highlight">분산학습</b>
+          Kubeflow의 Training Operator를 이용해 분산 학습 환경을 개발하였습니다.
 
-  - company: MAXST
-    position: DevOps Engineer
+  - company: 맥스트
+    position: 데브옵스 엔지니어
     website: https://maxst.com/en
     startDate: "2023-01-01"
     endDate: "2023-12-31"
     summary: >
-      Developed hybrid clusters providing DevOps for the Technology Division at MAXST. Core projects were completed in 2023, but they are still being maintained and improved.
+      온프레미스 클러스터를 개발하고 데브옵스를 사내문화로 정착시켰습니다. PoC를 통해 데브옵스 수요를 확인하였습니다.
     highlights:
       - >
         <b class="skill-tag-highlight">CI/CD</b>
-          Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
-      - >
-        <b class="skill-tag-highlight">Hybrid K8s</b>
-          Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
-      - >
-        <b class="skill-tag-highlight">On-Premise</b>
-          Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+          Bitbucket Pipeline, Argo Workflows, Argo CD, Slackbot 등 요구사항에 맞는 CI/CD를 개발하였습니다.
 
-  - company: MAXST
-    position: Computer Vison Engineer
+      - >
+        <b class="skill-tag-highlight">하이브리드 클러스터</b>
+          AWS EKS와 온프레미스 쿠버네티스 클러스터를 함께 사용하여 비용을 줄이고 신뢰성을 높였습니다.
+
+      - >
+        <b class="skill-tag-highlight">온프레미스</b>
+          Ansible, Kubespray와 같은 IaC 도구를 사용하여 베어메탈 쿠버네티스 클러스터를 개발하였습니다.
+
+  - company: 맥스트
+    position: 컴퓨터 비전 엔지니어
     website: https://maxst.com/en
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     summary: >
-      Developing computer vision algorithms for AR/VR and Digital Twin Systems.
+      디지털 트윈 시스템과 AR/VR을 위한 컴퓨터 비전 알고리즘을 연구했습니다. 연구 주제는 다음과 같습니다:
     highlights:
       - Visual-SLAM Research for Digital Twin Systems
       - Developing ICP Algorithm to Align 3D Point Clouds
 
   - company: POSTECH
-    position: "Student Researcher with Integrated Program"
+    position: 대학원생 연구원 (통합박사과정 수료)
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
     summary: >
-      Studying and researching in the field of digital signal processing and computer vision. During my time as a graduate student at POSTECH, I had the privilege of working in several projects:
+      디지털 신호처리와 컴퓨터 비전 분야에서 연구하였습니다. 대학원생으로서 연구실에서 여러 프로젝트에 참여하였습니다:
+
+
     highlights:
       - >
         <b class="skill-tag-highlight">2018 - 2020</b>
           <b>Computing and Control Engineering Lab.</b>
         <ul>
           <li>
+            학위 논문:
             <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
               Virtual Visual-SLAM for Real-World Environments
             </a>
           </li>
+          <li>Visual-SLAM for Multiple Cameras</li>
         </ul>
 
       - >
@@ -178,7 +189,7 @@ skills:
       - Terraform*
       - Kubespray*
       - Grafana*
-      - Karpenter
+      - Kapenter
 
   - name: GitOps
     keywords:
@@ -303,10 +314,10 @@ education:
 
 
 languages:
-  - language: "Korean"
-    fluency: "Native"
-  - language: "English"
-    fluency: "Working Proficiency"
+  - language: Korean
+    fluency: 원어민
+  - language: English
+    fluency: 일상대화, 업무
 # interests:
 #   - name: "Wildlife"
 #     keywords:
