@@ -11,12 +11,7 @@ basics:
   # website: "https://jyje.live"
   # github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
-  summary: >
-    This is Jeayoung Jeon [🇰🇷 전제영].
-    I'm a software engineer in Seoul, South Korea.
-    I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
-    I always want to be a good co-worker and prove it every day.
-    I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
+  summary: {}
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -39,7 +34,7 @@ basics:
     resume-ko:
       title: 이력서
       summary: >
-        저는 대한민국에서 서울과 안양을 오가며 소프트웨어 엔지니어로 일하고 있는 전제영 [🇬🇧 Jeayoung Jeon] 입니다.
+        저는 대한민국에서 안양과 서울을 오가며 소프트웨어 엔지니어로 일하고 있는 전제영 [🇬🇧 Jeayoung Jeon] 입니다.
         저는 지금 **맥스트**에서 **ML옵스**, **데브옵스**, **클라우드 네이티브 소프트웨어 엔지니어**의 역할을 맡고 있습니다.
         또한 다음과 같은 전문성을 가지고 있습니다:
 
@@ -50,7 +45,7 @@ basics:
           - 🚀 **성능 향상**과 **비용 절감** 사이에서 **최적의 방법**을 찾고 있습니다.
 
         제 경험과 성과를 바탕으로 좋은 커리어를 희망합니다.
-        더 자세한 내용은 <a href='https://jyje.live/profile/cd-ko'><b>경력기술서</b></a> 혹은 <a href='https://jyje.live/profile/cv-ko'><b>CV</b></a>를 참조해 주세요.
+        더 자세한 내용은 <a href='/profile/cd-ko'><b>경력기술서</b></a> 혹은 <a href='/profile/cv-ko'><b>CV</b></a>를 참조해 주세요.
 
 work:
   - company: 맥스트
@@ -152,7 +147,7 @@ work:
                 <li>
                   학회지:
                   <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
-                    Polygonal symmetry transform for detecting rectangular traffic signs
+                    Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
                   </a>
                 </li>
               </ul>

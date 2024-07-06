@@ -2,222 +2,228 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "전제영"
+  name: 전제영
+  name-english: Jeayoung Jeon
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
+  linkedin: "jyje"
   # website: "https://jyje.live"
-  github: "jyje"
+  # github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: {}
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
-    city: "Anyang & Seoul"
-    countryCode: "KR" # "US"
+    city: "" # "Anyang & Seoul"
+    countryCode: "" # "KR"
     region: "" # "California"
   profiles:
-    - network: LinkedIn
-      username: LinkedIn
-      url: https://linkedin.com/in/jyje
     - network: Github
       username: Github
       url: http://github.com/jyje
     - network: StackShare
       username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
-    - network: google-scholar
-      username: "Google Scholar"
-      url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
+    skills:
+      summary: >
+        제 스킬 중 현업에 바로 쓸 수 있는 것은 강조하였습니다.
+      # 더 자세한 내용은 <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>을 참조해 주세요.
+
     cd-ko:
       title: 경력기술서
       summary: >
-        CD
-        
+        저는 대한민국에서 안양과 서울을 오가며 소프트웨어 엔지니어로 일하고 있는 전제영 [🇬🇧 Jeayoung Jeon] 입니다.
+        저는 지금 **맥스트**에서 **ML옵스**, **데브옵스**, **클라우드 네이티브 소프트웨어 엔지니어**의 역할을 맡고 있습니다.
+        또한 다음과 같은 전문성을 가지고 있습니다:
 
+          - 🧑‍🔬 **클라우드 네이티브 API**과 **ML 파이프라인**을 개발하며 **디지털 트윈 플랫폼** 프로젝트에 참여하고 있습니다.
+          - 🐳 **온프레미스**와 **퍼블릭 클라우드**를 이용한 **하이브리드 쿠버네티스 클러스터**를 개발/운영하고 있습니다.
+          - 🧑‍🔧 생산성 향상을 위해 **Git옵스**, **Chat옵스**, **ML옵스**를 활용한 **사내 서비스**를 만들고 있습니다.
+          - 🧑‍💻 **팀 문화**와 **새로운 기술**을 연결하는 **최고의 방법**을 찾고 있습니다.
+          - 🚀 **성능 향상**과 **비용 절감** 사이에서 **최적의 방법**을 찾고 있습니다.
 
-        For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
-    skills:
-      summary: >
-        Here are my skills and highlighted items are industry-ready.
-        More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
+        제 경험과 성과를 바탕으로 좋은 커리어를 희망합니다.
+        이 문서에서는 주목할만한 저의 경력들을 소개하고 있습니다.
+        더 자세한 내용은 저의 <a href='/profile'><b>포트폴리오</b></a>를 참조해 주세요.
 
 work:
-  - company: MAXST
-    position: "Project Widearth: Digital Twin Platform with AR/VR"
+  - company: 맥스트
+    position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
     website: https://maxst.com/en
     startDate: "2024-03-01"
     summary: >
-      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
+      <a class="h-card" href="https://widearth.world"><b>프로젝트 와이더스</b></a>:
+      디지털 트윈을 위한 점군 기반의 공간맵 플랫폼을 개발하였습니다. 이 프로젝트에서 ML 파이프라인, API, 하이브리드 인프라 개발을 담당했습니다.
     highlights:
       - >
-        <b class="skill-tag-highlight">ML Pipeline</b>
-          Design ML data pipelines using Argo Workflows and Hera Python SDK.
+        <b class="skill-tag-highlight">ML 파이프라인</b>
+          Hera Python SDK를 적극 도입하여 Argo Workflows 기반의 ML 파이프라인을 설계하였습니다.
       - >
         <b class="skill-tag-highlight">API</b>
-          Making endpoints for the ML pipeline inference based on Python FastAPI.
+          ML 파이프라인 제어를 위한 Python FastAPI를 개발하였습니다. 클라우드 환경에 최적화 하였습니다.
       - >
-        <b class="skill-tag-highlight">Infrastructure</b>
-          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
+        <b class="skill-tag-highlight">인프라</b>
+          시스템의 안정성을 지키면서 비용을 줄이기 위해 AWS EKS와 베어메탈 쿠버네티스를 함께 사용하는 하이브리드 클러스터를 개발하였습니다. 하이브리드 클러스터 도입으로 퍼블릭 클라우드 비용을 50% 이상 줄일 수 있었습니다.
 
-
-  - company: MAXST
-    position: "Project Widearth: Digital Twin Platform with AR/VR"
+  - company: 맥스트
+    position: ML옵스 엔지니어
     website: https://maxst.com/en
-    startDate: "2024-03-01"
+    startDate: "2024-01-01"
     summary: >
-      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
-    highlights:
-      - >
-        <b class="skill-tag-highlight">ML Pipeline</b>
-          Design ML data pipelines using Argo Workflows and Hera Python SDK.
-      - >
-        <b class="skill-tag-highlight">API</b>
-          Making endpoints for the ML pipeline inference based on Python FastAPI.
-      - >
-        <b class="skill-tag-highlight">Infrastructure</b>
-          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
-
-  - company: MAXST
-    position: MLOps/DevOps Engineer
-    website: https://maxst.com/en
-    startDate: "2023-01-01"
-    summary: >
-      Development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
+      온프레미스 클러스터를 이용해 MLOps를 도입하고 정착시켰습니다. 사내 GPU 활용성을 증가시켰습니다.
     highlights:
       - >
         <b class="skill-tag-highlight">AutoML</b>
-          Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-      - >
-        <b class="skill-tag-highlight">Data Lake</b>
-          Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
+          Katib와 Argo Workflows를 이용해 사전 빌드 없이 초매개변수를 튜닝하는 환경을 개발하였습니다.
       - >
         <b class="skill-tag-highlight">JupyterHub</b>
-          Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+          ML 연구원을 위한 주문형 Jupyter Notebook 관리 플랫폼을 개발하였습니다.
+      - >
+        <b class="skill-tag-highlight">분산학습</b>
+          Kubeflow의 Training Operator를 이용해 분산 학습 환경을 개발하였습니다.
+
+  - company: 맥스트
+    position: 데브옵스 엔지니어
+    website: https://maxst.com/en
+    startDate: "2023-01-01"
+    endDate: "2023-12-31"
+    summary: >
+      온프레미스 클러스터를 개발하고 데브옵스를 사내문화로 정착시켰습니다. PoC를 통해 데브옵스 수요를 확인하였습니다.
+    highlights:
       - >
         <b class="skill-tag-highlight">CI/CD</b>
-          Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
+          Bitbucket Pipeline, Argo Workflows, Argo CD, Slackbot 등 요구사항에 맞는 CI/CD를 개발하였습니다.
       - >
-        <b class="skill-tag-highlight">On-Premise</b>
-          Building bare-metal Kubernetes clusters using IaC tools such as Ansible.
+        <b class="skill-tag-highlight">하이브리드 클러스터</b>
+          AWS EKS와 온프레미스 쿠버네티스 클러스터를 함께 사용하여 비용을 줄이고 신뢰성을 높였습니다.
+      - >
+        <b class="skill-tag-highlight">온프레미스</b>
+          Ansible, Kubespray와 같은 IaC 도구를 사용하여 베어메탈 쿠버네티스 클러스터를 개발하였습니다.
 
-  - company: MAXST
-    position: Computer Vison Engineer
+  - company: 맥스트
+    position: 컴퓨터 비전 엔지니어
     website: https://maxst.com/en
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     summary: >
-      Developing computer vision algorithms for AR/VR and Digital Twin Systems.
+      디지털 트윈 시스템과 AR/VR을 위한 컴퓨터 비전 알고리즘을 연구했습니다. 연구 주제는 다음과 같습니다:
     highlights:
       - Visual-SLAM Research for Digital Twin Systems
       - Developing ICP Algorithm to Align 3D Point Clouds
 
   - company: POSTECH
-    position: "Student Researcher with Integrated Program"
+    position: 대학원생 연구원 (통합박사과정 수료)
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
     summary: >
-      Studying and researching in the field of digital signal processing and computer vision. During my time as a graduate student at POSTECH, I had the privilege of working in several projects:
+      디지털 신호처리와 컴퓨터 비전 분야에서 연구하였습니다. 대학원생으로서 연구실에서 여러 프로젝트에 참여하였습니다:
     highlights:
       - >
         <b class="skill-tag-highlight">2018 - 2020</b>
-          <b>Computing and Control Engineering Lab.</b>
+          <b>컴퓨팅 및 제어 연구실 (지도교수 한수희)</b>
         <ul>
           <li>
+            학위 논문:
             <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Virtual Visual-SLAM for Real-World Environments
+              실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법
             </a>
           </li>
+          <li>다중 카메라를 위한 비주얼 SLAM 연구</li>
         </ul>
-
       - >
         <b class="skill-tag-highlight">2012 - 2018</b>
-          <b>Advanced Signal Processing Lab.</b>
+          <b>첨단신호처리 연구실 (지도교수 정홍)</b>
         <ul>
-          <li>Stereo Vision Algorithms for Image Depth Estimation</li>
-          <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
+          <li>영상깊이추정을 위한 스테레오 비전 알고리즘 연구</li>
+          <li>운전자 보조 시스템 (ADAS) 연구/개발</li>
           <ul>
-            <li>Lane Mark and Traffic Sign Detection</li>
-            <li>Automotive Online Calibration in Stereo Vision</li>
+            <li>FPGA를 이용한 실시간 운전자 보조 시스템 개발</li>
+            <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 개발</li>
+            <li>
+              교통표지판 및 차선 검출 알고리즘 연구
+              <ul>
+                <li>
+                  학회지:
+                  <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
+                    Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </ul>
 
-# skills:
-#   - name: MLOps and AI/LLMOps
-#     keywords:
-#       - Kubeflow*
-#       - Data Pipeline*
-#       - AutoML Katib*
-#       - Training Operator
-#       - JupyterHub*
-#       - PyTorch*
-#       - OpenCV*
-#       - Ollama*
-#       - RAG
+skills:
+  - name: MLOps & LLMOps
+    keywords:
+      - Kubeflow*
+      - Data Pipeline*
+      - AutoML Katib*
+      - Training Operator
+      - JupyterHub*
+      - PyTorch*
+      - OpenCV*
+      - Ollama*
+      - RAG
 
-#   - name: DevOps
-#     keywords:
-#       - Kubernetes*
-#       - Argo Workflows*
-#       - IaC*
-#       - Ansible*
-#       - Terraform*
-#       - Kubespray*
-#       - Grafana*
+  - name: DevOps
+    keywords:
+      - Kubernetes*
+      - Argo Workflows*
+      - AWS EKS*
+      - Kubespray*
+      - IaC*
+      - Terraform*
+      - Ansible*
+      - Grafana*
+      - Karpenter
 
-#   - name: GitOps
-#     keywords:
-#       - CI/CD*
-#       - Argo CD*
-#       - Bitbucket Pipelines*
-#       - GitHub Actions*
-#       - Kaniko*
-#       - Docker/Multi-stage*
-#       - Slackbot*
+  - name: GitOps
+    keywords:
+      - CI/CD*
+      - Argo CD*
+      - Bitbucket Pipelines*
+      - GitHub Actions*
+      - Kaniko*
+      - Docker/Multi-stage*
+      - Slackbot*
 
-#   - name: Application Development
-#     keywords:
-#       - Python/FastAPI*
-#       - Unit Testing*
-#       - .NET/WPF*
-#       - .NET/MAUI*
-#       - Unity
+  - name: Application Development
+    keywords:
+      - Python/FastAPI*
+      - Unit Testing*
+      - .NET/WPF*
+      - .NET/MAUI*
+      - Unity
 
-#   - name: Programming languages
-#     keywords:
-#       - Python*
-#       - Go*
-#       - C#*
-#       - C/C++
-#       - MATLAB
+  - name: Programming languages
+    keywords:
+      - Python*
+      - Go*
+      - C#*
+      - C/C++
+      - MATLAB
 
-#   - name: Tools
-#     keywords:
-#       - Visual Studio Code*
-#       - Visual Studio*
-#       - Jupyter Notebook
-#       - MATLAB/Simulink
+  - name: Tools
+    keywords:
+      - Visual Studio Code*
+      - Visual Studio*
+      - Jupyter Notebook
+      - MATLAB/Simulink
 
-#   - name: OS and Hardware
-#     keywords:
-#       - Windows*
-#       - WSL2*
-#       - Ubuntu*
-#       - Alpine*
-#       - MacOS*
-#       - ARM64/Raspberry Pi*
-#       - AMD64/Bare Metal*
-#       - FPGA
-
-#   - name: OS and Hardware
-#     keywords:
-#       - Windows*
-#       - WSL2*
-
+  - name: OS and Hardware
+    keywords:
+      - Windows*
+      - WSL2*
+      - Ubuntu*
+      - Alpine*
+      - MacOS*
+      - ARM64/Raspberry Pi*
+      - AMD64/Bare Metal*
+      - FPGA
 
   # - company: "POSTECH"
   #   position: "Teaching Assistant"
@@ -248,42 +254,42 @@ work:
 #     summary: "Global movement of free coding clubs for young people."
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
-# certificates:
-#   - title: "CKA: Certified Kubernetes Administrator"
-#     organization: "The Linux Foundation"
-#     verified: "2024-03-16"
-#     expired: "2027-03-16"
-#     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
-#   - title: "CKAD: Certified Kubernetes Administrator"
-#     organization: "The Linux Foundation"
-#     verified: "2024-06-01"
-#     expired: "2026-06-01"
-#     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
+certificates:
+  - title: "CKAD: Certified Kubernetes Application Developer"
+    organization: 리눅스 재단 (The Linux Foundation)
+    verified: "2024-06-01"
+    expired: "2026-06-01"
+    website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
+  - title: "CKA: Certified Kubernetes Administrator"
+    organization: 리눅스 재단 (The Linux Foundation)
+    verified: "2024-03-16"
+    expired: "2027-03-16"
+    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
-# education:
-#   - institution: "Pohang University of Science and Technology (POSTECH)"
-#     website: "https://eee.postech.ac.kr/"
-#     area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-#     studyType: "Master's Degree (Integrated Program)"
-#     startDate: "2012-03-01"
-#     endDate: "2020-08-31"
-#     gpa: "3.2/4.3"
-#     courses:
-#       - Advanced Driver Assistance Systems (ADAS)
-#       - Simultaneous Localization and Mapping (SLAM)
-#       - Computer Vision Algorithms
-#   - institution: "Kumoh National Institute of Technology (kit)"
-#     website: "https://eng.kumoh.ac.kr/eng"
-#     area: "School of Electronic Engineering, Electronic Communication"
-#     studyType: "Bachelor's Degree"
-#     startDate: "2008-03-01"
-#     endDate: "2012-02-28"
-#     gpa: "4.3/4.5"
-#     courses:
-#       - Advanced Digital Signal Processing
-#       - Visual Light Communication
-#       - Electronic Communication with Complex Analysis
-#       - Finite Programmable Gate Array (FPGA)
+education:
+  - institution: "포항공과대학교 (POSTECH)"
+    website: "https://eee.postech.ac.kr/"
+    area: "전기전자공학과, 신호처리 및 컴퓨터 비전 전공"
+    studyType: "석사학위 (통합과정수료)"
+    startDate: "2012-03-01"
+    endDate: "2020-08-31"
+    gpa: "3.2/4.3"
+    courses:
+      - 첨단 운전자 보조 시스템 (ADAS, Advanced Driver Assistance Systems)
+      - 비주얼 SLAM (Simultaneous Localization and Mapping)
+      - 컴퓨터 비전 알고리즘
+  - institution: "금오공과대학교 (kit)"
+    website: "https://eng.kumoh.ac.kr/eng"
+    area: "전자공학부, 전자통신 전공"
+    studyType: "학부과정"
+    startDate: "2008-03-01"
+    endDate: "2012-02-28"
+    gpa: "4.3/4.5"
+    courses:
+      - 디지털 신호 처리 (DSP, Digital Signal Processing)
+      - 가시광 통신 (VLC, Visual Light Communication)
+      - 복소해석학 기반 전자통신 (Electronic Communication with Complex Analysis)
+      - FPGA (Finite Programmable Gate Array) 개발
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -296,12 +302,11 @@ work:
 #     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 
-
-# languages:
-#   - language: "Korean"
-#     fluency: "Native"
-#   - language: "English"
-#     fluency: "Working Proficiency"
+languages:
+  - language: Korean
+    fluency: 원어민
+  - language: English
+    fluency: 일상대화, 업무
 # interests:
 #   - name: "Wildlife"
 #     keywords:
