@@ -410,6 +410,8 @@ compress_html:
 sass:
   style:               compressed
 
+mermaid:
+  src:                 https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
 
 # Jekyll Compose Defaults
 # ---------------------------------------------------------------------------------------
