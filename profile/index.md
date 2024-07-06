@@ -22,32 +22,7 @@ My name is [Jeayoung Jeon]{:.heading.flip-title}, and I'm a software engineer li
 To know more about me, check out my documents below:
 
 <div class="screen-only">
-<table>
-  <style>
-    table:not(.rouge-table) td {
-      margin: 0px;
-      padding: 0.25rem 0.25rem;
-    }
-    .right-align {
-      text-align: right;
-    }
-  </style>
-  <tr>
-    <td class="right-align">💼 Résumé</td>
-    <td><a href="/profile/resume" class="btn btn-sm btn-primary">🇬🇧 EN</a></td>
-    <td><a href="/profile/resume-ko" class="btn btn-sm btn-primary">🇰🇷 KO</a></td>
-  </tr>
-  <tr>
-    <td class="right-align">💼 Career Description</td>
-    <td><a href="/profile/cd" class="btn btn-sm btn-primary">🇬🇧 EN</a></td>
-    <td><a href="/profile/cd-ko" class="btn btn-sm btn-primary">🇰🇷 KO</a></td>
-  </tr>
-  <tr>
-    <td class="right-align">🎓 Curriculum Vitae</td>
-    <td><a href="/profile/cv" class="btn btn-sm btn-primary">🇬🇧 EN</a></td>
-    <td><a href="/profile/cv-ko" class="btn btn-sm btn-primary">🇰🇷 KO</a></td>
-  </tr>
-</table>
+  {% include components/document-table.html %}
 </div>
 {:.note title="Documents"}
 
@@ -126,11 +101,19 @@ Following is a brief summary of my career:
 *The annual interval stands for the focused duration of my full efforts*
 {:.faded}
 
-### Biographies
+### Documents
+
+You can find more details about my career in the following documents:
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted career
 - [Career Description]{:.heading.flip-title}: Abstract of my experience and outcomes
 - [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training
+
+And you can also check my documents written in Korean:
+
+- [이력서]{:.heading.flip-title}: My résumé in Korean
+- [경력기술서]{:.heading.flip-title}: My career description in Korean
+- [커리큘럼]{:.heading.flip-title}: My CV in Korean
 
 ### Certifications
 
@@ -151,10 +134,16 @@ See my [certifications]{:.heading.flip-title} for more details.
 
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
 [Profile]: / "my-profile --verbose"
+
 [Résumé]: /profile/resume "my-profile resume"
 [Career Description]: /profile/cd "my-profile career"
 [Curriculum Vitae]: /profile/cv "my-profile cv"
 [CV]: /profile/cv "my-profile cv"
+
+[이력서]: /profile/resume-ko "my-profile resume --ko"
+[경력기술서]: /profile/cd-ko "my-profile career --ko"
+[커리큘럼]: /profile/cv-ko "my-profile cv --ko"
+
 [Certifications]: ../certifications
 [Works]: ../works
 [Articles]: ../articles

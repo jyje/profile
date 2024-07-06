@@ -12,10 +12,10 @@ It provides following sections:
 - [Profile]{:.heading.flip-title}
     - My introduction and career overview
     -   <div>
-            My official documents including résumé and CV: 
-            <a href="/profile/resume" class="btn btn-inline btn-primary">
-                <small class="icon-briefcase"></small>
-                Résumé
+            My official documents including résumé, career description, and CV: 
+            <a href="/profile#documents" class="btn btn-inline btn-primary">
+                <small class="icon-edit"></small>
+                Documents
             </a>
             <!-- <a href="/profile/cv" class="btn btn-inline btn-primary">
                 <small class="icon-scholar"></small>
@@ -55,6 +55,6 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 
 <!-- 🧑‍💻 Set-up and Run -->
 
-<!-- sudo bundle install -->
-<!-- sudo bundle update --bundler -->
+<!-- bundle install -->
+<!-- bundle update --bundler -->
 <!-- bundle exec jekyll serve --force_polling --livereload -->
