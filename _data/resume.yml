@@ -2,7 +2,7 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Jeayoung Jeon1"
+  name: "Jeayoung Jeon"
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
@@ -54,11 +54,6 @@ basics:
           - 🚀 Balancing **performance** and **cost reduction** optimally.
 
         For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
-    # I provide environments for develpers and researchers to make best-practice softwares with optimal efforts and cost.
-    # - 🎉 Achievements
-    #   - Reduced cloud budgets more than **50%** via **Hybrid Clusters** against **Public Cloud** only.
-    #   - Provided services including **Slackbot for CI/CD, AutoML, Remote Notebooks, ML Pipelines**.
-    #     - Daily usages for 10+ teammates 🥳.
 
 work:
   - company: MAXST

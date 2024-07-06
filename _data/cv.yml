@@ -2,7 +2,7 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Jeayoung Jeon2"
+  name: "Jeayoung Jeon"
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"

@@ -35,11 +35,6 @@ basics:
     #   username: "Google Scholar"
     #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
 
-    # - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-    # - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
-    # - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
-    # - 🚀 Balancing **performance** and **cost reduction** optimally.
-
   contents:
 
     skills:
@@ -55,7 +50,7 @@ basics:
         또한 다음과 같은 전문성을 가지고 있습니다:
 
           - 🧑‍🔬 **클라우드 네이티브 API**과 **ML 파이프라인**을 개발하며 **디지털 트윈 플랫폼** 프로젝트에 참여하고 있습니다.
-          - 🐳 **온프레미스**와 **퍼블릭 클라우드**를 이용한 **하이브리드 쿠버네티스 클러스터**를 구축하고 있습니다.
+          - 🐳 **온프레미스**와 **퍼블릭 클라우드**를 이용한 **하이브리드 쿠버네티스 클러스터**를 개발/운영하고 있습니다.
           - 🧑‍🔧 생산성 향상을 위해 **Git옵스**, **Chat옵스**, **ML옵스**를 활용한 **사내 서비스**를 만들고 있습니다.
           - 🧑‍💻 **팀 문화**와 **새로운 기술**을 연결하는 **최고의 방법**을 찾고 있습니다.
           - 🚀 **성능 향상**과 **비용 절감** 사이에서 **최적의 방법**을 찾고 있습니다.

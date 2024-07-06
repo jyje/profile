@@ -102,7 +102,7 @@ Following is a brief summary of my career:
 
 ### Biographies
 
-- [Résumé]{:.heading.flip-title}: Recent highlighted works
+- [Résumé]{:.heading.flip-title}: Recent highlighted career
 - [Career Description]{:.heading.flip-title}: Abstract of my experience and outcomes
 - [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training
 
