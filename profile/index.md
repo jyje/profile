@@ -6,6 +6,8 @@ accent_image:
   overlay: false
 ---
 
+* toc
+{:toc .large-only}
 
 ## ✨ Introduction
 
