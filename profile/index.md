@@ -19,27 +19,7 @@ My name is [Jeayoung Jeon]{:.heading.flip-title}, and I'm a software engineer li
     - Create pipelines for computer vision problems in minimal cost.
 - In my spare time, I enjoy walking my dog and diving into the world of the **Kubernetes Community**.
 
-To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.heading.flip-title}, and the following sections.
-
----
-
-<div class="screen-only">
-  <a href="/certifications" class="btn btn-sm btn-primary mt1">
-    <small class="icon-checkmark"></small>
-    Certifications
-  </a>
-  <a href="https://app.jyje.live" class="btn btn-sm btn-primary mt1">
-    <small class="icon-wrench"></small>
-    Demo
-  </a>
-  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary mt1">
-    <small class="icon-bubble"></small>
-    Blog (Korean)
-  </a>
-</div>
-{:.note title="Quick Navigation"}
-
----
+To know more about me, check out my documents below:
 
 <div class="screen-only">
 <table>
@@ -70,6 +50,24 @@ To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.hea
 </table>
 </div>
 {:.note title="Documents"}
+
+---
+
+<div class="screen-only">
+  <a href="/certifications" class="btn btn-sm btn-primary mt1">
+    <small class="icon-checkmark"></small>
+    Certifications
+  </a>
+  <a href="https://app.jyje.live" class="btn btn-sm btn-primary mt1">
+    <small class="icon-wrench"></small>
+    Demo
+  </a>
+  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary mt1">
+    <small class="icon-bubble"></small>
+    Blog (Korean)
+  </a>
+</div>
+{:.note title="Quick Navigation"}
 
 ---
 
