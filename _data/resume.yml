@@ -6,11 +6,12 @@ basics:
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
+  linkedin: "jyje"
   # website: "https://jyje.live"
-  github: "jyje"
+  # github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: >
-    This is Jeayoung Jeon [🇰🇷전제영].
+    This is Jeayoung Jeon [🇰🇷 전제영].
     I'm a software engineer in Seoul, South Korea.
     I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
     I always want to be a good co-worker and prove it every day.
@@ -18,27 +19,21 @@ basics:
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
-    city: "Anyang & Seoul"
-    countryCode: "KR" # "US"
+    city: "" # "Anyang & Seoul"
+    countryCode: "" # "KR"
     region: "" # "California"
   profiles:
-    - network: LinkedIn
-      username: LinkedIn
-      url: https://linkedin.com/in/jyje
     - network: Github
       username: Github
       url: http://github.com/jyje
     - network: StackShare
       username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
-    # - network: google-scholar
-    #   username: "Google Scholar"
-    #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
   contents:
     skills:
       summary: >
         Here are my skills and highlighted items are industry-ready.
-        More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
+      # More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
     resume:
       title: Résumé
@@ -53,7 +48,8 @@ basics:
           - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
           - 🚀 Balancing **performance** and **cost reduction** optimally.
 
-        For more details, please visit <a href='https://jyje.live/profile'>my portfolio</a> or <a href='mailto:jyjeon+contact@outlook.com'>contact me</a>.
+        From my experience and achievements, I hope to have a good career.
+        For more details, please visit my <a href='https://jyje.live/profile/cd'><b>career description</b></a> or <a href='https://jyje.live/profile/cv'><b>CV</b></a>.
 
 work:
   - company: MAXST
@@ -84,12 +80,12 @@ work:
       - >
         <b class="skill-tag-highlight">AutoML</b>
           Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-      # - >
-      #   <b class="skill-tag-highlight">Data Lake</b>
-      #     Storing pipeline results into storage and RDB. Visualizing with Grafana and Tensorboard.
       - >
         <b class="skill-tag-highlight">JupyterHub</b>
           Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+      - >
+        <b class="skill-tag-highlight">Distributed ML</b>
+          Developing distributed learning environments using Kubeflow Training Operator.
 
   - company: MAXST
     position: DevOps Engineer
@@ -97,7 +93,7 @@ work:
     startDate: "2023-01-01"
     endDate: "2023-12-31"
     summary: >
-      Developed hybrid clusters providing DevOps for the Technology Division at MAXST. Core projects were completed in 2023, but they are still being maintained and improved.
+      Developed hybrid clusters providing DevOps for the Technology Division at MAXST.
     highlights:
       - >
         <b class="skill-tag-highlight">CI/CD</b>
@@ -130,18 +126,19 @@ work:
     highlights:
       - >
         <b class="skill-tag-highlight">2018 - 2020</b>
-          <b>Computing and Control Engineering Lab.</b>
+          <b>Computing and Control Engineering Lab. (Prof. SH, Han)</b>
         <ul>
           <li>
+            Thesis:
             <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
               Virtual Visual-SLAM for Real-World Environments
             </a>
           </li>
+          <li>Visual-SLAM for Multiple Cameras</li>
         </ul>
-
       - >
         <b class="skill-tag-highlight">2012 - 2018</b>
-          <b>Advanced Signal Processing Lab.</b>
+          <b>Advanced Signal Processing Lab. (Prod. H, Jeong)</b>
         <ul>
           <li>Stereo Vision Algorithms for Image Depth Estimation</li>
           <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
@@ -168,10 +165,11 @@ skills:
     keywords:
       - Kubernetes*
       - Argo Workflows*
-      - IaC*
-      - Ansible*
-      - Terraform*
+      - AWS EKS*
       - Kubespray*
+      - IaC*
+      - Terraform*
+      - Ansible*
       - Grafana*
       - Karpenter
 
@@ -249,16 +247,16 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
-  - title: "CKA: Certified Kubernetes Administrator"
-    organization: "The Linux Foundation"
-    verified: "2024-03-16"
-    expired: "2027-03-16"
-    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
-  - title: "CKAD: Certified Kubernetes Administrator"
-    organization: "The Linux Foundation"
+  - title: "CKAD: Certified Kubernetes Application Developer"
+    organization: The Linux Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
+  - title: "CKA: Certified Kubernetes Administrator"
+    organization: The Linux Foundation
+    verified: "2024-03-16"
+    expired: "2027-03-16"
+    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
 education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
@@ -280,7 +278,7 @@ education:
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
     courses:
-      - Advanced Digital Signal Processing
+      - Digital Signal Processing
       - Visual Light Communication
       - Electronic Communication with Complex Analysis
       - Finite Programmable Gate Array (FPGA)
@@ -295,7 +293,6 @@ education:
 #     releaseDate: "2014-10-01"
 #     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
-
 
 languages:
   - language: "Korean"

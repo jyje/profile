@@ -55,6 +55,6 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 
 <!-- 🧑‍💻 Set-up and Run -->
 
-<!-- bundle install -->
-<!-- bundle update --bundler -->
+<!-- sudo bundle install -->
+<!-- sudo bundle update --bundler -->
 <!-- bundle exec jekyll serve --force_polling --livereload -->

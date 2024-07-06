@@ -102,4 +102,48 @@
       <a href="{{ basics.website }}" class="external no-print-link url u-url" property="sameAs">{{ basics.website }}</a>
     </dd>
   {% endif %}
+
+  <!-- Social -->
+  {% assign social = site.data.social %}
+
+  <!-- LinkedIn -->
+  {% if basics.linkedin.size > 0 %}
+    <dt class="faded">
+      <span class="{{ icons.linkedin | default:'icon-linkedin' }}" title="{{ strings.resume.linkedin | default:'LinkedIn' }}"></span>
+      <span class="sr-only">{{ strings.resume.linkedin | default:"LinkedIn" }}</span>
+    </dt>
+    <dd class="bold">
+      {% capture linkedin_href %}{{ social.linkedin.prepend }}{{ basics.linkedin }}{% endcapture %}
+      {% capture linkedin_title %}{{ social.linkedin.name }}{{ strings.colon }} {{ basics.linkedin }}{% endcapture %}
+      {% include components/link.html href=linkedin_href class=link_class title=linkedin_title property="sameAs" %}
+    </dd>
+  {% endif %}
+
+  <!-- GitHub -->
+  {% if basics.github.size > 0 %}
+    <dt class="faded">
+      <span class="{{ icons.github | default:'icon-github' }}" title="{{ strings.resume.github | default:'GitHub' }}"></span>
+      <span class="sr-only">{{ strings.resume.github | default:"GitHub" }}</span>
+    </dt>
+    <dd class="bold">
+      {% capture github_href %}{{ social.github.prepend }}{{ basics.github }}{% endcapture %}
+      {% capture github_title %}{{ social.github.name }}{{ strings.colon }} {{ basics.github }}{% endcapture %}
+      {% include components/link.html href=github_href class=link_class title=github_title property="sameAs" %}
+    </dd>
+  {% endif %}
+
+  <!-- Google Scholar -->
+  {% if basics.googlescholar.size > 0 %}
+    <dt class="faded">
+      <span class="{{ icons.googlescholar | default:'icon-scholar' }}" title="{{ site.data.resume.name | default:'Google Scholar' }}"></span>
+      <span class="sr-only">{{ strings.resume.googlescholar | default:"Google Scholar" }}</span>
+    </dt>
+    <dd class="bold">
+      {% capture googlescholar_href %}{{ social.google-scholar.prepend }}{{ basics.googlescholar }}{% endcapture %}
+      {% capture googlescholar_title %}{{ social.google-scholar.name }}{{ strings.colon }} {{ basics.name }}{% endcapture %}
+      {% include components/link.html href=googlescholar_href class=link_class title=googlescholar_title property="sameAs" %}
+    </dd>
+  {% endif %}
+
+
 </dl>

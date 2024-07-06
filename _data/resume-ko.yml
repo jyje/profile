@@ -6,41 +6,34 @@ basics:
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
+  linkedin: "jyje"
   # website: "https://jyje.live"
-  github: "jyje"
+  # github: "jyje"
   googlescholar: "gwCPQM8AAAAJ"
   summary: >
     This is Jeayoung Jeon [🇰🇷 전제영].
-    I'm a software engineer in South Korea.
+    I'm a software engineer in Seoul, South Korea.
     I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
     I always want to be a good co-worker and prove it every day.
     I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
-    city: "Anyang & Seoul"
-    countryCode: "KR" # "US"
+    city: "" # "Anyang & Seoul"
+    countryCode: "" # "KR"
     region: "" # "California"
   profiles:
-    - network: LinkedIn
-      username: LinkedIn
-      url: https://linkedin.com/in/jyje
     - network: Github
       username: Github
       url: http://github.com/jyje
     - network: StackShare
       username: StackShare
       url: https://stackshare.io/jyje/jyje-pro-stack
-    # - network: google-scholar
-    #   username: "Google Scholar"
-    #   url: https://scholar.google.com/citations?user=gwCPQM8AAAAJ
-
   contents:
-
     skills:
       summary: >
         제 스킬 중 현업에 바로 쓸 수 있는 것은 강조하였습니다.
-        더 자세한 내용은 <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>을 참조해 주세요.
+      # 더 자세한 내용은 <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>을 참조해 주세요.
 
     resume-ko:
       title: 이력서
@@ -56,7 +49,7 @@ basics:
           - 🚀 **성능 향상**과 **비용 절감** 사이에서 **최적의 방법**을 찾고 있습니다.
 
         제 경험과 성과를 바탕으로 좋은 커리어를 희망합니다.
-        더 자세한 내용은 <a href='https://jyje.live/profile/cd-ko'><b>경력기술서</b></a> 혹은 <a href='https://jyje.live/profile/cd-ko'><b>CV</b></a>를 참조해 주세요.
+        더 자세한 내용은 <a href='https://jyje.live/profile/cd-ko'><b>경력기술서</b></a> 혹은 <a href='https://jyje.live/profile/cv-ko'><b>CV</b></a>를 참조해 주세요.
 
 work:
   - company: 맥스트
@@ -70,11 +63,9 @@ work:
       - >
         <b class="skill-tag-highlight">ML 파이프라인</b>
           Hera Python SDK를 적극 도입하여 Argo Workflows 기반의 ML 파이프라인을 설계하였습니다.
-
       - >
         <b class="skill-tag-highlight">API</b>
           ML 파이프라인 제어를 위한 Python FastAPI를 개발하였습니다. 클라우드 환경에 최적화 하였습니다.
-
       - >
         <b class="skill-tag-highlight">인프라</b>
           시스템의 안정성을 지키면서 비용을 줄이기 위해 AWS EKS와 베어메탈 쿠버네티스를 함께 사용하는 하이브리드 클러스터를 개발하였습니다. 하이브리드 클러스터 도입으로 퍼블릭 클라우드 비용을 50% 이상 줄일 수 있었습니다.
@@ -107,11 +98,9 @@ work:
       - >
         <b class="skill-tag-highlight">CI/CD</b>
           Bitbucket Pipeline, Argo Workflows, Argo CD, Slackbot 등 요구사항에 맞는 CI/CD를 개발하였습니다.
-
       - >
         <b class="skill-tag-highlight">하이브리드 클러스터</b>
           AWS EKS와 온프레미스 쿠버네티스 클러스터를 함께 사용하여 비용을 줄이고 신뢰성을 높였습니다.
-
       - >
         <b class="skill-tag-highlight">온프레미스</b>
           Ansible, Kubespray와 같은 IaC 도구를 사용하여 베어메탈 쿠버네티스 클러스터를 개발하였습니다.
@@ -134,31 +123,28 @@ work:
     endDate: "2020-08-27"
     summary: >
       디지털 신호처리와 컴퓨터 비전 분야에서 연구하였습니다. 대학원생으로서 연구실에서 여러 프로젝트에 참여하였습니다:
-
-
     highlights:
       - >
         <b class="skill-tag-highlight">2018 - 2020</b>
-          <b>Computing and Control Engineering Lab.</b>
+          <b>컴퓨팅 및 제어 연구실 (지도교수 한수희)</b>
         <ul>
           <li>
             학위 논문:
             <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Virtual Visual-SLAM for Real-World Environments
+              실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법
             </a>
           </li>
-          <li>Visual-SLAM for Multiple Cameras</li>
+          <li>다중 카메라를 위한 비주얼 SLAM 연구</li>
         </ul>
-
       - >
         <b class="skill-tag-highlight">2012 - 2018</b>
-          <b>Advanced Signal Processing Lab.</b>
+          <b>첨단신호처리 연구실 (지도교수 정홍)</b>
         <ul>
-          <li>Stereo Vision Algorithms for Image Depth Estimation</li>
-          <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
+          <li>영상깊이추정을 위한 스테레오 비전 알고리즘 연구</li>
+          <li>FPGA를 이용한 실시간 운전자 보조 시스템 연구개발</li>
           <ul>
-            <li>Lane Mark and Traffic Sign Detection</li>
-            <li>Automotive Online Calibration in Stereo Vision</li>
+            <li>차선 및 교통표지판 검출 알고리즘 연구</li>
+            <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 연구</li>
           </ul>
         </ul>
 
@@ -179,12 +165,13 @@ skills:
     keywords:
       - Kubernetes*
       - Argo Workflows*
-      - IaC*
-      - Ansible*
-      - Terraform*
+      - AWS EKS*
       - Kubespray*
+      - IaC*
+      - Terraform*
+      - Ansible*
       - Grafana*
-      - Kapenter
+      - Karpenter
 
   - name: GitOps
     keywords:
@@ -260,41 +247,41 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
-  - title: "CKA: Certified Kubernetes Administrator"
-    organization: "The Linux Foundation"
-    verified: "2024-03-16"
-    expired: "2027-03-16"
-    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
-  - title: "CKAD: Certified Kubernetes Administrator"
-    organization: "The Linux Foundation"
+  - title: "CKAD: Certified Kubernetes Application Developer"
+    organization: 리눅스 재단 (The Linux Foundation)
     verified: "2024-06-01"
     expired: "2026-06-01"
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
+  - title: "CKA: Certified Kubernetes Administrator"
+    organization: 리눅스 재단 (The Linux Foundation)
+    verified: "2024-03-16"
+    expired: "2027-03-16"
+    website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
 education:
-  - institution: "Pohang University of Science and Technology (POSTECH)"
+  - institution: "포항공과대학교 (POSTECH)"
     website: "https://eee.postech.ac.kr/"
-    area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-    studyType: "Master's Degree (Integrated Program)"
+    area: "전기전자공학과, 신호처리 및 컴퓨터 비전 전공"
+    studyType: "통합과정"
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
     courses:
-      - Advanced Driver Assistance Systems (ADAS)
-      - Simultaneous Localization and Mapping (SLAM)
-      - Computer Vision Algorithms
-  - institution: "Kumoh National Institute of Technology (kit)"
+      - 첨단 운전자 보조 시스템 (ADAS, Advanced Driver Assistance Systems)
+      - 비주얼 SLAM (Simultaneous Localization and Mapping)
+      - 컴퓨터 비전 알고리즘
+  - institution: "금오공과대학교 (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
-    area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "Bachelor's Degree"
+    area: "전자공학부, 전자통신 전공"
+    studyType: "학부과정"
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
     courses:
-      - Advanced Digital Signal Processing
-      - Visual Light Communication
-      - Electronic Communication with Complex Analysis
-      - Finite Programmable Gate Array (FPGA)
+      - 디지털 신호 처리 (DSP, Digital Signal Processing)
+      - 가시광 통신 (VLC, Visual Light Communication)
+      - 복소해석학 기반 전자통신 (Electronic Communication with Complex Analysis)
+      - FPGA 개발 (Finite Programmable Gate Array)
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -306,7 +293,6 @@ education:
 #     releaseDate: "2014-10-01"
 #     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
 #     summary: "Innovative middle-out compression algorithm that changes the way we store data."
-
 
 languages:
   - language: Korean
