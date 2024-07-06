@@ -19,15 +19,9 @@ My name is [Jeayoung Jeon]{:.heading.flip-title}, and I'm a software engineer li
 
 To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.heading.flip-title}, and the following sections.
 
+---
+
 <div class="screen-only">
-  <a href="/profile/resume" class="btn btn-sm btn-primary mt1">
-    <small class="icon-briefcase"></small>
-    Résumé
-  </a>
-  <!-- <a href="/profile/cv" class="btn btn-sm btn-primary mt1">
-    <small class="icon-scholar"></small>
-    CV
-  </a> -->
   <a href="/certifications" class="btn btn-sm btn-primary mt1">
     <small class="icon-checkmark"></small>
     Certifications
@@ -38,10 +32,42 @@ To know more about me, check out my [Résumé]{:.heading.flip-title}, [CV]{:.hea
   </a>
   <a href="https://blog.jyje.live" class="btn btn-sm btn-primary mt1">
     <small class="icon-bubble"></small>
-    Blog (in Korean)
+    Blog (Korean)
   </a>
 </div>
-{:.note title="Navigation"}
+{:.note title="Quick Navigation"}
+
+---
+
+<div class="screen-only">
+<table>
+  <style>
+    table:not(.rouge-table) td {
+      margin: 0px;
+      padding: 0.25rem 0.25rem;
+    }
+    .right-align {
+      text-align: right;
+    }
+  </style>
+  <tr>
+    <td class="right-align">💼 Résumé</td>
+    <td><a href="/profile/resume" class="btn btn-sm btn-primary">🇬🇧 EN</a></td>
+    <td><a href="/profile/resume-ko" class="btn btn-sm btn-primary">🇰🇷 KO</a></td>
+  </tr>
+  <tr>
+    <td class="right-align">💼 Career Description</td>
+    <td><a href="/profile/cd" class="btn btn-sm btn-primary">🇬🇧 EN</a></td>
+    <td><a href="/profile/cd-ko" class="btn btn-sm btn-primary">🇰🇷 KO</a></td>
+  </tr>
+  <tr>
+    <td class="right-align">🎓 Curriculum Vitae</td>
+    <td><a href="/profile/cv" class="btn btn-sm btn-primary">🇬🇧 EN</a></td>
+    <td><a href="/profile/cv-ko" class="btn btn-sm btn-primary">🇰🇷 KO</a></td>
+  </tr>
+</table>
+</div>
+{:.note title="Documents"}
 
 ---
 
