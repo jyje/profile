@@ -117,7 +117,7 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 
 Following is a brief summary of my career:
 
-- <span class="emph btn-inline btn-primary">**2024 - Present**</span> : **Cloud-Native Software Development (FE, BE, Infra)**
+- <span class="emph btn-inline btn-primary">**2024 - Present**</span> : **Cloud-Native Software Development (BE, Infra)**
 - <span class="emph btn-inline btn-primary">**2023 - Present**</span> : **MLOps**, **DevOps** using **Kubernetes Clusters**
 - <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM and Digital Twins**
 - <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
