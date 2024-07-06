@@ -142,10 +142,21 @@ work:
           <b>첨단신호처리 연구실 (지도교수 정홍)</b>
         <ul>
           <li>영상깊이추정을 위한 스테레오 비전 알고리즘 연구</li>
-          <li>FPGA를 이용한 실시간 운전자 보조 시스템 연구개발</li>
+          <li>운전자 보조 시스템 (ADAS) 연구/개발</li>
           <ul>
-            <li>차선 및 교통표지판 검출 알고리즘 연구</li>
-            <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 연구</li>
+            <li>FPGA를 이용한 실시간 운전자 보조 시스템 개발</li>
+            <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 개발</li>
+            <li>
+              교통표지판 및 차선 검출 알고리즘 연구
+              <ul>
+                <li>
+                  학회지:
+                  <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
+                    Polygonal symmetry transform for detecting rectangular traffic signs
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </ul>
 

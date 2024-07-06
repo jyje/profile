@@ -142,10 +142,21 @@ work:
           <b>Advanced Signal Processing Lab. (Prod. H, Jeong)</b>
         <ul>
           <li>Stereo Vision Algorithms for Image Depth Estimation</li>
-          <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
+          <li>Advanced Driver Assistance Systems' Research and Development</li>
           <ul>
-            <li>Lane Mark and Traffic Sign Detection</li>
             <li>Automotive Online Calibration in Stereo Vision</li>
+            <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
+            <li>
+              Research on Traffic Sign & Lane Terrain Detection
+              <ul>
+                <li>
+                  Conference:
+                  <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
+                    Polygonal symmetry transform for detecting rectangular traffic signs
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </ul>
 
