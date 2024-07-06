@@ -140,7 +140,7 @@
     </dt>
     <dd class="bold">
       {% capture googlescholar_href %}{{ social.google-scholar.prepend }}{{ basics.googlescholar }}{% endcapture %}
-      {% capture googlescholar_title %}{{ social.google-scholar.name }}{{ strings.colon }} {{ basics.name }}{% endcapture %}
+      {% capture googlescholar_title %}{{ social.google-scholar.name }}{{ strings.colon }} {{ basics.name-english }}{% endcapture %}
       {% include components/link.html href=googlescholar_href class=link_class title=googlescholar_title property="sameAs" %}
     </dd>
   {% endif %}

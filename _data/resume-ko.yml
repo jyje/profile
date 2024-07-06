@@ -3,6 +3,7 @@
 # See also: <https://jsonresume.org/>.
 basics:
   name: 전제영
+  name-english: Jeayoung Jeon
   label: "MLOps and Cloud-Native Engineer"
   picture: "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
