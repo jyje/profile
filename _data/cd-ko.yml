@@ -46,13 +46,13 @@ basics:
 
         제 경험과 성과를 바탕으로 좋은 커리어를 희망합니다.
         이 문서에서는 주목할만한 저의 경력들을 소개하고 있습니다.
-        더 자세한 내용은 저의 <a href='/profile'><b>포트폴리오</b></a>를 참조해 주세요.
+        <br/> 저의 **이력서**나 **CV** 등의 더 자세한 내용은 <a href='https://jyje.live/profile'><b>포트폴리오</b></a> 참조해 주세요.
 
 work:
-  - company: 맥스트
-    position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
+  - position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
+    company: 맥스트
     website: https://maxst.com/en
-    startDate: "2024-03-01"
+    startDate: "2024-01-02"
     summary: >
       <a class="h-card" href="https://widearth.world"><b>프로젝트 와이더스</b></a>:
       디지털 트윈을 위한 점군 기반의 공간맵 플랫폼을 개발하였습니다. 이 프로젝트에서 ML 파이프라인, API, 하이브리드 인프라 개발을 담당했습니다.
@@ -67,8 +67,8 @@ work:
         <b class="skill-tag-highlight">인프라</b>
           시스템의 안정성을 지키면서 비용을 줄이기 위해 AWS EKS와 베어메탈 쿠버네티스를 함께 사용하는 하이브리드 클러스터를 개발하였습니다. 하이브리드 클러스터 도입으로 퍼블릭 클라우드 비용을 50% 이상 줄일 수 있었습니다.
 
-  - company: 맥스트
-    position: ML옵스 엔지니어
+  - position: "온프레미스 GPU 장비로 ML옵스 도입하기"
+    company: 맥스트
     website: https://maxst.com/en
     startDate: "2024-01-01"
     summary: >
