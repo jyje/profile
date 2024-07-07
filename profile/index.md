@@ -106,14 +106,12 @@ Following is a brief summary of my career:
 You can find more details about my career in the following documents:
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted career
-- [Career Description]{:.heading.flip-title}: Abstract of my experience and outcomes
-- [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training
+<!-- - [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training -->
 
 And you can also check my documents written in Korean:
 
 - [이력서]{:.heading.flip-title}: My résumé in Korean
-- [경력기술서]{:.heading.flip-title}: My career description in Korean
-- [커리큘럼]{:.heading.flip-title}: My CV in Korean
+<!-- - [커리큘럼]{:.heading.flip-title}: My CV in Korean -->
 
 ### Certifications
 
@@ -136,12 +134,10 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Profile]: / "my-profile --verbose"
 
 [Résumé]: /profile/resume "my-profile resume"
-[Career Description]: /profile/cd "my-profile career"
 [Curriculum Vitae]: /profile/cv "my-profile cv"
 [CV]: /profile/cv "my-profile cv"
 
 [이력서]: /profile/resume-ko "my-profile resume --ko"
-[경력기술서]: /profile/cd-ko "my-profile career --ko"
 [커리큘럼]: /profile/cv-ko "my-profile cv --ko"
 
 [Certifications]: ../certifications
