@@ -44,16 +44,17 @@ basics:
 
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
+          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps**, and **Argo Workflows**.
 
         I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
         And also, I'm balancing **performance** and **cost reduction** optimally.
         From my experience and achievements, I hope to have a good career.
         For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
 
-work:
-  - company: MAXST
+projects:
+  - 
     position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
+    company: MAXST
     website: https://maxst.com/en
     startDate: "2024-01-02"
     endDate: "2024-07-15"
@@ -86,42 +87,57 @@ work:
         - Argo Workflows
         - Python FastAPI
 
+
+  # - company: MAXST
+  #   position: MLOps Engineer
+  #   website: https://maxst.com/en
+  #   startDate: "2024-01-01"
+  #   summary: >
+  #     Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
+  #   highlights:
+  #     - >
+  #       <b class="skill-tag-highlight">AutoML</b>
+  #         Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+  #     - >
+  #       <b class="skill-tag-highlight">JupyterHub</b>
+  #         Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+  #     - >
+  #       <b class="skill-tag-highlight">Distributed ML</b>
+  #         Developing distributed learning environments using Kubeflow Training Operator.
+
   - 
     # project: AI 연구를 위한 온프레미스 MLOps 개발 및 연구문화개선
     # position: MLOps Engineer
-    project: "On-Premise MLOps for AI Research and Culture Improvement" 
+    position: "Initial MLOps for AI Research with AutoML and Data Pipeline" 
     company: MAXST
-    position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
     website: https://maxst.com/en
     startDate: "2024-01-02"
-    endDate: "2024-07-15"
-    duration: "7 Months"
+    endDate: "2024-04-30"
+    duration: "4 Months"
     results:
-      description: Build Rubost Hybrid Infra and ML Pipelines [contrib 50%+]
+      # description: Kubeflow를 활용한 AI 연구 자동화 도입으로 온프레미스 GPU 사용비율 증가 (33% → 100%)
+      description: Maximized GPU Utilization for AI Research with AutoML [contrib 90%+]
       items:
-        - header: Infra.
-          content: Achieved <b>'97% availability/year and 50% costdown'</b> for workloads of the hybrid cluster
-        - header: ML Pipeline/API
-          content: Design cloud-native ML pipelines and APIs for lifecycle of pipelines 
+        - header: Katib AutoML
+          content: Making hyperparameter tuning automation for 800+ experiments
+        - header: JupyterHub
+          content: Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+        - header: Data Pipeline
+          content: Instant build-free pipelines using Argo Workflows for research convenience. 
     roles:
-      description: Development of ML pipelines, APIs and Infrastructure.
       items:
-        - header: Infra.
-          content: >
-            Hybrid infrastructure for high availability and cost optimization (97% availability/year, 50% cost down).
-            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
-        - header: ML Pipeline
-          content: Design ML data pipelines using Argo Workflows and Hera Python SDK. ML Pipeline design and API implementation for pipeline lifecycle.
-        - header: API
-          content: Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
-        - header: DevOps
-          content: Providing CI/CD pipelines with Bitbucket Pipelines and supporting app modernization with dockerizing for cloud-native applications. 
+        - header: AutoML
+          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+        - header: JupyterHub
+          content: Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+        - header: Distributed ML
+          content: Developing distributed learning environments using Kubeflow Training Operator.
     skills:
       description:
       items:
+        - Kubeflow
+        - Katib AutoML
         - Argo Workflows
-        - Hera Python SDK
-        - Python FastAPI
 
 
   - company: MAXST
@@ -323,6 +339,24 @@ certificates:
     expired: "2027-03-16"
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
+work:
+  - company: MAXST
+    position: MLOps Engineer
+    website: https://maxst.com/en
+    startDate: "2024-01-01"
+    summary: >
+      Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
+    highlights:
+      - >
+        <b class="skill-tag-highlight">AutoML</b>
+          Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+      - >
+        <b class="skill-tag-highlight">JupyterHub</b>
+          Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+      - >
+        <b class="skill-tag-highlight">Distributed ML</b>
+          Developing distributed learning environments using Kubeflow Training Operator.
+
 education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
@@ -366,10 +400,9 @@ languages:
     fluency: "Working Proficiency"
 
 interests:
-  - name: "Wildlife"
+  - name: "IoT"
     keywords:
-      - "Ferrets"
-      - "Unicorns"
+      - "Raspberry Pi"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

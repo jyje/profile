@@ -1,0 +1,95 @@
+{% if resume.projects.size > 0 %}
+<section>
+  <div class="npb">
+  <h2 id="projects" class="h3 hr-bottom">
+    {{ strings.resume.projects | default:"Projects" }}
+    <span class="symbol {{ icons.work | default:'icon-briefcase' }}"></span>
+  </h2>
+  {% for project in resume.projects %}
+  <section>
+    <header class="{% unless forloop.first %}mt2{% endunless %}"
+            property="{% if project.endDate.size > 0 %}alumniOf{% else %}worksFor{% endif %}"
+            typeof="Organization" >
+      {% if project.startDate.size > 0 %}
+        <p class="faded">
+          {% include components/from-to.html from=project.startDate to=project.endDate format=from_to_format duration=project.duration %}
+        </p>
+      {% endif %}
+      <h3 class="h4 faded">
+        <meta property="name" content="{{ project.company }}"/>
+        {% capture position %}<span class="bc">{{ project.position }}</span>{% endcapture %}
+        {% capture company_class %}{% if project.endDate.size > 0 %}{% else %}org p-org h-card{% endif %}{% endcapture %}
+        {% capture company %}{% include components/link.html title=project.company href=project.website class=company_class span_class="bc" property="sameAs" %}{% endcapture %}
+        {{ strings.resume.work_title
+          | default:"<!--position--> at <!--company-->"
+          | replace:"<!--position-->", position
+          | replace:"<!--company-->", company
+        }}
+      </h3>
+    </header>
+
+    {% include components/message.html class="note" text=project.summary alt="" %}
+
+    {% if project.highlights.size > 0 %}
+    <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
+    <ul>
+      {% for highlight in project.highlights %}
+        <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <!-- results -->
+    {% if project.results.description or project.results.items.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>
+        {{ strings.resume.results | default:"Results" }}{% if project.results.description %}{{ site.data.strings.colon }} {{ project.results.description }}{% endif %}
+      </b>
+      <ul class="work">
+        {% for result_item in project.results.items %}
+          <li>
+            {% if result_item.header %}<span class="work-header-result">{{ result_item.header }}</span>{% endif %}
+            {% if result_item.content %}{{ result_item.content }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- roles -->
+    {% if project.roles.description or project.roles.items.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>
+        {{ strings.resume.roles | default:"Roles" }}{% if project.roles.description %}{{ site.data.strings.colon }} {{ project.roles.description }}{% endif %}
+      </b>
+      <ul class="work">
+        {% for role_item in project.roles.items %}
+          <li>
+            {% if role_item.header %}<span class="work-header-role">{{ role_item.header }}</span>{% endif %}
+            {% if role_item.content %}{{ role_item.content }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- skills -->
+    {% if project.skills.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>{{ strings.resume.skills | default:"Skills" }}{% if project.skills.description %}{{ site.data.strings.colon }} {{ project.skills.description }}{% endif %}</b>
+      <ul class="work">
+        {% for skill_item in project.skills.items %}
+          <li class="work-header-skill">{{ skill_item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+  </section>
+  {% if forloop.first %}</div>{% endif %}
+  {% endfor %}
+</section>
+{% endif %}

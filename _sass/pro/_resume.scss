@@ -26,6 +26,11 @@
     margin-top: 0;
   }
 
+  section {
+    margin-bottom: 3rem;
+  }
+
+
   ul {
     margin-bottom: 1.0rem; // 1.5rem;
   }
@@ -271,6 +276,7 @@
     section section, header, blockquote, dd, .npb {
       page-break-inside: avoid;
       break-inside: avoid-page;
+      margin-bottom: 0;
     }
     .avatar {
       width: 9rem;
