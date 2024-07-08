@@ -12,7 +12,7 @@
             typeof="Organization" >
       {% if work.startDate.size > 0 %}
         <p class="faded">
-          {% include components/from-to.html from=work.startDate to=work.endDate format=from_to_format %}
+          {% include components/from-to.html from=work.startDate to=work.endDate format=from_to_format duration=work.duration %}
         </p>
       {% endif %}
       <h3 class="h4 faded">
@@ -38,9 +38,58 @@
       {% endfor %}
     </ul>
     {% endif %}
+
+    <!-- results -->
+    {% if work.results.description or work.results.items.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>
+        {{ strings.resume.results | default:"Results" }}{% if work.results.description %}{{ site.data.strings.colon }} {{ work.results.description }}{% endif %}
+      </b>
+      <ul class="work">
+        {% for result_item in work.results.items %}
+          <li>
+            {% if result_item.header %}<span class="work-header-result">{{ result_item.header }}</span>{% endif %}
+            {% if result_item.content %}{{ result_item.content }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- roles -->
+    {% if work.roles.description or work.roles.items.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>
+        {{ strings.resume.roles | default:"Roles" }}{% if work.roles.description %}{{ site.data.strings.colon }} {{ work.roles.description }}{% endif %}
+      </b>
+      <ul class="work">
+        {% for role_item in work.roles.items %}
+          <li>
+            {% if role_item.header %}<span class="work-header-role">{{ role_item.header }}</span>{% endif %}
+            {% if role_item.content %}{{ role_item.content }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- skills -->
+    {% if work.skills.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>{{ strings.resume.skills | default:"Skills" }}{% if work.skills.description %}{{ site.data.strings.colon }} {{ work.skills.description }}{% endif %}</b>
+      <ul class="work">
+        {% for skill_item in work.skills.items %}
+          <li class="work-header-skill">{{ skill_item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
   </section>
   {% if forloop.first %}</div>{% endif %}
-  <hr>
   {% endfor %}
 </section>
 {% endif %}

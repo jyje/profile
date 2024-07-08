@@ -34,7 +34,6 @@ basics:
     skills:
       summary: >
         Here are my skills and highlighted items are industry-ready.
-      # More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
     resume:
       title: Résumé
@@ -46,31 +45,84 @@ basics:
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
           - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
-          - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
-          - 🚀 Balancing **performance** and **cost reduction** optimally.
 
+        I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
+        And also, I'm balancing **performance** and **cost reduction** optimally.
         From my experience and achievements, I hope to have a good career.
-        This documet is an abstract of my career.
-        <br/> For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
+        For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
 
 work:
   - company: MAXST
-    position: "Project Widearth: Digital Twin Platform with AR/VR"
+    position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
     website: https://maxst.com/en
-    startDate: "2024-03-01"
-    summary: >
-      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
-    highlights:
-      - >
-        <b class="skill-tag-highlight">ML Pipeline</b>
-          Design ML data pipelines using Argo Workflows and Hera Python SDK.
-      - >
-        <b class="skill-tag-highlight">API</b>
-          Making endpoints for the ML pipeline inference based on Python FastAPI.
-      - >
-        <b class="skill-tag-highlight">Infrastructure</b>
-          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
+    startDate: "2024-01-02"
+    endDate: "2024-07-15"
+    duration: "7 Months"
+    results:
+      description: Build Rubost Hybrid Infra and ML Pipelines [contrib 50%+]
+      items:
+        - header: Infra.
+          content: Achieved <b>'97% availability/year and 50% costdown'</b> for workloads of the hybrid cluster
+        - header: ML Pipeline/API
+          content: Designed <b>cloud-native ML pipelines and APIs</b> for pipeline lifecycle 
+    roles:
+      description: Development of ML pipelines, APIs and Infrastructure.
+      items:
+        - header: Infra.
+          content: >
+            Hybrid infrastructure for high availability and cost optimization (97% availability/year, 50% cost down).
+            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
+        - header: ML Pipeline
+          content: Design ML data pipelines using Argo Workflows and Hera Python SDK. ML Pipeline design and API implementation for pipeline lifecycle.
+        - header: API
+          content: Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
+        - header: DevOps
+          content: Providing CI/CD pipelines with Bitbucket Pipelines and supporting app modernization with dockerizing for cloud-native applications. 
+    skills:
+      description:
+      items:
+        - AWS EKS
+        - Karpenter
+        - Argo Workflows
+        - Python FastAPI
+
+  - 
+    # project: AI 연구를 위한 온프레미스 MLOps 개발 및 연구문화개선
+    # position: MLOps Engineer
+    project: "On-Premise MLOps for AI Research and Culture Improvement" 
+    company: MAXST
+    position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
+    website: https://maxst.com/en
+    startDate: "2024-01-02"
+    endDate: "2024-07-15"
+    duration: "7 Months"
+    results:
+      description: Build Rubost Hybrid Infra and ML Pipelines [contrib 50%+]
+      items:
+        - header: Infra.
+          content: Achieved <b>'97% availability/year and 50% costdown'</b> for workloads of the hybrid cluster
+        - header: ML Pipeline/API
+          content: Design cloud-native ML pipelines and APIs for lifecycle of pipelines 
+    roles:
+      description: Development of ML pipelines, APIs and Infrastructure.
+      items:
+        - header: Infra.
+          content: >
+            Hybrid infrastructure for high availability and cost optimization (97% availability/year, 50% cost down).
+            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
+        - header: ML Pipeline
+          content: Design ML data pipelines using Argo Workflows and Hera Python SDK. ML Pipeline design and API implementation for pipeline lifecycle.
+        - header: API
+          content: Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
+        - header: DevOps
+          content: Providing CI/CD pipelines with Bitbucket Pipelines and supporting app modernization with dockerizing for cloud-native applications. 
+    skills:
+      description:
+      items:
+        - Argo Workflows
+        - Hera Python SDK
+        - Python FastAPI
+
 
   - company: MAXST
     position: MLOps Engineer
@@ -136,16 +188,13 @@ work:
               Virtual Visual-SLAM for Real-World Environments
             </a>
           </li>
-          <li>Visual-SLAM for Multiple Cameras</li>
         </ul>
+      # <li>Visual-SLAM for Multiple Cameras</li>
       - >
         <b class="skill-tag-highlight">2012 - 2018</b>
           <b>Advanced Signal Processing Lab. (Prod. H, Jeong)</b>
         <ul>
-          <li>Stereo Vision Algorithms for Image Depth Estimation</li>
-          <li>Advanced Driver Assistance Systems' Research and Development</li>
           <ul>
-            <li>Automotive Online Calibration in Stereo Vision</li>
             <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
             <li>
               Research on Traffic Sign & Lane Terrain Detection
@@ -160,6 +209,9 @@ work:
             </li>
           </ul>
         </ul>
+      # <li>Stereo Vision Algorithms for Image Depth Estimation</li>
+      # <li>Advanced Driver Assistance Systems' Research and Development</li>
+      # <li>Automotive Online Calibration in Stereo Vision</li>
 
 skills:
   - name: MLOps & LLMOps
@@ -279,10 +331,10 @@ education:
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    courses:
-      - Advanced Driver Assistance Systems (ADAS)
-      - Simultaneous Localization and Mapping (SLAM)
-      - Computer Vision Algorithms
+    # courses:
+    #   - Advanced Driver Assistance Systems (ADAS)
+    #   - Simultaneous Localization and Mapping (SLAM)
+    #   - Computer Vision Algorithms
   - institution: "Kumoh National Institute of Technology (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "School of Electronic Engineering, Electronic Communication"
@@ -290,11 +342,11 @@ education:
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    courses:
-      - Digital Signal Processing
-      - Visual Light Communication
-      - Electronic Communication with Complex Analysis
-      - Finite Programmable Gate Array (FPGA)
+    # courses:
+    #   - Digital Signal Processing
+    #   - Visual Light Communication
+    #   - Electronic Communication with Complex Analysis
+    #   - Finite Programmable Gate Array (FPGA)
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -312,11 +364,12 @@ languages:
     fluency: "Native"
   - language: "English"
     fluency: "Working Proficiency"
-# interests:
-#   - name: "Wildlife"
-#     keywords:
-#       - "Ferrets"
-#       - "Unicorns"
+
+interests:
+  - name: "Wildlife"
+    keywords:
+      - "Ferrets"
+      - "Unicorns"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

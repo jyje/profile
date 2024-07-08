@@ -57,10 +57,8 @@ legal:
     url:               /
   - title:             Résumé
     url:               /profile/resume
-  - title:             Career Description
-    url:               /profile/cd
-  - title:             CV
-    url:               /profile/cv
+  # - title:             CV
+  #   url:               /profile/cv
   - title:             Credits
     url:               /credits
   - title:             Blog

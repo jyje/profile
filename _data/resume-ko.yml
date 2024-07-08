@@ -54,9 +54,16 @@ work:
     position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
     website: https://maxst.com/en
     startDate: "2024-03-01"
+    endDate: "2024-07-15"
     summary: >
-      <a class="h-card" href="https://widearth.world"><b>프로젝트 와이더스</b></a>:
-      디지털 트윈을 위한 점군 기반의 공간맵 플랫폼을 개발하였습니다. 이 프로젝트에서 ML 파이프라인, API, 하이브리드 인프라 개발을 담당했습니다.
+      <a class="h-card" href="https://widearth.world"><b>와이더스</b></a>
+      프로젝트에서 API 개발과 인프라를 담당하여 다음과 같은 성과를 내었습니다:
+
+      <ul>
+        <li>고가용성 및 비용 최적화를 위한 하이브리드 인프라 구현 (가용성 97%, 다운 타임 10일)</li>
+        <li>ML 파이프라인 설계, 파이프라인 생명주기 관리 API 구현 (가용성 97%, 다운 타임 10일)</li>
+      </ul>
+
     highlights:
       - >
         <b class="skill-tag-highlight">ML 파이프라인</b>
@@ -269,7 +276,7 @@ education:
   - institution: "포항공과대학교 (POSTECH)"
     website: "https://eee.postech.ac.kr/"
     area: "전기전자공학과, 신호처리 및 컴퓨터 비전 전공"
-    studyType: "통합과정"
+    studyType: "석사학위 (통합박사과정 수료)"
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
@@ -280,7 +287,7 @@ education:
   - institution: "금오공과대학교 (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "전자공학부, 전자통신 전공"
-    studyType: "학부과정"
+    studyType: "학사학위"
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
@@ -306,11 +313,12 @@ languages:
     fluency: 원어민
   - language: English
     fluency: 일상대화, 업무
-# interests:
-#   - name: "Wildlife"
-#     keywords:
-#       - "Ferrets"
-#       - "Unicorns"
+
+interests:
+  - name: "Wildlife"
+    keywords:
+      - "Ferrets"
+      - "Unicorns"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >
