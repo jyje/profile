@@ -65,7 +65,7 @@ basics:
 work:
   - company: MAXST
     position: "Project Widearth: Digital Twin Platform with AR/VR"
-    website: https://maxst.com/en
+    website: https://maxst.com/ENG/main
     startDate: "2024-03-01"
     summary: >
       <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
@@ -83,7 +83,7 @@ work:
 
   - company: MAXST
     position: MLOps/DevOps Engineer
-    website: https://maxst.com/en
+    website: https://maxst.com/ENG/main
     startDate: "2023-01-01"
     summary: >
       Development of on-premise clusters providing DevOps and MLOps for Technology Division in MAXST:
@@ -106,7 +106,7 @@ work:
 
   - company: MAXST
     position: Computer Vison Engineer
-    website: https://maxst.com/en
+    website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     summary: >

@@ -52,7 +52,7 @@ basics:
 work:
   - company: 맥스트
     position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
-    website: https://maxst.com/en
+    website: https://maxst.com
     startDate: "2024-03-01"
     endDate: "2024-07-15"
     summary: >
@@ -77,7 +77,7 @@ work:
 
   - company: 맥스트
     position: ML옵스 엔지니어
-    website: https://maxst.com/en
+    website: https://maxst.com
     startDate: "2024-01-01"
     summary: >
       온프레미스 클러스터를 이용해 MLOps를 도입하고 정착시켰습니다. 사내 GPU 활용성을 증가시켰습니다.
@@ -94,7 +94,7 @@ work:
 
   - company: 맥스트
     position: 데브옵스 엔지니어
-    website: https://maxst.com/en
+    website: https://maxst.com
     startDate: "2023-01-01"
     endDate: "2023-12-31"
     summary: >
@@ -112,7 +112,7 @@ work:
 
   - company: 맥스트
     position: 컴퓨터 비전 엔지니어 (전문연구요원)
-    website: https://maxst.com/en
+    website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     summary: >
