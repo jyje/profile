@@ -34,7 +34,6 @@ basics:
     skills:
       summary: >
         Here are my skills and highlighted items are industry-ready.
-      # More details are available on <a href='https://stackshare.io/jyje/jyje-pro-stack'>Stackshare</a>.
 
     resume:
       title: Résumé
@@ -45,37 +44,211 @@ basics:
 
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps** and **MLOps**.
-          - 🧑‍💻 Identifying best practices to bridge **team culture** and **new technologies**.
-          - 🚀 Balancing **performance** and **cost reduction** optimally.
+          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps**, and **Argo Workflows**.
 
+        I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
+        And also, I'm balancing **performance** and **cost reduction** optimally.
         From my experience and achievements, I hope to have a good career.
-        This documet is an abstract of my career.
-        <br/> For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
+        For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
+
+projects:
+  - 
+    position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2024-01-02"
+    endDate: "2024-07-15"
+    duration: "7 Months"
+    results:
+      description: Build Rubost Hybrid Infra and ML Pipelines [contrib 70%+]
+      items:
+        - header: Infra.
+          content: Achieved <b>'97% availability/year and 50% costdown'</b> for workloads of the hybrid cluster
+        - header: ML Pipeline/API
+          content: Designed <b>cloud-native ML pipelines and APIs</b> for pipeline lifecycle 
+    roles:
+      description: Development of ML pipelines, APIs and Infrastructure.
+      items:
+        - header: Infra.
+          content: >
+            Hybrid infrastructure for high availability and cost optimization (97% availability/year, 50% cost down).
+            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
+        - header: ML Pipeline
+          content: Design ML data pipelines using Argo Workflows. ML Pipeline design and API implementation for pipeline lifecycle.
+        - header: API
+          content: Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
+        - header: DevOps
+          content: Providing CI/CD pipelines with Bitbucket Pipelines and supporting app modernization with dockerizing for cloud-native applications. 
+    skills:
+      description: Core skills for MLOps/DevOps
+      items:
+        - AWS EKS
+        - Karpenter
+        - Python FastAPI
+        - Argo Workflows
+        - Argo CD
+
+
+  - 
+    position: On-Premise MLOps Setup with AutoML and Data Pipeline Hub
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2024-01-02"
+    endDate: "2024-04-30"
+    duration: "4 Months"
+    results:
+      # description: Kubeflow를 활용한 AI 연구 자동화 도입으로 온프레미스 GPU 사용비율 증가 (33% → 100%)
+      description: Maximized GPU Utilization for AI Research with AutoML [contrib 90%+]
+      items:
+        - header: Katib AutoML
+          content: Making hyperparameter tuning automation for 800+ experiments
+        - header: JupyterHub
+          content: Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+        - header: Data Pipeline
+          content: Providing a hub of build-free data pipelines using Argo Workflows 
+    roles:
+      description:
+      items:
+        - header: AutoML
+          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+        - header: JupyterHub
+          content: Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+        - header: Distributed ML
+          content: Developing distributed learning environments using Kubeflow Training Operator.
+    skills:
+      description: Core skills for MLOps
+      items:
+        - Kubeflow
+        - Katib AutoML
+        - Argo Workflows
+        - Grafana
+        - Prometheus
+
+    # DevOps Engineer
+    # company: MAXST
+    # website: https://maxst.com/ENG/main
+    # startDate: "2023-01-01"
+    # endDate: "2023-12-31"
+    # summary: >
+    #   Developed hybrid clusters providing DevOps for the Technology Division at MAXST.
+    # highlights:
+    #   - >
+    #     <b class="skill-tag-highlight">CI/CD</b>
+    #       Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
+    #   - >
+    #     <b class="skill-tag-highlight">Hybrid K8s</b>
+    #       Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
+    #   - >
+    #     <b class="skill-tag-highlight">On-Premise</b>
+    #       Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+
+
+  - 
+    position: On-Premise CI/CD and Chatbot Development/Delivery
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2023-01-01"
+    endDate: "2023-12-31"
+    duration: 12 Months
+    results:
+      description: Developed Hybrid Clusters for DevOps [contrib 70%+]
+      items:
+        - header: CI/CD
+          content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
+        - header: ChatOps
+          content: Python Slackbot managine lifecycle of CI/CD profiles and pipelines.  (50%)
+        - header: On-Premise
+          content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+        - header: DevOps Culture
+          content: Corvering demand from the team, Developing   
+    roles:
+      description: Development of CI/CD pipelines and Chatbot.
+      items:
+        - header: CI/CD
+          content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
+        - header: Hybrid K8s
+          content: Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
+        - header: On-Premise
+          content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+    skills:
+      description: Core skills for On-Premise DevOps
+      items:
+        - Kubernetes
+        - Argo Workflows
+        - AWS EKS
+        - IaC
+        - Terraform
+
+
+  - 
+    position: Computer Vison Research in Lab.
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2021-01-16"
+    endDate: "2022-12-31"
+    duration: 2 Years
+    results:
+      description: Developed Visual-SLAM for Digital Twin Systems [contrib 10%+]
+      items:
+        - header: Visual-SLAM
+          content: Developed Visual-SLAM for Digital Twin Systems
+        - header: ICP Algorithm
+          content: Developing ICP Algorithm to Align 3D Point Clouds
+
+
+  -
+    position: "Student Researcher with Integrated Program"
+    company: POSTECH
+    website: "https://eee.postech.ac.kr/"
+    startDate: "2012-01-03"
+    endDate: "2020-08-27"
+    duration: "8 Years"
+    results:
+      description: Studying and researching in the field of digital signal processing and computer vision.
+      items:
+        - header: "VVSLAM"
+          content: >
+            Thesis: <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">Virtual Visual-SLAM for Real-World Environments</a>
+        - header: ADAS
+          content: Research on Traffic Sign & Lane Terrain Detection
+    roles:
+      description: Studying and researching in the field of digital signal processing and computer vision.
+      items:
+        - header: 2018 - 2020
+          content: >
+            Computing and Control Engineering Lab. (Prof. SH, Han)
+            <ul>
+              <li>
+                Thesis:
+                <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+                  Virtual Visual-SLAM for Real-World Environments
+                </a>
+              </li>
+            </ul>
+        - header: 2012 - 2018
+          content: >
+            Advanced Signal Processing Lab. (Prod. H, Jeong)
+            <ul>
+              <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
+              <li>
+                Research on Traffic Sign & Lane Terrain Detection
+                <ul>
+                  <li>
+                    Conference:
+                    <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
+                      Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
 
 work:
   - company: MAXST
-    position: "Project Widearth: Digital Twin Platform with AR/VR"
-    website: https://maxst.com/en
+    position: Senior Software Engineer [🇰🇷 책임연구원]
+    website: https://maxst.com/ENG/main
     startDate: "2024-03-01"
-    summary: >
-      <a class="h-card" href="https://widearth.world"><b>Project Widearth</b></a>:
-      Point-cloud-based spatial mapping platform for digital twins. I am responsible for the development of ML pipelines, APIs and Infrastructure:
-    highlights:
-      - >
-        <b class="skill-tag-highlight">ML Pipeline</b>
-          Design ML data pipelines using Argo Workflows and Hera Python SDK.
-      - >
-        <b class="skill-tag-highlight">API</b>
-          Making endpoints for the ML pipeline inference based on Python FastAPI.
-      - >
-        <b class="skill-tag-highlight">Infrastructure</b>
-          Building hybrid clusters with AWS EKS and bare-metal Kubernetes to reduce costs but keep system reliabilities. Hybrid clusters can reduce public cloud costs by more than 50%.
-
-  - company: MAXST
-    position: MLOps Engineer
-    website: https://maxst.com/en
-    startDate: "2024-01-01"
     summary: >
       Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
     highlights:
@@ -88,78 +261,35 @@ work:
       - >
         <b class="skill-tag-highlight">Distributed ML</b>
           Developing distributed learning environments using Kubeflow Training Operator.
-
   - company: MAXST
-    position: DevOps Engineer
-    website: https://maxst.com/en
-    startDate: "2023-01-01"
-    endDate: "2023-12-31"
-    summary: >
-      Developed hybrid clusters providing DevOps for the Technology Division at MAXST.
-    highlights:
-      - >
-        <b class="skill-tag-highlight">CI/CD</b>
-          Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
-      - >
-        <b class="skill-tag-highlight">Hybrid K8s</b>
-          Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
-      - >
-        <b class="skill-tag-highlight">On-Premise</b>
-          Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
-
-  - company: MAXST
-    position: Computer Vison Engineer
-    website: https://maxst.com/en
+    position: Software Engineer [🇰🇷 선임연구원]
+    website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
-    endDate: "2022-12-31"
+    endDate: "2024-02-28"
+    duration: 3 Years
     summary: >
-      Developing computer vision algorithms for AR/VR and Digital Twin Systems.
-    highlights:
-      - Visual-SLAM Research for Digital Twin Systems
-      - Developing ICP Algorithm to Align 3D Point Clouds
+      Associate R&D Engineer for Technology Division in MAXST
+    roles:
+      items:
+        - header: Algorithm Research
+          content: >
+            Reviewing computer vision algorithms in state-of-art papers and implementing prototypes. 
+        - header: DevOps Associate
+          content: >
+            Building infrastructure for the research team and providing data pipelines for digital twins.
+        - 
+          header: Technical Research Personnel
+          # 군복무를 대신해 3년 동안, 전공 분야의 산업에 종사하는 대체국방의무 (아래에 영어로 번역+내용보충)
+          content: >
+            Serving as a substitute for military service for 3 years, engaging in the industry in the related field of computer vision major.
+    skills:
+      items:
+        - Kubeflow
+        - Katib AutoML
+        - Argo Workflows
+        - Grafana
+        - Prometheus
 
-  - company: POSTECH
-    position: "Student Researcher with Integrated Program"
-    website: "https://eee.postech.ac.kr/"
-    startDate: "2012-01-03"
-    endDate: "2020-08-27"
-    summary: >
-      Studying and researching in the field of digital signal processing and computer vision. During my time as a graduate student at POSTECH, I had the privilege of working in several projects:
-    highlights:
-      - >
-        <b class="skill-tag-highlight">2018 - 2020</b>
-          <b>Computing and Control Engineering Lab. (Prof. SH, Han)</b>
-        <ul>
-          <li>
-            Thesis:
-            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              Virtual Visual-SLAM for Real-World Environments
-            </a>
-          </li>
-          <li>Visual-SLAM for Multiple Cameras</li>
-        </ul>
-      - >
-        <b class="skill-tag-highlight">2012 - 2018</b>
-          <b>Advanced Signal Processing Lab. (Prod. H, Jeong)</b>
-        <ul>
-          <li>Stereo Vision Algorithms for Image Depth Estimation</li>
-          <li>Advanced Driver Assistance Systems' Research and Development</li>
-          <ul>
-            <li>Automotive Online Calibration in Stereo Vision</li>
-            <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
-            <li>
-              Research on Traffic Sign & Lane Terrain Detection
-              <ul>
-                <li>
-                  Conference:
-                  <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
-                    Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </ul>
 
 skills:
   - name: MLOps & LLMOps
@@ -271,6 +401,7 @@ certificates:
     expired: "2027-03-16"
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
+
 education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
@@ -279,10 +410,10 @@ education:
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    courses:
-      - Advanced Driver Assistance Systems (ADAS)
-      - Simultaneous Localization and Mapping (SLAM)
-      - Computer Vision Algorithms
+    # courses:
+    #   - Advanced Driver Assistance Systems (ADAS)
+    #   - Simultaneous Localization and Mapping (SLAM)
+    #   - Computer Vision Algorithms
   - institution: "Kumoh National Institute of Technology (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "School of Electronic Engineering, Electronic Communication"
@@ -290,11 +421,11 @@ education:
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    courses:
-      - Digital Signal Processing
-      - Visual Light Communication
-      - Electronic Communication with Complex Analysis
-      - Finite Programmable Gate Array (FPGA)
+    # courses:
+    #   - Digital Signal Processing
+    #   - Visual Light Communication
+    #   - Electronic Communication with Complex Analysis
+    #   - Finite Programmable Gate Array (FPGA)
 # awards:
 #   - title: "Digital Compression Pioneer Award"
 #     date: "2014-11-01"
@@ -312,11 +443,11 @@ languages:
     fluency: "Native"
   - language: "English"
     fluency: "Working Proficiency"
-# interests:
-#   - name: "Wildlife"
-#     keywords:
-#       - "Ferrets"
-#       - "Unicorns"
+
+interests:
+  - name: "IoT"
+    keywords:
+      - "Raspberry Pi"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

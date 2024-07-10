@@ -7,6 +7,7 @@ description: >
 hide_description: true
 data_file: resume
 left_column:
+  - projects
   - work
   # - volunteer
   - education

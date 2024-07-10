@@ -12,15 +12,11 @@ It provides following sections:
 - [Profile]{:.heading.flip-title}
     - My introduction and career overview
     -   <div>
-            My official documents including résumé, career description, and CV: 
+            My official documents including résumé, and CV: 
             <a href="/profile#documents" class="btn btn-inline btn-primary">
                 <small class="icon-edit"></small>
                 Documents
             </a>
-            <!-- <a href="/profile/cv" class="btn btn-inline btn-primary">
-                <small class="icon-scholar"></small>
-                CV
-            </a> -->
         </div>
 
 - [Works]{:.heading.flip-title}

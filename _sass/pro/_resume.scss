@@ -26,8 +26,17 @@
     margin-top: 0;
   }
 
+  section {
+    margin-bottom: 3rem;
+  }
+
+
   ul {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem; // 1.5rem;
+  }
+
+  .work {
+    margin-bottom: 0.2rem;
   }
 
   .h3 {
@@ -77,7 +86,7 @@
   .skill-tag {
     @extend .color-transition;
     border: 1px solid var(--accent-color-border-light);
-    border-radius: .5rem;
+    border-radius: .3rem;
     display: inline-block;
     margin: .25rem .125rem;
     padding: .125rem .25rem;
@@ -85,16 +94,72 @@
     line-height: 1.4;
   }
 
-  .skill-tag-highlight {
+  .work-hr {
+    height: 1px;
+    background: var(--accent-color-border-dark);
+    margin: 0.1rem 0.1rem;
+    border: none;
+    opacity: 0.2;
+  }
+
+  .work-header-result {
     @extend .color-transition;
     border: 1.5px solid var(--accent-color-fill);
-    border-radius: .5rem;
+    border-radius: .3rem;
     display: inline-block;
     margin: .25rem .125rem;
     padding: .125rem .25rem;
     color: #FFF;
     background-color: var(--accent-color-fill);
     line-height: 1.4;
+  }
+
+  .work-header-role {
+    @extend .color-transition;
+    border: 1px solid var(--accent-color-border-dark);
+    border-radius: .3rem;
+    display: inline-block;
+    margin: .25rem .125rem;
+    padding: .125rem .25rem;
+    color: #FFF;
+    background-color: var(--accent-color-border-dark);
+    line-height: 1.4;
+  }
+
+  .work-header-skill {
+    @extend .color-transition;
+    border: 1px solid var(--accent-color-border-dark);
+    border-radius: .3rem;
+    display: inline-block;
+    margin: .25rem .125rem;
+    padding: .125rem .25rem;
+    color: var(--accent-color-border-dark);
+    line-height: 1.4;
+  }
+
+  .skill-tag-highlight {
+    @extend .color-transition;
+    border: 1.5px solid var(--accent-color-fill);
+    border-radius: .3rem;
+    display: inline-block;
+    margin: .25rem .125rem;
+    padding: .125rem .25rem;
+    color: #FFF;
+    background-color: var(--accent-color-fill);
+    line-height: 1.4;
+  }
+
+  .skill-tag-soft {
+    @extend .color-transition;
+    border: 1.2px solid var(--accent-color-border-dark);
+    border-radius: .3rem;
+    display: inline-block;
+    margin: .25rem .125rem;
+    padding: .2rem .3rem;
+    color: #FFF;
+    background-color: var(--accent-color-border-dark);
+    opacity: 0.75;
+    line-height: 1.2;
   }
 
   .help {
@@ -211,6 +276,7 @@
     section section, header, blockquote, dd, .npb {
       page-break-inside: avoid;
       break-inside: avoid-page;
+      margin-bottom: 0;
     }
     .avatar {
       width: 9rem;
@@ -219,7 +285,19 @@
 
     .skill-tag-highlight {
       color: var(--accent-color-fill);
-      font-weight: bolder;
+    }
+
+    .work-header-result {
+      color: var(--accent-color-fill);
+      font-weight: 900;
+    }
+
+    .work-header-role {
+      color: #000;
+    }
+
+    .work-header-skill {
+      color: #000;
     }
   }
 

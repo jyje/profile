@@ -8,3 +8,7 @@
 {% else %}
   <em>{{present}}</em>
 {% endif %}
+
+{% if include.duration %}
+  <span class="duration">({{ include.duration }})</span>
+{% endif %}
