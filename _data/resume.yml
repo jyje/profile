@@ -45,6 +45,7 @@ basics:
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
           - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps**, and **Argo Workflows**.
+          - 🧑‍🎓 Leveraging background in **Computer Vision, Automotives, and ML** to design DevOps and workloads aligned with business objectives.
 
         I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
         And also, I'm balancing **performance** and **cost reduction** optimally.
@@ -67,7 +68,7 @@ projects:
         - header: ML Pipeline/API
           content: Designed <b>cloud-native ML pipelines and APIs</b> for pipeline lifecycle 
     roles:
-      description: Development of ML pipelines, APIs and Infrastructure.
+      description: Development of ML pipelines, APIs and Infrastructure
       items:
         - header: Infra.
           content: >
@@ -124,24 +125,6 @@ projects:
         - Grafana
         - Prometheus
 
-    # DevOps Engineer
-    # company: MAXST
-    # website: https://maxst.com/ENG/main
-    # startDate: "2023-01-01"
-    # endDate: "2023-12-31"
-    # summary: >
-    #   Developed hybrid clusters providing DevOps for the Technology Division at MAXST.
-    # highlights:
-    #   - >
-    #     <b class="skill-tag-highlight">CI/CD</b>
-    #       Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
-    #   - >
-    #     <b class="skill-tag-highlight">Hybrid K8s</b>
-    #       Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
-    #   - >
-    #     <b class="skill-tag-highlight">On-Premise</b>
-    #       Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
-
 
   - 
     position: On-Premise CI/CD and Chatbot Development/Delivery
@@ -162,7 +145,7 @@ projects:
         - header: DevOps Culture
           content: Corvering demand from the team, Developing   
     roles:
-      description: Development of CI/CD pipelines and Chatbot.
+      description: Development of CI/CD Pipelines and Chatbot
       items:
         - header: CI/CD
           content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
@@ -204,15 +187,15 @@ projects:
     endDate: "2020-08-27"
     duration: "8 Years"
     results:
-      description: Studying and researching in the field of digital signal processing and computer vision.
+      description: Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
       items:
         - header: "VVSLAM"
           content: >
             Thesis: <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">Virtual Visual-SLAM for Real-World Environments</a>
-        - header: ADAS
-          content: Research on Traffic Sign & Lane Terrain Detection
+        - header: Edge ADAS
+          content: Research of ADAS including Traffic Sign Detection & Lane Terrain Detection with FPGA
     roles:
-      description: Studying and researching in the field of digital signal processing and computer vision.
+      description: Studying and researching in the field of digital signal processing and computer vision
       items:
         - header: 2018 - 2020
           content: >
@@ -249,46 +232,51 @@ work:
     position: Senior Software Engineer [🇰🇷 책임연구원]
     website: https://maxst.com/ENG/main
     startDate: "2024-03-01"
-    summary: >
-      Developed of on-premise clusters providing MLOps for Technology Division in MAXST.
-    highlights:
-      - >
-        <b class="skill-tag-highlight">AutoML</b>
-          Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-      - >
-        <b class="skill-tag-highlight">JupyterHub</b>
-          Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
-      - >
-        <b class="skill-tag-highlight">Distributed ML</b>
-          Developing distributed learning environments using Kubeflow Training Operator.
+    roles:
+      description: >
+        Developed On-Premise Clusters Providing MLOps for Technology Division in MAXST
+      items:
+        - header: MLOps
+          content: >
+            Developing on-premise clusters providing MLOps for the AI team.
+        - header: DevOps
+          content: >
+            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
+        - header: Hybrid
+          content: >
+            Building on-premise clusters with IaC tools such as Ansible and Kubespray.
+
+
   - company: MAXST
     position: Software Engineer [🇰🇷 선임연구원]
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2024-02-28"
     duration: 3 Years
-    summary: >
-      Associate R&D Engineer for Technology Division in MAXST
     roles:
+      description: >
+        Associate R&D Engineer for Technology Division in MAXST
       items:
         - header: Algorithm Research
           content: >
             Reviewing computer vision algorithms in state-of-art papers and implementing prototypes. 
-        - header: DevOps Associate
+        - header: DevOps
           content: >
-            Building infrastructure for the research team and providing data pipelines for digital twins.
+            Building hybrid clusters and providing data pipelines for digital twins.
         - 
           header: Technical Research Personnel
-          # 군복무를 대신해 3년 동안, 전공 분야의 산업에 종사하는 대체국방의무 (아래에 영어로 번역+내용보충)
           content: >
             Serving as a substitute for military service for 3 years, engaging in the industry in the related field of computer vision major.
     skills:
       items:
-        - Kubeflow
-        - Katib AutoML
+        - Kubernetes
+        - On-Premise
+        - AWS
         - Argo Workflows
-        - Grafana
-        - Prometheus
+        - Data Pipeline
+        - CI/CD
+        - Computer Vision
+        - OpenCV
 
 
 skills:
