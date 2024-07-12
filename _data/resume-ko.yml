@@ -53,11 +53,15 @@ basics:
         저에 대한 더 자세한 내용은 <a href='https://jyje.live/profile'><b>포트폴리오</b></a> 참조해 주세요.
 
 work:
-  - company: 맥스트
+  - 
     position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 서비스하는 B2B 디지털 트윈 플랫폼"
+    company: 맥스트
     website: https://maxst.com
-    startDate: "2024-03-01"
+    startDate: "2024-01-02"
     endDate: "2024-07-15"
+    duration: 7 개월
+    results:
+      description: 1
     summary: >
       <a class="h-card" href="https://widearth.world"><b>와이더스</b></a>
       프로젝트에서 API 개발과 인프라를 담당하여 다음과 같은 성과를 내었습니다:

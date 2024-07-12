@@ -59,7 +59,7 @@ projects:
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
     endDate: "2024-07-15"
-    duration: "7 Months"
+    duration: 7 Months
     results:
       description: Built Rubost Hybrid Infra and ML Pipelines. Built CI/CD [contrib 75%+]
       items:
