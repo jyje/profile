@@ -5,7 +5,7 @@ basics:
   name: Jeayoung Jeon
   name-english: Jeayoung Jeon
   label: "MLOps and Cloud-Native Engineer"
-  picture: "https://avatars.githubusercontent.com/u/109659358"
+  picture: "/assets/img/profile/jyje-109659358.jpg" # "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
   linkedin: "jyje"
   # website: "https://jyje.live"
@@ -45,7 +45,7 @@ basics:
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
           - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps**, and **Argo Workflows**.
-          - 🧑‍🎓 Leveraging background in **Computer Vision, Automotives, and ML** to design DevOps and workloads aligned with business objectives.
+          - 🧑‍🎓 Leveraging background in **Computer Vision, Automotives, and ML** to contribute DevOps and workloads aligned with business objectives.
 
         I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
         And also, I'm balancing **performance** and **cost reduction** optimally.
@@ -61,12 +61,12 @@ projects:
     endDate: "2024-07-15"
     duration: "7 Months"
     results:
-      description: Build Rubost Hybrid Infra and ML Pipelines [contrib 70%+]
+      description: Built Rubost Hybrid Infra and ML Pipelines. Built CI/CD [contrib 75%+]
       items:
         - header: Infra.
           content: Achieved <b>'97% availability/year and 50% costdown'</b> for workloads of the hybrid cluster
         - header: ML Pipeline/API
-          content: Designed <b>cloud-native ML pipelines and APIs</b> for pipeline lifecycle 
+          content: Designed <b>cloud-native ML pipelines and APIs</b> for pipeline lifecycle
     roles:
       description: Development of ML pipelines, APIs and Infrastructure
       items:
@@ -75,13 +75,16 @@ projects:
             Hybrid infrastructure for high availability and cost optimization (97% availability/year, 50% cost down).
             Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
         - header: ML Pipeline
-          content: Design ML data pipelines using Argo Workflows. ML Pipeline design and API implementation for pipeline lifecycle.
+          content: >
+            Design ML data pipelines using Argo Workflows. ML Pipeline design and API implementation for pipeline lifecycle.
         - header: API
-          content: Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
+          content: >
+            Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
         - header: DevOps
-          content: Providing CI/CD pipelines with Bitbucket Pipelines and supporting app modernization with dockerizing for cloud-native applications. 
+          content: >
+            Providing CI/CD pipelines with Bitbucket Pipelines and Argo Workflows. Supporting app modernization with dockerizing for cloud-native applications. 
     skills:
-      description: Core skills for MLOps/DevOps
+      description: Core Skills for Project Widearth
       items:
         - AWS EKS
         - Karpenter
@@ -108,7 +111,7 @@ projects:
         - header: Data Pipeline
           content: Providing a hub of build-free data pipelines using Argo Workflows 
     roles:
-      description:
+      description: Built Core MLOps Platform using CNCF Open Source Projects
       items:
         - header: AutoML
           content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
@@ -117,7 +120,7 @@ projects:
         - header: Distributed ML
           content: Developing distributed learning environments using Kubeflow Training Operator.
     skills:
-      description: Core skills for MLOps
+      description: Core Skills for MLOps
       items:
         - Kubeflow
         - Katib AutoML
@@ -127,14 +130,14 @@ projects:
 
 
   - 
-    position: On-Premise CI/CD and Chatbot Development/Delivery
+    position: On-Premise DevOps with CI/CD and Chatbot
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2023-01-01"
     endDate: "2023-12-31"
     duration: 12 Months
     results:
-      description: Developed Hybrid Clusters for DevOps [contrib 70%+]
+      description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
       items:
         - header: CI/CD
           content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
@@ -143,7 +146,7 @@ projects:
         - header: On-Premise
           content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
         - header: DevOps Culture
-          content: Corvering demand from the team, Developing   
+          content: Corvering demand from the team, Developing workloads and pipelines.   
     roles:
       description: Development of CI/CD Pipelines and Chatbot
       items:
@@ -154,7 +157,7 @@ projects:
         - header: On-Premise
           content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
     skills:
-      description: Core skills for On-Premise DevOps
+      description: Core Skills for On-Premise DevOps
       items:
         - Kubernetes
         - Argo Workflows
@@ -433,9 +436,19 @@ languages:
     fluency: "Working Proficiency"
 
 interests:
-  - name: "IoT"
+  - name: "Edge"
     keywords:
-      - "Raspberry Pi"
+      - "Raspberry Pi Cluster"
+  - name: "Cluster Optimization"
+    keywords:
+      - "Karpenter"
+      - "BI using Grafana (PLG)"
+  - name: "CNCF Projects"
+    keywords:
+      - "Kubeflow"
+      - "Argo Projects"
+
+
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >
