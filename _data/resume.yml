@@ -112,15 +112,14 @@ projects:
     roles:
       description: Built Core MLOps Platform using CNCF Open Source Projects
       items:
-        - header: Data Pipeline
-          content: Developing both pre-build and instant data pipelines using Argo Workflows.
+        # - header: Data Pipeline
+        #   content: Developing both pre-build and instant data pipelines using Argo Workflows.
         - header: AutoML
-          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build. Researchers can train models without pre-built pipelines.
-        - header: Distributed ML
-          content: Developing distributed learning environments using Kubeflow Training Operator. Researchers can use multiple GPUs with Kubernetes as they want.
+          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+          content: Developing distributed learning environments using Kubeflow Training Operator.
         - header: JupyterHub
           content: >
-            Generating On-Demand JupyterNotebook to distribute resources for ML researchers. Researchers can configure the research environment they need immediately.
+            Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
           
     skills:
       description: Core Skills for On-Premise MLOps
