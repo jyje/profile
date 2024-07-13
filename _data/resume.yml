@@ -45,7 +45,7 @@ basics:
           - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
           - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
           - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps**, and **Argo Workflows**.
-          - 🧑‍🎓 Leveraging background in **Computer Vision, Automotives, and ML** to contribute DevOps and workloads aligned with business objectives.
+          - 🧑‍🎓 Leveraging background in **Computer Vision, Automotives, and ML** to contribute DevOps and decision aligned with business objectives.
 
         I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
         And also, I'm balancing **performance** and **cost reduction** optimally.
@@ -61,28 +61,31 @@ projects:
     endDate: "2024-07-15"
     duration: 7 Months
     results:
-      description: Built Rubost Hybrid Infra and ML Pipelines. Built CI/CD [contrib 75%+]
+      description: Built Rubost Hybrid Infra, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
       items:
-        - header: Infra.
-          content: Achieved <b>'97% availability/year and 50% costdown'</b> for workloads of the hybrid cluster
-        - header: ML Pipeline/API
-          content: Designed <b>cloud-native ML pipelines and APIs</b> for pipeline lifecycle
+        - header: Robust Hybrid Cluster
+          content: Achieved <b>'96% availability/year and 50% costdown'</b> using hybrid multi cluster
+        - header: ML Pipeline
+          content: Designed <b>ML APIs and data pipelines</b> in the multi-cluster environments. Reduces costs of the public cloud by <b>50%</b>.
     roles:
       description: Development of ML pipelines, APIs and Infrastructure
       items:
-        - header: Infra.
+        - header: DevOps for Workloads
           content: >
-            Hybrid infrastructure for high availability and cost optimization (97% availability/year, 50% cost down).
-            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
-        - header: ML Pipeline
+            Designed CI/CD pipelines for web servers ßand ML workloads.
+            Deployed applications in cloud-native environments using Argo CD.
+            Set <i><b>dev/test/prod</b></i> environments with GitOps.
+        - header: DevOps for Infrastructure
           content: >
-            Design ML data pipelines using Argo Workflows. ML Pipeline design and API implementation for pipeline lifecycle.
-        - header: API
+            Built a hybrid cluster with AWS EKS and bare-metal Kubernetes.
+            The web servers are scaled using Karpenter on AWS EKS.
+            The ML pipelines are executed on on-premise clusters to optimize costs.
+            Backup pipelines are configured on EKS to increase availability.
+        - header: ML Pipeline & API
           content: >
-            Making cloud-native APIs endpoints for the ML pipeline inference with based on Python FastAPI.
-        - header: DevOps
-          content: >
-            Providing CI/CD pipelines with Bitbucket Pipelines and Argo Workflows. Supporting app modernization with dockerizing for cloud-native applications. 
+            Designed Argo Workflows based ML data pipelines to generate spatial maps.
+            Developed cloud-native API endpoints managing lifecycle of pipelines.
+            
     skills:
       description: Core Skills for Project Widearth
       items:
@@ -192,7 +195,7 @@ projects:
     results:
       description: Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
       items:
-        - header: "VVSLAM"
+        - header: VVSLAM
           content: >
             Thesis: <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">Virtual Visual-SLAM for Real-World Environments</a>
         - header: Edge ADAS

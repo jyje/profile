@@ -44,13 +44,13 @@
     <div class="work-hr"></div>
     <div class="tiny">
       <b>
-        {{ strings.resume.results | default:"Results" }}{% if work.results.description %}{{ site.data.strings.colon }} {{ work.results.description }}{% endif %}
+        {{ strings.resume.results | default:"Results" }}{% if work.results.description %}{{ site.data.strings.colon }} {{ work.results.description | markdownify }}{% endif %}
       </b>
       <ul class="work">
         {% for result_item in work.results.items %}
           <li>
-            {% if result_item.header %}<span class="work-header-result">{{ result_item.header }}</span>{% endif %}
-            {% if result_item.content %}{{ result_item.content }}{% endif %}
+            {% if result_item.header %}<span class="work-header-result">{{ result_item.header | markdownify | replace:'<li>','' | replace:'</li>','' }}</span>{% endif %}
+            {% if result_item.content %}{{ result_item.content | markdownify | replace:'<li>','' | replace:'</li>','' }}{% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -67,8 +67,8 @@
       <ul class="work">
         {% for role_item in work.roles.items %}
           <li>
-            {% if role_item.header %}<span class="work-header-role">{{ role_item.header }}</span>{% endif %}
-            {% if role_item.content %}{{ role_item.content }}{% endif %}
+            {% if role_item.header %}<span class="work-header-role">{{ role_item.header | markdownify | replace:'<li>','' | replace:'</li>','' }}</span>{% endif %}
+            {% if role_item.content %}{{ role_item.content | markdownify | replace:'<li>','' | replace:'</li>','' }}{% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -82,7 +82,7 @@
       <b>{{ strings.resume.skills | default:"Skills" }}{% if work.skills.description %}{{ site.data.strings.colon }} {{ work.skills.description }}{% endif %}</b>
       <ul class="work">
         {% for skill_item in work.skills.items %}
-          <li class="work-header-skill">{{ skill_item }}</li>
+          <li class="work-header-skill">{{ skill_item | markdownify | replace:'<li>','' | replace:'</li>','' }}</li>
         {% endfor %}
       </ul>
     </div>
