@@ -61,7 +61,7 @@ projects:
     endDate: "2024-07-15"
     duration: 7 개월
     results:
-      description: 고가용성의 인프라, ML 파이프라인, CI/CD 파이프라인 개발 [기여도 75%+]
+      description: 하이브리드 클러스터, ML 파이프라인, CI/CD 파이프라인 개발 [기여도 75%+]
       items:
         - header: Robust Hybrid Cluster
           content: 하이브리드 멀티 클러스터를 이용해 <b>연간 가용성 96%, 다운타임 14일</b> 달성
@@ -73,20 +73,18 @@ projects:
         - header: DevOps for Workloads
           content: >
             웹 서버를 위한 Bitbucket CI 파이프라인과 ML 워크로드를 위한 Argo Workflows CI 파이프라인을 설계했습니다.
-            Argo CD로 클라우드 네이티브 환경에서 애플리케이션을 배포하였습니다.
             GitOps를 이용해 <i><b>개발/테스트/운영</b></i> 환경을 구성하였습니다.
         - header: DevOps for Infrastructure
           content: >
             AWS EKS와 베어메탈 쿠버네티스를 이용한 하이브리드 클러스터를 구축하였습니다.
-            웹 서버는 안정적인 AWS EKS의 Karpenter를 이용하여 스케일링하였습니다.
-            ML 파이프라인은 온프레미스 클러스터에서 수행하여 비용을 최적화하였습니다.
+            ML 파이프라인은 온프레미스 클러스터에서 수행하여 GPU 비용을 최적화하였습니다.
             백업 파이프라인을 EKS에 구성하여 가용성을 높였습니다.
         - header: ML Pipeline & API
           content: >
             Argo Workflows을 활용하여 공간맵 생성을 위한 ML 데이터 파이프라인을 설계했습니다.
             파이프라인을 관리하는 클라우드 네이티브 API를 개발했습니다.
     skills:
-      description: Core Skills for Project Widearth
+      description: 프로젝트 <a href='https://widearth.world'>와이더스</a>를 위한 핵심 스킬
       items:
         - AWS EKS
         - Karpenter
@@ -95,21 +93,48 @@ projects:
         - Argo CD
 
   - company: 맥스트
-    position: MLOps 엔지니어
+    position: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입
     website: https://maxst.com
     startDate: "2024-01-01"
-    summary: >
-      온프레미스 클러스터를 이용해 MLOps를 도입하고 정착시켰습니다. 사내 GPU 활용성을 증가시켰습니다.
-    highlights:
-      - >
-        <b class="skill-tag-highlight">AutoML</b>
-          Katib와 Argo Workflows를 이용해 사전 빌드 없이 초매개변수를 튜닝하는 환경을 개발하였습니다.
-      - >
-        <b class="skill-tag-highlight">JupyterHub</b>
-          ML 연구원을 위한 주문형 Jupyter Notebook 관리 플랫폼을 개발하였습니다.
-      - >
-        <b class="skill-tag-highlight">분산학습</b>
-          Kubeflow의 Training Operator를 이용해 분산 학습 환경을 개발하였습니다.
+    endDate: "2024-06-30"
+    duration: 6 개월
+    results:
+      description: Argo Workflow, Kubeflow, JupyterHub를 이용해 AI 연구의 GPU 활용성 향상 [기여도 90%+]
+      items:
+        - header: MLOps
+          content: >
+            온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용.
+        - header: GPU Utilization
+          content: >
+            24/7 GPU 활용으로 GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행.
+    roles:
+      description: 최신 오픈소스 프로젝트를 이용한 MLOps 플랫폼 개발
+      items:
+        - header: Data Pipeline
+          content: >
+            Argo Workflows를 이용한 데이터 파이프라인을 개발하였습니다; 즉석 파이프라인, 사전빌드된 파이프라인
+        - header: AutoML
+          content: >
+            Katib와 Argo Workflows를 이용해 초매개변수를 튜닝하는 환경을 개발하였습니다.
+            연구원이 사전 빌드 없이 모델을 학습할 수 있도록 하였습니다.
+        - header: Distributed Training
+          content: >
+            Kubeflow의 Training Operator를 이용해 분산 학습 환경을 개발하였습니다.
+            연구원이 GPU를 최대한 활용할 수 있도록 하였습니다.
+        - header: JupyterHub
+          content: >
+            ML 연구원을 위한 주문형 Jupyter Notebook 관리 플랫폼을 개발하였습니다.
+            연구원이 필요한 연구환경을 즉시 구성할 수 있도록 하였습니다.
+    skills:
+      description: 온프레미스 MLOps 도입을 위한 핵심 스킬
+      items:
+        - Kubeflow
+        - Katib AutoML
+        - Training Operator
+        - Argo Workflows
+        - Grafana
+        - Tensor Board
+
 
   - company: 맥스트
     position: DevOps 엔지니어

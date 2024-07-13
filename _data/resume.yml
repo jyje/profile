@@ -61,7 +61,7 @@ projects:
     endDate: "2024-07-15"
     duration: 7 Months
     results:
-      description: Built Rubost Hybrid Infra, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
+      description: Built Hybrid Clusters, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
       items:
         - header: Robust Hybrid Cluster
           content: Achieved <b>'96% availability/year and 50% costdown'</b> using hybrid multi cluster
@@ -72,22 +72,19 @@ projects:
       items:
         - header: DevOps for Workloads
           content: >
-            Designed CI/CD pipelines for web servers ßand ML workloads.
-            Deployed applications in cloud-native environments using Argo CD.
+            Designed CI/CD pipelines for web servers and ML workloads.
             Set <i><b>dev/test/prod</b></i> environments with GitOps.
         - header: DevOps for Infrastructure
           content: >
             Built a hybrid cluster with AWS EKS and bare-metal Kubernetes.
-            The web servers are scaled using Karpenter on AWS EKS.
-            The ML pipelines are executed on on-premise clusters to optimize costs.
+            The ML pipelines are executed on on-premise clusters to optimize GPU costs.
             Backup pipelines are configured on EKS to increase availability.
         - header: ML Pipeline & API
           content: >
             Designed Argo Workflows based ML data pipelines to generate spatial maps.
             Developed cloud-native API endpoints managing lifecycle of pipelines.
-            
     skills:
-      description: Core Skills for Project Widearth
+      description: Core Skills for Project <a href='https://widearth.world'>Widearth</a>
       items:
         - AWS EKS
         - Karpenter
@@ -97,39 +94,43 @@ projects:
 
 
   - 
-    position: On-Premise MLOps Setup with AutoML and Data Pipeline Hub
+    position: On-premises MLOps with the Latest Open Source Projects
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
     endDate: "2024-04-30"
-    duration: "4 Months"
+    duration: "6 Months"
     results:
-      # description: Kubeflow를 활용한 AI 연구 자동화 도입으로 온프레미스 GPU 사용비율 증가 (33% → 100%)
-      description: Maximized GPU Utilization for AI Research with AutoML [contrib 90%+]
+      description: Improve GPU utilization for AI research using Argo Workflow, Kubeflow, and JupyterHub [contrib 90%+]
       items:
-        - header: Katib AutoML
-          content: Making hyperparameter tuning automation for 800+ experiments
-        - header: JupyterHub
-          content: Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
-        - header: Data Pipeline
-          content: Providing a hub of build-free data pipelines using Argo Workflows 
+        - header: MLOps
+          content: >
+            Applied latest open sources to improve the on-premises research environment.
+        - header: GPU Utilization
+          content: >
+            Via 24/7 GPU usage, Increased GPU utilization by 3 times and conducted more than 800 AutoML experiments.
     roles:
       description: Built Core MLOps Platform using CNCF Open Source Projects
       items:
+        - header: Data Pipeline
+          content: Developing both pre-build and instant data pipelines using Argo Workflows.
         - header: AutoML
-          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
-        - header: JupyterHub
-          content: Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build. Researchers can train models without pre-built pipelines.
         - header: Distributed ML
-          content: Developing distributed learning environments using Kubeflow Training Operator.
+          content: Developing distributed learning environments using Kubeflow Training Operator. Researchers can use multiple GPUs with Kubernetes as they want.
+        - header: JupyterHub
+          content: >
+            Generating On-Demand JupyterNotebook to distribute resources for ML researchers. Researchers can configure the research environment they need immediately.
+          
     skills:
-      description: Core Skills for MLOps
+      description: Core Skills for On-Premise MLOps
       items:
         - Kubeflow
         - Katib AutoML
+        - Training Operator
         - Argo Workflows
         - Grafana
-        - Prometheus
+        - Tensor Board
 
 
   - 
