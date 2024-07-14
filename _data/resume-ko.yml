@@ -92,7 +92,8 @@ projects:
         - Argo Workflows
         - Argo CD
 
-  - company: 맥스트
+  -
+    company: 맥스트
     position: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입
     website: https://maxst.com
     startDate: "2024-01-01"
@@ -143,21 +144,14 @@ projects:
     startDate: "2023-01-01"
     endDate: "2023-12-31"
     duration: 12 개월
-    summary: >
-      온프레미스 클러스터를 개발하고 DevOps를 사내문화로 정착시켰습니다. PoC를 통해 DevOps 수요를 확인하였습니다.
-    highlights:
-      - >
-        <b class="skill-tag-highlight">CI/CD</b>
-          Bitbucket Pipeline, Argo Workflows, Argo CD, Slackbot 등 요구사항에 맞는 CI/CD를 개발하였습니다.
-      - >
-        <b class="skill-tag-highlight">하이브리드 클러스터</b>
-          AWS EKS와 온프레미스 쿠버네티스 클러스터를 함께 사용하여 비용을 줄이고 신뢰성을 높였습니다.
-      - >
-        <b class="skill-tag-highlight">온프레미스</b>
-          Ansible, Kubespray와 같은 IaC 도구를 사용하여 베어메탈 쿠버네티스 클러스터를 개발하였습니다.
     results:
-      description: Chatbot과 CI/CD를 제공하는 온프레미스 DevOps 도입
+      description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터를 개발하였습니다. [기여도 75%+]
       items:
+        - header: Hybrid Cluster
+          content: >
+            AWS EKS와 온프레미스 쿠버네티스를 결합한 하이브리드 클러스터를 구축했습니다.
+            GPU 워크로드는 온프레미스 클러스터에서 실행하여 비용을 최적화했습니다.
+            웹 또는 백업 워크로드는 가용성을 높이기 위해 EKS로 구성했습니다.
         - header: Chatbot
           content: >
             Slackbot을 이용한 ChatOps를 도입하여 팀원들이 쉽게 DevOps를 사용할 수 있도록 하였습니다.
@@ -165,11 +159,9 @@ projects:
           content: >
             Bitbucket Pipeline과 Argo Workflows를 이용한 CI/CD 파이프라인을 개발하였습니다.
             Argo CD를 이용해 GitOps를 구현하였습니다.
-        - header: Hybrid Cluster
-          content: >
-            AWS EKS와 온프레미스 쿠버네티스 클러스터를 함께 사용하여 비용을 줄이고 신뢰성을 높였습니다.
 
-  - company: 맥스트
+  -
+    company: 맥스트
     position: 컴퓨터 비전 엔지니어 (전문연구요원)
     website: https://maxst.com
     startDate: "2021-01-16"

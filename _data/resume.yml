@@ -121,7 +121,6 @@ projects:
         - header: JupyterHub
           content: >
             Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
-          
     skills:
       description: Core Skills for On-Premise MLOps
       items:
@@ -141,18 +140,25 @@ projects:
     endDate: "2023-12-31"
     duration: 12 Months
     results:
-      description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
+      description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]        
       items:
         - header: Hybrid Cluster
-          content: Built a hybrid cluster with AWS EKS and on-premise Kubernetes. The ML pipelines are executed on on-premise clusters to optimize GPU costs. Backup pipelines are configured on EKS to increase availability.
+          content: >
+            Built a hybrid cluster with AWS EKS and on-premise Kubernetes.
+            GPU workloads are executed on on-premise clusters to optimize costs.
+            Web and backup workloads are configured on EKS to increase availability.
         - header: CI/CD
-          content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
+          content: >
+            Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
         - header: ChatOps
-          content: Python Slackbot managine lifecycle of CI/CD profiles and pipelines.  (50%)
+          content: >
+            Python Slackbot managine lifecycle of CI/CD profiles and pipelines.  (50%)
         - header: On-Premise
-          content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+          content: >
+            Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
         - header: DevOps Culture
-          content: Corvering demand from the team, Developing workloads and pipelines.
+          content: >
+            Corvering demand from the team, Developing workloads and pipelines.
     roles:
       description: Development of CI/CD Pipelines and Chatbot
       items:
