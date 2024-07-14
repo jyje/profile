@@ -53,7 +53,7 @@ basics:
         For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
 
 projects:
-  - 
+  -
     position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
     company: MAXST
     website: https://maxst.com/ENG/main
@@ -93,7 +93,7 @@ projects:
         - Argo CD
 
 
-  - 
+  -
     position: On-premise MLOps with the Latest Open Source Projects
     company: MAXST
     website: https://maxst.com/ENG/main
@@ -132,7 +132,7 @@ projects:
         - Tensor Board
 
 
-  - 
+  -
     position: Hybrid Cluster DevOps with Chatbot and CI/CD
     company: MAXST
     website: https://maxst.com/ENG/main
@@ -140,7 +140,9 @@ projects:
     endDate: "2023-12-31"
     duration: 12 Months
     results:
-      description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]        
+      description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
+    roles:
+      description: Development of Hybrid Clusters, CI/CD Pipelines, and Chatbot
       items:
         - header: Hybrid Cluster
           content: >
@@ -149,27 +151,14 @@ projects:
             Web and backup workloads are configured on EKS to increase availability.
         - header: CI/CD
           content: >
-            Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD.
-        - header: ChatOps
-          content: >
-            Python Slackbot managine lifecycle of CI/CD profiles and pipelines.  (50%)
-        - header: On-Premise
-          content: >
-            Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+            Configured fast CI for collaboration using Bitbucket Pipeline.
+            Configured high-performance custom CI using on-premises Argo Workflows.
+            Implemented CD using GitOps with Argo CD and Slackbot.
         - header: DevOps Culture
           content: >
-            Corvering demand from the team, Developing workloads and pipelines.
-    roles:
-      description: Development of CI/CD Pipelines and Chatbot
-      items:
-        - header: CI/CD
-          content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
-        - header: Hybrid Cluster
-          content: Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
-        - header: On-Premise
-          content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
+            Provided integration and insights for development and operation environments for the research team and business division.
     skills:
-      description: Core Skills for On-Premise DevOps
+      description: Core Skills for Hybrid DevOps
       items:
         - Kubernetes
         - Argo Workflows
@@ -178,7 +167,7 @@ projects:
         - Terraform
 
 
-  - 
+  -
     position: Computer Vison Research in Lab.
     company: MAXST
     website: https://maxst.com/ENG/main
@@ -274,11 +263,11 @@ work:
       items:
         - header: Algorithm Research
           content: >
-            Reviewing computer vision algorithms in state-of-art papers and implementing prototypes. 
+            Reviewing computer vision algorithms in state-of-art papers and implementing prototypes.
         - header: DevOps
           content: >
             Building hybrid clusters and providing data pipelines for digital twins.
-        - 
+        -
           header: Technical Research Personnel
           content: >
             Serving as a substitute for military service for 3 years, engaging in the industry in the related field of computer vision major.

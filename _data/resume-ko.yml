@@ -53,7 +53,7 @@ basics:
         저에 대한 더 자세한 내용은 <a href='https://jyje.live/profile'><b>포트폴리오</b></a> 참조해 주세요.
 
 projects:
-  - 
+  -
     position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 제공하는 B2B 디지털 트윈 플랫폼"
     company: 맥스트
     website: https://maxst.com
@@ -137,7 +137,7 @@ projects:
         - Tensor Board
 
 
-  - 
+  -
     position: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 DevOps 도입
     company: 맥스트
     website: https://maxst.com
@@ -146,19 +146,30 @@ projects:
     duration: 12 개월
     results:
       description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터를 개발하였습니다. [기여도 75%+]
+    roles:
+      description: Hybrid 클러스터 개발 및 ChatOps와 GitOps를 이용한 DevOps 도입
       items:
         - header: Hybrid Cluster
           content: >
             AWS EKS와 온프레미스 쿠버네티스를 결합한 하이브리드 클러스터를 구축했습니다.
             GPU 워크로드는 온프레미스 클러스터에서 실행하여 비용을 최적화했습니다.
             웹 또는 백업 워크로드는 가용성을 높이기 위해 EKS로 구성했습니다.
-        - header: Chatbot
-          content: >
-            Slackbot을 이용한 ChatOps를 도입하여 팀원들이 쉽게 DevOps를 사용할 수 있도록 하였습니다.
         - header: CI/CD
           content: >
-            Bitbucket Pipeline과 Argo Workflows를 이용한 CI/CD 파이프라인을 개발하였습니다.
-            Argo CD를 이용해 GitOps를 구현하였습니다.
+            Bitbucket Pipeline으로 협업을 위한 빠른 CI를 구성하였습니다.
+            온프레미스 Argo Workflows로 고성능의 커스텀 CI을 구성하였습니다.
+            Argo CD와 Slackbot을 이용한 GitOps로 CD를 구현하였습니다.
+        - header: DevOps Culture
+          content: >
+            연구소와 사업부를 위한 개발환경, 운영환경의 통합 및 인사이트를 제공하였습니다.
+    skills:
+      description: Hybrid DevOps를 위한 핵심 스킬
+      items:
+        - Kubernetes
+        - Argo Workflows
+        - AWS EKS
+        - IaC
+        - Terraform
 
   -
     company: 맥스트
