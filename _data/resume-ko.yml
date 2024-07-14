@@ -103,7 +103,7 @@ projects:
       items:
         - header: MLOps
           content: >
-            온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용.
+            AI 연구팀과 도입 검토 후, 온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용.
         - header: GPU Utilization
           content: >
             24/7 GPU 활용으로 GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행.
