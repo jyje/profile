@@ -70,13 +70,13 @@ projects:
     roles:
       description: Development of ML pipelines, APIs and Infrastructure
       items:
-        - header: DevOps for Workloads
+        - header: DevOps
           content: >
             Designed CI/CD pipelines for web servers and ML workloads.
             Set <i><b>dev/test/prod</b></i> environments with GitOps.
-        - header: DevOps for Infrastructure
+        - header: Hybrid Cluster
           content: >
-            Built a hybrid cluster with AWS EKS and bare-metal Kubernetes.
+            Built hybrid clusters with AWS EKS and bare-metal Kubernetes.
             The ML pipelines are executed on on-premise clusters to optimize GPU costs.
             Backup pipelines are configured on EKS to increase availability.
         - header: ML Pipeline & API
@@ -94,7 +94,7 @@ projects:
 
 
   - 
-    position: On-premises MLOps with the Latest Open Source Projects
+    position: On-premise MLOps with the Latest Open Source Projects
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
@@ -116,6 +116,7 @@ projects:
         #   content: Developing both pre-build and instant data pipelines using Argo Workflows.
         - header: AutoML
           content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+        - header: Distributed Training
           content: Developing distributed learning environments using Kubeflow Training Operator.
         - header: JupyterHub
           content: >
@@ -133,7 +134,7 @@ projects:
 
 
   - 
-    position: On-Premise DevOps with CI/CD and Chatbot
+    position: Hybrid Cluster DevOps with Chatbot and CI/CD
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2023-01-01"
@@ -142,6 +143,8 @@ projects:
     results:
       description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
       items:
+        - header: Hybrid Cluster
+          content: Built a hybrid cluster with AWS EKS and on-premise Kubernetes. The ML pipelines are executed on on-premise clusters to optimize GPU costs. Backup pipelines are configured on EKS to increase availability.
         - header: CI/CD
           content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
         - header: ChatOps
@@ -149,13 +152,13 @@ projects:
         - header: On-Premise
           content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.
         - header: DevOps Culture
-          content: Corvering demand from the team, Developing workloads and pipelines.   
+          content: Corvering demand from the team, Developing workloads and pipelines.
     roles:
       description: Development of CI/CD Pipelines and Chatbot
       items:
         - header: CI/CD
           content: "Designing Slackbot providing GitOps: Bitbucket Pipeline, Argo Workflows and Argo CD."
-        - header: Hybrid K8s
+        - header: Hybrid Cluster
           content: Combining AWS EKS and On-Premise Kubernetes clusters to reduce costs and improve reliability.
         - header: On-Premise
           content: Building bare-metal Kubernetes clusters using IaC tools such as Ansible and Kubespray.

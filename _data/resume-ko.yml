@@ -70,13 +70,13 @@ projects:
     roles:
       description: ML 파이프라인 설계, API 개발, 하이브리드 클러스터 운영
       items:
-        - header: DevOps for Workloads
+        - header: DevOps
           content: >
             웹 서버를 위한 Bitbucket CI 파이프라인과 ML 워크로드를 위한 Argo Workflows CI 파이프라인을 설계했습니다.
             GitOps를 이용해 <i><b>개발/테스트/운영</b></i> 환경을 구성하였습니다.
-        - header: DevOps for Infrastructure
+        - header: Hybrid Cluster
           content: >
-            AWS EKS와 베어메탈 쿠버네티스를 이용한 하이브리드 클러스터를 구축하였습니다.
+            AWS EKS와 온프레미스 쿠버네티스를 이용한 하이브리드 클러스터를 구축하였습니다.
             ML 파이프라인은 온프레미스 클러스터에서 수행하여 GPU 비용을 최적화하였습니다.
             백업 파이프라인을 EKS에 구성하여 가용성을 높였습니다.
         - header: ML Pipeline & API
@@ -120,7 +120,7 @@ projects:
         - header: Distributed Training
           content: >
             Kubeflow의 Training Operator를 이용해 분산 학습 환경을 개발하였습니다.
-            연구원이 Kubernetes 환경에서 GPU를 최대한 활용할 수 있도록 하였습니다.
+            연구원이 클러스터의 모든 GPU를 단일 학습에 활용할 수 있도록 하였습니다.
         - header: JupyterHub
           content: >
             ML 연구원을 위한 주문형 Jupyter Notebook 관리 플랫폼을 개발하였습니다.
@@ -136,11 +136,13 @@ projects:
         - Tensor Board
 
 
-  - company: 맥스트
-    position: DevOps 엔지니어
+  - 
+    position: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 DevOps 도입
+    company: 맥스트
     website: https://maxst.com
     startDate: "2023-01-01"
     endDate: "2023-12-31"
+    duration: 12 개월
     summary: >
       온프레미스 클러스터를 개발하고 DevOps를 사내문화로 정착시켰습니다. PoC를 통해 DevOps 수요를 확인하였습니다.
     highlights:
@@ -153,6 +155,19 @@ projects:
       - >
         <b class="skill-tag-highlight">온프레미스</b>
           Ansible, Kubespray와 같은 IaC 도구를 사용하여 베어메탈 쿠버네티스 클러스터를 개발하였습니다.
+    results:
+      description: Chatbot과 CI/CD를 제공하는 온프레미스 DevOps 도입
+      items:
+        - header: Chatbot
+          content: >
+            Slackbot을 이용한 ChatOps를 도입하여 팀원들이 쉽게 DevOps를 사용할 수 있도록 하였습니다.
+        - header: CI/CD
+          content: >
+            Bitbucket Pipeline과 Argo Workflows를 이용한 CI/CD 파이프라인을 개발하였습니다.
+            Argo CD를 이용해 GitOps를 구현하였습니다.
+        - header: Hybrid Cluster
+          content: >
+            AWS EKS와 온프레미스 쿠버네티스 클러스터를 함께 사용하여 비용을 줄이고 신뢰성을 높였습니다.
 
   - company: 맥스트
     position: 컴퓨터 비전 엔지니어 (전문연구요원)
