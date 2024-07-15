@@ -93,8 +93,8 @@ projects:
         - Argo CD
 
   -
-    company: 맥스트
     position: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입
+    company: 맥스트
     website: https://maxst.com
     startDate: "2024-01-01"
     endDate: "2024-06-30"
@@ -146,6 +146,13 @@ projects:
     duration: 12 개월
     results:
       description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터를 개발하였습니다. [기여도 75%+]
+      items:
+        - header: Hybrid
+          content: >
+            온프레미스의 경제성을 이용해 순수 클라우드 인프라 대비 <b>50% 이상의 비용 절감</b>을 달성 
+        - header: DevOps Culture
+          content: >
+            앱 현대화 및 CI/CD를 포함한 DevOps 문화 전파. 모니터링을 통한 의사결정 지원.
     roles:
       description: Hybrid 클러스터 개발 및 ChatOps와 GitOps를 이용한 DevOps 도입
       items:
@@ -154,14 +161,17 @@ projects:
             AWS EKS와 온프레미스 쿠버네티스를 결합한 하이브리드 클러스터를 구축했습니다.
             GPU 워크로드는 온프레미스 클러스터에서 실행하여 비용을 최적화했습니다.
             웹 또는 백업 워크로드는 가용성을 높이기 위해 EKS로 구성했습니다.
+        - header: IaC
+          content: >
+            Terraform과 Ansible을 이용해 클러스터 인프라를 코드화하였습니다.
+            Terraform을 이용해 AWS EKS 클러스터를 구성하였습니다. 
+            Ansible 기반의 Kubespray를 이용해 온프레미스 클러스터를 구성하였습니다.
         - header: CI/CD
           content: >
             Bitbucket Pipeline으로 협업을 위한 빠른 CI를 구성하였습니다.
             온프레미스 Argo Workflows로 고성능의 커스텀 CI을 구성하였습니다.
             Argo CD와 Slackbot을 이용한 GitOps로 CD를 구현하였습니다.
-        - header: DevOps Culture
-          content: >
-            연구소와 사업부를 위한 개발환경, 운영환경의 통합 및 인사이트를 제공하였습니다.
+            IaC도 CI/CD 및 파이프라인으로 구성하여 선언적 인프라를 구성하였습니다.
     skills:
       description: Hybrid DevOps를 위한 핵심 스킬
       items:
@@ -173,53 +183,75 @@ projects:
 
   -
     company: 맥스트
-    position: 컴퓨터 비전 엔지니어 (전문연구요원)
+    position: 디지털 트윈 연구 컴퓨터 비전 엔지니어
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
-    summary: >
-      디지털 트윈 시스템과 AR/VR을 위한 컴퓨터 비전 알고리즘을 연구했습니다. 연구 주제는 다음과 같습니다:
-    highlights:
-      - Data Pipeline Automation for Digital Twin Platform
-      - Developing ICP Algorithm to Align 3D Point Clouds
+    duration: 2 년
+    results:
+      description: 디지털 트윈 시스템을 위한 알고리즘 개발 [기여도 10%]
+      items:
+        - header: Digital Twins
+          content: 디지털 트윈 시스템을 위한 Visual-SLAM 및 ICP 알고리즘 연구/개발
+        - header: Automation
+          content: 데이터 취득 및 분석을 위한 자동화 파이프라인 개발
+    roles:
+      description: 컴퓨터 비전 알고리즘 개발 및 디지털 트윈 시스템 구축
+      items:
+        - header: Visual-SLAM
+          content: >
+            Visual-SLAM을 위한 영상처리 알고리즘을 개발하였습니다.
+            영상처리 알고리즘을 이용해 디지털 트윈 시스템을 구축하였습니다.
+        - header: 전문연구요원
+          content: >
+            대학원 전공과 관련된 컴퓨터 비전 직군에 종사하며, 군 대체복무를 수행하였습니다.
 
-  - company: POSTECH
-    position: 대학원생 연구원 (통합박사과정 수료)
+  -
+    position: 디지털 신호 처리 및 ADAS 연구원 (통합박사과정)
+    company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
-    summary: >
-      디지털 신호처리와 컴퓨터 비전 분야에서 연구하였습니다. 대학원생 연구원으로서 참여한 주요 프로젝트는 다음과 같습니다:
-    highlights:
-      - >
-        <b class="skill-tag-highlight">2018 - 2020</b>
-          <b>컴퓨팅 및 제어 연구실 (지도교수 한수희)</b>
-        <ul>
-          <li>
-            학위 논문:
-            <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
-              실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법
-            </a>
-          </li>
-        </ul>
-      # <li>다중 카메라를 위한 비주얼 SLAM 연구</li>
-      - >
-        <b class="skill-tag-highlight">2012 - 2018</b>
-          <b>첨단신호처리 연구실 (지도교수 정홍)</b>
-        <ul>
-          <li>FPGA를 이용한 실시간 운전자 보조 시스템 개발</li>
-          <li>
-            교통표지판 및 차선 검출 알고리즘 연구
+    duration: "8 년"
+    results:
+      description: 가상 환경에서의 자동차 시뮬레이션 및 ADAS On-Edge에 대한 연구를 수행
+      items:
+        - header: VVSLAM
+          content: 실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법
+        - header: Edge ADAS
+          content: FPGA를 이용한 실시간 운전자 보조 시스템 개발 및 교통표지판 검출 알고리즘 연구
+    roles:
+      description: 디지털 신호처리와 컴퓨터 비전 분야에서 연구/개발
+      items:
+        - header: 2018 - 2020
+          content: >
+            Computing and Control Engineering Lab. (Prof. SH, Han)
             <ul>
               <li>
-                학회지:
-                <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
-                  Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
+                Thesis:
+                <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">
+                  Virtual Visual-SLAM for Real-World Environments
                 </a>
               </li>
             </ul>
-          </li>
-        </ul>
+        - header: 2012 - 2018
+          content: >
+            Advanced Signal Processing Lab. (Prod. H, Jeong)
+            <ul>
+              <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
+              <li>
+                Research on Traffic Sign & Lane Terrain Detection
+                <ul>
+                  <li>
+                    Conference:
+                    <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
+                      Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+      # <li>다중 카메라를 위한 비주얼 SLAM 연구</li>
       # <li>운전자 보조 시스템 (ADAS) 연구/개발</li>
       # <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 개발</li>
       # <li>영상깊이추정을 위한 스테레오 비전 알고리즘 연구</li>
@@ -377,10 +409,17 @@ languages:
     fluency: 일상대화, 업무
 
 interests:
-  - name: "Wildlife"
+  - name: "Edge"
     keywords:
-      - "Ferrets"
-      - "Unicorns"
+      - "Raspberry Pi Cluster"
+  - name: "Cluster Optimization"
+    keywords:
+      - "Karpenter"
+      - "BI using Grafana (PLG)"
+  - name: "CNCF Projects"
+    keywords:
+      - "Kubeflow"
+      - "Argo Projects"
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

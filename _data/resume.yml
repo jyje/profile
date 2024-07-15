@@ -149,6 +149,11 @@ projects:
             Built a hybrid cluster with AWS EKS and on-premise Kubernetes.
             GPU workloads are executed on on-premise clusters to optimize costs.
             Web and backup workloads are configured on EKS to increase availability.
+        - header: IaC
+          content: >
+            IaC with Terraform and Ansible to manage the cluster infrastructure:
+            Terraform to set up AWS EKS cluster.
+            Ansible-based Kubespray to set up on-premises cluster.
         - header: CI/CD
           content: >
             Configured fast CI for collaboration using Bitbucket Pipeline.
@@ -174,8 +179,8 @@ projects:
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     duration: 2 Years
-    results:
-      description: Developed Visual-SLAM for Digital Twin Systems [contrib 10%+]
+    results: 
+      description: Developed Visual-SLAM for Digital Twin Systems [contrib 10%]
       items:
         - header: Visual-SLAM
           content: Developed Visual-SLAM for Digital Twin Systems
@@ -184,7 +189,7 @@ projects:
 
 
   -
-    position: "Student Researcher with Integrated Program"
+    position: Digital Signal Processing and ADAS Researcher (Integrated Program)
     company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
@@ -194,8 +199,7 @@ projects:
       description: Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
       items:
         - header: VVSLAM
-          content: >
-            Thesis: <a href="https://postech-primo.hosted.exlibrisgroup.com/permalink/f/1031dvf/82POSTECH_INST21232402040003286">Virtual Visual-SLAM for Real-World Environments</a>
+          content: Virtual Visual-SLAM for Real-World Environments
         - header: Edge ADAS
           content: Research of ADAS including Traffic Sign Detection & Lane Terrain Detection with FPGA
     roles:
