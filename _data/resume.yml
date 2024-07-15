@@ -171,21 +171,56 @@ projects:
         - IaC
         - Terraform
 
-
   -
-    position: Computer Vison Research in Lab.
     company: MAXST
-    website: https://maxst.com/ENG/main
+    position: Digital Twin Research Engineer
+    website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
-    duration: 2 Years
-    results: 
-      description: Developed Visual-SLAM for Digital Twin Systems [contrib 10%]
+    duration: 2 years
+    results:
+      description: Algorithm research for digital twin systems [Contribution 10%]
       items:
-        - header: Visual-SLAM
-          content: Developed Visual-SLAM for Digital Twin Systems
-        - header: ICP Algorithm
-          content: Developing ICP Algorithm to Align 3D Point Clouds
+        - header: Digital Twins
+          content: Research and development of Visual-SLAM and ICP algorithms for digital twin systems
+        - header: Automation
+          content: Development of automated pipelines for data acquisition and analysis
+    roles:
+      description: Development of computer vision algorithms and construction of digital twin systems
+      items:
+        - header: Visual-SLAM & SfM
+          content: >
+            Developed digital image processing algorithms for Visual-SLAM and SfM.
+            Constructed a digital twin system using image processing algorithms.
+        - header: Technical Research Personnel
+          content: >
+            Engaged in computer vision positions related to graduate school majors and performed military alternative service.
+    skills:
+      description: Core skills for digital twin research
+      items:
+        - Computer Vision
+        - SfM
+        - Visual-SLAM
+        - Python
+        - OpenCV
+        - .NET/C#
+        - Unity
+
+
+  # -
+  #   position: Computer Vison Research in Lab.
+  #   company: MAXST
+  #   website: https://maxst.com/ENG/main
+  #   startDate: "2021-01-16"
+  #   endDate: "2022-12-31"
+  #   duration: 2 Years
+  #   results: 
+  #     description: Developed Visual-SLAM for Digital Twin Systems [contrib 10%]
+  #     items:
+  #       - header: Visual-SLAM
+  #         content: Developed Visual-SLAM for Digital Twin Systems
+  #       - header: ICP Algorithm
+  #         content: Developing ICP Algorithm to Align 3D Point Clouds
 
 
   -
@@ -207,7 +242,7 @@ projects:
       items:
         - header: 2018 - 2020
           content: >
-            Computing and Control Engineering Lab. (Prof. SH, Han)
+            <b>Computing and Control Engineering Lab. (Prof. SH, Han)</b>
             <ul>
               <li>
                 Thesis:
@@ -218,7 +253,7 @@ projects:
             </ul>
         - header: 2012 - 2018
           content: >
-            Advanced Signal Processing Lab. (Prod. H, Jeong)
+            <b>Advanced Signal Processing Lab. (Prod. H, Jeong)</b>
             <ul>
               <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
               <li>
@@ -271,8 +306,7 @@ work:
         - header: DevOps
           content: >
             Building hybrid clusters and providing data pipelines for digital twins.
-        -
-          header: Technical Research Personnel
+        - header: Technical Research Personnel
           content: >
             Serving as a substitute for military service for 3 years, engaging in the industry in the related field of computer vision major.
     skills:

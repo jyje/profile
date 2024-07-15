@@ -181,7 +181,7 @@ projects:
         - IaC
         - Terraform
 
-  -
+  - 
     company: 맥스트
     position: 디지털 트윈 연구 컴퓨터 비전 엔지니어
     website: https://maxst.com
@@ -198,13 +198,24 @@ projects:
     roles:
       description: 컴퓨터 비전 알고리즘 개발 및 디지털 트윈 시스템 구축
       items:
-        - header: Visual-SLAM
+        - header: Visual-SLAM & SfM
           content: >
             Visual-SLAM을 위한 영상처리 알고리즘을 개발하였습니다.
             영상처리 알고리즘을 이용해 디지털 트윈 시스템을 구축하였습니다.
         - header: 전문연구요원
           content: >
             대학원 전공과 관련된 컴퓨터 비전 직군에 종사하며, 군 대체복무를 수행하였습니다.
+    skills:
+      description: 디지털 트윈 연구를 위한 핵심 스킬
+      items:
+        - Computer Vision
+        - SfM
+        - Visual-SLAM
+        - Python
+        - OpenCV
+        - .NET/C#
+        - Unity
+
 
   -
     position: 디지털 신호 처리 및 ADAS 연구원 (통합박사과정)
@@ -225,7 +236,7 @@ projects:
       items:
         - header: 2018 - 2020
           content: >
-            Computing and Control Engineering Lab. (Prof. SH, Han)
+            <b>Computing and Control Engineering Lab. (Prof. SH, Han)</b>
             <ul>
               <li>
                 Thesis:
@@ -236,7 +247,7 @@ projects:
             </ul>
         - header: 2012 - 2018
           content: >
-            Advanced Signal Processing Lab. (Prod. H, Jeong)
+            <b>Advanced Signal Processing Lab. (Prod. H, Jeong)</b>
             <ul>
               <li>Real-Time Advanced Driver Assistance Systems using FPGA</li>
               <li>
@@ -255,6 +266,58 @@ projects:
       # <li>운전자 보조 시스템 (ADAS) 연구/개발</li>
       # <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 개발</li>
       # <li>영상깊이추정을 위한 스테레오 비전 알고리즘 연구</li>
+
+
+work:
+  - company: MAXST
+    position: 책임연구원
+    website: https://maxst.com/ENG/main
+    startDate: "2024-03-01"
+    roles:
+      description: >
+        Developed On-Premise Clusters Providing MLOps for Technology Division in MAXST
+      items:
+        - header: MLOps
+          content: >
+            Developing on-premise clusters providing MLOps for the AI team.
+        - header: DevOps
+          content: >
+            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
+        - header: Hybrid
+          content: >
+            Building on-premise clusters with IaC tools such as Ansible and Kubespray.
+
+
+  - company: MAXST
+    position: 선임연구원
+    website: https://maxst.com/ENG/main
+    startDate: "2021-01-16"
+    endDate: "2024-02-28"
+    duration: 3 Years
+    roles:
+      description: >
+        Associate R&D Engineer for Technology Division in MAXST
+      items:
+        - header: Algorithm Research
+          content: >
+            Reviewing computer vision algorithms in state-of-art papers and implementing prototypes.
+        - header: DevOps
+          content: >
+            Building hybrid clusters and providing data pipelines for digital twins.
+        - header: Technical Research Personnel
+          content: >
+            Serving as a substitute for military service for 3 years, engaging in the industry in the related field of computer vision major.
+    skills:
+      items:
+        - Kubernetes
+        - On-Premise
+        - AWS
+        - Argo Workflows
+        - Data Pipeline
+        - CI/CD
+        - Computer Vision
+        - OpenCV
+
 
 skills:
   - name: MLOps & LLMOps
