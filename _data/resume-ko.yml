@@ -266,7 +266,16 @@ projects:
       # <li>운전자 보조 시스템 (ADAS) 연구/개발</li>
       # <li>스테레오 비전을 이용한 차량 카메라 온라인 정합 개발</li>
       # <li>영상깊이추정을 위한 스테레오 비전 알고리즘 연구</li>
-
+    skills:
+      description: ADAS 연구를 위한 핵심 스킬
+      items:
+        - Computer Vision
+        - Digital Signal Processing
+        - ADAS
+        - Traffic Sign Detection
+        - Lane Terrain Detection
+        - MATLAB/Simulink
+        - C/C++
 
 work:
   - company: MAXST
