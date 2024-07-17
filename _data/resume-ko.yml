@@ -66,7 +66,7 @@ projects:
         - header: Robust Hybrid Cluster
           content: 하이브리드 멀티 클러스터를 이용해 <b>연간 가용성 96%, 다운타임 14일</b> 달성
         - header: ML Pipeline
-          content: 멀티 클러스터 환경에서 <b>ML API</b>와 <b>데이터 파이프라인</b> 설계. 클러스터 비용 <b>50%</b> 절감.
+          content: 멀티 클러스터 환경에서 <b>ML API</b>와 <b>데이터 파이프라인</b> 설계. 클러스터 비용 <b>50%</b> 절감
     roles:
       description: ML 파이프라인 설계, API 개발, 하이브리드 클러스터 운영
       items:
@@ -104,10 +104,10 @@ projects:
       items:
         - header: MLOps
           content: >
-            AI 연구팀과 도입 검토 후, 온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용.
+            AI 연구팀과 도입 검토 후, 온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용
         - header: GPU Utilization
           content: >
-            24/7 GPU 활용으로 GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행.
+            24/7 GPU 활용으로 GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행
     roles:
       description: 최신 오픈소스 프로젝트를 이용한 MLOps 플랫폼 개발
       items:
@@ -145,14 +145,14 @@ projects:
     endDate: "2023-12-31"
     duration: 12 개월
     results:
-      description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터를 개발하였습니다. [기여도 75%+]
+      description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터를 개발 [기여도 75%+]
       items:
         - header: Hybrid
           content: >
             온프레미스의 경제성을 이용해 순수 클라우드 인프라 대비 <b>50% 이상의 비용 절감</b>을 달성 
         - header: DevOps Culture
           content: >
-            앱 현대화 및 CI/CD를 포함한 DevOps 문화 전파. 모니터링을 통한 의사결정 지원.
+            앱 현대화 및 CI/CD를 포함한 DevOps 문화 전파. 모니터링을 통한 의사결정 지원
     roles:
       description: Hybrid 클러스터 개발 및 ChatOps와 GitOps를 이용한 DevOps 도입
       items:
@@ -295,6 +295,16 @@ work:
         - header: Hybrid
           content: >
             Building on-premise clusters with IaC tools such as Ansible and Kubespray.
+    skills:
+      items:
+        - Kubernetes
+        - On-Premise
+        - AWS
+        - Argo Workflows
+        - Data Pipeline
+        - CI/CD
+        - Computer Vision
+        - OpenCV
 
 
   - company: MAXST
