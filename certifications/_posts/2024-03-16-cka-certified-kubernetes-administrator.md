@@ -17,9 +17,6 @@ accent_image:
 
 ## 1. About the Certification
 
-
-
-
 The Certified Kubernetes Administrator (CKA) program was created by the Cloud Native Computing Foundation (CNCF) in collaboration with The Linux Foundation to help develop the Kubernetes ecosystem. As one of the highest velocity open-source projects, Kubernetes use is exploding. The CKA program allows individuals to demonstrate their competence in a hands-on, command-line environment.
 
 The CKA exam is a hands-on, proctored, performance-based test that requires solving multiple issues from a command line running Kubernetes. The exam focuses on the skills required to be a Kubernetes Administrator in industry-ready work environments.
