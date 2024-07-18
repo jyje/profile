@@ -44,7 +44,11 @@ To know more about me, check out my documents below:
 </div>
 {:.note title="Quick Navigation"}
 
----
+
+<div style="margin-top: 5rem;">
+  {% include components/dingbat.html %}
+</div>
+
 
 ## 🧑🏼‍💻 Current Position
 
@@ -82,7 +86,11 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 </i>
 {:.faded}
 
----
+
+<div style="margin-top: 5rem;">
+  {% include components/dingbat.html %}
+</div>
+
 
 ## 💼 Career
 
@@ -121,7 +129,10 @@ And you can also check my documents written in Korean:
 See my [certifications]{:.heading.flip-title} for more details.
 
 
----
+<div style="margin-top: 5rem;">
+  {% include components/dingbat.html %}
+</div>
+
 
 ## 📜 etc.
 
