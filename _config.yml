@@ -45,8 +45,10 @@ menu:
     url:               /profile
   - title:             Works
     url:               /works
-  - title:             Articles
-    url:               /articles
+  # - title:             Articles
+  #   url:               /articles
+  - title:             Certifications
+    url:               /certifications
   - title:             Index
     url:               /indice
 
