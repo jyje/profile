@@ -113,23 +113,25 @@ projects:
       description: Built Core MLOps Platform using CNCF Open Source Projects
       items:
         # - header: Data Pipeline
-        #   content: Developing both pre-build and instant data pipelines using Argo Workflows.
+        #   content: >
+        #     Developing both pre-build and instant data pipelines using Argo Workflows.
         - header: AutoML
-          content: Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
+          content: >
+            Making AutoML tuning hyperparameters with Katib and Argo Workflows without pre-build.
         - header: Distributed Training
-          content: Developing distributed learning environments using Kubeflow Training Operator.
+          content: >
+            Developing distributed learning environments using Kubeflow Training Operator.
         - header: JupyterHub
           content: >
             Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
     skills:
       description: Core Skills for On-Premise MLOps
       items:
-        - Kubeflow
-        - Katib AutoML
-        - Training Operator
+        - Kubeflow/Katib
+        - Kubeflow/Training Operator
         - Argo Workflows
         - Grafana
-        - Tensor Board
+        - TensorBoard
 
 
   -
@@ -141,6 +143,13 @@ projects:
     duration: 12 Months
     results:
       description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
+      items:
+        - header: Hybrid
+          content: >
+            Achieved <b>50%+ cost reduction</b> compared to pure cloud infrastructure using on-premises cost-effectiveness.
+        - header: DevOps Culture
+          content: >
+            Propagation of DevOps culture including app modernization and CI/CD. Decision support through monitoring.
     roles:
       description: Development of Hybrid Clusters, CI/CD Pipelines, and Chatbot
       items:
@@ -159,9 +168,7 @@ projects:
             Configured fast CI for collaboration using Bitbucket Pipeline.
             Configured high-performance custom CI using on-premises Argo Workflows.
             Implemented CD using GitOps with Argo CD and Slackbot.
-        - header: DevOps Culture
-          content: >
-            Provided integration and insights for development and operation environments for the research team and business division.
+            IaC was also configured as CI/CD and pipeline to set up declarative infrastructure.
     skills:
       description: Core Skills for Hybrid DevOps
       items:
@@ -170,6 +177,8 @@ projects:
         - AWS EKS
         - IaC
         - Terraform
+        - Python/FastAPI
+        - Python/Bolt (Slack)
 
   -
     company: MAXST
@@ -205,22 +214,6 @@ projects:
         - OpenCV
         - .NET/C#
         - Unity
-
-
-  # -
-  #   position: Computer Vison Research in Lab.
-  #   company: MAXST
-  #   website: https://maxst.com/ENG/main
-  #   startDate: "2021-01-16"
-  #   endDate: "2022-12-31"
-  #   duration: 2 Years
-  #   results: 
-  #     description: Developed Visual-SLAM for Digital Twin Systems [contrib 10%]
-  #     items:
-  #       - header: Visual-SLAM
-  #         content: Developed Visual-SLAM for Digital Twin Systems
-  #       - header: ICP Algorithm
-  #         content: Developing ICP Algorithm to Align 3D Point Clouds
 
 
   -
@@ -298,6 +291,16 @@ work:
         - header: Hybrid
           content: >
             Building on-premise clusters with IaC tools such as Ansible and Kubespray.
+    skills:
+      items:
+        - Kubernetes
+        - On-Premise
+        - AWS
+        - Argo Workflows
+        - Data Pipeline
+        - CI/CD
+        - Computer Vision
+        - OpenCV
 
 
   - company: MAXST

@@ -92,6 +92,7 @@ projects:
         - Argo Workflows
         - Argo CD
 
+
   -
     position: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입
     company: 맥스트
@@ -129,23 +130,22 @@ projects:
     skills:
       description: 온프레미스 MLOps 도입을 위한 핵심 스킬
       items:
-        - Kubeflow
-        - Katib AutoML
-        - Training Operator
+        - Kubeflow/Katib
+        - Kubeflow/Training Operator
         - Argo Workflows
         - Grafana
-        - Tensor Board
+        - TensorBoard
 
 
   -
-    position: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 DevOps 도입
+    position: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 기반의 DevOps 도입
     company: 맥스트
     website: https://maxst.com
     startDate: "2023-01-01"
     endDate: "2023-12-31"
     duration: 12 개월
     results:
-      description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터를 개발 [기여도 75%+]
+      description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터 개발 [기여도 75%+]
       items:
         - header: Hybrid
           content: >
@@ -180,8 +180,10 @@ projects:
         - AWS EKS
         - IaC
         - Terraform
+        - Python/FastAPI
+        - Python/Bolt (Slack)
 
-  - 
+  -
     company: 맥스트
     position: 디지털 트윈 연구 컴퓨터 비전 엔지니어
     website: https://maxst.com
