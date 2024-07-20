@@ -29,10 +29,10 @@ To know more about me, check out my documents below:
 ---
 
 <div class="screen-only">
-  <a href="/certifications" class="btn btn-sm btn-primary mt1">
+  <!-- <a href="/certifications" class="btn btn-sm btn-primary mt1">
     <small class="icon-checkmark"></small>
     Certifications
-  </a>
+  </a> -->
   <a href="https://app.jyje.live" class="btn btn-sm btn-primary mt1">
     <small class="icon-wrench"></small>
     Demo
@@ -42,7 +42,7 @@ To know more about me, check out my documents below:
     Blog (Korean)
   </a>
 </div>
-{:.note title="Quick Navigation"}
+{:.note title="External Links"}
 
 
 <div style="margin-top: 5rem;">
