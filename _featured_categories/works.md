@@ -1,6 +1,6 @@
 ---
 type: category
-layout: list
+layout: grid
 title: Works
 slug: works
 description: >
