@@ -7,10 +7,13 @@ tags:
   - aws
 description: >
   For high availability and cost optimization, a case study of a hybrid cluster that combines on-premise and public cloud.
-image: ../assets/img/works/f3a4b5c6-d7e8-9fa0-b1c2-d3e4f5g6h7i8.jpg
+image: ../assets/img/works/286a79d6-5433-4315-9309-61f6a6235f4c.jpg
 ---
 
 # DevOps: Hybrid Clusters with On-Premise Bare-Metal K8s and AWS EKS
+
+Photo from <a href="https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%82%AE%EC%97%90-%EB%B0%94%EC%9C%84-%ED%95%B4%EC%95%88%EC%97%90-%EC%84%9C%EC%9E%88%EB%8A%94-3-%EB%AA%85%EC%9D%98-%EB%82%A8%EC%9E%90-Opzk_hvwO9Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> in <a href="https://unsplash.com/ko/@mike_kiev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photobank Kiev</a>
+  
 
 * UNORDERED TOC
 {:toc}
