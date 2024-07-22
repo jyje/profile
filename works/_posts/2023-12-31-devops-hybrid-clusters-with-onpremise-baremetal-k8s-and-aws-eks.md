@@ -74,8 +74,20 @@ The metric collector alerts us when the on-premise cluster is unavailable and au
 ## 5. Future Works
 Recently, we noticed that there are use cases utilizing AWS EKS Anywhere to combine on-premise and public nodes in a single EKS cluster. We are planning to proof the concept and migrate our on-premise cluster to EKS Anywhere to simplify the management of the hybrid cluster.
 
+## 6. Used Skills
+Highlighted skills used in this project:
+
+- [AWS EKS]
+- [Kubernetes]
+- [Kubespray]
+- [Argo Workflows]
+- [FastAPI]
+- [Prometheus SDK]
+
 
 [AWS EKS]: https://aws.amazon.com/eks "Amazon Elastic Kubernetes Service"
+[Kubernetes]: https://kubernetes.io "Kubernetes: Production-Grade Container Orchestration"
+[Kubespray]: https://kubespray.io "Kubespray: Kubernetes Cluster Deployment Tool"
 [Argo Workflows]: https://argoproj.github.io/workflows "Workflow Engine in Argo Projects"
 [FastAPI]: https://fastapi.tiangolo.com "FastAPI: Python API Framework"
 [Prometheus SDK]: https://github.com/prometheus/client_python "Prometheus Python Client Package"
