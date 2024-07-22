@@ -5,6 +5,7 @@ tags:
   - devops
   - kubernetes
   - aws
+  - onpremise
 description: >
   For high availability and cost optimization, a case study of a hybrid cluster that combines on-premise and public cloud.
 image: ../assets/img/works/286a79d6-5433-4315-9309-61f6a6235f4c.jpg
@@ -32,7 +33,7 @@ The following diagram shows the architecture of the hybrid cluster:
 
 ![Architecture Diagram of the Hybrid Cluster](../assets/img/works/10393250-4f16-43e6-856b-c4fa7515fdce.png){:.lead width="800" height="400" loading="lazy"}
 
-**Architecture Diagram of the Hybrid Cluster;** Users ask contents from the web application hosted on the public cloud, while the ML pipelines run on the on-premise cluster. The metric collector monitors the liveness and availability of the on-premise cluster and scales out the backup pipelines in the public cloud when needed.
+**Architecture Diagram of the Hybrid Cluster;** Users interact with a web application hosted on a public cloud platform like [AWS EKS](https://aws.amazon.com/eks), while the ML pipelines execute on an on-premise cluster. We utilize [Argo Workflows] as the workflow controller. A metric collector monitors the liveness and availability of the on-premise cluster and triggers scale-out of backup pipelines in the public cloud when necessary. The metrics server is implemented using [FastAPI].
 {:.figcaption}
 
 ## 2. Problem Statement
@@ -57,8 +58,8 @@ We deployed a public AWS EKS cluster to host our web application and database. T
 ### 3.2. On-Premise Cluster: Bare-Metal Kubernetes
 We deployed on-premise bare-metal Kubernetes clusters with GPU servers. The on-premise cluster deployed the following components:
 
-- **ML Pipelines**: Machine learning pipelines that process data and train models. The pipelines run on GPU servers to accelerate the training process. We used Argo Workflows as a pipeline controller.
-- **Metrics Server**: A metrics server that exposes the liveness and availability of the on-premise cluster to the public cloud.
+- **ML Pipelines**: Machine learning pipelines that process data and train models. The pipelines run on GPU servers to accelerate the training process. We used [Argo Workflows] as a pipeline controller.
+- **Metrics Server**: A metrics server that exposes the liveness and availability of the on-premise cluster to the public cloud. We used [FastAPI] and [Prometheus SDK] to implement the metrics server.
 
 ### 3.3. Scheduling ML Pipelines
 If the on-premise cluster is down or lagging, the metric collector in the public cloud will automatically scale out the backup ML pipelines to ensure high availability of the ML workloads. The metric collector will also scale in the backup pipelines when the on-premise cluster is back online.
@@ -72,3 +73,9 @@ The metric collector alerts us when the on-premise cluster is unavailable and au
 
 ## 5. Future Works
 Recently, we noticed that there are use cases utilizing AWS EKS Anywhere to combine on-premise and public nodes in a single EKS cluster. We are planning to proof the concept and migrate our on-premise cluster to EKS Anywhere to simplify the management of the hybrid cluster.
+
+
+[AWS EKS]: https://aws.amazon.com/eks "Amazon Elastic Kubernetes Service"
+[Argo Workflows]: https://argoproj.github.io/workflows "Workflow Engine in Argo Projects"
+[FastAPI]: https://fastapi.tiangolo.com "FastAPI: Python API Framework"
+[Prometheus SDK]: https://github.com/prometheus/client_python "Prometheus Python Client Package"
