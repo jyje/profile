@@ -45,10 +45,10 @@ menu:
     url:               /profile
   - title:             Works
     url:               /works
-  # - title:             Articles
-  #   url:               /articles
   - title:             Certifications
     url:               /certifications
+  - title:             Articles
+    url:               /articles
   - title:             Index
     url:               /indice
 
@@ -61,6 +61,8 @@ legal:
     url:               /profile/resume
   # - title:             CV
   #   url:               /profile/cv
+  - title:             Articles
+    url:               /articles
   - title:             Credits
     url:               /credits
   - title:             Blog
