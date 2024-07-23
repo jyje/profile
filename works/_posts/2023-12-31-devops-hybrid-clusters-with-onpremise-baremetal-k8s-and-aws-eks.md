@@ -1,6 +1,6 @@
 ---
-layout:     post
-categories: [ "works" ]
+layout: post
+categories: works
 tags:
   - devops
   - kubernetes
@@ -37,6 +37,8 @@ The following diagram shows the architecture of the hybrid cluster:
 **Architecture Diagram of the Hybrid Cluster;** Users interact with a web application hosted on a public cloud platform like [AWS EKS](https://aws.amazon.com/eks), while the ML pipelines execute on an on-premise cluster. We utilize [Argo Workflows] as the workflow controller. A metric collector monitors the liveness and availability of the on-premise cluster and triggers scale-out of backup pipelines in the public cloud when necessary. The metrics server is implemented using [FastAPI].
 {:.figcaption}
 
+
+
 ## 2. Problem Statement
 
 Initially, we deployed a public AWS EKS cluster to support our web application and ML pipeline. However, running ML workloads on the public cloud proved to be cost-ineffective due to the high expense of GPU instances (*e.g.,* g4dn) on AWS EC2, resulting in unacceptable monthly costs amounting to thousands of dollars.
@@ -44,6 +46,8 @@ Initially, we deployed a public AWS EKS cluster to support our web application a
 To mitigate these costs, we transitioned to on-premise clusters equipped with GPU servers for our ML pipelines. To facilitate communication between the public cloud and our on-premise clusters, we needed to expose endpoints on the on-premise cluster.
 
 A metric collector in the public cloud was set up to monitor the liveness and availability of the on-premise cluster. In the event of the on-premise cluster going down or lagging, the metric collector would automatically scale out public cloud resources to maintain high availability of the ML pipelines.
+
+
 
 ## 3. Methods
 To achieve the architecture described above, we implemented the following steps:
@@ -91,4 +95,4 @@ Highlighted skills used in this project:
 [Kubespray]: https://kubespray.io "Kubespray: Kubernetes Cluster Deployment Tool"
 [Argo Workflows]: https://argoproj.github.io/workflows "Workflow Engine in Argo Projects"
 [FastAPI]: https://fastapi.tiangolo.com "FastAPI: Python API Framework"
-[Prometheus SDK]: https://github.com/prometheus/client_python "Prometheus Python Client Package"
+[Prometheus SDK]: https://github.com/prometheus/client_python "Python Package for Prometheus Client"
