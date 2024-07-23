@@ -7,7 +7,7 @@ accent_image:
 ---
 
 * toc
-{:toc .large-only}
+{:toc}
 
 ## ✨ Introduction
 
@@ -92,9 +92,9 @@ Currently, I work at [MAXST]{:.heading.flip-title} in South Korea as a software 
 </div>
 
 
-## 💼 Career
+## 💼 Career Details
 
-### Timeline
+### 1. Timeline
 
 Following is a brief summary of my career:
 
@@ -109,24 +109,29 @@ Following is a brief summary of my career:
 *The annual interval stands for the focused duration of my full efforts*
 {:.faded}
 
-### Documents
+### 2. Documents
 
 You can find more details about my career in the following documents:
 
 - [Résumé]{:.heading.flip-title}: Recent highlighted career
+  - [Résumé (in Korean 🇰🇷)]{:.heading.flip-title}: 경력기술서를 포함한 최근 이력
 <!-- - [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training -->
 
-And you can also check my documents written in Korean:
-
-- [이력서]{:.heading.flip-title}: My résumé in Korean
 <!-- - [커리큘럼]{:.heading.flip-title}: My CV in Korean -->
 
-### Certifications
 
-- [CKA](../certifications/cka-certified-kubernetes-administrator){:.heading.flip-title}: Certified Kubernetes Administrator
-- [CKAD](../certifications/ckad-certified-kubernetes-application-developer){:.heading.flip-title}: Certified Kubernetes Application Developer
+### 3. Works
 
-See my [certifications]{:.heading.flip-title} for more details.
+I have worked on various projects related to **DevOps**, **MLOps**, and **Cloud-Native Software Development**.
+
+See my [Works]{:.heading.flip-title} for more details about my projects and achievements.
+
+
+### 4. Certifications
+
+I have earned the following certifications related CNCF: [CKA]{:.heading.flip-title} / [CKAD]{:.heading.flip-title}.
+
+See my [Certifications]{:.heading.flip-title} for more details.
 
 
 <div style="margin-top: 5rem;">
@@ -134,7 +139,7 @@ See my [certifications]{:.heading.flip-title} for more details.
 </div>
 
 
-## 📜 etc.
+## 📜 External Links
 
 - [Blog]{:.heading.flip-title}: My blog posts written in Korean
 - [Demo]{:.heading.flip-title}: Live demo powered by Raspberry Pi cluster (Can be down sometimes)
@@ -148,7 +153,7 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Curriculum Vitae]: /profile/cv "my-profile cv"
 [CV]: /profile/cv "my-profile cv"
 
-[이력서]: /profile/resume-ko "my-profile resume --ko"
+[Résumé (in Korean 🇰🇷)]: /profile/resume-ko "my-profile resume --ko"
 [커리큘럼]: /profile/cv-ko "my-profile cv --ko"
 
 [Certifications]: ../certifications
@@ -159,3 +164,7 @@ See my [certifications]{:.heading.flip-title} for more details.
 [Demo]: https://app.jyje.live "Demo"
 
 [Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+
+[CKA]: ../certifications/cka-certified-kubernetes-administrator "Certified Kubernetes Administrator"
+[CKAD]: ../certifications/ckad-certified-kubernetes-application-developer "Certified Kubernetes Application Developer"
+
