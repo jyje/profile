@@ -188,7 +188,7 @@ projects:
     endDate: "2022-12-31"
     duration: 2 years
     results:
-      description: Algorithm research for digital twin systems [Contribution 10%]
+      description: Algorithm research for digital twin systems [contrib 50%]
       items:
         - header: Digital Twins
           content: Research and development of Visual-SLAM and ICP algorithms for digital twin systems

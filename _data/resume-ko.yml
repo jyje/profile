@@ -191,7 +191,7 @@ projects:
     endDate: "2022-12-31"
     duration: 2 년
     results:
-      description: 디지털 트윈 시스템을 위한 알고리즘 개발 [기여도 10%]
+      description: 디지털 트윈 시스템을 위한 알고리즘 개발 [기여도 50%]
       items:
         - header: Digital Twins
           content: 디지털 트윈 시스템을 위한 Visual-SLAM 및 ICP 알고리즘 연구/개발
