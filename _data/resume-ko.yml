@@ -256,9 +256,20 @@ projects:
                 Research on Traffic Sign & Lane Terrain Detection
                 <ul>
                   <li>
-                    Conference:
+                    1st Author:
                     <a href="https://ieeexplore.ieee.org/abstract/document/6987934">
                       Polygonal symmetry transform for detecting rectangular traffic signs (IEEE ICASS 2014)
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Research on Stereo Vision & Markov Random Fields
+                <ul>
+                  <li>
+                    3rd Author:
+                    <a href="https://ieeexplore.ieee.org/abstract/document/7351196">
+                      Cost aggregation table: A theoretic derivation on the Markov random field and its relation to message passing (IEEE ICIP 2015)
                     </a>
                   </li>
                 </ul>
@@ -273,6 +284,7 @@ projects:
       items:
         - Computer Vision
         - Digital Signal Processing
+        - Markov Random Fields
         - ADAS
         - Traffic Sign Detection
         - Lane Terrain Detection
