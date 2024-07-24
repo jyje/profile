@@ -10,7 +10,7 @@ Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and
 It provides following sections:
 
 - 💼 [Profile]{:.heading.flip-title}: Career overview and résumé 
-- 🚀 [Works]{:.heading.flip-title}: My activities, projects, and live demos 🚀
+- 🚀 [Works]{:.heading.flip-title}: My activities, projects, and live [demo] (powered by raspberry pi cluster 🐳)
 - 🧑‍💻 [Certifications]{:.heading.flip-title}: Description of my certifications
 - 📜 [Articles]{:.heading.flip-title}: All posts in this site
 - 🔖 [Index]{:.heading.flip-title}: All categories and tags
@@ -28,6 +28,7 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 [Articles]: articles
 [Index]: index
 [Blog]: blog
+[Demo]: https://app.jyje.live "Demo: Raspberry Pi Cluster running 24/7"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
 [Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
