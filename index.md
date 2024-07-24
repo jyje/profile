@@ -26,7 +26,7 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 [Works]: works
 [Certifications]: certifications
 [Articles]: articles
-[Index]: index
+[Index]: indice
 [Blog]: blog
 [Demo]: https://app.jyje.live "Demo: Raspberry Pi Cluster running 24/7"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
