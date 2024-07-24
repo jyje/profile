@@ -9,30 +9,11 @@ Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and
 
 It provides following sections:
 
-- [Profile]{:.heading.flip-title}
-    - My introduction and career overview
-    -   <div>
-            My official documents including résumé, and CV: 
-            <a href="/profile#documents" class="btn btn-inline btn-primary">
-                <small class="icon-edit"></small>
-                Documents
-            </a>
-        </div>
-
-- [Works]{:.heading.flip-title}
-    - My activities and achievements
-    -   <div>
-            My projects and live demo (powered by Raspberry Pi cluster): 
-            <a href="https://app.jyje.live" class="btn btn-inline btn-primary">
-                <small class="icon-wrench"></small>
-                Demo
-            </a>
-        </div>
-
-- [Articles]{:.heading.flip-title}
-    - My formal posts
-    - My publications
-
+- 💼 [Profile]{:.heading.flip-title}: Career overview and résumé 
+- 🚀 [Works]{:.heading.flip-title}: My activities, projects, and live demos 🚀
+- 🧑‍💻 [Certifications]{:.heading.flip-title}: Description of my certifications
+- 📜 [Articles]{:.heading.flip-title}: All posts in this site
+- 🔖 [Index]{:.heading.flip-title}: All categories and tags
 
 Thank you for visiting my site. If you have any questions or want to contact me, please feel free to [Mail] me. Have a nice day! 🌤️
 
@@ -43,7 +24,9 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 [Curriculum Vitae]: profile/cv "my-profile cv"
 [CV]: profile/cv "my-profile cv"
 [Works]: works
+[Certifications]: certifications
 [Articles]: articles
+[Index]: index
 [Blog]: blog
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
