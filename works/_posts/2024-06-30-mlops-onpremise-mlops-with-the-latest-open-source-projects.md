@@ -32,7 +32,12 @@ With on-premise resources, our MLOps cluster provides the following advantages:
 - **Parallel Training**: A single training job can be accelerated by utilizing multiple GPUs in parallel, allowing it to leverage all GPUs in the cluster.
 - **Remote Notebooks**: The cluster provides researchers with on-demand Jupyter notebooks to distribute resources for ML research. Researchers can easily access the cluster and run experiments without worrying about resource constraints.
 
+The following diagram shows the architecture of the on-premise cluster for MLOps:
 
+![Architecture Diagram of the on-premise cluster for MLOps](../assets/img/works/05ebb39f-ab74-400b-ae25-7c63f36629c9.png){:.lead width="800" height="400" loading="lazy"}
+
+**Architecture Diagram of the On-Premise Kubernetes Setup;** Users interact with [Kubeflow] for managing and automating machine learning workflows. [Kubeflow/Katib] utilizes the Argo Workflows as a workflow engine for hyperparameter tuning and [Kubeflow/Training Operator] for managing training jobs. [Argo Workflows] orchestrates these machine learning pipelines. The MySQL cluster stores workflow metadata and results, while the Minio cluster handles artifact storage. The cluter contains GPU servers providing computational power for training models. This setup ensures efficient data handling and workflow management in an on-premise Kubernetes environment.
+{:.figcaption}
 
 ## 2. Problem Statement
 
@@ -125,12 +130,14 @@ In the future, we are planning to enhnace user experience. ML researchers asked 
 Highlighted skills used in this project:
 
 - [Argo Workflows]
+- [Kuberflow]
 - [Kubeflow/Katib]
 - [Kubeflow/Training Operator]
 - [JupyterHub]
 - [Grafana]
 
 [Argo Workflows]: https://argoproj.github.io/workflows "Workflow Engine in Argo Projects"
+[Kubeflow]: https://www.kubeflow.org "Kubeflow: Machine Learning Toolkit for Kubernetes"
 [Kubeflow/Katib]: https://www.kubeflow.org/docs/components/katib/overview "Kubeflow Katib: Hyperparameter Tuning"
 [Kubeflow/Training Operator]: https://www.kubeflow.org/docs/components/training/overview "Kubeflow Training Operator: Distributed Training"
 [JupyterHub]: https://jupyter.org/hub "JupyterHub: Multi-user Jupyter Notebook Server"
