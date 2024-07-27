@@ -5,7 +5,7 @@ basics:
   name: Jeayoung Jeon
   name-english: Jeayoung Jeon
   label: "MLOps and Cloud-Native Engineer"
-  picture: "/assets/img/profile/jyje-o2024.jpg" # "https://avatars.githubusercontent.com/u/109659358"
+  # picture: "/assets/img/profile/jyje-o2024.jpg" # "https://avatars.githubusercontent.com/u/109659358"
   email: "jyjeon@outlook.com"
   linkedin: "jyje"
   # website: "https://jyje.live"
@@ -49,7 +49,7 @@ basics:
 
         I'm trying to identify the best practices to bridge **team culture** and **new technologies**.
         And also, I'm balancing **performance** and **cost reduction** optimally.
-        From my experience and achievements, I hope to have a good career.
+        From my experience and achievements, I hope to have a daily growing career.
         For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
 
 projects:
