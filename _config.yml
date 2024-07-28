@@ -186,7 +186,21 @@ google_analytics:      UA-257233721-1
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-disqus:                jyje
+# disqus:                jyje
+
+# Setting a giscus data will enable the comment section on
+# pages with `comments: true` in the front matter.
+giscus:
+  repo:                jyje/portfolio 
+  repo_id:             R_kgDOIsNUrw
+  category:            Comments
+  category_id:         DIC_kwDOIsNUr84ChOrU
+  mapping:             pathname
+  reactions_enabled:   1
+  emit_metadata:       0
+  input_position:      bottom
+  theme:               preferred_color_scheme
+  lang:                en
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
