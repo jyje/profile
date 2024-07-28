@@ -28,6 +28,11 @@
       </h3>
     </header>
 
+    {% if edu.thesis.size > 0 %}
+    <h4 class="sr-only">{{ strings.resume.thesis | default:"Thesis" }}</h4>
+    <p>{{ edu.thesis }}</p>
+    {% endif %}
+
     {% if edu.courses.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.courses | default:"Courses" }}</h4>
     <ul>
