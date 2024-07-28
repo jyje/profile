@@ -8,6 +8,7 @@ image: https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_ex
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
   overlay: false
+comments: true
 ---
 
 # CKAD: Certified Kubernetes Application Developer (2024)
