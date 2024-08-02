@@ -63,7 +63,7 @@ projects:
     results:
       description: Built Hybrid Clusters, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
       items:
-        - header: Robust Hybrid Cluster
+        - header: Robust Hybrid Infra
           content: Achieved <b>'96% availability/year and 50% costdown'</b> using hybrid multi cluster
         - header: ML Pipeline
           content: Designed <b>ML APIs and data pipelines</b> in the multi-cluster environments. Reduces costs of the public cloud by <b>50%</b>.
@@ -144,7 +144,7 @@ projects:
     results:
       description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
       items:
-        - header: Hybrid
+        - header: Robust Hybrid Cluster
           content: >
             Achieved <b>50%+ cost reduction</b> compared to pure cloud infrastructure using on-premises cost-effectiveness.
         - header: DevOps Culture
