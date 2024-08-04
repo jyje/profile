@@ -129,3 +129,6 @@
 {% if site.hydejack.dark_mode.dynamic %}
   @import "pro/dark-mode-dynamic-syntax";
 {% endif %}
+
+// Custom Webfonts
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
