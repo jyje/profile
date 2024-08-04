@@ -302,13 +302,13 @@ work:
       items:
         - header: MLOps
           content: >
-            Developing on-premise clusters providing MLOps for the AI team.
+            AI 팀을 위한 MLOps를 제공하는 온프레미스 클러스터 및 워크로드를 개발하였습니다.
         - header: DevOps
           content: >
-            Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
-        - header: Hybrid
+            프로젝트에 DevOps 역할로 참여하여 서비스 출시에 기여하였습니다. CI/CD 구성, 앱 현대화 등 DevOps 문화를 전파하였습니다.
+        - header: 하이브리드 클러스터
           content: >
-            Building on-premise clusters with IaC tools such as Ansible and Kubespray.
+            AWS EKS와 온프레미스 쿠버네티스를 결합한 하이브리드 클러스터를 구현/운영 하였습니다. Ansible과 Kubespray를 이용해 온프레미스 클러스터를 구축하였습니다. Terraform을 이용해 AWS EKS 클러스터를 구성하였습니다.
     skills:
       items:
         - Kubernetes
@@ -331,15 +331,15 @@ work:
       description: >
         Associate R&D Engineer for Technology Division in MAXST
       items:
-        - header: Algorithm Research
+        - header: 알고리즘연구
           content: >
-            Reviewing computer vision algorithms in state-of-art papers and implementing prototypes.
-        - header: DevOps
+            컴퓨터 비전 최신 논문을 리뷰하고 기술 검증을 위한 알고리즘을 구현하였습니다.
+        - header: 주니어 DevOps
           content: >
-            Building hybrid clusters and providing data pipelines for digital twins.
-        - header: Technical Research Personnel
+            하이브리드 클러스터를 구축하고 디지털 트윈을 위한 데이터 파이프라인을 제공하였습니다.
+        - header: 전문연구요원 (병역특례)
           content: >
-            Serving as a substitute for military service for 3 years, engaging in the industry in the related field of computer vision major.
+            군 복무 대체로 3년간 전공(컴퓨터 비전) 관련 분야에서 산업에 종사하였습니다.
     skills:
       items:
         - Kubernetes
