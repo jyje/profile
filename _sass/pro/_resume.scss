@@ -36,7 +36,9 @@
   }
 
   .work {
+    margin-top: 0.2rem;
     margin-bottom: 0.2rem;
+    margin-left: 0.5rem;
   }
 
   .h3 {
@@ -283,21 +285,33 @@
       height: 9rem;
     }
 
-    .skill-tag-highlight {
-      color: var(--accent-color-fill);
-    }
-
     .work-header-result {
       color: var(--accent-color-fill);
-      font-weight: 900;
+      font-weight: 700;
+      line-height: normal;
     }
 
     .work-header-role {
       color: #000;
+      line-height: normal;
     }
 
     .work-header-skill {
       color: #000;
+      line-height: normal;
+    }
+
+    .skill-tag {
+      line-height: normal;
+    }
+
+    .skill-tag-highlight {
+      color: var(--accent-color-fill);
+      line-height: normal;
+    }
+
+    .skill-tag-soft {
+      line-height: 1.2;
     }
   }
 
