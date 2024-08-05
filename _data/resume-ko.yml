@@ -54,7 +54,7 @@ basics:
 
 projects:
   -
-    position: "프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 제공하는 B2B 디지털 트윈 플랫폼"
+    position: "🧑‍💻 프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 제공하는 B2B 디지털 트윈 플랫폼"
     company: 맥스트
     website: https://maxst.com
     startDate: "2024-01-02"
@@ -94,7 +94,7 @@ projects:
 
 
   -
-    position: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입
+    position: "🧑‍🔬 MLOps: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입"
     company: 맥스트
     website: https://maxst.com
     startDate: "2024-01-01"
@@ -138,7 +138,7 @@ projects:
 
 
   -
-    position: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 기반의 DevOps 도입
+    position: "🧑‍🔧 DevOps: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 기반의 DevOps 도입"
     company: 맥스트
     website: https://maxst.com
     startDate: "2023-01-01"
@@ -185,7 +185,7 @@ projects:
 
   -
     company: 맥스트
-    position: 디지털 트윈 연구 컴퓨터 비전 엔지니어
+    position: 📸 디지털 트윈 연구 컴퓨터 비전 엔지니어
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
@@ -220,7 +220,7 @@ projects:
 
 
   -
-    position: 디지털 신호 처리 및 ADAS 연구원 (통합박사과정)
+    position: 🧑‍🎓 디지털 신호 처리 및 ADAS 연구원 (통합박사과정)
     company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
@@ -293,7 +293,7 @@ projects:
 
 work:
   - company: MAXST
-    position: 책임연구원
+    position: 💼 책임연구원
     website: https://maxst.com/ENG/main
     startDate: "2024-03-01"
     roles:
@@ -322,7 +322,7 @@ work:
 
 
   - company: MAXST
-    position: 선임연구원
+    position: 💼 선임연구원
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2024-02-28"
@@ -451,12 +451,12 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
-  - title: "CKAD: Certified Kubernetes Application Developer"
+  - title: "🐳 CKAD: Certified Kubernetes Application Developer"
     organization: 리눅스 재단 (The Linux Foundation)
     verified: "2024-06-01"
     expired: "2026-06-01"
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
-  - title: "CKA: Certified Kubernetes Administrator"
+  - title: "🐳 CKA: Certified Kubernetes Administrator"
     organization: 리눅스 재단 (The Linux Foundation)
     verified: "2024-03-16"
     expired: "2027-03-16"
@@ -466,7 +466,7 @@ education:
   - institution: "포항공과대학교 (POSTECH)"
     website: "https://eee.postech.ac.kr/"
     area: "전기전자공학과, 신호처리 및 컴퓨터 비전 전공"
-    studyType: "석사학위 (통합박사과정 수료)"
+    studyType: "🎓 석사학위 (통합박사과정 수료)"
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
@@ -478,7 +478,7 @@ education:
   - institution: "금오공과대학교 (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "전자공학부, 전자통신 전공"
-    studyType: "학사학위"
+    studyType: "🎓 학사학위"
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
@@ -517,6 +517,8 @@ interests:
     keywords:
       - "Kubeflow"
       - "Argo Projects"
+
+
 # references:
 #   - name: "Erlich Bachman"
 #     reference: >

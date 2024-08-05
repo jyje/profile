@@ -54,7 +54,7 @@ basics:
 
 projects:
   -
-    position: "Widearth: Digital Twin Platform with Spatial Map & AR Contents"
+    position: "🧑‍💻 Project Widearth: Digital Twin Platform with Spatial Map & AR Contents"
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
@@ -94,7 +94,7 @@ projects:
 
 
   -
-    position: On-premise MLOps with the Latest Open Source Projects
+    position: "🧑‍🔬 MLOps: On-premise MLOps with the Latest Open Source Projects"
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
@@ -135,7 +135,7 @@ projects:
 
 
   -
-    position: Hybrid Cluster DevOps with Chatbot and CI/CD
+    position: "🧑‍🔧 DevOps: Development of Hybrid Clusters Providing CI/CD and Chatbot"
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2023-01-01"
@@ -182,7 +182,7 @@ projects:
 
   -
     company: MAXST
-    position: Digital Twin Research Engineer
+    position: 📸 Digital Twin Research Engineer
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
@@ -217,7 +217,7 @@ projects:
 
 
   -
-    position: Digital Signal Processing and ADAS Researcher (Integrated Program)
+    position: 🧑‍🎓 Digital Signal Processing and ADAS Researcher (Integrated Program)
     company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
@@ -287,7 +287,7 @@ projects:
 
 work:
   - company: MAXST
-    position: Senior Software Engineer [🇰🇷 책임연구원]
+    position: 💼 Senior Software Engineer [🇰🇷 책임연구원]
     website: https://maxst.com/ENG/main
     startDate: "2024-03-01"
     roles:
@@ -316,7 +316,7 @@ work:
 
 
   - company: MAXST
-    position: Software Engineer [🇰🇷 선임연구원]
+    position: 💼 Software Engineer [🇰🇷 선임연구원]
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2024-02-28"
@@ -445,12 +445,12 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
-  - title: "CKAD: Certified Kubernetes Application Developer"
+  - title: "🐳 CKAD: Certified Kubernetes Application Developer"
     organization: The Linux Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
-  - title: "CKA: Certified Kubernetes Administrator"
+  - title: "🐳 CKA: Certified Kubernetes Administrator"
     organization: The Linux Foundation
     verified: "2024-03-16"
     expired: "2027-03-16"
@@ -461,7 +461,7 @@ education:
   - institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
     area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-    studyType: "Master's Degree (Integrated Program)"
+    studyType: "🎓 Master's Degree (Integrated Program)"
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
@@ -472,7 +472,7 @@ education:
   - institution: "Kumoh National Institute of Technology (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "Bachelor's Degree"
+    studyType: "🎓 Bachelor's Degree"
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
