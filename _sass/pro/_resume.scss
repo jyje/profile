@@ -41,6 +41,11 @@
     margin-left: 0.2rem;
   }
 
+  .from-to {
+    color: var(--accent-color-border-dark);
+    font-weight: 600;
+  }
+
   .h3 {
     margin-bottom: 1rem;
   }
@@ -278,11 +283,6 @@
 
     .bc {
       font-weight: 900;
-    }
-
-    .from-to {
-      color: var(--accent-color-fill);
-      font-weight: 500;
     }
 
     section section, header, blockquote, dd, .npb {
