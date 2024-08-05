@@ -234,8 +234,8 @@ projects:
       description: >
         '프로젝트 및 연구논문' <- 가상 환경에서의 자동차 시뮬레이션 및 ADAS On-Edge에 대한 연구를 수행
       items:
-        - header: VVSLAM
-          content: 실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법
+        - header: Digital Twins
+          content: "Virtual Visual-SLAM: 실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법"
         - header: Edge ADAS
           content: FPGA를 이용한 실시간 운전자 보조 시스템 개발 및 교통표지판 검출 알고리즘 연구
     roles:
@@ -475,7 +475,7 @@ education:
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    thesis: "가상 환경을 위한 Visual-SLAM 알고리즘"
+    # thesis: "가상 환경을 위한 Visual-SLAM 알고리즘"
     # courses:
     #   - 첨단 운전자 보조 시스템 (ADAS, Advanced Driver Assistance Systems)
     #   - 비주얼 SLAM (Simultaneous Localization and Mapping)

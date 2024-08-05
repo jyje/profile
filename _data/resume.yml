@@ -232,7 +232,7 @@ projects:
       description: >
         'R&D' <- Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
       items:
-        - header: VVSLAM
+        - header: Digital Twins
           content: Virtual Visual-SLAM for Real-World Environments
         - header: Edge ADAS
           content: Research of ADAS including Traffic Sign Detection & Lane Terrain Detection with FPGA
@@ -471,6 +471,7 @@ education:
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
+    # thesis: "가상 환경을 위한 Visual-SLAM 알고리즘"
     # courses:
     #   - Advanced Driver Assistance Systems (ADAS)
     #   - Simultaneous Localization and Mapping (SLAM)
