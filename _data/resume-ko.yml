@@ -61,19 +61,20 @@ projects:
     endDate: "2024-07-15"
     duration: 7 개월
     results:
-      description: 하이브리드 클러스터, CI/CD 파이프라인, ML 파이프라인, ML API 개발 [기여도 75%+]
+      description: >
+        '서비스 개발 및 운영 기여' <- 하이브리드 클러스터, CI/CD, ML 파이프라인, ML API 개발 [기여도 75%+]
       items:
         - header: 고가용성 하이브리드 인프라
-          content: 하이브리드 멀티 클러스터를 이용해 서비스 <b>연간 가용성 96%, 다운타임 14일</b> 달성
+          content: 하이브리드 클러스터를 구현 및 데브옵스 지원으로 서비스 <b>연간 가용성 96%, 다운타임 14일</b> 달성
         - header: ML 파이프라인
           content: 멀티 클러스터 환경에서 <b>ML API</b>와 <b>데이터 파이프라인</b> 설계. 클러스터 비용 <b>50%</b> 절감
     roles:
-      description: ML 파이프라인 설계, API 개발, 하이브리드 클러스터 운영
+      description: ML 파이프라인 설계, API 개발, 하이브리드 클러스터 운영, 배포 의사결정 및 자동화
       items:
         - header: DevOps
           content: >
             웹 서버를 위한 Bitbucket CI 파이프라인과 ML 워크로드를 위한 Argo Workflows CI 파이프라인을 설계했습니다.
-            GitOps를 이용해 <i><b>개발/테스트/운영</b></i> 환경을 구성하였습니다.
+            GitOps를 이용해 <i><b>개발/테스트/운영</b></i> 환경을 구성하였습니다. 배포를 위한 의사결정을 주도하였습니다.
         - header: Hybrid Cluster
           content: >
             AWS EKS와 온프레미스 쿠버네티스를 이용한 하이브리드 클러스터를 구축하였습니다.
@@ -101,7 +102,8 @@ projects:
     endDate: "2024-06-30"
     duration: 6 개월
     results:
-      description: Argo Workflow, Kubeflow, JupyterHub를 이용해 AI 연구의 GPU 활용성 향상 [기여도 90%+]
+      description: >
+        'MLOps 도입' <- Kubeflow와 JupyterHub를 이용한 AI 연구 GPU 활용성 향상 [기여도 90%+]
       items:
         - header: 연구환경개선
           content: >
@@ -145,7 +147,8 @@ projects:
     endDate: "2023-12-31"
     duration: 12 개월
     results:
-      description: AWS EKS와 온프레미스를 결합한 하이브리드 클러스터 개발 [기여도 75%+]
+      description: >
+        'DevOps 도입' <- AWS EKS와 온프레미스를 결합한 하이브리드 클러스터 개발 [기여도 75%+]
       items:
         - header: 고가용성 하이브리드 클러스터
           content: >
@@ -191,7 +194,8 @@ projects:
     endDate: "2022-12-31"
     duration: 2 년
     results:
-      description: 디지털 트윈 시스템을 위한 알고리즘 개발 [기여도 50%]
+      description: >
+        '가설 검증' <- 디지털 트윈 시스템을 위한 알고리즘 개발 [기여도 50%]
       items:
         - header: 디지털 트윈
           content: 디지털 트윈 시스템을 위한 Visual-SLAM 및 ICP 알고리즘 연구/개발
@@ -227,7 +231,8 @@ projects:
     endDate: "2020-08-27"
     duration: "8 년"
     results:
-      description: 가상 환경에서의 자동차 시뮬레이션 및 ADAS On-Edge에 대한 연구를 수행
+      description: >
+        '프로젝트 및 연구논문' <- 가상 환경에서의 자동차 시뮬레이션 및 ADAS On-Edge에 대한 연구를 수행
       items:
         - header: VVSLAM
           content: 실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법

@@ -61,12 +61,13 @@ projects:
     endDate: "2024-07-15"
     duration: 7 Months
     results:
-      description: Built Hybrid Clusters, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
+      description: >
+        'Contribute Dev & Ops' <- Built Hybrid Clusters, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
       items:
         - header: Robust Hybrid Infra
-          content: Achieved <b>'96% availability/year and 50% costdown'</b> using hybrid multi cluster
+          content: Achieved <b>'96% availability/year and 14d downtime'</b> using hybrid clusters and DevOps support.
         - header: ML Pipeline
-          content: Designed <b>ML APIs and data pipelines</b> in multi-cluster environments. Reduces costs of public cloud by <b>50%</b>.
+          content: Designed <b>ML APIs and data pipelines</b> in multi-clusters. Reduces costs of public cloud by <b>50%</b>.
     roles:
       description: Development of ML pipelines, APIs and Infrastructure
       items:
@@ -74,6 +75,7 @@ projects:
           content: >
             Designed CI/CD pipelines for web servers and ML workloads.
             Set <i><b>dev/test/prod</b></i> environments with GitOps.
+            Led decision-making for deployments.
         - header: Hybrid Cluster
           content: >
             Built hybrid clusters with AWS EKS and bare-metal Kubernetes.
@@ -101,7 +103,8 @@ projects:
     endDate: "2024-04-30"
     duration: "6 Months"
     results:
-      description: Improve GPU utilization for AI research using Argo Workflow, Kubeflow, and JupyterHub [contrib 90%+]
+      description: >
+        'Initiate MLOps' <- Improve GPU utilization for AI research using Kubeflow, JubeterHub [contrib 90%+]
       items:
         - header: MLOps
           content: >
@@ -142,7 +145,8 @@ projects:
     endDate: "2023-12-31"
     duration: 12 Months
     results:
-      description: Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
+      description: >
+        'Initiate DevOps' <- Developed Hybrid Clusters using AWS EKS and On-Premise [contrib 75%+]
       items:
         - header: Robust Hybrid Cluster
           content: >
@@ -188,7 +192,8 @@ projects:
     endDate: "2022-12-31"
     duration: 2 years
     results:
-      description: Algorithm research for digital twin systems [contrib 50%]
+      description: >
+        'Proof of Concepts' <- Algorithm research for digital twin systems [contrib 50%]
       items:
         - header: Digital Twins
           content: Research and development of Visual-SLAM and ICP algorithms for digital twin systems
@@ -224,7 +229,8 @@ projects:
     endDate: "2020-08-27"
     duration: "8 Years"
     results:
-      description: Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
+      description: >
+        'R&D' <- Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
       items:
         - header: VVSLAM
           content: Virtual Visual-SLAM for Real-World Environments
