@@ -66,7 +66,7 @@ projects:
         - header: Robust Hybrid Infra
           content: Achieved <b>'96% availability/year and 50% costdown'</b> using hybrid multi cluster
         - header: ML Pipeline
-          content: Designed <b>ML APIs and data pipelines</b> in the multi-cluster environments. Reduces costs of the public cloud by <b>50%</b>.
+          content: Designed <b>ML APIs and data pipelines</b> in multi-cluster environments. Reduces costs of public cloud by <b>50%</b>.
     roles:
       description: Development of ML pipelines, APIs and Infrastructure
       items:
@@ -108,7 +108,7 @@ projects:
             Applied latest open sources to improve the on-premises research environment.
         - header: GPU Utilization
           content: >
-            Via 24/7 GPU usage, Increased GPU utilization by 3 times and conducted more than 800 AutoML experiments.
+            Increased GPU utilization by <b>3 times</b> and conducted more than <b>800 AutoML experiments</b>.
     roles:
       description: Built Core MLOps Platform using CNCF Open Source Projects
       items:
