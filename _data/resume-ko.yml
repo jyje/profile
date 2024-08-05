@@ -398,9 +398,9 @@ skills:
   - name: Programming languages
     keywords:
       - Python*
-      - Go*
       - C#*
       - C/C++
+      - Go
       - MATLAB
 
   - name: Tools

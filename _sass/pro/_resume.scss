@@ -280,6 +280,11 @@
       font-weight: 900;
     }
 
+    .from-to {
+      color: var(--accent-color-fill);
+      font-weight: 500;
+    }
+
     section section, header, blockquote, dd, .npb {
       page-break-inside: avoid;
       break-inside: avoid-page;
