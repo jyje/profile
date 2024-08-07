@@ -34,7 +34,7 @@ With on-premise resources, our MLOps cluster provides the following advantages:
 
 The following diagram shows the architecture of the on-premise cluster for MLOps:
 
-![Architecture Diagram of the on-premise cluster for MLOps](../assets/img/works/05ebb39f-ab74-400b-ae25-7c63f36629c9.png){:.lead width="800" height="400" loading="lazy"}
+![Architecture Diagram of the on-premise cluster for MLOps](/assets/img/works/05ebb39f-ab74-400b-ae25-7c63f36629c9.png){:.lead width="800" height="400" loading="lazy"}
 
 **Architecture Diagram of the On-Premise Kubernetes Setup for MLOps;** Users interact with [Kubeflow] for managing and automating machine learning workflows. [Kubeflow/Katib] utilizes the Argo Workflows as a workflow engine for hyperparameter tuning and [Kubeflow/Training Operator] for managing training jobs. [Argo Workflows] orchestrates these machine learning pipelines. The MySQL cluster stores workflow metadata and results, while the Minio cluster handles artifact storage. The cluter contains GPU servers providing computational power for training models. This setup ensures efficient data handling and workflow management in an on-premise Kubernetes environment.
 {:.figcaption}

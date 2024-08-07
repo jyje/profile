@@ -32,7 +32,7 @@ Our application consists of two parts: a web application and machine learning (M
 
 The following diagram shows the architecture of the hybrid cluster:
 
-![Architecture Diagram of the Hybrid Cluster](../assets/img/works/10393250-4f16-43e6-856b-c4fa7515fdce.png){:.lead width="800" height="400" loading="lazy"}
+![Architecture Diagram of the Hybrid Cluster](/assets/img/works/10393250-4f16-43e6-856b-c4fa7515fdce.png){:.lead width="800" height="400" loading="lazy"}
 
 **Architecture Diagram of the Hybrid Cluster for DevOps;** Users interact with a web application hosted on a public cloud platform like [AWS EKS](https://aws.amazon.com/eks), while the ML pipelines execute on an on-premise cluster. We utilize [Argo Workflows] as the workflow controller. A metric collector monitors the liveness and availability of the on-premise cluster and triggers scale-out of backup pipelines in the public cloud when necessary. The metrics server is implemented using [FastAPI].
 {:.figcaption}
