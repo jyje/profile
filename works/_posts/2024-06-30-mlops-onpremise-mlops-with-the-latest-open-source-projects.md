@@ -8,7 +8,7 @@ tags:
   - onpremise
 description: >
   To reduce underutilized GPU time, a case study of an on-premise cluster that provides MLOps services with Kubeflow, Argo Workflows, and more.
-image: ../assets/img/works/ea4da371-fd3a-4a66-b5fe-45b07205c159.jpg
+image: /assets/img/works/ea4da371-fd3a-4a66-b5fe-45b07205c159.jpg
 comments: true
 ---
 
