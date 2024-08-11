@@ -42,10 +42,10 @@ basics:
         Currently, I'm working at **MAXST** as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
         I also specialize in:
 
-          - 🧑‍🔬 Developing **Digital Twin Platforms** using **Cloud-Native APIs** and **ML pipelines**.
-          - 🐳 Building **Hybrid Kubernetes Clusters** with **On-Premise** and **Public Cloud**.
-          - 🧑‍🔧 Creating **Team Services** to enhance productivity through **GitOps**, **ChatOps**, and **Argo Workflows**.
-          - 🧑‍🎓 Leveraging background in **Computer Vision, Automotives, and ML** to contribute DevOps and decision aligned with business objectives.
+          - 🧑‍🔬 Contributed to the launch of a **Digital Twin Platform** project by developing **Cloud-Native APIs** and **ML Pipelines**.
+          - 🐳 Developing and operating a **Hybrid Kubernetes Cluster** for **High Availability** and **GPU Cost Reduction**.
+          - 🧑‍🔧 Supporting **Internal Services** and **Deployment Cycles** using **MLOps/DevOps**.
+          - 🧑‍🎓 Leveraging background in **Computer Vision, ADAS, and ML** to contribute DevOps and decision aligned with business objectives.
 
         I'm passionate about **collaboration culture** and **automation** that can achieve the **best results** with **fewer people**.
         And I'm looking for the **best way** to achieve both **performance improvement** and **cost reduction**.
@@ -54,7 +54,7 @@ basics:
 
 projects:
   -
-    position: "🧑‍💻 Project Widearth: Digital Twin Platform with Spatial Map & AR Contents"
+    position: "🧑‍💻 Widearth: Digital Twin Platform with Spatial Map & AR Contents"
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
@@ -64,6 +64,8 @@ projects:
       description: >
         'Contribute Dev & Ops' <- Built Hybrid Clusters, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
       items:
+        - header: Main DevOps
+          content: Manage CI/CD for <a href='https://widearth.world'><b>Widearth</b></a> project. Leading <b>40+ deployments</b> for <b>3 months</b>.
         - header: Robust Hybrid Infra
           content: Achieved <b>'96% availability/year and 14d downtime'</b> using hybrid clusters and DevOps support.
         - header: ML Pipeline
