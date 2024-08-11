@@ -67,7 +67,7 @@ projects:
         - header: Main DevOps
           content: <a href='https://widearth.world'><b>와이더스</b></a> 프로젝트를 위한 CI/CD를 관리하였습니다. <b>3개월간 40회 이상의 배포</b>를 주도하였습니다.
         - header: 고가용성 하이브리드 인프라
-          content: 하이브리드 클러스터를 구현 및 데브옵스 지원으로 서비스 <b>연간 가용성 96%, 다운타임 14일</b> 달성
+          content: 하이브리드 클러스터 구현 및 데브옵스 지원으로 서비스 <b>연간 가용성 96%, 다운타임 14일</b> 달성
         - header: ML 파이프라인
           content: 멀티 클러스터 환경에서 <b>ML API</b>와 <b>데이터 파이프라인</b> 설계. 클러스터 비용 <b>50%</b> 절감
     roles:
