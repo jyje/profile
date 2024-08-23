@@ -2,7 +2,7 @@
 layout: plain
 ---
 
-# Credits🎉
+# Credits 🎉
 
 
 
