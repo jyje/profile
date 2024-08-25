@@ -377,7 +377,7 @@ skills:
       - Terraform*
       - Ansible*
       - Grafana*
-      - Karpenter
+      - Karpenter*
 
   - name: GitOps
     keywords:
