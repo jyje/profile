@@ -50,26 +50,15 @@ basics:
         **소수 인원**으로 **최고의 성과**를 낼 수 있는 **협업 문화**와 **자동화**에 진심입니다.
         그리고 **성능 향상**과 **비용 절감** 모두 실현하는 **최적의 방법**을 찾고 있습니다.
         제 경험과 성과를 바탕으로 회사와 함께 성장하는 커리어를 희망합니다.
-        저에 대한 더 자세한 내용은 <a href='https://jyje.live/profile'><b>포트폴리오</b></a> 참조해 주세요.
+        저에 대한 더 자세한 내용은 <a href='https://jyje.live'><b>포트폴리오</b></a> 참조해 주세요.
 
 projects:
-  -
-    position: "🧑‍💻 프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 제공하는 B2B 디지털 트윈 플랫폼"
+  - position: "🧑‍💻 프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 제공하는 B2B 디지털 트윈 플랫폼"
     company: 맥스트
     website: https://maxst.com
     startDate: "2024-01-02"
     endDate: "2024-07-15"
     duration: 7 개월
-    results:
-      description: >
-        '서비스 개발 및 운영 기여' <- 하이브리드 클러스터, CI/CD, ML 파이프라인, ML API 개발 [기여도 75%+]
-      items:
-        - header: Main DevOps
-          content: <a href='https://widearth.world'><b>와이더스</b></a> 프로젝트를 위한 CI/CD를 관리하였습니다. <b>3개월간 40회 이상의 배포</b>를 주도하였습니다.
-        - header: 고가용성 하이브리드 인프라
-          content: 하이브리드 클러스터 구현 및 데브옵스 지원으로 서비스 <b>연간 가용성 96%, 다운타임 14일</b> 달성
-        - header: ML 파이프라인
-          content: 멀티 클러스터 환경에서 <b>ML API</b>와 <b>데이터 파이프라인</b> 설계. 클러스터 비용 <b>50%</b> 절감
     roles:
       description: ML 파이프라인 설계, API 개발, 하이브리드 클러스터 운영, 배포 의사결정 및 자동화
       items:
@@ -86,6 +75,16 @@ projects:
           content: >
             Argo Workflows을 활용하여 공간맵 생성을 위한 ML 데이터 파이프라인을 설계했습니다.
             파이프라인을 관리하는 클라우드 네이티브 API를 개발했습니다.
+    results:
+      description: >
+        서비스 개발 및 운영 기여 -> 하이브리드 클러스터, CI/CD, ML 파이프라인, ML API 개발
+      items:
+        - header: ML 파이프라인
+          content: 멀티 클러스터 환경에서 <b>ML API</b>와 <b>데이터 파이프라인</b> 설계. 클러스터 비용 <b>50%</b> 절감
+        - header: 하이브리드 인프라
+          content: 하이브리드 클러스터 구현 및 데브옵스 지원으로 서비스 <b>연간 가용성 96%, 다운타임 14일</b> 달성
+        - header: 배포 자동화
+          content: <a href='https://widearth.world'><b>와이더스</b></a> 프로젝트를 위한 CI/CD를 관리하였습니다. <b>3개월간 40회 이상의 배포</b>를 주도하였습니다.
     skills:
       description: 프로젝트 <a href='https://widearth.world'>와이더스</a>를 위한 핵심 스킬
       items:
@@ -96,23 +95,12 @@ projects:
         - Argo CD
 
 
-  -
-    position: "🧑‍🔬 MLOps: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입"
+  - position: "🧑‍🔬 MLOps: 최신 오픈소스 프로젝트를 이용한 온프레미스 MLOps 도입"
     company: 맥스트
     website: https://maxst.com
     startDate: "2024-01-01"
     endDate: "2024-06-30"
     duration: 6 개월
-    results:
-      description: >
-        'MLOps 도입' <- Kubeflow와 JupyterHub를 이용한 AI 연구 GPU 활용성 향상 [기여도 90%+]
-      items:
-        - header: 연구환경개선
-          content: >
-            AI 연구팀과 도입 검토 후, 온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용
-        - header: GPU 활용성
-          content: >
-            24/7 GPU 활용으로 GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행
     roles:
       description: 최신 오픈소스 프로젝트를 이용한 MLOps 플랫폼 개발
       items:
@@ -131,6 +119,16 @@ projects:
           content: >
             ML 연구원을 위한 주문형 Jupyter Notebook 관리 플랫폼을 개발하였습니다.
             연구원이 필요한 연구환경을 즉시 구성할 수 있도록 하였습니다.
+    results:
+      description: >
+        'MLOps 도입' <- Kubeflow와 JupyterHub를 이용한 AI 연구 GPU 활용성 향상 [기여도 90%+]
+      items:
+        - header: 연구환경개선
+          content: >
+            AI 연구팀과 도입 검토 후, 온프레미스 연구 환경을 개선을 위한 최신 오픈소스적용
+        - header: GPU 활용성
+          content: >
+            24/7 GPU 활용으로 GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행
     skills:
       description: 온프레미스 MLOps 도입을 위한 핵심 스킬
       items:
@@ -141,8 +139,7 @@ projects:
         - TensorBoard
 
 
-  -
-    position: "🧑‍🔧 DevOps: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 기반의 DevOps 도입"
+  - position: "🧑‍🔧 DevOps: Chatbot과 CI/CD를 제공하는 하이브리드 클러스터 기반의 DevOps 도입"
     company: 맥스트
     website: https://maxst.com
     startDate: "2023-01-01"
@@ -188,9 +185,8 @@ projects:
         - Python/FastAPI
         - Python/Bolt (Slack)
 
-  -
+  - position: 📸 디지털 트윈 연구 컴퓨터 비전 엔지니어
     company: 맥스트
-    position: 📸 디지털 트윈 연구 컴퓨터 비전 엔지니어
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
@@ -225,8 +221,7 @@ projects:
         - Unity
 
 
-  -
-    position: 🧑‍🎓 디지털 신호 처리 및 ADAS 연구원 (통합박사과정)
+  - position: 🧑‍🎓 디지털 신호 처리 및 ADAS 연구원 (통합박사과정)
     company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"

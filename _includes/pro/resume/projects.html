@@ -39,24 +39,6 @@
     </ul>
     {% endif %}
 
-    <!-- results -->
-    {% if project.results.description or project.results.items.size > 0 %}
-    <div class="work-hr"></div>
-    <div class="tiny">
-      <b>
-        {{ strings.resume.results | default:"Results" }}{% if project.results.description %}{{ site.data.strings.colon }} {{ project.results.description }}{% endif %}
-      </b>
-      <ul class="work">
-        {% for result_item in project.results.items %}
-          <li>
-            {% if result_item.header %}<span class="work-header-result">{{ result_item.header }}</span>{% endif %}
-            {% if result_item.content %}{{ result_item.content }}{% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
     <!-- roles -->
     {% if project.roles.description or project.roles.items.size > 0 %}
     <div class="work-hr"></div>
@@ -69,6 +51,24 @@
           <li>
             {% if role_item.header %}<span class="work-header-role">{{ role_item.header }}</span>{% endif %}
             {% if role_item.content %}{{ role_item.content }}{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <!-- results -->
+    {% if project.results.description or project.results.items.size > 0 %}
+    <div class="work-hr"></div>
+    <div class="tiny">
+      <b>
+        {{ strings.resume.results | default:"Results" }}{% if project.results.description %}{{ site.data.strings.colon }} {{ project.results.description }}{% endif %}
+      </b>
+      <ul class="work">
+        {% for result_item in project.results.items %}
+          <li>
+            {% if result_item.header %}<span class="work-header-result">{{ result_item.header }}</span>{% endif %}
+            {% if result_item.content %}{{ result_item.content }}{% endif %}
           </li>
         {% endfor %}
       </ul>
