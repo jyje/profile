@@ -65,7 +65,7 @@ projects:
         - header: DevOps
           content: >
             웹 서버를 위한 Bitbucket CI 파이프라인과 ML 워크로드를 위한 Argo Workflows CI 파이프라인을 설계했습니다.
-            GitOps를 이용해 <i><b>개발/테스트/운영</b></i> 환경을 구성하였습니다. 배포를 위한 의사결정을 주도하였습니다.
+            GitOps를 이용해 git-flow 개발 환경을 구성하였고, 배포를 위한 의사결정을 주도하였습니다.
         - header: Hybrid Cluster
           content: >
             AWS EKS와 온프레미스 쿠버네티스를 이용한 하이브리드 클러스터를 구축하였습니다.
@@ -360,7 +360,7 @@ skills:
       - Kubeflow*
       - Data Pipeline*
       - AutoML Katib*
-      - Training Operator
+      - Training Operator*
       - JupyterHub*
       - PyTorch*
       - OpenCV*

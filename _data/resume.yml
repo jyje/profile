@@ -76,8 +76,7 @@ projects:
         - header: DevOps
           content: >
             Designed CI/CD pipelines for web servers and ML workloads.
-            Set <i><b>dev/test/prod</b></i> environments with GitOps.
-            Led decision-making for deployments.
+            Set git-flow environments with GitOps and led decision-making for deployments.
         - header: Hybrid Cluster
           content: >
             Built hybrid clusters with AWS EKS and bare-metal Kubernetes.
@@ -360,7 +359,7 @@ skills:
       - Kubeflow*
       - Data Pipeline*
       - AutoML Katib*
-      - Training Operator
+      - Training Operator*
       - JupyterHub*
       - PyTorch*
       - OpenCV*
