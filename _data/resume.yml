@@ -452,6 +452,11 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
+  - title: "🐙 CAPA: Certified Argo Project Associate"
+    organization: The Linux Foundation
+    verified: "2024-09-13"
+    expired: "2026-09-13"
+    website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   - title: "🐳 CKAD: Certified Kubernetes Application Developer"
     organization: The Linux Foundation
     verified: "2024-06-01"
