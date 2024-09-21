@@ -32,6 +32,10 @@
       -moz-osx-font-smoothing: grayscale;
       color: var(--menu-text);
     }
+
+    &.no-after::after {
+      content: none;
+    }
   }
 }
 // >>>
