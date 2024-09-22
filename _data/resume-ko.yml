@@ -57,8 +57,8 @@ projects:
     company: 맥스트
     website: https://maxst.com
     startDate: "2024-01-02"
-    endDate: "2024-07-15"
-    duration: 7 개월
+    endDate: "2024-10-31"
+    duration: 10 개월
     roles:
       description: ML 파이프라인 설계, API 개발, 하이브리드 클러스터 운영, 배포 의사결정 및 자동화
       items:

@@ -58,8 +58,8 @@ projects:
     company: MAXST
     website: https://maxst.com/ENG/main
     startDate: "2024-01-02"
-    endDate: "2024-07-15"
-    duration: 7 Months
+    endDate: "2024-10-31"
+    duration: 10 Months
     results:
       description: >
         'Contribute Dev & Ops' <- Built Hybrid Clusters, ML Pipelines, and CI/CD Pipeline [contrib 75%+]
