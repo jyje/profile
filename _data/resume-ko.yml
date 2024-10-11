@@ -50,7 +50,7 @@ basics:
         **소수 인원**으로 **최고의 성과**를 낼 수 있는 **협업 문화**와 **자동화**에 진심입니다.
         그리고 **성능 향상**과 **비용 절감** 모두 실현하는 **최적의 방법**을 찾고 있습니다.
         제 경험과 성과를 바탕으로 회사와 함께 성장하는 커리어를 희망합니다.
-        저에 대한 더 자세한 내용은 <a href='https://jyje.live'><b>포트폴리오</b></a> 참조해 주세요.
+        저에 대한 더 자세한 내용은 <a href='https://jyje.live'><b>포트폴리오</b></a>와 <a href='https://blog.jyje.live'><b>블로그</b></a>를 참조해 주세요.
 
 projects:
   - position: "🧑‍💻 프로젝트 와이더스: 공간맵 및 AR 컨텐츠를 제공하는 B2B 디지털 트윈 플랫폼"
@@ -65,16 +65,15 @@ projects:
         - header: DevOps
           content: >
             웹 서버를 위한 Bitbucket CI 파이프라인과 ML 워크로드를 위한 Argo Workflows CI 파이프라인을 설계했습니다.
-            GitOps를 이용해 git-flow 개발 환경을 구성하였고, 배포를 위한 의사결정을 주도하였습니다.
         - header: Hybrid Cluster
           content: >
             AWS EKS와 온프레미스 쿠버네티스를 이용한 하이브리드 클러스터를 구축하였습니다.
             ML 파이프라인은 온프레미스 클러스터에서 수행하여 GPU 비용을 최적화하였습니다.
-            백업 파이프라인을 EKS에 구성하여 가용성을 높였습니다.
+            비상용 파이프라인을 EKS+Karpenter로 구성하여 가용성을 높였습니다.
         - header: ML Pipeline & API
           content: >
-            Argo Workflows을 활용하여 공간맵 생성을 위한 ML 데이터 파이프라인을 설계했습니다.
-            파이프라인을 관리하는 클라우드 네이티브 API를 개발했습니다.
+            Argo Workflows을 활용하여 공간맵 생성을 위한 ML 파이프라인을 설계했습니다.
+            ML 파이프라인을 관리하는 API 서버를 개발했습니다.
     results:
       description: >
         서비스 개발 및 운영 기여 -> 하이브리드 클러스터, CI/CD, ML 파이프라인, ML API 개발
@@ -516,14 +515,18 @@ interests:
   - name: "Edge"
     keywords:
       - "Raspberry Pi Cluster"
+      - "Nvidia Jetson"
+      - "N100 Processor"
   - name: "Cluster Optimization"
     keywords:
+      - "Hybrid Cluster"
       - "Karpenter"
-      - "BI using Grafana (PLG)"
+      - "Spot Instances"
   - name: "CNCF Projects"
     keywords:
       - "Kubeflow"
       - "Argo Projects"
+      - "LitmusChaos"
 
 
 # references:

@@ -16,7 +16,7 @@ basics:
     I'm a software engineer in Seoul, South Korea.
     I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
     I always want to be a good co-worker and prove it every day.
-    I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
+    I enjoy resolving MLOps challenges and diving into the world of the Kubernetes Community.
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -48,9 +48,9 @@ basics:
           - 🧑‍🎓 Leveraging background in **Computer Vision, ADAS, and ML** to contribute DevOps and decision aligned with business objectives.
 
         I'm passionate about **collaboration culture** and **automation** that can achieve the **best results** with **fewer people**.
-        And I'm looking for the **best way** to achieve both **performance improvement** and **cost reduction**.
+        I'm always looking for the **optimal way** to achieve both **performance improvement** and **cost reduction**.
         Based on my experience and achievements, I hope to have a career that grows with the company.
-        For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a>.
+        For more details, please visit my <a href='https://jyje.live'><b>portfolio</b></a> and <a href='https://blog.jyje.live'><b>blog (Korean)</b></a>.
 
 projects:
   -
@@ -127,7 +127,7 @@ projects:
             Developing distributed learning environments using Kubeflow Training Operator.
         - header: JupyterHub
           content: >
-            Generating On-Demand JupyterNotebook to distribute resources for ML researchers.
+            Developed a platform for managing on-demand Jupyter Notebooks, allowing researchers to instantly configure their required research environment.
     skills:
       description: Core Skills for On-Premise MLOps
       items:
@@ -303,13 +303,14 @@ work:
       items:
         - header: MLOps
           content: >
-            Developing on-premise clusters providing MLOps for the AI team.
+            Architecting and optimizing on-premise Kubernetes clusters to deliver comprehensive MLOps solutions
         - header: DevOps
           content: >
             Building hybrid clusters with AWS EKS and bare-metal Kubernetes.
+            Participated in projects as a DevOps role, contributing to service launches. Propagated DevOps culture, including CI/CD configuration and app modernization.
         - header: Hybrid
           content: >
-            Building on-premise clusters with IaC tools such as Ansible and Kubespray.
+            Implemented and operated hybrid clusters combining AWS EKS and on-premises Kubernetes. Built on-premises clusters using Ansible and Kubespray, and configured AWS EKS clusters using Terraform.
     skills:
       items:
         - Kubernetes
