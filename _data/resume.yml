@@ -38,14 +38,15 @@ basics:
     resume:
       title: Résumé
       summary: >
-        My name is Jeayoung Jeon [🇰🇷전제영], and I'm a software engineer in South Korea. <br/>
-        Currently, I'm working at **MAXST** as an **MLOps**, **DevOps**, and **Cloud-Native Software Engineer**.
-        I also specialize in:
+        My name is Jeayoung Jeon [🇰🇷전제영], and I'm a software engineer in South Korea. 
+        I'm developing my career with the synergy of **Computer Vision Research Experience** and **Cloud-Native Engineering Experience**.
+        Here is my career history:
 
-          - 🧑‍🔬 Contributed to the launch of a **Digital Twin Platform** project by developing **Cloud-Native APIs** and **ML Pipelines**.
-          - 🐳 Developing and operating a **Hybrid Kubernetes Cluster** for **High Availability** and **GPU Cost Reduction**.
-          - 🧑‍🔧 Supporting **Internal Services** and **Deployment Cycles** using **MLOps/DevOps**.
-          - 🧑‍🎓 Leveraging background in **Computer Vision, ADAS, and ML** to contribute DevOps and decision aligned with business objectives.
+         | Duration | Company | Position | Role |
+         | --- | --- | --- | --- |
+         | <span style="font-family:monospace;">2021.01 - 2024.10 [3Y,10M]</span> | MAXST, Technology Division | Senior | MLOps/DevOps & Computer Vision Engineer |
+         | <span style="font-family:monospace;">2012.03 - 2020.08 [8Y,6M]</span>  | POSTECH, Department of Electrical Engineering | Integrated | Automotive & Computer Vision Researcher |
+         | <span style="font-family:monospace;">2008.03 - 2012.02 [4Y]</span>     | kit, School of Electronic Engineering | Bachelor | Information Communication & Digital Signal Processing |
 
         I'm passionate about **collaboration culture** and **automation** that can achieve the **best results** with **fewer people**.
         I'm always looking for the **optimal way** to achieve both **performance improvement** and **cost reduction**.
