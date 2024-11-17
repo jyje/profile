@@ -365,7 +365,8 @@ skills:
       - PyTorch*
       - OpenCV*
       - Ollama*
-      - RAG
+      - RAG*
+      - OpenAI*
 
   - name: DevOps
     keywords:
