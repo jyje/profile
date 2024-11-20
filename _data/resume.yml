@@ -44,9 +44,9 @@ basics:
 
          | Duration | Company | Position | Role |
          | --- | --- | --- | --- |
-         | <span style="font-family:monospace;">2021.01 - 2024.10 [3Y,10M]</span> | MAXST, Technology Division | Senior | MLOps/DevOps & Computer Vision Engineer |
-         | <span style="font-family:monospace;">2012.03 - 2020.08 [8Y,6M]</span>  | POSTECH, Department of Electrical Engineering | Integrated | Automotive & Computer Vision Researcher |
-         | <span style="font-family:monospace;">2008.03 - 2012.02 [4Y]</span>     | kit, School of Electronic Engineering | Bachelor | Information Communication & Digital Signal Processing |
+         | <span style="font-family:monospace;">2021.01-2024.10 [3Y,10M]</span> | MAXST, Technology Division | Senior | MLOps/DevOps & Computer Vision Engineer |
+         | <span style="font-family:monospace;">2012.03-2020.08 [8Y,6M]</span>  | POSTECH, Department of Electrical Engineering | Integrated | Automotive & Computer Vision Researcher |
+         | <span style="font-family:monospace;">2008.03-2012.02 [4Y]</span>     | kit, School of Electronic Engineering | Bachelor | Information Communication & Digital Signal Processing |
 
         I'm passionate about **collaboration culture** and **automation** that can achieve the **best results** with **fewer people**.
         I'm always looking for the **optimal way** to achieve both **performance improvement** and **cost reduction**.
@@ -407,15 +407,12 @@ skills:
       - Go
       - MATLAB
 
-  - name: Tools
+  - name: Tool, OS and Hardware
     keywords:
       - Visual Studio Code*
       - Visual Studio*
       - Jupyter Notebook
       - MATLAB/Simulink
-
-  - name: OS and Hardware
-    keywords:
       - Windows*
       - WSL2*
       - Ubuntu*
@@ -455,20 +452,33 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
+  - title: "🐈‍⬛ GitHub Foundations"
+    organization: GitHub
+    verified: "2024-11-20"
+    expired: "2027-11-20"
+    description: >
+      A credential that verifies expertise in version control and collaboration tools using GitHub.
+    website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
   - title: "🐙 CAPA: Certified Argo Project Associate"
     organization: The Linux Foundation
     verified: "2024-09-13"
     expired: "2026-09-13"
+    description: >
+      A credential that verifies expertise in the Kubernetes native DevOps tool, Argo Projects
     website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   - title: "🐳 CKAD: Certified Kubernetes Application Developer"
     organization: The Linux Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
+    description: >
+      A credential that verifies expertise in developing cloud-native applications using Kubernetes.
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
   - title: "🐳 CKA: Certified Kubernetes Administrator"
     organization: The Linux Foundation
     verified: "2024-03-16"
     expired: "2027-03-16"
+    description: >
+      A credential that verifies expertise in managing Kubernetes clusters.
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
 

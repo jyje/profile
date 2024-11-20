@@ -13,7 +13,7 @@
           {% include components/verified-expired.html verified=cert.verified expired=cert.expired format=from_to_format %}
         </p>
       {% endif %}
-      <h3 class="h4 faded" {% if cert.endDate.size > 0 %}property="alumniOf" typeof="certificationOrganization"{% endif %}>
+      <h3 class="h4 faded" style="margin-bottom: 0rem;" {% if cert.endDate.size > 0 %}property="alumniOf" typeof="certificationOrganization"{% endif %}>
         {% if cert.website.size > 0 %}
           {% capture title %}{% include components/link.html title=cert.title href=cert.website class="h-card" span_class="bc" property="sameAs" %}{% endcapture %}
         {% else %}
@@ -26,16 +26,10 @@
           | replace:"<!--organization-->", organization
         }}
       </h3>
+      {% if cert.description.size > 0 %}
+        <p class="faded">{{ cert.description }}</p>
+      {% endif %}
     </header>
-
-    {% if cert.courses.size > 0 %}
-    <h4 class="sr-only">{{ strings.resume.courses | default:"Courses" }}</h4>
-    <ul>
-      {% for course in cert.courses %}
-        <li>{{ course }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
   </section>
   {% if forloop.first %}</div>{% endif %}
   {% endfor %}

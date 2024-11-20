@@ -406,15 +406,12 @@ skills:
       - Go
       - MATLAB
 
-  - name: Tools
+  - name: Tool, OS and Hardware
     keywords:
       - Visual Studio Code*
       - Visual Studio*
       - Jupyter Notebook
       - MATLAB/Simulink
-
-  - name: OS and Hardware
-    keywords:
       - Windows*
       - WSL2*
       - Ubuntu*
@@ -454,20 +451,33 @@ skills:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 certificates:
+  - title: "🐈‍⬛ GitHub Foundations"
+    organization: GitHub
+    verified: "2024-11-20"
+    expired: "2027-11-20"
+    description: >
+      GitHub을 이용한 버전 관리 및 협업 도구에 대한 전문성을 검증하는 자격입니다.
+    website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
   - title: "🐙 CAPA: Certified Argo Project Associate"
-    organization: The Linux Foundation
+    organization: 리눅스 재단 (The Linux Foundation)
     verified: "2024-09-13"
     expired: "2026-09-13"
+    description: >
+      쿠버네티스 네이티브 데브옵스 도구인 Argo 프로젝트에 대한 전문성을 검증하는 자격입니다.
     website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   - title: "🐳 CKAD: Certified Kubernetes Application Developer"
     organization: 리눅스 재단 (The Linux Foundation)
     verified: "2024-06-01"
     expired: "2026-06-01"
+    description: >
+      쿠버네티스 기반의 클라우드 네이티브 애플리케이션을 개발하는 전문성을 검증하는 자격입니다.
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
   - title: "🐳 CKA: Certified Kubernetes Administrator"
     organization: 리눅스 재단 (The Linux Foundation)
     verified: "2024-03-16"
     expired: "2027-03-16"
+    description: >
+      쿠버네티스 클러스터를 관리하는 전문성을 검증하는 자격입니다.
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
 education:
