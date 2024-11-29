@@ -5,26 +5,33 @@
     {{ strings.resume.publications | default:"Publications" }}
     <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
   </h2>
+  {% include components/message.html class="note" text=basics.contents.publications.note alt="" %}
   {% for pub in resume.publications %}
   <section>
-    <header class="{% unless forloop.first %}mt2{% endunless %}">
+    <header class="{% unless forloop.first %}mt1{% endunless %}">
       {% if pub.releaseDate.size > 0 %}
-        <p class="faded">
-          <time datetime="{{ pub.releaseDate | date_to_xmlschema }}">{{ pub.releaseDate | date:from_to_format }}</time>
-        </p>
+        <p class="faded from-to">
+          <span>
+            <time datetime="{{ pub.releaseDate | date_to_xmlschema }}">{{ pub.releaseDate | date:from_to_format }}</time>,
+            {{ pub.publisher }} {% if pub.contribution.size > 0 %}({{ pub.contribution }}){% endif %}
+          </span>
+          </p>
       {% endif %}
       <h3 class="h4 faded">
         {% capture name %}{% include components/link.html title=pub.name href=pub.website span_class="bc" %}{% endcapture %}
-        {% capture publisher %}<span class="bc">{{ pub.publisher }}</span>{% endcapture %}
+        {% capture authors %}<span class="bc">{{ pub.authors }}</span>{% endcapture %}
         {{ strings.resume.publications_title
-          | default:"<!--name--> by <!--publisher-->"
+          | default:"<!--name--> by <!--authors-->"
           | replace:"<!--name-->", name
-          | replace:"<!--publisher-->", publisher
+          | replace:"<!--authors-->", authors
         }}
       </h3>
     </header>
 
-    {% include components/message.html class="note" text=pub.summary alt="" %}
+    <!-- {% include components/message.html class="note" text=pub.summary alt="" %} -->
+    {% if awa.summary.size > 0 %}
+      <i class="faded">{{ awa.summary }}</i>
+    {% endif %}
   </section>
   {% if forloop.first %}</div>{% endif %}
   {% endfor %}

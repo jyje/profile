@@ -1,6 +1,6 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
-.layout-resume {
+.layout-resume, .layout-projects-portfolio, .layout-cv {
   .clearafter::after {
     @extend .clearfix;
   }
@@ -28,7 +28,19 @@
 
   section {
     margin-top: 0.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
+
+    .work-item {
+      margin-bottom: 0rem;
+    }
+
+    .certificates-item {
+      margin-bottom: 0rem;
+    }
+
+    .awards-item {
+      margin-bottom: 0rem;
+    }
   }
 
 
@@ -48,11 +60,12 @@
   }
 
   .h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   .h4 {
     margin-top: 0;
+    margin-bottom: 0rem;
     font-family: $font-family!important;
     font-weight: var(--font-weight-bold)!important;
   }
@@ -112,25 +125,25 @@
 
   .work-header-result {
     @extend .color-transition;
-    border: 1.5px solid var(--accent-color-fill);
+    border: 1.5px solid var(--accent-color-two);
+    border-radius: .3rem;
+    display: inline-block;
+    margin: .25rem .125rem;
+    padding: .125rem .25rem;
+    color: #FFF;
+    background-color: var(--accent-color-two);
+    line-height: 1.4;
+  }
+
+  .work-header-role {
+    @extend .color-transition;
+    border: 1px solid var(--accent-color-fill);
     border-radius: .3rem;
     display: inline-block;
     margin: .25rem .125rem;
     padding: .125rem .25rem;
     color: #FFF;
     background-color: var(--accent-color-fill);
-    line-height: 1.4;
-  }
-
-  .work-header-role {
-    @extend .color-transition;
-    border: 1px solid var(--accent-color-border-dark);
-    border-radius: .3rem;
-    display: inline-block;
-    margin: .25rem .125rem;
-    padding: .125rem .25rem;
-    color: #FFF;
-    background-color: var(--accent-color-border-dark);
     line-height: 1.4;
   }
 
@@ -258,6 +271,7 @@
   @media screen and (min-width: $break-point-5) {
     .fr { float: right }
     .column-3-5 { width: 66.67% }
+    .column-3-0 { width: 66.67% }
     .column-2-5 { width: 33.33% }
   }
 
@@ -266,6 +280,9 @@
       $helper: $content-width-5 / 2 - $content-margin-5;
       width: calc(50vw + #{$helper});
       > .column-3-5 { 
+        width: $content-width-5;
+      }
+      > .column-3-0 { 
         width: $content-width-5;
       }
       > .column-2-5 { 
@@ -297,13 +314,13 @@
     }
 
     .work-header-result {
-      color: var(--accent-color-fill);
+      color: var(--accent-color-two);
       font-weight: 700;
       line-height: normal;
     }
 
     .work-header-role {
-      color: #000;
+      color: var(--accent-color-fill);
       line-height: normal;
     }
 
@@ -330,6 +347,7 @@
     article > .note { padding-right: 11rem }
     .fr { float: right }
     .column-3-5 { width: 70% }
+    .column-3-0 { width: 100% }
     .column-2-5 { width: 30% }
   }
 }

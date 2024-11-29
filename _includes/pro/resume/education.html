@@ -30,7 +30,7 @@
 
     {% if edu.thesis.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.thesis | default:"Thesis" }}</h4>
-    <p>{{ edu.thesis }}</p>
+    <i class="faded">- Thesis: {{ edu.thesis }}</i>
     {% endif %}
 
     {% if edu.courses.size > 0 %}

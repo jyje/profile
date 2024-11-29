@@ -15,6 +15,7 @@
 
 @mixin light-mode() {
   --accent-color: #{$accent-color};
+  --accent-color-two: #{$accent-color-two};
   --accent-color-fill: #{$accent-color-fill};
   --accent-color-border-dark: #{$accent-color-border-dark};
   --accent-color-border-light: #{$accent-color-border-light};

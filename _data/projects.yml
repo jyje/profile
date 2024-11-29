@@ -11,12 +11,7 @@ basics:
   website: "https://jyje.live"
   # github: "jyje"
   # googlescholar: "gwCPQM8AAAAJ"
-  summary: >
-    This is Jeayoung Jeon [🇰🇷 전제영].
-    I'm a software engineer in Seoul, South Korea.
-    My main roles are MLOps/DevOps Engineering and AI Research.
-    I always want to be a good co-worker and prove it every day.
-    I enjoy resolving MLOps challenges and diving into the world of the Kubernetes Community.
+  summary: {}
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -32,11 +27,11 @@ basics:
       url: https://stackshare.io/jyje/jyje-pro-stack
   contents:
     skills:
-      note: "Highlighted items are specialized in industry-ready."
-    publications:
-      note: "The full list of my publications are available on [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)."
-    resume:
-      title: Résumé
+      note: >
+        Here are my skills and highlighted items are industry-ready.
+
+    projects:
+      title: Project Portfolio
       note: >
         My name is Jeayoung Jeon [전제영], and I'm an MLOps engineer in Seoul, South Korea. I also specialize in:
 
@@ -45,7 +40,7 @@ basics:
           - 🧑‍🎓 Contributing decisions for **MLOps/DevOps** using backgrounds in **ML, Computer Vision, Automotive**.
 
         I'm always open to new challenges and opportunities for various fields including **Automotives** and **AI**. Please feel free to contact me.
-        If you're looking for my professional experience and details, please see my [**projects**](https://jyje.live/profile/projects) and [**portfolio**](https://jyje.live/works).
+        If you're looking for my brief resume and works, please see my [**resume**](https://jyje.live/profile/resume) and [**portfolio**](https://jyje.live/works).
 
 work:
   -
@@ -61,7 +56,7 @@ work:
       items:
         - header: MLOps
           content: >
-            Developing ML APIs, data pipelines, and AI Platforms for research center using open sources.
+            Developing ML APIs, data pipelines, and AI Platforms for research team using open sources.
         - header: LLMOps
           content: >
             Building chatbots using self-hosted RAG+LLM systems for internal documents.
@@ -105,7 +100,7 @@ work:
         - header: Automotives
           content: >
             Principal computer vision technologies for autonomous driving including ADAS and SLAM;
-            Participated in the development of the Korean government's incubation projects with various ADAS researches
+            Participated in the development of the Korean government's ADAS research projects
         - header: FPGA
           content: >
             Efficiently implemented computer vision and machine learning algorithms with real-time parallel matrix processing;
@@ -121,6 +116,248 @@ work:
   #   highlights:
   #     - Study on BioMEMSs equivarant to Electronic RLC circuits
   #     - Preview of Graduate Program and Experiments
+  # -
+  #   company: "GIST"
+  #   position: "Undergraduate Internship"
+  #   website: "https://me.gist.ac.kr/biomems/index.do"
+  #   startDate: "2010-07-26"
+  #   endDate: "2010-08-15"
+  #   summary: >
+  #     As an undergraduate student, I participated in an internship program at the BioMEMS Lab in GIST, where I engaged in the following tasks:
+  #   highlights:
+  #     - Study on BioMEMSs equivarant to Electronic RLC circuits
+  #     - Preview of Graduate Program and Experiments
+
+projects:
+  -
+    position: "🧑‍💻 Widearth: Digital Twin & AR Content Platform"
+    company: Widearth, MAXST
+    website: https://widearth.world
+    startDate: "2024-01-01"
+    endDate: "2024-10-31"
+    duration: 10 Months
+    roles:
+      description: "Lead ML/Infra Roles ~ MLOps/DevOps + ML Backend + SRE [contrib 75%]"
+      items:
+        - header: DevOps & SRE
+          content: >
+            IaC, GitOps, CI/CD Pipelines,
+            Monitoring, Logging, Notifications,
+            Multi-Deployment, Emergency Response
+        - header: Hybrid Clusters
+          content: >
+            Public Cloud + On-Premise Kubernetes, API Gateway Pattern,
+            Dynamic VMs, GPU Cost Optimization
+        - header: ML Workloads
+          content: >
+            ML APIs, ML Pipelines,
+            Data Lakes, Dockerizing, Model CI/CD
+    results:
+      description: >
+        Service Launch ~ Small Team, Full Features, More Availability, Less Cost
+      items:
+        - header: Launch  
+          content: Launched/Operated a platform as <b>1 infra engineer</b> with 15 people, 8 developers in 10 months.
+        - header: Low Cost
+          content: Reduced cloud costs by <b>15M KRW (70%)</b> by using hybrid clusters for <b>300+ maps</b>.
+        - header: Robust Infra
+          content: Achieved <b>96% availability/year and 14d downtime</b> using hybrid clusters and damage control.
+    skills:
+      description: Skill Stack for Project Widearth
+      items:
+        - AWS EKS
+        - Kubespray
+        - Python/FastAPI
+        - Argo Workflows
+        - Argo CD
+        - Bitbucket Pipelines
+        - Karpenter
+  -
+    position: "🧑‍🔬 MLOps: On-Premise MLOps with Open Source Projects"
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2024-01-01"
+    endDate: "2024-06-30"
+    duration: 6 Months
+    roles:
+      description: "Lead MLOps Engineer ~ Planning + VoC + PoC + ML Workloads/Infra + Operation [contrib 90%]"
+      items:
+        - header: Kubeflow
+          content: >
+            Integrated Argo Workflows; AutoML, Distributed Training, Model Registry; 16 GPUs Acceleration
+        - header: JupyterHub
+          content: >
+            Integrated JupyterHub with IDE; Remote GPU Notebook, 4 GPUs Acceleration
+        - header: VectorDB
+          content: >
+            Milvus, ChromaDB, Feature Store, Vector Search, Monitoring
+        - header: ML Infra
+          content: >
+            Setup CI/CD, NAS, Data Lake, Image Registry for ML Workloads
+    results:
+      description: >
+        Improved research environment and resource management ~ Increased availability and capacity by merging resources and automating management.
+      items:
+        - header: Improved Infrastructure
+          content: >
+            Consolidated servers managed by researchers into k8s to stable infra capacity and stability; Decision-making using PoC.
+        - header: Research Environment
+          content: >
+            Expanded from VoC of 2 researchers, gradually increased users to 10. Resolved technical debt through continuous MLOps upgrades.
+        - header: GPU Utilization
+          content: >
+            GPU usage increased by <b>3 times</b> and successfully commercialized as a result of performing over <b>800</b> AutoML experiments
+    skills:
+      description: Skill Stack for On-Premise MLOps
+      items:
+        - Kubeflow
+        - Katib
+        - Training Operator
+        - Model Registry
+        - JupyterHub
+        - Argo Workflows
+        - Milvus
+        - ChromaDB
+        - Grafana
+        - TensorBoard
+  -
+    position: "🧑‍🔧 DevOps: Hybrid Clusters for Internal/External Projects"
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2022-12-01"
+    endDate: "2023-12-31"
+    duration: 13 Months
+    roles:
+      description: "DevOps Engineer ~ Hybrid Clusters + CI/CD + Chatbot + Data Pipelines [contrib 50%]"
+      items:
+        - header: Hybrid Clusters
+          content: >
+            Public Cloud, On-Premise Kubernetes, Multi-Cluster, API Gateway, IaC, GPU Operator
+        - header: CI/CD
+          content: >
+            Public CI Platform, On-Premise Custom CI, GitOps CD, ChatOps for Results/Issues
+        - header: Pipelines
+          content: >
+            Data Pipelines for ML Research, Production Pipelines for ML Inference
+    results:
+      description: >
+        Hybrid Cluster Initiation ~ Increased On-Premise Resource Utilization + Reduced Public Resource Costs + DevOps Culture Propagation
+      items:
+        - header: Cost Reduction
+          content: >
+            Maintained public availability while reducing costs by <b>50%</b> compared to pure cloud infrastructure using on-premises cost-effectiveness.
+        - header: Resource Utilization
+          content: >
+            Utilized <b>90% of idle on-premises resources</b>, provided multi-cluster for prototyping in other departments
+        - header: DevOps Culture
+          content: >
+            Introduced cloud-native development environment. Propagated DevOps culture including app modernization and CI/CD. Decision support through monitoring.
+    skills:
+      description: Skill Stack for DevOps and Hybrid Cluster
+      items:
+        - Kubernetes
+        - AWS EKS
+        - IaC
+        - Ansible
+        - Terraform
+        - CI/CD
+        - Bitbucket Pipeline Runners
+        - Argo CD
+        - Argo Workflows
+        - Python/FastAPI
+        - Python/Bolt (Slack)
+  -
+    position: 📸 Computer Vision Engineer
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2021-01-16"
+    endDate: "2022-12-31"
+    duration: 2 years
+    roles:
+      description: Associate Researcher ~ Algorithm research for digital twin systems and prototyping [contrib 50%]
+      items:
+        - header: Digital Twins
+          content: >
+            Digital twin system implementation using algorithms for converting perspective and 360 images to 3D space.
+        - header: AR/XR
+          content: >
+            Camera calibration and AR/XR prototype development for various smart glasses
+        - header: Automation
+          content: >
+            Development of automated pipelines for data acquisition and analysis
+        - header: Military Service
+          content: >
+            Engaged in position related to graduate school majors and performed alternative military service.
+    results:
+      description: >
+        Development of computer vision algorithms and construction of digital twin systems
+      items:
+        - header: Digital Twins
+          content: Research and development of Visual-SLAM and ICP algorithms for digital twin systems
+        - header: Automation
+          content: Development of automated pipelines for data acquisition and analysis
+    skills:
+      description: Skill Stack for computer vision research
+      items:
+        - Computer Vision
+        - Visual-SLAM
+        - SfM
+        - ICP
+        - Python
+        - OpenCV
+        - .NET/C#
+        - Unity
+  -
+    position: 🧑‍🎓 Computer Vision and ADAS Researcher (Integrated Program)
+    company: POSTECH
+    website: "https://eee.postech.ac.kr/"
+    startDate: "2012-01-03"
+    endDate: "2020-08-27"
+    duration: "8 Years"
+    roles:
+      description: "Graduate Student Researcher ~ Computer Vision and ADAS Research [full-time]"
+      items:
+        - header: 2018-2020
+          content: >
+            <i>Computing and Control Engineering Lab. (Prof. SH, Han)</i><br/>
+            <b>Advanced Driver Assistance Systems (ADAS) and Simultaneous Localization and Mapping (SLAM) Research</b>
+            <ul>
+              <li>Visual-SLAM Research using Multiple Cameras for Autonomous Driving</li>
+              <li>Prototyping of Digital Twins for ADAS and SLAM</li>
+              <li>Virtual Visual-SLAM for Real-World Environments</li>
+            </ul>
+        - header: 2012-2018
+          content: >
+            <i>Advanced Signal Processing Lab. (Prod. H, Jeong)</i><br/>
+            <b>Advanced Driver Assistance Systems (ADAS) and Edge Computer Vision Research</b>
+            <ul>
+              <li>High-Performance, Efficient FPGA Implementation of ADAS</li>
+              <li>High-Speed Algorithm Development for Traffic Signs and Road Terrain Detection</li>
+              <li>Research on Stereo Vision Algorithm for 3D Depth Estimation</li>
+              <li>Stereo Vision-based Online Calibration for Vehicle Cameras</li>
+              <li>Optimization Algorithm Research for Computer Vision using Cost Aggregation Table</li>
+            </ul>
+    results:
+      description: >
+        Proejcts and Research Papers ~ Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
+      items:
+        - header: Digital Twins
+          content: Virtual Visual-SLAM for Real-World Environments
+        - header: Edge ADAS
+          content: Research of ADAS including Traffic Sign Detection & Lane Terrain Detection with FPGA
+    skills:
+      description: Skill Stack for Computer Vision and ADAS Research
+      items:
+        - Computer Vision
+        - Digital Signal Processing
+        - Automotives
+        - Autonomous Driving
+        - Advanced Driver Assistance Systems (ADAS)
+        - Finite Programmable Gate Array (FPGA)
+        - Traffic Sign Detection
+        - Lane Terrain Detection
+        - MATLAB/Simulink
+        - C/C++
 
 education:
   -

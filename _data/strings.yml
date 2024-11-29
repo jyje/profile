@@ -70,7 +70,7 @@ error:
 # Separators
 # ---------------------------------------------------------------------------------------
 posted:                'Posted'
-last_modified_at:      'Last modified at'
+last_modified_at:      'Updated at'
 last_modified_at_icon: 'icon-history'
 colon:                 ':'
 separator:             '|'
@@ -132,14 +132,14 @@ resume:
   volunteer_title:       <!--position--> at <!--organization-->
   education:             Education
   education_title:       <!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->
-  certifications:        Certifications
+  certifications:        Certification
   certifications_title:  <!--title--> from <!--organization-->
   expired_in:            Expired in
   courses:               Courses
   awards:                Awards
   awards_title:          <!--title--> from <!--awarder-->
   publications:          Publications
-  publications_title:    <!--name--> by <!--publisher-->
+  publications_title:    <!--name--> by <!--authors-->
   references:            References
   languages:             Languages
   fluency:               Fluency

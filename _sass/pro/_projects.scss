@@ -1,6 +1,6 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
-main:not(.layout-resume) {
+main:not(.layout-resume):not(.layout-projects-portfolio):not(.layout-cv) {
   $gutter: 1rem;
 
   .columns {

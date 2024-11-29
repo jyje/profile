@@ -6,15 +6,19 @@
     <span class="symbol {{ icons.awards | default:'icon-trophy' }}"></span>
   </h2>
   {% for awa in resume.awards %}
-  <section>
-    <header class="{% unless forloop.first %}mt2{% endunless %}">
+  <section class="awards-item">
+    <header class="{% unless forloop.first %}mt1{% endunless %}">
       {% if awa.date.size > 0 %}
-        <p class="faded">
+        <p class="faded from-to">
           <time datetime="{{ awa.date | date_to_xmlschema }}">{{ awa.date | date:from_to_format }}</time>
         </p>
       {% endif %}
       <h3 class="h4 faded" property="award">
-        {% capture title %}<span class="bc">{{ awa.title }}</span>{% endcapture %}
+        {% if awa.website.size > 0 %}
+          {% capture title %}{% include components/link.html title=awa.title href=awa.website class="h-card" span_class="bc" property="sameAs" %}{% endcapture %}
+        {% else %}
+          {% capture title %}<span class="bc">{{ awa.title }}</span>{% endcapture %}
+        {% endif %}
         {% capture awarder %}<span class="bc">{{ awa.awarder }}</span>{% endcapture %}
         {{ strings.resume.awards_title
           | default:"<!--title--> from <!--awarder-->"
@@ -23,8 +27,10 @@
         }}
       </h3>
     </header>
-
-    {% include components/message.html class="note" text=awa.summary alt="" %}
+    <!-- {% include components/message.html class="note" text=awa.summary alt="" %} -->
+    {% if awa.summary.size > 0 %}
+      <i class="faded">{{ awa.summary }}</i>
+    {% endif %}
   </section>
   {% if forloop.first %}</div>{% endif %}
   {% endfor %}

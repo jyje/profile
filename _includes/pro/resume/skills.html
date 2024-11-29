@@ -4,7 +4,7 @@
     {{ strings.resume.skills | default:"Skills" }}
     <span class="symbol {{ icons.skills | default:'icon-wrench' }}"></span>
   </h2>
-  {% include components/message.html class="note" text=basics.contents.skills.summary alt="" %}
+  {% include components/message.html class="note" text=basics.contents.skills.note alt="" %}
   <dl class="skills">
     {% for skl in resume.skills %}
       <dt class="fl">{{ skl.name }}</dt>

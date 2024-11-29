@@ -13,7 +13,7 @@ Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and
 
 It provides following sections:
 
-- 💼 [Profile]{:.heading.flip-title}: Career overview and résumé 
+- 💼 [Profile]{:.heading.flip-title}: Career overview and résumé (🇰🇷 한국어 프로필도 있습니다)
 - 🚀 [Works]{:.heading.flip-title}: My activities, projects, and live [demo] (powered by raspberry pi cluster 🐳)
 - 🧑‍💻 [Certifications]{:.heading.flip-title}: Description of my certifications
 - 📜 [Articles]{:.heading.flip-title}: All posts in this site

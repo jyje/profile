@@ -18,8 +18,8 @@
   {% include components/message.html text=page.description hide=page.hide_description %}
 </header>
 
-{% if basics.contents[data_file].summary.size > 0 %}
+{% if basics.contents[data_file].note.size > 0 %}
   <p class="note p-note" property="description">
-    {{ basics.contents[data_file].summary | markdownify | replace:'<p>','' | replace:'</p>','' }}
+    {{ basics.contents[data_file].note | markdownify | replace:'<p>','' | replace:'</p>','' }}
   </p>
 {% endif %}
