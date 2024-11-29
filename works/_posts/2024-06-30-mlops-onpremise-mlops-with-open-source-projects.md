@@ -12,7 +12,7 @@ image: /assets/img/works/ea4da371-fd3a-4a66-b5fe-45b07205c159.jpg
 comments: true
 ---
 
-# MLOps: On-Premise MLOps with the Latest Open Source Projects
+# MLOps: On-Premise MLOps with Open Source Projects
 
 Photo by <a href="https://unsplash.com/@nampoh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Hopman</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-around-a-display-of-video-screens-IayKLkmz6g0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 {:.note title="Image"}
@@ -130,7 +130,7 @@ In the future, we are planning to enhnace user experience. ML researchers asked 
 Highlighted skills used in this project:
 
 - [Argo Workflows]
-- [Kuberflow]
+- [Kubeflow]
 - [Kubeflow/Katib]
 - [Kubeflow/Training Operator]
 - [JupyterHub]
