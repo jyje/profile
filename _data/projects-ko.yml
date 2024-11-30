@@ -190,7 +190,7 @@ projects:
             IDE와 통합된 원격 개발 환경 구현; 원격 GPU 노트북 지원, 최대 4 GPU 가속
         - header: VectorDB
           content: >
-            Milvus, ChromaDB, Feature Store, Vector Search 등 고가용 벡터 데이터베이스 구현
+            Milvus, ChromaDB 등 고가용 벡터 데이터베이스 구현, RAG+LLM 챗봇 개발
         - header: ML Infra
           content: >
             CI/CD, NAS, 데이터 레이크, 이미지 레지스트리, 모니터링 등 ML 워크로드를 지원할 인프라 구현
@@ -218,7 +218,9 @@ projects:
         - Argo Workflows
         - Milvus
         - ChromaDB
-        - Grafana
+        - Ollama
+        - Open WebUI
+        - Grafana Stack
         - TensorBoard
   -
     position: "🧑‍🔧 DevOps: 사내외 프로젝트를 위한 하이브리드 클러스터 개발"
@@ -320,7 +322,7 @@ projects:
         - header: 2018-2020
           content: >
             <i>제어 및 컴퓨팅 연구실 (Prof. 한수희)</i><br/>
-            <b>운전자 보조 시스템(ADAS) 및 동시적 위치 추정 및 지도 작성 방법(SLAM) 연구</b>
+            <b>디지털 트윈 및 동시적 위치 추정 및 지도 작성 방법(SLAM) 연구</b>
             <ul>
               <li>자율주행을 위한 다중 카메라 기반 SLAM 연구</li>
               <li>ADAS과 SLAM을 위한 디지털 트윈 프로토타이핑 연구/개발</li>
@@ -447,6 +449,7 @@ skills:
     name: UI/UX
     keywords:
       - Slackbot*
+      - Open WebUI*
       - Python/FastUI*
       - .NET/MAUI*
       - .NET/WPF

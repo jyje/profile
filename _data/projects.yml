@@ -190,7 +190,7 @@ projects:
             Integrated JupyterHub with IDE; Remote GPU Notebook, 4 GPUs Acceleration
         - header: VectorDB
           content: >
-            Milvus, ChromaDB, Feature Store, Vector Search, Monitoring
+            Milvus, ChromaDB, RAG+LLM Chatbot
         - header: ML Infra
           content: >
             Setup CI/CD, NAS, Data Lake, Image Registry for ML Workloads
@@ -218,7 +218,9 @@ projects:
         - Argo Workflows
         - Milvus
         - ChromaDB
-        - Grafana
+        - Ollama
+        - Open WebUI
+        - Grafana Stack
         - TensorBoard
   -
     position: "🧑‍🔧 DevOps: Hybrid Clusters for Internal/External Projects"
@@ -320,7 +322,7 @@ projects:
         - header: 2018-2020
           content: >
             <i>Computing and Control Engineering Lab. (Prof. SH, Han)</i><br/>
-            <b>Advanced Driver Assistance Systems (ADAS) and Simultaneous Localization and Mapping (SLAM) Research</b>
+            <b>Digital Twins and Simultaneous Localization and Mapping (SLAM) Research</b>
             <ul>
               <li>Visual-SLAM Research using Multiple Cameras for Autonomous Driving</li>
               <li>Prototyping of Digital Twins for ADAS and SLAM</li>
