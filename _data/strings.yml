@@ -70,7 +70,8 @@ error:
 # Separators
 # ---------------------------------------------------------------------------------------
 posted:                'Posted'
-last_modified_at:      'Updated at'
+last_updated_at:       'Updated at'
+last_modified_at:      'Modified at'
 last_modified_at_icon: 'icon-history'
 colon:                 ':'
 separator:             '|'
@@ -86,6 +87,7 @@ breadcrumbs_separator: '/'
 # ---------------------------------------------------------------------------------------
 date_formats:
   post:                '%d %b %Y'
+  last_updated_at:     '%Y-%m-%d'
   last_modified_at:    '%Y-%m-%d'
   related_post:        '%d %b %Y'
   list_group_by:       '%Y'

@@ -8,10 +8,10 @@
   {% endif %}
 
   {% if basics.label %}
-    {% assign updated_at = site.time | date: site.data.strings.date_formats.last_modified_at %}
+    {% assign updated_at = site.time | date: site.data.strings.date_formats.last_updated_at %}
     <p class="h3 faded subline title p-job-title" property="jobTitle">
       {{ basics.label }}
-      <time datetime="{{ updated_at }}" class="dt-published">({{ site.data.strings.last_modified_at }} {{ updated_at }})</time>
+      <time datetime="{{ updated_at }}" class="dt-published">({{ site.data.strings.last_updated_at }} {{ updated_at }})</time>
     </p>
   {% endif %}
 
