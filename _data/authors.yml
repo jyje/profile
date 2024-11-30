@@ -8,11 +8,11 @@ jyje:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: |
-    This is Jeayoung Jeon [🇰🇷전제영].
-    I'm a software engineer in South Korea.
-    I work at MAXST as an MLOps/DevOps Engineer and Cloud-Native Software Developer.
+    This is Jeayoung Jeon [🇰🇷 전제영].
+    I'm a software engineer in Seoul, South Korea.
+    My main roles are MLOps/DevOps Engineering and AI Research.
     I always want to be a good co-worker and prove it every day.
-    I enjoy resolve MLOps challenges and diving into the world of the Kubernetes Community.
+    I enjoy resolving MLOps challenges and diving into the world of the Kubernetes Community.
 
   # This photo will be used in the about section
   picture:
