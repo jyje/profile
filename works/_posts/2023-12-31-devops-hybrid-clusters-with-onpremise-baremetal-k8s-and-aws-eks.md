@@ -7,15 +7,15 @@ tags:
   - aws
   - onpremise
 description: >
-  For high availability and cost optimization, a case study of a hybrid cluster that combines on-premise and public cloud.
+  For high availability and cost optimization, a case study of a hybrid cluster that combines on-premise and public cloud. Photo by <a href="https://unsplash.com/@mike_kiev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photobank Kiev</a> on <a href="https://unsplash.com/photos/3-men-standing-on-rocky-shore-during-daytime-Opzk_hvwO9Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 image: /assets/img/works/286a79d6-5433-4315-9309-61f6a6235f4c.jpg
 comments: true
 ---
 
 # DevOps: Hybrid Clusters with On-Premise Bare-Metal K8s and AWS EKS
 
-Photo by <a href="https://unsplash.com/@mike_kiev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photobank Kiev</a> on <a href="https://unsplash.com/photos/3-men-standing-on-rocky-shore-during-daytime-Opzk_hvwO9Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-{:.note title="Image"}
+이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/devops-hybrid-clusters-at-maxst)를 참고해주세요.
+{:.note title="Korean"}
 
 * UNORDERED TOC
 {:toc}
