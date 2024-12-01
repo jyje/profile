@@ -59,8 +59,8 @@ legal:
     url:               /
   - title:             Résumé
     url:               /profile/resume
-  # - title:             CV
-  #   url:               /profile/cv
+  - title:             Projects
+    url:               /profile/projects
   - title:             Articles
     url:               /articles
   - title:             Credits
