@@ -198,10 +198,10 @@ projects:
       description: >
         Improved research environment and resource management ~ Increased availability and capacity by merging resources and automating management.
       items:
-        - header: Improved Infrastructure
+        - header: Improved Env.
           content: >
             Consolidated servers managed by researchers into k8s to stable infra capacity and stability; Decision-making using PoC.
-        - header: Research Environment
+        - header: AI Platform
           content: >
             Expanded from VoC of 2 researchers, gradually increased users to 10. Resolved technical debt through continuous MLOps upgrades.
         - header: GPU Utilization
