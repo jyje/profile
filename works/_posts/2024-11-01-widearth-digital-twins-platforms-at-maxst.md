@@ -3,7 +3,13 @@ layout: post
 categories: works
 title: "Widearth: AR & Digital Twins Platforms at Maxst"
 tags:
-  - 
+  - maxst
+  - digital-twins
+  - devops
+  - mlops
+  - kubernetes
+  - onpremise
+  - aws
 description: >
   A Fully Managed Platform for Real-World Space-Based AR & Digital Twin Services; I contributed to the development of the platform as a lead ML/Infra engineer.
 image: /assets/img/works/00ef7950-3bb3-4865-82b0-e160b092412c.png
