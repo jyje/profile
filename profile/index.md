@@ -27,6 +27,11 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
     - If you have any questions or find any errors, please contact me via [mail]{:.heading.flip-title}.
 
 <div class="screen-only mt2">
+  <style>
+    a {
+      margin: 0.3rem 0rem;
+    }
+  </style>
   <a href="/profile/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Resume</a>
   <a href="/profile/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Portfolio</a>
   <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> Demo</a>
@@ -45,13 +50,13 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
 
 Following is a brief summary of my career:
 
-- <span class="emph btn-inline btn-primary">**2023 - Present**</span> : Engineering in **ML API, ML Pipeline**
-- <span class="emph btn-inline btn-primary">**2022 - Present**</span> : Engineering in **MLOps**, **DevOps**, **Hybrid Clusters**
-- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM, SfM and Digital Twins**
-- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
-- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
-- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
-- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
+- <span class="emph btn-sm btn-primary">**2023 - Present**</span> : Engineering in **ML API, ML Pipeline**
+- <span class="emph btn-sm btn-primary">**2022 - Present**</span> : Engineering in **MLOps**, **DevOps**, **Hybrid Clusters**
+- <span class="emph btn-sm btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM, SfM and Digital Twins**
+- <span class="emph btn-sm btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
+- <span class="emph btn-sm btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
+- <span class="emph btn-sm btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
+- <span class="emph btn-sm btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
 
 
 ### 2. Career Documents

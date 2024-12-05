@@ -27,6 +27,11 @@ accent_image:
     - 궁금하시거나 잘못된 정보가 있으면 [메일]{:.heading.flip-title}로 문의 부탁드립니다.
 
 <div class="screen-only mt2">
+  <style>
+    a {
+      margin: 0.3rem 0rem;
+    }
+  </style>
   <a href="/profile/ko/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> 이력서</a>
   <a href="/profile/ko/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> 포트폴리오</a>
   <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> 데모</a>
@@ -45,13 +50,13 @@ accent_image:
 
 제 경력을 시간 순서로 요약하였습니다:
 
-- <span class="emph btn-inline btn-primary">**2023 - Present**</span> : Engineering in **ML API, ML Pipeline**
-- <span class="emph btn-inline btn-primary">**2022 - Present**</span> : Engineering in **MLOps**, **DevOps**, **Hybrid Clusters**
-- <span class="emph btn-inline btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM, SfM and Digital Twins**
-- <span class="emph btn-inline btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
-- <span class="emph btn-inline btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
-- <span class="emph btn-inline btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
-- <span class="emph btn-inline btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
+- <span class="emph btn-sm btn-primary">**2023 - Present**</span> : Engineering in **ML API, ML Pipeline**
+- <span class="emph btn-sm btn-primary">**2022 - Present**</span> : Engineering in **MLOps**, **DevOps**, **Hybrid Clusters**
+- <span class="emph btn-sm btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM, SfM and Digital Twins**
+- <span class="emph btn-sm btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
+- <span class="emph btn-sm btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
+- <span class="emph btn-sm btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
+- <span class="emph btn-sm btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
 
 
 ### 2. 경력 문서
