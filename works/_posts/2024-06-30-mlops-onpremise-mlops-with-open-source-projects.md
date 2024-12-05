@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: works
+title: "MLOps: On-Premise MLOps with Open Source Projects"
 tags:
   - mlops
   - devops
@@ -12,12 +13,10 @@ image: /assets/img/works/ea4da371-fd3a-4a66-b5fe-45b07205c159.jpg
 comments: true
 ---
 
-# MLOps: On-Premise MLOps with Open Source Projects
-
 이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/mlops-onpremise-ai-platforms-at-maxst)를 참고해주세요.
 {:.note title="Korean"}
 
-* UNORDERED TOC
+* toc
 {:toc .large-only}
 
 ## 1. Overview

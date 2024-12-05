@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: works
+title: "DevOps: Hybrid Clusters with On-Premise Bare-Metal K8s and AWS EKS"
 tags:
   - devops
   - kubernetes
@@ -12,12 +13,10 @@ image: /assets/img/works/286a79d6-5433-4315-9309-61f6a6235f4c.jpg
 comments: true
 ---
 
-# DevOps: Hybrid Clusters with On-Premise Bare-Metal K8s and AWS EKS
-
 이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/devops-hybrid-clusters-at-maxst)를 참고해주세요.
 {:.note title="Korean"}
 
-* UNORDERED TOC
+* toc
 {:toc .large-only}
 
 ## 1. Overview
