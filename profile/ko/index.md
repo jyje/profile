@@ -27,11 +27,7 @@ accent_image:
     - 궁금하시거나 잘못된 정보가 있으면 [메일]{:.heading.flip-title}로 문의 부탁드립니다.
 
 <div class="screen-only mt2">
-  <style>
-    a {
-      margin: 0.3rem 0rem;
-    }
-  </style>
+  <style> a { margin: 0.3rem 0rem; } </style>
   <a href="/profile/ko/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> 이력서</a>
   <a href="/profile/ko/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> 포트폴리오</a>
   <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> 데모</a>
@@ -50,13 +46,29 @@ accent_image:
 
 제 경력을 시간 순서로 요약하였습니다:
 
-- <span class="emph btn-sm btn-primary">**2023 - Present**</span> : Engineering in **ML API, ML Pipeline**
-- <span class="emph btn-sm btn-primary">**2022 - Present**</span> : Engineering in **MLOps**, **DevOps**, **Hybrid Clusters**
-- <span class="emph btn-sm btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM, SfM and Digital Twins**
-- <span class="emph btn-sm btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
-- <span class="emph btn-sm btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
-- <span class="emph btn-sm btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
-- <span class="emph btn-sm btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
+<div class="timeline">
+  <style>
+    .timeline-header {
+      border: 1.5px solid var(--accent-color-two);
+      border-radius: .3rem;
+      display: inline-block;
+      margin: .25rem .125rem;
+      padding: .05rem .5rem;
+      color: #FFF;
+      background-color: var(--accent-color-two);
+      font-weight: 600;
+    }
+  </style>
+  <ul>
+    <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipeline</b></li>
+    <li><span class="timeline-header">2022 - Present</span> Engineering in <b>MLOps, DevOps, Hybrid Clusters</b></li>
+    <li><span class="timeline-header">2018 - 2023</span> Research in <b>Visual-SLAM, SfM and Digital Twins</b></li>
+    <li><span class="timeline-header">2012 - 2020</span> Research in <b>Automotive Computer Vision</b></li>
+    <li><span class="timeline-header">2012 - 2018</span> Research in <b>FPGA for Advanced Driver's Assistance Systems</b></li>
+    <li><span class="timeline-header">2008 - 2018</span> Research in <b>Digital Signal Processing and Machine Learning</b></li>
+    <li><span class="timeline-header">2008 - 2012</span> Study in <b>Analog and Digital Communications</b></li>
+  </ul>
+</div>
 
 
 ### 2. 경력 문서

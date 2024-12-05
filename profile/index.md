@@ -27,11 +27,7 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
     - If you have any questions or find any errors, please contact me via [mail]{:.heading.flip-title}.
 
 <div class="screen-only mt2">
-  <style>
-    a {
-      margin: 0.3rem 0rem;
-    }
-  </style>
+  <style> a { margin: 0.3rem 0rem; } </style>
   <a href="/profile/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Resume</a>
   <a href="/profile/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Portfolio</a>
   <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> Demo</a>
@@ -50,13 +46,29 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
 
 Following is a brief summary of my career:
 
-- <span class="emph btn-sm btn-primary">**2023 - Present**</span> : Engineering in **ML API, ML Pipeline**
-- <span class="emph btn-sm btn-primary">**2022 - Present**</span> : Engineering in **MLOps**, **DevOps**, **Hybrid Clusters**
-- <span class="emph btn-sm btn-primary">**2018 - 2023**</span> : Research in **Visual-SLAM, SfM and Digital Twins**
-- <span class="emph btn-sm btn-primary">**2012 - 2020**</span> : Research in **Automotive Computer Vision**
-- <span class="emph btn-sm btn-primary">**2012 - 2018**</span> : Research in **FPGA for Advanced Driver's Assistance Systems** 
-- <span class="emph btn-sm btn-primary">**2008 - 2018**</span> : Research in **Digital Signal Processing** and **Machine Learning**
-- <span class="emph btn-sm btn-primary">**2008 - 2012**</span> : Study in **Analog and Digital Communications**
+<div class="timeline">
+  <style>
+    .timeline-header {
+      border: 1.5px solid var(--accent-color-two);
+      border-radius: .3rem;
+      display: inline-block;
+      margin: .25rem .125rem;
+      padding: .05rem .5rem;
+      color: #FFF;
+      background-color: var(--accent-color-two);
+      font-weight: 600;
+    }
+  </style>
+  <ul>
+    <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipeline</b></li>
+    <li><span class="timeline-header">2022 - Present</span> Engineering in <b>MLOps, DevOps, Hybrid Clusters</b></li>
+    <li><span class="timeline-header">2018 - 2023</span> Research in <b>Visual-SLAM, SfM and Digital Twins</b></li>
+    <li><span class="timeline-header">2012 - 2020</span> Research in <b>Automotive Computer Vision</b></li>
+    <li><span class="timeline-header">2012 - 2018</span> Research in <b>FPGA for Advanced Driver's Assistance Systems</b></li>
+    <li><span class="timeline-header">2008 - 2018</span> Research in <b>Digital Signal Processing and Machine Learning</b></li>
+    <li><span class="timeline-header">2008 - 2012</span> Study in <b>Analog and Digital Communications</b></li>
+  </ul>
+</div>
 
 
 ### 2. Career Documents
