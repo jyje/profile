@@ -7,29 +7,9 @@ accent_image:
 ---
 
 <div class="screen-only">
-  {% include components/profile-language-table.html %}
+  <a href="/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
+  <a href="/profile/ko" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
 </div>
-{:.note title="Languages"}
-
-<div class="screen-only">
-  <!-- <a href="/certifications" class="btn btn-sm btn-primary mt1">
-    <small class="icon-checkmark"></small>
-    Certifications
-  </a> -->
-  <a href="https://app.jyje.live" class="btn btn-sm btn-primary mt1">
-    <small class="icon-wrench"></small>
-    Demo
-  </a>
-  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary mt1">
-    <small class="icon-bubble"></small>
-    Notion Blog (Korean)
-  </a>
-  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary mt1">
-    <small class="icon-bubble"></small>
-    Tistory Blog (Korean)
-  </a>
-</div>
-{:.note title="External Links"}
 
 * toc
 {:toc .large-only}
@@ -42,10 +22,17 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
     - I worked as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title}, a company specializing in AR and Digital Twins.
     - I studied computer vision, autonomous driving, and AI researches at school.
 - 💼 This site is my official profile.
-    - Documents: You can find my [Résumé]{:.heading.flip-title} and [Projects]{:.heading.flip-title} here.
+    - Documents: In [here](#2-career-documents){:.heading.flip-title}, you can find my [Résumé]{:.heading.flip-title} and [Projects]{:.heading.flip-title}.
     - Portfolios: You can find my [Works]{:.heading.flip-title} here.
     - If you have any questions or find any errors, please contact me via [mail]{:.heading.flip-title}.
 
+<div class="screen-only mt2">
+  <a href="/profile/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Resume</a>
+  <a href="/profile/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Portfolio</a>
+  <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> Demo</a>
+  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary"><small class="icon-bubble"></small> Notion Blog</a>
+  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary"><small class="icon-bubble"></small> Tistory Blog</a>
+</div>
 
 <div style="margin-top: 5rem;">
   {% include components/dingbat.html %}
