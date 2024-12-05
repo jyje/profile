@@ -19,20 +19,20 @@ accent_image:
 저는 서울,경기에서 활동하는 소프트웨어 엔지니어 [전제영(Jeayoung Jeon)]{:.heading.flip-title} 입니다.
 
 - 🧑‍💻 저는 MLOps/DevOps 와 AI 엔지니어링의 전문성을 가지고 있습니다. 
-    - **AR/디지털 트윈** 전문 업체 [MAXST]{:.heading.flip-title}에서 **MLOps/DevOps 엔지니어**로 근무했습니다.
+    - **AR/디지털 트윈** 전문 기업 [MAXST]{:.heading.flip-title}에서 **MLOps/DevOps 엔지니어**로 근무했습니다.
     - 학교에서 연구원으로 컴퓨터 비전, 자율주행 및 AI 연구를 다수 진행했습니다.
 - 💼 이 사이트는 저의 공식 프로필 입니다.
     - 경력 문서: [여기](#2-경력-문서){:.heading.flip-title}에서 저의 [이력서]{:.heading.flip-title}와 [경력기술서]{:.heading.flip-title}를 찾아보실 수 있습니다.
     - 포트폴리오: 이 사이트에서 저의 [포트폴리오]{:.heading.flip-title}와 성과들을 살펴보실 수 있습니다.
     - 궁금하시거나 잘못된 정보가 있으면 [메일]{:.heading.flip-title}로 문의 부탁드립니다.
 
-<div class="screen-only mt2">
-  <style> a { margin: 0.3rem 0rem; } </style>
-  <a href="/profile/ko/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> 이력서</a>
-  <a href="/profile/ko/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> 포트폴리오</a>
-  <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> 데모</a>
-  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary"><small class="icon-bubble"></small> 노션 블로그</a>
-  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary"><small class="icon-bubble"></small> 티스토리 블로그</a>
+<div class="screen-only mt3">
+  <style> .btn-quick { margin: 0.3rem 0rem; } </style>
+  <a href="/profile/ko/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
+  <a href="/profile/ko/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 포트폴리오</a>
+  <a href="https://app.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
+  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 노션 블로그</a>
+  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 티스토리 블로그</a>
 </div>
 
 <div style="margin-top: 5rem;">

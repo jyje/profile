@@ -26,13 +26,13 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
     - Portfolios: You can find my [Works]{:.heading.flip-title} here.
     - If you have any questions or find any errors, please contact me via [mail]{:.heading.flip-title}.
 
-<div class="screen-only mt2">
-  <style> a { margin: 0.3rem 0rem; } </style>
-  <a href="/profile/resume" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Resume</a>
-  <a href="/profile/projects" class="btn btn-sm btn-primary"><small class="icon-briefcase"></small> Portfolio</a>
-  <a href="https://app.jyje.live" class="btn btn-sm btn-primary"><small class="icon-wrench"></small> Demo</a>
-  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary"><small class="icon-bubble"></small> Notion Blog</a>
-  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary"><small class="icon-bubble"></small> Tistory Blog</a>
+<div class="screen-only mt3">
+  <style> .btn-quick { margin: 0.3rem 0rem; } </style>
+  <a href="/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Resume</a>
+  <a href="/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
+  <a href="https://app.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> Demo</a>
+  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Notion Blog</a>
+  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Tistory Blog</a>
 </div>
 
 <div style="margin-top: 5rem;">
