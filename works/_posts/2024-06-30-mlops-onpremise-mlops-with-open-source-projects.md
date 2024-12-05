@@ -18,7 +18,7 @@ comments: true
 {:.note title="Korean"}
 
 * UNORDERED TOC
-{:toc}
+{:toc .large-only}
 
 ## 1. Overview
 

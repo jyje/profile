@@ -14,7 +14,7 @@ comments: true
 # CKA: Certified Kubernetes Administrator (2024)
 
 * UNORDERED TOC
-{:toc}
+{:toc .large-only}
 
 ## 1. About the Certification
 

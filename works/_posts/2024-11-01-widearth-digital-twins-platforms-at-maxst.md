@@ -11,7 +11,7 @@ comments: true
 ---
 
 * toc
-{:toc}
+{:toc .large-only}
 
 ## Summary
 

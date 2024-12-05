@@ -14,7 +14,7 @@ comments: true
 # CKAD: Certified Kubernetes Application Developer (2024)
 
 * UNORDERED TOC
-{:toc}
+{:toc .large-only}
 
 ## 1. About the Certification
 

@@ -32,7 +32,7 @@ accent_image:
 {:.note title="External Links"}
 
 * toc
-{:toc}
+{:toc .large-only}
 
 ## ✨ 소개
 
