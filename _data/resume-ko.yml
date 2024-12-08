@@ -61,7 +61,7 @@ work:
       items:
         - header: MLOps
           content: >
-            사내 연구소와 협업하기 위해 오픈 소스를 활용하여 ML API, 데이터 파이프라인, AI 플랫폼을 개발
+            오픈 소스를 활용하여 ML API, 데이터 파이프라인, AI 플랫폼 개발
         - header: LLMOps
           content: >
             사내에 자체 구축한 RAG+LLM 시스템을 활용하여 사내 문서를 학습한 챗봇 개발

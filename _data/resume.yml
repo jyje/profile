@@ -61,7 +61,7 @@ work:
       items:
         - header: MLOps
           content: >
-            Developing ML APIs, data pipelines, and AI Platforms for research center using open sources.
+            Developing ML APIs, data pipelines, and AI Platforms using open sources.
         - header: LLMOps
           content: >
             Building chatbots using self-hosted RAG+LLM systems for internal documents.
