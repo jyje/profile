@@ -29,7 +29,7 @@ accent_image:
 <div class="screen-only mt3">
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
   <a href="/profile/ko/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
-  <a href="/profile/ko/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 포트폴리오</a>
+  <a href="/profile/ko/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 경력기술서</a>
   <a href="https://app.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
   <a href="https://blog.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 노션 블로그</a>
   <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 티스토리 블로그</a>
