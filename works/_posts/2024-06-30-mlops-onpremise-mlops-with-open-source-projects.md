@@ -8,10 +8,12 @@ tags:
   - kubernetes
   - onpremise
 description: >
-  To reduce underutilized GPU time, a case study of an on-premise cluster that provides MLOps services with Kubeflow, Argo Workflows, and more. Photo by <a href="https://unsplash.com/@nampoh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Hopman</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-around-a-display-of-video-screens-IayKLkmz6g0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  To enhance the efficiency of GPU resources, a case study of an on-premise cluster that provides MLOps services with Kubeflow, Argo Workflows, and more.
 image: /assets/img/works/ea4da371-fd3a-4a66-b5fe-45b07205c159.jpg
 comments: true
 ---
+
+> Photo by <a href="https://unsplash.com/@nampoh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Hopman</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-around-a-display-of-video-screens-IayKLkmz6g0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/mlops-onpremise-ai-platforms-at-maxst)를 참고해주세요.
 {:.note title="Korean"}
