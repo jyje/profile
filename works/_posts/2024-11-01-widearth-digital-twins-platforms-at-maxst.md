@@ -21,7 +21,7 @@ comments: true
 
 ## Summary
 - **Title**: **Development of AR & Digital Twin Platform [Widearth]**
-- **Website**: [*https://widearth.world*](https://widearth.world)
+- **Website**: [https://widearth.world](https://widearth.world)
 - **Period**: **Jan 2024 - Oct 2024 (10 months)**
 - **Role**: **Lead ML/Infra ~ MLOps/DevOps + ML Backend + SRE [Contribution 75%]**
     - **DevOps & SRE**
