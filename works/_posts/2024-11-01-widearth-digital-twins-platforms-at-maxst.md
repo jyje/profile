@@ -53,7 +53,7 @@ comments: true
 # Details
 We configured a hybrid architecture for the digital twin platform.
 
->  Please refer to the omitted/simplified parts due to internal security regulations.
+> Please refer to the omitted/simplified parts due to internal security regulations.
 
 ![Widearth's operation flow and user behavior patterns](/assets/img/works/964ffa59-e690-4b3b-b52a-a16e69728246.png){:.lead width="800" loading="lazy"}
 Widearth's operation flow and user behavior patterns
