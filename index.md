@@ -9,11 +9,18 @@ cover: true
 
 Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and this is my formal portfolio site. Here, you can explore my records, experience, and career in detail. I've provided specific and clear information about myself. Hope you enjoy it 🥰
 
-It provides following sections:
+---
+
+This site provides following sections:
 
 - 💼 [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects] ([🇰🇷 한국어 프로필](/profile/ko)도 있습니다)
 - 🚀 [Works]{:.heading.flip-title}: My activities, projects, and live [demo] (powered by raspberry pi cluster 🐳)
 - 🧑‍💻 [Certifications]{:.heading.flip-title}: Description of my certifications
+
+---
+
+And, to browse my posts, you can use following sections:
+
 - 📜 [Articles]{:.heading.flip-title}: All posts in this site
 - 🔖 [Index]{:.heading.flip-title}: All categories and tags
 
