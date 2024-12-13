@@ -411,13 +411,13 @@ skills:
       - GCP GKE
       - Hybrid Clusters*
       - ARM64*
-      - IaC
-      - Kubespray
-      - Terraform
-      - Ansible
-      - Istio
-      - Grafana Stack
-      - Karpenter
+      - IaC*
+      - Kubespray*
+      - Terraform*
+      - Ansible*
+      - Istio*
+      - Grafana Stack*
+      - Karpenter*
   -
     name: CI/CD/CT/CT
     keywords:
@@ -450,6 +450,8 @@ skills:
     keywords:
       - Slackbot*
       - Python/FastUI*
+      - Open WebUI*
+      - Chainlit*
       - .NET/MAUI*
       - .NET/WPF
       - Unity
