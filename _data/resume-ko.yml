@@ -366,16 +366,18 @@ languages:
 
 interests:
   -
+    name: "Research/Dev"
+    keywords:
+      - "Agentic RAG"
+      - "Digital Twins"
+      - "AMD-to-ARM Transition"
+      - "Hybrid Clusters"
+  -
     name: "DevOps Culture"
     keywords:
       - "Coop First, Tech Next"
       - "Automate as Possible"
       - "Internal Development Platform"
-  -
-    name: "Cost Efficiency"
-    keywords:
-      - "AMD-to-ARM Transition"
-      - "Hybrid Clusters"
   -
     name: "Home Clusters"
     keywords:
