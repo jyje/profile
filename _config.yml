@@ -70,7 +70,7 @@ legal:
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             "2024 ⓒ jyje.live by Jeayoung Jeon 🧑‍💻"
+copyright:             "2023-2025 ⓒ jyje.live by Jeayoung Jeon 🧑‍💻"
 
 # Format of the permalinks
 permalink:             /:categories/:title # /:categories/:year-:month-:day-:title/
