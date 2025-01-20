@@ -13,7 +13,8 @@ Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and
 
 This site provides following sections:
 
-- 💼 [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects] ([🇰🇷 한국어 프로필](/profile/ko)도 있습니다)
+- 💼 [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects]
+    - 🇰🇷 [프로필]{:.heading.flip-title}: 이력 소개, [이력서], [경력기술서]
 - 🚀 [Works]{:.heading.flip-title}: My activities, projects, and live [demo] (powered by raspberry pi cluster 🐳)
 - 🧑‍💻 [Certifications]{:.heading.flip-title}: Description of my certifications
 
@@ -29,8 +30,11 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 ![Logo of this site](assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 
 [Profile]: profile "my-profile --verbose"
+[프로필]: profile/ko "my-profile --verbose --language=ko"
 [Résumé]: profile/resume "my-profile resume"
+[이력서]: profile/ko/resume "my-profile resume --language=ko"
 [Projects]: profile/projects "my-profile projects"
+[경력기술서]: profile/ko/projects "my-profile projects --language=ko"
 [Curriculum Vitae]: profile/cv "my-profile cv"
 [CV]: profile/cv "my-profile cv"
 [Works]: works
