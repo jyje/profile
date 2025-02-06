@@ -3,8 +3,9 @@ layout:     post
 categories: [ "certifications" ]
 tags:       [ "kubernetes", "linux-foundation" ]
 description: >
-  Issued on March 16, 2024. Expires on March 15, 2027.
-image: https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_800,h_433/v1/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/8t6imzwoso42-CKAcard.png
+  Core skills for managing Kubernetes clusters.<br/>
+  <b>Valid: Mar 16, 2024 – Mar 15, 2027</b>
+image: /assets/img/certtifications/d151aaa0-4523-4caa-bbb9-d6dd9ca02938.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
   overlay: false

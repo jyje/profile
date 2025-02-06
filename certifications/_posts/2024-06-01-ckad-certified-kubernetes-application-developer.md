@@ -3,8 +3,9 @@ layout:     post
 categories: [ "certifications" ]
 tags:       [ "kubernetes", "linux-foundation" ]
 description: >
-  Issued on June 1, 2024.  Expires on May 31, 2026.
-image: https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_800,h_433/v1/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/qx3uxl73idxz-CKADcard.png # /assets/img/blog/jj-ying.jpg
+  Core skills for developing Kubernetes workloads.<br/>
+  <b>Valid: Jun 1, 2024 – May 31, 2026</b>
+image: /assets/img/certtifications/7682d5de-7c02-46cf-ac99-9ed52df25464.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
   overlay: false
@@ -25,12 +26,12 @@ Similar to the CKA exam, the CKAD exam is a hands-on, proctored, performance-bas
 
 ## 2. My Experience
 
-![CKAD Certification](/assets/img/certtifications/87b974ec-14cc-4f82-b252-c71deef28ee8.svg){:.lead width="500" height="100" loading="lazy}
+![CKAD Certification](/assets/img/certtifications/87b974ec-14cc-4f82-b252-c71deef28ee8.svg){:.lead width="500" height="100" loading="lazy"}
 
 My CKAD certification 2024. Issued on June 1, 2024. Expires on May 31, 2026. You can verify my certification [here](https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c).
 {:.figcaption}
 
-I took the CKAD exam on May 31, 2024, and I passed it very hard. The exam was so difficult so I get the score close to the passing score. I prepared for the exam by studying the official Kubernetes documentation, taking online courses, and practicing with Kubernetes clusters in KodeKloud.
+I took the CKAD exam on May 31, 2024, and passed it successfully. The exam was challenging, and I achieved a score that met the passing requirements. I prepared for the exam by studying the official Kubernetes documentation, taking online courses, and practicing with Kubernetes clusters in KodeKloud.
 
 ## 3. Share to the World
 
