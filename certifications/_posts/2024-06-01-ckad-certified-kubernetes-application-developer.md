@@ -1,7 +1,7 @@
 ---
 layout:     post
 categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foudation" ]
+tags:       [ "kubernetes", "linux-foundation" ]
 description: >
   Issued on June 1, 2024.  Expires on May 31, 2026.
 image: https://d36ai2hkxl16us.cloudfront.net/thoughtindustries/image/upload/a_exif,c_fill,w_800,h_433/v1/course-uploads/e0df7fbf-a057-42af-8a1f-590912be5460/qx3uxl73idxz-CKADcard.png # /assets/img/blog/jj-ying.jpg

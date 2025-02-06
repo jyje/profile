@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Linux Foundation
-slug: linux-foudation
+slug: linux-foundation
 sidebar: true
 description: >
    Linux Foundation related posts. The cover image is from the Linux Foundation.
