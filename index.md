@@ -5,9 +5,7 @@ cover: true
 ---
 ## 🎉 Hello, World!
 
-<a class="no-after" href="https://jyje.live"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjyje.love&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visited&edge_flat=false"/></a>
-
-Welcome! My name is Jeayoung Jeon. I'm a software engineer from South Korea, and this is my formal profile site. Here, you can explore my records, experience, and career in detail. I've provided specific and clear information about myself. Hope you enjoy it 🥰
+Welcome! I'm Jeayoung Jeon and I'm a software engineer from South Korea. This is my formal profile site. Here, you can explore my records, experience, and career in detail. Hope you enjoy it 🥰
 
 ---
 

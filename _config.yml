@@ -17,13 +17,13 @@ title:                 jyje
 
 # A short description (~150 chars) of the page used for the meta description tag. Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  I'm a software engineer majoring in MLOps, Computer Vision and Cloud-Native Software Engineering. I'm currently working at MAXST as a MLOps, DevOps and Backend Engineer.
+  I'm a software engineer majoring in MLOps, Computer Vision and Cloud-Native Software Engineering. I'm currently working at Hyundai Autoever as an AI/MLOps Engineer.
 
 # A shorter description for the sidebar.
-tagline:               MLOps/DevOps Engineer
+tagline:               AI/MLOps Engineer
 
 # A list of keywords for your blog
-keywords:              [MLOps, DevOps, Computer Vision, Cloud-Native, Kubernetes, LLM, ADAS, AR/VR, CV, Resume]
+keywords:              [MLOps, DevOps, Computer Vision, Cloud-Native, Kubernetes, LLM, AI, CV, Resume]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.

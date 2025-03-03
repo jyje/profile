@@ -19,6 +19,7 @@ accent_image:
 My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software engineer in Seoul, South Korea.
 
 - 🧑‍💻 I'm with expertise in MLOps/DevOps and AI engineering.
+    - I'm currently working as an **AI/MLOps Engineer** at [Hyundai Autoever]{:.heading.flip-title}, a company specializing in SDV and ICT for Automotives.
     - I worked as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title}, a company specializing in AR and Digital Twins.
     - I studied computer vision, autonomous driving, and AI researches at school.
 - 💼 This site is my official profile.
@@ -128,6 +129,7 @@ You can find more details about my projects and achievements in the following do
 [Works]: /works
 
 [Blog]: https://blog.jyje.live "My blog"
+[Hyundai Autoever]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai Autoever"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
 [Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
