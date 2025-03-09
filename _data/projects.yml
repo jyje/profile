@@ -44,45 +44,85 @@ basics:
 
 work:
   -
+    company: Hyundai AutoEver
+    position: 🧑‍💻 Senior Software Engineer [책임]
+    website: https://www.hyundai-autoever.com/eng
+    startDate: "2025-02-24"
+    endDate: {}
+    duration: 2 Months
+    roles:
+      description: >
+        AI/MLOps Engineer at Development Environment Platform Team, Hyundai AutoEver
+      items:
+        - header: AI/LLM Platform
+          content: >
+            Developing enterprise AI platforms and LLM+RAG systems for automotive domain knowledge
+        - header: MLOps
+          content: >
+            Building ML pipeline infrastructure for software defined vehicles and autonomous driving
+  -
     company: MAXST
-    position: "🧑‍🔬 Intermediate Software Engineer [책임연구원]"
+    position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
     website: https://maxst.com/ENG/main
-    startDate: "2024-03-01"
-    endDate: "2024-11-01"
-    duration: 9 Months
+    startDate: "2021-01-16"
+    endDate: "2024-10-31"
+    duration: 3 Years and 10 Months
     roles:
       description: >
         Lead MLOps/DevOps Engineer at Technology Division, MAXST
       items:
-        - header: MLOps
+        - header: MLOps/LLMOps
           content: >
-            Developing ML APIs, data pipelines, and AI Platforms for research team using open sources.
-        - header: LLMOps
-          content: >
-            Building chatbots using self-hosted RAG+LLM systems for internal documents.
+            Designed ML APIs and data pipelines. Built RAG+LLM systems for enterprise solutions
         - header: SRE
           content: >
-            Site reliability engineering for web services. Service reliability engineering for ML workloads.
-  -
-    company: MAXST
-    position: "🧑‍💻 Software Engineer [선임연구원]"
-    website: https://maxst.com/ENG/main
-    startDate: "2021-01-16"
-    endDate: "2024-02-28"
-    duration: 3 Years and 2 Months
-    roles:
-      description: >
-        Associate Researcher and DevOps Engineer at Technology Division, MAXST
-      items:
+            Led site & service reliability engineering initiatives for web services and ML workloads
+        - header: Infrastructure
+          content: >
+            Architected hybrid clusters (AWS EKS + On-Premise) for digital twin platform
         - header: Algorithm Research
           content: >
             Reviewing computer vision algorithms in state-of-art papers and implementing prototypes
-        - header: Hybrid Clusters
-          content: >
-            Building hybrid clusters with AWS EKS and on-premise Kubernetes for digital twin project
-        - header: DevOps
-          content: >
-            Building on-premise clusters and data pipelines for company's inbound/outbound projects
+  # -
+  #   company: MAXST
+  #   position: "🧑‍🔬 Intermediate Software Engineer [책임연구원]"
+  #   website: https://maxst.com/ENG/main
+  #   startDate: "2024-03-01"
+  #   endDate: "2024-11-01"
+  #   duration: 9 Months
+  #   roles:
+  #     description: >
+  #       Lead MLOps/DevOps Engineer at Technology Division, MAXST
+  #     items:
+  #       - header: MLOps
+  #         content: >
+  #           Developing ML APIs, data pipelines, and AI Platforms using open sources.
+  #       - header: LLMOps
+  #         content: >
+  #           Building chatbots using self-hosted RAG+LLM systems for internal documents.
+  #       - header: SRE
+  #         content: >
+  #           Site reliability engineering for web services. Service reliability engineering for ML workloads.
+  # -
+  #   company: MAXST
+  #   position: "🧑‍💻 Software Engineer [선임연구원]"
+  #   website: https://maxst.com/ENG/main
+  #   startDate: "2021-01-16"
+  #   endDate: "2024-02-28"
+  #   duration: 3 Years and 2 Months
+  #   roles:
+  #     description: >
+  #       Associate Researcher and DevOps Engineer at Technology Division, MAXST
+  #     items:
+  #       - header: Algorithm Research
+  #         content: >
+  #           Reviewing computer vision algorithms in state-of-art papers and implementing prototypes
+  #       - header: Hybrid Clusters
+  #         content: >
+  #           Building hybrid clusters with AWS EKS and on-premise Kubernetes for digital twin project
+  #       - header: DevOps
+  #         content: >
+  #           Building on-premise clusters and data pipelines for company's inbound/outbound projects
   -
     company: "POSTECH"
     position: "🧑‍🎓 Graduate Student Researcher in Computer Vision"
@@ -129,6 +169,23 @@ work:
   #     - Preview of Graduate Program and Experiments
 
 projects:
+  -
+    position: 🤖 Untitled AI Project
+    company: Hyundai AutoEver
+    startDate: "2025-02-24"
+    endDate: {}
+    duration: 2 Months
+    roles:
+      description: AI/MLOps Engineer at Development Environment Platform Team
+      items:
+        - header: AI Development
+        - header: LLMOps
+    skills:
+      description: Skill Stack for Project
+      items:
+        - LLM
+        - VectorDB
+        - RAG
   -
     position: "🧑‍💻 Widearth: Digital Twin & AR Content Platform"
     company: Widearth, MAXST

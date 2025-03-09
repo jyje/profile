@@ -49,45 +49,42 @@ basics:
 
 work:
   -
+    company: Hyundai AutoEver
+    position: "🧑‍💻 Senior Software Engineer [책임]"
+    website: https://www.hyundai-autoever.com
+    startDate: "2025-02-24"
+    endDate: {}
+    duration: 2개월
+    roles:
+      description: >
+        AI/MLOps 엔지니어 at 현대오토에버 개발환경플랫폼팀
+      items:
+        - header: AI/LLM Platform
+          content: >
+            자동차 도메인 지식을 위한 엔터프라이즈 AI 플랫폼 및 LLM+RAG 시스템 개발
+        - header: MLOps
+          content: >
+            소프트웨어 정의 자동차 및 자율주행을 위한 ML 파이프라인 인프라 구현
+  -
     company: MAXST
-    position: "🧑‍🔬 Intermediate Software Engineer [책임연구원]"
+    position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
     website: https://maxst.com
-    startDate: "2024-03-01"
-    endDate: "2024-11-01"
-    duration: 9개월
+    startDate: "2021-01-16"
+    endDate: "2024-10-31"
+    duration: 3년 10개월
     roles:
       description: >
         리드 MLOps/DevOps 엔지니어 at 맥스트 기술사업부
       items:
-        - header: MLOps
+        - header: MLOps/LLMOps
           content: >
-            오픈 소스를 활용하여 ML API, 데이터 파이프라인, AI 플랫폼 개발
-        - header: LLMOps
-          content: >
-            사내에 자체 구축한 RAG+LLM 시스템을 활용하여 사내 문서를 학습한 챗봇 개발
-        - header: SRE
-          content: >
-            웹 서비스 안정성 엔지니어링과 머신러닝 워크로드 안정성 엔지니어링 담당
-  -
-    company: MAXST
-    position: "🧑‍💻 Software Engineer [선임연구원]"
-    website: https://maxst.com
-    startDate: "2021-01-16"
-    endDate: "2024-02-28"
-    duration: 3년 2개월
-    roles:
-      description: >
-        연구원 & DevOps 엔지니어 at 맥스트 기술사업부
-      items:
-        - header: Algorithm Research
-          content: >
-            컴퓨터 비전 알고리즘 연구, 최신 논문 리뷰 및 프로토타입 구현
-        - header: Hybrid Clusters
-          content: >
-            고가용/고효율의 디지털 트윈 플랫폼을 위한 하이브리드 클러스터(AWS EKS + 온프레미스) 구현
+            ML API, 데이터 파이프라인, AI 플랫폼, RAG+LLM 시스템 개발
         - header: DevOps
           content: >
-            사내외 프로젝트를 위한 온프레미스 쿠버네티스 클러스터와 데이터 파이프라인 개발
+            고가용/고효율의 디지털 트윈 플랫폼을 위한 하이브리드 클러스터(AWS EKS + 온프레미스) 구현
+        - header: SRE
+          content: >
+            웹 서비스 안정성 엔지니어링과 컴퓨터비전/머신러닝 워크로드 안정성 엔지니어링 담당
   -
     company: "POSTECH"
     position: "🧑‍🎓 Graduate Student Researcher [대학원 연구원, 컴퓨터 비전 전공]"
