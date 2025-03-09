@@ -43,6 +43,8 @@ author:
 menu:
   - title:             Profile
     url:               /profile
+  - title:             News
+    url:               /news
   - title:             Works
     url:               /works
   - title:             Certifications
@@ -149,13 +151,24 @@ defaults:
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:
+      type:            news
+    values:
+      seo:
+        type:          WebPage
+  - scope:
       type:            works
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            certifications
     values:
       seo:
         type:          WebPage
   - scope:
       type:            articles
     values:
+      sitemap:         false
       seo:
         type:          WebPage
   - scope:
@@ -190,7 +203,7 @@ google_analytics:      G-FY4195GJQ4
 # pages with `comments: true` in the front matter.
 # See documentation for more information: https://giscus.app
 giscus:
-  repo:                jyje/portfolio 
+  repo:                jyje/profile 
   repo_id:             R_kgDOIsNUrw
   category:            Comments
   category_id:         DIC_kwDOIsNUr84ChOrU
@@ -330,8 +343,16 @@ collections:
     permalink:         /tags/:name/
     output:            true
   
+  news:
+    permalink:         /news/:name/
+    output:            true
+
   works:
     permalink:         /works/:name/
+    output:            true
+
+  certifications:
+    permalink:         /certifications/:name/
     output:            true
 
   articles:
