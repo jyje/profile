@@ -6,6 +6,9 @@ email:
 blog:
   name: Blog
   icon: icon-bubble
+blog-in-korean:
+  name: Blog in Korean
+  icon: icon-bubble
 amazon:
   name: Amazon
   icon: icon-amazon
