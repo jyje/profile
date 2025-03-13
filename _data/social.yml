@@ -220,3 +220,7 @@ stackshare:
 notion:
   name: Notion
   icon: icon-notion
+demo:
+  name: Demo
+  icon: icon-terminal
+  prepend: "https://app.jyje.live"
