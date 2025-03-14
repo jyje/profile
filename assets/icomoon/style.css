@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fns21r');
-  src:  url('fonts/icomoon.eot?fns21r#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fns21r') format('truetype'),
-    url('fonts/icomoon.woff?fns21r') format('woff'),
-    url('fonts/icomoon.svg?fns21r#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?9r0odw');
+  src:  url('fonts/icomoon.eot?9r0odw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9r0odw') format('truetype'),
+    url('fonts/icomoon.woff?9r0odw') format('woff'),
+    url('fonts/icomoon.svg?9r0odw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -35,20 +35,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-kubernetes:before {
+  content: "\e907";
+}
 .icon-certificate:before {
   content: "\e906";
 }
-.icon-drivers-license:before {
-  content: "\f2c2";
-}
-.icon-id-card:before {
-  content: "\f2c2";
-}
-.icon-drivers-license-o:before {
-  content: "\f2c3";
-}
-.icon-id-card-o:before {
-  content: "\f2c3";
+.icon-edit:before {
+  content: "\e903";
 }
 .icon-notion:before {
   content: "\e901";
@@ -163,12 +157,6 @@
 }
 .icon-skype:before {
   content: "\eac5";
-}
-.icon-reddit:before {
-  content: "\eac6";
-}
-.icon-hackernews:before {
-  content: "\eac7";
 }
 .icon-stackoverflow:before {
   content: "\ead0";
@@ -311,6 +299,15 @@
 .icon-linkedin2:before {
   content: "\eaca";
 }
-.icon-edit:before {
-  content: "\e903";
+.icon-drivers-license:before {
+  content: "\f2c2";
+}
+.icon-id-card:before {
+  content: "\f2c2";
+}
+.icon-drivers-license-o:before {
+  content: "\f2c3";
+}
+.icon-id-card-o:before {
+  content: "\f2c3";
 }
