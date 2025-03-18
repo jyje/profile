@@ -17,7 +17,7 @@ cover: true
   💼 [Profile]{:.heading.flip-title}([프로필]{:.heading.flip-title})
 / 🚀 [Demo]{:.heading.flip-title}
 / 📝 [Posts]{:.heading.flip-title}
-/ 👩‍🔬 [Works]{:.heading.flip-title}
+/ 🧑‍💻 [Works]{:.heading.flip-title}
 / 🪪 [Certifications]{:.heading.flip-title}
 / 🔖 [Index]{:.heading.flip-title}
 
@@ -32,8 +32,8 @@ This site provides following sections:
 - 💼 [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects] / 🇰🇷 [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
 - 🚀 [Demo]{:.heading}: Live demo of my works (powered by raspberry pi cluster 🐳)
 - 📝 [Posts]{:.heading.flip-title}: All posts in this site
-- 👩‍🔬 [Works]{:.heading.flip-title}: My activities, projects
-- 🧑‍💻 [Certifications]{:.heading.flip-title}: Description of my certifications
+- 🧑‍💻 [Works]{:.heading.flip-title}: My activities, projects
+- 🪪 [Certifications]{:.heading.flip-title}: Description of my certifications
 
 ---
 
