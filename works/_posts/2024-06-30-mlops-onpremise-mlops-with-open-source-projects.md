@@ -15,7 +15,7 @@ comments: true
 
 > Photo by <a href="https://unsplash.com/@nampoh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Hopman</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-around-a-display-of-video-screens-IayKLkmz6g0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/mlops-onpremise-ai-platforms-at-maxst)를 참고해주세요.
+이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.online/posts/project/mlops-onpremise-ai-platforms-at-maxst)를 참고해주세요.
 {:.note title="Korean"}
 
 * toc

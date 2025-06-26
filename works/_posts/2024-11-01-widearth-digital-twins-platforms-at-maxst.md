@@ -16,7 +16,7 @@ image: /assets/img/works/00ef7950-3bb3-4865-82b0-e160b092412c.png
 comments: true
 ---
 
-이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/widearth-digital-twins-platforms-at-maxst)를 참고해주세요.
+이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.online/posts/project/widearth-digital-twins-platforms-at-maxst)를 참고해주세요.
 {:.note title="Korean"}
 
 * toc

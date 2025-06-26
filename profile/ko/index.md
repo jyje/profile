@@ -30,8 +30,8 @@ accent_image:
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
   <a href="/profile/ko/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
   <a href="/profile/ko/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 경력기술서</a>
-  <a href="https://app.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
-  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 노션 블로그</a>
+  <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
+  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 노션 블로그</a>
   <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 티스토리 블로그</a>
 </div>
 
@@ -128,7 +128,7 @@ accent_image:
 [Certifications]: /certifications
 [Works]: /works
 
-[Blog]: https://blog.jyje.live "My blog"
+[Blog]: https://blog.jyje.online "My blog"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
 [Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
@@ -139,7 +139,7 @@ accent_image:
 [CKS]: /certifications/cks-certified-kubernetes-security-specialist "Certified Kubernetes Security Specialist"
 [CAPA]: /certifications/capa-certified-argo-project-associate "Certified Argo Project Associate"
 
-[Demo]: https://app.jyje.live "Demo"
-[데모]: https://app.jyje.live "Demo"
-[노션 블로그]: https://blog.jyje.live "Notion Blog"
+[Demo]: https://app.jyje.online "Demo"
+[데모]: https://app.jyje.online "Demo"
+[노션 블로그]: https://blog.jyje.online "Notion Blog"
 [티스토리 블로그]: https://codingnyan.tistory.com "Tistory Blog"

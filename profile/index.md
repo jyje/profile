@@ -31,8 +31,8 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
   <a href="/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Resume</a>
   <a href="/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
-  <a href="https://app.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> Demo</a>
-  <a href="https://blog.jyje.live" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Notion Blog</a>
+  <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> Demo</a>
+  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Notion Blog</a>
   <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Tistory Blog</a>
 </div>
 
@@ -129,7 +129,7 @@ You can find more details about my projects and achievements in the following do
 [Certifications]: /certifications
 [Works]: /works
 
-[Blog]: https://blog.jyje.live "My blog"
+[Blog]: https://blog.jyje.online "My blog"
 [Hyundai Autoever]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai Autoever"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
@@ -141,7 +141,7 @@ You can find more details about my projects and achievements in the following do
 [CKS]: /certifications/cks-certified-kubernetes-security-specialist "Certified Kubernetes Security Specialist"
 [CAPA]: /certifications/capa-certified-argo-project-associate "Certified Argo Project Associate"
 
-[Demo]: https://app.jyje.live "Demo"
+[Demo]: https://app.jyje.online "Demo"
 
-[Notion Blog]: https://blog.jyje.live "Notion Blog"
+[Notion Blog]: https://blog.jyje.online "Notion Blog"
 [Tistory Blog]: https://codingnyan.tistory.com "Tistory Blog"

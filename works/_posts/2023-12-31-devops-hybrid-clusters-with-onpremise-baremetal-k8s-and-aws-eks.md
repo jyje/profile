@@ -13,7 +13,7 @@ image: /assets/img/works/286a79d6-5433-4315-9309-61f6a6235f4c.jpg
 comments: true
 ---
 
-이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.live/posts/project/devops-hybrid-clusters-at-maxst)를 참고해주세요.
+이 문서에 대한 한국어 버전은 [이 링크](https://blog.jyje.online/posts/project/devops-hybrid-clusters-at-maxst)를 참고해주세요.
 {:.note title="Korean"}
 
 * toc
