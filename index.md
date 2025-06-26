@@ -1,6 +1,6 @@
 ---
 layout: welcome
-title: jyje.live
+title: jyje.online
 cover: true
 ---
 ## Home
@@ -15,7 +15,7 @@ cover: true
 | **Social Media**  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-jyje-blue.svg?logo=linkedin)](https://www.linkedin.com/in/jyje){:.no-mark-external} [![GitHub](https://img.shields.io/badge/GitHub-jyje-green.svg?logo=github)](https://github.com/jyje){:.no-mark-external} |
 
   💼 [Profile]{:.heading.flip-title}([프로필]{:.heading.flip-title})
-/ 🚀 [Demo]{:.heading}
+/ 🚀 [Demo]{:.heading} (Unavailable Now)
 / 📝 [Posts]{:.heading.flip-title}
 / 🧑‍💻 [Works]{:.heading.flip-title}
 / 🪪 [Certifications]{:.heading.flip-title}
@@ -31,7 +31,7 @@ cover: true
 This site provides following sections:
 
 - 💼 [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects] / 🇰🇷 [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
-- 🚀 [Demo]{:.heading}: Live demo of my works (powered by raspberry pi cluster 🐳)
+- 🚀 [Demo]{:.heading}: (Unavailable Now) Live demo of my works (powered by raspberry pi cluster 🐳)
 - 📝 [Posts]{:.heading.flip-title}: All posts in this site
 - 🧑‍💻 [Works]{:.heading.flip-title}: My activities, projects
 - 🪪 [Certifications]{:.heading.flip-title}: Description of my certifications
@@ -61,7 +61,7 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 [Articles]: articles
 [Index]: indice
 [Blog]: blog
-[Demo]: https://app.jyje.live "Demo: Raspberry Pi Cluster running 24/7"
+[Demo]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 [Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 

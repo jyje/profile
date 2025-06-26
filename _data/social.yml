@@ -226,4 +226,4 @@ notion:
 demo:
   name: Demo
   icon: icon-kubernetes
-  prepend: "https://app.jyje.live"
+  prepend: "https://app.jyje.online"
