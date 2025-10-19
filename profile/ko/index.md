@@ -31,8 +31,8 @@ accent_image:
   <a href="/profile/ko/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
   <a href="/profile/ko/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 경력기술서</a>
   <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
-  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 노션 블로그</a>
-  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 티스토리 블로그</a>
+  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 블로그 1</a>
+  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 블로그 2</a>
 </div>
 
 <div style="margin-top: 5rem;">
@@ -99,8 +99,8 @@ accent_image:
 ## 📜 외부 링크
 
 - [데모]{:.heading.flip-title}: 라즈베리파이 클러스터를 통한 라이브 데모 (가끔 다운될 수 있습니다)
-- [노션 블로그]{:.heading.flip-title}: 한국어 공식 블로그. 이 사이트에 올리기 전 편집을 위한 블로그
-- [티스토리 블로그]{:.heading.flip-title}: 개인 블로그
+- [블로그 1]{:.heading.flip-title}: 한국어 공식 블로그. 이 사이트에 올리기 전 편집을 위한 블로그
+- [블로그 2]{:.heading.flip-title}: 개인 블로그
 
 ![Logo of this site](/assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
@@ -141,5 +141,5 @@ accent_image:
 
 [Demo]: https://app.jyje.online "Demo"
 [데모]: https://app.jyje.online "Demo"
-[노션 블로그]: https://blog.jyje.online "Notion Blog"
-[티스토리 블로그]: https://codingnyan.tistory.com "Tistory Blog"
+[블로그 1]: https://blog.jyje.online "Blog 1"
+[블로그 2]: https://codingnyan.tistory.com "Blog 2"
