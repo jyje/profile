@@ -319,7 +319,23 @@ publications:
 
 certificates:
   -
-    title: "🐈‍⬛ GitHub Foundations"
+    title: "� KCSA: Kubernetes and Cloud Native Security Associate"
+    organization: The Linux Foundation
+    verified: "2025-10-27"
+    expired: "2027-10-27"
+    # description: >
+    #   A credential that verifies expertise in securing Kubernetes clusters.
+    website: https://www.credly.com/badges/1206ad1c-e348-4328-934d-72e44ca434be
+  -
+    title: "🐳 KCNA: Kubernetes and Cloud Native Associate"
+    organization: The Linux Foundation
+    verified: "2025-10-22"
+    expired: "2027-10-22"
+    # description: >
+    #   A credential that verifies expertise in managing Kubernetes clusters.
+    website: https://www.credly.com/badges/759e92f0-7b3b-4788-8eff-c20ad1e2c645
+  -
+    title: "�🐈‍⬛ GitHub Foundations"
     organization: GitHub
     verified: "2024-11-20"
     expired: "2027-11-20"
