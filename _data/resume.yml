@@ -50,21 +50,21 @@ basics:
 work:
   -
     company: Hyundai AutoEver
-    position: 🧑‍💻 Senior Software Engineer [책임]
+    position: "🧑‍💻 Intermediate Software Engineer [책임, Professional]"
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
-    duration: 2 Months
+    duration: {}
     roles:
       description: >
-        AI/MLOps Engineer at Development Environment Platform Team
+        Lead AI Engineer at Development Environment Platform Team, Hyundai AutoEver
       items:
         - header: AI/LLM Platform
           content: >
-            Developing enterprise AI platforms and LLM+RAG systems for automotive domain knowledge
-        - header: MLOps
+            Developing extensible AI agents for in-house toolchains and LLMOps configuration
+        - header: Cloud-Native AI
           content: >
-            Building ML pipeline infrastructure for software defined vehicles and autonomous driving
+            Configuring cloud-native environment for generative AI
   -
     company: MAXST
     position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"

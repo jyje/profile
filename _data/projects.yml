@@ -45,11 +45,11 @@ basics:
 work:
   -
     company: Hyundai AutoEver
-    position: 🧑‍💻 Senior Software Engineer [책임]
+    position: 🧑‍💻 Intermediate Software Engineer [책임, Professional]
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
-    duration: 2 Months
+    duration: {}
     roles:
       description: >
         AI/MLOps Engineer at Development Environment Platform Team, Hyundai AutoEver
@@ -170,22 +170,42 @@ work:
 
 projects:
   -
-    position: 🤖 Untitled AI Project
+    position: "🤖 Codebeamer AI Assistant [PoC]"
     company: Hyundai AutoEver
     startDate: "2025-02-24"
-    endDate: {}
-    duration: 2 Months
+    endDate: "2025-10-30"
+    duration: 8 Months
     roles:
-      description: AI/MLOps Engineer at Development Environment Platform Team
+      description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
       items:
-        - header: AI Development
-        - header: LLMOps
+        - header: Agentic AI Development
+          content: >
+            Developed conversational Agentic AI using RAG and Tools for in-house development
+        - header: RAG
+          content: >
+            Configured knowledge base with various strategic vector stores for context augmentation
+        - header: Tool Integration
+          content: >
+            Integrated and executed with Hyundai AutoEver's toolchain using MCP tools and domain-specific tools
+    results:
+      description: >
+        AI Template Acquisition and AI Planning Direction Acquisition
+      items:
+        - header: AI Template
+          content: >
+            Concept verification project for AI full stack, knowledge base, and LLMOps for horizontal expansion of AI projects
+        - header: AI Planning
+          content: >
+            Promoted agent productization and agent factory initiatives
     skills:
-      description: Skill Stack for Project
+      description: Skill Stack for Codebeamer AI Assistant [PoC]
       items:
+        - RAG
         - LLM
         - VectorDB
-        - RAG
+        - MCP
+        - Agentic AI
+        - LLMOps
   -
     position: "🧑‍💻 Widearth: Digital Twin & AR Content Platform"
     company: Widearth, MAXST

@@ -1,7 +1,51 @@
 {% assign from_to_separator = strings.from_to_separator | default:strings.resume.from_to_separator | default:"–" %}
 {% assign present = strings.present | default:strings.resume.present | default:"present" %}
 
-<span class="from-to">
+{% comment %} Detect language from URL, page.lang, or data_file {% endcomment %}
+{% assign current_lang = 'en' %}
+{% comment %} Check URL path first (most reliable) {% endcomment %}
+{% if page.url contains '/ko/' %}
+  {% assign current_lang = 'ko' %}
+{% elsif page.lang %}
+  {% comment %} Check page.lang if set {% endcomment %}
+  {% if page.lang contains 'ko' or page.lang == 'ko' or page.lang == 'ko-KR' %}
+    {% assign current_lang = 'ko' %}
+  {% endif %}
+{% elsif page.data_file %}
+  {% comment %} Check data_file (resume-ko, projects-ko, etc.) {% endcomment %}
+  {% if page.data_file contains '-ko' %}
+    {% assign current_lang = 'ko' %}
+  {% endif %}
+{% endif %}
+
+{% comment %} Calculate duration if duration is empty or {} {% endcomment %}
+{% comment %} YAML {} is parsed as empty hash (Hash with size 0) {% endcomment %}
+{% assign duration_empty = false %}
+{% if include.duration == nil %}
+  {% assign duration_empty = true %}
+{% elsif include.duration == '' %}
+  {% assign duration_empty = true %}
+{% else %}
+  {% comment %} Check if it's an empty hash by checking if it has no keys {% endcomment %}
+  {% assign duration_keys = include.duration | keys %}
+  {% if duration_keys.size == 0 %}
+    {% assign duration_empty = true %}
+  {% endif %}
+{% endif %}
+
+{% comment %} Get threshold for year format (default: 14 months) {% endcomment %}
+{% assign duration_threshold = include.threshold | default: 14 %}
+
+{% assign calculated_duration = '' %}
+{% if duration_empty %}
+  {% if include.from.size > 0 %}
+    {% assign calculated_duration = include.from | calculate_duration: include.to, current_lang, duration_threshold %}
+  {% endif %}
+{% else %}
+  {% assign calculated_duration = include.duration %}
+{% endif %}
+
+<span class="from-to" data-duration-auto="{% if duration_empty %}true{% else %}false{% endif %}" data-start-date="{{ include.from }}" data-end-date="{% if include.to.size > 0 %}{{ include.to }}{% else %}{}{% endif %}" data-lang="{{ current_lang }}" data-threshold="{{ duration_threshold }}">
   <time datetime="{{ include.from | date_to_xmlschema }}">{{ include.from | date:include.format }}</time>
   {{from_to_separator}}
   {% if include.to.size > 0 %}
@@ -10,7 +54,7 @@
   <em>{{present}}</em>
   {% endif %}
   
-  {% if include.duration %}
-  <span class="duration">({{ include.duration }})</span>
+  {% if calculated_duration.size > 0 %}
+  <span class="duration">({{ calculated_duration }})</span>
   {% endif %}  
 </span>

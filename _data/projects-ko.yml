@@ -45,11 +45,11 @@ basics:
 work:
   -
     company: Hyundai AutoEver
-    position: "🧑‍💻 Senior Software Engineer [책임]"
+    position: "🧑‍💻 Intermediate Software Engineer [책임, Professional]"
     website: https://www.hyundai-autoever.com
     startDate: "2025-02-24"
     endDate: {}
-    duration: 2개월
+    duration: {}
     roles:
       description: >
         AI/MLOps 엔지니어 at 현대오토에버 개발환경플랫폼팀
@@ -170,22 +170,42 @@ work:
 
 projects:
   -
-    position: 🤖 무제의 AI 프로젝트
+    position: "🤖 Codebeamer AI Assistant [PoC]"
     company: 현대오토에버
     startDate: "2025-02-24"
-    endDate: {}
-    duration: 2개월
+    endDate: "2025-10-30"
+    duration: 8개월
     roles:
-      description: 개발환경플랫폼팀의 AI/MLOps 엔지니어
+      description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ RAG, Tool를 이용한 대화형 Agentic AI 개발"
       items:
-        - header: AI Development
-        - header: LLMOps
+        - header: Agentic AI 개발
+          content: >
+            RAG, Tool를 이용한 대화형 Agentic AI 자체개발
+        - header: RAG
+          content: >
+            다양한 전략의 벡터스토어 지식기반을 구성하여 문맥증강
+        - header: 도구 연동
+          content: >
+            MCP 도구, 도메인 특화 도구를 활용하여 현대오토에버 툴체인 연동, 실행
+    results:
+      description: >
+        AI 템플릿 확보 및 AI 기획 방향성 확보
+      items:
+        - header: AI 템플릿 확보
+          content: >
+            AI 프로젝트 수평확장을 위한 AI 풀스택, 지식기반, LLMOps 개념증명 프로젝트
+        - header: AI 기획 방향성
+          content: >
+            에이전트 상품화, 에이전트 팩토리 추진
     skills:
-      description: 프로젝트를 위한 기술 스택
+      description: Codebeamer AI Assistant [PoC]를 위한 기술 스택
       items:
+        - RAG
         - LLM
         - VectorDB
-        - RAG
+        - MCP
+        - Agentic AI
+        - LLMOps
   -
     position: "🧑‍💻 프로젝트 와이더스: 디지털 트윈 & AR 콘텐츠 플랫폼"
     company: 와이더스, 맥스트

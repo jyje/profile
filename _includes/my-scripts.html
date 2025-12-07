@@ -53,3 +53,90 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
   });
 </script>
 {% endcomment %}
+
+<!-- Duration auto-calculation fallback for GitHub Pages (where plugins don't work) -->
+<script>
+(function() {
+  function calculateDuration(startDate, endDate, lang, threshold) {
+    if (!startDate) return '';
+    
+    var start = new Date(startDate);
+    var end = endDate && endDate !== '{}' ? new Date(endDate) : new Date();
+    
+    if (isNaN(start.getTime()) || isNaN(end.getTime())) return '';
+    
+    var months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+    
+    // Adjust for day difference
+    if (end.getDate() < start.getDate()) {
+      months--;
+    }
+    
+    // Default threshold to 14 if not provided or invalid
+    var thresholdMonths = parseInt(threshold) || 14;
+    if (thresholdMonths <= 0) thresholdMonths = 14;
+    
+    if (lang === 'ko') {
+      if (months < thresholdMonths) {
+        return months + '개월';
+      } else {
+        var years = Math.floor(months / 12);
+        var remainingMonths = months % 12;
+        if (remainingMonths === 0) {
+          return years + '년';
+        } else {
+          return years + '년 ' + remainingMonths + '개월';
+        }
+      }
+    } else {
+      if (months < thresholdMonths) {
+        return months + ' Month' + (months !== 1 ? 's' : '');
+      } else {
+        var years = Math.floor(months / 12);
+        var remainingMonths = months % 12;
+        if (remainingMonths === 0) {
+          return years + ' Year' + (years !== 1 ? 's' : '');
+        } else {
+          return years + ' Year' + (years !== 1 ? 's' : '') + ' ' + remainingMonths + ' Month' + (remainingMonths !== 1 ? 's' : '');
+        }
+      }
+    }
+  }
+  
+  function updateDurations() {
+    var elements = document.querySelectorAll('.from-to[data-duration-auto="true"]');
+    elements.forEach(function(el) {
+      var durationSpan = el.querySelector('.duration');
+      if (!durationSpan || durationSpan.textContent.trim() === '()') {
+        var startDate = el.getAttribute('data-start-date');
+        var endDate = el.getAttribute('data-end-date');
+        var lang = el.getAttribute('data-lang') || 'en';
+        var threshold = el.getAttribute('data-threshold') || '14';
+        
+        var calculated = calculateDuration(startDate, endDate, lang, threshold);
+        if (calculated) {
+          if (!durationSpan) {
+            durationSpan = document.createElement('span');
+            durationSpan.className = 'duration';
+            el.appendChild(durationSpan);
+          }
+          durationSpan.textContent = '(' + calculated + ')';
+        }
+      }
+    });
+  }
+  
+  // Run on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateDurations);
+  } else {
+    updateDurations();
+  }
+  
+  // Run on push state load (Hydejack navigation)
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-load', updateDurations);
+  }
+})();
+</script>
