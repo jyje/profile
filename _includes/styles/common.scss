@@ -7,7 +7,9 @@
 #markdown-toc:before {
   content: "{{ site.data.strings.toc | default:'Table of Contents' }}";
 }
-.layout-resume .layout-projects-portfolio .layout-cv .note-sm:before {
+.layout-resume .note-sm:before,
+.layout-projects-portfolio .note-sm:before,
+.layout-cv .note-sm:before {
   content: "{{ site.data.strings.resume.summary | default:'Summary' }}";
 }
 

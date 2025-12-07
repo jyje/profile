@@ -29,8 +29,8 @@
     </header>
 
     <!-- {% include components/message.html class="note" text=pub.summary alt="" %} -->
-    {% if awa.summary.size > 0 %}
-      <i class="faded">{{ awa.summary }}</i>
+    {% if pub.summary.size > 0 %}
+      <i class="faded">{{ pub.summary }}</i>
     {% endif %}
   </section>
   {% if forloop.first %}</div>{% endif %}
