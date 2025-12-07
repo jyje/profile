@@ -61,9 +61,10 @@ table.no-border {
     text-shadow: none !important;
   }
 
-  // Improve link display in print
-  a[href]:not(.no-print-link)::after {
-    content: none !important; // Remove URL display for cleaner resume
+  // Link display in print - URLs are shown by default for business etiquette
+  // To hide URL for specific links, add .no-print-link class
+  a[href].no-print-link::after {
+    content: none !important;
   }
 
   // Page break controls

@@ -269,6 +269,7 @@ async function main() {
   const args = process.argv.slice(2);
   const overrides = {};
   let configPath = process.env.PDF_CONFIG || 'pdf-config.yml';
+  let targetFilter = null;
   
   args.forEach(arg => {
     if (arg.startsWith('--config=')) {
@@ -281,12 +282,29 @@ async function main() {
       overrides.baseUrl = arg.split('=')[1];
     } else if (arg.startsWith('--port=')) {
       overrides.port = parseInt(arg.split('=')[1]);
+    } else if (arg.startsWith('--targets=')) {
+      targetFilter = arg.split('=')[1].toLowerCase();
     }
   });
   
   // Load and parse configuration
   const yamlConfig = loadConfig(configPath);
   const config = parseConfig(yamlConfig, overrides);
+  
+  // Filter targets if --targets argument is provided
+  if (targetFilter) {
+    config.targets = config.targets.filter(target => {
+      const outputLower = target.output.toLowerCase();
+      const pathLower = target.path.toLowerCase();
+      return outputLower.includes(targetFilter) || pathLower.includes(targetFilter);
+    });
+    
+    if (config.targets.length === 0) {
+      console.error(`❌ No PDF targets found matching filter: ${targetFilter}`);
+      process.exit(1);
+    }
+    console.log(`🔍 Filtered to ${config.targets.length} target(s) matching "${targetFilter}"`);
+  }
   
   // Validate targets
   if (!config.targets || config.targets.length === 0) {
