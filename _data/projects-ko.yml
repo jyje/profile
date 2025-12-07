@@ -49,7 +49,6 @@ work:
     website: https://www.hyundai-autoever.com
     startDate: "2025-02-24"
     endDate: {}
-    duration: {}
     roles:
       description: >
         AI/MLOps 엔지니어 at 현대오토에버 개발환경플랫폼팀
@@ -66,7 +65,6 @@ work:
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2024-10-31"
-    duration: 3년 10개월
     roles:
       description: >
         리드 MLOps/DevOps 엔지니어 at 맥스트 기술사업부
@@ -129,7 +127,6 @@ work:
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-03-01"
     endDate: "2020-08-28"
-    duration: 8년 6개월
     roles:
       description: >
         통합박사과정 at 포항공과대학교 전기전자공학과
@@ -174,7 +171,6 @@ projects:
     company: 현대오토에버
     startDate: "2025-02-24"
     endDate: "2025-10-30"
-    duration: 8개월
     roles:
       description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ RAG, Tool를 이용한 대화형 Agentic AI 개발"
       items:
@@ -212,7 +208,6 @@ projects:
     website: https://widearth.world
     startDate: "2024-01-01"
     endDate: "2024-10-31"
-    duration: 10 개월
     roles:
       description: "리드 ML/Infra 담당 ~ MLOps/DevOps + ML Backend + SRE [기여도 75%]"
       items:
@@ -255,7 +250,6 @@ projects:
     website: https://maxst.com
     startDate: "2024-01-01"
     endDate: "2024-06-30"
-    duration: 6 개월
     roles:
       description: "리드 MLOps 담당 ~ 기획 + VoC + ML Workloads/Infra + PoC + 운영 [기여도 90%]"
       items:
@@ -305,7 +299,6 @@ projects:
     website: https://maxst.com
     startDate: "2022-12-01"
     endDate: "2023-12-31"
-    duration: 13 개월
     roles:
       description: "DevOps 실무 담당 ~ 하이브리드 클러스터 개발 + CI/CD, 챗봇, 데이터 파이프라인 개발/운영 [기여도 50%]"
       items:
@@ -351,7 +344,6 @@ projects:
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2022-12-31"
-    duration: 2 년
     roles:
       description: 연구원 ~ 디지털 트윈 시스템을 위한 알고리즘 개발 및 프로토타이핑 [기여도 50%]
       items:
@@ -392,7 +384,6 @@ projects:
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
-    duration: "8 년"
     roles:
       description: "대학원생 연구원 ~ 카메라 기반 컴퓨터 비전 및 자동차 기술 연구/개발 [full-time]"
       items:

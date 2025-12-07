@@ -54,7 +54,6 @@ work:
     website: https://www.hyundai-autoever.com
     startDate: "2025-02-24"
     endDate: {}
-    duration: {}
     roles:
       description: >
         개발환경플랫폼팀 리드 AI 엔지니어 at 현대오토에버
@@ -71,7 +70,6 @@ work:
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2024-10-31"
-    duration: 3년 10개월
     roles:
       description: >
         리드 MLOps/DevOps 엔지니어 at 맥스트 기술사업부
@@ -91,7 +89,6 @@ work:
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-03-01"
     endDate: "2020-08-28"
-    duration: 8년 6개월
     roles:
       description: >
         통합박사과정 at 포항공과대학교 전기전자공학과

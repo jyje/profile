@@ -49,7 +49,6 @@ work:
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
-    duration: {}
     roles:
       description: >
         AI/MLOps Engineer at Development Environment Platform Team, Hyundai AutoEver
@@ -66,7 +65,6 @@ work:
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2024-10-31"
-    duration: 3 Years and 10 Months
     roles:
       description: >
         Lead MLOps/DevOps Engineer at Technology Division, MAXST
@@ -129,7 +127,6 @@ work:
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-03-01"
     endDate: "2020-08-28"
-    duration: 8 Years and 6 Months
     roles:
       description: >
         Ph.D Integrated Student at Department of Electrical Engineering, POSTECH
@@ -174,7 +171,6 @@ projects:
     company: Hyundai AutoEver
     startDate: "2025-02-24"
     endDate: "2025-10-30"
-    duration: 8 Months
     roles:
       description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
       items:
@@ -212,7 +208,6 @@ projects:
     website: https://widearth.world
     startDate: "2024-01-01"
     endDate: "2024-10-31"
-    duration: 10 Months
     roles:
       description: "Lead ML/Infra Roles ~ MLOps/DevOps + ML Backend + SRE [contrib 75%]"
       items:
@@ -255,7 +250,6 @@ projects:
     website: https://maxst.com/ENG/main
     startDate: "2024-01-01"
     endDate: "2024-06-30"
-    duration: 6 Months
     roles:
       description: "Lead MLOps Engineer ~ Planning + VoC + PoC + ML Workloads/Infra + Operation [contrib 90%]"
       items:
@@ -305,7 +299,6 @@ projects:
     website: https://maxst.com/ENG/main
     startDate: "2022-12-01"
     endDate: "2023-12-31"
-    duration: 13 Months
     roles:
       description: "DevOps Engineer ~ Hybrid Clusters + CI/CD + Chatbot + Data Pipelines [contrib 50%]"
       items:
@@ -351,7 +344,6 @@ projects:
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2022-12-31"
-    duration: 2 years
     roles:
       description: Associate Researcher ~ Algorithm research for digital twin systems and prototyping [contrib 50%]
       items:
@@ -392,7 +384,6 @@ projects:
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
     endDate: "2020-08-27"
-    duration: "8 Years"
     roles:
       description: "Graduate Student Researcher ~ Computer Vision and ADAS Research [full-time]"
       items:

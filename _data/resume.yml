@@ -54,7 +54,6 @@ work:
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
-    duration: {}
     roles:
       description: >
         Lead AI Engineer at Development Environment Platform Team, Hyundai AutoEver
@@ -71,7 +70,6 @@ work:
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2024-10-31"
-    duration: 3 Years and 10 Months
     roles:
       description: >
         Lead MLOps/DevOps Engineer at Technology Division, MAXST
@@ -91,7 +89,6 @@ work:
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-03-01"
     endDate: "2020-08-28"
-    duration: 8 Years and 6 Months
     roles:
       description: >
         Ph.D Integrated Student at Department of Electrical Engineering, POSTECH
