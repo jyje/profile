@@ -70,6 +70,7 @@ Thank you for visiting my site. If you have any questions or want to contact me,
 
 <!-- 🧑‍💻 Set-up and Run -->
 
+<!-- bundle config set --local path 'vendor/bundle' -->
 <!-- bundle install -->
 <!-- bundle update --bundler -->
 <!-- bundle exec jekyll serve --force_polling --livereload -->

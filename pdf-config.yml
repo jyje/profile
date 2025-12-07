@@ -1,0 +1,57 @@
+# PDF Generation Configuration
+# This file configures the PDF generation script (scripts/generate-pdf.js)
+# 
+# To generate PDFs locally:
+#   1. bundle exec jekyll build
+#   2. npx playwright install chromium
+#   3. npm run generate-pdf
+
+# PDF targets to generate
+# Each target specifies a page to convert to PDF
+targets:
+  - path: /profile/resume
+    output: jyje-resume-en.pdf
+    title: "Resume - Jeayoung Jeon"
+    
+  - path: /profile/ko/resume
+    output: jyje-resume-ko.pdf
+    title: "이력서 - 전제영"
+    
+  - path: /profile/projects
+    output: jyje-projects-en.pdf
+    title: "Projects - Jeayoung Jeon"
+    
+  - path: /profile/ko/projects
+    output: jyje-projects-ko.pdf
+    title: "프로젝트 포트폴리오 - 전제영"
+
+# PDF output options (Playwright page.pdf() options)
+# See: https://playwright.dev/docs/api/class-page#page-pdf
+pdf_options:
+  format: A4
+  print_background: true
+  prefer_css_page_size: true
+  display_header_footer: false
+  margin:
+    top: 16mm
+    right: 16mm
+    bottom: 16mm
+    left: 16mm
+
+# Browser viewport for rendering
+viewport:
+  width: 1200
+  height: 800
+  device_scale_factor: 2  # Higher quality rendering
+
+# Timeout settings (in milliseconds)
+timeout:
+  navigation: 30000  # Page navigation timeout
+  fonts: 5000        # Font loading timeout
+  network: 3000      # Network idle timeout
+  render: 2000       # Extra rendering time
+
+# Server settings (for local PDF generation)
+server:
+  port: 8080
+

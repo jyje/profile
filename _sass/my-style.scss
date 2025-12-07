@@ -19,3 +19,153 @@ table.no-border {
     border: none!important;
  }
 }
+
+// =============================================================================
+// Print Styles for PDF Generation
+// =============================================================================
+// These styles override Hydejack's default print styles for better PDF output
+
+@media print {
+  // Ensure Korean fonts are properly loaded and applied
+  html, body {
+    font-family: 'Pretendard', 'Noto Sans KR', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  // Hide unnecessary elements for PDF
+  .sidebar,
+  .menu-btn,
+  .nav-btn,
+  .search-input,
+  .giscus,
+  .footer-col,
+  #comments,
+  .screen-only,
+  .no-print {
+    display: none !important;
+  }
+
+  // Ensure content fills the page
+  .content {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  // Remove shadows and backgrounds for cleaner print
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  // Improve link display in print
+  a[href]:not(.no-print-link)::after {
+    content: none !important; // Remove URL display for cleaner resume
+  }
+
+  // Page break controls
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid-page;
+  }
+
+  section, article, .work-item, .education-item {
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+  }
+}
+
+// Resume/CV specific print styles - Higher specificity to override _resume.scss
+// Using body prefix for higher specificity than .layout-resume alone
+@media print {
+  body .layout-resume,
+  body .layout-projects-portfolio,
+  body .layout-cv {
+    // Compact spacing for print
+    section {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    ul {
+      margin-bottom: 0.5rem;
+    }
+
+    // Contact section adjustments
+    .contact {
+      margin-top: 1rem;
+    }
+
+    // Avatar size for print
+    .avatar {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    // =========================================================================
+    // Tag styles with hardcoded colors for reliable print rendering
+    // Using !important and high specificity to override _resume.scss print styles
+    // =========================================================================
+
+    // Work result tags (blue background)
+    .work-header-result {
+      background-color: #103B58 !important;
+      color: #ffffff !important;
+      border: 1px solid #103B58 !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    // Work role tags (maroon/accent background)
+    .work-header-role {
+      background-color: #680C2C !important;
+      color: #ffffff !important;
+      border: 1px solid #680C2C !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    // Work skill tags (border only)
+    .work-header-skill {
+      background-color: transparent !important;
+      color: #333333 !important;
+      border: 1px solid #666666 !important;
+    }
+
+    // Skill tags (regular)
+    .skill-tag {
+      background-color: transparent !important;
+      color: #333333 !important;
+      border: 1px solid #cccccc !important;
+    }
+
+    // Highlighted skill tags (maroon/accent background) - Override _resume.scss
+    .skill-tag-highlight {
+      background-color: #680C2C !important;
+      color: #ffffff !important;
+      border: 1px solid #680C2C !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    // Soft skill tags (gray background)
+    .skill-tag-soft {
+      background-color: #666666 !important;
+      color: #ffffff !important;
+      border: 1px solid #666666 !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+  }
+}
+
+// Force color printing (for colored tags and backgrounds)
+@media print {
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}

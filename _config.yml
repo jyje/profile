@@ -367,6 +367,8 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - scripts
 include:
   - .well-known
   - LICENSE.md
