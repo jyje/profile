@@ -459,17 +459,20 @@ education:
     #   - Finite Programmable Gate Array (FPGA)
 
 skills:
-  - name: MLOps & LLMOps
+  -
+    name: GenAI & LLMOps
     keywords:
-      - Ollama*
-      - OpenAI API*
+      - Public/On-Premise LLM*
       - RAG*
-      - AutoRAG*
+      - MCP*
+      - Agentic AI*
+  -
+    name: MLOps
+    keywords:
       - Kubeflow*
       - AutoML Katib*
       - Training Operator*
       - JupyterHub*
-      - Data Pipelines*
   -
     name: DevOps & SRE
     keywords:
@@ -491,6 +494,7 @@ skills:
     keywords:
       - Argo Projects*
       - Bitbucket Pipelines*
+      - GitLab CI*
       - GitHub Actions*
       - Self-Hosted Runner*
       - Kaniko
@@ -501,6 +505,7 @@ skills:
     name: ML Backend
     keywords:
       - Python/FastAPI*
+      - Python/LangGraph*
       - Ollama*
       - Milvus*
       - PostgreSQL*
@@ -519,15 +524,11 @@ skills:
       - Slackbot*
       - Python/FastUI*
       - Open WebUI*
-      - Chainlit*
+      - Vercel AI SDK*
       - .NET/MAUI*
       - .NET/WPF
       - Unity
-  -
-    name: FinOps & BizOps
-    keywords:
-      - Kubecost
-      - Continuous BI
+
   -
     name: Programming languages
     keywords:
