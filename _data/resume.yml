@@ -252,21 +252,21 @@ skills:
 #       - "Awarded 'Teacher of the Month'"
 
 awards:
-  - 
-    title: "🏅 Altera Design Contest 2014, Excellence Prize"
-    date: "2014-05-01"
-    awarder: "Intel-Altera Korea"
-    summary: "[System] FPGA, Vision-Based Driver Support Navigation System"
+  # - 
+  #   title: "🏅 Altera Design Contest 2014, Excellence Prize"
+  #   date: "2014-05-01"
+  #   awarder: "Intel-Altera Korea"
+  #   summary: "[System] FPGA, Vision-Based Driver Support Navigation System"
   - 
     title: "🏅 Best Poster Session in Workshop"
     date: "2014-05-01"
     awarder: "KYUTECH-POSTECH Joint Workshop"
     summary: "[Poster] Iterative Polygon Detection using Harris Corner Space Method for Finding Traffic Signs"
-  -
-    title: "🥈 Altera Design Contest 2013, 2nd Prize"
-    date: "2013-05-01"
-    awarder: "Intel-Altera Korea"
-    summary: "[System] FPGA, Vision-Based Traffic Sign Recognition System"
+  # -
+  #   title: "🥈 Altera Design Contest 2013, 2nd Prize"
+  #   date: "2013-05-01"
+  #   awarder: "Intel-Altera Korea"
+  #   summary: "[System] FPGA, Vision-Based Traffic Sign Recognition System"
   -
     title: "🏅 Highest Honors in Undergraduate School"
     date: "2012-02-28"
@@ -334,14 +334,14 @@ certificates:
     # description: >
     #   A credential that verifies expertise in managing Kubernetes clusters.
     website: https://www.credly.com/badges/759e92f0-7b3b-4788-8eff-c20ad1e2c645
-  -
-    title: "🐈‍⬛ GitHub Foundations"
-    organization: GitHub
-    verified: "2024-11-20"
-    expired: "2027-11-20"
-    # description: >
-    #   A credential that verifies expertise in version control and collaboration tools using GitHub.
-    website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
+  # -
+  #   title: "🐈‍⬛ GitHub Foundations"
+  #   organization: GitHub
+  #   verified: "2024-11-20"
+  #   expired: "2027-11-20"
+  #   # description: >
+  #   #   A credential that verifies expertise in version control and collaboration tools using GitHub.
+  #   website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
   -
     title: "🐙 CAPA: Certified Argo Project Associate"
     organization: The Linux Foundation
