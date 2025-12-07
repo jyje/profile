@@ -160,7 +160,19 @@ table.no-border {
       print-color-adjust: exact !important;
       -webkit-print-color-adjust: exact !important;
     }
+
+    // Roles heading - bold emphasis for PDF
+    .roles-heading {
+      font-weight: 700 !important;
+      font-size: 1em !important;
+    }
   }
+}
+
+// Roles heading - bold emphasis for screen and print
+.roles-heading {
+  font-weight: 700;
+  font-size: 1em;
 }
 
 // Force color printing (for colored tags and backgrounds)
