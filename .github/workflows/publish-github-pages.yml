@@ -41,7 +41,7 @@ jobs:
       pdf_needed: ${{ steps.check-pdf.outputs.pdf_needed }}
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         fetch-depth: 2  # Needed for file change detection
 
@@ -108,7 +108,7 @@ jobs:
         bundle install --no-cache
 
     - name: Setup Node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
         node-version: "20"
         cache: 'npm'
@@ -157,7 +157,7 @@ jobs:
         find _site/assets -type f | head -20
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
       with:
         path: _site
 
