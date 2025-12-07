@@ -125,6 +125,7 @@ table.no-border {
       background-color: #680C2C !important;
       color: #ffffff !important;
       border: 1px solid #680C2C !important;
+      font-weight: 700 !important;
       print-color-adjust: exact !important;
       -webkit-print-color-adjust: exact !important;
     }
@@ -161,18 +162,12 @@ table.no-border {
       -webkit-print-color-adjust: exact !important;
     }
 
-    // Roles heading - bold emphasis for PDF
-    .roles-heading {
-      font-weight: 700 !important;
-      font-size: 1em !important;
-    }
   }
 }
 
-// Roles heading - bold emphasis for screen and print
-.roles-heading {
-  font-weight: 700;
-  font-size: 1em;
+// Work role header tags - bold emphasis for screen and print
+.work-header-role {
+  font-weight: 700 !important;
 }
 
 // Force color printing (for colored tags and backgrounds)

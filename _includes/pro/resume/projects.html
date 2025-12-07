@@ -43,9 +43,9 @@
     {% if project.roles.description or project.roles.items.size > 0 %}
     <!-- <div class="work-hr"></div> -->
     <div class="tiny">
-      <strong class="roles-heading">
+      <b>
         {{ strings.resume.roles | default:"Roles" }}{% if project.roles.description %}{{ site.data.strings.colon }} {{ project.roles.description }}{% endif %}
-      </strong>
+      </b>
       <ul class="work">
         {% for role_item in project.roles.items %}
           <li>
