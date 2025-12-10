@@ -19,6 +19,7 @@ accent_image:
 저는 서울,경기에서 활동하는 소프트웨어 엔지니어 [전제영(Jeayoung Jeon)]{:.heading.flip-title} 입니다.
 
 - 🧑‍💻 저는 MLOps/DevOps 와 AI 엔지니어링의 전문성을 가지고 있습니다. 
+    - 현재 **AI/MLOps 엔지니어**로 차량 분야의 ICT 기업인 [현대오토에버]{:.heading.flip-title}에서 근무하고 있습니다.
     - **AR/디지털 트윈** 전문 기업 [MAXST]{:.heading.flip-title}에서 **MLOps/DevOps 엔지니어**로 근무했습니다.
     - 학교에서 연구원으로 컴퓨터 비전, 자율주행 및 AI 연구를 다수 진행했습니다.
 - 💼 이 사이트는 저의 공식 프로필 입니다.
