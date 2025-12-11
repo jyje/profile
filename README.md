@@ -27,8 +27,14 @@ Personal portfolio website powered by Jekyll with Hydejack theme.
 # Install Ruby dependencies
 bundle install
 
+# Update dependencies
+bundle update --bundler
+
 # Install Node.js dependencies
 npm install
+
+# Update Node.js dependencies
+npm update
 
 # Start local development server
 bundle exec jekyll serve --force_polling --livereload

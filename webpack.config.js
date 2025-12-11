@@ -2,7 +2,6 @@ const { readFileSync } = require("fs");
 const { resolve } = require("path");
 
 const { BannerPlugin, EnvironmentPlugin } = require("webpack");
-const WorkerPlugin = require('worker-plugin');
 
 const { merge } = require("webpack-merge");
 const { argv: { mode } } = require("yargs");
@@ -19,7 +18,6 @@ const envConfig = (() => {
       return {
         devtool: false,
         plugins: [
-          new WorkerPlugin({ globalObject: 'self' }),
           new BannerPlugin({ banner, raw: true }),
           new EnvironmentPlugin({
             DEBUG: false,
@@ -33,7 +31,6 @@ const envConfig = (() => {
       return {
         devtool: "source-map",
         plugins: [
-          new WorkerPlugin({ globalObject: 'self' }),
           new EnvironmentPlugin({
             DEBUG: true,
             ASSET_PATH,
@@ -94,6 +91,17 @@ const sharedConfig = {
     ],
     extensions: [".json", ".js"],
     symlinks: true,
+    fallback: {
+      path: require.resolve("path-browserify"),
+    },
+  },
+  module: {
+    rules: [{
+      test: /\.m?js$/,
+      resolve: {
+        fullySpecified: false,
+      },
+    }],
   },
   optimization: {
     splitChunks: {
