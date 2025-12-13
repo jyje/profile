@@ -1,157 +1,159 @@
+# frozen_string_literal: true
+
 # Jekyll plugin to set created_at and updated_at dates from Git commits
 # Sets post.created_at and post.updated_at based on Git commit history
 # Does NOT modify post.date (designated date)
+#
+# Similar to jekyll-last-modified-at but adds created_at (first commit date)
 
 require 'date'
 require 'open3'
 
 module Jekyll
-  class GitDateGenerator < Generator
-    safe true
-    priority :lowest
+  module GitDate
+    # Cache for git dates to avoid repeated git calls
+    PATH_CACHE = {}
+    REPO_CACHE = {}
 
-    def generate(site)
-      config = site.config['git_date'] || {}
-      return unless config.fetch('enabled', true)
+    class Determinator
+      attr_reader :site_source, :page_path, :type
 
-      use_git = config.fetch('use_git', true)
-      fallback_to_filesystem = config.fetch('fallback_to_filesystem', true)
-      collections = config.fetch('collections', ['posts', 'works', 'certifications', 'articles'])
-
-      collections.each do |collection_name|
-        collection = site.collections[collection_name]
-        next unless collection
-
-        collection.docs.each do |doc|
-          set_git_dates(doc, use_git, fallback_to_filesystem)
-        end
+      def initialize(site_source, page_path, type)
+        @site_source = site_source
+        @page_path = page_path
+        @type = type # :created or :updated
       end
 
-      # Also process regular posts
-      site.posts.docs.each do |post|
-        set_git_dates(post, use_git, fallback_to_filesystem)
-      end
-    end
-
-    private
-
-    def set_git_dates(doc, use_git, fallback_to_filesystem)
-      file_path = doc.path
-
-      if use_git
-        created_at = get_git_first_commit_date(file_path)
-        updated_at = get_git_last_commit_date(file_path)
-      else
-        created_at = nil
-        updated_at = nil
+      def to_s
+        to_time.strftime('%Y-%m-%d %H:%M:%S %z')
       end
 
-      # Fallback to filesystem dates if Git failed or use_git is false
-      if fallback_to_filesystem
-        if created_at.nil?
-          created_at = get_filesystem_created_date(file_path)
-        end
-        if updated_at.nil?
-          updated_at = get_filesystem_modified_date(file_path)
-        end
+      def to_time
+        @time ||= determine_time
       end
 
-      # Set the dates if we have them
-      doc.data['created_at'] = created_at if created_at
-      doc.data['updated_at'] = updated_at if updated_at
-    end
-
-    def get_git_first_commit_date(file_path)
-      # Get the first commit date for this file
-      # Using --follow to track file renames
-      # Using --reverse to get oldest first
-      cmd = "git log --format='%ai' --follow --reverse -- '#{file_path}' | head -1"
-      
-      begin
-        output, status = Open3.capture2e(cmd)
-        if status.success? && !output.strip.empty?
-          date_str = output.strip
-          return parse_date(date_str)
-        end
-      rescue => e
-        Jekyll.logger.warn "GitDateGenerator:", "Failed to get first commit date for #{file_path}: #{e.message}"
+      def to_liquid
+        to_time
       end
-      
-      nil
-    end
 
-    def get_git_last_commit_date(file_path)
-      # Get the last commit date for this file
-      # Using --follow to track file renames
-      cmd = "git log --format='%ai' --follow -- '#{file_path}' | head -1"
-      
-      begin
-        output, status = Open3.capture2e(cmd)
-        if status.success? && !output.strip.empty?
-          date_str = output.strip
-          return parse_date(date_str)
-        end
-      rescue => e
-        Jekyll.logger.warn "GitDateGenerator:", "Failed to get last commit date for #{file_path}: #{e.message}"
+      private
+
+      def determine_time
+        cache_key = "#{page_path}:#{type}"
+        return PATH_CACHE[cache_key] if PATH_CACHE.key?(cache_key)
+
+        time = if type == :created
+                 git_first_commit_time || file_birthtime
+               else
+                 git_last_commit_time || file_mtime
+               end
+
+        PATH_CACHE[cache_key] = time
+        time
       end
-      
-      nil
-    end
 
-    def get_filesystem_created_date(file_path)
-      return nil unless File.exist?(file_path)
-      
-      begin
-        # Get file creation time (birth time)
-        stat = File.stat(file_path)
-        # On some systems, birthtime might not be available
-        created_time = stat.respond_to?(:birthtime) ? stat.birthtime : stat.mtime
-        return created_time
-      rescue => e
-        Jekyll.logger.warn "GitDateGenerator:", "Failed to get filesystem created date for #{file_path}: #{e.message}"
+      def git_first_commit_time
+        return nil unless git_repo?
+
+        output = execute_git_command('--reverse')
+        parse_git_output(output)
       end
-      
-      nil
-    end
 
-    def get_filesystem_modified_date(file_path)
-      return nil unless File.exist?(file_path)
-      
-      begin
-        stat = File.stat(file_path)
-        return stat.mtime
-      rescue => e
-        Jekyll.logger.warn "GitDateGenerator:", "Failed to get filesystem modified date for #{file_path}: #{e.message}"
+      def git_last_commit_time
+        return nil unless git_repo?
+
+        output = execute_git_command('')
+        parse_git_output(output)
       end
-      
-      nil
-    end
 
-    def parse_date(date_str)
-      # Parse ISO 8601 format: "2025-02-07 01:36:25 +0900"
-      # Try multiple date formats
-      formats = [
-        '%Y-%m-%d %H:%M:%S %z',  # ISO 8601 with timezone
-        '%Y-%m-%d %H:%M:%S',     # ISO 8601 without timezone
-        '%Y-%m-%d',              # Date only
-      ]
-
-      formats.each do |format|
+      def execute_git_command(extra_args)
+        abs_path = File.expand_path(page_path)
+        rel_path = abs_path.sub(site_source + '/', '')
+        
+        cmd = "cd '#{site_source}' && git log --format='%ai' --follow #{extra_args} -- '#{rel_path}' 2>/dev/null | head -1"
+        
         begin
-          return DateTime.strptime(date_str, format).to_time
+          output, status = Open3.capture2e(cmd)
+          return output.strip if status.success? && !output.strip.empty?
+        rescue => e
+          Jekyll.logger.warn "GitDate:", "Git command failed: #{e.message}"
+        end
+        nil
+      end
+
+      def parse_git_output(output)
+        return nil if output.nil? || output.empty?
+
+        begin
+          DateTime.strptime(output, '%Y-%m-%d %H:%M:%S %z').to_time
         rescue ArgumentError
-          next
+          begin
+            DateTime.parse(output).to_time
+          rescue => e
+            Jekyll.logger.warn "GitDate:", "Failed to parse date: #{output}"
+            nil
+          end
         end
       end
 
-      # Fallback to standard parsing
-      begin
-        return DateTime.parse(date_str).to_time
-      rescue => e
-        Jekyll.logger.warn "GitDateGenerator:", "Failed to parse date: #{date_str}"
-        return nil
+      def git_repo?
+        return REPO_CACHE[site_source] if REPO_CACHE.key?(site_source)
+        
+        REPO_CACHE[site_source] = File.exist?(File.join(site_source, '.git'))
+        REPO_CACHE[site_source]
       end
+
+      def file_birthtime
+        return nil unless File.exist?(page_path)
+        
+        stat = File.stat(page_path)
+        stat.respond_to?(:birthtime) ? stat.birthtime : stat.mtime
+      rescue => e
+        nil
+      end
+
+      def file_mtime
+        return nil unless File.exist?(page_path)
+        
+        File.stat(page_path).mtime
+      rescue => e
+        nil
+      end
+    end
+
+    module Hook
+      class << self
+        def add_git_dates_proc
+          proc { |item|
+            config = item.site.config['git_date'] || {}
+            next unless config.fetch('enabled', true)
+
+            collections = config.fetch('collections', ['posts', 'works', 'certifications', 'articles'])
+            
+            # Check if this item is in a target collection
+            collection_label = item.respond_to?(:collection) ? item.collection&.label : nil
+            next unless collection_label.nil? || collections.include?(collection_label)
+
+            site_source = item.site.source
+            page_path = item.path
+
+            # Set created_at if not already set
+            unless item.data.key?('created_at')
+              item.data['created_at'] = Determinator.new(site_source, page_path, :created)
+            end
+
+            # Set updated_at if not already set
+            unless item.data.key?('updated_at')
+              item.data['updated_at'] = Determinator.new(site_source, page_path, :updated)
+            end
+          }
+        end
+      end
+
+      # Register hooks at module load time (like jekyll-last-modified-at)
+      Jekyll::Hooks.register(:posts, :post_init, &Hook.add_git_dates_proc)
+      Jekyll::Hooks.register(:pages, :post_init, &Hook.add_git_dates_proc)
+      Jekyll::Hooks.register(:documents, :post_init, &Hook.add_git_dates_proc)
     end
   end
 end
-
