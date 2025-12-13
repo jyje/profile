@@ -21,7 +21,7 @@ comments: true
 
 The Kubernetes and Cloud Native Associate (KCNA) certification validates foundational knowledge of Kubernetes and the broader cloud native ecosystem. Created by the Cloud Native Computing Foundation (CNCF) in collaboration with The Linux Foundation, KCNA is designed for individuals who want to demonstrate their understanding of cloud native technologies and Kubernetes fundamentals.
 
-The KCNA exam is a proctored, online test that consists of 60 multiple-choice questions to be completed within 90 minutes. A passing score of 75% is required, and the certification is valid for 2 years. The exam covers:
+The KCNA exam is a proctored, online test that consists of 60 four-choice multiple-choice questions to be completed within 90 minutes. All questions are theoretical and there are no hands-on tasks. A passing score of 75% is required, and the certification is valid for 2 years. The exam covers:
 
 - **Kubernetes Fundamentals**: 46% - Core concepts, architecture, and basic operations
 - **Container Orchestration**: 22% - Container concepts, orchestration principles, and container runtimes
@@ -40,14 +40,14 @@ My KCNA certification 2025. Issued on October 22, 2025. Expires on October 22, 2
 
 I took the KCNA exam on October 22, 2025, and passed it successfully. Coming from hands-on experience with Kubernetes through my CKA and CKAD certifications, I found the KCNA exam to be a good way to validate and systematize my theoretical understanding of the cloud native ecosystem.
 
-The exam format differs significantly from hands-on certifications:
-- Multiple-choice questions rather than command-line tasks
+The exam format consists entirely of four-choice multiple-choice questions with no hands-on components:
+- All 60 questions are theoretical multiple-choice questions (no command-line tasks)
 - Focus on concepts and principles rather than practical implementation
 - Covers broader cloud native topics beyond just Kubernetes
 
 The questions tested knowledge across the entire cloud native landscape, including CNCF projects, cloud native architectures, observability tools, and application delivery practices. While my practical experience with Kubernetes was helpful, the exam required a broader understanding of the ecosystem.
 
-To aid my preparation, I enrolled in the [Kubernetes and Cloud-Native Associate (KCNA)](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna) course on KodeKloud, taught by Mumshad Mannambeth. I bougth basic plan on KodeKloud to access this course (Pro plan is not necessary). This comprehensive 9 hour course covered all exam domains including cloud-native architecture, container orchestration, Kubernetes fundamentals, application delivery, and observability. The course's interactive quizzes and mock exams were particularly valuable for reinforcing concepts and preparing for the actual exam format. If you are familar with Kubernetes, It actually takes 1 week to complete this course. The structured learning path helped me systematically build knowledge across the entire cloud native ecosystem.
+To aid my preparation, I enrolled in the [Kubernetes and Cloud-Native Associate (KCNA)](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna) course on KodeKloud, taught by Mumshad Mannambeth. I bougth basic plan on KodeKloud to access this course (Pro plan is not necessary). This comprehensive 9 hour course covered all exam domains including cloud-native architecture, container orchestration, Kubernetes fundamentals, application delivery, and observability. While KodeKloud provides hands-on lab environments for practice, the actual KCNA exam consists entirely of four-choice multiple-choice questions with no hands-on components. The course's interactive quizzes and mock exams were particularly valuable for reinforcing concepts and preparing for the actual exam format. If you are familar with Kubernetes, It actually takes 1 week to complete this course. The structured learning path helped me systematically build knowledge across the entire cloud native ecosystem.
 
 
 ## 3. Tips for Exam Preparation
@@ -61,8 +61,8 @@ Based on my experience, here are some important tips for those preparing for the
 
 **Study Strategy:**
 - If you're already familiar with Kubernetes (e.g., from CKA/CKAD), the KodeKloud course can be completed in about 1 week
-- Focus on understanding the "why" and "what" rather than just the "how" - KCNA tests conceptual knowledge
-- Practice with mock exams to get comfortable with the multiple-choice format
+- Focus on understanding the "why" and "what" rather than just the "how" - KCNA tests conceptual knowledge through four-choice multiple-choice questions only
+- Practice with mock exams to get comfortable with the multiple-choice format (remember: no hands-on tasks on the actual exam)
 - Review CNCF project documentation to understand each project's role in the cloud native ecosystem
 
 **Important Reminder:**
