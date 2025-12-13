@@ -16,7 +16,27 @@
       {% capture foobar %}
         {%- unless site.hydejack.hide_dates -%}
           {%- assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" -%}
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
+          {%- assign created_label = site.data.strings.created_at | default:"Created" -%}
+          {%- assign updated_label = site.data.strings.updated_at | default:"Updated" -%}
+          {%- if post.created_at and post.updated_at -%}
+            {%- capture tooltip_content -%}
+              {{ created_label }}{{ site.data.strings.colon }} {{ post.created_at | date:"%Y-%m-%d" }}<br/>
+              {{ updated_label }}{{ site.data.strings.colon }} {{ post.updated_at | date:"%Y-%m-%d" }}
+            {%- endcapture -%}
+            <time datetime="{{ post.date | date_to_xmlschema }}" data-tippy-content="{{ tooltip_content | strip }}">{{ post.date | date:post_format }}</time>
+          {%- elsif post.created_at -%}
+            {%- capture tooltip_content -%}
+              {{ created_label }}{{ site.data.strings.colon }} {{ post.created_at | date:"%Y-%m-%d" }}
+            {%- endcapture -%}
+            <time datetime="{{ post.date | date_to_xmlschema }}" data-tippy-content="{{ tooltip_content | strip }}">{{ post.date | date:post_format }}</time>
+          {%- elsif post.updated_at -%}
+            {%- capture tooltip_content -%}
+              {{ updated_label }}{{ site.data.strings.colon }} {{ post.updated_at | date:"%Y-%m-%d" }}
+            {%- endcapture -%}
+            <time datetime="{{ post.date | date_to_xmlschema }}" data-tippy-content="{{ tooltip_content | strip }}">{{ post.date | date:post_format }}</time>
+          {%- else -%}
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
+          {%- endif -%}
         {%- else -%}
           {{- site.data.strings.posted | default:"Posted" -}}
         {%- endunless -%}

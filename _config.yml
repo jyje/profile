@@ -424,6 +424,12 @@ plugins:
 
 # Plugin Configs
 # ---------------------------------------------------------------------------------------
+git_date:
+  enabled:                true
+  collections:            [posts, works, certifications, articles]
+  use_git:                true  # Use Git commit dates (false to use filesystem dates only)
+  fallback_to_filesystem: true  # Fallback to filesystem dates if Git fails
+
 optional_front_matter:
   remove_originals:    true
 
