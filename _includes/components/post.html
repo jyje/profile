@@ -13,34 +13,14 @@
     </h1>
 
     <div class="post-date">
+      {%- assign created_label = site.data.strings.created_at | default:"Created" -%}
+      {%- assign updated_label = site.data.strings.updated_at | default:"Updated" -%}
+      {%- assign created_at = post.created_at -%}
+      {%- assign updated_at = post.updated_at -%}
       {% capture foobar %}
         {%- unless site.hydejack.hide_dates -%}
           {%- assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" -%}
-          {%- assign created_label = site.data.strings.created_at | default:"Created" -%}
-          {%- assign updated_label = site.data.strings.updated_at | default:"Updated" -%}
-          {%- comment -%}Access created_at and updated_at (set by git_date_generator plugin in post.data){%- endcomment -%}
-          {%- comment -%}Jekyll exposes doc.data keys as direct attributes, so post.data.created_at becomes post.created_at{%- endcomment -%}
-          {%- assign created_at = post.created_at -%}
-          {%- assign updated_at = post.updated_at -%}
-          {%- if created_at and updated_at -%}
-            {%- capture tooltip_content -%}
-              {{ created_label }}{{ site.data.strings.colon }} {{ created_at | date:"%Y-%m-%d" }}<br/>
-              {{ updated_label }}{{ site.data.strings.colon }} {{ updated_at | date:"%Y-%m-%d" }}
-            {%- endcapture -%}
-            <time datetime="{{ post.date | date_to_xmlschema }}" data-tippy-content="{{ tooltip_content | strip }}">{{ post.date | date:post_format }}</time>
-          {%- elsif created_at -%}
-            {%- capture tooltip_content -%}
-              {{ created_label }}{{ site.data.strings.colon }} {{ created_at | date:"%Y-%m-%d" }}
-            {%- endcapture -%}
-            <time datetime="{{ post.date | date_to_xmlschema }}" data-tippy-content="{{ tooltip_content | strip }}">{{ post.date | date:post_format }}</time>
-          {%- elsif updated_at -%}
-            {%- capture tooltip_content -%}
-              {{ updated_label }}{{ site.data.strings.colon }} {{ updated_at | date:"%Y-%m-%d" }}
-            {%- endcapture -%}
-            <time datetime="{{ post.date | date_to_xmlschema }}" data-tippy-content="{{ tooltip_content | strip }}">{{ post.date | date:post_format }}</time>
-          {%- else -%}
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
-          {%- endif -%}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:post_format }}</time>
         {%- else -%}
           {{- site.data.strings.posted | default:"Posted" -}}
         {%- endunless -%}
@@ -52,6 +32,18 @@
         {%- assign tag_start          = site.data.strings.tag_start          | default:"on " -%}
         {%- assign tag_separator      = site.data.strings.tag_separator      | default:", "  -%}
         {%- include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator -%}
+        {%- comment -%}Git dates (hidden, shown only in click tooltip){%- endcomment -%}
+        {%- if created_at or updated_at -%}
+          <span class="sr-only"><br/>
+          {%- if created_at -%}
+            {{ created_label }}{{ site.data.strings.colon }} {{ created_at | date:"%Y-%m-%d" }}
+          {%- endif -%}
+          {%- if created_at and updated_at -%} | {% endif -%}
+          {%- if updated_at -%}
+            {{ updated_label }}{{ site.data.strings.colon }} {{ updated_at | date:"%Y-%m-%d" }}
+          {%- endif -%}
+          </span>
+        {%- endif -%}
       {% endcapture %}
       <span class="ellipsis mr1">
         {{ foobar }}

@@ -94,6 +94,14 @@ const toggleClass = (element, ...cls) => {
       },
     });
 
+    // Initialize tippy for time elements with data-tippy-content attribute (created_at/updated_at tooltip)
+    tippy(main.querySelectorAll('time[data-tippy-content]'), {
+      touch: true,
+      allowHTML: true,
+      placement: 'bottom',
+      content: (el) => el.getAttribute('data-tippy-content'),
+    });
+
     tippy(main.querySelectorAll('abbr[title]'), {
       trigger: 'click',
       touch: true,
