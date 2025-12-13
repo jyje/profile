@@ -47,13 +47,16 @@ The exam format consists entirely of four-choice multiple-choice questions with 
 
 The questions tested knowledge across various security domains, including Kubernetes security policies, container security, secrets management, network security, compliance, and security tools in the CNCF ecosystem. While my practical experience with Kubernetes was helpful, the exam required a comprehensive understanding of security principles and how they apply to cloud native environments.
 
+To aid my preparation, I enrolled in the [Kubernetes and Cloud Native Security Associate (KCSA)](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa) course on KodeKloud, taught by Mumshad Mannambeth and Nimesha Jinarajadasa. I bought basic plan on KodeKloud to access this course (Pro plan is not necessary). This comprehensive 6.78 hour course covered all exam domains including cloud native security overview, Kubernetes cluster component security, security fundamentals, threat models, platform security, and compliance frameworks. The course's hands-on labs, interactive content, and regular updates with the latest security information were particularly valuable. While KodeKloud provides hands-on lab environments for practice, the actual KCSA exam consists entirely of four-choice multiple-choice questions with no hands-on components. The course's interactive quizzes and mock exams helped reinforce security concepts and prepare for the actual exam format. The structured learning path and continuous content updates made it possible to pass the exam smoothly.
+
 ## 3. Tips for Exam Preparation
 
 Based on my experience, here are some important tips for those preparing for the KCSA exam:
 
 **Essential Resources Before the Exam:**
 - **Official CNCF Curriculum**: Review the official KCSA curriculum to understand the exact exam domains and their weightings
-- **CNCF Security Landscape**: Familiarize yourself with security-related projects in the [CNCF Landscape](https://landscape.cncf.io/) - understand security tools, their purposes, and how they fit into the cloud native security ecosystem
+- **CNCF Security Landscape**: Familiarize yourself with security-related projects in the [CNCF Landscape](https://landscape.cncf.io/) - understand security tools, their purposes, and how they fit into the cloud native security ecosystem. The landscape provides a comprehensive view of security projects categorized by their maturity levels (Graduated, Incubating, Sandbox)
+- **CNCF Blog**: Regularly review the [CNCF Blog](https://www.cncf.io/blog/) for the latest security updates, best practices, and announcements about new security projects. The blog often covers security-related topics that may appear on the exam
 - **Recent CNCF Security Additions**: Pay special attention to security projects that joined the CNCF ecosystem in the 2-3 months before your exam date. These newer security tools can appear on the exam, so staying current is crucial
 - **Kubernetes Security Documentation**: Review official Kubernetes security documentation, especially on pod security, network policies, RBAC, and secrets management
 
