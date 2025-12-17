@@ -66,13 +66,9 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
     if (isNaN(start.getTime()) || isNaN(end.getTime())) return '';
     
     var months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
-    
-    // Adjust for day difference
     if (end.getDate() < start.getDate()) {
       months--;
     }
-    
-    // Default threshold to 14 if not provided or invalid
     var thresholdMonths = parseInt(threshold) || 14;
     if (thresholdMonths <= 0) thresholdMonths = 14;
     
@@ -125,15 +121,11 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
       }
     });
   }
-  
-  // Run on page load
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', updateDurations);
   } else {
     updateDurations();
   }
-  
-  // Run on push state load (Hydejack navigation)
   var pushState = document.getElementById('_pushState');
   if (pushState) {
     pushState.addEventListener('hy-push-state-load', updateDurations);
