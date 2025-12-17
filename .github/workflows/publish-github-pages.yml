@@ -59,6 +59,10 @@ jobs:
     - name: Install Node dependencies
       run: npm ci
 
+    - name: Install Bower dependencies
+      run: npx bower install
+      working-directory: assets
+
     - name: Build JavaScript and CSS assets
       run: npm run build
 

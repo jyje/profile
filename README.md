@@ -36,6 +36,9 @@ npm install
 # Update Node.js dependencies
 npm update
 
+# Install Bower dependencies (for KaTeX and MathJax)
+cd assets && npx bower install && cd ..
+
 # Start local development server
 bundle exec jekyll serve --force_polling --livereload
 ```
@@ -105,6 +108,24 @@ JEKYLL_ENV=production bundle exec jekyll build
 # Build JavaScript/CSS assets
 npm run build
 ```
+
+## Dependency Management
+
+### Bower Dependencies
+
+This project uses Bower to manage frontend dependencies (KaTeX, MathJax). These dependencies are automatically installed during CI/CD, but you need to install them manually for local development:
+
+```bash
+# Install Bower dependencies
+cd assets && npx bower install && cd ..
+
+# Or from project root
+cd assets
+npx bower install
+cd ..
+```
+
+**Note**: `assets/bower_components/` is gitignored and will be automatically installed during CI/CD builds. You don't need to commit these files.
 
 ## License
 

@@ -29,3 +29,6 @@ assets/css/*hydejack-*.css
 
 # bundle
 .bundle
+
+# bower components (installed via bower install)
+assets/bower_components/
