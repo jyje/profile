@@ -38,7 +38,7 @@ const SEL_NAVBAR_BTN_BAR = '#_navbar > .content > .nav-btn-bar';
     const linkSheet = styleSheets.find((s) => s.ownerNode?.id === '_stylePreload');
     const setRule = (sheet) => {
       if (!sheet) return;
-      const rule = Array.from(sheet.rules).find((rule) => rule.selectorText.startsWith('.color-transition'));
+      const rule = Array.from(sheet.rules).find((rule) => rule.selectorText?.startsWith('.color-transition'));
       if (rule) rule.style.transition = 'background-color 1s ease, border-color 1s ease';
     };
     setRule(inlineSheet);

@@ -170,4 +170,38 @@ module.exports = [
       },
     },
   ),
+  // Search worker build
+  merge(
+    envConfig,
+    {
+      entry: resolve("./_js/src/pro/search.worker.js"),
+      output: {
+        path: resolve("./assets/js"),
+        filename: `search-worker-${version}.js`,
+        publicPath: ASSET_PATH,
+      },
+      resolve: {
+        modules: [
+          resolve("./_js"),
+          resolve("./node_modules"),
+          ...process.env.NODE_PATH ? [resolve(process.env.NODE_PATH)] : [],
+        ],
+        extensions: [".json", ".js"],
+        symlinks: true,
+        fallback: {
+          path: require.resolve("path-browserify"),
+        },
+      },
+      module: {
+        rules: [{
+          test: /(\.jsx|\.js)$/,
+          resolve: {
+            fullySpecified: false,
+          },
+          loader: "babel-loader",
+          options: babelPresetModern,
+        }],
+      },
+    },
+  ),
 ];

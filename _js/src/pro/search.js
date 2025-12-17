@@ -42,7 +42,8 @@ const calcSrcSet = (srcset) =>
   const pushStateEl = document.getElementById('_pushState');
 
   const searchFrag = importTemplate('_search-template');
-  const workerHref = document.getElementById('_hrefSearch')?.href;
+  const workerHrefEl = document.getElementById('_hrefSearch');
+  const workerHref = workerHrefEl ? new URL(workerHrefEl.getAttribute('href') || '/assets/js/search-worker-9.2.0.js', window.location.origin).href : null;
   if (searchFrag && workerHref) {
     const navbarEl = document.querySelector(SEL_NAVBAR_BTN_BAR);
     const [searchBtnEl, searchBoxEl, hitsEl] = searchFrag.children;
@@ -80,7 +81,7 @@ const calcSrcSet = (srcset) =>
     // Load search worker after user interaction
     await once(document, 'click');
 
-    const worker = new Worker('./search.worker.js', { type: 'module' });
+    const worker = new Worker(workerHref, { type: 'module' });
     postMessage(worker, window._search);
 
     let prevVal = '';

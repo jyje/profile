@@ -19,3 +19,6 @@ Gemfile.lock
 
 # PDF files (auto-generated during build)
 assets/*.pdf
+
+# bundle
+.bundle
