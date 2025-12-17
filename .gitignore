@@ -17,6 +17,9 @@ Gemfile.lock
 # python
 .python-version
 
+# ruby
+.ruby-version
+
 # PDF files (auto-generated during build)
 assets/*.pdf
 
