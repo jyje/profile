@@ -5,7 +5,7 @@ cover: true
 ---
 ## Home
 
-🎉 Hello! I'm **Jeayoung Jeon [전제영]**, a software engineer in South Korea. Welcome to my official portfolio site where you can explore my profile, works, activities.
+I'm **Jeayoung Jeon [전제영]**, an MLOps/DevOps and AI Engineer based in South Korea. I specialize in developing MLOps platforms, building hybrid Kubernetes clusters, and contributing to AI/ML infrastructure solutions in cloud-native environments.
 
 | Topic             | Description                                                        |
 |-------------------|--------------------------------------------------------------------|
@@ -14,36 +14,28 @@ cover: true
 | **Interests**     | LLM & GenAI, Hybrid Kubernetes, Raspberry Pi in Production, FinOps |
 | **Social Media**  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-jyje-blue.svg?logo=linkedin)](https://www.linkedin.com/in/jyje){:.no-mark-external} [![GitHub](https://img.shields.io/badge/GitHub-jyje-green.svg?logo=github)](https://github.com/jyje){:.no-mark-external} |
 
-  💼 [Profile]{:.heading.flip-title}([프로필]{:.heading.flip-title})
-/ 🚀 [Demo]{:.heading}
-/ 📝 [Posts]{:.heading.flip-title}
-/ 🧑‍💻 [Works]{:.heading.flip-title}
-/ 🪪 [Certifications]{:.heading.flip-title}
-/ 📜 [Articles]{:.heading.flip-title}
-/ 🔖 [Index]{:.heading.flip-title}
+[Profile]{:.heading.flip-title} ([프로필]{:.heading.flip-title}) / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Works]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Articles]{:.heading.flip-title} / [Index]{:.heading.flip-title}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
 </div>
 
-### Details
+### Site Overview
 
-This site provides following sections:
+This site provides the following sections:
 
-- 💼 [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects] / 🇰🇷 [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
-- 🚀 [Demo]{:.heading}: Live demo of my works (powered by raspberry pi cluster 🐳)
-- 📝 [Posts]{:.heading.flip-title}: All posts in this site
-- 🧑‍💻 [Works]{:.heading.flip-title}: My activities, projects
-- 🪪 [Certifications]{:.heading.flip-title}: Description of my certifications
+- [Profile]{:.heading.flip-title}: Career overview, [résumé], and [projects] / [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
+- [Demo]{:.heading}: Live demonstration of my works (powered by Raspberry Pi cluster)
+- [Posts]{:.heading.flip-title}: Technical posts and articles
+- [Works]{:.heading.flip-title}: Professional activities and projects
+- [Certifications]{:.heading.flip-title}: Professional certifications and credentials
 
----
+To browse articles and explore content by topic:
 
-And, to browse my articles, you can use following sections:
+- [Articles]{:.heading.flip-title}: All posts and articles
+- [Index]{:.heading.flip-title}: Categories and tags
 
-- 📜 [Articles]{:.heading.flip-title}: All posts in this site
-- 🔖 [Index]{:.heading.flip-title}: All categories and tags
-
-Thank you for visiting my site. If you have any questions or want to contact me, feel free to text me via [LinkedIn]{:.heading}. Have a nice day! 🌤️
+For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:.heading}.
 
 ![Logo of this site](assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 
