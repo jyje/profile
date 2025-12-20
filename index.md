@@ -10,9 +10,8 @@ I'm **Jeayoung Jeon [전제영]**, an MLOps/DevOps and AI Engineer based in Sout
 | Topic             | Description                                                        |
 |-------------------|--------------------------------------------------------------------|
 | **Role**          | AI/MLOps Engineer at [Hyundai AutoEver]{:.heading.flip-title}      |
+| **Interests**     | Agentic AI, LLMOps & GenAI, Automotives, Kubernetes, Cloud Navite  |
 | **Location**      | Anyang & Seoul, South Korea                                        |
-| **Interests**     | LLM & GenAI, Hybrid Kubernetes, Raspberry Pi in Production, FinOps |
-| **Social Media**  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-jyje-blue.svg?logo=linkedin)](https://www.linkedin.com/in/jyje){:.no-mark-external} [![GitHub](https://img.shields.io/badge/GitHub-jyje-green.svg?logo=github)](https://github.com/jyje){:.no-mark-external} |
 
 [Profile]{:.heading.flip-title} ([프로필]{:.heading.flip-title}) / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Works]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Articles]{:.heading.flip-title} / [Index]{:.heading.flip-title}
 
