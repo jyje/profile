@@ -44,11 +44,11 @@ menu:
   - title:             Home
     url:               /
   - title:             Posts
-    url:               /posts
+    url:               /en/posts
   - title:             Works
-    url:               /works
+    url:               /en/works
   - title:             Certifications
-    url:               /certifications
+    url:               /en/certifications
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -60,7 +60,7 @@ legal:
   - title:             Projects
     url:               /profile/projects
   - title:             Articles
-    url:               /articles
+    url:               /en/articles
   - title:             Index
     url:               /indice
   - title:             Credits
@@ -152,17 +152,33 @@ defaults:
       seo:
         type:          WebPage
   - scope:
-      type:            works
+      type:            works_en
     values:
       seo:
         type:          WebPage
   - scope:
-      type:            certifications
+      type:            works_ko
     values:
       seo:
         type:          WebPage
   - scope:
-      type:            articles
+      type:            certifications_en
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            certifications_ko
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            articles_en
+    values:
+      sitemap:         false
+      seo:
+        type:          WebPage
+  - scope:
+      type:            articles_ko
     values:
       sitemap:         false
       seo:
@@ -343,16 +359,32 @@ collections:
     permalink:         /news/:name/
     output:            true
 
-  works:
-    permalink:         /works/:name/
+  # English collections
+  posts_en:
+    permalink:         /en/posts/:name/
+    output:            true
+  works_en:
+    permalink:         /en/works/:name/
+    output:            true
+  certifications_en:
+    permalink:         /en/certifications/:name/
+    output:            true
+  articles_en:
+    permalink:         /en/articles/:name/
     output:            true
 
-  certifications:
-    permalink:         /certifications/:name/
+  # Korean collections
+  posts_ko:
+    permalink:         /ko/posts/:name/
     output:            true
-
-  articles:
-    permalink:         /articles/:name/
+  works_ko:
+    permalink:         /ko/works/:name/
+    output:            true
+  certifications_ko:
+    permalink:         /ko/certifications/:name/
+    output:            true
+  articles_ko:
+    permalink:         /ko/articles/:name/
     output:            true
 
 # File inclusion/exclusion
@@ -426,7 +458,7 @@ plugins:
 # ---------------------------------------------------------------------------------------
 git_date:
   enabled:                true
-  collections:            [posts, works, certifications, articles]
+  collections:            [posts_en, posts_ko, works_en, works_ko, certifications_en, certifications_ko, articles_en, articles_ko]
   use_git:                true  # Use Git commit dates (false to use filesystem dates only)
   fallback_to_filesystem: true  # Fallback to filesystem dates if Git fails
 
@@ -469,7 +501,14 @@ jekyll_compose:
         social media previews, etc.
       image:
         path: /assets/img/sidebar-bg.jpg
-    posts:
+    posts_en:
+      layout: post
+      description: > 
+        A short ~160 character description of your post for search engines,
+        social media previews, etc.
+      image:
+        path: /assets/img/sidebar-bg.jpg
+    posts_ko:
       layout: post
       description: > 
         A short ~160 character description of your post for search engines,

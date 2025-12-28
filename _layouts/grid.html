@@ -3,7 +3,12 @@
 layout: page
 ---
 
-{% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+{% if page.show_collection %}
+  {% assign empty_col = '' | split:'.' %}
+  {% assign posts = site[page.show_collection] | default:empty_col | sort:"date" | reverse %}
+{% else %}
+  {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+{% endif %}
 
 {{ content }}
 
