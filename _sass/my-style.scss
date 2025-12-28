@@ -165,6 +165,37 @@ table.no-border {
   }
 }
 
+// Sidebar username style
+.sidebar-about > .sidebar-title {
+  display: block;
+  
+  h1 {
+    margin: 0;
+    padding-bottom: 0;
+    
+    // Match the original h2 style from Hydejack
+    &.h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+  
+  .sidebar-username {
+    display: block;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+  }
+}
+
+.sidebar.invert .sidebar-about > .sidebar-title .sidebar-username {
+  color: rgba(32, 32, 32, 0.5);
+}
+
 // Work role header tags - bold emphasis for screen and print
 .work-header-role {
   font-weight: 700 !important;

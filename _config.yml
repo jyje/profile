@@ -40,6 +40,7 @@ author:
   linkedin:            jyje
 
 # Add links to the sidebar.
+# Note: Home menu is handled specially in nav.html with language flags
 menu:
   - title:             Home
     url:               /
@@ -49,6 +50,23 @@ menu:
     url:               /en/works
   - title:             Certifications
     url:               /en/certifications
+
+# Multilingual menus (excluding Home which is handled separately)
+menu_en:
+  - title:             Posts
+    url:               /en/posts
+  - title:             Works
+    url:               /en/works
+  - title:             Certifications
+    url:               /en/certifications
+
+menu_ko:
+  - title:             포스트
+    url:               /ko/posts
+  - title:             작업물
+    url:               /ko/works
+  - title:             인증서
+    url:               /ko/certifications
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

@@ -46,10 +46,10 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [경력기술서]: profile/ko/projects "my-profile projects --language=ko"
 [Curriculum Vitae]: profile/cv "my-profile cv"
 [CV]: profile/cv "my-profile cv"
-[Posts]: posts
-[Works]: works
-[Certifications]: certifications
-[Articles]: articles
+[Posts]: /en/posts
+[Works]: /en/works
+[Certifications]: /en/certifications
+[Articles]: /en/articles
 [Index]: indice
 [Blog]: blog
 [Demo]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
