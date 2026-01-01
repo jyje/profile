@@ -8,11 +8,11 @@ permalink: /ko/
 
 저는 **전제영 [Jeayoung Jeon]**, 대한민국에서 활동하는 MLOps/DevOps 및 AI 엔지니어입니다. MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경에서의 AI/ML 인프라 솔루션 기여를 전문으로 합니다.
 
-| 주제              | 설명                                                               |
-|-------------------|--------------------------------------------------------------------|
-| **역할**          | AI 플랫폼 엔지니어 at [현대오토에버]{:.heading.flip-title}           |
-| **관심사**        | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native       |
-| **위치**          | 대한민국 안양 & 서울                                                |
+| 주제       | 설명                                                                   |
+|-----------|-----------------------------------------------------------------------|
+| **역할**   | 리드 AI 플랫폼 엔지니어 at 개발환경플랫폼팀, [현대오토에버]{:.heading.flip-title}  |
+| **관심사** | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native            |
+| **위치**   | 대한민국 안양 & 서울                                                      |
 
 [프로필]{:.heading.flip-title} ([Profile]{:.heading.flip-title}) / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [인증서]{:.heading.flip-title} / [아티클]{:.heading.flip-title} / [인덱스]{:.heading.flip-title}
 

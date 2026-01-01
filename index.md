@@ -7,11 +7,11 @@ cover: true
 
 I'm **Jeayoung Jeon [전제영]**, an AI Platform Engineer based in South Korea. I specialize in developing AI apps, AI platforms, building hybrid Kubernetes clusters, and contributing to AI/ML infrastructure solutions in cloud-native environments.
 
-| Topic             | Description                                                                                    |
-|-------------------|------------------------------------------------------------------------------------------------|
-| **Role**          | AI Platform Engineer at [Hyundai AutoEver]{:.heading.flip-title}                               |
-| **Interests**     | Agentic AI, LLMOps & GenAI, Automotives, Kubernetes, Cloud Navite, Computer Vision, Deep Learning |
-| **Location**      | Anyang & Seoul, South Korea                                                                   |
+| Topic             | Description                                                                                                    |
+|-------------------|----------------------------------------------------------------------------------------------------------------|
+| **Role**          | Lead AI Platform Engineer at Development Environment Platform Team, [Hyundai AutoEver]{:.heading.flip-title}   |
+| **Interests**     | Agentic AI, LLMOps & GenAI, Automotives, Kubernetes, Cloud Navite, Computer Vision, Deep Learning              |
+| **Location**      | Anyang & Seoul, South Korea                                                                                    |
 
 [Profile]{:.heading.flip-title} ([프로필]{:.heading.flip-title}) / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Works]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Articles]{:.heading.flip-title} / [Index]{:.heading.flip-title}
 
