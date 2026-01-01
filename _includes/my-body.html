@@ -93,6 +93,31 @@ Example code for using Matamo as alternative analytics solution.
     }
   }
 
+  /* Save drawer state before page reload */
+  function saveDrawerState() {
+    var drawer = document.getElementById('_drawer');
+    if (drawer) {
+      var isOpen = drawer.hasAttribute('opened');
+      sessionStorage.setItem('drawerState', isOpen ? 'opened' : 'closed');
+    }
+  }
+
+  /* Restore drawer state after page load */
+  function restoreDrawerState() {
+    var drawerState = sessionStorage.getItem('drawerState');
+    if (drawerState) {
+      var drawer = document.getElementById('_drawer');
+      if (drawer) {
+        if (drawerState === 'opened' && !drawer.hasAttribute('opened')) {
+          drawer.setAttribute('opened', '');
+        } else if (drawerState === 'closed' && drawer.hasAttribute('opened')) {
+          drawer.removeAttribute('opened');
+        }
+      }
+      sessionStorage.removeItem('drawerState');
+    }
+  }
+
   /* Setup language switch links */
   function setupLanguageSwitches() {
     var langEnLink = document.getElementById('lang-en');
@@ -106,8 +131,18 @@ Example code for using Matamo as alternative analytics solution.
       langEnLink.href = enUrl;
       langKoLink.href = koUrl;
       
-      /* Links will be handled by hy-push-state automatically */
-      /* No need for custom click handlers */
+      /* Force full page reload on language switch to update sidebar */
+      langEnLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        saveDrawerState();
+        window.location.href = enUrl;
+      });
+      
+      langKoLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        saveDrawerState();
+        window.location.href = koUrl;
+      });
     }
   }
 
@@ -121,9 +156,13 @@ Example code for using Matamo as alternative analytics solution.
 
   /* Initial setup */
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupLanguageSwitches);
+    document.addEventListener('DOMContentLoaded', function() {
+      setupLanguageSwitches();
+      restoreDrawerState();
+    });
   } else {
     setupLanguageSwitches();
+    restoreDrawerState();
   }
 })();
 </script>

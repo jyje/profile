@@ -10,32 +10,40 @@
     {% endif %}
   {% endif %}
 
-  {% comment %}Home menu with language-specific URL{% endcomment %}
+  {% comment %}Home menu with language-specific URL and title{% endcomment %}
   <li>
     <a
       href="{% if current_lang == 'ko' %}{{ '/ko/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"
       class="sidebar-nav-item"
     >
-      Home
+      {% if current_lang == 'ko' %}홈{% else %}Home{% endif %}
     </a>
   </li>
 
-  {% comment %}Always use English menu titles, but convert URLs based on current language{% endcomment %}
-  {% assign menu_items = site.menu_en %}
+  {% comment %}Select menu items based on language{% endcomment %}
+  {% if current_lang == 'ko' %}
+    {% assign menu_items = site.menu_ko %}
+  {% else %}
+    {% assign menu_items = site.menu_en %}
+  {% endif %}
 
   {% for node in menu_items %}
     {% assign url = node.url | default: node.href %}
     {% comment %}Convert URL based on current language{% endcomment %}
     {% if current_lang == 'ko' %}
-      {% comment %}Convert English URL to Korean URL{% endcomment %}
-      {% assign url = url | replace: '/en/', '/ko/' %}
+      {% comment %}Ensure Korean URLs are used{% endcomment %}
+      {% if url contains '/en/' %}
+        {% assign url = url | replace: '/en/', '/ko/' %}
+      {% endif %}
     {% else %}
-      {% comment %}Keep English URL as is{% endcomment %}
-      {% assign url = url %}
+      {% comment %}Ensure English URLs are used{% endcomment %}
+      {% if url contains '/ko/' %}
+        {% assign url = url | replace: '/ko/', '/en/' %}
+      {% endif %}
     {% endif %}
     <li>
       <a
-        href="{% include_cached smart-url url=url %}"
+        href="{% include smart-url url=url %}"
         class="sidebar-nav-item {% if node.external %}external{% endif %}"
         {% if node.rel %}rel="{{ node.rel }}"{% endif %}
       >

@@ -17,7 +17,11 @@
       <h1 class="h1">Jeayoung Jeon</h1>
       <small class="sidebar-username">jyje</small>
     </div>
-    {% assign text = site.tagline | default:site.data.strings.site.en.tagline | default:site.description %}
+    {% if lang == 'ko' %}
+      {% assign text = "AI 플랫폼 엔지니어" %}
+    {% else %}
+      {% assign text = site.tagline | default:site.data.strings.site.en.tagline | default:site.description %}
+    {% endif %}
     {% if text %}
       <p class="{% if text.size > 100 %}fine{% endif %}">
         {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
@@ -40,8 +44,8 @@
     <ul>
       <li>
         <span id="_drawer--opened" class="sidebar-nav-item" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-          <a id="lang-en" href="#" class="lang-switch" data-lang="en" title="English" style="text-decoration: none; {% if lang == 'en' %}font-weight: bold;{% endif %}">🇺🇸</a>
-          <a id="lang-ko" href="#" class="lang-switch" data-lang="ko" title="한국어" style="text-decoration: none; {% if lang == 'ko' %}font-weight: bold;{% endif %}">🇰🇷</a>
+          <a id="lang-en" href="#" class="lang-switch" data-lang="en" title="English" style="text-decoration: {% if lang == 'en' %}underline{% else %}none{% endif %}; {% if lang == 'en' %}font-weight: bold;{% endif %}">🇺🇸</a>
+          <a id="lang-ko" href="#" class="lang-switch" data-lang="ko" title="한국어" style="text-decoration: {% if lang == 'ko' %}underline{% else %}none{% endif %}; {% if lang == 'ko' %}font-weight: bold;{% endif %}">🇰🇷</a>
         </span>
       </li>
     </ul>
