@@ -44,7 +44,7 @@ Example code for using Matamo as alternative analytics solution.
 <!-- Language switching and sidebar updates -->
 <script>
 (function() {
-  // Function to convert URL between languages (ko <-> en)
+  /* Function to convert URL between languages (ko <-> en) */
   function switchLanguageUrl(url, targetLang) {
     var pathname = url;
     if (typeof url === 'string' && url.indexOf('://') !== -1) {
@@ -53,39 +53,39 @@ Example code for using Matamo as alternative analytics solution.
     }
     
     if (targetLang === 'ko') {
-      // Convert to Korean URL
+      /* Convert to Korean URL */
       if (pathname === '/' || pathname === '') {
         return '/ko/';
       }
-      // Replace /en/ with /ko/ or prepend /ko/ if no language prefix
+      /* Replace /en/ with /ko/ or prepend /ko/ if no language prefix */
       if (pathname.indexOf('/en/') === 0) {
         return pathname.replace('/en/', '/ko/');
       } else if (pathname.indexOf('/en') === 0) {
         return pathname.replace('/en', '/ko');
       } else if (pathname.indexOf('/ko/') !== 0 && pathname.indexOf('/ko') !== 0) {
-        // No language prefix, add /ko/
+        /* No language prefix, add /ko/ */
         return '/ko' + (pathname.startsWith('/') ? pathname : '/' + pathname);
       }
-      return pathname; // Already Korean
+      return pathname; /* Already Korean */
     } else {
-      // Convert to English URL
+      /* Convert to English URL */
       if (pathname === '/ko/' || pathname === '/ko') {
         return '/';
       }
-      // Replace /ko/ with /en/ or remove /ko/ prefix
+      /* Replace /ko/ with /en/ or remove /ko/ prefix */
       if (pathname.indexOf('/ko/') === 0) {
         var englishPath = pathname.replace('/ko/', '/en/');
-        // If resulting path is /en/, return / instead
+        /* If resulting path is /en/, return / instead */
         return englishPath === '/en/' ? '/' : englishPath;
       } else if (pathname.indexOf('/ko') === 0) {
         var englishPath = pathname.replace('/ko', '/en');
         return englishPath === '/en' ? '/' : englishPath;
       }
-      // Already English or no language prefix
+      /* Already English or no language prefix */
       if (pathname === '/') {
         return '/';
       }
-      // Add /en/ prefix if needed
+      /* Add /en/ prefix if needed */
       if (pathname.indexOf('/en/') !== 0 && pathname.indexOf('/en') !== 0) {
         return '/en' + (pathname.startsWith('/') ? pathname : '/' + pathname);
       }
@@ -93,7 +93,7 @@ Example code for using Matamo as alternative analytics solution.
     }
   }
 
-  // Setup language switch links
+  /* Setup language switch links */
   function setupLanguageSwitches() {
     var langEnLink = document.getElementById('lang-en');
     var langKoLink = document.getElementById('lang-ko');
@@ -106,12 +106,12 @@ Example code for using Matamo as alternative analytics solution.
       langEnLink.href = enUrl;
       langKoLink.href = koUrl;
       
-      // Links will be handled by hy-push-state automatically
-      // No need for custom click handlers
+      /* Links will be handled by hy-push-state automatically */
+      /* No need for custom click handlers */
     }
   }
 
-  // Update language switch links after page navigation
+  /* Update language switch links after page navigation */
   var pushStateEl = document.getElementById('_pushState');
   if (pushStateEl) {
     pushStateEl.addEventListener('hy-push-state-after', function() {
@@ -119,7 +119,7 @@ Example code for using Matamo as alternative analytics solution.
     });
   }
 
-  // Initial setup
+  /* Initial setup */
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupLanguageSwitches);
   } else {
