@@ -217,7 +217,7 @@ To modify resume information, edit `_data/resume.yml` (English) or `_data/resume
 
 **Notes**:
 - Follow YAML syntax precisely (indentation, quotes, etc.)
-- Date format: `"YYYY-MM-DD"` (e.g., `"2025-02-24"`)
+- Date format: `"YYYY-MM-DD"` (e.g., `"2026-02-24"`)
 - Empty end dates should be `{}`
 - Maintain consistency between multilingual versions
 

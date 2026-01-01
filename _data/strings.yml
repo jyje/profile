@@ -13,16 +13,16 @@
 site:
   en:
     full_title:          "jyje - Jeayoung Jeon"
-    tagline:             "AI/MLOps Engineer"
+    tagline:             "AI Platform Engineer"
     description: >
-      I'm a software engineer majoring in MLOps, Computer Vision and Cloud-Native Software Engineering.
-      I'm currently working at Hyundai Autoever as an AI/MLOps Engineer.
+      I'm a software engineer majoring in LLMOps, Computer Vision and Cloud-Native Software Engineering.
+      I'm currently working at Hyundai Autoever as an AI Platform Engineer.
   ko:
     full_title:          "jyje - Jeayoung Jeon"
-    tagline:             "AI/MLOps 엔지니어"
+    tagline:             "AI 플랫폼 엔지니어"
     description: >
-      MLOps, 컴퓨터 비전 및 클라우드 네이티브 소프트웨어 엔지니어링을 전공하는 소프트웨어 엔지니어입니다.
-      현재 현대오토에버에서 AI/MLOps 엔지니어로 근무하고 있습니다.
+      LLMOps, 컴퓨터 비전 및 클라우드 네이티브 소프트웨어 엔지니어링을 전공하는 소프트웨어 엔지니어입니다.
+      현재 현대오토에버에서 AI 플랫폼 엔지니어로 근무하고 있습니다.
 
 # Free version
 # ---------------------------------------------------------------------------------------

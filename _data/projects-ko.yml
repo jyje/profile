@@ -51,11 +51,11 @@ work:
     endDate: {}
     roles:
       description: >
-        리드 AI/MLOps 엔지니어 at 현대오토에버 개발환경플랫폼팀
+        리드 AI Platform 엔지니어 at 현대오토에버 개발환경플랫폼팀
       items:
         - header: AI/LLM Platform
           content: >
-            자동차 도메인 지식을 위한 엔터프라이즈 AI 플랫폼 및 LLM+RAG 시스템 개발
+            자동차 도메인 지식을 위한 엔터프라이즈 AI 플랫폼 및 LLM+RAG+MCP 시스템 개발
         - header: MLOps
           content: >
             소프트웨어 정의 자동차 및 자율주행을 위한 ML 파이프라인 인프라 구현

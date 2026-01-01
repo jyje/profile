@@ -10,7 +10,7 @@ permalink: /ko/
 
 | 주제              | 설명                                                               |
 |-------------------|--------------------------------------------------------------------|
-| **역할**          | AI/MLOps 엔지니어 at [현대오토에버]{:.heading.flip-title}           |
+| **역할**          | AI 플랫폼 엔지니어 at [현대오토에버]{:.heading.flip-title}           |
 | **관심사**        | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native       |
 | **위치**          | 대한민국 안양 & 서울                                                |
 

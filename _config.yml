@@ -17,13 +17,13 @@ title:                 jyje
 
 # A short description (~150 chars) of the page used for the meta description tag. Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  I'm a software engineer majoring in MLOps, Computer Vision and Cloud-Native Software Engineering. I'm currently working at Hyundai Autoever as an AI/MLOps Engineer.
+  I'm a software engineer majoring in Agentic AI, LLMOps, Computer Vision and Cloud-Native Software Engineering. I'm currently working at Hyundai Autoever as an AI Platform Engineer.
 
 # A shorter description for the sidebar.
-tagline:               AI/MLOps Engineer
+tagline:               AI Platform Engineer
 
 # A list of keywords for your blog
-keywords:              [MLOps, DevOps, Computer Vision, Cloud-Native, Kubernetes, LLM, AI, CV, Resume]
+keywords:              [Agentic AI, LLMOps, MLOps, DevOps, Computer Vision, Cloud-Native, Kubernetes, LLM, AI, CV, Resume]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -86,7 +86,7 @@ legal:
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             "2023-2025 ⓒ jyje.online by Jeayoung Jeon 🧑‍💻"
+copyright:             "2023-2026 ⓒ jyje.online by Jeayoung Jeon 🧑‍💻"
 
 # Format of the permalinks
 permalink:             /:categories/:title # /:categories/:year-:month-:day-:title/
