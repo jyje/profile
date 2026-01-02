@@ -33,7 +33,8 @@
       color: var(--menu-text);
     }
 
-    &.no-after::after {
+    &.no-after::after,
+    &.lang-switch::after {
       content: none;
     }
   }
