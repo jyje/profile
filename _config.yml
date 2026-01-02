@@ -61,11 +61,11 @@ menu_en:
     url:               /en/certifications
 
 menu_ko:
-  - title:             포스트
+  - title:             Posts
     url:               /ko/posts
-  - title:             작업물
+  - title:             Works
     url:               /ko/works
-  - title:             인증서
+  - title:             Certifications
     url:               /ko/certifications
 
 # Add links to the footer.
