@@ -3,7 +3,7 @@ type: category
 layout: grid
 title: 작업물
 slug: works
-show_collection: works_ko
+language: ko
 description: >
   🚀 선택된 작업물 큐레이션
 no_groups: false

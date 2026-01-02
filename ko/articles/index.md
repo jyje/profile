@@ -3,7 +3,7 @@ type: category
 layout: grid
 title: 아티클
 slug: articles
-show_collection: articles_ko
+language: ko
 description: >
   📚 모든 아티클과 포스트
 no_groups: false

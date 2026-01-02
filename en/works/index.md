@@ -3,7 +3,7 @@ type: category
 layout: grid
 title: Works
 slug: works
-show_collection: works_en
+language: en
 description: >
   🚀 Selected curations of my works
 no_groups: false

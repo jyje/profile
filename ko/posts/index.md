@@ -3,7 +3,7 @@ type: category
 layout: grid
 title: 포스트
 slug: posts
-show_collection: posts_ko
+language: ko
 description: >
   🎉 좋은 소식, 성과, 포스트에 대한 기사들.
 no_groups: false

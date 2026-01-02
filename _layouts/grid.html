@@ -8,6 +8,10 @@ layout: page
   {% assign posts = site[page.show_collection] | default:empty_col | sort:"date" | reverse %}
 {% else %}
   {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+  {% if page.language %}
+    {% assign lang_path = page.language | append: "/" %}
+    {% assign posts = posts | where_exp:"post", "post.path contains lang_path" %}
+  {% endif %}
 {% endif %}
 
 {{ content }}

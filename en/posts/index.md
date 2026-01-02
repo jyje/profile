@@ -3,7 +3,7 @@ type: category
 layout: grid
 title: Posts
 slug: posts
-show_collection: posts_en
+language: en
 description: >
   🎉 Articles for good news, achievements, and posts.
 no_groups: false
