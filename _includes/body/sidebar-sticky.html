@@ -12,13 +12,13 @@
       <a class="no-hover" href="{% if lang == 'ko' %}{{ '/ko/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" tabindex="-1">
         <img src="{% include_cached smart-url url=site.logo %}" class="avatar" alt="{{ site.short_title | default:site.title }}" width="120" height="120" loading="lazy" />
       </a>
+      <small class="sidebar-username">@jyje</small>
     {% endif %}
     <div class="sidebar-title">
       <h1 class="h1">Jeayoung Jeon</h1>
-      <small class="sidebar-username">jyje</small>
     </div>
     {% if lang == 'ko' %}
-      {% assign text = "AI 플랫폼 엔지니어" %}
+      {% assign text = site.data.strings.site.ko.tagline | default:site.description %}
     {% else %}
       {% assign text = site.tagline | default:site.data.strings.site.en.tagline | default:site.description %}
     {% endif %}
