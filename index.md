@@ -2,8 +2,11 @@
 layout: welcome
 title: jyje.online
 cover: true
+
 ---
 ## Home
+
+> 🇰🇷 You can check the Korean version [here](/ko).
 
 I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea. I'm currently working as an AI Platform Engineer at [Hyundai AutoEver]{:.heading.flip-title}, a company specializing in SDV and ICT for Automotives. I specialize in developing AI apps, AI platforms, building hybrid Kubernetes clusters, and contributing to AI/ML infrastructure solutions in cloud-native environments.
 
@@ -13,7 +16,7 @@ I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Kor
 | **Interests**     | Agentic AI, LLMOps & GenAI, Automotives, Kubernetes, Cloud Navite, Computer Vision, Deep Learning              |
 | **Location**      | Anyang & Seoul, South Korea                                                                                    |
 
-[Profile]{:.heading.flip-title} ([프로필]{:.heading.flip-title}) / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Works]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Articles]{:.heading.flip-title} / [Index]{:.heading.flip-title}
+[Profile]{:.heading.flip-title} / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Works]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Articles]{:.heading.flip-title} / [Index]{:.heading.flip-title}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
@@ -23,7 +26,7 @@ I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Kor
 
 This site provides the following sections:
 
-- [Profile]{:.heading.flip-title}: Career overview, [résumé], and [projects] / [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
+- [Profile]{:.heading.flip-title}: Career overview, [résumé], and [projects]
 - [Demo]{:.heading}: Live demonstration of my works (powered by Raspberry Pi cluster)
 - [Posts]{:.heading.flip-title}: Technical posts and articles
 - [Works]{:.heading.flip-title}: Professional activities and projects
@@ -45,13 +48,14 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [Projects]: /en/profile/projects "my-profile projects"
 [경력기술서]: /ko/profile/projects "my-profile projects --language=ko"
 [Curriculum Vitae]: profile/cv "my-profile cv"
-[CV]: profile/cv "my-profile cv"
+[CV]: profile/cv "my-profile cv --language=ko"
+[커리큘럼]: /ko/profile/cv "my-profile cv --language=ko"
 [Posts]: /en/posts
 [Works]: /en/works
 [Certifications]: /en/certifications
 [Articles]: /en/articles
 [Index]: indice
-[Blog]: blog
+[Blog]: https://blog.jyje.online "my-blog"
 [Demo]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 [Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"

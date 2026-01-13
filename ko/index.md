@@ -6,6 +6,8 @@ permalink: /ko/
 ---
 ## 홈
 
+> 🇬🇧 영어 버전은 [여기](/en)에서 확인할 수 있습니다.
+
 저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다. 저는 현재 AI 플랫폼 엔지니어로 차량 분야의 ICT 기업인 [현대오토에버]{:.heading.flip-title}에서 근무하고 있습니다. AI 에이전트 개발 및 LLM/MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경의 AI/ML 인프라 구축의 전문성을 가지고 있습니다.
 
 | 주제       | 설명                                                                   |
@@ -14,7 +16,7 @@ permalink: /ko/
 | **관심사** | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native            |
 | **위치**   | 대한민국 안양 & 서울                                                      |
 
-[프로필]{:.heading.flip-title} ([Profile]{:.heading.flip-title}) / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [아티클]{:.heading.flip-title} / [인덱스]{:.heading.flip-title}
+[프로필]{:.heading.flip-title} ([Profile]{:.heading.flip-title}) / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [작성한 글]{:.heading.flip-title} / [색인]{:.heading.flip-title}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
@@ -24,7 +26,7 @@ permalink: /ko/
 
 이 사이트는 다음과 같은 섹션을 제공합니다:
 
-- [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서] / [Profile]{:.heading.flip-title}: Career overview, [résumé], [projects]
+- [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
 - [데모]{:.heading}: 작업물 라이브 데모 (Raspberry Pi 클러스터로 운영)
 - [포스트]{:.heading.flip-title}: 기술 포스트 및 아티클
 - [작업물]{:.heading.flip-title}: 전문 활동 및 프로젝트
@@ -45,13 +47,19 @@ permalink: /ko/
 [이력서]: /ko/profile/resume "my-profile resume --language=ko"
 [Projects]: /en/profile/projects "my-profile projects"
 [경력기술서]: /ko/profile/projects "my-profile projects --language=ko"
+[Curriculum Vitae]: /ko/profile/cv "my-profile cv --language=ko"
+[CV]: /ko/profile/cv "my-profile cv --language=ko"
+[커리큘럼]: /ko/profile/cv "my-profile cv --language=ko"
 [포스트]: /ko/posts
 [작업물]: /ko/works
 [자격증]: /ko/certifications
-[아티클]: /ko/articles
-[인덱스]: /indice
+[작성한 글]: /ko/articles
+[색인]: /indice
+[Blog]: https://blog.jyje.online "my-blog"
 [데모]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
+[MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 [현대오토에버]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 [Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 
+[Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
