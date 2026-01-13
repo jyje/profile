@@ -22,7 +22,7 @@ accent_image:
     - 현재 **AI 플랫폼 엔지니어**로 차량 분야의 ICT 기업인 [Hyundai Autoever]{:.heading.flip-title}에서 근무하고 있습니다.
     - **AR/디지털 트윈** 전문 기업 [MAXST]{:.heading.flip-title}에서 **MLOps/DevOps 엔지니어**로 근무했습니다.
     - 학교에서 연구원으로 컴퓨터 비전, 자율주행 및 AI 연구를 다수 진행했습니다.
-- 💼 이 사이트는 저의 공식 프로필 입니다.
+- 💼 이 사이트는 저의 공식 프로필입니다.
     - 경력 문서: [여기](#2-경력-문서){:.heading.flip-title}에서 저의 [이력서]{:.heading.flip-title}와 [경력기술서]{:.heading.flip-title}를 찾아보실 수 있습니다.
     - 포트폴리오: 이 사이트에서 저의 [포트폴리오]{:.heading.flip-title}와 성과들을 살펴보실 수 있습니다.
     - 궁금하시거나 잘못된 정보가 있으면 [메일]{:.heading.flip-title}로 문의 부탁드립니다.

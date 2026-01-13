@@ -5,7 +5,7 @@ title: 포스트
 slug: posts
 language: ko
 description: >
-  🎉 좋은 소식, 성과, 포스트에 대한 기사들.
+  🎉 소식과 성과를 공유하는 포스트들.
 no_groups: false
 accent_image: 
   background: url('/assets/img/common/biglovecoffee-wall-1.jpg') center/cover

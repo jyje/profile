@@ -5,7 +5,7 @@ cover: true
 ---
 ## Home
 
-I'm **Jeayoung Jeon [전제영]**, an AI Platform Engineer based in South Korea. I specialize in developing AI apps, AI platforms, building hybrid Kubernetes clusters, and contributing to AI/ML infrastructure solutions in cloud-native environments.
+I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea. I'm currently working as an AI Platform Engineer at [Hyundai Autoever]{:.heading.flip-title}, a company specializing in SDV and ICT for Automotives. I specialize in developing AI apps, AI platforms, building hybrid Kubernetes clusters, and contributing to AI/ML infrastructure solutions in cloud-native environments.
 
 | Topic             | Description                                                                                                    |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
