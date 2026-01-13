@@ -14,7 +14,7 @@ permalink: /ko/
 | **관심사** | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native            |
 | **위치**   | 대한민국 안양 & 서울                                                      |
 
-[프로필]{:.heading.flip-title} ([Profile]{:.heading.flip-title}) / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [인증서]{:.heading.flip-title} / [아티클]{:.heading.flip-title} / [인덱스]{:.heading.flip-title}
+[프로필]{:.heading.flip-title} ([Profile]{:.heading.flip-title}) / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [아티클]{:.heading.flip-title} / [인덱스]{:.heading.flip-title}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
@@ -28,7 +28,7 @@ permalink: /ko/
 - [데모]{:.heading}: 작업물 라이브 데모 (Raspberry Pi 클러스터로 운영)
 - [포스트]{:.heading.flip-title}: 기술 포스트 및 아티클
 - [작업물]{:.heading.flip-title}: 전문 활동 및 프로젝트
-- [인증서]{:.heading.flip-title}: 전문 자격증 및 인증
+- [자격증]{:.heading.flip-title}: 전문 자격증 및 인증
 
 아티클을 탐색하거나 주제별로 콘텐츠를 확인하려면:
 
@@ -47,7 +47,7 @@ permalink: /ko/
 [경력기술서]: /profile/ko/projects "my-profile projects --language=ko"
 [포스트]: /ko/posts
 [작업물]: /ko/works
-[인증서]: /ko/certifications
+[자격증]: /ko/certifications
 [아티클]: /ko/articles
 [인덱스]: /indice
 [데모]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"

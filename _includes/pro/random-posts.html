@@ -1,6 +1,28 @@
 {% assign post = page %}
 
-{% assign random_posts = site.posts | where_exp:"post", "post.url != page.url" | sample:3 %}
+{% comment %}Determine current page language{% endcomment %}
+{% assign current_lang = 'en' %}
+{% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' %}
+  {% assign current_lang = 'ko' %}
+{% endif %}
+
+{% comment %}Filter posts by language and exclude current page{% endcomment %}
+{% assign filtered_posts = '' | split: '' %}
+{% for post_item in site.posts %}
+  {% if post_item.url != page.url %}
+    {% if current_lang == 'ko' %}
+      {% if post_item.url contains '/ko/' or post_item.path contains 'ko/' %}
+        {% assign filtered_posts = filtered_posts | push: post_item %}
+      {% endif %}
+    {% else %}
+      {% unless post_item.url contains '/ko/' or post_item.path contains 'ko/' %}
+        {% assign filtered_posts = filtered_posts | push: post_item %}
+      {% endunless %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% assign random_posts = filtered_posts | sample:3 %}
 
 {% if random_posts.size > 0 %}
 <aside class="related mb4" role="complementary">
