@@ -40,10 +40,10 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 
 [Profile]: profile "my-profile --verbose"
 [프로필]: profile/ko "my-profile --verbose --language=ko"
-[Résumé]: profile/resume "my-profile resume"
-[이력서]: profile/ko/resume "my-profile resume --language=ko"
-[Projects]: profile/projects "my-profile projects"
-[경력기술서]: profile/ko/projects "my-profile projects --language=ko"
+[Résumé]: /en/profile/resume "my-profile resume"
+[이력서]: /ko/profile/resume "my-profile resume --language=ko"
+[Projects]: /en/profile/projects "my-profile projects"
+[경력기술서]: /ko/profile/projects "my-profile projects --language=ko"
 [Curriculum Vitae]: profile/cv "my-profile cv"
 [CV]: profile/cv "my-profile cv"
 [Posts]: /en/posts

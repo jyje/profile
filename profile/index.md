@@ -29,8 +29,8 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
 
 <div class="screen-only mt3">
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
-  <a href="/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Resume</a>
-  <a href="/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
+  <a href="/en/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Resume</a>
+  <a href="/en/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
   <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> Demo</a>
   <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Blog 1</a>
   <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Blog 2</a>
@@ -113,11 +113,11 @@ You can find more details about my projects and achievements in the following do
 [Profile]: /profile "my-profile --verbose"
 
 <!-- resume -->
-[Résumé]: /profile/resume "my-profile resume"
+[Résumé]: /en/profile/resume "my-profile resume"
 
 
 <!-- projects-portfolio -->
-[Projects]: /profile/projects "my-profile projects"
+[Projects]: /en/profile/projects "my-profile projects"
 
 <!-- cv -->
 [Curriculum Vitae]: /profile/cv "my-profile cv"

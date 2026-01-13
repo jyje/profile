@@ -29,8 +29,8 @@ accent_image:
 
 <div class="screen-only mt3">
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
-  <a href="/profile/ko/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
-  <a href="/profile/ko/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 경력기술서</a>
+  <a href="/ko/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
+  <a href="/ko/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 경력기술서</a>
   <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
   <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 블로그 1</a>
   <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 블로그 2</a>
@@ -112,12 +112,12 @@ accent_image:
 [Profile]: /profile/ko "my-profile --verbose"
 
 <!-- resume -->
-[Résumé]: /profile/ko/resume "my-profile resume --korean"
-[이력서]: /profile/ko/resume "my-profile resume --korean"
+[Résumé]: /ko/profile/resume "my-profile resume --korean"
+[이력서]: /ko/profile/resume "my-profile resume --korean"
 
 <!-- projects-portfolio -->
-[Projects]: /profile/ko/projects "my-profile projects --korean"
-[경력기술서]: /profile/ko/projects "my-profile projects --korean"
+[Projects]: /ko/profile/projects "my-profile projects --korean"
+[경력기술서]: /ko/profile/projects "my-profile projects --korean"
 
 <!-- cv -->
 [Curriculum Vitae]: /profile/ko/cv "my-profile cv --korean"

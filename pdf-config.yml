@@ -9,20 +9,20 @@
 # PDF targets to generate
 # Each target specifies a page to convert to PDF
 targets:
-  - path: /profile/resume
-    output: jyje-resume-en.pdf
+  - path: /en/profile/resume
+    output: jeayoungjeon-resume-en.pdf
     title: "Resume - Jeayoung Jeon"
     
-  - path: /profile/ko/resume
-    output: jyje-resume-ko.pdf
+  - path: /ko/profile/resume
+    output: jeayoungjeon-resume-ko.pdf
     title: "이력서 - 전제영"
     
-  - path: /profile/projects
-    output: jyje-projects-en.pdf
+  - path: /en/profile/projects
+    output: jeayoungjeon-projects-en.pdf
     title: "Projects - Jeayoung Jeon"
     
-  - path: /profile/ko/projects
-    output: jyje-projects-ko.pdf
+  - path: /ko/profile/projects
+    output: jeayoungjeon-projects-ko.pdf
     title: "프로젝트 포트폴리오 - 전제영"
 
 # PDF output options (Playwright page.pdf() options)

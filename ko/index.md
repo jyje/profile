@@ -41,10 +41,10 @@ permalink: /ko/
 
 [Profile]: / "my-profile --verbose"
 [프로필]: /profile/ko "my-profile --verbose --language=ko"
-[Résumé]: /profile/resume "my-profile resume"
-[이력서]: /profile/ko/resume "my-profile resume --language=ko"
-[Projects]: /profile/projects "my-profile projects"
-[경력기술서]: /profile/ko/projects "my-profile projects --language=ko"
+[Résumé]: /en/profile/resume "my-profile resume"
+[이력서]: /ko/profile/resume "my-profile resume --language=ko"
+[Projects]: /en/profile/projects "my-profile projects"
+[경력기술서]: /ko/profile/projects "my-profile projects --language=ko"
 [포스트]: /ko/posts
 [작업물]: /ko/works
 [자격증]: /ko/certifications

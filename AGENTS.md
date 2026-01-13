@@ -240,10 +240,10 @@ To modify project information, edit `_data/projects.yml` (English) or `_data/pro
 ### PDF File Management
 
 Resume and project PDF files are automatically generated during CI/CD:
-- `jyje-resume-en.pdf`: Resume (English)
-- `jyje-resume-ko.pdf`: Resume (Korean)
-- `jyje-projects-en.pdf`: Project portfolio (English)
-- `jyje-projects-ko.pdf`: Project portfolio (Korean)
+- `jeayoungjeon-resume-en.pdf`: Resume (English)
+- `jeayoungjeon-resume-ko.pdf`: Resume (Korean)
+- `jeayoungjeon-projects-en.pdf`: Project portfolio (English)
+- `jeayoungjeon-projects-ko.pdf`: Project portfolio (Korean)
 
 **Important Notes**:
 - PDF files are **gitignored** - they are generated during build, not stored in git
@@ -258,8 +258,8 @@ PDF generation is configured via `pdf-config.yml` at the project root:
 ```yaml
 # PDF targets to generate
 targets:
-  - path: /profile/resume      # Page path
-    output: jyje-resume-en.pdf # Output filename
+  - path: /en/profile/resume      # Page path
+    output: jeayoungjeon-resume-en.pdf # Output filename
     title: "Resume - Jeayoung Jeon"
 
 # PDF options

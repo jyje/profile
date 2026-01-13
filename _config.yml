@@ -74,9 +74,9 @@ legal:
   - title:             Home
     url:               /
   - title:             Résumé
-    url:               /profile/resume
+    url:               /en/profile/resume
   - title:             Projects
-    url:               /profile/projects
+    url:               /en/profile/projects
   - title:             Articles
     url:               /en/articles
   - title:             Index
