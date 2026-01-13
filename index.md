@@ -38,8 +38,8 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 
 ![Logo of this site](assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 
-[Profile]: profile "my-profile --verbose"
-[프로필]: profile/ko "my-profile --verbose --language=ko"
+[Profile]: /en/profile "my-profile --verbose"
+[프로필]: /ko/profile "my-profile --verbose --language=ko"
 [Résumé]: /en/profile/resume "my-profile resume"
 [이력서]: /ko/profile/resume "my-profile resume --language=ko"
 [Projects]: /en/profile/projects "my-profile projects"

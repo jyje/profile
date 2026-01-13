@@ -7,8 +7,8 @@ accent_image:
 ---
 
 <div class="screen-only">
-  <a href="/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
-  <a href="/profile/ko" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
+  <a href="/en/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
+  <a href="/ko/profile" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
 </div>
 
 * toc
@@ -109,7 +109,7 @@ accent_image:
 <!-- profile -->
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
 [전제영(Jeayoung Jeon)]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
-[Profile]: /profile/ko "my-profile --verbose"
+[Profile]: /ko/profile "my-profile --verbose"
 
 <!-- resume -->
 [Résumé]: /ko/profile/resume "my-profile resume --korean"
@@ -120,9 +120,9 @@ accent_image:
 [경력기술서]: /ko/profile/projects "my-profile projects --korean"
 
 <!-- cv -->
-[Curriculum Vitae]: /profile/ko/cv "my-profile cv --korean"
-[CV]: /profile/ko/cv "my-profile cv --korean"
-[커리큘럼]: /profile/ko/cv "my-profile cv --ko"
+[Curriculum Vitae]: /ko/profile/cv "my-profile cv --korean"
+[CV]: /ko/profile/cv "my-profile cv --korean"
+[커리큘럼]: /ko/profile/cv "my-profile cv --ko"
 
 [Articles]: /articles
 [포트폴리오]: /articles

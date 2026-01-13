@@ -7,8 +7,8 @@ accent_image:
 ---
 
 <div class="screen-only">
-  <a href="/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
-  <a href="/profile/ko" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
+  <a href="/en/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
+  <a href="/ko/profile" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
 </div>
 
 * toc
@@ -110,7 +110,7 @@ You can find more details about my projects and achievements in the following do
 <!-- profile -->
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
 [Jeayoung Jeon (전제영)]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
-[Profile]: /profile "my-profile --verbose"
+[Profile]: /en/profile "my-profile --verbose"
 
 <!-- resume -->
 [Résumé]: /en/profile/resume "my-profile resume"
@@ -120,8 +120,8 @@ You can find more details about my projects and achievements in the following do
 [Projects]: /en/profile/projects "my-profile projects"
 
 <!-- cv -->
-[Curriculum Vitae]: /profile/cv "my-profile cv"
-[CV]: /profile/cv "my-profile cv"
+[Curriculum Vitae]: /en/profile/cv "my-profile cv"
+[CV]: /en/profile/cv "my-profile cv"
 
 
 [Articles]: /articles

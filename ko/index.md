@@ -40,7 +40,7 @@ permalink: /ko/
 ![이 사이트의 로고](/assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 
 [Profile]: / "my-profile --verbose"
-[프로필]: /profile/ko "my-profile --verbose --language=ko"
+[프로필]: /ko/profile "my-profile --verbose --language=ko"
 [Résumé]: /en/profile/resume "my-profile resume"
 [이력서]: /ko/profile/resume "my-profile resume --language=ko"
 [Projects]: /en/profile/projects "my-profile projects"
