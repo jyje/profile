@@ -38,7 +38,7 @@ basics:
     resume:
       title: Résumé
       note: >
-        My name is Jeayoung Jeon [전제영], and I'm an MLOps engineer in Seoul, South Korea. I also specialize in:
+        My name is Jeayoung Jeon [전제영], and I'm an AI Platform Engineer in Seoul, South Korea. I also specialize in:
 
           - 🐳 Developing **MLOps (APIs, Pipelines)** and **AI/LLM Platforms** in cloud-native environments.
           - 🧑‍🔧 Building **Hybrid Kubernetes Clusters** for **High Availability** and **GPU Cost Reduction**.
