@@ -16,7 +16,7 @@ permalink: /ko/
 | **관심사** | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native            |
 | **위치**   | 대한민국 안양 & 서울                                                      |
 
-[프로필]{:.heading.flip-title} ([Profile]{:.heading.flip-title}) / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [작성한 글]{:.heading.flip-title} / [색인]{:.heading.flip-title}
+[프로필]{:.heading.flip-title} / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [작업물]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [작성한 글]{:.heading.flip-title} / [색인]{:.heading.flip-title}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
