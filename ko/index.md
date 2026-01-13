@@ -6,7 +6,7 @@ permalink: /ko/
 ---
 ## 홈
 
-저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다. 저는 현재 AI 플랫폼 엔지니어로 차량 분야의 ICT 기업인 [Hyundai Autoever]{:.heading.flip-title}에서 근무하고 있습니다. AI 에이전트 개발 및 LLM/MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경의 AI/ML 인프라 구축의 전문성을 가지고 있습니다.
+저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다. 저는 현재 AI 플랫폼 엔지니어로 차량 분야의 ICT 기업인 [현대오토에버]{:.heading.flip-title}에서 근무하고 있습니다. AI 에이전트 개발 및 LLM/MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경의 AI/ML 인프라 구축의 전문성을 가지고 있습니다.
 
 | 주제       | 설명                                                                   |
 |-----------|-----------------------------------------------------------------------|
@@ -52,5 +52,6 @@ permalink: /ko/
 [인덱스]: /indice
 [데모]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
 [현대오토에버]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
+[Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
