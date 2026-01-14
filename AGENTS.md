@@ -43,9 +43,9 @@ This project is the official portfolio site for developer Jeayoung Jeon (전제�
 profile/
 ├── _config.yml              # Jekyll main configuration file
 ├── _data/                   # YAML data files
-│   ├── resume.yml          # Resume data (English)
+│   ├── resume-en.yml        # Resume data (English)
 │   ├── resume-ko.yml        # Resume data (Korean)
-│   ├── projects.yml        # Project portfolio data (English)
+│   ├── projects-en.yml      # Project portfolio data (English)
 │   ├── projects-ko.yml     # Project portfolio data (Korean)
 │   ├── authors.yml         # Author information
 │   ├── social.yml          # Social media links
@@ -125,7 +125,7 @@ Defines Node.js dependencies and build scripts:
 
 ### Data Files
 
-#### `_data/resume.yml` / `_data/resume-ko.yml`
+#### `_data/resume-en.yml` / `_data/resume-ko.yml`
 Stores resume data in YAML format:
 - `basics`: Basic information (name, email, LinkedIn, etc.)
 - `work`: Work experience
@@ -137,7 +137,7 @@ Stores resume data in YAML format:
 - `languages`: Language proficiency
 - `interests`: Interests
 
-#### `_data/projects.yml` / `_data/projects-ko.yml`
+#### `_data/projects-en.yml` / `_data/projects-ko.yml`
 Stores project portfolio data:
 - Detailed information per project
 - Roles and contributions
@@ -213,7 +213,7 @@ You can also force PDF regeneration via the GitHub Actions "Run workflow" button
 
 ### Modifying Resume Data
 
-To modify resume information, edit `_data/resume.yml` (English) or `_data/resume-ko.yml` (Korean).
+To modify resume information, edit `_data/resume-en.yml` (English) or `_data/resume-ko.yml` (Korean).
 
 **Notes**:
 - Follow YAML syntax precisely (indentation, quotes, etc.)
@@ -229,7 +229,7 @@ To modify resume information, edit `_data/resume.yml` (English) or `_data/resume
 
 ### Modifying Project Portfolio
 
-To modify project information, edit `_data/projects.yml` (English) or `_data/projects-ko.yml` (Korean).
+To modify project information, edit `_data/projects-en.yml` (English) or `_data/projects-ko.yml` (Korean).
 
 **Structure**:
 - Each project has `position`, `company`, `startDate`, `endDate` fields

@@ -6,15 +6,12 @@ accent_image:
   overlay: false
 ---
 
-<div class="screen-only">
-  <a href="/en/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
-  <a href="/ko/profile" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
-</div>
-
 * toc
 {:toc .large-only}
 
 ## ✨ Introduction
+
+> 🇰🇷 한국어 버전은 [여기](/ko/profile)에서 확인할 수 있습니다.
 
 My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software engineer in Seoul, South Korea.
 
@@ -61,7 +58,7 @@ Following is a brief summary of my career:
     }
   </style>
   <ul>
-    <li><span class="timeline-header">2024 - Present</span> Engineering in <b>LLMs, SLMs</b></li>    
+    <li><span class="timeline-header">2024 - Present</span> Engineering in <b>GenAI, LLMOps, Architecturing for AI Platforms</b></li>    
     <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipeline</b></li>
     <li><span class="timeline-header">2022 - Present</span> Engineering in <b>MLOps, DevOps, Hybrid Clusters</b></li>
     <li><span class="timeline-header">2018 - 2023</span> Research in <b>Visual-SLAM, SfM and Digital Twins</b></li>

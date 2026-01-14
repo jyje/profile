@@ -6,15 +6,12 @@ accent_image:
   overlay: false
 ---
 
-<div class="screen-only">
-  <a href="/en/profile" class="btn btn-sm btn-primary">🇬🇧 English</a>
-  <a href="/ko/profile" class="btn btn-sm btn-primary">🇰🇷 한국어</a>
-</div>
-
 * toc
 {:toc .large-only}
 
 ## ✨ 소개
+
+> 🇬🇧 You can check the English version [here](/en/profile).
 
 저는 서울,경기에서 활동하는 소프트웨어 엔지니어 [전제영(Jeayoung Jeon)]{:.heading.flip-title} 입니다.
 

@@ -6,7 +6,7 @@ cover: true
 ---
 ## Home
 
-> 🇰🇷 You can check the Korean version [here](/ko).
+> 🇰🇷 한국어 버전은 [여기](/ko)에서 확인할 수 있습니다.
 
 I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea. I'm currently working as an **AI Platform Engineer** at [Hyundai AutoEver]{:.heading.flip-title}, a company specializing in SDV and ICT for Automotives. I'm developing and using AI platforms to solve automotive SW development problems. I specialize in developing AI apps, AI platforms, building hybrid Kubernetes clusters, and contributing to AI/ML infrastructure solutions in cloud-native environments.
 
