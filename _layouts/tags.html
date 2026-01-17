@@ -4,24 +4,110 @@ layout: page
 
 {{ content }}
 
-<h2>Tags</h2>
-
 {% assign documents = site.documents %}
 {% assign featured_tags = documents | where: "type", "tag" | sort %}
 {% assign tags = site.tags | sort %}
 
-<div style="margin-left: 1rem;">
-  <ul class="related-posts">
-    {% for tag in featured_tags %}
-      <li>
-        <a href="{{ tag.url | relative_url }}">{{ tag.title }}</a>
-        {% for site_tag in tags %}
-          {% if site_tag[0] == tag.slug %}
-            <span class="faded fine">({{ site_tag | last | size }})</span>
-            {% break %}
-          {% endif %}
-        {% endfor %}
-      </li>
+{% comment %} Calculate min/max counts at build time {% endcomment %}
+{% assign max_count = 0 %}
+{% assign min_count = 9999 %}
+{% for tag in featured_tags %}
+  {% assign count = 0 %}
+  {% for site_tag in tags %}
+    {% if site_tag[0] == tag.slug %}
+      {% assign count = site_tag | last | size %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if count > max_count %}{% assign max_count = count %}{% endif %}
+  {% if count < min_count %}{% assign min_count = count %}{% endif %}
+{% endfor %}
+
+{% assign count_range = max_count | minus: min_count %}
+
+<style>
+  .tag-cloud {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.85rem !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+    margin-top: 2.5rem !important;
+    align-items: center !important;
+  }
+
+  .tag-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 0.5rem 1rem !important;
+    border: none !important; /* Explicitly remove border */
+    border-radius: 8px !important;
+    transition: all 0.25s ease-in-out !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important; /* Force unified size */
+    line-height: 1.2 !important;
+    margin: 0 !important;
+  }
+
+  /* Color map definitions (5 levels) - Use !important to override theme defaults */
+  .level-1 { background-color: rgba(113, 128, 150, 0.1) !important; color: #718096 !important; }
+  .level-2 { background-color: rgba(49, 130, 206, 0.1) !important; color: #3182ce !important; }
+  .level-3 { background-color: rgba(56, 161, 105, 0.1) !important; color: #38a169 !important; }
+  .level-4 { background-color: rgba(221, 107, 32, 0.1) !important; color: #dd6b20 !important; }
+  .level-5 { background-color: var(--accent-color) !important; color: #fff !important; font-weight: 700 !important; box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important; }
+
+  .tag-pill:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15) !important;
+    filter: brightness(1.1) !important;
+  }
+
+  .level-5:hover {
+    color: #fff !important;
+  }
+
+  .tag-count {
+    display: inline-block !important;
+    margin-left: 0.6rem !important;
+    font-size: 0.75rem !important;
+    padding: 0.1rem 0.4rem !important;
+    background-color: rgba(0,0,0,0.06) !important;
+    border-radius: 4px !important;
+    opacity: 0.8 !important;
+    color: inherit !important;
+  }
+  
+  .level-5 .tag-count {
+    background-color: rgba(255,255,255,0.2) !important;
+    color: #fff !important;
+  }
+</style>
+
+<ul class="tag-cloud">
+  {% for tag in featured_tags %}
+    {% assign count = 0 %}
+    {% for site_tag in tags %}
+      {% if site_tag[0] == tag.slug %}
+        {% assign count = site_tag | last | size %}
+        {% break %}
+      {% endif %}
     {% endfor %}
-  </ul>
-</div>
+
+    {% comment %} Calculate level logic (1-5) {% endcomment %}
+    {% if count_range > 0 %}
+      {% assign level = count | minus: min_count | times: 4 | divided_by: count_range | plus: 1 %}
+    {% else %}
+      {% assign level = 3 %}
+    {% endif %}
+
+    <li style="list-style: none !important;">
+      <a href="{{ tag.url | relative_url }}" class="tag-pill level-{{ level }}">
+        <span>{{ tag.title }}</span>
+        {% if count > 0 %}
+          <span class="tag-count">{{ count }}</span>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

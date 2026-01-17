@@ -1,7 +1,7 @@
 ---
 layout:     post
 categories: [ "posts" ]
-tags:       [ "careers","ai","mlops" ]
+tags:       [ "careers","ai","mlops","hyundai-autoever","llm","linkedin" ]
 description: >
   Excited to join Hyundai AutoEver as an AI/MLOps Engineer, focusing on enterprise AI platforms and ML pipelines for automotive domain.
   <b>Since Feb 24, 2025</b>
