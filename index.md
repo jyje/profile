@@ -59,6 +59,8 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
 
+{% include components/author.html author=site.data.authors.jyje heading="About Author" %}
+
 <!-- 🧑‍💻 Set-up and Run -->
 
 <!-- bundle config set --local path 'vendor/bundle' -->
