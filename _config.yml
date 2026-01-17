@@ -157,11 +157,11 @@ defaults:
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:
-      path:            en/posts
+      path:            en/posts/_posts
     values:
       permalink:       /en/posts/:title
   - scope:
-      path:            ko/posts
+      path:            ko/posts/_posts
     values:
       permalink:       /ko/posts/:title
   - scope:

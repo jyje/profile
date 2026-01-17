@@ -3,6 +3,7 @@ type: category
 layout: grid
 title: 포스트
 slug: posts
+permalink: /ko/posts/
 language: ko
 description: >
   🎉 소식과 성과를 공유하는 포스트들.

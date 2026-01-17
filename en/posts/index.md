@@ -3,6 +3,7 @@ type: category
 layout: grid
 title: Posts
 slug: posts
+permalink: /en/posts/
 language: en
 description: >
   🎉 Articles for good news, achievements, and posts.
