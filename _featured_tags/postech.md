@@ -1,5 +1,5 @@
 ---
-layout: tag-list
+layout: collection
 type: tag
 title: POSTECH
 slug: postech

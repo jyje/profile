@@ -2,7 +2,12 @@
 layout: page
 ---
 
-{% assign posts = site.tags[page.slug] | sort: "date" | reverse %}
+{% assign posts = site.tags[page.slug] %}
+{% if posts %}
+  {% assign posts = posts | sort: "date" | reverse %}
+{% else %}
+  {% assign posts = "" | split: "," %}
+{% endif %}
 
 {{ content }}
 

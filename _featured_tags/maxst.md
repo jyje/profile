@@ -1,5 +1,5 @@
 ---
-layout: tag-list
+layout: collection
 type: tag
 title: MAXST
 slug: maxst

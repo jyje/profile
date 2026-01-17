@@ -73,6 +73,8 @@ menu_ko:
 legal:
   - title:             Home
     url:               /
+  - title:             Profile
+    url:               /en/profile
   - title:             Résumé
     url:               /en/profile/resume
   - title:             Projects
@@ -81,6 +83,8 @@ legal:
     url:               /tags
   - title:             Credits
     url:               /credits
+  - title:             GitHub
+    url:               https://github.com/jyje/profile
 
 
 # This text will appear in a `<small>` tag in the footer of every page.
