@@ -29,8 +29,7 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
   <a href="/en/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Resume</a>
   <a href="/en/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
   <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> Demo</a>
-  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Blog 1</a>
-  <a href="https://codingnyan.tistory.com" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Blog 2</a>
+  <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Blog</a>
 </div>
 
 <div style="margin-top: 5rem;">
@@ -99,7 +98,6 @@ You can find more details about my projects and achievements in the following do
 
 - [Demo]{:.heading.flip-title}: Live demo powered by Raspberry Pi cluster (Can be down sometimes)
 - [Blog 1]{:.heading.flip-title}: Official blog written in Korean. Draft of this my official site
-- [Blog 2]{:.heading.flip-title}: Personal blog written in Korean
 
 ![Logo of this site](/assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
@@ -140,5 +138,4 @@ You can find more details about my projects and achievements in the following do
 
 [Demo]: https://app.jyje.online "Demo"
 
-[Blog 1]: https://blog.jyje.online "Blog 1"
-[Blog 2]: https://codingnyan.tistory.com "Blog 2"
+[Blog]: https://blog.jyje.online "Blog"

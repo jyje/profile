@@ -140,5 +140,4 @@ accent_image:
 
 [Demo]: https://app.jyje.online "Demo"
 [데모]: https://app.jyje.online "Demo"
-[블로그 1]: https://blog.jyje.online "Blog 1"
-[블로그 2]: https://codingnyan.tistory.com "Blog 2"
+[블로그]: https://blog.jyje.online "Blog"
