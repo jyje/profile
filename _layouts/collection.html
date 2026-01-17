@@ -54,9 +54,15 @@ layout: page
           </div>
         {% endif %}
       </div>
+      
       <div class="card-body">
         <h3 class="card-title">{{ post.title }}</h3>
         
+        {% assign desc = post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+        {% if desc != "" %}
+          <div class="card-tooltip">{{ desc }}</div>
+        {% endif %}
+
         <div class="card-languages">
           {% if en_ver %}
             <a href="{{ en_ver.url | relative_url }}" class="lang-link">🇬🇧 English</a>
@@ -74,10 +80,39 @@ layout: page
 {% endfor %}
 
 <style>
+  .column.column-1-2 {
+    overflow: visible !important;
+    position: relative; /* Ensure z-index works */
+  }
+  .columns.columns-break {
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+  }
+  .columns.columns-break:hover {
+    z-index: 10;
+  }
+  /* Fix for Hydejack layout clipping tooltips */
+  html, body, #_main, .page, .content, .hy-drawer-layout, .hy-push-state, .hy-main, .hy-layout, article, main, section, div.column, div.columns, .hy-main-content, .hy-push-state-content, .columns-break, #_pushState, #_drawer {
+    overflow: visible !important;
+    contain: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    clip: auto !important;
+    clip-path: none !important;
+  }
+  .project-card-img-wrapper, .card-body, .project-card, .column, .columns, .columns-break {
+    overflow: visible !important;
+  }
+  
+  /* Ensure no parent clips the tooltip */
+  .column-1-2, .columns-break, .content, .page, .hy-main-content {
+    overflow: visible !important;
+  }
   .project-card {
     background: var(--gray-bg, rgba(0,0,0,0.02)) !important;
     border-radius: 0.5rem !important; /* Match Hydejack border-radius from variables.yml */
-    overflow: hidden !important;
+    overflow: visible !important;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -85,9 +120,88 @@ layout: page
     border: 1px solid var(--border-color, rgba(0,0,0,0.1));
     box-shadow: 0.125rem 0.125rem 1rem rgba(0, 0, 0, 0.1);
     position: relative;
+    margin-bottom: 20px; /* Space for tooltip */
+  }
+  .column.column-1-2:hover {
+    z-index: 60;
   }
   .project-card:hover {
     transform: translateY(-0.25rem);
+    z-index: 70; /* Ensure tooltip and card stay above others */
+  }
+  
+  .card-tooltip {
+    position: absolute;
+    top: calc(100% + 5px); /* Slightly closer */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff !important;
+    color: #333333 !important;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    width: 240px; /* Slightly smaller to avoid horizontal clipping */
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
+    border: 1px solid #cccccc !important;
+    z-index: 9999 !important; /* Extremely high z-index */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* Desktop hover state */
+  @media screen and (min-width: 801px) {
+    .project-card:hover .card-tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(5px);
+      transition-delay: 500ms;
+    }
+  }
+
+  /* Mobile: Display description inside the card at all times */
+  @media screen and (max-width: 800px) {
+    .card-tooltip {
+      position: static !important;
+      transform: none !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      width: 100% !important;
+      box-shadow: none !important;
+      border: none !important;
+      background: transparent !important;
+      color: var(--text-color) !important;
+      padding: 0 0 1rem 0 !important;
+      font-size: 0.85rem !important;
+      pointer-events: auto !important;
+      text-align: center !important;
+      transition: none !important;
+      margin-top: -0.5rem;
+    }
+    .card-tooltip::after {
+      display: none !important;
+    }
+    .card-body {
+      padding-top: 0.5rem !important;
+    }
+  }
+
+  /* Triangle for tooltip (Desktop only) */
+  @media screen and (min-width: 801px) {
+    .card-tooltip::after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 0 8px 8px 8px;
+      border-style: solid;
+      border-color: transparent transparent #ffffff transparent !important;
+    }
   }
   
   /* Transparent link covering the whole card */
@@ -144,12 +258,12 @@ layout: page
     z-index: 3; /* Highest priority for language selection */
   }
   .lang-link {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     text-decoration: none !important;
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    padding: 0.2rem 0.5rem;
+    padding: 0.25rem 0.6rem;
     background: var(--faded-background-color, rgba(0,0,0,0.05));
     border-radius: 4px;
     transition: all 0.2s;
@@ -160,5 +274,17 @@ layout: page
     background: var(--accent-color);
     color: #fff !important;
     border-color: var(--accent-color);
+  }
+
+  /* Dark mode specific improvements for language links */
+  body.dark-mode .lang-link {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    color: #e0e0e0 !important;
+  }
+  body.dark-mode .lang-link:hover {
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
+    border-color: var(--accent-color) !important;
   }
 </style>
