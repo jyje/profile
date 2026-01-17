@@ -18,7 +18,7 @@ hy-drawer {
   position: relative; // inline
   overflow: hidden; // inline
   display: block; // inline
-  z-index: 4; // inline
+  z-index: 10000; // inline
 
   @media screen {
     // <<< link
@@ -66,6 +66,7 @@ hy-drawer {
 }
 
 .sidebar {
+  z-index: 10001;
   // <<< inline
   position: relative;
   display: flex;

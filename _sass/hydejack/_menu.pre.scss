@@ -20,7 +20,7 @@ $navbar-height: 5rem;
   position: fixed;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 40;
 }
 
 .fixed-top {
@@ -83,6 +83,7 @@ $navbar-height: 5rem;
 
 // <<< inline
 .nav-btn-bar {
+  z-index: 41;
   @extend .color-transition;
   margin: 0 -1rem;
   background-color: white; // IE11
@@ -132,7 +133,12 @@ a.nav-btn, button.nav-btn {
 }
 
 #_navbar {
-  z-index: 3;
+  z-index: 40;
+  background-color: var(--body-bg);
+}
+
+#_cookies-banner {
+  z-index: 50;
   background-color: var(--body-bg);
 }
 

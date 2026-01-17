@@ -86,7 +86,12 @@ a.nav-btn, button.nav-btn {
 }
 
 #_navbar {
-  z-index: 3;
+  z-index: 40;
+  background-color: var(--body-bg);
+}
+
+#_cookies-banner {
+  z-index: 50;
   background-color: var(--body-bg);
 }
 

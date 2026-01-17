@@ -121,11 +121,11 @@ layout: page
     margin-bottom: 5px !important;
   }
   .column.column-1-2:hover {
-    z-index: 100 !important;
+    z-index: 10 !important;
   }
   .project-card:hover {
     transform: translateY(-0.25rem);
-    z-index: 1000 !important; /* Extremely high to stay above everything */
+    z-index: 20 !important; /* Above other cards */
   }
   
   .card-tooltip {
@@ -141,7 +141,7 @@ layout: page
     width: 240px; /* Slightly smaller to avoid horizontal clipping */
     box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
     border: 1px solid #cccccc !important;
-    z-index: 2000 !important; /* Even higher than the card */
+    z-index: 30 !important; /* Above the card */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
