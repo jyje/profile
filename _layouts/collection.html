@@ -1,0 +1,159 @@
+---
+layout: page
+---
+
+{% assign posts = site.tags[page.slug] | sort: "date" | reverse %}
+
+{{ content }}
+
+{% assign date_formats  = site.data.strings.date_formats               %}
+{% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
+
+{% assign prev_date = 0 %}
+{% assign handled_slugs = "" | split: "," %}
+
+{% for post in posts %}
+  {% if handled_slugs contains post.slug %}{% continue %}{% endif %}
+  
+  {% assign current_date = post.date | date:list_group_by %}
+
+  {% if current_date != prev_date %}
+    {% unless forloop.first %}</div>{% endunless %}
+    <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
+    <div class="columns columns-break">
+    {% assign prev_date = current_date %}
+  {% endif %}
+
+  <div class="column column-1-2">
+    <article class="project-card">
+      {% comment %} Find versions for links {% endcomment %}
+      {% assign versions = "" | split: "," %}
+      {% for p in posts %}
+        {% if p.slug == post.slug %}
+          {% assign versions = versions | push: p %}
+        {% endif %}
+      {% endfor %}
+      {% assign en_ver = versions | where_exp: "item", "item.path contains 'en/'" | first %}
+      {% assign ko_ver = versions | where_exp: "item", "item.path contains 'ko/'" | first %}
+      {% assign default_ver = en_ver | default: ko_ver %}
+
+      {% comment %} Entire card clickable (to English/Default version) {% endcomment %}
+      <a class="fill-card no-hover" href="{{ default_ver.url | relative_url }}" tabindex="-1">
+        <span class="sr-only">Continue reading {{ post.title }}</span>
+      </a>
+
+      <div class="project-card-img-wrapper">
+        {% if post.image %}
+          <div class="img-container">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          </div>
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">{{ post.title }}</h3>
+        
+        <div class="card-languages">
+          {% if en_ver %}
+            <a href="{{ en_ver.url | relative_url }}" class="lang-link">🇬🇧 English</a>
+          {% endif %}
+          {% if ko_ver %}
+            <a href="{{ ko_ver.url | relative_url }}" class="lang-link">🇰🇷 한국어</a>
+          {% endif %}
+        </div>
+      </div>
+    </article>
+  </div>
+
+  {% assign handled_slugs = handled_slugs | push: post.slug %}
+  {% if forloop.last %}</div>{% endif %}
+{% endfor %}
+
+<style>
+  .project-card {
+    background: var(--gray-bg, rgba(0,0,0,0.02)) !important;
+    border-radius: 0.5rem !important; /* Match Hydejack border-radius from variables.yml */
+    overflow: hidden !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    border: 1px solid var(--border-color, rgba(0,0,0,0.1));
+    box-shadow: 0.125rem 0.125rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .project-card:hover {
+    transform: translateY(-0.25rem);
+  }
+  
+  /* Transparent link covering the whole card */
+  .fill-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 0.5rem !important;
+  }
+
+  .img-container {
+    width: 100%;
+    position: relative;
+    padding-top: 50%; /* 2:1 Aspect Ratio */
+    overflow: hidden;
+    background: var(--faded-background-color);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Sit above fill-card to allow button clicks */
+  }
+  .card-title {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-color);
+  }
+  .card-languages {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    position: relative;
+    z-index: 3; /* Highest priority for language selection */
+  }
+  .lang-link {
+    font-size: 0.75rem;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.2rem 0.5rem;
+    background: var(--faded-background-color, rgba(0,0,0,0.05));
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color, rgba(0,0,0,0.1));
+  }
+  .lang-link:hover {
+    background: var(--accent-color);
+    color: #fff !important;
+    border-color: var(--accent-color);
+  }
+</style>
