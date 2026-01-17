@@ -1,8 +1,9 @@
 ---
 layout: post
-categories: works
+categories: posts
 title: "Widearth: AR & Digital Twins Platforms at Maxst"
 tags:
+  - achievements
   - maxst
   - digital-twins
   - devops
@@ -67,13 +68,13 @@ Widearth is a **B2B2C** business that uses digital twin technology to create spa
         - **User A** can create a space map (2) by using the workspace (1) they own.
         - The created space map is stored in the cloud and **User A** can share it through the content studio (3). The shared target is **User B (digital twin content consumer)**.
         - **User A** can also modify the content (4), add content, and process personal information for privacy.
-        - The candidate group of **User A** is **‘a subject that makes a profit by sharing space through communication’**, and examples are as follows:
+        - The candidate group of **User A** is **'a subject that makes a profit by sharing space through communication'**, and examples are as follows:
             - Real Estate / Travel / Art Museum / Restaurant / Heavy Industry / Virtual Space / Disabled-Friendly Facilities
-            - Their plans are ‘to meet the needs of customers when they are not on site’.
+            - Their plans are 'to meet the needs of customers when they are not on site'.
                 - Before visiting the site / After visiting the site / When it is not possible to visit the site / When the site has changed
     - **User B (Digital twin content consumer)**
         - **User B** is the subject that consumes the space map service provided by **User A**.
-        - The candidate group of **User B** is **‘a subject that makes a profit by consuming space through communication’**, and examples are as follows:
+        - The candidate group of **User B** is **'a subject that makes a profit by consuming space through communication'**, and examples are as follows:
             - Potential Real Estate Consumer / Potential Traveler / Potential Art Museum Visitor / Potential Restaurant Customer / Potential Employee / Virtual Space User / Disabled Person And Helper/Protector
             - They are **customers** who can get information about the space and use the service from **User A** by paying for it.
 
@@ -88,7 +89,7 @@ Widearth's architecture corresponding to the public cloud area. The area where u
 {:.figcaption}
 
 - The area where users interact, mainly the public cloud area of the platform.
-- It is configured with an MSA (microservice architecture or mini-service architecture) that separates FE/BE/pipeline. Since the databases of each service are not strictly divided, it is appropriate to call it a **‘mini-service architecture’**.
+- It is configured with an MSA (microservice architecture or mini-service architecture) that separates FE/BE/pipeline. Since the databases of each service are not strictly divided, it is appropriate to call it a **'mini-service architecture'**.
 - It can operate in single/multi-cluster and all servers are designed to be horizontally scalable according to usage/usage environment.
 - The pipeline is explained in detail in the hybrid architecture below.
 
@@ -103,7 +104,7 @@ Widearth's architecture corresponding to the hybrid cloud (pipeline). The area w
 {:.figcaption}
 
 - The area where the pipeline is operating, using both on-premises and public cloud.
-- The pipeline is configured with the same specifications on both the on-premises and public cloud. To do this, a ‘file storage’ and an ‘object storage’ are configured in each cloud.
+- The pipeline is configured with the same specifications on both the on-premises and public cloud. To do this, a 'file storage' and an 'object storage' are configured in each cloud.
 - The database for logging and metadata for the back office is configured only in the public cloud for availability and management.
 - The pipeline is allocated to the available area of the on-premises data center first. If the on-premises does not respond or all areas are allocated, it is allocated to the public cloud second and the pipeline is activated.
     - If there is an outage/disaster in the on-premises data center,

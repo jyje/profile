@@ -1,8 +1,8 @@
 ---
 layout: tags
-title: Index
-permalink: /indice
+title: Tags
+permalink: /tags
 sidebar: true
 description: >
-  List of all categories and tags in this site
+  List of all tags in this site
 ---

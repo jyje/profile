@@ -16,7 +16,7 @@ I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Kor
 | **Interests**     | Agentic AI, LLMOps & GenAI, Automotives, Kubernetes, Cloud Navite, Computer Vision, Deep Learning              |
 | **Location**      | Anyang & Seoul, South Korea                                                                                    |
 
-[Profile]{:.heading.flip-title} / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Works]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Articles]{:.heading.flip-title} / [Index]{:.heading.flip-title}
+[Profile]{:.heading.flip-title} / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Achievements]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Tags]{:.heading.flip-title}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
@@ -28,14 +28,10 @@ This site provides the following sections:
 
 - [Profile]{:.heading.flip-title}: Career overview, [résumé], and [projects]
 - [Demo]{:.heading}: Live demonstration of my works (powered by Raspberry Pi cluster)
-- [Posts]{:.heading.flip-title}: Technical posts and articles
-- [Works]{:.heading.flip-title}: Professional activities and projects
+- [Posts]{:.heading.flip-title}: Technical posts and research articles
+- [Achievements]{:.heading.flip-title}: Selected professional activities and works
 - [Certifications]{:.heading.flip-title}: Professional certifications and credentials
-
-To browse articles and explore content by topic:
-
-- [Articles]{:.heading.flip-title}: All posts and articles
-- [Index]{:.heading.flip-title}: Categories and tags
+- [Tags]{:.heading.flip-title}: Browse content by tags
 
 For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:.heading}.
 
@@ -51,10 +47,10 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [CV]: profile/cv "my-profile cv --language=ko"
 [커리큘럼]: /ko/profile/cv "my-profile cv --language=ko"
 [Posts]: /en/posts
-[Works]: /en/works
-[Certifications]: /en/certifications
-[Articles]: /en/articles
-[Index]: indice
+[Achievements]: /tags/achievements
+[Certifications]: /tags/certifications
+[Tags]: /tags
+[Index]: /tags
 [Blog]: https://blog.jyje.online "my-blog"
 [Demo]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."

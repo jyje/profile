@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foundation", "security" ]
+categories: posts
+tags:       [ "certifications", "kubernetes", "linux-foundation", "security" ]
 description: >
   Foundation knowledge for securing Kubernetes and cloud native technologies.<br/>
   <b>Valid: Oct 27, 2025 – Oct 27, 2027</b>
@@ -81,4 +81,3 @@ Key characteristics of KCSA:
 - **Complementary**: Pairs well with hands-on certifications like CKS or practical security experience
 
 The KCSA certification validates a solid foundation in cloud native security technologies and serves as a stepping stone for more advanced security certifications or as a way to systematize existing security knowledge in the cloud native context.
-

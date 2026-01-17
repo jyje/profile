@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foundation" ]
+categories: posts
+tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
   Core skills for 4 Argo projects: Argo CD, Argo Workflows, Argo Events, and Argo Rollouts.<br/>
   <b>Valid: Sep 14, 2024 – Sep 15, 2026</b>

@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foundation" ]
+categories: posts
+tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
   Core skills for developing Kubernetes workloads.<br/>
   <b>Valid: Jun 1, 2024 – May 31, 2026</b>

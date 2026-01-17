@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foundation" ]
+categories: posts
+tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
   Core skills for managing Kubernetes clusters.<br/>
   <b>Valid: Mar 16, 2024 – Mar 15, 2027</b>
@@ -45,4 +45,3 @@ You can verify this course completion certificate [here](https://kodekloud.com/c
 <p align="center">
   <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7175108596026781696" height="700px" width="90%" frameborder="0" allowfullscreen="" title="Excited to share that I've successfully completed the Certified Kubernetes Administrator (CKA) program from The Linux Foundation"></iframe>
 </p>
-

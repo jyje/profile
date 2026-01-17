@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "github" ]
+categories: posts
+tags:       [ "certifications", "github" ]
 description: >
   Core skills for GitHub fundamentals and collaboration.<br/>
   <b>Valid: Nov 19, 2024 – Nov 18, 2027</b>

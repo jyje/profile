@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foundation" ]
+categories: posts
+tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
   Kubernetes 및 클라우드 네이티브 생태계에 대한 기초 지식.<br/>
   <b>유효기간: 2025년 10월 22일 – 2027년 10월 22일</b>

@@ -1,8 +1,9 @@
 ---
 layout: post
-categories: works
+categories: posts
 title: "MLOps: On-Premise MLOps with Open Source Projects"
 tags:
+  - achievements
   - mlops
   - devops
   - kubernetes

@@ -1,7 +1,7 @@
 ---
 layout:     post
-categories: [ "certifications" ]
-tags:       [ "kubernetes", "linux-foundation" ]
+categories: posts
+tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
   Foundation knowledge for Kubernetes and cloud native technologies.<br/>
   <b>Valid: Oct 22, 2025 – Oct 22, 2027</b>

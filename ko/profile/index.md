@@ -121,8 +121,8 @@ accent_image:
 [CV]: /ko/profile/cv "my-profile cv --korean"
 [커리큘럼]: /ko/profile/cv "my-profile cv --ko"
 
-[Articles]: /articles
-[포트폴리오]: /articles
+[Articles]: /en/posts
+[포트폴리오]: /tags/achievements
 [Certifications]: /certifications
 [Works]: /works
 

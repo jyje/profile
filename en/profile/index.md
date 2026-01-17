@@ -121,7 +121,7 @@ You can find more details about my projects and achievements in the following do
 [CV]: /en/profile/cv "my-profile cv"
 
 
-[Articles]: /articles
+[Articles]: /en/posts
 
 [Certifications]: /certifications
 [Works]: /works

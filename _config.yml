@@ -46,27 +46,21 @@ menu:
     url:               /
   - title:             Posts
     url:               /en/posts
-  - title:             Works
-    url:               /en/works
-  - title:             Certifications
-    url:               /en/certifications
+  - title:             Tags
+    url:               /tags
 
 # Multilingual menus (excluding Home which is handled separately)
 menu_en:
   - title:             Posts
     url:               /en/posts
-  - title:             Works
-    url:               /en/works
-  - title:             Certifications
-    url:               /en/certifications
+  - title:             Tags
+    url:               /tags
 
 menu_ko:
   - title:             Posts
     url:               /ko/posts
-  - title:             Works
-    url:               /ko/works
-  - title:             Certifications
-    url:               /ko/certifications
+  - title:             Tags
+    url:               /tags
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -77,10 +71,8 @@ legal:
     url:               /en/profile/resume
   - title:             Projects
     url:               /en/profile/projects
-  - title:             Articles
-    url:               /en/articles
-  - title:             Index
-    url:               /indice
+  - title:             Tags
+    url:               /tags
   - title:             Credits
     url:               /credits
 
@@ -89,7 +81,7 @@ legal:
 copyright:             "2023-2026 ⓒ jyje.online by Jeayoung Jeon 🧑‍💻"
 
 # Format of the permalinks
-permalink:             /:categories/:title # /:categories/:year-:month-:day-:title/
+# permalink:             /posts/:title # /:categories/:year-:month-:day-:title/
 
 
 # Pagination configuration (used by the `blog` layout)
@@ -165,32 +157,18 @@ defaults:
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:
+      path:            en/posts
+    values:
+      permalink:       /en/posts/:title
+  - scope:
+      path:            ko/posts
+    values:
+      permalink:       /ko/posts/:title
+  - scope:
       type:            news
     values:
       seo:
         type:          WebPage
-  # - scope:
-  #     type:            works_en
-  #   values:
-  #     seo:
-  #       type:          WebPage
-  # - scope:
-  #     type:            works_ko
-  #   values:
-  #     seo:
-  #       type:          WebPage
-  # - scope:
-  #     type:            articles_en
-  #   values:
-  #     sitemap:         false
-  #     seo:
-  #       type:          WebPage
-  # - scope:
-  #     type:            articles_ko
-  #   values:
-  #     sitemap:         false
-  #     seo:
-  #       type:          WebPage
   - scope:
       type:            featured_categories
     values:
@@ -355,10 +333,6 @@ hydejack:
 # ----------------------------------------------------------------------------------------
 
 collections:
-  featured_categories:
-    permalink:         /:name/
-    output:            true
-
   featured_tags:
     permalink:         /tags/:name/
     output:            true
@@ -369,25 +343,9 @@ collections:
 
   # English collections
   # posts_en:
-  #   permalink:         /en/posts/:name/
-  #   output:            true
-  # works_en:
-  #   permalink:         /en/works/:name/
-  #   output:            true
-  # articles_en:
-  #   permalink:         /en/articles/:name/
-  #   output:            true
 
   # Korean collections
   # posts_ko:
-  #   permalink:         /ko/posts/:name/
-  #   output:            true
-  # works_ko:
-  #   permalink:         /ko/works/:name/
-  #   output:            true
-  # articles_ko:
-  #   permalink:         /ko/articles/:name/
-  #   output:            true
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
@@ -460,7 +418,7 @@ plugins:
 # ---------------------------------------------------------------------------------------
 git_date:
   enabled:                true
-  collections:            [] # [posts_en, posts_ko, works_en, works_ko, articles_en, articles_ko]
+  collections:            [] # [posts_en, posts_ko]
   use_git:                true  # Use Git commit dates (false to use filesystem dates only)
   fallback_to_filesystem: true  # Fallback to filesystem dates if Git fails
 

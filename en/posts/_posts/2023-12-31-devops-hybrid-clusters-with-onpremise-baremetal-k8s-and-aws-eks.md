@@ -1,8 +1,9 @@
 ---
 layout: post
-categories: works
+categories: posts
 title: "DevOps: Hybrid Clusters with On-Premise Bare-Metal K8s and AWS EKS"
 tags:
+  - achievements
   - devops
   - kubernetes
   - aws
