@@ -44,6 +44,8 @@ author:
 menu:
   - title:             Home
     url:               /
+  - title:             Profile
+    url:               /en/profile
   - title:             Posts
     url:               /en/posts
   - title:             Tags
@@ -51,12 +53,16 @@ menu:
 
 # Multilingual menus (excluding Home which is handled separately)
 menu_en:
+  - title:             Profile
+    url:               /en/profile
   - title:             Posts
     url:               /en/posts
   - title:             Tags
     url:               /tags
 
 menu_ko:
+  - title:             Profile
+    url:               /ko/profile
   - title:             Posts
     url:               /ko/posts
   - title:             Tags
