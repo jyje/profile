@@ -9,4 +9,5 @@ description: >
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
   overlay: false
+highlight: true
 ---

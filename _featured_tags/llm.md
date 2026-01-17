@@ -6,4 +6,5 @@ slug: llm
 sidebar: true
 description: >
    Large Language Models and Generative AI 🤖
+highlight: true
 ---

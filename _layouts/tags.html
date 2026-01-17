@@ -40,31 +40,53 @@ layout: page
     display: inline-flex !important;
     align-items: center !important;
     padding: 0.5rem 1rem !important;
-    border: none !important; /* Explicitly remove border */
+    border: none !important;
     border-radius: 8px !important;
-    transition: all 0.25s ease-in-out !important;
+    transition: all 0.3s ease !important;
     text-decoration: none !important;
     font-weight: 500 !important;
-    font-size: 1rem !important; /* Force unified size */
+    font-size: 1rem !important;
     line-height: 1.2 !important;
     margin: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
 
-  /* Color map definitions (5 levels) - Use !important to override theme defaults */
+  /* Color map definitions (5 levels) */
   .level-1 { background-color: rgba(113, 128, 150, 0.1) !important; color: #718096 !important; }
   .level-2 { background-color: rgba(49, 130, 206, 0.1) !important; color: #3182ce !important; }
   .level-3 { background-color: rgba(56, 161, 105, 0.1) !important; color: #38a169 !important; }
   .level-4 { background-color: rgba(221, 107, 32, 0.1) !important; color: #dd6b20 !important; }
-  .level-5 { background-color: var(--accent-color) !important; color: #fff !important; font-weight: 700 !important; box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important; }
+  .level-5 { background-color: var(--accent-color) !important; color: #fff !important; font-weight: 700 !important; box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important; }
+
+  /* New Pulse Animation using pseudo-element */
+  @keyframes ripple {
+    0% { transform: scale(1); opacity: 0.25; }
+    70% { transform: scale(1.1, 1.2); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+  }
+
+  .tag-highlighted::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    z-index: -1;
+    animation: ripple 4s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .tag-highlighted {
+    border: 1px solid transparent !important;
+  }
 
   .tag-pill:hover {
     transform: translateY(-3px) !important;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15) !important;
-    filter: brightness(1.1) !important;
-  }
-
-  .level-5:hover {
-    color: #fff !important;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12) !important;
+    filter: brightness(1.05) !important;
   }
 
   .tag-count {
@@ -102,7 +124,7 @@ layout: page
     {% endif %}
 
     <li style="list-style: none !important;">
-      <a href="{{ tag.url | relative_url }}" class="tag-pill level-{{ level }}">
+      <a href="{{ tag.url | relative_url }}" class="tag-pill level-{{ level }} {% if tag.highlight %}tag-highlighted{% endif %}">
         <span>{{ tag.title }}</span>
         {% if count > 0 %}
           <span class="tag-count">{{ count }}</span>
