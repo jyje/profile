@@ -58,7 +58,8 @@ layout: page
       <div class="card-body">
         <h3 class="card-title">{{ post.title }}</h3>
         
-        {% assign desc = post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+        {% assign desc_source = en_ver | default: post %}
+        {% assign desc = desc_source.description | default: desc_source.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
         {% if desc != "" %}
           <div class="card-tooltip">{{ desc }}</div>
         {% endif %}
