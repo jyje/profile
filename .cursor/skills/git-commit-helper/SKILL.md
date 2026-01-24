@@ -42,6 +42,7 @@ Co-Authored-By: Cursor Agent <cursoragent@cursor.com>
 | 🗑️ | `remove` | Deprecate or clean up code |
 | ♻️ | `refactor` | Refactor code |
 | 📝 | `docs` | Add or update documentation |
+| 📝 | `article` | Add or update articles (content/workload, not project code) |
 | 🎨 | `style` | Improve structure / format |
 | ⚡ | `perf` | Improve performance |
 | ✅ | `test` | Add, update, or pass tests |

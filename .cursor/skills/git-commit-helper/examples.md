@@ -77,3 +77,12 @@ Correct "gitmodi" to "gitmoji" in documentation.
 
 Co-Authored-By: Cursor Agent <cursoragent@cursor.com>
 ```
+
+## Article (content/workload)
+```
+📝 article(blog): add new post about kubernetes best practices
+
+Add a new blog post discussing kubernetes deployment strategies and best practices.
+
+Co-Authored-By: Cursor Agent <cursoragent@cursor.com>
+```
