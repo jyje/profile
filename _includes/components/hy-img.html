@@ -26,4 +26,5 @@
   {% if include.width %}width="{{ include.width }}"{% endif %}
   {% if include.height %}height="{{ include.height }}"{% endif %}
   {% if include.width and include.height %}loading="lazy"{% endif %}
+  {% if include.position %}style="width: 100%; height: 100%; object-position: {{ include.position }}; object-fit: cover;"{% endif %}
 />

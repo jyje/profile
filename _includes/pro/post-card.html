@@ -24,11 +24,42 @@
 {% endif %}
 {% assign sizes = sizes | strip_newlines %}
 
+{% comment %} Process image properties before rendering {% endcomment %}
+{% if post.image %}
+  {% if post.image.path %}
+    {% assign img_path = post.image.path %}
+    {% assign img_width = post.image.width | default: 864 %}
+    {% assign img_height = post.image.height | default: 486 %}
+    {% if post.image.left != nil or post.image.top != nil %}
+      {% assign img_left = post.image.left | default: "50%" %}
+      {% assign img_top = post.image.top | default: "50%" %}
+      {% assign left_str = img_left | append: "" %}
+      {% assign top_str = img_top | append: "" %}
+      {% unless left_str contains "%" or left_str contains "px" %}
+        {% assign left_str = left_str | append: "%" %}
+      {% endunless %}
+      {% unless top_str contains "%" or top_str contains "px" %}
+        {% assign top_str = top_str | append: "%" %}
+      {% endunless %}
+      {% capture img_position %}{{ left_str }} {{ top_str }}{% endcapture %}
+    {% else %}
+      {% assign img_position = nil %}
+    {% endif %}
+    {% capture container_style %}aspect-ratio: {{ img_width }} / {{ img_height }}; overflow: hidden;{% endcapture %}
+  {% else %}
+    {% assign img_path = post.image %}
+    {% assign img_width = 864 %}
+    {% assign img_height = 486 %}
+    {% assign img_position = nil %}
+    {% assign container_style = nil %}
+  {% endif %}
+{% endif %}
+
 <article class="project-card">
   <a href="{{ post.url | relative_url }}" class="no-hover no-print-link {% unless post.hide_image %}flip-project{% endunless %}" tabindex="-1">
-    <div class="project-card-img aspect-ratio {% if post.image %}flip-project-img{% else %}fallback-img{% endif %}">
+    <div class="project-card-img aspect-ratio {% if post.image %}flip-project-img{% else %}fallback-img{% endif %}" {% if container_style %}style="{{ container_style }}"{% endif %}>
       {% if post.image %}
-        {% include_cached components/hy-img.html img=post.image alt=post.title sizes=sizes width=864 height=486 %}
+        {% include_cached components/hy-img.html img=img_path alt=post.title sizes=sizes width=img_width height=img_height position=img_position %}
       {% endif %}
     </div>
   </a>

@@ -67,9 +67,43 @@
 
     {% assign alt = false %}
     {% unless hide_image %}{% if post.image %}
+      {% comment %} Support both string and object formats for image {% endcomment %}
+      {% if post.image.path %}
+        {% assign img_path = post.image.path %}
+        {% assign img_width = post.image.width | default: 864 %}
+        {% assign img_height = post.image.height | default: 486 %}
+        {% comment %} left, top for object-position (optional, supports px and %) {% endcomment %}
+        {% if post.image.left != nil or post.image.top != nil %}
+          {% assign img_left = post.image.left | default: "50%" %}
+          {% assign img_top = post.image.top | default: "50%" %}
+          {% comment %} Add % suffix if value is a number without unit {% endcomment %}
+          {% assign left_str = img_left | append: "" %}
+          {% assign top_str = img_top | append: "" %}
+          {% unless left_str contains "%" or left_str contains "px" %}
+            {% assign left_str = left_str | append: "%" %}
+          {% endunless %}
+          {% unless top_str contains "%" or top_str contains "px" %}
+            {% assign top_str = top_str | append: "%" %}
+          {% endunless %}
+          {% capture img_position %}{{ left_str }} {{ top_str }}{% endcapture %}
+        {% else %}
+          {% assign img_position = nil %}
+        {% endif %}
+      {% else %}
+        {% assign img_path = post.image %}
+        {% assign img_width = 864 %}
+        {% assign img_height = 486 %}
+        {% assign img_position = nil %}
+      {% endif %}
+      {% comment %} Calculate container style for custom aspect ratio {% endcomment %}
+      {% if post.image.path %}
+        {% capture container_style %}aspect-ratio: {{ img_width }} / {{ img_height }}; overflow: hidden;{% endcapture %}
+      {% else %}
+        {% assign container_style = nil %}
+      {% endif %}
       {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="no-hover no-print-link {% unless post.hide_image %}flip-project{% endunless %}" tabindex="-1">{% endunless %}
-        <div class="img-wrapper lead aspect-ratio flip-project-img">
-          {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
+        <div class="img-wrapper lead aspect-ratio flip-project-img" {% if container_style %}style="{{ container_style }}"{% endif %}>
+          {% include_cached components/hy-img.html img=img_path alt=post.title width=img_width height=img_height position=img_position %}
         </div>
       {% unless no_link_title %}</a>{% endunless %}
       {% assign alt = '' %}
