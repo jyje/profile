@@ -8,13 +8,13 @@ permalink: /ko/
 
 > 🇬🇧 You can check the English version [here](/).
 
-저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다. 저는 현재 **AI 플랫폼 엔지니어**로 차량 분야의 ICT 기업인 [현대오토에버]{:.heading.flip-title}에서 근무하고 있습니다. AI 플랫폼을 개발하고 활용하여 차량 SW 개발 문제를 해결하고 있습니다. AI 에이전트 개발, LLM/MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경의 AI/ML 인프라 구축의 전문성을 가지고 있습니다.
+저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다. 저는 현재 **AI 플랫폼 엔지니어**로 차량 분야의 ICT 기업인 [현대오토에버]{:.heading.flip-title}에서 일하고 있습니다. AI 플랫폼을 개발하고 활용하여 차량 SW 개발 문제를 해결하고 있습니다. AI 에이전트 개발, LLM/MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경의 AI/ML 인프라 구축의 전문성을 가지고 있습니다.
 
 | 주제       | 설명                                                                   |
 |-----------|-----------------------------------------------------------------------|
 | **역할**   | 리드 AI 플랫폼 엔지니어 at 개발환경플랫폼팀, [현대오토에버]{:.heading.flip-title}  |
-| **관심사** | Agentic AI, LLMOps & GenAI, 자동차, Kubernetes, Cloud Native            |
-| **위치**   | 대한민국 안양 & 서울                                                      |
+| **관심사** | Agentic AI, LLMOps, 차량기술, Kubernetes, Cloud Native, Computer Vision  |
+| **위치**   | 대한민국 안양 & 서울                                                       |
 
 [프로필]{:.heading.flip-title} / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [성과]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [태그]{:.heading.flip-title}
 
