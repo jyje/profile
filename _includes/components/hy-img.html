@@ -1,5 +1,20 @@
 {% assign sources = '' %}
+{% comment %} Check if img is an object (has .src or .path property) {% endcomment %}
+{% assign img_is_object = false %}
 {% if include.img.src or include.img.path %}
+  {% assign img_is_object = true %}
+{% endif %}
+{% comment %} If img is a string, it won't have .src or .path, so check if it's not empty string {% endcomment %}
+{% if img_is_object == false and include.img != '' and include.img != nil %}
+  {% comment %} Try to detect if it's actually an object by checking if it contains hash-like structure {% endcomment %}
+  {% assign img_str = include.img | append: '' %}
+  {% if img_str contains 'path' or img_str contains 'width' or img_str contains 'height' %}
+    {% comment %} Likely an object that was stringified, treat as string {% endcomment %}
+    {% assign img_is_object = false %}
+  {% endif %}
+{% endif %}
+
+{% if img_is_object %}
   {% assign srcset = null %}
 
   {% if include.img.srcset %}

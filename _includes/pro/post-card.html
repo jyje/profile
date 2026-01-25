@@ -26,13 +26,19 @@
 
 {% comment %} Process image properties before rendering {% endcomment %}
 {% if post.image %}
-  {% if post.image.path %}
-    {% assign img_path = post.image.path %}
-    {% assign img_width = post.image.width | default: 864 %}
-    {% assign img_height = post.image.height | default: 486 %}
-    {% if post.image.left != nil or post.image.top != nil %}
-      {% assign img_left = post.image.left | default: "50%" %}
-      {% assign img_top = post.image.top | default: "50%" %}
+  {% comment %} Support both string and object formats for image {% endcomment %}
+  {% assign img_obj = post.image %}
+  {% comment %} Check if it's an object by trying to access .path - if it fails, it's a string {% endcomment %}
+  {% if img_obj.path != nil %}
+    {% comment %} It's an object with .path property {% endcomment %}
+    {% assign img_path = img_obj.path %}
+    {% assign img_width = img_obj.width | default: 864 %}
+    {% assign img_height = img_obj.height | default: 486 %}
+    {% comment %} left, top for object-position (optional, supports px and %) {% endcomment %}
+    {% if img_obj.left != nil or img_obj.top != nil %}
+      {% assign img_left = img_obj.left | default: "50%" %}
+      {% assign img_top = img_obj.top | default: "50%" %}
+      {% comment %} Add % suffix if value is a number without unit {% endcomment %}
       {% assign left_str = img_left | append: "" %}
       {% assign top_str = img_top | append: "" %}
       {% unless left_str contains "%" or left_str contains "px" %}
@@ -47,6 +53,7 @@
     {% endif %}
     {% capture container_style %}aspect-ratio: {{ img_width }} / {{ img_height }}; overflow: hidden;{% endcapture %}
   {% else %}
+    {% comment %} It's a string {% endcomment %}
     {% assign img_path = post.image %}
     {% assign img_width = 864 %}
     {% assign img_height = 486 %}

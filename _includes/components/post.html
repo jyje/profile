@@ -27,7 +27,23 @@
         {{ ' ' }}
         {%- assign category_start     = site.data.strings.category_start     | default:"in " -%}
         {%- assign category_separator = site.data.strings.category_separator | default:" / " -%}
-        {%- include components/tag-list.html tags=post.categories meta=site.featured_categories start_with=category_start separator=category_separator -%}
+        {%- comment -%}Determine language from post path and display flag{%- endcomment -%}
+        {%- assign lang_flag = "" -%}
+        {%- if post.path contains 'en/' -%}
+          {%- assign lang_flag = "🇬🇧 " -%}
+        {%- elsif post.path contains 'ko/' -%}
+          {%- assign lang_flag = "🇰🇷 " -%}
+        {%- endif -%}
+        {%- comment -%}Filter out language categories (En, Ko) from categories{%- endcomment -%}
+        {%- assign filtered_categories = "" | split: "," -%}
+        {%- for cat in post.categories -%}
+          {%- assign cat_lower = cat | downcase -%}
+          {%- unless cat_lower == "en" or cat_lower == "ko" -%}
+            {%- assign filtered_categories = filtered_categories | push: cat -%}
+          {%- endunless -%}
+        {%- endfor -%}
+        {%- assign category_start_with_flag = category_start | append: lang_flag -%}
+        {%- include components/tag-list.html tags=filtered_categories meta=site.featured_categories start_with=category_start_with_flag separator=category_separator -%}
         {{ ' ' }}
         {%- assign tag_start          = site.data.strings.tag_start          | default:"on " -%}
         {%- assign tag_separator      = site.data.strings.tag_separator      | default:", "  -%}

@@ -49,11 +49,21 @@ layout: page
 
       <div class="project-card-img-wrapper">
         {% if post.image %}
+          {% comment %} Support both string and object formats for image {% endcomment %}
+          {% if post.image.path %}
+            {% assign img_path = post.image.path %}
+          {% else %}
+            {% assign img_path = post.image %}
+          {% endif %}
           <div class="img-container">
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+            <img src="{{ img_path | relative_url }}" alt="{{ post.title }}" loading="lazy">
           </div>
         {% endif %}
       </div>
+      
+      {% assign desc_source = en_ver | default: post %}
+      {% assign desc = desc_source.description | default: desc_source.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+      {% assign show_tooltip = page.card_options.tooltip | default: false %}
       
       <div class="card-body">
         <h3 class="card-title">{{ post.title }}</h3>
@@ -66,11 +76,17 @@ layout: page
             <a href="{{ ko_ver.url | relative_url }}" class="lang-link">🇰🇷 한국어</a>
           {% endif %}
         </div>
+        
+        {% comment %} Show description inside card when tooltip is disabled {% endcomment %}
+        {% unless show_tooltip %}
+          {% if desc != "" %}
+            <p class="card-description">{{ desc }}</p>
+          {% endif %}
+        {% endunless %}
       </div>
       
-      {% assign desc_source = en_ver | default: post %}
-      {% assign desc = desc_source.description | default: desc_source.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
-      {% if desc != "" %}
+      {% comment %} Show tooltip when tooltip is enabled {% endcomment %}
+      {% if desc != "" and show_tooltip %}
         <div class="card-tooltip">{{ desc }}</div>
       {% endif %}
     </article>
@@ -173,12 +189,12 @@ layout: page
       border: none !important;
       background: transparent !important;
       color: var(--text-color) !important;
-      padding: 0 0 1rem 0 !important;
+      padding: 0 1rem 0 1rem !important;
       font-size: 0.85rem !important;
       pointer-events: auto !important;
       text-align: center !important;
       transition: none !important;
-      margin-top: -0.5rem;
+      margin-top: 0.5rem;
     }
     .card-tooltip::after {
       display: none !important;
@@ -254,6 +270,14 @@ layout: page
     padding-top: 0 !important;
     position: relative;
     z-index: 3; /* Highest priority for language selection */
+  }
+  .card-description {
+    margin: 0.75rem 0 0 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    opacity: 0.8;
+    padding: 0 0.5rem;
   }
   .lang-link {
     font-size: 0.875rem;
