@@ -1,5 +1,11 @@
 {% assign post = page %}
 
+{% comment %}Determine current page language{% endcomment %}
+{% assign current_lang = 'en' %}
+{% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' %}
+  {% assign current_lang = 'ko' %}
+{% endif %}
+
 {% if page.related_posts %}
   {% if major >= 4 and minor >= 1 %}
     {% assign related_posts = site.posts | where_exp:"post", "page.related_posts contains post.path or page.related_posts contains post.url" %}
@@ -17,6 +23,23 @@
 {% else %}
   {% assign related_posts = site.related_posts %}
 {% endif %}
+
+{% comment %}Filter related posts by language{% endcomment %}
+{% assign filtered_related_posts = '' | split: '' %}
+{% for post_item in related_posts %}
+  {% if post_item.url != page.url %}
+    {% if current_lang == 'ko' %}
+      {% if post_item.url contains '/ko/' or post_item.path contains 'ko/' %}
+        {% assign filtered_related_posts = filtered_related_posts | push: post_item %}
+      {% endif %}
+    {% else %}
+      {% unless post_item.url contains '/ko/' or post_item.path contains 'ko/' %}
+        {% assign filtered_related_posts = filtered_related_posts | push: post_item %}
+      {% endunless %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign related_posts = filtered_related_posts %}
 
 {% if related_posts.size > 0 %}
 <aside class="related mb4" role="complementary">
