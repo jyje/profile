@@ -20,4 +20,8 @@
       {% include components/social-list-item.html platform="email" username=email %}
     {% endif %}
   {% endif %}
+  {% comment %}RSS feed link - show if jekyll-feed plugin is enabled{% endcomment %}
+  {% if site.plugins contains 'jekyll-feed' %}
+    {% include components/social-list-item.html platform="rss" username="/feed.xml" %}
+  {% endif %}
 </ul>

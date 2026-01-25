@@ -109,8 +109,22 @@ const toggleClass = (element, ...cls) => {
       content: (el) => el.getAttribute('title'),
     });
 
+    // Initialize tippy for sidebar social links (sidebar is outside main)
+    const sidebarSocialLinks = document.querySelectorAll('.sidebar-social [title]');
+    if (sidebarSocialLinks.length > 0) {
+      tippy(sidebarSocialLinks, {
+        touch: true,
+        placement: 'top',
+        delay: [200, 0],
+        content: (el) => el.getAttribute('title'),
+      });
+    }
+    
+    // Also initialize for social links inside main (if any)
     tippy(main.querySelectorAll('.sidebar-social [title]'), {
       touch: true,
+      placement: 'top',
+      delay: [200, 0],
       content: (el) => el.getAttribute('title'),
     });
 
