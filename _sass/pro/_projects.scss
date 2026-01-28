@@ -20,8 +20,8 @@ main:not(.layout-resume):not(.layout-projects-portfolio):not(.layout-cv) {
 
   .column {
     float: left;
-    padding-left: $gutter;
-    margin-bottom: 2rem;
+    padding: $gutter 0;
+    margin-bottom: $gutter;
     width: 100%;
     display: flex;
   }
