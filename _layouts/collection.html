@@ -78,17 +78,17 @@ layout: page
           {% endif %}
         </div>
         
-        {% comment %} Show tooltip when tooltip is enabled {% endcomment %}
-        {% if desc != "" and show_tooltip %}
-          <div class="card-tooltip">{{ desc }}</div>
-        {% endif %}
-        
-        {% comment %} Show description inside card when tooltip is disabled {% endcomment %}
+        {% comment %} Show description in card body only when tooltip is disabled; order: title → languages → description/tooltip → tags {% endcomment %}
         {% unless show_tooltip %}
           {% if desc != "" %}
             <p class="card-description">{{ desc }}</p>
           {% endif %}
         {% endunless %}
+        
+        {% comment %} When tooltip enabled, show description only in tooltip (balloon on desktop, inline on mobile) {% endcomment %}
+        {% if desc != "" and show_tooltip %}
+          <div class="card-tooltip" aria-hidden="true">{{ desc }}</div>
+        {% endif %}
         
         {% if show_tag and post.tags.size > 0 %}
           <div class="card-tag-slug">
@@ -156,9 +156,14 @@ layout: page
   
   /* Desktop: Tooltip as balloon outside the card */
   @media screen and (min-width: 801px) {
-    /* Make card-body position static so tooltip positions relative to project-card */
+    /* Bug Fix: Make card-body static so tooltip positions relative to project-card,
+       but ensure internal contents stay above fill-card overlay */
     .card-body {
       position: static;
+    }
+    .card-title, .card-languages, .card-tag-slug, .card-description {
+      position: relative;
+      z-index: 5 !important; /* Ensure it stays above fill-card and general card-languages rule */
     }
 
     .card-tooltip {
@@ -272,13 +277,13 @@ layout: page
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* position is set per media query: static for desktop, relative for mobile */
   }
   .card-tag-slug {
     font-size: 0.8rem !important;
     font-weight: 600 !important;
     color: var(--accent-color) !important;
-    margin: 0.5rem 0 0 0 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0.5rem !important;
     opacity: 1 !important;
     text-align: center !important;
     letter-spacing: 0.02em !important;
@@ -289,7 +294,7 @@ layout: page
     word-wrap: break-word !important;
   }
   .card-title {
-    margin: 0.75rem 0 0 0;
+    margin: 10px 0 10px 0;
     font-size: 1.05rem;
     font-weight: 700;
     line-height: 1.3;
@@ -299,18 +304,19 @@ layout: page
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    margin: 0.5rem 0 0 0 !important;
+    margin-top: 5px !important;
     padding-top: 0 !important;
     position: relative;
     z-index: 3; /* Highest priority for language selection */
   }
   .card-description {
-    margin: 0.5rem 0 0 0;
+    margin: 0.15rem 0 0 0;
     font-size: 0.85rem;
     line-height: 1.5;
     color: var(--text-color);
     opacity: 0.8;
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+    margin-bottom: 0;
   }
   .lang-link {
     font-size: 0.875rem;
