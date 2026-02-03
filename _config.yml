@@ -75,10 +75,6 @@ legal:
     url:               /
   - title:             Profile
     url:               /en/profile
-  - title:             Résumé
-    url:               /en/profile/resume
-  - title:             Projects
-    url:               /en/profile/projects
   - title:             Tags
     url:               /tags
   - title:             Credits
