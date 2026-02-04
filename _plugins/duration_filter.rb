@@ -25,6 +25,9 @@ module Jekyll
           months -= 1
         end
         
+        # Include both start and end month (add 1 month so e.g. 2025-02~2026-02 = 12 months / 1 year)
+        months += 1
+        
         # Convert threshold to integer
         threshold_months = threshold.to_i
         threshold_months = 14 if threshold_months <= 0  # Default to 14 if invalid
