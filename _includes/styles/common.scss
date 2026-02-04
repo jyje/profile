@@ -23,6 +23,12 @@
   border-left: none;
 }
 
+@media print {
+  .top-note {
+    display: none !important;
+  }
+}
+
 {% if site.hydejack.no_page_style %}
   {% assign color       = site.accent_color | default:'rgb(79,177,186)' %}
   {% assign theme_color = site.theme_color  | default:'rgb(8,46,57)' %}

@@ -21,7 +21,7 @@ targets:
     output: jeayoungjeon-portfolio-en.pdf
     title: "Portfolio - Jeayoung Jeon"
     
-  - path: /ko/profile/portfolios
+  - path: /ko/profile/portfolio
     output: jeayoungjeon-portfolio-ko.pdf
     title: "포트폴리오 - 전제영"
 
