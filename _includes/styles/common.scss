@@ -12,6 +12,16 @@
 .layout-cv .note-sm:before {
   content: "{{ site.data.strings.resume.summary | default:'Summary' }}";
 }
+.layout-resume article > .note.abstract:before,
+.layout-portfolio article > .note.abstract:before,
+.layout-cv article > .note.abstract:before {
+  content: "{{ site.data.strings.resume.abstract | default:'Abstract' }}";
+}
+.layout-resume article > .note.abstract,
+.layout-portfolio article > .note.abstract,
+.layout-cv article > .note.abstract {
+  border-left: none;
+}
 
 {% if site.hydejack.no_page_style %}
   {% assign color       = site.accent_color | default:'rgb(79,177,186)' %}

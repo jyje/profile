@@ -11,12 +11,6 @@ basics:
   website: "https://jyje.online"
   # github: "jyje"
   # googlescholar: "gwCPQM8AAAAJ"
-  summary: {}
-
-
-
-
-
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -37,7 +31,7 @@ basics:
       note: "제 논문 목록은 [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)에서 확인할 수 있습니다."
     resume-ko:
       title: 이력서
-      note: >
+      abstract: >
         저는 서울, 경기에서 활동하는 AI 플랫폼 엔지니어 전제영[Jeayoung Jeon]입니다. 저는 다음의 전문성을 가지고 있습니다:
 
           - 🐳 클라우드 네이티브 환경의 **MLOps (API, Pipeline) 워크로드**과 **AI/LLM 플랫폼**을 구현/운영할 수 있습니다.

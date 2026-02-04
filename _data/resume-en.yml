@@ -11,12 +11,6 @@ basics:
   website: "https://jyje.online"
   # github: "jyje"
   # googlescholar: "gwCPQM8AAAAJ"
-  summary: >
-    This is Jeayoung Jeon [🇰🇷 전제영].
-    I'm a software engineer in Seoul, South Korea.
-    My main roles are MLOps/DevOps Engineering and AI Research.
-    I always want to be a good co-worker and prove it every day.
-    I enjoy resolving MLOps challenges and diving into the world of the Kubernetes Community.
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
@@ -37,7 +31,7 @@ basics:
       note: "The full list of my publications are available on [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)."
     resume-en:
       title: Résumé
-      note: >
+      abstract: >
         My name is Jeayoung Jeon [전제영], and I'm an AI Platform Engineer in Seoul, South Korea. I also specialize in:
 
           - 🐳 Developing **MLOps (APIs, Pipelines)** and **AI/LLM Platforms** in cloud-native environments.

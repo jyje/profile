@@ -6,9 +6,8 @@ description: >
   You'll probably want to modify it in `resume.md`, and maybe set `hide_description` to `true` in the front matter.
 hide_description: true
 data_file: resume-en
-top_note:
-  text: "[한국어 버전은 여기](/ko/profile/resume)에서 확인할 수 있습니다."
-  icon: "icon-language"
+top_note: >
+  🇰🇷 한국어 버전은 [여기](/ko/profile/resume)에서 확인할 수 있습니다.
 left_column:
   #- projects
   - work
