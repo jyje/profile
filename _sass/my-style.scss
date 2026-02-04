@@ -83,7 +83,7 @@ table.no-border {
 // Using body prefix for higher specificity than .layout-resume alone
 @media print {
   body .layout-resume,
-  body .layout-projects-portfolio,
+  body .layout-portfolio,
   body .layout-cv {
     // Compact spacing for print
     section {

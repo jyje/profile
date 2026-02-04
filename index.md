@@ -26,7 +26,7 @@ I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Kor
 
 This site provides the following sections:
 
-- [Profile]{:.heading.flip-title}: Career overview, [résumé], and [projects]
+- [Profile]{:.heading.flip-title}: Career overview, [résumé], and [portfolio]
 - [Demo]{:.heading}: Live demonstration of my works (powered by Raspberry Pi cluster)
 - [Posts]{:.heading.flip-title}: Technical posts and research articles
 - [Achievements]{:.heading.flip-title}: Selected professional activities and works
@@ -41,8 +41,8 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [프로필]: /ko/profile "my-profile --verbose --language=ko"
 [Résumé]: /en/profile/resume "my-profile resume"
 [이력서]: /ko/profile/resume "my-profile resume --language=ko"
-[Projects]: /en/profile/projects "my-profile projects"
-[경력기술서]: /ko/profile/projects "my-profile projects --language=ko"
+[Portfolio]: /en/profile/portfolio "my-profile portfolio"
+[포트폴리오]: /ko/profile/portfolio "my-profile portfolio --language=ko"
 [Curriculum Vitae]: profile/cv "my-profile cv"
 [CV]: profile/cv "my-profile cv --language=ko"
 [커리큘럼]: /ko/profile/cv "my-profile cv --language=ko"
@@ -60,7 +60,7 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
 
 {% include components/author.html author=site.data.authors.jyje heading="About Author" %}
-
+s
 <!-- 🧑‍💻 Set-up and Run -->
 
 <!-- bundle config set --local path 'vendor/bundle' -->

@@ -8,7 +8,7 @@
   content: "{{ site.data.strings.toc | default:'Table of Contents' }}";
 }
 .layout-resume .note-sm:before,
-.layout-projects-portfolio .note-sm:before,
+.layout-portfolio .note-sm:before,
 .layout-cv .note-sm:before {
   content: "{{ site.data.strings.resume.summary | default:'Summary' }}";
 }

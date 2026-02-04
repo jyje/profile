@@ -20,14 +20,14 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
     - I worked as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title}, a company specializing in AR and Digital Twins.
     - I studied computer vision, autonomous driving, and AI researches at school.
 - 💼 This site is my official profile.
-    - Documents: In [here](#2-career-documents){:.heading.flip-title}, you can find my [Résumé]{:.heading.flip-title} and [Projects]{:.heading.flip-title}.
+    - Documents: In [here](#2-career-documents){:.heading.flip-title}, you can find my [Résumé]{:.heading.flip-title} and [Portfolio]{:.heading.flip-title}.
     - Portfolios: You can find my [Works]{:.heading.flip-title} here.
     - If you have any questions or find any errors, please contact me via [mail]{:.heading.flip-title}.
 
 <div class="screen-only mt3">
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
   <a href="/en/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Resume</a>
-  <a href="/en/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
+  <a href="/en/profile/portfolio" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> Portfolio</a>
   <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> Demo</a>
   <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> Blog</a>
 </div>
@@ -74,7 +74,7 @@ Following is a brief summary of my career:
 You can find more details about my career in the following documents:
 
 - [Résumé]{:.heading.flip-title}: Short summary of my career in 2p (Experience, Education, Achievements, Certifications, etc.)
-- [Projects]{:.heading.flip-title}: My projects and achievements
+- [Portfolio]{:.heading.flip-title}: My projects and achievements
 <!-- - [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training -->
 
 All documents above are written in English and Korean. You can print it out in direct/PDF format.
@@ -111,8 +111,8 @@ You can find more details about my projects and achievements in the following do
 [Résumé]: /en/profile/resume "my-profile resume"
 
 
-<!-- projects-portfolio -->
-[Projects]: /en/profile/projects "my-profile projects"
+<!-- portfolio -->
+[Portfolio]: /en/profile/portfolio "my-profile portfolio"
 
 <!-- cv -->
 [Curriculum Vitae]: /en/profile/cv "my-profile cv"

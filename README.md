@@ -8,7 +8,7 @@ Personal portfolio website powered by Jekyll with Hydejack theme.
 
 ## Features
 
-- Resume and Projects pages with PDF download support
+- Resume and Portfolio pages with PDF download support
 - Automatic PDF generation during CI/CD
 - Korean and English language support
 - Blog posts, certifications, and works showcase
@@ -89,10 +89,10 @@ PDFs will be created in the `assets/` directory (as configured in `pdf-config.ym
 ### CI/CD PDF Generation
 
 PDFs are automatically generated during GitHub Actions deployment when changes are detected in:
-- `pdf-config.yml` - PDF configuration
-- `_data/resume*.yml` or `_data/projects*.yml`
+- `pdf-config.yml` - PDF configurations
+- `_data/resume*.yml` or `_data/portfolio*.yml`
 - `profile/` pages
-- `_layouts/resume.html` or `_layouts/projects*.html`
+- `_layouts/resume.html` or `_layouts/portfolio*.html`
 - `_includes/pro/resume/` templates
 - `_sass/` stylesheets
 - `scripts/generate-pdf.js`

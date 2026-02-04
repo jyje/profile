@@ -30,8 +30,8 @@ basics:
       note: >
         Here are my skills and highlighted items are industry-ready.
 
-    projects-en:
-      title: Project Portfolio
+    portfolio-en:
+      title: Portfolio
       note: >
         My name is Jeayoung Jeon [전제영], and I'm an AI Platform Engineer in Seoul, South Korea. I also specialize in:
 
@@ -121,7 +121,7 @@ work:
   #       - header: DevOps
   #         content: >
   #           Building on-premise clusters and data pipelines for company's inbound/outbound projects
-  -
+  - # -
     company: "POSTECH"
     position: "🧑‍🎓 Graduate Student Researcher in Computer Vision"
     website: "https://eee.postech.ac.kr/"

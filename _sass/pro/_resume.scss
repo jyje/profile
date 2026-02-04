@@ -1,6 +1,6 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
-.layout-resume, .layout-projects-portfolio, .layout-cv {
+.layout-resume, .layout-portfolio, .layout-cv {
   .clearafter::after {
     @extend .clearfix;
   }

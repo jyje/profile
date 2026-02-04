@@ -17,13 +17,13 @@ targets:
     output: jeayoungjeon-resume-ko.pdf
     title: "이력서 - 전제영"
     
-  - path: /en/profile/projects
-    output: jeayoungjeon-projects-en.pdf
-    title: "Projects - Jeayoung Jeon"
+  - path: /en/profile/portfolio
+    output: jeayoungjeon-portfolio-en.pdf
+    title: "Portfolio - Jeayoung Jeon"
     
-  - path: /ko/profile/projects
-    output: jeayoungjeon-projects-ko.pdf
-    title: "프로젝트 포트폴리오 - 전제영"
+  - path: /ko/profile/portfolios
+    output: jeayoungjeon-portfolio-ko.pdf
+    title: "포트폴리오 - 전제영"
 
 # PDF output options (Playwright page.pdf() options)
 # See: https://playwright.dev/docs/api/class-page#page-pdf

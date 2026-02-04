@@ -3,7 +3,7 @@
 /**
  * PDF Generation Script for jyje.online Portfolio
  * 
- * This script generates PDF files from the Jekyll-built resume and projects pages
+ * This script generates PDF files from the Jekyll-built resume and portfolio pages
  * using Playwright for high-quality rendering with proper Korean font support.
  * 
  * Configuration is loaded from pdf-config.yml at the project root.

@@ -20,14 +20,14 @@ accent_image:
     - **AR/디지털 트윈** 전문 기업 [MAXST]{:.heading.flip-title}에서 **MLOps/DevOps 엔지니어**로 근무했습니다.
     - 학교에서 연구원으로 컴퓨터 비전, 자율주행 및 AI 연구를 다수 진행했습니다.
 - 💼 이 사이트는 저의 공식 프로필입니다.
-    - 경력 문서: [여기](#2-경력-문서){:.heading.flip-title}에서 저의 [이력서]{:.heading.flip-title}와 [경력기술서]{:.heading.flip-title}를 찾아보실 수 있습니다.
+    - 경력 문서: [여기](#2-경력-문서){:.heading.flip-title}에서 저의 [이력서]{:.heading.flip-title}와 [포트폴리오]{:.heading.flip-title}를 찾아보실 수 있습니다.
     - 포트폴리오: 이 사이트에서 저의 [포트폴리오]{:.heading.flip-title}와 성과들을 살펴보실 수 있습니다.
     - 궁금하시거나 잘못된 정보가 있으면 [메일]{:.heading.flip-title}로 문의 부탁드립니다.
 
 <div class="screen-only mt3">
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
   <a href="/ko/profile/resume" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 이력서</a>
-  <a href="/ko/profile/projects" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 경력기술서</a>
+  <a href="/ko/profile/portfolio" class="btn btn-sm btn-primary btn-quick"><small class="icon-briefcase"></small> 포트폴리오</a>
   <a href="https://app.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-wrench"></small> 데모</a>
   <a href="https://blog.jyje.online" class="btn btn-sm btn-primary btn-quick"><small class="icon-bubble"></small> 블로그</a>
 </div>
@@ -73,7 +73,7 @@ accent_image:
 제 경력에 대한 자세한 내용은 다음 문서에서 확인할 수 있습니다:
 
 - [이력서]{:.heading.flip-title}: 2페이지로 요약된 경력 문서 (이력, 학업, 성과, 자격 등)
-- [경력기술서]{:.heading.flip-title}: 프로젝트 중심으로 기술된 최근 경력 문서
+- [포트폴리오]{:.heading.flip-title}: 프로젝트 중심으로 기술된 최근 경력 문서
 <!-- - [커리큘럼]{:.heading.flip-title}: 상세한 경력 및 학업 문서 -->
 
 위 모든 문서는 영어, 한국어로 각각 작성하였고 인쇄 및 PDF로 출력할 수 있습니다.
@@ -110,9 +110,9 @@ accent_image:
 [Résumé]: /ko/profile/resume "my-profile resume --korean"
 [이력서]: /ko/profile/resume "my-profile resume --korean"
 
-<!-- projects-portfolio -->
-[Projects]: /ko/profile/projects "my-profile projects --korean"
-[경력기술서]: /ko/profile/projects "my-profile projects --korean"
+<!-- portfolio -->
+[Portfolio]: /ko/profile/portfolio "my-profile portfolio --korean"
+[포트폴리오]: /ko/profile/portfolio "my-profile portfolio --korean"
 
 <!-- cv -->
 [Curriculum Vitae]: /ko/profile/cv "my-profile cv --korean"

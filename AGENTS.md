@@ -45,8 +45,8 @@ profile/
 ├── _data/                   # YAML data files
 │   ├── resume-en.yml        # Resume data (English)
 │   ├── resume-ko.yml        # Resume data (Korean)
-│   ├── projects-en.yml      # Project portfolio data (English)
-│   ├── projects-ko.yml     # Project portfolio data (Korean)
+│   ├── portfolio-en.yml    # Portfolio data (English)
+│   ├── portfolio-ko.yml    # Portfolio data (Korean)
 │   ├── authors.yml         # Author information
 │   ├── social.yml          # Social media links
 │   └── ...
@@ -77,7 +77,7 @@ profile/
 ├── pdf-config.yml          # PDF generation configuration
 ├── profile/                # Profile-related pages
 │   ├── resume.md          # Resume page
-│   ├── projects.md        # Projects page
+│   ├── portfolio.md        # Portfolio page
 │   └── ko/                # Korean pages
 ├── posts/                  # Blog post collection
 │   └── _posts/
@@ -137,8 +137,8 @@ Stores resume data in YAML format:
 - `languages`: Language proficiency
 - `interests`: Interests
 
-#### `_data/projects-en.yml` / `_data/projects-ko.yml`
-Stores project portfolio data:
+#### `_data/portfolio-en.yml` / `_data/portfolio-ko.yml`
+Stores portfolio data:
 - Detailed information per project
 - Roles and contributions
 - Technical stack
@@ -200,9 +200,9 @@ Workflow file: `.github/workflows/publish-github-pages.yml`
 
 PDFs are regenerated when any of these files change:
 - `pdf-config.yml` - PDF generation configuration
-- `_data/resume*.yml` or `_data/projects*.yml`
+- `_data/resume*.yml` or `_data/portfolio*.yml`
 - `profile/` pages
-- `_layouts/resume.html` or `_layouts/projects*.html`
+- `_layouts/resume.html` or `_layouts/portfolio*.html`
 - `_includes/pro/resume/` templates
 - `_sass/` stylesheets
 - `scripts/generate-pdf.js`
@@ -229,7 +229,7 @@ To modify resume information, edit `_data/resume-en.yml` (English) or `_data/res
 
 ### Modifying Project Portfolio
 
-To modify project information, edit `_data/projects-en.yml` (English) or `_data/projects-ko.yml` (Korean).
+To modify portfolio information, edit `_data/portfolio-en.yml` (English) or `_data/portfolio-ko.yml` (Korean).
 
 **Structure**:
 - Each project has `position`, `company`, `startDate`, `endDate` fields
@@ -242,8 +242,8 @@ To modify project information, edit `_data/projects-en.yml` (English) or `_data/
 Resume and project PDF files are automatically generated during CI/CD:
 - `jeayoungjeon-resume-en.pdf`: Resume (English)
 - `jeayoungjeon-resume-ko.pdf`: Resume (Korean)
-- `jeayoungjeon-projects-en.pdf`: Project portfolio (English)
-- `jeayoungjeon-projects-ko.pdf`: Project portfolio (Korean)
+- `jeayoungjeon-portfolio-en.pdf`: Portfolio (English)
+- `jeayoungjeon-portfolio-ko.pdf`: Portfolio (Korean)
 
 **Important Notes**:
 - PDF files are **gitignored** - they are generated during build, not stored in git

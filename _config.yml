@@ -283,7 +283,7 @@ hydejack:
   # Set to `true` if you don't like oversized headlines on large screens.
   no_large_headings:   false
 
-  # Set to `true` if you do not want to expose your resume and projects
+  # Set to `true` if you do not want to expose your resume and portfolio
   # in machine-readable formats.
   no_structured_data:  false
 
@@ -481,8 +481,8 @@ jekyll_compose:
     #     social media previews, etc.
     #   image:
     #     path: /assets/img/sidebar-bg.jpg
-    projects:
-      layout: project
+    portfolio:
+      layout: portfolio
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.

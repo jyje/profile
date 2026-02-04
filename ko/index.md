@@ -26,7 +26,7 @@ permalink: /ko/
 
 이 사이트는 다음과 같은 섹션을 제공합니다:
 
-- [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [경력기술서]
+- [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [포트폴리오]
 - [데모]{:.heading}: 작업물 라이브 데모 (Raspberry Pi 클러스터로 운영)
 - [포스트]{:.heading.flip-title}: 기술 포스팅 및 연구 게시물
 - [성과]{:.heading.flip-title}: 주요 전문 활동 및 프로젝트 성과
@@ -41,8 +41,8 @@ permalink: /ko/
 [프로필]: /ko/profile "my-profile --verbose --language=ko"
 [Résumé]: /en/profile/resume "my-profile resume"
 [이력서]: /ko/profile/resume "my-profile resume --language=ko"
-[Projects]: /en/profile/projects "my-profile projects"
-[경력기술서]: /ko/profile/projects "my-profile projects --language=ko"
+[Portfolio]: /en/profile/portfolio "my-profile portfolio"
+[포트폴리오]: /ko/profile/portfolio "my-profile portfolio --language=ko"
 [Curriculum Vitae]: /ko/profile/cv "my-profile cv --language=ko"
 [CV]: /ko/profile/cv "my-profile cv --language=ko"
 [커리큘럼]: /ko/profile/cv "my-profile cv --language=ko"

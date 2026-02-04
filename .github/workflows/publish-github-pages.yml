@@ -4,7 +4,7 @@
 # documentation.
 
 # Workflow for building and deploying a Jekyll site to GitHub Pages
-# Includes PDF generation for resume and projects pages (always generated)
+# Includes PDF generation for resumes and portfolio pages (always generated)
 name: Publish GitHub Pages
 
 on:
