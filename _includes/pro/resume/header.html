@@ -18,6 +18,12 @@
   {% include components/message.html text=page.description hide=page.hide_description %}
 </header>
 
+{% if page.top_note and page.top_note.text != nil and page.top_note.text != "" %}
+<blockquote class="top-note mt1 p-2 faded" style="border-left: 4px solid var(--border-color); margin-top: 1rem;">
+  {% if page.top_note.icon %}<span class="icon {{ page.top_note.icon }}"></span> {% endif %}{{ page.top_note.text | markdownify | replace:'<p>','' | replace:'</p>','' }}
+</blockquote>
+{% endif %}
+
 {% if basics.contents[data_file].note.size > 0 %}
   <p class="note p-note" property="description">
     {{ basics.contents[data_file].note | markdownify | replace:'<p>','' | replace:'</p>','' }}

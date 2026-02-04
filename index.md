@@ -56,11 +56,11 @@ For inquiries or collaboration opportunities, please contact me via [LinkedIn]{:
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 [Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 
-[Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[Mail]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
 
 {% include components/author.html author=site.data.authors.jyje heading="About Author" %}
-s
+
 <!-- 🧑‍💻 Set-up and Run -->
 
 <!-- bundle config set --local path 'vendor/bundle' -->

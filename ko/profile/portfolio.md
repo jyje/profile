@@ -6,6 +6,9 @@ description: >
   You'll probably want to modify it in `resume.md`, and maybe set `hide_description` to `true` in the front matter.
 hide_description: true
 data_file: portfolio-ko
+top_note:
+  text: "[English version is here](/en/profile/portfolio)."
+  icon: "icon-language"
 sections:
   - work
   - projects
