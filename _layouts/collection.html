@@ -106,16 +106,15 @@ layout: page
 {% endfor %}
 
 <style>
+  /* Column/columns spacing unified with grid (Posts): use _portfolio.scss + my-style.scss */
   .column.column-1-2 {
     overflow: visible !important;
     position: relative; /* Ensure z-index works */
-    padding: 10px !important;
   }
   .columns.columns-break {
     overflow: visible !important;
     position: relative;
     z-index: 1;
-    margin: 0 -10px !important;
   }
   .columns.columns-break:hover {
     z-index: 10;
