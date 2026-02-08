@@ -367,6 +367,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - scripts
+  - assets/bower_components/katex/dockers
 include:
   - .well-known
   - LICENSE.md
@@ -451,6 +452,7 @@ compress_html:
 
 sass:
   style:               compressed
+  quiet_deps:           true
 
 mermaid:
   src:                 https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js

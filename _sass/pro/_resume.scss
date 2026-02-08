@@ -1,8 +1,10 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
+@use "injected" as *;
+
 .layout-resume, .layout-portfolio, .layout-cv {
   .clearafter::after {
-    @extend .clearfix;
+    @extend .clearfix !optional;
   }
 
   h1 {
@@ -87,7 +89,7 @@
   }
 
   .tag {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1px solid var(--border-color);
     display: inline-block;
     margin: .25rem .125rem;
@@ -105,7 +107,7 @@
   }
 
   .skill-tag {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1px solid var(--accent-color-border-light);
     border-radius: .3rem;
     display: inline-block;
@@ -124,7 +126,7 @@
   }
 
   .work-header-result {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1.5px solid var(--accent-color-two);
     border-radius: .3rem;
     display: inline-block;
@@ -136,7 +138,7 @@
   }
 
   .work-header-role {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1px solid var(--accent-color-fill);
     border-radius: .3rem;
     display: inline-block;
@@ -148,7 +150,7 @@
   }
 
   .work-header-skill {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1px solid var(--accent-color-border-dark);
     border-radius: .3rem;
     display: inline-block;
@@ -159,7 +161,7 @@
   }
 
   .skill-tag-highlight {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1.5px solid var(--accent-color-fill);
     border-radius: .3rem;
     display: inline-block;
@@ -171,7 +173,7 @@
   }
 
   .skill-tag-soft {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border: 1.2px solid var(--accent-color-border-dark);
     border-radius: .3rem;
     display: inline-block;
@@ -188,7 +190,7 @@
   }
 
   .symbol {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     float: right;
     color: var(--menu-text);
     margin-top: 4px;
@@ -252,7 +254,7 @@
     margin-left: -$pad;
 
     &::after {
-      @extend .clearfix;
+      @extend .clearfix !optional;
     }
   }
 

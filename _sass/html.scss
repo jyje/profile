@@ -1,3 +1,7 @@
+@use "injected" as *;
+@use "variables" as *;
+@use "mixins" as *;
+
 html {
   --font-family: #{$font-family};
   --font-family-heading: #{$font-family-heading};

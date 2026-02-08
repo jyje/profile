@@ -31,7 +31,7 @@
 
 // <<< inline
 .content .avatar {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   float: right;
   box-sizing: content-box;
   border: 1rem solid var(--body-bg);

@@ -33,6 +33,9 @@ gem "duktape"
 # Fixes `jekyll serve` in ruby 3
 gem "webrick"
 
+# Silence "logger will no longer be part of default gems" (Ruby 4.0+)
+gem "logger"
+
 group :jekyll_plugins do
   gem "jekyll-default-layout"
   gem "jekyll-feed"

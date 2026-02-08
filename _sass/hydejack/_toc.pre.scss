@@ -13,9 +13,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+@use "injected" as *;
+
 #markdown-toc {
   // <<< inline
-  @extend .note-sm;
+  @extend .note-sm !optional;
   margin: 2rem -1rem 2rem calc(-1rem + 1px);
   padding-left: 2.5rem;
   padding-bottom: .5rem;

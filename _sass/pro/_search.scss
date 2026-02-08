@@ -1,3 +1,6 @@
+@use "injected" as *;
+@use "mixins" as *;
+
 #_search-box {
   position: absolute;
   top: 0;

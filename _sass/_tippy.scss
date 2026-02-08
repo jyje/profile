@@ -1,3 +1,5 @@
+@use "injected" as *;
+
 $namespace-prefix: 'tippy';
 
 @import "tippyjs/index";
@@ -16,7 +18,7 @@ $namespace-prefix: 'tippy';
   font-family: $font-family!important;
   font-weight: normal!important;
   a { 
-    @extend .heading; 
+    @extend .heading !optional; 
     text-decoration: none;
     border: none;
     &:after  {

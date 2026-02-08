@@ -16,7 +16,7 @@
 // <<<<< INLINE
 .sidebar-social {
   &::after {
-    @extend .clearfix
+    @extend .clearfix !optional
   }
 
   > ul {

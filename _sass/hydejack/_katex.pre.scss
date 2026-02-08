@@ -16,7 +16,7 @@
 // <<< LINK
 article {
   .katex-display, mjx-container[jax][display="true"] {
-    @extend .pre-base;
+    @extend .pre-base !optional;
     padding: 2rem;
   }
 }

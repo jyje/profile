@@ -13,122 +13,121 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-{% include styles/variables.scss %}
-@import "variables";
-@import "my-variables";
-@import "mixins";
+@use "injected" as *;
+@use "variables" as *;
+@use "my-variables" as *;
+@use "mixins" as *;
 
 {% if site.hydejack.dark_mode.dynamic %}
-  @import "pro/dark-mode-dynamic";
+@use "pro/dark-mode-dynamic";
 {% else %}
-  @import "pro/dark-mode";
+@use "pro/dark-mode";
 {% endif %}
 
-@import "reboot-mod";
+@use "reboot-mod";
+
+@use "spinner";
+@use "tippy";
+@use "syntax";
+@use "pro/syntax-dark";
+{% if site.hydejack.dark_mode.dynamic %}
+@use "pro/dark-mode-dynamic-syntax";
+{% endif %}
 
 {% unless site.hydejack.no_inline_css or jekyll.environment == 'development' %}
-  @import "pooleparty/__link__/base";
-  @import "pooleparty/__link__/type";
-  @import "pooleparty/__link__/table";
-  @import "pooleparty/__link__/footer";
-  @import "pooleparty/__link__/footnotes";
-  @import "pooleparty/__link__/code";
-  @import "pooleparty/__link__/posts";
-  @import "pooleparty/__link__/related";
-  @import "pooleparty/__link__/read-more";
-  @import "pooleparty/__link__/message";
-  @import "pooleparty/__link__/pagination";
+@use "pooleparty/__link__/base";
+@use "pooleparty/__link__/type";
+@use "pooleparty/__link__/table";
+@use "pooleparty/__link__/footer";
+@use "pooleparty/__link__/footnotes";
+@use "pooleparty/__link__/code";
+@use "pooleparty/__link__/posts";
+@use "pooleparty/__link__/related";
+@use "pooleparty/__link__/read-more";
+@use "pooleparty/__link__/message";
+@use "pooleparty/__link__/pagination";
 
-  @import "hydejack/__link__/base";
-  @import "hydejack/__link__/utilities";
-  @import "hydejack/__link__/links";
-  @import "hydejack/__link__/images";
-  @import "hydejack/__link__/sidebar";
-  @import "hydejack/__link__/social";
-  @import "hydejack/__link__/menu";
-  @import "hydejack/__link__/toc";
-  @import "hydejack/__link__/content";
-  @import "hydejack/__link__/avatar";
-  @import "hydejack/__link__/katex";
-  @import "hydejack/__link__/footer";
+@use "hydejack/__link__/base";
+@use "hydejack/__link__/utilities";
+@use "hydejack/__link__/links";
+@use "hydejack/__link__/images";
+@use "hydejack/__link__/sidebar";
+@use "hydejack/__link__/social";
+@use "hydejack/__link__/menu";
+@use "hydejack/__link__/toc";
+@use "hydejack/__link__/content";
+@use "hydejack/__link__/avatar";
+@use "hydejack/__link__/katex";
+@use "hydejack/__link__/footer";
 
-  @import "pro/portfolio";
-  @import "pro/resume";
-  @import "pro/bootstrap-mod/bootstrap";
-  @import "pro/message-newsletter";
+@use "pro/portfolio";
+@use "pro/resume";
+@use "pro/bootstrap-mod/bootstrap";
+@use "pro/message-newsletter";
 
-  {% unless site.hydejack.no_search %}
-    @import "pro/search";
-  {% endunless %}
-
-  {% unless site.hydejack.no_mark_external or site.no_mark_external %}
-    @import "hydejack/__link__/mark-external";
-  {% endunless %}
-
-  {% unless site.hydejack.no_break_layout %}
-    @import "hydejack/__link__/break-layout";
-  {% endunless %}
-
-  @import "my-style";
-{% else %}
-  @import "html";
-
-  @import "pooleparty/_base.pre.scss";
-  @import "pooleparty/_type.pre.scss";
-  @import "pooleparty/_table.pre.scss";
-  @import "pooleparty/_footer.pre.scss";
-  @import "pooleparty/_footnotes.pre.scss";
-  @import "pooleparty/_code.pre.scss";
-  @import "pooleparty/_posts.pre.scss";
-  @import "pooleparty/_related.pre.scss";
-  @import "pooleparty/_read-more.pre.scss";
-  @import "pooleparty/_message.pre.scss";
-  @import "pooleparty/_pagination.pre.scss";
-
-  @import "hydejack/_base.pre.scss";
-  @import "hydejack/_utilities.pre.scss";
-  @import "hydejack/_links.pre.scss";
-  @import "hydejack/_images.pre.scss";
-  @import "hydejack/_sidebar.pre.scss";
-  @import "hydejack/_social.pre.scss";
-  @import "hydejack/_menu.pre.scss";
-  @import "hydejack/_toc.pre.scss";
-  @import "hydejack/_content.pre.scss";
-  @import "hydejack/_avatar.pre.scss";
-  @import "hydejack/_katex.pre.scss";
-  @import "hydejack/_footer.pre.scss";
-
-  @import "pro/portfolio";
-  @import "pro/resume";
-  @import "pro/bootstrap-mod/bootstrap";
-  @import "pro/message-newsletter";
-
-  {% unless site.hydejack.no_search %}
-    @import "pro/_search.scss";
-  {% endunless %}
-
-  {% unless site.hydejack.no_mark_external or site.no_mark_external %}
-    @import "hydejack/_mark-external.pre.scss";
-  {% endunless %}
-   
-  {% unless site.hydejack.no_break_layout %}
-    @import "hydejack/_break-layout.pre.scss";
-  {% endunless %}
-
-  @import "my-inline";
-  @import "my-style";
-
-  {% include styles/common.scss %}
+{% unless site.hydejack.no_search %}
+@use "pro/search";
 {% endunless %}
 
-@import "spinner";
-@import "tippy";
+{% unless site.hydejack.no_mark_external or site.no_mark_external %}
+@use "hydejack/__link__/mark-external";
+{% endunless %}
 
-@import "syntax";
-@import "pro/syntax-dark";
-{% if site.hydejack.dark_mode.dynamic %}
-  @import "pro/dark-mode-dynamic-syntax";
-{% endif %}
+{% unless site.hydejack.no_break_layout %}
+@use "hydejack/__link__/break-layout";
+{% endunless %}
+
+@use "my-style";
+{% else %}
+@use "html";
+
+@use "pooleparty/base.pre" as pooleparty-base;
+@use "pooleparty/type.pre";
+@use "pooleparty/table.pre";
+@use "pooleparty/footer.pre" as pooleparty-footer;
+@use "pooleparty/footnotes.pre";
+@use "pooleparty/code.pre";
+@use "pooleparty/posts.pre";
+@use "pooleparty/related.pre";
+@use "pooleparty/read-more.pre";
+@use "pooleparty/message.pre";
+@use "pooleparty/pagination.pre";
+
+@use "hydejack/base.pre" as hydejack-base;
+@use "hydejack/utilities.pre";
+@use "hydejack/links.pre";
+@use "hydejack/images.pre";
+@use "hydejack/sidebar.pre";
+@use "hydejack/social.pre";
+@use "hydejack/menu.pre";
+@use "hydejack/toc.pre";
+@use "hydejack/content.pre";
+@use "hydejack/avatar.pre";
+@use "hydejack/katex.pre";
+@use "hydejack/footer.pre" as hydejack-footer;
+
+@use "pro/portfolio";
+@use "pro/resume";
+@use "pro/bootstrap-mod/bootstrap";
+@use "pro/message-newsletter";
+
+{% unless site.hydejack.no_search %}
+@use "pro/search";
+{% endunless %}
+
+{% unless site.hydejack.no_mark_external or site.no_mark_external %}
+@use "hydejack/mark-external.pre";
+{% endunless %}
+
+{% unless site.hydejack.no_break_layout %}
+@use "hydejack/break-layout.pre";
+{% endunless %}
+
+@use "my-inline";
+@use "my-style";
+
+{% include styles/common.scss %}
+{% endunless %}
 
 // Custom Webfonts
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");

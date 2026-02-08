@@ -13,16 +13,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+@use "injected" as *;
+
 // <<<<< LINK
 table:not(.rouge-table) {
-  @extend .figure-base;
+  @extend .figure-base !optional;
   border-collapse: collapse;
   border-radius: 0!important;
   display: block;
   margin-bottom: 1.5rem;
 
   td, th {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     padding: .5em .75em;
 
     &:first-child {
@@ -45,26 +47,26 @@ table:not(.rouge-table) {
   }
 
   thead {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     background-color: var(--body-bg);
   }
 
   thead + tbody,
   tbody + tbody,
   tfoot {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     border-top: 1px solid var(--border-color);
   }
 
   tbody tr:nth-child(even) td,
   tbody tr:nth-child(even) th {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     background-color: var(--body-bg);
   }
 
   tbody tr:nth-child(odd) td,
   tbody tr:nth-child(odd) th {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     background-color: var(--gray-bg);
   }
 }

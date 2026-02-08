@@ -1,5 +1,7 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
+@use "injected" as *;
+
 main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) {
   $gutter: 1rem;
 
@@ -14,7 +16,7 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) {
     margin-right: -1rem;
 
     &::after {
-      @extend .clearfix;
+      @extend .clearfix !optional;
     }
   }
 
@@ -57,7 +59,7 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) {
   }
 
   .project-card {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     width: 100%;
     color: var(--gray-text);
     background-color: var(--gray-bg);

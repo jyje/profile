@@ -13,6 +13,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+@use "injected" as *;
+
 // <<<<< LINK
 // Footnote number within body text
 a[href^="#fn:"],
@@ -60,7 +62,7 @@ sup {
   }
 
   &::before {
-    @extend .color-transition;
+    @extend .color-transition !optional;
     content: "";
     display: block;
     margin: 1rem 0;
