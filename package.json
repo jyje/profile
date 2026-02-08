@@ -45,7 +45,7 @@
     "null-loader": "^4.0.1",
     "onchange": "^7.1.0",
     "path-browserify": "^1.0.1",
-    "playwright": "^1.57.0",
+    "playwright": "^1.58.2",
     "prettier": "^2.8.8",
     "re-template-tag": "^2.0.1",
     "uglify-js": "^3.19.3",
