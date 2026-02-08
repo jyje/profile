@@ -63,8 +63,16 @@ jobs:
       run: npx bower install
       working-directory: assets
 
-    - name: Build JavaScript and CSS assets
-      run: npm run build
+    - name: Build JavaScript assets
+      run: npm run build:js
+      env:
+        NODE_OPTIONS: "--max-old-space-size=4096"
+
+    - name: Build CSS and script assets
+      run: npm run build:css && npm run build:scripts
+
+    - name: List built JS (debug)
+      run: ls -la assets/js/
 
     - name: Setup Pages
       id: pages
