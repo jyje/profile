@@ -15,9 +15,6 @@ const toggleClass = (element, ...cls) => {
 (async () => {
   await Promise.all([
     ...('animate' in Element.prototype ? [] : [import(/* webpackChunkName: "webanimations" */ 'web-animations-js')]),
-    ...('IntersectionObserver' in window
-      ? []
-      : [import(/* webpackChunkName: "intersection-observer" */ 'intersection-observer')]),
   ]);
 
   await stylesheetReady;

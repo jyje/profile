@@ -55,7 +55,6 @@
     "yargs": "^18.0.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
     "@getclaps/button": "^1.0.0-alpha.21",
     "@hydecorp/component": "^1.0.0",
     "@hydecorp/drawer": "^1.0.0",
@@ -70,10 +69,10 @@
     "@webcomponents/webcomponentsjs": "^2.8.0",
     "abortcontroller-polyfill": "^1.7.8",
     "broadcastchannel-polyfill": "^1.0.1",
-    "core-js": "^2.6.11",
+    "core-js": "^3.35.0",
     "create-element-x": "^1.2.0",
+    "regenerator-runtime": "^0.14.1",
     "dom4": "^2.1.6",
-    "intersection-observer": "^0.12.2",
     "kv-storage-polyfill": "^2.0.0",
     "lit-html": "^1.4.1",
     "minisearch": "^3.3.0",

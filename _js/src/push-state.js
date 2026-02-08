@@ -38,9 +38,6 @@ import { setupFLIP } from './flip';
       ? []
       : [import(/* webpackChunkName: "webcomponents" */ './polyfills/webcomponents')]),
     ...('animate' in Element.prototype ? [] : [import(/* webpackChunkName: "webanimations" */ 'web-animations-js')]),
-    ...('IntersectionObserver' in window
-      ? []
-      : [import(/* webpackChunkName: "intersection-observer" */ 'intersection-observer')]),
   ]);
 
   await webComponentsReady;

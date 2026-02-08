@@ -4,7 +4,7 @@ const { resolve } = require("path");
 const { BannerPlugin, EnvironmentPlugin } = require("webpack");
 
 const { merge } = require("webpack-merge");
-const { argv: { mode } } = require("yargs");
+const mode = process.env.NODE_ENV || "production";
 
 const { name: filename, version } = require("./package.json");
 
@@ -44,22 +44,7 @@ const envConfig = (() => {
 const sharedPreset = {
   modules: false,
   useBuiltIns: "entry",
-  corejs: 2,
-}
-
-const babelPresetLegacy = {
-  babelrc: false,
-  presets: [
-    [
-      "@babel/preset-env",
-      {
-        ...sharedPreset,
-        targets: {
-          ie: "11",
-        },
-      },
-    ],
-  ],
+  corejs: 3,
 }
 
 const babelPresetModern = {
@@ -149,23 +134,6 @@ module.exports = [
         }, {
           test: /@webcomponents\/(template|url|webcomponents-platform)/,
           use: 'null-loader'
-        }],
-      },
-    },
-  ),
-  merge(
-    envConfig,
-    sharedConfig,
-    {
-      output: {
-        filename: `LEGACY-${filename}-${version}.js`,
-        chunkFilename: `LEGACY-[name]-${filename}-${version}.js`
-      },
-      module: {
-        rules: [{
-          test: /(\.jsx|\.js)$/,
-          loader: "babel-loader",
-          options: babelPresetLegacy,
         }],
       },
     },
