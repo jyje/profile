@@ -35,7 +35,7 @@
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-env": "^7.29.0",
     "@playwright/test": "^1.48.0",
     "babel-loader": "^9.2.1",
     "bower": "^1.8.14",
