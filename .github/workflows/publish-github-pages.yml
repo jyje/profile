@@ -63,16 +63,8 @@ jobs:
       run: npx bower install
       working-directory: assets
 
-    - name: Build JavaScript assets
-      run: npm run build:js
-      env:
-        NODE_OPTIONS: "--max-old-space-size=4096"
-
-    - name: Build CSS and script assets
-      run: npm run build:css && npm run build:scripts
-
-    - name: List built JS (debug)
-      run: ls -la assets/js/
+    - name: Build JavaScript and CSS assets
+      run: npm run build
 
     - name: Setup Pages
       id: pages
@@ -82,18 +74,6 @@ jobs:
       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       env:
         JEKYLL_ENV: production
-
-    - name: Copy built JS and CSS into site output
-      run: |
-        mkdir -p _site/assets/js _site/assets/css
-        cp -r assets/js/. _site/assets/js/ || true
-        if [ -n "$(ls -A assets/css/hydejack-*.css 2>/dev/null)" ]; then cp assets/css/hydejack-*.css _site/assets/css/; fi
-
-    - name: Verify built assets in site output
-      run: |
-        test -f _site/assets/js/hydejack-9.2.1.js || (echo "Missing _site/assets/js/hydejack-9.2.1.js" && ls -la assets/js/ && ls -la _site/assets/js/ 2>/dev/null && exit 1)
-        test -f _site/assets/js/LEGACY-hydejack-9.2.1.js || (echo "Missing LEGACY-hydejack-9.2.1.js" && exit 1)
-        echo "Built JS assets verified."
 
     # PDF Generation Steps (always executed)
     - name: Install Playwright browsers

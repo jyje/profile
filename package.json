@@ -75,7 +75,7 @@
     "dom4": "^2.1.6",
     "intersection-observer": "^0.12.2",
     "kv-storage-polyfill": "^2.0.0",
-    "lit-html": "^3.3.2",
+    "lit-html": "^1.4.1",
     "minisearch": "^3.3.0",
     "rxjs": "^7.8.2",
     "scroll-into-view-if-needed": "^2.2.31",

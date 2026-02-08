@@ -12,6 +12,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      # lit-html 2+/3+ break @hydecorp/drawer and search.js; allow minor/patch within 1.x
+      - dependency-name: "lit-html"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: "github-actions"
     directory: "/"
