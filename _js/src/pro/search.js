@@ -43,7 +43,7 @@ const calcSrcSet = (srcset) =>
 
   const searchFrag = importTemplate('_search-template');
   const workerHrefEl = document.getElementById('_hrefSearch');
-  const workerHref = workerHrefEl ? new URL(workerHrefEl.getAttribute('href') || '/assets/js/search-worker-9.2.0.js', window.location.origin).href : null;
+  const workerHref = workerHrefEl ? new URL(workerHrefEl.getAttribute('href') || '/assets/js/search-worker-9.2.1.js', window.location.origin).href : null;
   if (searchFrag && workerHref) {
     const navbarEl = document.querySelector(SEL_NAVBAR_BTN_BAR);
     const [searchBtnEl, searchBoxEl, hitsEl] = searchFrag.children;
