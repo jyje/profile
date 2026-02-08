@@ -78,7 +78,7 @@
     "lit-html": "^3.3.2",
     "minisearch": "^3.3.0",
     "rxjs": "^7.8.2",
-    "scroll-into-view-if-needed": "^2.2.31",
+    "scroll-into-view-if-needed": "^3.1.0",
     "tippy.js": "^6.3.7",
     "tslib": "^2.8.1",
     "web-animations-js": "^2.3.2",
