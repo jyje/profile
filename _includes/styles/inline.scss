@@ -13,19 +13,20 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-{% include styles/variables.scss %}
-@import "variables";
-@import "my-variables";
-@import "mixins";
+@use "injected" as *;
+@use "variables" as *;
+@use "my-variables" as *;
+@use "mixins" as *;
 
 {% if site.hydejack.dark_mode.dynamic %}
-  @import "pro/dark-mode-dynamic";
+@use "pro/dark-mode-dynamic";
 {% else %}
-  @import "pro/dark-mode";
+@use "pro/dark-mode";
 {% endif %}
 
-@import "html";
+@use "html";
 
+// Keep @import so __inline__ partials see root variables (they use $break-point-*, etc.)
 @import "pooleparty/__inline__/base";
 @import "pooleparty/__inline__/type";
 @import "pooleparty/__inline__/table";

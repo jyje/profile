@@ -1,9 +1,7 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
 
-{% include styles/variables.scss %}
+@use "variables" as *;
+@use "my-variables" as *;
+@use "mixins" as *;
 
-@import "variables";
-@import "my-variables";
-@import "mixins";
-
-@import "pro/resume";
+@use "pro/resume";
