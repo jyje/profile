@@ -75,6 +75,12 @@ jobs:
       env:
         JEKYLL_ENV: production
 
+    - name: Copy built JS and CSS into site output
+      run: |
+        mkdir -p _site/assets/js _site/assets/css
+        cp -r assets/js/. _site/assets/js/
+        cp -n assets/css/hydejack-*.css _site/assets/css/ 2>/dev/null || true
+
     # PDF Generation Steps (always executed)
     - name: Install Playwright browsers
       run: npx playwright install chromium --with-deps
