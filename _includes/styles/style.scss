@@ -35,49 +35,50 @@
 {% endif %}
 
 {% unless site.hydejack.no_inline_css or jekyll.environment == 'development' %}
-@use "pooleparty/__link__/base";
-@use "pooleparty/__link__/type";
-@use "pooleparty/__link__/table";
-@use "pooleparty/__link__/footer";
-@use "pooleparty/__link__/footnotes";
-@use "pooleparty/__link__/code";
-@use "pooleparty/__link__/posts";
-@use "pooleparty/__link__/related";
-@use "pooleparty/__link__/read-more";
-@use "pooleparty/__link__/message";
-@use "pooleparty/__link__/pagination";
+// __link__ partials use $break-point-* etc.; load with @import so they see root variables
+@import "pooleparty/__link__/base";
+@import "pooleparty/__link__/type";
+@import "pooleparty/__link__/table";
+@import "pooleparty/__link__/footer";
+@import "pooleparty/__link__/footnotes";
+@import "pooleparty/__link__/code";
+@import "pooleparty/__link__/posts";
+@import "pooleparty/__link__/related";
+@import "pooleparty/__link__/read-more";
+@import "pooleparty/__link__/message";
+@import "pooleparty/__link__/pagination";
 
-@use "hydejack/__link__/base";
-@use "hydejack/__link__/utilities";
-@use "hydejack/__link__/links";
-@use "hydejack/__link__/images";
-@use "hydejack/__link__/sidebar";
-@use "hydejack/__link__/social";
-@use "hydejack/__link__/menu";
-@use "hydejack/__link__/toc";
-@use "hydejack/__link__/content";
-@use "hydejack/__link__/avatar";
-@use "hydejack/__link__/katex";
-@use "hydejack/__link__/footer";
+@import "hydejack/__link__/base";
+@import "hydejack/__link__/utilities";
+@import "hydejack/__link__/links";
+@import "hydejack/__link__/images";
+@import "hydejack/__link__/sidebar";
+@import "hydejack/__link__/social";
+@import "hydejack/__link__/menu";
+@import "hydejack/__link__/toc";
+@import "hydejack/__link__/content";
+@import "hydejack/__link__/avatar";
+@import "hydejack/__link__/katex";
+@import "hydejack/__link__/footer";
 
-@use "pro/portfolio";
-@use "pro/resume";
-@use "pro/bootstrap-mod/bootstrap";
-@use "pro/message-newsletter";
+@import "pro/portfolio";
+@import "pro/resume";
+@import "pro/bootstrap-mod/bootstrap";
+@import "pro/message-newsletter";
 
 {% unless site.hydejack.no_search %}
-@use "pro/search";
+@import "pro/search";
 {% endunless %}
 
 {% unless site.hydejack.no_mark_external or site.no_mark_external %}
-@use "hydejack/__link__/mark-external";
+@import "hydejack/__link__/mark-external";
 {% endunless %}
 
 {% unless site.hydejack.no_break_layout %}
-@use "hydejack/__link__/break-layout";
+@import "hydejack/__link__/break-layout";
 {% endunless %}
 
-@use "my-style";
+@import "my-style";
 {% else %}
 @use "html";
 
