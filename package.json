@@ -34,7 +34,7 @@
   "license": "GPL-3.0",
   "private": true,
   "devDependencies": {
-    "@babel/core": "^7.28.5",
+    "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.0",
     "@playwright/test": "^1.58.2",
     "babel-loader": "^9.2.1",
