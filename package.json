@@ -75,7 +75,7 @@
     "dom4": "^2.1.6",
     "kv-storage-polyfill": "^2.0.0",
     "lit-html": "^1.4.1",
-    "minisearch": "^3.3.0",
+    "minisearch": "^7.2.0",
     "rxjs": "^7.8.2",
     "scroll-into-view-if-needed": "^3.1.0",
     "tippy.js": "^6.3.7",
