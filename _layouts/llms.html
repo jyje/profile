@@ -1,0 +1,31 @@
+---
+# Layout for llms.txt - plain text/markdown only. Leading/trailing and H2 spacing controlled.
+---
+{%- assign llms = site.data.llms %}
+{%- assign title = llms.title | default: site.title %}
+{%- assign summary = llms.summary | default: site.description | strip_html | strip | truncate: 200 %}
+{% capture nl %}
+{% endcapture %}
+{% capture out -%}# {{ title }}
+
+> {{ summary }}
+
+{% for section in llms.sections -%}
+{% if section.optional -%}
+## Optional
+{% else -%}
+## {{ section.heading }}
+{% endif -%}{{ nl }}{{ nl }}
+{%- if section.links.size > 0 -%}
+{%- for link in section.links %}
+{%- if link.path %}- [{{ link.name }}]({{ site.url }}{{ link.path }}){% if link.description %}: {{ link.description }}{% endif %}{{ nl }}
+{%- else %}- [{{ link.name }}]({{ link.url }}){% if link.description %}: {{ link.description }}{% endif %}{{ nl }}
+{%- endif %}
+{%- endfor %}
+{%- else %}
+{%- if section.heading == "About" %}
+{{ site.description | strip_html | strip | truncate: 200 }}{{ nl }}
+{%- endif %}
+{%- endif %}
+{% endfor -%}
+{% endcapture -%}{{ out | strip }}{{ nl }}

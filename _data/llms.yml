@@ -1,0 +1,44 @@
+# llms.txt content - single source of truth for structure and labels.
+# path: relative to site root (layout prepends site.url). url: absolute URL.
+
+title: "jyje / Jeayoung Jeon (전제영)"
+
+summary: "AI Platform Engineer portfolio and blog (Agentic AI, LLMOps, CV, Cloud-Native)."
+
+sections:
+  - heading: "About"
+    links: []
+
+  - heading: "Main links"
+    links:
+      - name: "Home"
+        path: "/"
+      - name: "Profile (EN)"
+        path: "/en/profile"
+      - name: "Resume (EN)"
+        path: "/en/profile/resume"
+      - name: "Portfolio (EN)"
+        path: "/en/profile/portfolio"
+      - name: "Posts (EN)"
+        path: "/en/posts"
+      - name: "Profile (KO)"
+        path: "/ko/profile"
+      - name: "Posts (KO)"
+        path: "/ko/posts"
+      - name: "Tags"
+        path: "/tags"
+
+  - heading: "Contact"
+    links:
+      - name: "LinkedIn"
+        url: "https://www.linkedin.com/in/jyje"
+      - name: "Email"
+        url: "mailto:jyjeon@outlook.com"
+
+  - heading: "Optional"
+    optional: true
+    links:
+      - name: "RSS"
+        path: "/feed.xml"
+      - name: "Credits"
+        path: "/credits"
