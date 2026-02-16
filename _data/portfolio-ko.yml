@@ -4,7 +4,7 @@
 basics:
   name: 전제영
   name-english: Jeayoung Jeon
-  label: "MLOps/DevOps and AI Engineer"
+  label: "AI Platform Engineer"
   # picture: "/assets/img/profile/jyje-o2024.jpg"
   email: "jyjeon@outlook.com"
   linkedin: "jyje"
@@ -32,14 +32,15 @@ basics:
     portfolio-ko:
       title: 포트폴리오
       abstract: >
-        저는 서울, 경기에서 활동하는 AI 플랫폼 엔지니어 전제영[Jeayoung Jeon]입니다. 저는 다음의 전문성을 가지고 있습니다:
+        저는 서울에서 활동하는 **AI 플랫폼 엔지니어** 전제영[Jeayoung Jeon]입니다. 경력 6년차의 중간급 개발자이며, 다음의 전문성을 가지고 있습니다:
 
-          - 🐳 클라우드 네이티브 환경의 **MLOps (API, Pipeline) 워크로드**과 **AI/LLM 플랫폼**을 구현/운영할 수 있습니다.
+          - 🐳 클라우드 네이티브 환경의 **GenAI 워크로드**와 **LLMOps 플랫폼**을 구현/운영할 수 있습니다.
+          - 🤝 10인 내외 팀 프로젝트에서 **협업, 아키텍트 및 플랫폼 엔지니어링**을 리딩할 수 있습니다.
           - 🧑‍🔧 **고가용성**과 **GPU 비용 절감**을 위한 **하이브리드 쿠버네티스 클러스터**를 개발/운영할 수 있습니다.
-          - 🧑‍🎓 **머신러닝, 컴퓨터비전, 차량기술** 연구원 경험을 활용하여 **MLOps/DevOps** 관련 의사 결정에 기여할 수 있습니다.
+          - 🧑‍🎓 **머신러닝, 컴퓨터비전, 차량기술** 연구원 경험을 활용하여 **LLMOps/MLOps/DevOps** 관련 의사 결정에 기여할 수 있습니다.
 
-        저는 **ICT**, **AI** 및 **차량기술**을 포함한 다양한 분야의 도전을 꿈꾸고 있습니다. 제가 기여할 수 있는 팀이 있다면 편하게 연락 부탁드립니다.
-        만약 제 경력에 대한 간략한 이력서와 작업 내용이 궁금하시다면 제 [**이력서**](/en/profile/resume)를 참고해 주세요.
+        저는 **차량기술** 및 **AI**를 포함한 다양한 분야의 도전을 꿈꾸고 있습니다. 제가 기여할 수 있는 팀이 있다면 편하게 연락 부탁드립니다.
+        간략한 이력서와 작업은 [**이력서**](/ko/profile/resume)를 참고해 주세요.
 
 work:
   -
