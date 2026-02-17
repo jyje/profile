@@ -81,6 +81,37 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 }
 
 // =============================================================================
+// Resume/Portfolio/CV: contact row (basics + profiles) as 2 columns when width allows
+// Theme uses 86em for 2-col; we use a lower breakpoint so contact is 2-col earlier
+// =============================================================================
+@media screen and (min-width: 52em) {
+  body .layout-resume .columns.contact.columns-break,
+  body .layout-portfolio .columns.contact.columns-break,
+  body .layout-cv .columns.contact.columns-break {
+    > .column-3-5 {
+      width: 50%;
+    }
+    > .column-2-5 {
+      width: 50%;
+    }
+  }
+}
+
+// Same 2-column contact row in print
+@media print {
+  body .layout-resume .columns.contact.columns-break,
+  body .layout-portfolio .columns.contact.columns-break,
+  body .layout-cv .columns.contact.columns-break {
+    > .column-3-5 {
+      width: 50%;
+    }
+    > .column-2-5 {
+      width: 50%;
+    }
+  }
+}
+
+// =============================================================================
 // Print Styles for PDF Generation
 // =============================================================================
 // These styles override Hydejack's default print styles for better PDF output
@@ -142,13 +173,25 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 // Resume/CV specific print styles - Higher specificity to override _resume.scss
 // Using body prefix for higher specificity than .layout-resume alone
 @media print {
+  // Resume/CV: smaller font so content fits compactly on 2 pages
+  body .layout-resume,
+  body .layout-cv {
+    font-size: 0.75rem;
+  }
+
+  // Resume/CV only: all h2 get small top margin in print
+  body .layout-resume h2,
+  body .layout-cv h2 {
+    margin-top: 0.25rem !important;
+  }
+
   body .layout-resume,
   body .layout-portfolio,
   body .layout-cv {
     // Compact spacing for print
     section {
-      margin-top: 0.3rem;
-      margin-bottom: 0.3rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
 
     ul {
@@ -157,7 +200,7 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 
     // Contact section adjustments
     .contact {
-      margin-top: 1rem;
+      margin-top: 0.2rem;
     }
 
     // Avatar size for print
@@ -221,8 +264,98 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
       print-color-adjust: exact !important;
       -webkit-print-color-adjust: exact !important;
     }
-
   }
+
+  // Portfolio only: print content columns – make Work (and other) section content flow in 2 columns
+  body.print-2col .layout-portfolio .column-3-0 {
+    columns: 2;
+    column-gap: 1.5rem;
+    column-fill: balance;
+  }
+  body.print-2col .layout-portfolio .column-3-0 section > .npb,
+  body.print-2col .layout-portfolio .column-3-0 section > h2:first-child {
+    column-span: all;
+  }
+  body.print-2col .layout-portfolio .column-3-0 .work-item,
+  body.print-2col .layout-portfolio .column-3-0 section > section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+// Portfolio & Resume/CV: wrap each item in a thin rounded rect
+body .layout-portfolio .column-3-0 .work-item,
+body .layout-portfolio .column-3-0 section > section,
+body .layout-portfolio .column-3-0 blockquote.reference,
+body .layout-resume .work-item,
+body .layout-resume section > section,
+body .layout-resume blockquote.reference,
+body .layout-cv .work-item,
+body .layout-cv section > section,
+body .layout-cv blockquote.reference {
+  border: 1px solid color-mix(in srgb, var(--accent-color) 20%, transparent);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.25rem;
+}
+// Remove inner top spacing (header mt2 etc.) so content starts at box top
+body .layout-portfolio .column-3-0 .work-item > header,
+body .layout-portfolio .column-3-0 section > section > header,
+body .layout-resume .work-item > header,
+body .layout-resume section > section > header,
+body .layout-cv .work-item > header,
+body .layout-cv section > section > header {
+  margin-top: 0 !important;
+}
+// Space above box from the second item onwards
+body .layout-portfolio .column-3-0 .work-item:not(:first-child),
+body .layout-portfolio .column-3-0 section > section:not(:first-child),
+body .layout-portfolio .column-3-0 blockquote.reference:not(:first-child),
+body .layout-resume .work-item:not(:first-child),
+body .layout-resume section > section:not(:first-child),
+body .layout-resume blockquote.reference:not(:first-child),
+body .layout-cv .work-item:not(:first-child),
+body .layout-cv section > section:not(:first-child),
+body .layout-cv blockquote.reference:not(:first-child) {
+  margin-top: 0.75rem;
+}
+body .layout-portfolio .column-3-0 section > section:last-child,
+body .layout-portfolio .column-3-0 .work-item:last-child,
+body .layout-portfolio .column-3-0 blockquote.reference:last-child,
+body .layout-resume section > section:last-child,
+body .layout-resume .work-item:last-child,
+body .layout-resume blockquote.reference:last-child,
+body .layout-cv section > section:last-child,
+body .layout-cv .work-item:last-child,
+body .layout-cv blockquote.reference:last-child {
+  margin-bottom: 0;
+}
+@media print {
+  body .layout-portfolio .column-3-0 .work-item,
+  body .layout-portfolio .column-3-0 section > section,
+  body .layout-portfolio .column-3-0 blockquote.reference,
+  body .layout-resume .work-item,
+  body .layout-resume section > section,
+  body .layout-resume blockquote.reference,
+  body .layout-cv .work-item,
+  body .layout-cv section > section,
+  body .layout-cv blockquote.reference {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+// Resume/CV: certifications section – display small (when in right column)
+body .layout-resume section:has(h2#certificates) .certificates-item,
+body .layout-cv section:has(h2#certificates) .certificates-item {
+  font-size: 0.8125rem;
+  padding: 0.5rem 0.65rem;
+  margin-bottom: 0.5rem;
+}
+body .layout-resume section:has(h2#certificates) .certificates-item:not(:first-child),
+body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child) {
+  margin-top: 0.5rem;
 }
 
 // Sidebar username style

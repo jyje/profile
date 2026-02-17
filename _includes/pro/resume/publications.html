@@ -6,6 +6,7 @@
     <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
   </h2>
   {% include components/message.html class="note" text=basics.contents.publications.note alt="" %}
+  </div>
   {% for pub in resume.publications %}
   <section>
     <header class="{% unless forloop.first %}mt1{% endunless %}">
@@ -33,7 +34,6 @@
       <i class="faded">{{ pub.summary }}</i>
     {% endif %}
   </section>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
 </section>
 {% endif %}

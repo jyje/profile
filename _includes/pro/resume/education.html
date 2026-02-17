@@ -5,6 +5,7 @@
     {{ strings.resume.education | default:"Education" }}
     <span class="symbol {{ icons.education | default:'icon-library' }}"></span>
   </h2>
+  </div>
   {% for edu in resume.education %}
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
@@ -42,7 +43,6 @@
     </ul>
     {% endif %}
   </section>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
 </section>
 {% endif %}

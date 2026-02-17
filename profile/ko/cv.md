@@ -6,16 +6,17 @@ description: >
   You'll probably want to modify it in `resume.md`, and maybe set `hide_description` to `true` in the front matter.
 hide_description: true
 data_file: cv-ko
-sections:
+left_column:
   - projects
   - work
   # - volunteer
   - education
   - awards
   - publications
-  - certifications
   # - references
   - skills
+right_column:
+  - certifications
   - interests
   - languages
 no_language_icons: true

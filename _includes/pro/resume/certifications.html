@@ -5,6 +5,7 @@
     {{ strings.resume.certificates | default:"Certifications" }}
     <span class="symbol {{ icons.certifications | default:'icon-library' }}"></span>
   </h2>
+  </div>
   {% for cert in resume.certificates %}
   <section class="certificates-item">
     <header class="{% unless forloop.first %}mt1{% endunless %}">
@@ -31,7 +32,6 @@
       <i class="faded">{{ cert.description }}</i>
     {% endif %}
   </section>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
 </section>
 {% endif %}

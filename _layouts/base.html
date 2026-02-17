@@ -30,7 +30,7 @@ layout: compress
   {% include head/index.html %}
 </head>
 
-<body class="{% include_cached base-classes %}">
+<body class="{% include_cached base-classes print_columns=site.data.variables.print_columns %}">
   {% include body/index.html %}
 </body>
 

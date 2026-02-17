@@ -343,9 +343,29 @@
     .skill-tag-soft {
       line-height: 1.2;
     }
+
+    // 1-column print only for portfolio when body has no .print-2col; resume/cv keep 2 columns
+    body:not(.print-2col) .layout-portfolio & .column {
+      width: 100% !important;
+    }
   }
 
-  @media print and (min-width: 5.247in) {
+  // 2-column print: always for resume/cv; for portfolio when body.print-2col (print_columns: 2)
+  @media print {
+    body.print-2col & {
+      article > .note { padding-right: 11rem }
+      .fr { float: right }
+      .column-3-5 { width: 70% }
+      .column-3-0 { width: 100% }
+      .column-2-5 { width: 30% }
+    }
+  }
+}
+
+// Resume/CV: always 2-column in print (selector must target body .layout-resume directly)
+@media print {
+  body .layout-resume,
+  body .layout-cv {
     article > .note { padding-right: 11rem }
     .fr { float: right }
     .column-3-5 { width: 70% }

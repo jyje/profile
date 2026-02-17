@@ -5,12 +5,12 @@
     {{ strings.resume.references | default:"References" }}
     <span class="symbol {{ icons.references | default:'icon-quotes-right' }}"></span>
   </h2>
+  </div>
   {% for ref in resume.references %}
     <blockquote class="reference">
       <p>{{ ref.reference }}</p>
       <footer>— <cite>{{ ref.name }}</cite></footer>
     </blockquote>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
 </section>
 {% endif %}

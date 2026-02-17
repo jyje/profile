@@ -5,6 +5,7 @@
     {{ strings.resume.awards | default:"Awards" }}
     <span class="symbol {{ icons.awards | default:'icon-trophy' }}"></span>
   </h2>
+  </div>
   {% for awa in resume.awards %}
   <section class="awards-item">
     <header class="{% unless forloop.first %}mt1{% endunless %}">
@@ -32,7 +33,6 @@
       <i class="faded">{{ awa.summary }}</i>
     {% endif %}
   </section>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
 </section>
 {% endif %}

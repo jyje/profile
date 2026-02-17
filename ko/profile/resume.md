@@ -15,10 +15,10 @@ left_column:
   - education
   - awards
   - publications
-  - certifications
   # - references
 right_column:
   - skills
+  - certifications
   - interests
   - languages
 no_language_icons: true

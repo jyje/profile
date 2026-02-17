@@ -5,6 +5,7 @@
     {{ strings.resume.projects | default:"Projects" }}
     <span class="symbol {{ icons.work | default:'icon-rocket' }}"></span>
   </h2>
+  </div>
   {% for project in resume.projects %}
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}"
@@ -89,7 +90,6 @@
     {% endif %}
 
   </section>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
 </section>
 {% endif %}

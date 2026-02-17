@@ -4,4 +4,5 @@
 @use "my-variables" as *;
 @use "mixins" as *;
 
+@use "pro/resume";  /* .layout-portfolio column + print 2-col rules */
 @use "pro/portfolio";

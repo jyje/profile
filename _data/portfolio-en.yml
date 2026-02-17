@@ -14,7 +14,7 @@ basics:
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
-    city: "" # "Anyang & Seoul"
+    city: "" # "Seoul"
     countryCode: "" # "KR"
     region: "" # "California"
   profiles:
@@ -26,13 +26,13 @@ basics:
       url: https://stackshare.io/jyje/jyje-pro-stack
   contents:
     skills:
-      note: >
-        Here are my skills and highlighted items are industry-ready.
-
+      note: "Highlighted items are specialized in industry-ready."
+    publications:
+      note: "Full list is available on [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)."
     portfolio-en:
       title: Portfolio
       abstract: >
-        I'm Jeayoung Jeon [전제영], an **AI Platform Engineer** in Seoul with about six years of experience (mid-level). I specialize in:
+        I'm Jeayoung Jeon [전제영], an **AI Platform Engineer** in Seoul with about six years of experience. I specialize in:
 
           - 🐳 **GenAI development:** Implementing and operating **GenAI workloads** and **LLMOps platforms** in cloud-native environments.
           - 🤝 **Team leadership:** Leading **collaboration, architecture, and platform engineering** in teams of about ten.
@@ -51,14 +51,14 @@ work:
     endDate: {}
     roles:
       description: >
-        Lead AI/MLOps Engineer at Development Environment Platform Team, Hyundai AutoEver
+        Lead AI Platform Engineer at Development Environment Platform Team, Hyundai AutoEver
       items:
         - header: AI/LLM Platform
           content: >
-            Developing enterprise AI platforms and LLM+RAG systems for automotive domain knowledge
-        - header: MLOps
+            Developing extensible AI agents for in-house toolchains and LLMOps configuration
+        - header: Cloud-Native AI
           content: >
-            Building ML pipeline infrastructure for software defined vehicles and autonomous driving
+            Applying k8s+AI in practice and advising team members
   -
     company: MAXST
     position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
@@ -571,7 +571,7 @@ awards:
     awarder: "Intel-Altera Korea"
     summary: "[System] FPGA, Vision-Based Driver Support Navigation System"
   - 
-    title: "🏅 Best Poster Session in Workshop"
+    title: "🏅 Best Poster Session"
     date: "2014-05-01"
     awarder: "KYUTECH-POSTECH Joint Workshop"
     summary: "[Poster] Iterative Polygon Detection using Harris Corner Space Method for Finding Traffic Signs"
@@ -581,15 +581,15 @@ awards:
     awarder: "Intel-Altera Korea"
     summary: "[System] FPGA, Vision-Based Traffic Sign Recognition System"
   -
-    title: "🏅 Highest Honors in Undergraduate School"
+    title: "🏅 Summa Cum Laude"
     date: "2012-02-28"
     awarder: "Kumoh National Institute of Technology"
-    summary: "[Summa Cum Laude] Highest Honors in Undergraduate Electronic Engineering School"
+    summary: "Highest Honors in Undergraduate Electronic Engineering School, 2012"
   -
     title: "🏅 NAVER Power KiN 2011"
     date: "2012-01-01"
     awarder: "NAVER"
-    summary: "[Activity] Knowledge Export in `Electronics Engineering, Mathematics and Programming fields`. Active 2009-2011, Selected as a MVP in 2012 / Total number of answers 723, Selection ratio 98.1%"
+    summary: "Knowledge Expert in `Electronics Engineering, Math and Programming`. 723 Answers, Accepted 98.1%"
     website: "https://m.site.naver.com/1y6qP"
 
 publications:

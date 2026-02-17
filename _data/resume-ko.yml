@@ -14,7 +14,7 @@ basics:
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
-    city: "Seoul"
+    city: "" # "Seoul"
     countryCode: "" # "KR"
     region: "" # "California"
   profiles:
@@ -58,7 +58,7 @@ work:
             사내 툴체인에 확장가능한 AI 에이전트 개발 및 LLMOps 구성
         - header: Cloud-Native AI
           content: >
-            생성형 AI를 위한 클라우드 네이티브 환경 구성
+            K8s+AI를 실무에 적용하고 팀원들에게 자문하는 역할 담당
   -
     company: MAXST
     position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
