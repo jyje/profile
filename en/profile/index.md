@@ -97,7 +97,7 @@ You can find more details about my projects and achievements in the following do
 ## 📜 External Links
 
 - [Demo]{:.heading.flip-title}: Live demo powered by Raspberry Pi cluster (Can be down sometimes)
-- [Blog 1]{:.heading.flip-title}: Official blog written in Korean. Draft of this my official site
+- [Blog]{:.heading.flip-title}: Official blog written in Korean. Draft of this my official site
 
 ![Logo of this site](/assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
