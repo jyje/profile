@@ -57,7 +57,7 @@ permalink: /ko/
 [현대오토에버]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 [Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 
-[Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[Mail]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
 
 {% include components/author.html author=site.data.authors.jyje heading="About Author" %}

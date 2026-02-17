@@ -128,8 +128,8 @@ You can find more details about my projects and achievements in the following do
 [Hyundai Autoever]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai Autoever"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 
-[Mail]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
-[메일]: mailto:jyjeon+portfolio@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[Mail]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[메일]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
 [CKAD]: /certifications/ckad-certified-kubernetes-application-developer "Certified Kubernetes Application Developer"
 [CKA]: /certifications/cka-certified-kubernetes-administrator "Certified Kubernetes Administrator"
