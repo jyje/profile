@@ -97,8 +97,13 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
   }
 }
 
-// Same 2-column contact row in print
+// Same 2-column contact row in print; 1rem space above contact (mail) section
 @media print {
+  body .layout-resume .columns.contact,
+  body .layout-portfolio .columns.contact,
+  body .layout-cv .columns.contact {
+    margin-top: 1rem;
+  }
   body .layout-resume .columns.contact.columns-break,
   body .layout-portfolio .columns.contact.columns-break,
   body .layout-cv .columns.contact.columns-break {
