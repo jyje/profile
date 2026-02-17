@@ -394,6 +394,15 @@ body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child
   font-weight: 700 !important;
 }
 
+// Footer: commit hash next to GitHub (small font, gray background)
+footer .commit-rev {
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
+  background-color: var(--gray-bg, rgba(0, 0, 0, 0.06));
+  border-radius: 0.2em;
+  text-decoration: none;
+}
+
 // Force color printing (for colored tags and backgrounds)
 @media print {
   * {

@@ -5,7 +5,7 @@
     <nav class="legal"><small>
     {% for node in site.legal %}
       {% assign url = node.url | default: node.href %}
-      <a class="heading flip-title" href="{% include_cached smart-url url=url %}">{{ node.name | default:node.title }}</a>
+      <a class="heading flip-title" href="{% include_cached smart-url url=url %}">{{ node.name | default:node.title }}</a>{% if forloop.last and site.data.deploy and site.data.deploy.deployed and site.github.build_revision %}(<a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}" class="commit-rev" rel="noopener noreferrer" title="View commit on GitHub">{{ site.github.build_revision | slice: 0, 7 }}</a>){% endif %}
       {% unless forloop.last %}{{ site.data.strings.separator | default:'|' }}{% endunless %}
     {% endfor %}
     </small></nav>
@@ -14,7 +14,7 @@
     <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
   {% endif %}
   {% if site.copyright.size > 0 %}
-  <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small>{% if site.data.deploy and site.data.deploy.deployed and site.github.build_revision %} <span aria-hidden="true">-</span> <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}" class="commit-rev" rel="noopener noreferrer" title="View commit on GitHub">{{ site.github.build_revision | slice: 0, 7 }}</a>{% endif %}</p>
+  <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
   {% endif %}
   <hr class="sr-only"/>
 </footer>
