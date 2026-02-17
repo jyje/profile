@@ -404,9 +404,12 @@ body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child
   color: rgba(32, 32, 32, 0.5);
 }
 
-// Work role header tags - bold emphasis for screen and print
-.work-header-role {
+// Work role/result header tags – bold and vertically centered with adjacent text
+// (inline-block pills use baseline alignment by default, which makes them look shifted down/up)
+.work-header-role,
+.work-header-result {
   font-weight: 700 !important;
+  vertical-align: middle;
 }
 
 // Footer: commit hash next to GitHub (small font, gray background)
