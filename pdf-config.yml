@@ -47,7 +47,7 @@ viewport:
 # Timeout settings (in milliseconds)
 timeout:
   navigation: 30000  # Page navigation timeout
-  fonts: 5000        # Font loading timeout
+  fonts: 8000        # Font loading timeout (web fonts e.g. Pretendard from CDN)
   network: 3000      # Network idle timeout
   render: 2000       # Extra rendering time
 

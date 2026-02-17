@@ -190,9 +190,17 @@ async function waitForPageReady(page, config) {
       console.log('   ⚠️  Network idle timeout - proceeding anyway');
     });
     
-    // Use fonts timeout specifically for font loading
-    await page.evaluate(() => document.fonts.ready).catch(() => {});
-    
+    // Wait for web fonts (e.g. Pretendard from CDN) with configured timeout
+    const fontsPromise = page.evaluate(() => document.fonts.ready);
+    const timeoutPromise = new Promise((resolve) => setTimeout(() => resolve('timeout'), config.timeout.fonts));
+    const fontWaitResult = await Promise.race([
+      fontsPromise.then(() => 'ready'),
+      timeoutPromise
+    ]);
+    if (fontWaitResult === 'timeout') {
+      console.log('   ⚠️  Font load timeout - proceeding anyway');
+    }
+
     await page.waitForTimeout(config.timeout.render);
     
   } catch (error) {
