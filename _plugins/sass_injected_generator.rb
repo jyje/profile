@@ -17,7 +17,10 @@ module Jekyll
       ctx = Liquid::Context.new({ "site" => site.to_liquid }, {}, { site: site })
       rendered = template.render(ctx)
       FileUtils.mkdir_p(File.dirname(out))
-      File.write(out, rendered)
+      # Only write when content changed to avoid watch loop: plugin write -> mtime change -> rebuild -> repeat
+      if !File.file?(out) || File.read(out) != rendered
+        File.write(out, rendered)
+      end
     end
   end
 end
