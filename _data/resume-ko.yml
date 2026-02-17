@@ -378,18 +378,13 @@ interests:
       - "Digital Twins"
       - "AMD-to-ARM Transition"
       - "Hybrid Clusters"
+      - "Home Clusters"
   -
     name: "DevOps Culture"
     keywords:
       - "Coop First, Tech Next"
       - "Automate as Possible"
       - "Internal Development Platform"
-  -
-    name: "Home Clusters"
-    keywords:
-      - "Raspberry Pies"
-      - "Personal RAG"
-      - "Live Demo"
 
 # references:
 #   - 
