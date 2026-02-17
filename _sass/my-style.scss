@@ -117,12 +117,27 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 // These styles override Hydejack's default print styles for better PDF output
 
 @media print {
-  // Use Pretendard only for PDF (covers Korean and Latin)
+  // Use Pretendard only for PDF – no generic fallback to avoid DejaVu Sans / WenQuanYi Zen Hei
   html, body {
-    font-family: 'Pretendard', sans-serif !important;
+    font-family: 'Pretendard' !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  // Force all text in resume/portfolio/cv to Pretendard (no system fallback fonts)
+  body .layout-resume,
+  body .layout-portfolio,
+  body .layout-cv {
+    *, p, span, a, h1, h2, h3, h4, h5, h6, li, dt, dd, .bc, .faded, .h3, .h4, header, section {
+      font-family: 'Pretendard' !important;
+    }
+    code, pre, kbd {
+      font-family: var(--code-font-family) !important;
+    }
+    [class*="icon-"], .symbol {
+      font-family: 'icomoon' !important;
+    }
   }
 
   // Hide unnecessary elements for PDF
