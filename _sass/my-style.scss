@@ -182,7 +182,7 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
   // Resume/CV only: all h2 get small top margin in print
   body .layout-resume h2,
   body .layout-cv h2 {
-    margin-top: 2.0rem !important;
+    margin-top: 1.0rem !important;
   }
 
   body .layout-resume,
