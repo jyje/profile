@@ -409,6 +409,13 @@ body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child
   color: rgba(32, 32, 32, 0.5);
 }
 
+// Portfolio/Resume/CV: prevent first skill tag from being clipped (skill-tags uses negative margin)
+body .layout-portfolio .skills .skill-tags,
+body .layout-resume .skills .skill-tags,
+body .layout-cv .skills .skill-tags {
+  padding-left: 0.375rem;
+}
+
 // Work role/result header tags – bold and vertically centered with adjacent text
 // (inline-block pills use baseline alignment by default, which makes them look shifted down/up)
 .work-header-role,
