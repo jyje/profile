@@ -14,7 +14,7 @@
     <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
   {% endif %}
   {% if site.copyright.size > 0 %}
-  <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small>{% if site.data.deploy and site.data.deploy.deployed and site.github.build_revision %} <span aria-hidden="true">-</span> <a href="{{ site.github.repository_url }}/commit/{{ site.github.build_revision }}" class="commit-rev" rel="noopener noreferrer" title="View commit on GitHub">{{ site.github.build_revision | slice: 0, 7 }}</a>{% endif %}</p>
   {% endif %}
   <hr class="sr-only"/>
 </footer>

@@ -70,10 +70,16 @@ jobs:
       id: pages
       uses: actions/configure-pages@v5
 
+    - name: Set deploy flag for footer (show commit hash on deployed site only)
+      run: |
+        mkdir -p _data
+        echo "deployed: true" > _data/deploy.yml
+
     - name: Build with Jekyll
       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       env:
         JEKYLL_ENV: production
+        JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     # PDF Generation Steps (always executed)
     - name: Install Playwright browsers

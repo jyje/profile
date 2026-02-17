@@ -35,3 +35,6 @@ assets/css/*hydejack-*.css
 
 # bower components (installed via bower install)
 assets/bower_components/
+
+# Deploy flag for footer (generated in CI; hash shown only when deployed)
+_data/deploy.yml
