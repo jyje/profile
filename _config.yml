@@ -9,6 +9,8 @@ repository:            jyje/profile
 
 # General settings
 # ---------------------------------------------------------------------------------------
+# Ensure UTF-8 for feed and all output (fixes Korean characters in feed.xml)
+encoding:                 utf-8
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
