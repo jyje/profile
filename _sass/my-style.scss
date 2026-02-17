@@ -117,9 +117,9 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 // These styles override Hydejack's default print styles for better PDF output
 
 @media print {
-  // Ensure Korean fonts are properly loaded and applied
+  // Use Pretendard only for PDF (covers Korean and Latin)
   html, body {
-    font-family: 'Pretendard', 'Noto Sans KR', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif !important;
+    font-family: 'Pretendard', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
