@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   color: var(--body-color);
   background-color: var(--body-bg);
   font-weight: var(--font-weight);
@@ -49,7 +49,7 @@ body {
 }
 
 p {
-  @extend .color-transition;
+  @extend .color-transition !optional;
 }
 
 .content img, .img,
@@ -59,7 +59,7 @@ p {
 }
 
 .lead {
-  @extend .border-radius;
+  @extend .border-radius !optional;
   margin-left: -1rem;
   margin-right: -1rem;
   margin-bottom: 1.5rem;

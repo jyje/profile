@@ -29,6 +29,58 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 }
 
 // =============================================================================
+// Resume/Portfolio: Languages section – one row per language (same div)
+// =============================================================================
+.languages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.languages-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.languages-lang {
+  flex-shrink: 0;
+}
+
+.languages-fluency {
+  // fluency text follows immediately in same row
+}
+
+// =============================================================================
+// Resume/Portfolio: keep footer below content (override theme’s absolute footer)
+// =============================================================================
+@media screen {
+  main#_main.layout-resume,
+  main#_main.layout-portfolio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main#_main.layout-resume > article.page,
+  main#_main.layout-portfolio > article.page {
+    flex: 1 0 auto;
+  }
+  main#_main.layout-resume > footer.content,
+  main#_main.layout-portfolio > footer.content {
+    position: static;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1rem;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+
+// =============================================================================
 // Print Styles for PDF Generation
 // =============================================================================
 // These styles override Hydejack's default print styles for better PDF output

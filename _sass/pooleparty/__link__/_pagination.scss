@@ -24,7 +24,7 @@
 
 
 .pagination {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   width: calc(100% + 2rem);
   margin: 0 -1rem 1rem;
   color: var(--gray);

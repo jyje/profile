@@ -24,7 +24,7 @@
 
 
 .message {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   margin-bottom: 1rem;
   padding: 1rem;
   color: var(--gray-text);
@@ -34,7 +34,7 @@
 }
 
 .note-sm {
-  @extend .message;
+  @extend .message !optional;
   background: transparent;
   color: var(--body-color);
   font-size: smaller;
@@ -60,7 +60,7 @@
 }
 
 .note {
-  @extend .note-sm;
+  @extend .note-sm !optional;
   font-size: 1rem;
 }
 

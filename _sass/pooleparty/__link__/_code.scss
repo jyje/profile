@@ -22,13 +22,15 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+@use "mixins" as *;
+
 
 code, pre {
   font-family: var(--code-font-family);
 }
 
 code {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   padding: .25em .5em;
   background-color: var(--gray-bg);
   font-size: smaller;
@@ -36,7 +38,7 @@ code {
 
 .figure-base {
   @include border-radius();
-  @extend .color-transition;
+  @extend .color-transition !optional;
   margin-left: -1rem;
   margin-right: -1rem;
 
@@ -46,7 +48,7 @@ code {
 }
 
 .pre-base {
-  @extend .figure-base;
+  @extend .figure-base !optional;
   padding: 1rem;
   margin-bottom: 1.5rem;
   background-color: var(--gray-bg);
@@ -62,7 +64,7 @@ code {
 }
 
 pre {
-  @extend .pre-base;
+  @extend .pre-base !optional;
   margin-top: 0;
   display: block;
   font-size: .83em;
@@ -80,7 +82,7 @@ pre > code {
   font-size: 1em;
 
   // .__hl {
-  //   @extend .color-transition;
+  //   @extend .color-transition !optional;
   //   display: inline-block;
   //   position: absolute;
   //   left: -1rem;
@@ -92,7 +94,7 @@ pre > code {
 }
 
 .pre-header-common {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   height: 2rem;
   border: none;
   border-bottom: 1px solid var(--border-color);
@@ -104,8 +106,8 @@ div.highlight {
   position: relative;
 
   > .pre-header {
-    @extend .figure-base;
-    @extend .pre-header-common;
+    @extend .figure-base !optional;
+    @extend .pre-header-common !optional;
     display: block;
     color: var(--gray)!important;
     background-color: var(--gray-bg);
@@ -121,7 +123,7 @@ div.highlight {
   }
 
   > button {
-    @extend .pre-header-common;
+    @extend .pre-header-common !optional;
     position: absolute;
     top: 0;
     right: -1rem;

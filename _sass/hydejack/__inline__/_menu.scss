@@ -33,18 +33,18 @@ $navbar-height: 5rem;
 }
 
 .fixed-top {
-  @extend .fixed-common;
+  @extend .fixed-common !optional;
   top: 0;
 }
 
 .fixed-bottom {
-  @extend .fixed-common;
+  @extend .fixed-common !optional;
   bottom: 0;
 }
 
 
 .navbar {
-  @extend .color-transition; 
+  @extend .color-transition !optional; 
   > .content {
     
     position: relative;
@@ -63,7 +63,7 @@ $navbar-height: 5rem;
 
 .nav-btn-bar {
   z-index: 41;
-  @extend .color-transition;
+  @extend .color-transition !optional;
   margin: 0 -1rem;
   background-color: white; // IE11
   background-color: var(--body-bg);
@@ -78,7 +78,7 @@ $navbar-height: 5rem;
 }
 
 .nav-btn {
-  @extend .color-transition;
+  @extend .color-transition !optional;
   background: none;
   border: none;
   text-decoration: none;

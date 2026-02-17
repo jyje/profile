@@ -22,6 +22,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+@use "injected" as *;
+
 hy-drawer {
   width: 100%; 
   position: relative; 
@@ -169,7 +171,7 @@ hy-drawer {
 }
 
 .sidebar-nav-item {
-  @extend .f4;
+  @extend .f4 !optional;
   display: inline-block;
   margin-bottom: .5rem;
 }
