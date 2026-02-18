@@ -46,8 +46,8 @@ author:
 # Add links to the sidebar.
 # Note: Home menu is handled specially in nav.html with language flags
 menu:
-  - title:             Home
-    url:               /
+  # - title:             Home
+  #   url:               /
   - title:             Profile
     url:               /en/profile
   - title:             Posts
