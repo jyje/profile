@@ -319,6 +319,22 @@ body .layout-cv blockquote.reference {
   padding: 0.75rem 1rem;
   margin-bottom: 0.25rem;
 }
+// First item: emphasize with same border color as background fill
+// Portfolio: first card is first section inside first major section (work has div.npb before .work-item)
+body .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
+body .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
+body .layout-portfolio .column-3-0 .work-item:first-child,
+body .layout-portfolio .column-3-0 section > section:first-child,
+body .layout-resume .column-3-5 > section:first-child > section:first-of-type,
+body .layout-resume .column-3-5 > section:first-child > .work-item:first-of-type,
+body .layout-resume .work-item:first-child,
+body .layout-resume section > section:first-child,
+body .layout-cv .column-3-5 > section:first-child > section:first-of-type,
+body .layout-cv .column-3-5 > section:first-child > .work-item:first-of-type,
+body .layout-cv .work-item:first-child,
+body .layout-cv section > section:first-child {
+  background-color: color-mix(in srgb, var(--accent-color) 7.5%, transparent);
+}
 // Remove inner top spacing (header mt2 etc.) so content starts at box top
 body .layout-portfolio .column-3-0 .work-item > header,
 body .layout-portfolio .column-3-0 section > section > header,
@@ -422,6 +438,43 @@ body .layout-cv .skills .skill-tags {
 .work-header-result {
   font-weight: 700 !important;
   vertical-align: middle;
+}
+
+// =============================================================================
+// Dark theme: emphasis colors with better contrast on dark background
+// Light theme keeps accent (#680C2C). Dark theme uses lighter hue from palette.
+// Proposal: #b84d6a (lightened maroon) or #5b9db0 (muted teal from accent-two).
+// =============================================================================
+body.dark-mode {
+  .layout-resume,
+  .layout-portfolio,
+  .layout-cv {
+    .work-header-role {
+      background-color: #b84d6a !important;
+      border-color: #b84d6a !important;
+      color: #fff !important;
+    }
+    .work-header-result {
+      background-color: #4a8ba8 !important;
+      border-color: #4a8ba8 !important;
+      color: #fff !important;
+    }
+    .skill-tag-highlight {
+      background-color: #b84d6a !important;
+      border-color: #b84d6a !important;
+      color: #fff !important;
+    }
+  }
+  // First-item card border and background: subtle light tint for dark bg
+  .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
+  .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
+  .layout-resume .column-3-5 > section:first-child > section:first-of-type,
+  .layout-resume .column-3-5 > section:first-child > .work-item:first-of-type,
+  .layout-cv .column-3-5 > section:first-child > section:first-of-type,
+  .layout-cv .column-3-5 > section:first-child > .work-item:first-of-type {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.06) !important;
+  }
 }
 
 // Footer: commit hash next to GitHub (small font, gray background)
