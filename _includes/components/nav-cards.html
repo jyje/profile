@@ -1,10 +1,10 @@
 {% comment %}
   Generic nav cards: round box items (icon, title, description, Learn more).
   Data: site.data["nav-cards"][lang]. Override with include.nav.
-  Language: from page.url (e.g. /ko/ -> ko) or page.lang.
+  Language: from page.url (e.g. /ko/ -> ko); use same pattern as nav.html, sidebar-sticky.html.
 {% endcomment %}
 {% assign nav_data = include.nav | default: site.data["nav-cards"] %}
-{% if page.url contains "/ko" %}
+{% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' %}
   {% assign lang = "ko" %}
 {% else %}
   {% assign lang = "en" %}
