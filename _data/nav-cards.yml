@@ -21,7 +21,7 @@ en:
   - title: Certifications
     url: /tags/certifications
     description: "Professional certifications and credentials."
-    icon: icon-checkmark
+    icon: icon-drivers-license
   - title: Tags
     url: /tags
     description: "Browse content by tags."
@@ -47,7 +47,7 @@ ko:
   - title: 자격증
     url: /tags/certifications
     description: "전문 자격증 및 인증 내역."
-    icon: icon-checkmark
+    icon: icon-drivers-license
   - title: 태그
     url: /tags
     description: "태그별 콘텐츠 둘러보기."
