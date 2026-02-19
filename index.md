@@ -14,7 +14,9 @@ I work as an **AI Platform Engineer** at [Hyundai AutoEver]{:.heading.flip-title
 
 My focus areas include AI applications, LLM/MLOps platforms, hybrid Kubernetes clusters, and cloud-native AI/ML infrastructure.
 
+{::nomarkdown}
 {% include components/nav-cards.html %}
+{:/nomarkdown}
 
 For inquiries or collaboration, please contact me via [LinkedIn]{:.heading}.
 

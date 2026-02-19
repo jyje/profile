@@ -15,7 +15,9 @@ permalink: /ko/
 
 현재 몰입하고 있는 분야는 AI 애플리케이션, LLM/MLOps 플랫폼, 하이브리드 Kubernetes 클러스터, 클라우드 네이티브 AI/ML 인프라입니다.
 
+{::nomarkdown}
 {% include components/nav-cards.html %}
+{:/nomarkdown}
 
 문의 또는 협업은 [LinkedIn]{:.heading}으로 연락해 주세요.
 
