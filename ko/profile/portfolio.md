@@ -7,7 +7,7 @@ description: >
 hide_description: true
 data_file: portfolio-ko
 top_note: >
-  🇬🇧 English version is [here](/en/profile/portfolio).
+  🇬🇧 You can check the English version [here](/en/profile/portfolio).
 sections:
   - work
   - projects

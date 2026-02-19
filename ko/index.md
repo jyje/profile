@@ -4,9 +4,10 @@ title: jyje.online
 cover: true
 permalink: /ko/
 ---
-## 홈
 
 > 🇬🇧 You can check the English version [here](/).
+
+## 홈
 
 저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다.
 

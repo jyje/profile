@@ -7,7 +7,7 @@ description: >
 hide_description: true
 data_file: resume-ko
 top_note: >
-  🇬🇧 English version is [here](/en/profile/resume).
+  🇬🇧 You can check the English version [here](/en/profile/resume).
 left_column:
   # - projects
   - work

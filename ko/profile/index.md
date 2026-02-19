@@ -6,14 +6,14 @@ accent_image:
   overlay: false
 ---
 
+> 🇬🇧 You can check the English version [here](/en/profile).
+
 * toc
 {:toc .large-only}
 
 ## ✨ 소개
 
-> 🇬🇧 You can check the English version [here](/en/profile).
-
-저는 서울,경기에서 활동하는 소프트웨어 엔지니어 [전제영(Jeayoung Jeon)]{:.heading.flip-title} 입니다.
+저는 서울/경기에서 활동하는 소프트웨어 엔지니어 [전제영(Jeayoung Jeon)]{:.heading.flip-title} 입니다.
 
 - 🧑‍💻 저는 MLOps/DevOps 와 AI 엔지니어링의 전문성을 가지고 있습니다. 
     - 현재 **AI 플랫폼 엔지니어**로 차량 분야의 ICT 기업인 [Hyundai Autoever]{:.heading.flip-title}에서 근무하고 있습니다.

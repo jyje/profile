@@ -6,23 +6,22 @@ accent_image:
   overlay: false
 ---
 
+> 🇰🇷 한국어 버전은 [여기](/ko/profile)에서 확인할 수 있습니다.
+
 * toc
 {:toc .large-only}
 
 ## ✨ Introduction
 
-> 🇰🇷 한국어 버전은 [여기](/ko/profile)에서 확인할 수 있습니다.
+I'm [Jeayoung Jeon (전제영)]{:.heading.flip-title}, a software engineer based in Seoul and Gyeonggi.
 
-My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software engineer in Seoul, South Korea.
-
-- 🧑‍💻 I'm with expertise in MLOps/DevOps and AI engineering.
-    - I'm currently working as an **AI Platform Engineer** at [Hyundai Autoever]{:.heading.flip-title}, a company specializing in SDV and ICT for Automotives.
-    - I worked as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title}, a company specializing in AR and Digital Twins.
-    - I studied computer vision, autonomous driving, and AI researches at school.
+- 🧑‍💻 I focus on MLOps/DevOps and AI engineering.
+    - **AI Platform Engineer** at [Hyundai Autoever]{:.heading.flip-title} (SDV & ICT for automotive).
+    - Previously **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title} (AR and digital twins).
+    - Research background in computer vision, autonomous driving, and AI.
 - 💼 This site is my official profile.
-    - Documents: In [here](#2-career-documents){:.heading.flip-title}, you can find my [Résumé]{:.heading.flip-title} and [Portfolio]{:.heading.flip-title}.
-    - Portfolios: You can find my [Works]{:.heading.flip-title} here.
-    - If you have any questions or find any errors, please contact me via [mail]{:.heading.flip-title}.
+    - [Résumé]{:.heading.flip-title} and [Portfolio]{:.heading.flip-title} are linked [below](#2-career-documents){:.heading.flip-title}.
+    - Questions or corrections: please contact me via [mail]{:.heading.flip-title}.
 
 <div class="screen-only mt3">
   <style> .btn-quick { margin: 0.3rem 0rem; } </style>
@@ -41,7 +40,7 @@ My name is [Jeayoung Jeon (전제영)]{:.heading.flip-title}, and I'm a software
 
 ### 1. Timeline
 
-Following is a brief summary of my career:
+A brief summary of my career in chronological order:
 
 <div class="timeline">
   <style>
@@ -57,7 +56,6 @@ Following is a brief summary of my career:
     }
   </style>
   <ul>
-    <li><span class="timeline-header">2024 - Present</span> Engineering in <b>GenAI, LLMOps, Architecturing for AI Platforms</b></li>    
     <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipeline</b></li>
     <li><span class="timeline-header">2022 - Present</span> Engineering in <b>MLOps, DevOps, Hybrid Clusters</b></li>
     <li><span class="timeline-header">2018 - 2023</span> Research in <b>Visual-SLAM, SfM and Digital Twins</b></li>
@@ -71,22 +69,22 @@ Following is a brief summary of my career:
 
 ### 2. Career Documents
 
-You can find more details about my career in the following documents:
+Detailed career information is available in:
 
-- [Résumé]{:.heading.flip-title}: Short summary of my career in 2p (Experience, Education, Achievements, Certifications, etc.)
-- [Portfolio]{:.heading.flip-title}: My projects and achievements
-<!-- - [Curriculum Vitae]{:.heading.flip-title}: Full details of my career and training -->
+- [Résumé]{:.heading.flip-title}: Two-page summary (experience, education, achievements, certifications)
+- [Portfolio]{:.heading.flip-title}: Project-focused career document
+<!-- - [Curriculum Vitae]{:.heading.flip-title}: Full career and education details -->
 
-All documents above are written in English and Korean. You can print it out in direct/PDF format.
+All documents are available in English and Korean and can be printed or exported to PDF.
 
 
-### 3. Portfolio Documents
+### 3. Portfolio on This Site
 
-You can find more details about my projects and achievements in the following documents:
+More on my projects and achievements:
 
-- [Works]{:.heading.flip-title}: Work and project achievements
-- [Certifications]{:.heading.flip-title}: Certifications and qualifications
-- [Articles]{:.heading.flip-title}: All portfolio documents
+- [Works]{:.heading.flip-title}: Work and project outcomes
+- [Certifications]{:.heading.flip-title}: Certifications and credentials
+- [Articles]{:.heading.flip-title}: All portfolio content
 
 
 <div style="margin-top: 5rem;">
@@ -96,8 +94,8 @@ You can find more details about my projects and achievements in the following do
 
 ## 📜 External Links
 
-- [Demo]{:.heading.flip-title}: Live demo powered by Raspberry Pi cluster (Can be down sometimes)
-- [Blog]{:.heading.flip-title}: Official blog written in Korean. Draft of this my official site
+- [Demo]{:.heading.flip-title}: Live demo on a Raspberry Pi cluster (may be occasionally unavailable)
+- [Blog]{:.heading.flip-title}: Personal blog on career and technical topics
 
 ![Logo of this site](/assets/icons/icon-128x128.png){:.centered style="margin-top:4rem; margin-bottom:4rem;"}
 
@@ -110,7 +108,6 @@ You can find more details about my projects and achievements in the following do
 <!-- resume -->
 [Résumé]: /en/profile/resume "my-profile resume"
 
-
 <!-- portfolio -->
 [Portfolio]: /en/profile/portfolio "my-profile portfolio"
 
@@ -118,18 +115,16 @@ You can find more details about my projects and achievements in the following do
 [Curriculum Vitae]: /en/profile/cv "my-profile cv"
 [CV]: /en/profile/cv "my-profile cv"
 
-
 [Articles]: /en/posts
-
 [Certifications]: /certifications
 [Works]: /works
 
 [Blog]: https://blog.jyje.online "My blog"
-[Hyundai Autoever]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai Autoever"
 [MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
+[Hyundai Autoever]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 
 [Mail]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
-[메일]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
+[mail]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 
 [CKAD]: /certifications/ckad-certified-kubernetes-application-developer "Certified Kubernetes Application Developer"
 [CKA]: /certifications/cka-certified-kubernetes-administrator "Certified Kubernetes Administrator"
@@ -137,5 +132,3 @@ You can find more details about my projects and achievements in the following do
 [CAPA]: /certifications/capa-certified-argo-project-associate "Certified Argo Project Associate"
 
 [Demo]: https://app.jyje.online "Demo"
-
-[Blog]: https://blog.jyje.online "Blog"

@@ -2,11 +2,11 @@
 layout: welcome
 title: jyje.online
 cover: true
-
 ---
-## Home
 
 > 🇰🇷 한국어 버전은 [여기](/ko)에서 확인할 수 있습니다.
+
+## Home
 
 I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea.
 
