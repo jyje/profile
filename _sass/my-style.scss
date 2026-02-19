@@ -33,19 +33,14 @@ table.no-border {
     margin-bottom: 1.5rem;
   }
 
-  a.nav-card {
-    display: block !important;
+  .nav-card {
+    position: relative;
+    display: block;
     padding: 1.25rem;
     border-radius: 0.5rem;
     border: 1px solid var(--border-color);
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
     box-sizing: border-box;
-    & > .nav-card-icon { display: inline-block !important; }
-    & > .nav-card-title,
-    & > .nav-card-desc { display: block !important; }
-    & > .nav-card-cta { display: inline-block !important; }
+    transition: border-color 0.2s ease, background-color 0.2s ease;
     &:hover {
       border-color: var(--accent-color);
       background-color: color-mix(in srgb, var(--accent-color) 8%, transparent);
@@ -62,7 +57,15 @@ table.no-border {
     margin: 0 0 0.35rem 0;
     font-size: 1.1rem;
     font-weight: 700;
-    display: block !important;
+    display: block;
+  }
+
+  .nav-card-external {
+    font-size: 0.7em;
+    margin-left: 0.25em;
+    color: var(--accent-color);
+    vertical-align: middle;
+    opacity: 0.7;
   }
 
   .nav-card-desc {
@@ -80,7 +83,14 @@ table.no-border {
     font-size: 0.85rem;
     color: var(--accent-color);
     font-weight: 500;
-    display: inline-block !important;
+    display: inline-block;
+    text-decoration: none;
+    // Stretched link: expands click area to the entire .nav-card
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
   }
 }
 

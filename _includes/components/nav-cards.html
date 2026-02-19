@@ -22,12 +22,12 @@
       {% assign item_url = item.url | relative_url %}
       {% assign item_external = false %}
     {% endif %}
-    <a href="{{ item_url }}" class="nav-card"{% if item_external %} target="_blank" rel="noopener"{% endif %}>
+    <div class="nav-card">
       <span class="nav-card-icon symbol {{ item.icon }}"></span>
-      <h3 class="nav-card-title">{{ item.title }}</h3>
+      <h3 class="nav-card-title">{{ item.title }}{% if item_external %}<span class="nav-card-external symbol icon-new-tab"></span>{% endif %}</h3>
       <p class="nav-card-desc">{{ item.description }}</p>
-      <span class="nav-card-cta">{% if lang == "ko" %}읽기{% else %}Read more{% endif %} &rarr;</span>
-    </a>
+      <a href="{{ item_url }}" class="nav-card-cta no-mark"{% if item_external %} target="_blank" rel="noopener"{% endif %}>{% if lang == "ko" %}읽기{% else %}Read more{% endif %} &rarr;</a>
+    </div>
   {% endfor %}
 </div>
 </div>
