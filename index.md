@@ -14,7 +14,7 @@ I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Kor
 |-------------------|----------------------------------------------------------------------------------------------------------------|
 | **Role**          | Lead AI Platform Engineer at Development Environment Platform Team, [Hyundai AutoEver]{:.heading.flip-title}   |
 | **Interests**     | Agentic AI, LLMOps, Automotives, Kubernetes, Cloud Native, Computer Vision                                     |
-| **Location**      | Anyang & Seoul, South Korea                                                                                    |
+| **Location**      | Seoul & Gyeonggi, South Korea                                                                                    |
 
 [Profile]{:.heading.flip-title} / [Demo]{:.heading} / [Posts]{:.heading.flip-title} / [Achievements]{:.heading.flip-title} / [Certifications]{:.heading.flip-title} / [Tags]{:.heading.flip-title}
 
