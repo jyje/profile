@@ -8,56 +8,23 @@ permalink: /ko/
 
 > 🇬🇧 You can check the English version [here](/).
 
-저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다. 저는 현재 **AI 플랫폼 엔지니어**로 차량 분야의 ICT 기업인 [현대오토에버]{:.heading.flip-title}에서 일하고 있습니다. AI 플랫폼을 개발하고 활용하여 차량 SW 개발 문제를 해결하고 있습니다. AI 에이전트 개발, LLM/MLOps 플랫폼 개발, 하이브리드 Kubernetes 클러스터 구축, 클라우드 네이티브 환경의 AI/ML 인프라 구축의 전문성을 가지고 있습니다.
+저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다.
 
-| 주제           | 설명                                                                   |
-|---------------|-----------------------------------------------------------------------|
-| **역할**       | 리드 AI 플랫폼 엔지니어 at 개발환경플랫폼팀, [현대오토에버]{:.heading.flip-title}  |
-| **관심사**     | Agentic AI, LLMOps, 차량기술, Kubernetes, Cloud Native, Computer Vision  |
-| **활동 지역**   | 대한민국 서울 & 경기                                                      |
+저는 [현대오토에버]{:.heading.flip-title}에서 **AI 플랫폼 엔지니어**로 일하며, 차량 소프트웨어 개발을 지원하는 AI 플랫폼을 개발·운영하고 있습니다.
 
-[프로필]{:.heading.flip-title} / [데모]{:.heading} / [포스트]{:.heading.flip-title} / [성과]{:.heading.flip-title} / [자격증]{:.heading.flip-title} / [태그]{:.heading.flip-title}
+현재 몰입하고 있는 분야는 AI 애플리케이션, LLM/MLOps 플랫폼, 하이브리드 Kubernetes 클러스터, 클라우드 네이티브 AI/ML 인프라입니다.
+
+{% include components/nav-cards.html %}
+
+문의 또는 협업은 [LinkedIn]{:.heading}으로 연락해 주세요.
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}
 </div>
 
-### 사이트 개요
-
-이 사이트는 다음과 같은 섹션을 제공합니다:
-
-- [프로필]{:.heading.flip-title}: 경력 요약, [이력서], [포트폴리오]
-- [데모]{:.heading}: 작업물 라이브 데모 (Raspberry Pi 클러스터로 운영)
-- [포스트]{:.heading.flip-title}: 기술 포스팅 및 연구 게시물
-- [성과]{:.heading.flip-title}: 주요 전문 활동 및 프로젝트 성과
-- [자격증]{:.heading.flip-title}: 전문 자격증 및 인증 내역
-- [태그]{:.heading.flip-title}: 태그별 콘텐츠 둘러보기
-
-문의 또는 협업 기회는 [LinkedIn]{:.heading}을 통해 연락해 주세요.
-
 ![이 사이트의 로고](/assets/icons/icon-128x128.png){:.centered style="margin-top:10rem; margin-bottom:10rem;"}
 
-[Profile]: / "my-profile --verbose"
-[프로필]: /ko/profile "my-profile --verbose --language=ko"
-[Résumé]: /en/profile/resume "my-profile resume"
-[이력서]: /ko/profile/resume "my-profile resume --language=ko"
-[Portfolio]: /en/profile/portfolio "my-profile portfolio"
-[포트폴리오]: /ko/profile/portfolio "my-profile portfolio --language=ko"
-[Curriculum Vitae]: /ko/profile/cv "my-profile cv --language=ko"
-[CV]: /ko/profile/cv "my-profile cv --language=ko"
-[커리큘럼]: /ko/profile/cv "my-profile cv --language=ko"
-[포스트]: /ko/posts
-[성과]: /tags/achievements
-[자격증]: /tags/certifications
-[태그]: /tags
-[색인]: /tags
-[Blog]: https://blog.jyje.online "my-blog"
-[데모]: https://app.jyje.online "Demo: Raspberry Pi Cluster running 24/7"
-[MAXST]: https://www.linkedin.com/company/maxst "LinkedIn profile of MAXST Co., Ltd."
 [현대오토에버]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
-[Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
-
-[Mail]: mailto:jyjeon+profile@outlook.com?subject=To&nbsp;Jeayoung&nbsp;Jeon
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
 
-{% include components/author.html author=site.data.authors.jyje heading="About Author" %}
+{% include components/author.html author=site.data.authors.jyje heading="저자 소개" %}

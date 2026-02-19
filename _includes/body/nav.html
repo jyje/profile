@@ -10,7 +10,8 @@
     {% endif %}
   {% endif %}
 
-  {% comment %}Home menu with language-specific URL and title{% endcomment %}
+  {% comment %}Home menu with language-specific URL and title (controlled by sidebar_show_home in _config.yml){% endcomment %}
+  {% if site.sidebar_show_home != false %}
   <li>
     <a
       href="{% if current_lang == 'ko' %}{{ '/ko/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"
@@ -19,6 +20,7 @@
       {% if current_lang == 'ko' %}Home{% else %}Home{% endif %}
     </a>
   </li>
+  {% endif %}
 
   {% comment %}Select menu items based on language{% endcomment %}
   {% if current_lang == 'ko' %}

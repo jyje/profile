@@ -44,10 +44,10 @@ author:
   linkedin:            jyje
 
 # Add links to the sidebar.
-# Note: Home menu is handled specially in nav.html with language flags
+# Note: Home menu is handled specially in nav.html with language flags.
+# Set sidebar_show_home to false to hide "Home" from the sidebar (menu/menu_en/menu_ko do not control it).
+sidebar_show_home:     false
 menu:
-  # - title:             Home
-  #   url:               /
   - title:             Profile
     url:               /en/profile
   - title:             Posts
