@@ -83,7 +83,8 @@ table.no-border {
     font-size: 0.85rem;
     color: var(--accent-color);
     font-weight: 500;
-    display: inline-block;
+    display: block;
+    margin-top: 0.75rem;
     text-decoration: none;
     // Stretched link: expands click area to the entire .nav-card
     &::after {
