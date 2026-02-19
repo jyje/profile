@@ -10,10 +10,9 @@ permalink: /ko/
 ## 홈
 
 저는 서울에서 활동하는 소프트웨어 엔지니어 **전제영 [Jeayoung Jeon]**입니다.
+저는 [현대오토에버]{:.heading.flip-title}에서 **AI 플랫폼 엔지니어**로 일하고 있으며, 차량 소프트웨어 개발을 지원하는 AI 플랫폼을 개발·운영하고 있습니다.
 
-저는 [현대오토에버]{:.heading.flip-title}에서 **AI 플랫폼 엔지니어**로 일하며, 차량 소프트웨어 개발을 지원하는 AI 플랫폼을 개발·운영하고 있습니다.
-
-현재 몰입하고 있는 분야는 AI 애플리케이션, LLM/MLOps 플랫폼, 하이브리드 Kubernetes 클러스터, 클라우드 네이티브 AI/ML 인프라입니다.
+현재 몰입하고 있는 분야는 **AI 애플리케이션, LLM/MLOps 플랫폼, 하이브리드 Kubernetes 클러스터, 클라우드 네이티브 AI/ML 인프라**입니다.
 
 {::nomarkdown}
 {% include components/nav-cards.html %}
