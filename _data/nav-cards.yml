@@ -25,7 +25,7 @@ en:
   - title: Tags
     url: /tags
     description: "Browse content by tags."
-    icon: icon-link
+    icon: icon-price-tags
 
 ko:
   - title: 프로필
@@ -51,4 +51,4 @@ ko:
   - title: 태그
     url: /tags
     description: "태그별 콘텐츠 둘러보기."
-    icon: icon-link
+    icon: icon-price-tags

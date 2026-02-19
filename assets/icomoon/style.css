@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9r0odw');
-  src:  url('fonts/icomoon.eot?9r0odw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9r0odw') format('truetype'),
-    url('fonts/icomoon.woff?9r0odw') format('woff'),
-    url('fonts/icomoon.svg?9r0odw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?y26xlt');
+  src:  url('fonts/icomoon.eot?y26xlt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?y26xlt') format('truetype'),
+    url('fonts/icomoon.woff?y26xlt') format('woff'),
+    url('fonts/icomoon.svg?y26xlt#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -298,6 +298,18 @@
 }
 .icon-linkedin2:before {
   content: "\eaca";
+}
+.icon-price-tag:before {
+  content: "\e935";
+}
+.icon-price-tags:before {
+  content: "\e936";
+}
+.icon-airplane:before {
+  content: "\e9af";
+}
+.icon-power-cord1:before {
+  content: "\e9b9";
 }
 .icon-drivers-license:before {
   content: "\f2c2";
