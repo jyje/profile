@@ -73,10 +73,6 @@ table.no-border {
     font-size: 0.9rem;
     color: var(--gray);
     line-height: 1.4;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
   .nav-card-cta {
