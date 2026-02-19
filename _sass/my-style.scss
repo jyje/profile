@@ -25,7 +25,7 @@ table.no-border {
 // High specificity so production/theme rules (e.g. .content a as table-row) don't break layout.
 // =============================================================================
 .content .nav-cards,
-main .content .nav-cards {
+main.content .nav-cards {
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
@@ -35,7 +35,7 @@ main .content .nav-cards {
 
 .content a.nav-card,
 .content .nav-card,
-main .content a.nav-card {
+main.content a.nav-card {
   display: block !important;
   padding: 1.25rem;
   border-radius: 0.5rem;
@@ -57,7 +57,7 @@ main .content a.nav-card {
 }
 
 .content .nav-card-icon,
-main .content .nav-card .nav-card-icon {
+main.content .nav-card .nav-card-icon {
   display: inline-block !important;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -66,7 +66,7 @@ main .content .nav-card .nav-card-icon {
 }
 
 .content .nav-card-title,
-main .content .nav-card .nav-card-title {
+main.content .nav-card .nav-card-title {
   margin: 0 0 0.35rem 0;
   font-size: 1.1rem;
   font-weight: 700;
@@ -74,7 +74,7 @@ main .content .nav-card .nav-card-title {
 }
 
 .content .nav-card-desc,
-main .content .nav-card .nav-card-desc {
+main.content .nav-card .nav-card-desc {
   margin: 0 0 0.75rem 0;
   font-size: 0.9rem;
   color: var(--gray);
@@ -86,7 +86,7 @@ main .content .nav-card .nav-card-desc {
 }
 
 .content .nav-card-cta,
-main .content .nav-card .nav-card-cta {
+main.content .nav-card .nav-card-cta {
   font-size: 0.85rem;
   color: var(--accent-color);
   font-weight: 500;
