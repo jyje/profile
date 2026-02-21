@@ -13,9 +13,34 @@ I work as an **AI Platform Engineer** at [Hyundai AutoEver]{:.heading.flip-title
 
 My focus areas include **AI applications, LLM/MLOps platforms, hybrid Kubernetes clusters, and cloud-native AI/ML infrastructure**.
 
-{::nomarkdown}
-{% include components/nav-cards.html %}
-{:/nomarkdown}
+```card
+---
+- title: Profile
+  icon: icon-briefcase
+  description: Career overview, résumé, and portfolio.
+  link: /en/profile
+- title: Demo
+  icon: icon-rocket
+  description: Live demos (Raspberry Pi cluster).
+  link: https://app.jyje.online
+- title: Posts
+  icon: icon-book
+  description: Technical posts and research articles.
+  link: /en/posts
+- title: Achievements
+  icon: icon-trophy
+  description: Selected professional activities and works.
+  link: /tags/achievements
+- title: Certifications
+  icon: icon-drivers-license
+  description: Professional certifications and credentials.
+  link: /tags/certifications
+- title: Tags
+  icon: icon-price-tags
+  description: Browse content by tags.
+  link: /tags
+---
+```
 
 For inquiries or collaboration, please contact me via [LinkedIn]{:.heading}.
 
