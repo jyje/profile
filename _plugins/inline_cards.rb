@@ -62,8 +62,6 @@ module Jekyll
       html.gsub(/\A<p>(.*)<\/p>\z/m, '\1').strip
     end
 
-    DEFAULT_ICON = 'icon-file-empty'.freeze
-
     def self.external_link?(url)
       url.start_with?('http://', 'https://')
     end
@@ -71,7 +69,6 @@ module Jekyll
     def self.build_card_html(card)
       title       = card['title'].to_s.strip
       icon        = card['icon'].to_s.strip
-      icon        = DEFAULT_ICON if icon.empty?
       description = card['description'].to_s.strip
       link        = card['link'].to_s.strip
       cta_text    = card['cta'].to_s.strip
@@ -89,7 +86,7 @@ module Jekyll
       end
 
       lines << "    <div class=\"inline-card-header\">"
-      lines << "      <span class=\"inline-card-icon symbol #{icon}\"></span>"
+      lines << "      <span class=\"inline-card-icon symbol #{icon}\"></span>" unless icon.empty?
       unless title.empty?
         ext_span = external ? ' <span class="inline-card-external symbol icon-new-tab"></span>' : ''
         lines << "      <h3 class=\"inline-card-title\">#{title}#{ext_span}</h3>"

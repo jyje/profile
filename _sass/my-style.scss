@@ -1,7 +1,17 @@
 .text-align-center {
   text-align: center;
 }
-  
+
+// Post content images: slight round corners
+.content img {
+  border-radius: 5px;
+}
+
+// Author/avatar in content: keep circular
+.content .avatar {
+  border-radius: 50%;
+}
+
 img.centered {
   display: block;
   margin-left: auto;
@@ -559,10 +569,13 @@ body .layout-cv .skills .skill-tags {
 
 // =============================================================================
 // Dark theme: emphasis colors with better contrast on dark background
-// Light theme keeps accent (#680C2C). Dark theme uses lighter hue from palette.
-// Proposal: #b84d6a (lightened maroon) or #5b9db0 (muted teal from accent-two).
 // =============================================================================
 body.dark-mode {
+  --accent-color: #c95d7a;
+  --accent-color-faded: rgba(201, 93, 122, 0.5);
+  --accent-color-highlight: rgba(201, 93, 122, 0.1);
+  --accent-color-darkened: #b84d6a;
+
   .layout-resume,
   .layout-portfolio,
   .layout-cv {
