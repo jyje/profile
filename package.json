@@ -46,7 +46,7 @@
     "onchange": "^7.1.0",
     "path-browserify": "^1.0.1",
     "playwright": "^1.58.2",
-    "prettier": "^2.8.8",
+    "prettier": "^3.8.1",
     "re-template-tag": "^2.0.1",
     "uglify-js": "^3.19.3",
     "webpack": "^5.105.2",
