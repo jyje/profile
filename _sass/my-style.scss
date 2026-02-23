@@ -12,6 +12,13 @@
   border-radius: 50%;
 }
 
+// Post cover image: no round corners on small screens (mobile)
+@media screen and (max-width: 42em) {
+  .page .aspect-ratio.sixteen-nine.lead {
+    border-radius: 0 !important;
+  }
+}
+
 img.centered {
   display: block;
   margin-left: auto;
