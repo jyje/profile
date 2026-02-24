@@ -14,13 +14,16 @@
   border-radius: 50%;
 }
 
-// Post: no round corners on lead images in small viewport (cover + content img.lead)
-// Uses same "small width" breakpoint as theme ($break-point-2 = 54em)
+// Small viewport: remove border-radius from post lead images (cover + content).
+// - Breakpoint: $break-point-2 (54em), aligned with theme "small width" so behavior
+//   is consistent with typography and layout.
+// - Targets: .page .lead (all lead elements), .page header .img-wrapper.lead and its
+//   inner img (cover; theme can apply radius to wrapper or img), and .page .content img
+//   (content images get 5px radius by default above; we zero them in this viewport).
 @media screen and (max-width: $break-point-2) {
   .page .lead {
     border-radius: 0 !important;
   }
-  // Cover image (header): wrapper + inner img (theme may apply radius to either)
   .page header .img-wrapper.lead,
   .page header .img-wrapper.lead img {
     border-radius: 0 !important;
@@ -50,7 +53,8 @@ table.no-border {
 
 // =============================================================================
 // Inline Cards: card components rendered from ```card fenced blocks.
-// Scoped under .inline-cards-root to prevent theme link style bleed.
+// All rules are scoped under .inline-cards-root so that theme link/button styles
+// do not bleed into card titles and CTAs; cards use their own borders and hover.
 // =============================================================================
 .inline-cards-root {
   display: block;
@@ -195,7 +199,9 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 }
 
 // =============================================================================
-// Resume/Portfolio: keep footer below content (override theme’s absolute footer)
+// Resume/Portfolio: keep footer below content instead of fixed at viewport bottom.
+// Theme uses position:absolute for footer; we use flex + static footer so the
+// footer sits under the main content and does not overlap when content is short.
 // =============================================================================
 @media screen {
   main#_main.layout-resume,
@@ -258,12 +264,11 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
 }
 
 // =============================================================================
-// Print Styles for PDF Generation
+// Print styles for PDF generation (resume/portfolio).
+// Override Hydejack defaults so that: (1) Pretendard is used consistently without
+// fallback to DejaVu/WenQuanYi, (2) layout and colors render reliably in print.
 // =============================================================================
-// These styles override Hydejack's default print styles for better PDF output
-
 @media print {
-  // Use Pretendard only for PDF – no generic fallback to avoid DejaVu Sans / WenQuanYi Zen Hei
   html, body {
     font-family: 'Pretendard' !important;
     -webkit-font-smoothing: antialiased;
@@ -331,10 +336,9 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
   }
 }
 
-// Resume/CV specific print styles - Higher specificity to override _resume.scss
-// Using body prefix for higher specificity than .layout-resume alone
+// Resume/CV print: compact font and spacing so content fits on ~2 pages.
+// Selectors use body prefix so they override _resume.scss print rules.
 @media print {
-  // Resume/CV: smaller font so content fits compactly on 2 pages
   body .layout-resume,
   body .layout-cv {
     font-size: 0.75rem;
@@ -349,7 +353,6 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
   body .layout-resume,
   body .layout-portfolio,
   body .layout-cv {
-    // Compact spacing for print
     section {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
@@ -370,10 +373,8 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
       height: 8rem;
     }
 
-    // =========================================================================
-    // Tag styles with hardcoded colors for reliable print rendering
-    // Using !important and high specificity to override _resume.scss print styles
-    // =========================================================================
+    // Tag styles: hardcoded colors and !important so print/PDF matches screen
+    // and overrides _resume.scss print styles (work/skill tag classes).
 
     // Work result tags (blue background)
     .work-header-result {
@@ -408,7 +409,7 @@ main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
       border: 1px solid #cccccc !important;
     }
 
-    // Highlighted skill tags (maroon/accent background) - Override _resume.scss
+    // Highlighted skill tags (maroon/accent background)
     .skill-tag-highlight {
       background-color: #680C2C !important;
       color: #ffffff !important;
@@ -566,7 +567,8 @@ body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child
   color: rgba(32, 32, 32, 0.5);
 }
 
-// Portfolio/Resume/CV: prevent first skill tag from being clipped (skill-tags uses negative margin)
+// Portfolio/Resume/CV: add left padding so the first skill tag is not clipped
+// (skill-tags container uses negative margin and can cut off the leading tag).
 body .layout-portfolio .skills .skill-tags,
 body .layout-resume .skills .skill-tags,
 body .layout-cv .skills .skill-tags {
