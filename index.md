@@ -32,7 +32,7 @@ My focus areas include **AI applications, LLM/MLOps platforms, hybrid Kubernetes
   description: Selected professional activities and works.
   link: /tags/achievements
 - title: Certifications
-  icon: icon-drivers-license
+  icon: icon-certificate
   description: Professional certifications and credentials.
   link: /tags/certifications
 - title: Tags

@@ -37,7 +37,7 @@ permalink: /ko/
   link: /tags/achievements
   cta: "바로가기 →"
 - title: 자격증
-  icon: icon-drivers-license
+  icon: icon-certificate
   description: 전문 자격증 및 인증 내역.
   link: /tags/certifications
   cta: "바로가기 →"
