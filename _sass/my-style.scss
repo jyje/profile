@@ -639,3 +639,22 @@ footer .commit-rev {
     -webkit-print-color-adjust: exact !important;
   }
 }
+
+// Mobile (< $break-point-1): when the sidebar drawer is closed, hide all
+// sidebar-related spacing so content fills the full viewport width.
+//  - body::before: the fixed left peek strip (.5rem wide, from _base.pre.scss)
+//  - hy-drawer height: collapsed to 0 so no 100vh blank area below content
+//  - --hy-drawer-peek-width: 0 removes the content offset; swipe still works
+//    because drawer.js getRange() uses a fixed [0,150] range on mobile
+@media screen and (max-width: $break-point-1) {
+  body::before {
+    display: none !important;
+  }
+
+  hy-drawer,
+  hy-drawer.loaded {
+    height: 0 !important;
+    min-height: 0 !important;
+    --hy-drawer-peek-width: 0px;
+  }
+}
