@@ -1,0 +1,105 @@
+---
+# Post-collection layout: unified grid/list view with client-side toggle
+layout: page
+---
+
+{% if page.show_collection %}
+  {% assign empty_col = '' | split:'.' %}
+  {% assign posts = site[page.show_collection] | default:empty_col %}
+  {% if posts %}
+    {% assign posts = posts | sort:"date" | reverse %}
+  {% endif %}
+{% else %}
+  {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+  {% if posts %}
+    {% assign posts = posts | sort: "date" | reverse %}
+  {% endif %}
+  {% if page.language %}
+    {% assign lang_path = page.language | append: "/" %}
+    {% assign posts = posts | where_exp:"post", "post.path contains lang_path" %}
+  {% endif %}
+{% endif %}
+
+<div class="category-view-toggle mb3" role="group" aria-label="View mode">
+  <button type="button" class="category-view-btn active" data-view="grid" aria-pressed="true">Grid</button>
+  <button type="button" class="category-view-btn" data-view="list" aria-pressed="false">List</button>
+</div>
+
+{{ content }}
+
+{% assign date_formats  = site.data.strings.date_formats               %}
+{% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
+{% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
+{% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
+
+<div id="view-grid" class="category-view" data-view="grid">
+  {% assign prev_date = 0 %}
+  {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
+  {% for post in posts %}
+    {% assign current_date = post.date | date:list_group_by %}
+
+    {% unless page.no_groups %}{% if current_date != prev_date %}
+      {% unless forloop.first %}</div>{% endunless %}
+
+      <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
+      <div class="columns columns-break">
+      {% assign prev_date = current_date %}
+    {% endif %}{% endunless %}
+
+    {% assign featured = page.featured | default:post.featured %}
+    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+      {% include_cached pro/post-card.html post=post featured=featured %}
+    </div>
+
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %}
+</div>
+
+<div id="view-list" class="category-view" data-view="list" hidden>
+  {% assign prev_date = 0 %}
+  {% if page.no_groups %}<ul class="related-posts">{% endif %}
+  {% for post in posts %}
+    {% assign current_date = post.date | date:list_group_by %}
+    {% unless page.no_groups %}{% if current_date != prev_date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}-list" class="hr-bottom">{{ current_date }}</h2>
+      <ul class="related-posts">
+      {% assign prev_date = current_date %}
+    {% endif %}{% endunless %}
+    {% include_cached components/post-list-item.html post=post format=list_entry %}
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
+
+<script>
+(function() {
+  var STORAGE_KEY = 'category-view-mode';
+  var gridEl = document.getElementById('view-grid');
+  var listEl = document.getElementById('view-list');
+  var buttons = document.querySelectorAll('.category-view-btn');
+  if (!gridEl || !listEl || !buttons.length) return;
+
+  function setView(mode) {
+    var isGrid = mode === 'grid';
+    gridEl.hidden = !isGrid;
+    listEl.hidden = isGrid;
+    buttons.forEach(function(btn) {
+      var active = btn.getAttribute('data-view') === mode;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active);
+    });
+    try { localStorage.setItem(STORAGE_KEY, mode); } catch (e) {}
+  }
+
+  var saved = '';
+  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+  var initial = (saved === 'grid' || saved === 'list') ? saved : 'grid';
+  setView(initial);
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      setView(this.getAttribute('data-view'));
+    });
+  });
+})();
+</script>

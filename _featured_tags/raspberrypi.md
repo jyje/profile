@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: tag-collection
 type: tag
 title: Raspberry Pi
 slug: raspberrypi

@@ -1,6 +1,6 @@
 ---
 type: category
-layout: grid
+layout: post-collection
 title: Posts
 slug: posts
 permalink: /en/posts/

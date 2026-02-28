@@ -1,6 +1,6 @@
 ---
 type: category
-layout: grid
+layout: post-collection
 title: 포스트
 slug: posts
 permalink: /ko/posts/

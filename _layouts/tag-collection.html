@@ -9,19 +9,37 @@ layout: page
   {% assign posts = "" | split: "," %}
 {% endif %}
 
-{{ content }}
-
 {% assign date_formats  = site.data.strings.date_formats               %}
 {% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
+{% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
 
+<div class="collection-toolbar mb3" role="toolbar" aria-label="Collection view">
+  <div class="collection-view-toggle" role="group" aria-label="View mode">
+    <button type="button" class="category-view-btn active" data-view="grid" aria-pressed="true">Grid</button>
+    <button type="button" class="category-view-btn" data-view="list" aria-pressed="false">List</button>
+  </div>
+</div>
+
+{{ content }}
+
+<div id="collection-view-grid" class="collection-view" data-view="grid">
 {% assign prev_date = 0 %}
 {% assign handled_slugs = "" | split: "," %}
-
+{% assign grid_has_content = false %}
 {% for post in posts %}
   {% if handled_slugs contains post.slug %}{% continue %}{% endif %}
-  
-  {% assign current_date = post.date | date:list_group_by %}
+  {% assign grid_has_content = true %}
+  {% assign versions = "" | split: "," %}
+  {% for p in posts %}
+    {% if p.slug == post.slug %}
+      {% assign versions = versions | push: p %}
+    {% endif %}
+  {% endfor %}
+  {% assign en_ver = versions | where_exp: "item", "item.path contains 'en/'" | first %}
+  {% assign ko_ver = versions | where_exp: "item", "item.path contains 'ko/'" | first %}
+  {% assign default_ver = en_ver | default: ko_ver %}
 
+  {% assign current_date = post.date | date:list_group_by %}
   {% if current_date != prev_date %}
     {% unless forloop.first %}</div>{% endunless %}
     <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
@@ -31,17 +49,6 @@ layout: page
 
   <div class="column column-1-2">
     <article class="project-card">
-      {% comment %} Find versions for links {% endcomment %}
-      {% assign versions = "" | split: "," %}
-      {% for p in posts %}
-        {% if p.slug == post.slug %}
-          {% assign versions = versions | push: p %}
-        {% endif %}
-      {% endfor %}
-      {% assign en_ver = versions | where_exp: "item", "item.path contains 'en/'" | first %}
-      {% assign ko_ver = versions | where_exp: "item", "item.path contains 'ko/'" | first %}
-      {% assign default_ver = en_ver | default: ko_ver %}
-
       {% comment %} Entire card clickable (to English/Default version) {% endcomment %}
       <a class="fill-card no-hover" href="{{ default_ver.url | relative_url }}" tabindex="-1">
         <span class="sr-only">Continue reading {{ post.title }}</span>
@@ -102,8 +109,78 @@ layout: page
   </div>
 
   {% assign handled_slugs = handled_slugs | push: post.slug %}
-  {% if forloop.last %}</div>{% endif %}
 {% endfor %}
+{% if grid_has_content %}</div>{% endif %}
+</div>
+
+<div id="collection-view-list" class="collection-view" data-view="list" hidden>
+{% assign prev_date = 0 %}
+{% assign handled_slugs = "" | split: "," %}
+{% assign list_has_content = false %}
+{% for post in posts %}
+  {% if handled_slugs contains post.slug %}{% continue %}{% endif %}
+  {% assign list_has_content = true %}
+  {% assign versions = "" | split: "," %}
+  {% for p in posts %}
+    {% if p.slug == post.slug %}
+      {% assign versions = versions | push: p %}
+    {% endif %}
+  {% endfor %}
+  {% assign en_ver = versions | where_exp: "item", "item.path contains 'en/'" | first %}
+  {% assign ko_ver = versions | where_exp: "item", "item.path contains 'ko/'" | first %}
+  {% assign default_ver = en_ver | default: ko_ver %}
+  {% assign current_date = post.date | date:list_group_by %}
+  {% if current_date != prev_date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}-list" class="hr-bottom">{{ current_date }}</h2>
+    <ul class="related-posts">
+    {% assign prev_date = current_date %}
+  {% endif %}
+  <li class="h4">
+    <span class="flip-title">{{ post.title }}</span>
+    <span class="collection-list-langs">
+      {% if en_ver %}
+        <a href="{{ en_ver.url | relative_url }}" class="lang-link lang-link-inline">🇬🇧 English</a>
+      {% endif %}
+      {% if ko_ver %}
+        <a href="{{ ko_ver.url | relative_url }}" class="lang-link lang-link-inline">🇰🇷 한국어</a>
+      {% endif %}
+    </span>
+    {% unless site.hydejack.hide_dates %}<time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:list_entry }}</time>{% endunless %}
+  </li>
+  {% assign handled_slugs = handled_slugs | push: post.slug %}
+{% endfor %}
+{% if list_has_content %}</ul>{% endif %}
+</div>
+
+<script>
+(function() {
+  var VIEW_KEY = 'collection-view-mode';
+  var gridEl = document.getElementById('collection-view-grid');
+  var listEl = document.getElementById('collection-view-list');
+  var viewBtns = document.querySelectorAll('.collection-view-toggle .category-view-btn');
+
+  function setView(mode) {
+    var isGrid = mode === 'grid';
+    if (gridEl) gridEl.hidden = !isGrid;
+    if (listEl) listEl.hidden = isGrid;
+    viewBtns.forEach(function(btn) {
+      var active = btn.getAttribute('data-view') === mode;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', active);
+    });
+    try { localStorage.setItem(VIEW_KEY, mode); } catch (e) {}
+  }
+
+  var savedView = '';
+  try { savedView = localStorage.getItem(VIEW_KEY); } catch (e) {}
+  setView(savedView === 'grid' || savedView === 'list' ? savedView : 'grid');
+
+  viewBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() { setView(this.getAttribute('data-view')); });
+  });
+})();
+</script>
 
 <style>
   /* Column/columns spacing unified with grid (Posts): use _portfolio.scss + my-style.scss */
@@ -326,25 +403,76 @@ layout: page
     padding: 0.25rem 0.6rem;
     background: var(--faded-background-color, rgba(0,0,0,0.05));
     border-radius: 4px;
-    transition: all 0.2s;
     color: var(--text-color) !important;
     border: 1px solid var(--border-color, rgba(0,0,0,0.1));
   }
   .lang-link:hover {
-    background: var(--accent-color);
-    color: #fff !important;
-    border-color: var(--accent-color);
+    background: var(--gray-bg, rgba(0,0,0,0.06));
   }
 
-  /* Dark mode specific improvements for language links */
+  /* Collection toolbar: grid/list toggle only */
+  .collection-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .collection-view-toggle {
+    display: flex;
+    gap: 0.25rem;
+  }
+  /* Language unavailable: show that Korean/English version does not exist */
+  .lang-unavailable {
+    font-size: 0.875rem;
+    color: var(--gray-text, rgba(0,0,0,0.5));
+    cursor: default;
+    opacity: 0.8;
+  }
+  body.dark-mode .lang-unavailable {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  /* List view: language as hypertext (not buttons) */
+  .collection-list-langs {
+    margin-left: 0.5rem;
+  }
+  .collection-list-langs .lang-link-inline,
+  .collection-list-langs .lang-unavailable.lang-link-inline {
+    padding: 0.1rem 0.35rem;
+    font-size: 0.85rem;
+  }
+  #collection-view-list .collection-list-langs .lang-link,
+  #collection-view-list .collection-list-langs a.lang-link-inline {
+    background: none !important;
+    border: none !important;
+    padding: 0 0.2em !important;
+    border-radius: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: underline !important;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--accent-color, #2a7ae2);
+    color: var(--text-color);
+  }
+  #collection-view-list .collection-list-langs .lang-link:hover,
+  #collection-view-list .collection-list-langs a.lang-link-inline:hover {
+    background: transparent !important;
+    border: none !important;
+  }
+  body.dark-mode #collection-view-list .collection-list-langs .lang-link,
+  body.dark-mode #collection-view-list .collection-list-langs a.lang-link-inline {
+    background: none !important;
+    border: none !important;
+    color: var(--text-color);
+    text-decoration-color: var(--accent-color);
+  }
+
+  /* Dark mode: Grid language links */
   body.dark-mode .lang-link {
     background: rgba(255, 255, 255, 0.08) !important;
     border-color: rgba(255, 255, 255, 0.15) !important;
     color: #e0e0e0 !important;
   }
   body.dark-mode .lang-link:hover {
-    background: var(--accent-color) !important;
-    color: #ffffff !important;
-    border-color: var(--accent-color) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
   }
 </style>
