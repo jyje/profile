@@ -33,6 +33,23 @@
   }
 }
 
+// Narrow viewport (no sidebar): remove left strip and reduce content padding
+// so the main area is not shifted right. Theme uses body::before (0.5rem) + .content
+// padding-left (1.5rem); we zero the strip and set padding-left to 1rem.
+@media screen and (max-width: $break-point-3) {
+  body::before {
+    width: 0 !important;
+  }
+  .content {
+    padding-left: 1rem !important;
+  }
+  // Post list: theme .columns has padding-right but no padding-left, so cards look
+  // shifted left; add matching padding-left so cards are centered.
+  main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .columns {
+    padding-left: 1rem;
+  }
+}
+
 img.centered {
   display: block;
   margin-left: auto;
