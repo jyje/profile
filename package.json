@@ -69,7 +69,7 @@
     "@webcomponents/webcomponentsjs": "^2.8.0",
     "abortcontroller-polyfill": "^1.7.8",
     "broadcastchannel-polyfill": "^1.0.1",
-    "core-js": "^3.35.0",
+    "core-js": "^3.49.0",
     "create-element-x": "^1.2.0",
     "regenerator-runtime": "^0.14.1",
     "dom4": "^2.1.6",
