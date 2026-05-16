@@ -48,21 +48,21 @@ author:
 # Set sidebar_show_home to false to hide "Home" from the sidebar (menu/menu_en/menu_ko do not control it).
 sidebar_show_home:     false
 menu:
-  - title:             Profile
-    url:               /en/profile
+  - title:             Home
+    url:               /
   - title:             Posts
     url:               /en/posts
 
 # Multilingual menus (excluding Home which is handled separately)
 menu_en:
-  - title:             Profile
-    url:               /en/profile
+  - title:             Home
+    url:               /
   - title:             Posts
     url:               /en/posts
 
 menu_ko:
-  - title:             Profile
-    url:               /ko/profile
+  - title:             Home
+    url:               /ko
   - title:             Posts
     url:               /ko/posts
 
@@ -71,8 +71,6 @@ menu_ko:
 legal:
   - title:             Home
     url:               /
-  - title:             Profile
-    url:               /en/profile
   - title:             Tags
     url:               /tags
   - title:             Credits
