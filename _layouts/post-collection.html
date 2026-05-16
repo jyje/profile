@@ -1,5 +1,5 @@
 ---
-# Post-collection layout: unified grid/list view with client-side toggle
+# Post-collection layout: unified grid/list view with client-side toggle and tag filtering
 layout: page
 ---
 
@@ -18,6 +18,118 @@ layout: page
     {% assign lang_path = page.language | append: "/" %}
     {% assign posts = posts | where_exp:"post", "post.path contains lang_path" %}
   {% endif %}
+{% endif %}
+
+{% comment %} Build filter_tags: featured tags that actually appear in this page's posts {% endcomment %}
+{% assign all_featured_tags = site.documents | where: "type", "tag" | sort %}
+{% assign filter_tags = "" | split: "" %}
+{% for feat_tag in all_featured_tags %}
+  {% assign tag_posts = posts | where_exp: "post", "post.tags contains feat_tag.slug" %}
+  {% if tag_posts.size > 0 %}
+    {% assign filter_tags = filter_tags | push: feat_tag %}
+  {% endif %}
+{% endfor %}
+
+<style>
+  .tag-filter-bar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    padding: 0 !important;
+    list-style: none !important;
+    margin-bottom: 1.25rem !important;
+    align-items: center !important;
+  }
+
+  .tag-filter-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 0.35rem 0.85rem !important;
+    border: 1.5px solid transparent !important;
+    border-radius: 8px !important;
+    background: rgba(113, 128, 150, 0.1) !important;
+    color: #718096 !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+    font-family: inherit !important;
+  }
+
+  .tag-filter-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    filter: brightness(1.05) !important;
+  }
+
+  .tag-filter-btn.active {
+    background: var(--accent-color, #3182ce) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15) !important;
+  }
+
+  .tag-filter-btn .tag-count {
+    display: inline-block !important;
+    margin-left: 0.4rem !important;
+    font-size: 0.7rem !important;
+    padding: 0.05rem 0.35rem !important;
+    background: rgba(0,0,0,0.08) !important;
+    border-radius: 4px !important;
+    opacity: 0.85 !important;
+    color: inherit !important;
+  }
+
+  .tag-filter-btn.active .tag-count {
+    background: rgba(255,255,255,0.2) !important;
+  }
+
+  @keyframes tag-ripple {
+    0% { transform: scale(1); opacity: 0.5; }
+    70% { transform: scale(1.15, 1.3); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+  }
+
+  .tag-filter-btn.tag-highlighted {
+    border-color: rgba(113, 128, 150, 0.3) !important;
+    position: relative !important;
+  }
+
+  .tag-filter-btn.tag-highlighted::after {
+    content: '';
+    position: absolute !important;
+    top: 0; left: 0; right: 0; bottom: 0 !important;
+    border-radius: 8px !important;
+    background: currentColor !important;
+    z-index: -1 !important;
+    animation: tag-ripple 3s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .tag-filter-btn {
+      background: rgba(255,255,255,0.07) !important;
+      color: #a0aec0 !important;
+    }
+    .tag-filter-btn .tag-count {
+      background: rgba(255,255,255,0.1) !important;
+    }
+  }
+
+  .year-group[hidden] { display: none !important; }
+</style>
+
+{% if filter_tags.size > 0 %}
+<div class="tag-filter-bar mb3" role="group" aria-label="Filter by tag">
+  <button type="button" class="tag-filter-btn active" data-tag="">All</button>
+  {% for feat_tag in filter_tags %}
+    {% assign count = posts | where_exp: "post", "post.tags contains feat_tag.slug" | size %}
+    <button type="button" class="tag-filter-btn {% if feat_tag.highlight %}tag-highlighted{% endif %}" data-tag="{{ feat_tag.slug }}">
+      {{ feat_tag.title }}<span class="tag-count">{{ count }}</span>
+    </button>
+  {% endfor %}
+</div>
 {% endif %}
 
 <div class="category-view-toggle mb3" role="group" aria-label="View mode">
@@ -39,19 +151,21 @@ layout: page
     {% assign current_date = post.date | date:list_group_by %}
 
     {% unless page.no_groups %}{% if current_date != prev_date %}
-      {% unless forloop.first %}</div>{% endunless %}
+      {% unless forloop.first %}</div></div>{% endunless %}
 
+      <div class="year-group">
       <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
       <div class="columns columns-break">
       {% assign prev_date = current_date %}
     {% endif %}{% endunless %}
 
     {% assign featured = page.featured | default:post.featured %}
-    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+    {% assign post_tags_str = post.tags | join: ' ' %}
+    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}" data-tags="{{ post_tags_str }}">
       {% include_cached pro/post-card.html post=post featured=featured %}
     </div>
 
-    {% if forloop.last %}</div>{% endif %}
+    {% if forloop.last %}</div></div>{% endif %}
   {% endfor %}
 </div>
 
@@ -61,13 +175,15 @@ layout: page
   {% for post in posts %}
     {% assign current_date = post.date | date:list_group_by %}
     {% unless page.no_groups %}{% if current_date != prev_date %}
-      {% unless forloop.first %}</ul>{% endunless %}
+      {% unless forloop.first %}</ul></div>{% endunless %}
+      <div class="year-group">
       <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}-list" class="hr-bottom">{{ current_date }}</h2>
       <ul class="related-posts">
       {% assign prev_date = current_date %}
     {% endif %}{% endunless %}
-    {% include_cached components/post-list-item.html post=post format=list_entry %}
-    {% if forloop.last %}</ul>{% endif %}
+    {% assign post_tags_str = post.tags | join: ' ' %}
+    {% include_cached components/post-list-item.html post=post format=list_entry data_tags=post_tags_str %}
+    {% if forloop.last %}</ul></div>{% endif %}
   {% endfor %}
 </div>
 
@@ -99,6 +215,39 @@ layout: page
   buttons.forEach(function(btn) {
     btn.addEventListener('click', function() {
       setView(this.getAttribute('data-view'));
+    });
+  });
+})();
+
+(function() {
+  var selectedTag = '';
+
+  function filterPosts() {
+    ['grid', 'list'].forEach(function(view) {
+      var container = document.getElementById('view-' + view);
+      if (!container) return;
+      container.querySelectorAll('[data-tags]').forEach(function(el) {
+        if (!selectedTag) {
+          el.hidden = false;
+        } else {
+          var tags = (el.getAttribute('data-tags') || '').split(' ');
+          el.hidden = tags.indexOf(selectedTag) === -1;
+        }
+      });
+      container.querySelectorAll('.year-group').forEach(function(grp) {
+        grp.hidden = grp.querySelectorAll('[data-tags]:not([hidden])').length === 0;
+      });
+    });
+    document.querySelectorAll('.tag-filter-btn').forEach(function(btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-tag') === selectedTag);
+    });
+  }
+
+  document.querySelectorAll('.tag-filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tag = this.getAttribute('data-tag');
+      selectedTag = (tag && selectedTag === tag) ? '' : tag;
+      filterPosts();
     });
   });
 })();

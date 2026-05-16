@@ -1,7 +1,7 @@
 {% assign post = include.post %}
 {% assign format = include.format | default:site.data.strings.date_formats.related_post | default:"%d %b %Y" %}
 
-<li class="h4">
+<li class="h4" {% if include.data_tags %}data-tags="{{ include.data_tags }}"{% endif %}>
   <a href="{{ post.url | relative_url }}" class="flip-title">
     <span>
       {% if post.path contains 'en/' %}🇬🇧 {% elsif post.path contains 'ko/' %}🇰🇷 {% endif %}

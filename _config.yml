@@ -52,8 +52,6 @@ menu:
     url:               /en/profile
   - title:             Posts
     url:               /en/posts
-  - title:             Tags
-    url:               /tags
 
 # Multilingual menus (excluding Home which is handled separately)
 menu_en:
@@ -61,16 +59,12 @@ menu_en:
     url:               /en/profile
   - title:             Posts
     url:               /en/posts
-  - title:             Tags
-    url:               /tags
 
 menu_ko:
   - title:             Profile
     url:               /ko/profile
   - title:             Posts
     url:               /ko/posts
-  - title:             Tags
-    url:               /tags
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
