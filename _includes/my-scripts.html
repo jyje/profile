@@ -69,8 +69,7 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
     if (end.getDate() < start.getDate()) {
       months--;
     }
-    // Include both start and end month (e.g. 2025-02~2026-02 = 12 months / 1 year)
-    months += 1;
+    months += 1; /* include both start and end month */
     var thresholdMonths = parseInt(threshold) || 14;
     if (thresholdMonths <= 0) thresholdMonths = 14;
     
