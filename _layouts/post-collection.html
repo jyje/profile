@@ -299,9 +299,14 @@ layout: page
 
 <script>
   (function () {
-    var toggle = document.querySelector('.category-view-toggle');
-    var header = document.querySelector('article.page > header');
-    if (toggle && header) header.appendChild(toggle);
+    function hoistToggle() {
+      var toggle = document.querySelector('.category-view-toggle');
+      var header = document.querySelector('article.page > header');
+      if (toggle && header && toggle.parentElement !== header) header.appendChild(toggle);
+    }
+    hoistToggle();
+    var ps = document.getElementById('_pushState');
+    if (ps) ps.addEventListener('hy-push-state-after', hoistToggle);
   })();
 
   (function () {
@@ -350,9 +355,7 @@ layout: page
             el.hidden = !tags.some(function (t) { return selectedTags.has(t); });
           }
         });
-        // 2개 이상 선택 시에만 태그 레이블 표시
         container.classList.toggle('filter-active', selectedTags.size > 1);
-        // 선택된 태그만 표시
         container.querySelectorAll('.post-tag-item').forEach(function (item) {
           item.hidden = !selectedTags.has(item.getAttribute('data-tag'));
         });
