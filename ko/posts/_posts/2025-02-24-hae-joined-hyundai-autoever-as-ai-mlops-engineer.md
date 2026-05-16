@@ -4,7 +4,7 @@ categories: [ "posts" ]
 tags:       [ "careers","ai","mlops","hyundai-autoever","llm","linkedin" ]
 description: >
   현대오토에버 AI/MLOps 엔지니어로 합류하여, 자동차 도메인을 위한 엔터프라이즈 AI 플랫폼과 ML 파이프라인을 담당합니다.
-  <b>2025년 2월 24일부터</b>
+  <br/><b>2025년 2월 24일부터</b>
 image: /assets/img/news/aa741efb-1c90-4af0-821c-02bc78fd3dad.png
 # accent_image: 
 #   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
@@ -12,7 +12,7 @@ image: /assets/img/news/aa741efb-1c90-4af0-821c-02bc78fd3dad.png
 comments: true
 ---
 
-# 🎉 현대오토에버 AI/MLOps 엔지니어로 새 출발
+# 🎉 현대오토에버에 AI/MLOps 엔지니어로 합류했습니다
 
 * UNORDERED TOC
 {:toc .large-only}
@@ -28,11 +28,14 @@ comments: true
 
 ## 2. 저의 경험과 역량
 
-이 역할에 부합하는 배경을 갖추고 있습니다:
+이 역할은 제 커리어의 세 가지 핵심 역량이 교차하는 지점에 있습니다:
 
-- **MLOps & AI 플랫폼 경험**: MAXST에서 Kubeflow, AutoML, LLM 시스템을 포함한 엔터프라이즈 MLOps 솔루션 개발 주도
-- **인프라 전문성**: 비용 효율적인 ML 워크로드를 위한 하이브리드 Kubernetes 클러스터(AWS EKS + On-Premise) 설계 및 운영
-- **자동차 도메인 지식**: POSTECH 재학 중 컴퓨터 비전 및 ADAS 분야에서 8년 이상의 연구 경험
+- **자동차 도메인 전문성**: 8년 이상의 컴퓨터 비전 및 ADAS(첨단 운전자 보조 시스템) 연구 개발 경험
+- **인프라 및 DevOps 역량**: 비용 효율적인 하이브리드 Kubernetes 클러스터 기반의 시스템 설계 및 운영
+- **GenAI 및 MLOps 기술력**: LLM+RAG 시스템, 머신러닝 파이프라인 및 자동화 솔루션 구축 경험
+
+이러한 도메인 지식과 탄탄한 인프라 엔지니어링, 최신 AI 기술력의 융합을 바탕으로 소프트웨어 정의 차량(SDV)의 혁신에 기여하고자 합니다.
+
 - **기술 스택**:
   - MLOps: Kubeflow, Katib, Training Operator, JupyterHub
   - LLMOps: RAG, Vector DBs, Ollama

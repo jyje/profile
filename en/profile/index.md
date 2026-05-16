@@ -56,7 +56,8 @@ A brief summary of my career in chronological order:
     }
   </style>
   <ul>
-    <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipeline</b></li>
+    <li><span class="timeline-header">2025 - Present</span> Engineering in <b>AI Platforms</b></li>
+    <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipelines</b></li>
     <li><span class="timeline-header">2022 - Present</span> Engineering in <b>MLOps, DevOps, Hybrid Clusters</b></li>
     <li><span class="timeline-header">2018 - 2023</span> Research in <b>Visual-SLAM, SfM and Digital Twins</b></li>
     <li><span class="timeline-header">2012 - 2020</span> Research in <b>Automotive Computer Vision</b></li>

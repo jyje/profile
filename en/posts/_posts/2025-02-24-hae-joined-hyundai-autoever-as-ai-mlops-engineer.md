@@ -4,7 +4,7 @@ categories: [ "posts" ]
 tags:       [ "careers","ai","mlops","hyundai-autoever","llm","linkedin" ]
 description: >
   Excited to join Hyundai AutoEver as an AI/MLOps Engineer, focusing on enterprise AI platforms and ML pipelines for automotive domain.
-  <b>Since Feb 24, 2025</b>
+  <br/><b>Since Feb 24, 2025</b>
 image: /assets/img/news/aa741efb-1c90-4af0-821c-02bc78fd3dad.png
 # accent_image: 
 #   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
@@ -28,11 +28,14 @@ The AI/MLOps Engineer position at Hyundai AutoEver focuses on developing enterpr
 
 ## 2. My Experience and Capabilities
 
-My background uniquely positions me for this role:
+My background uniquely positions me for this role, standing at the intersection of three core capabilities:
 
-- **MLOps & AI Platform Experience**: Led development of enterprise MLOps solutions including Kubeflow, AutoML, and LLM systems at MAXST
-- **Infrastructure Expertise**: Designed and managed hybrid Kubernetes clusters (AWS EKS + On-Premise) for cost-effective ML workloads
-- **Automotive Domain Knowledge**: 8+ years of research experience in computer vision and ADAS during studies at POSTECH
+- **Automotive Domain Knowledge**: 8+ years of R&D experience in computer vision and ADAS (Advanced Driver Assistance Systems).
+- **Infrastructure & DevOps Expertise**: Designing and operating cost-effective systems based on hybrid Kubernetes clusters.
+- **GenAI & MLOps Capabilities**: Hands-on experience in building LLM+RAG systems, ML pipelines, and automation solutions.
+
+This convergence of domain expertise, robust infrastructure engineering, and modern AI capabilities forms a cohesive foundation for contributing to the innovation of software-defined vehicles (SDVs).
+
 - **Technical Stack**:
   - MLOps: Kubeflow, Katib, Training Operator, JupyterHub
   - LLMOps: RAG, Vector DBs, Ollama
