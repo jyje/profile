@@ -38,3 +38,6 @@ assets/bower_components/
 
 # Deploy flag for footer (generated in CI; hash shown only when deployed)
 _data/deploy.yml
+
+# Playwright MCP
+.playwright-mcp/
