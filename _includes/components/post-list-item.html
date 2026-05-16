@@ -9,4 +9,5 @@
     </span>
   </a>
   {% unless site.hydejack.hide_dates %}<time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>{% endunless %}
+  {% if include.data_tag_spans %}<p class="post-tags-label">{{ include.data_tag_spans }}</p>{% endif %}
 </li>

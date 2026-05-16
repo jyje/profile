@@ -4,30 +4,30 @@ layout: page
 ---
 
 {% if page.show_collection %}
-  {% assign empty_col = '' | split:'.' %}
-  {% assign posts = site[page.show_collection] | default:empty_col %}
-  {% if posts %}
-    {% assign posts = posts | sort:"date" | reverse %}
-  {% endif %}
+{% assign empty_col = '' | split:'.' %}
+{% assign posts = site[page.show_collection] | default:empty_col %}
+{% if posts %}
+{% assign posts = posts | sort:"date" | reverse %}
+{% endif %}
 {% else %}
-  {% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
-  {% if posts %}
-    {% assign posts = posts | sort: "date" | reverse %}
-  {% endif %}
-  {% if page.language %}
-    {% assign lang_path = page.language | append: "/" %}
-    {% assign posts = posts | where_exp:"post", "post.path contains lang_path" %}
-  {% endif %}
+{% assign posts = site.categories[page.slug] | default:site.tags[page.slug] | default:site.posts %}
+{% if posts %}
+{% assign posts = posts | sort: "date" | reverse %}
+{% endif %}
+{% if page.language %}
+{% assign lang_path = page.language | append: "/" %}
+{% assign posts = posts | where_exp:"post", "post.path contains lang_path" %}
+{% endif %}
 {% endif %}
 
 {% comment %} Build filter_tags: featured tags that actually appear in this page's posts {% endcomment %}
 {% assign all_featured_tags = site.documents | where: "type", "tag" | sort %}
 {% assign filter_tags = "" | split: "" %}
 {% for feat_tag in all_featured_tags %}
-  {% assign tag_posts = posts | where_exp: "post", "post.tags contains feat_tag.slug" %}
-  {% if tag_posts.size > 0 %}
-    {% assign filter_tags = filter_tags | push: feat_tag %}
-  {% endif %}
+{% assign tag_posts = posts | where_exp: "post", "post.tags contains feat_tag.slug" %}
+{% if tag_posts.size > 0 %}
+{% assign filter_tags = filter_tags | push: feat_tag %}
+{% endif %}
 {% endfor %}
 
 <style>
@@ -40,16 +40,49 @@ layout: page
     align-items: center !important;
   }
 
+  .tag-filter-hint {
+    font-size: 0.65rem !important;
+    color: #9ca3af !important;
+    margin: -0.6rem 0 1rem 0 !important;
+    opacity: 0 !important;
+    transition: opacity 0.2s ease !important;
+  }
+
+  .tag-filter-bar:hover ~ .tag-filter-hint {
+    opacity: 0.7 !important;
+  }
+
+  .tag-filter-hint kbd {
+    display: inline-block !important;
+    padding: 0.05rem 0.35rem !important;
+    font-size: 0.62rem !important;
+    font-family: inherit !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+    background: rgba(0, 0, 0, 0.04) !important;
+    color: inherit !important;
+    line-height: 1.4 !important;
+  }
+
+  @media (hover: none) {
+    .tag-filter-hint {
+      display: none !important;
+    }
+  }
+
   .tag-filter-btn {
+    -webkit-appearance: none !important;
+    appearance: none !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.3rem !important;
-    padding: 0.28rem 0.75rem !important;
-    border: 1px solid rgba(0,0,0,0.15) !important;
+    padding: 0.22rem 0.65rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.28) !important;
     border-radius: 20px !important;
     background: transparent !important;
-    color: #6b7280 !important;
-    font-size: 0.8rem !important;
+    color: #4b5563 !important;
+    -webkit-text-fill-color: #4b5563 !important;
+    font-size: 0.72rem !important;
     font-weight: 500 !important;
     font-family: inherit !important;
     cursor: pointer !important;
@@ -59,15 +92,17 @@ layout: page
   }
 
   .tag-filter-btn:hover {
-    background: rgba(0,0,0,0.04) !important;
-    border-color: rgba(0,0,0,0.3) !important;
-    color: #374151 !important;
+    background: rgba(0, 0, 0, 0.06) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
   }
 
   .tag-filter-btn.active {
     background: var(--accent-color, #3182ce) !important;
     border-color: transparent !important;
     color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
     font-weight: 600 !important;
   }
 
@@ -79,55 +114,102 @@ layout: page
     font-size: 0.72rem !important;
     opacity: 0.6 !important;
     color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
   }
 
-  .tag-filter-btn.tag-highlighted {
-    border-color: var(--accent-color, #3182ce) !important;
-    color: var(--accent-color, #3182ce) !important;
-    opacity: 0.55 !important;
-  }
-
-  .tag-filter-btn.tag-highlighted:hover {
-    border-color: var(--accent-color, #3182ce) !important;
-    color: var(--accent-color, #3182ce) !important;
-    background: transparent !important;
-    opacity: 1 !important;
-  }
-
-  .tag-filter-btn.tag-highlighted.active {
-    border-color: transparent !important;
-    color: #fff !important;
-    opacity: 1 !important;
-  }
-
+  /* Dark mode: OS prefers-color-scheme OR Hydejack body.dark-mode class */
   @media (prefers-color-scheme: dark) {
     .tag-filter-btn {
-      border-color: rgba(255,255,255,0.18) !important;
+      border-color: rgba(255, 255, 255, 0.22) !important;
       color: #9ca3af !important;
+      -webkit-text-fill-color: #9ca3af !important;
     }
     .tag-filter-btn:hover {
-      background: rgba(255,255,255,0.06) !important;
-      border-color: rgba(255,255,255,0.35) !important;
-      color: #d1d5db !important;
+      background: rgba(255, 255, 255, 0.07) !important;
+      border-color: rgba(255, 255, 255, 0.45) !important;
+      color: #f9fafb !important;
+      -webkit-text-fill-color: #f9fafb !important;
     }
   }
 
-  .year-group[hidden] { display: none !important; }
+  body.dark-mode .tag-filter-btn {
+    border-color: rgba(255, 255, 255, 0.22) !important;
+    color: #9ca3af !important;
+    -webkit-text-fill-color: #9ca3af !important;
+  }
+  body.dark-mode .tag-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border-color: rgba(255, 255, 255, 0.45) !important;
+    color: #f9fafb !important;
+    -webkit-text-fill-color: #f9fafb !important;
+  }
+  body.dark-mode .tag-filter-btn.active,
+  body.dark-mode .tag-filter-btn.active:hover {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+
+  /* Light mode override: apply whenever dark-mode class is NOT present.
+     Specificity (0,3,1) beats @media dark (0,2,0) even with !important. */
+  body:not(.dark-mode) .tag-filter-btn {
+    border-color: rgba(0, 0, 0, 0.28) !important;
+    color: #4b5563 !important;
+    -webkit-text-fill-color: #4b5563 !important;
+  }
+  body:not(.dark-mode) .tag-filter-btn:hover {
+    background: rgba(0, 0, 0, 0.06) !important;
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+  }
+  /* Active state must win over the :not(.dark-mode) base rule — specificity (0,4,1) */
+  body:not(.dark-mode) .tag-filter-btn.active,
+  body:not(.dark-mode) .tag-filter-btn.active:hover {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+
+  .year-group[hidden] {
+    display: none !important;
+  }
+
+  /* .column is display:flex (row) in Hydejack — force column direction when tags present */
+  .column:has(.post-tags-label) {
+    flex-direction: column !important;
+  }
+
+  .post-tags-label {
+    display: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent-color, #3182ce);
+    padding: 0.25rem 1rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+  }
+
+  #view-grid.filter-active .post-tags-label,
+  #view-list.filter-active .post-tags-label {
+    display: flex;
+  }
+
+  .post-tag-item[hidden] { display: none !important; }
 
   /* Hoist view toggle into page header using grid */
-  article.page > header {
+  article.page>header {
     display: grid !important;
     grid-template-columns: 1fr auto !important;
     column-gap: 1rem !important;
     align-items: end !important;
   }
 
-  article.page > header > h1 {
+  article.page>header>h1 {
     grid-column: 1 !important;
     grid-row: 1 !important;
   }
 
-  article.page > header > p {
+  article.page>header>p {
     grid-column: 1 / -1 !important;
     grid-row: 2 !important;
   }
@@ -144,12 +226,13 @@ layout: page
 <div class="tag-filter-bar mb3" role="group" aria-label="Filter by tag">
   <button type="button" class="tag-filter-btn active" data-tag="">All</button>
   {% for feat_tag in filter_tags %}
-    {% assign count = posts | where_exp: "post", "post.tags contains feat_tag.slug" | size %}
-    <button type="button" class="tag-filter-btn {% if feat_tag.highlight %}tag-highlighted{% endif %}" data-tag="{{ feat_tag.slug }}">
-      {{ feat_tag.title }}<span class="tag-count">{{ count }}</span>
-    </button>
+  {% assign count = posts | where_exp: "post", "post.tags contains feat_tag.slug" | size %}
+  <button type="button" class="tag-filter-btn" data-tag="{{ feat_tag.slug }}">
+    {{ feat_tag.title }}<span class="tag-count">{{ count }}</span>
+  </button>
   {% endfor %}
 </div>
+<p class="tag-filter-hint">⌨️ <kbd>Shift</kbd> + Click to select multiple tags</p>
 {% endif %}
 
 <div class="category-view-toggle mb3" role="group" aria-label="View mode">
@@ -159,122 +242,147 @@ layout: page
 
 {{ content }}
 
-{% assign date_formats  = site.data.strings.date_formats               %}
-{% assign list_group_by = date_formats.list_group_by | default:"%Y"    %}
-{% assign list_entry    = date_formats.list_entry    | default:"%d %b" %}
+{% assign date_formats = site.data.strings.date_formats %}
+{% assign list_group_by = date_formats.list_group_by | default:"%Y" %}
+{% assign list_entry = date_formats.list_entry | default:"%d %b" %}
 {% assign no_third_column = page.no_third_column | default:site.hydejack.no_third_column | default:false %}
 
 <div id="view-grid" class="category-view" data-view="grid">
   {% assign prev_date = 0 %}
   {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
-  {% for post in posts %}
+    {% for post in posts %}
     {% assign current_date = post.date | date:list_group_by %}
 
     {% unless page.no_groups %}{% if current_date != prev_date %}
-      {% unless forloop.first %}</div></div>{% endunless %}
+    {% unless forloop.first %}</div>
+</div>{% endunless %}
 
-      <div class="year-group">
-      <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
-      <div class="columns columns-break">
-      {% assign prev_date = current_date %}
+<div class="year-group">
+  <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
+  <div class="columns columns-break">
+    {% assign prev_date = current_date %}
     {% endif %}{% endunless %}
 
     {% assign featured = page.featured | default:post.featured %}
     {% assign post_tags_str = post.tags | join: ' ' %}
     <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}" data-tags="{{ post_tags_str }}">
       {% include_cached pro/post-card.html post=post featured=featured %}
+      {% if post.tags.size > 0 %}<p class="post-tags-label">{% for tag_slug in post.tags %}{% assign tag_obj = all_featured_tags | where: "slug", tag_slug | first %}<span class="post-tag-item" data-tag="{{ tag_slug }}">#{{ tag_obj.title | default: tag_slug }}</span>{% endfor %}</p>{% endif %}
     </div>
 
-    {% if forloop.last %}</div></div>{% endif %}
-  {% endfor %}
+    {% if forloop.last %}
+  </div>
+</div>{% endif %}
+{% endfor %}
 </div>
 
 <div id="view-list" class="category-view" data-view="list" hidden>
   {% assign prev_date = 0 %}
   {% if page.no_groups %}<ul class="related-posts">{% endif %}
-  {% for post in posts %}
+    {% for post in posts %}
     {% assign current_date = post.date | date:list_group_by %}
     {% unless page.no_groups %}{% if current_date != prev_date %}
-      {% unless forloop.first %}</ul></div>{% endunless %}
-      <div class="year-group">
-      <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}-list" class="hr-bottom">{{ current_date }}</h2>
-      <ul class="related-posts">
-      {% assign prev_date = current_date %}
+    {% unless forloop.first %}</ul>
+</div>{% endunless %}
+<div class="year-group">
+  <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}-list" class="hr-bottom">{{ current_date }}</h2>
+  <ul class="related-posts">
+    {% assign prev_date = current_date %}
     {% endif %}{% endunless %}
     {% assign post_tags_str = post.tags | join: ' ' %}
-    {% include_cached components/post-list-item.html post=post format=list_entry data_tags=post_tags_str %}
-    {% if forloop.last %}</ul></div>{% endif %}
-  {% endfor %}
+    {% capture post_tag_spans %}{% for tag_slug in post.tags %}{% assign tag_obj = all_featured_tags | where: "slug", tag_slug | first %}<span class="post-tag-item" data-tag="{{ tag_slug }}">#{{ tag_obj.title | default: tag_slug }}</span>{% endfor %}{% endcapture %}
+    {% include_cached components/post-list-item.html post=post format=list_entry data_tags=post_tags_str data_tag_spans=post_tag_spans %}
+    {% if forloop.last %}</ul>
+</div>{% endif %}
+{% endfor %}
 </div>
 
 <script>
-(function() {
-  var toggle = document.querySelector('.category-view-toggle');
-  var header = document.querySelector('article.page > header');
-  if (toggle && header) header.appendChild(toggle);
-})();
+  (function () {
+    var toggle = document.querySelector('.category-view-toggle');
+    var header = document.querySelector('article.page > header');
+    if (toggle && header) header.appendChild(toggle);
+  })();
 
-(function() {
-  var STORAGE_KEY = 'category-view-mode';
-  var gridEl = document.getElementById('view-grid');
-  var listEl = document.getElementById('view-list');
-  var buttons = document.querySelectorAll('.category-view-btn');
-  if (!gridEl || !listEl || !buttons.length) return;
+  (function () {
+    var STORAGE_KEY = 'category-view-mode';
+    var gridEl = document.getElementById('view-grid');
+    var listEl = document.getElementById('view-list');
+    var buttons = document.querySelectorAll('.category-view-btn');
+    if (!gridEl || !listEl || !buttons.length) return;
 
-  function setView(mode) {
-    var isGrid = mode === 'grid';
-    gridEl.hidden = !isGrid;
-    listEl.hidden = isGrid;
-    buttons.forEach(function(btn) {
-      var active = btn.getAttribute('data-view') === mode;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-pressed', active);
+    function setView(mode) {
+      var isGrid = mode === 'grid';
+      gridEl.hidden = !isGrid;
+      listEl.hidden = isGrid;
+      buttons.forEach(function (btn) {
+        var active = btn.getAttribute('data-view') === mode;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-pressed', active);
+      });
+      try { localStorage.setItem(STORAGE_KEY, mode); } catch (e) { }
+    }
+
+    var saved = '';
+    try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) { }
+    var initial = (saved === 'grid' || saved === 'list') ? saved : 'grid';
+    setView(initial);
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setView(this.getAttribute('data-view'));
+      });
     });
-    try { localStorage.setItem(STORAGE_KEY, mode); } catch (e) {}
-  }
+  })();
 
-  var saved = '';
-  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
-  var initial = (saved === 'grid' || saved === 'list') ? saved : 'grid';
-  setView(initial);
+  (function () {
+    var selectedTags = new Set();
 
-  buttons.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      setView(this.getAttribute('data-view'));
-    });
-  });
-})();
+    function filterPosts() {
+      ['grid', 'list'].forEach(function (view) {
+        var container = document.getElementById('view-' + view);
+        if (!container) return;
+        container.querySelectorAll('[data-tags]').forEach(function (el) {
+          if (selectedTags.size === 0) {
+            el.hidden = false;
+          } else {
+            var tags = (el.getAttribute('data-tags') || '').split(' ');
+            el.hidden = !tags.some(function (t) { return selectedTags.has(t); });
+          }
+        });
+        // 2개 이상 선택 시에만 태그 레이블 표시
+        container.classList.toggle('filter-active', selectedTags.size > 1);
+        // 선택된 태그만 표시
+        container.querySelectorAll('.post-tag-item').forEach(function (item) {
+          item.hidden = !selectedTags.has(item.getAttribute('data-tag'));
+        });
+        container.querySelectorAll('.year-group').forEach(function (grp) {
+          grp.hidden = grp.querySelectorAll('[data-tags]:not([hidden])').length === 0;
+        });
+      });
+      document.querySelectorAll('.tag-filter-btn').forEach(function (btn) {
+        var tag = btn.getAttribute('data-tag');
+        btn.classList.toggle('active', tag === '' ? selectedTags.size === 0 : selectedTags.has(tag));
+      });
+    }
 
-(function() {
-  var selectedTag = '';
-
-  function filterPosts() {
-    ['grid', 'list'].forEach(function(view) {
-      var container = document.getElementById('view-' + view);
-      if (!container) return;
-      container.querySelectorAll('[data-tags]').forEach(function(el) {
-        if (!selectedTag) {
-          el.hidden = false;
+    document.querySelectorAll('.tag-filter-btn').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        var tag = this.getAttribute('data-tag');
+        if (tag === '') {
+          selectedTags.clear();
+        } else if (e.shiftKey) {
+          if (selectedTags.has(tag)) { selectedTags.delete(tag); } else { selectedTags.add(tag); }
         } else {
-          var tags = (el.getAttribute('data-tags') || '').split(' ');
-          el.hidden = tags.indexOf(selectedTag) === -1;
+          if (selectedTags.size === 1 && selectedTags.has(tag)) {
+            selectedTags.clear();
+          } else {
+            selectedTags.clear();
+            selectedTags.add(tag);
+          }
         }
-      });
-      container.querySelectorAll('.year-group').forEach(function(grp) {
-        grp.hidden = grp.querySelectorAll('[data-tags]:not([hidden])').length === 0;
+        filterPosts();
       });
     });
-    document.querySelectorAll('.tag-filter-btn').forEach(function(btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-tag') === selectedTag);
-    });
-  }
-
-  document.querySelectorAll('.tag-filter-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var tag = this.getAttribute('data-tag');
-      selectedTag = (tag && selectedTag === tag) ? '' : tag;
-      filterPosts();
-    });
-  });
-})();
+  })();
 </script>
