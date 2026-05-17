@@ -7,7 +7,7 @@ basics:
   label: "AI Platform Engineer"
   # picture: "/assets/img/profile/jyje-o2024.jpg"
   email: "jyjeon@outlook.com"
-  linkedin: "jyje"
+  # linkedin: "jyje"  # moved to profiles for ordering
   website: "https://jyje.online"
   # github: "jyje"
   # googlescholar: "gwCPQM8AAAAJ"
@@ -18,12 +18,15 @@ basics:
     countryCode: "" # "KR"
     region: "" # "California"
   profiles:
+    - network: LinkedIn
+      username: LinkedIn
+      url: https://www.linkedin.com/in/jyje
     - network: Github
       username: Github
       url: http://github.com/jyje
-    - network: StackShare
-      username: StackShare
-      url: https://stackshare.io/jyje/jyje-pro-stack
+    # - network: StackShare
+    #   username: StackShare
+    #   url: https://stackshare.io/jyje/jyje-pro-stack
   contents:
     skills:
       note: >
