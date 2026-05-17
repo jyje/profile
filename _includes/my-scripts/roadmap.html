@@ -1,0 +1,92 @@
+<script>
+(function() {
+  function parseRoadmap(text) {
+    var items = [];
+    var cur = null;
+    var body = text.replace(/\r\n/g, '\n').replace(/^---\s*\n?/, '').replace(/\n?---\s*$/, '');
+    body.split('\n').forEach(function(line) {
+      var m = line.match(/^- title:\s*(.*)/);
+      if (m) { cur = {title: m[1].trim()}; items.push(cur); return; }
+      if (!cur) return;
+      var kv = line.match(/^\s+([a-zA-Z]+):\s*(.*)/);
+      if (kv) cur[kv[1]] = kv[2].trim();
+    });
+    return items;
+  }
+
+  function buildDescList(desc, isCurrent) {
+    if (!desc) return '';
+    var parts = desc.split(' · ').filter(function(s) { return s.trim(); });
+    if (parts.length <= 1) return '<p class="rm-desc">' + desc + '</p>';
+    return '<ul class="rm-desc-list">' + parts.map(function(p) {
+      return '<li>' + p.trim() + '</li>';
+    }).join('') + '</ul>';
+  }
+
+  function buildHTML(items) {
+    var html = '<div class="rm-wrap">';
+    items.forEach(function(item, i) {
+      var last = i === items.length - 1;
+      var isCurrent = item.current === 'true';
+      var classes = 'rm-entry' + (isCurrent ? ' rm-current' : '') + (last ? ' rm-last' : '');
+      html += '<div class="' + classes + '">';
+
+      /* Pin dot */
+      if (item.img) {
+        html += '<div class="rm-dot rm-dot--img"><img src="' + item.img + '" alt="' + item.title + '" loading="lazy"></div>';
+      } else {
+        html += '<div class="rm-dot">' + (item.icon || '●') + '</div>';
+      }
+
+      /* Year badge on line */
+      if (item.period) {
+        var yr = item.period.split('–')[0].trim().split('-')[0].trim();
+        html += '<div class="rm-year-badge">' + yr + '</div>';
+      }
+
+      /* Card */
+      html += '<div class="rm-card">';
+
+      if (isCurrent) {
+        html += '<div class="rm-badge-current">Current</div>';
+      }
+
+      html += '<p class="rm-org">' + item.title + '</p>';
+
+      if (item.subtitle) {
+        html += '<p class="rm-role">' + item.subtitle + '</p>';
+      }
+
+      if (item.period) {
+        html += '<p class="rm-period">' + item.period + '</p>';
+      }
+
+      html += buildDescList(item.description, isCurrent);
+
+      html += '</div></div>';
+    });
+    html += '</div>';
+    return html;
+  }
+
+  function processRoadmaps() {
+    document.querySelectorAll('code.language-roadmap').forEach(function(el) {
+      var items = parseRoadmap(el.textContent || el.innerText || '');
+      if (!items.length) return;
+      var pre = el.closest ? el.closest('pre') : el.parentElement;
+      var target = pre || el.parentElement;
+      var wrap = document.createElement('div');
+      wrap.innerHTML = buildHTML(items);
+      target.parentNode.replaceChild(wrap.firstChild, target);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', processRoadmaps);
+  } else {
+    processRoadmaps();
+  }
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', processRoadmaps);
+})();
+</script>

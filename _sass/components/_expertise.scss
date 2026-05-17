@@ -1,0 +1,89 @@
+// Expertise: phase-grouped skill card grid rendered from ```expertise fenced blocks.
+
+.exp-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem 0 2rem;
+}
+
+.exp-phase-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-left: 3px solid;
+  padding: 0.3rem 0.75rem;
+  margin-bottom: 0.75rem;
+  background: var(--gray-bg, rgba(0, 0, 0, 0.025));
+  border-radius: 0 4px 4px 0;
+}
+
+.exp-phase-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.exp-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
+  gap: 0.65rem;
+}
+
+/* Current phase: single card centered, wider */
+.exp-phase:first-child .exp-cards {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  max-width: 480px;
+}
+
+.exp-card {
+  background: var(--body-bg, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-left: 3px solid transparent;
+  border-radius: 0.4rem;
+  padding: 0.75rem 0.9rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.exp-card--current {
+  background: var(--accent-color, #680c2c);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 12px rgba(104, 12, 44, 0.25);
+}
+
+.exp-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 0.3rem;
+}
+
+.exp-period {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--gray-text, #666);
+  margin: 0 0 0.35rem;
+}
+
+.exp-card--current .exp-period { color: rgba(255, 255, 255, 0.65); }
+
+.exp-skills {
+  font-size: 0.64rem;
+  color: var(--gray-text, #666);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.exp-card--current .exp-skills { color: rgba(255, 255, 255, 0.6); }
+
+@media screen and (max-width: $break-point-1) {
+  .exp-cards {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}

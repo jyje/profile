@@ -1,0 +1,97 @@
+<script>
+(function() {
+  var COLORS = {
+    '1': '#2166ac', '2': '#4393c3', '3': '#31a354',
+    '4': '#762a83', '5': '#680c2c'
+  };
+
+  function parseExpertise(text) {
+    var data = {phases: [], items: []};
+    var section = null;
+    var cur = null;
+    var body = text.replace(/\r\n/g, '\n')
+      .replace(/^---\s*\n?/, '').replace(/\n?---\s*$/, '');
+    body.split('\n').forEach(function(line) {
+      if (/^phases:/.test(line)) { section = 'phases'; cur = null; return; }
+      if (/^items:/.test(line))  { section = 'items';  cur = null; return; }
+      var kv;
+      if (section === 'phases') {
+        var np = line.match(/^\s+-\s+id:\s*(.*)/);
+        if (np) { cur = {id: np[1].trim()}; data.phases.push(cur); return; }
+        if (cur) { kv = line.match(/^\s+([a-zA-Z_][a-zA-Z0-9_]*):\s*(.*)/); if (kv) cur[kv[1]] = kv[2].trim(); }
+      }
+      if (section === 'items') {
+        var ni = line.match(/^\s+-\s+label:\s*(.*)/);
+        if (ni) { cur = {label: ni[1].trim()}; data.items.push(cur); return; }
+        if (cur) { kv = line.match(/^\s+([a-zA-Z_][a-zA-Z0-9_]*):\s*(.*)/); if (kv) cur[kv[1]] = kv[2].trim(); }
+      }
+    });
+    return data;
+  }
+
+  function buildHTML(data) {
+    var isKo = (document.documentElement.lang || '').toLowerCase().startsWith('ko');
+    var nowY = new Date().getFullYear();
+    var phaseMap = {};
+    data.items.forEach(function(it) {
+      var p = it.phase || '1';
+      if (!phaseMap[p]) phaseMap[p] = [];
+      phaseMap[p].push(it);
+    });
+
+    var html = '<div class="exp-grid">';
+    var phasesReversed = data.phases.slice().reverse();
+    phasesReversed.forEach(function(phase) {
+      var items = phaseMap[phase.id] || [];
+      if (!items.length) return;
+      var color = COLORS[phase.id] || '#9ca3af';
+      var isCurrent = phase.id === '5';
+      var phaseLabel = isKo ? (phase.label_ko || phase.label) : phase.label;
+
+      html += '<div class="exp-phase">';
+      html += '<div class="exp-phase-header" style="border-color:' + color + ';color:' + color + ';">';
+      html += '<span class="exp-phase-dot" style="background:' + color + ';"></span>';
+      html += phaseLabel;
+      html += '</div>';
+      html += '<div class="exp-cards">';
+
+      items.forEach(function(item) {
+        var toY = parseInt(item.to, 10) || nowY;
+        var toStr = toY >= nowY ? (isKo ? '현재' : 'Present') : String(toY);
+        var cardClass = 'exp-card' + (isCurrent ? ' exp-card--current' : '');
+        var nameColor = isCurrent ? 'rgba(255,255,255,0.95)' : color;
+
+        html += '<div class="' + cardClass + '" style="border-left-color:' + color + ';">';
+        html += '<p class="exp-name" style="color:' + nameColor + ';">' + item.label + '</p>';
+        html += '<p class="exp-period">' + item.from + ' – ' + toStr + '</p>';
+        if (item.skills) html += '<p class="exp-skills">' + item.skills + '</p>';
+        html += '</div>';
+      });
+
+      html += '</div></div>';
+    });
+    html += '</div>';
+    return html;
+  }
+
+  function processExpertise() {
+    document.querySelectorAll('code.language-expertise').forEach(function(el) {
+      var data = parseExpertise(el.textContent || el.innerText || '');
+      if (!data.items.length) return;
+      var pre = el.closest ? el.closest('pre') : el.parentElement;
+      var target = pre || el.parentElement;
+      var container = document.createElement('div');
+      container.innerHTML = buildHTML(data);
+      target.parentNode.replaceChild(container.firstChild, target);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', processExpertise);
+  } else {
+    processExpertise();
+  }
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', processExpertise);
+})();
+</script>

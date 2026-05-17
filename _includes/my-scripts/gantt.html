@@ -1,0 +1,175 @@
+<script>
+(function() {
+  var YEAR_PX = 28;
+  var COLORS = {
+    '1': '#2166ac', '2': '#4393c3', '3': '#31a354',
+    '4': '#762a83', '5': '#680c2c'
+  };
+  var PHASE_LABELS_EN = {
+    '1': 'Academic Foundation',
+    '2': 'Applied Research',
+    '3': 'Industry Research',
+    '4': 'Engineering',
+    '5': 'Current'
+  };
+  var PHASE_LABELS_KO = {
+    '1': '학문적 기초',
+    '2': '응용 연구',
+    '3': '산업 연구',
+    '4': '엔지니어링',
+    '5': '현재'
+  };
+  var isKo = (document.documentElement.lang || '').toLowerCase().startsWith('ko');
+  var PHASE_LABELS = isKo ? PHASE_LABELS_KO : PHASE_LABELS_EN;
+
+  function parseGantt(text) {
+    var data = {from: 2008, to: 2026, items: []};
+    var cur = null;
+    var inItems = false;
+    var body = text.replace(/\r\n/g, '\n')
+      .replace(/^---\s*\n?/, '').replace(/\n?---\s*$/, '');
+    body.split('\n').forEach(function(line) {
+      if (/^items:/.test(line)) { inItems = true; return; }
+      if (!inItems) {
+        var m = line.match(/^(from|to):\s*(\d+)/);
+        if (m) { data[m[1]] = parseInt(m[2], 10); }
+        return;
+      }
+      var ni = line.match(/^\s+-\s+label:\s*(.*)/);
+      if (ni) { cur = {label: ni[1].trim()}; data.items.push(cur); return; }
+      if (cur) {
+        var kv = line.match(/^\s+([a-zA-Z][a-zA-Z0-9]*):\s*(.*)/);
+        if (kv) cur[kv[1]] = kv[2].trim();
+      }
+    });
+    return data;
+  }
+
+  function renderGantt(container, data) {
+    var minY = parseInt(data.from, 10) || 2008;
+    var maxY = parseInt(data.to, 10) || new Date().getFullYear() + 1;
+    var total = maxY - minY;
+    var bodyH = total * YEAR_PX;
+    var headerH = 28;
+
+    var items = data.items.slice().sort(function(a, b) {
+      var pa = parseInt(a.phase, 10) || 1;
+      var pb = parseInt(b.phase, 10) || 1;
+      if (pa !== pb) return pa - pb;
+      return (parseInt(a.from, 10) || 0) - (parseInt(b.from, 10) || 0);
+    });
+
+    /* Which phases are present */
+    var phases = {};
+    items.forEach(function(it) { phases[it.phase || '1'] = true; });
+
+    /* Legend */
+    var legendHtml = '<div class="gantt-legend">';
+    ['1','2','3','4','5'].forEach(function(p) {
+      if (!phases[p]) return;
+      legendHtml += '<div class="gantt-legend-item">';
+      legendHtml += '<span class="gantt-legend-dot" style="background:' + COLORS[p] + ';"></span>';
+      legendHtml += '<span>' + (PHASE_LABELS[p] || 'Phase ' + p) + '</span>';
+      legendHtml += '</div>';
+    });
+    legendHtml += '</div>';
+
+    /* Chart */
+    var chartHtml = '<div class="gantt-chart" style="padding-top:' + headerH + 'px;">';
+
+    /* Year axis */
+    chartHtml += '<div class="gantt-axis" style="height:' + bodyH + 'px;">';
+    for (var y = maxY; y >= minY; y--) {
+      var top = (maxY - y) * YEAR_PX;
+      var isMajor = (y % 5 === 0 || y === maxY || y === minY);
+      if (isMajor) {
+        chartHtml += '<span class="gantt-y-label gantt-y-label--major" style="top:' + top + 'px;">' + y + '</span>';
+      } else if (y % 2 === 0) {
+        chartHtml += '<span class="gantt-y-label" style="top:' + top + 'px;">' + y + '</span>';
+      }
+    }
+    chartHtml += '</div>';
+
+    /* Body */
+    chartHtml += '<div class="gantt-body" style="height:' + bodyH + 'px;">';
+    for (var y2 = maxY; y2 >= minY; y2--) {
+      var top2 = (maxY - y2) * YEAR_PX;
+      var cls = (y2 % 5 === 0 || y2 === maxY) ? 'gantt-line gantt-line--major' : 'gantt-line';
+      chartHtml += '<div class="' + cls + '" style="top:' + top2 + 'px;"></div>';
+    }
+
+    /* Columns */
+    chartHtml += '<div class="gantt-cols">';
+    items.forEach(function(item) {
+      var fromY = Math.max(parseInt(item.from, 10) || minY, minY);
+      var toY   = Math.min(parseInt(item.to, 10)   || maxY, maxY);
+      var barTop = (maxY - toY) * YEAR_PX;
+      var barH   = Math.max((toY - fromY) * YEAR_PX, 6);
+      var color  = COLORS[item.phase || '1'] || '#9ca3af';
+      var showLabel = barH >= 48;
+
+      chartHtml += '<div class="gantt-col">';
+      chartHtml += '<div class="gantt-col-header" style="color:' + color + ';">' + (item.label || '') + '</div>';
+      chartHtml += '<div class="gantt-bar" data-label="' + item.label + '" data-from="' + fromY + '" data-to="' + toY + '" data-color="' + color + '" style="top:' + barTop + 'px;height:' + barH + 'px;background:' + color + ';">';
+      chartHtml += '<div class="gantt-bar-inner">';
+      if (showLabel) {
+        chartHtml += '<span class="gantt-bar-label">' + (item.label || '') + '</span>';
+      }
+      chartHtml += '</div></div></div>';
+    });
+    chartHtml += '</div>';
+    chartHtml += '</div>';
+    chartHtml += '</div>';
+
+    container.innerHTML = legendHtml + chartHtml;
+
+    /* Tooltip */
+    var tip = document.createElement('div');
+    tip.className = 'gantt-tooltip';
+    tip.style.display = 'none';
+    document.body.appendChild(tip);
+
+    container.querySelectorAll('.gantt-bar').forEach(function(bar) {
+      bar.addEventListener('mouseenter', function(e) {
+        var lbl = bar.getAttribute('data-label');
+        var fr  = bar.getAttribute('data-from');
+        var to  = bar.getAttribute('data-to');
+        var col = bar.getAttribute('data-color');
+        var toStr = (parseInt(to, 10) >= maxY - 1) ? 'Present' : to;
+        tip.style.color = col;
+        tip.innerHTML = '<div class="gantt-tt-label">' + lbl + '</div>' +
+                        '<div class="gantt-tt-period">' + fr + ' – ' + toStr + '</div>';
+        tip.style.display = 'block';
+      });
+      bar.addEventListener('mousemove', function(e) {
+        tip.style.left = (e.clientX + 12) + 'px';
+        tip.style.top  = (e.clientY - 10) + 'px';
+      });
+      bar.addEventListener('mouseleave', function() {
+        tip.style.display = 'none';
+      });
+    });
+  }
+
+  function processGantts() {
+    document.querySelectorAll('code.language-gantt').forEach(function(el) {
+      var data = parseGantt(el.textContent || el.innerText || '');
+      if (!data.items.length) return;
+      var pre = el.closest ? el.closest('pre') : el.parentElement;
+      var target = pre || el.parentElement;
+      var container = document.createElement('div');
+      container.className = 'gantt-container';
+      target.parentNode.replaceChild(container, target);
+      renderGantt(container, data);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', processGantts);
+  } else {
+    processGantts();
+  }
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', processGantts);
+})();
+</script>

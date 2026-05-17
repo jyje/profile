@@ -1,0 +1,208 @@
+// =============================================================================
+// Print styles: all @media print rules consolidated here.
+// Covers PDF generation for resume/portfolio, color accuracy, and layout.
+// =============================================================================
+
+@media print {
+  // ── Force color printing (tags, backgrounds) ─────────────────────────────
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  // ── Font and base ─────────────────────────────────────────────────────────
+  // Override Hydejack defaults: use Pretendard consistently without
+  // fallback to DejaVu/WenQuanYi; layout and colors render reliably in print.
+  html, body {
+    font-family: 'Pretendard' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  // Force all text in resume/portfolio/cv to Pretendard
+  body .layout-resume,
+  body .layout-portfolio,
+  body .layout-cv {
+    *, p, span, a, h1, h2, h3, h4, h5, h6, li, dt, dd, .bc, .faded, .h3, .h4, header, section {
+      font-family: 'Pretendard' !important;
+    }
+    code, pre, kbd {
+      font-family: var(--code-font-family) !important;
+    }
+    [class*="icon-"], .symbol {
+      font-family: 'icomoon' !important;
+    }
+  }
+
+  // ── Hide unnecessary elements ─────────────────────────────────────────────
+  .sidebar,
+  .menu-btn,
+  .nav-btn,
+  .search-input,
+  .giscus,
+  .footer-col,
+  #comments,
+  .screen-only,
+  .no-print {
+    display: none !important;
+  }
+
+  // ── Content layout ────────────────────────────────────────────────────────
+  .content {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  // Link URLs: hidden for specific links via .no-print-link class
+  a[href].no-print-link::after {
+    content: none !important;
+  }
+
+  // ── Page breaks ───────────────────────────────────────────────────────────
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid-page;
+  }
+
+  section, article, .work-item, .education-item {
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+  }
+
+  // ── Contact row: 2 columns ────────────────────────────────────────────────
+  body .layout-resume .columns.contact,
+  body .layout-portfolio .columns.contact,
+  body .layout-cv .columns.contact {
+    margin-top: 1rem;
+  }
+  body .layout-resume .columns.contact.columns-break,
+  body .layout-portfolio .columns.contact.columns-break,
+  body .layout-cv .columns.contact.columns-break {
+    > .column-3-5 {
+      width: 50%;
+    }
+    > .column-2-5 {
+      width: 50%;
+    }
+  }
+
+  // ── Resume/CV: compact font and spacing ───────────────────────────────────
+  // Selectors use body prefix to override _resume.scss print rules.
+  body .layout-resume,
+  body .layout-cv {
+    font-size: 0.75rem;
+  }
+
+  body .layout-resume h2,
+  body .layout-cv h2 {
+    margin-top: 1.0rem !important;
+  }
+
+  body .layout-resume,
+  body .layout-portfolio,
+  body .layout-cv {
+    section {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact {
+      margin-top: 0.2rem;
+    }
+
+    .avatar {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    // ── Tag colors: hardcoded for PDF accuracy ─────────────────────────────
+    // CSS variables are not guaranteed in print; exact colors required.
+
+    .work-header-result {
+      background-color: #103B58 !important;
+      color: #ffffff !important;
+      border: 1px solid #103B58 !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    .work-header-role {
+      background-color: #680C2C !important;
+      color: #ffffff !important;
+      border: 1px solid #680C2C !important;
+      font-weight: 700 !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    .work-header-skill {
+      background-color: transparent !important;
+      color: #333333 !important;
+      border: 1px solid #666666 !important;
+    }
+
+    .skill-tag {
+      background-color: transparent !important;
+      color: #333333 !important;
+      border: 1px solid #cccccc !important;
+    }
+
+    .skill-tag-highlight {
+      background-color: #680C2C !important;
+      color: #ffffff !important;
+      border: 1px solid #680C2C !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    .skill-tag-soft {
+      background-color: #666666 !important;
+      color: #ffffff !important;
+      border: 1px solid #666666 !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+  }
+
+  // ── Portfolio 2-column print layout ───────────────────────────────────────
+  body.print-2col .layout-portfolio .column-3-0 {
+    columns: 2;
+    column-gap: 1.5rem;
+    column-fill: balance;
+  }
+  body.print-2col .layout-portfolio .column-3-0 section > .npb,
+  body.print-2col .layout-portfolio .column-3-0 section > h2:first-child {
+    column-span: all;
+  }
+  body.print-2col .layout-portfolio .column-3-0 .work-item,
+  body.print-2col .layout-portfolio .column-3-0 section > section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  // ── Item card color-adjust ────────────────────────────────────────────────
+  body .layout-portfolio .column-3-0 .work-item,
+  body .layout-portfolio .column-3-0 section > section,
+  body .layout-portfolio .column-3-0 blockquote.reference,
+  body .layout-resume .work-item,
+  body .layout-resume section > section,
+  body .layout-resume blockquote.reference,
+  body .layout-cv .work-item,
+  body .layout-cv section > section,
+  body .layout-cv blockquote.reference {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

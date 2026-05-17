@@ -258,7 +258,7 @@ PDF generation is configured via `pdf-config.yml` at the project root:
 ```yaml
 # PDF targets to generate
 targets:
-  - path: /en/profile/resume      # Page path
+  - path: /en/resume      # Page path
     output: jeayoungjeon-resume-en.pdf # Output filename
     title: "Resume - Jeayoung Jeon"
 

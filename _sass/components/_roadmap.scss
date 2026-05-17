@@ -1,0 +1,310 @@
+// Roadmap: vertical career timeline rendered from ```roadmap fenced blocks.
+// Triggered by JS parser in _includes/my-scripts/roadmap.html.
+
+.rm-wrap {
+  position: relative;
+  padding: 1rem 0 3rem;
+
+  // Dashed road line
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 3px dashed #9ca3af;
+    transform: translateX(-50%);
+  }
+}
+
+.rm-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+
+  &:nth-child(odd) {
+    justify-content: flex-start;
+    padding-left: calc(50% + 3.5rem);
+  }
+
+  &:nth-child(even) {
+    justify-content: flex-end;
+    padding-right: calc(50% + 3.5rem);
+  }
+}
+
+// --- Pin Marker ---
+.rm-dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  background: var(--accent-color-two, #103B58);
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border: 3px solid var(--body-bg, #fff);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  // Pin point triangle
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1.35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 0.95rem solid transparent;
+    border-right: 0.95rem solid transparent;
+    border-top: 1.4rem solid var(--accent-color-two, #103B58);
+  }
+
+}
+
+.rm-dot--img {
+  background: #fff;
+  border-color: var(--border-color, #e5e7eb);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+  &::after {
+    border-top-color: #9ca3af;
+  }
+
+  img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+  }
+}
+
+// Current entry (latest position)
+.rm-entry.rm-current {
+  .rm-dot:not(.rm-dot--img) {
+    background: var(--accent-color, #680c2c);
+
+    &::after {
+      border-top-color: var(--accent-color, #680c2c);
+    }
+  }
+
+  .rm-dot--img {
+    background: #fff;
+    border: 3px solid var(--accent-color, #680c2c);
+    box-shadow: 0 4px 16px rgba(104, 12, 44, 0.25);
+
+    &::after {
+      border-top-color: var(--accent-color, #680c2c);
+    }
+  }
+}
+
+// --- Cards ---
+.rm-card {
+  position: relative;
+  background: var(--body-bg, #fff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-left: 3px solid var(--accent-color-two, #103B58);
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.25rem;
+  flex: 1;
+  min-width: 0;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+.rm-entry:nth-child(odd) .rm-card::before {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 3.5rem;
+  width: 3.5rem;
+  height: 2px;
+  background: var(--accent-color-two, #103B58);
+  opacity: 0.4;
+}
+
+.rm-entry:nth-child(even) .rm-card::after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 3.5rem;
+  width: 3.5rem;
+  height: 2px;
+  background: var(--accent-color-two, #103B58);
+  opacity: 0.4;
+}
+
+// Current card — dark theme
+.rm-entry.rm-current .rm-card {
+  background: var(--accent-color, #680c2c);
+  border-color: rgba(255, 255, 255, 0.15);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(104, 12, 44, 0.3);
+
+  &::before,
+  &::after {
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+}
+
+// --- Badge ---
+.rm-badge-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+  padding: 0.15rem 0.55rem;
+  margin-bottom: 0.55rem;
+
+  &::before {
+    content: '✦';
+    font-size: 0.55rem;
+  }
+}
+
+// --- Year badge on line ---
+.rm-year-badge {
+  position: absolute;
+  left: 50%;
+  top: calc(7.5rem + 1.6rem);
+  transform: translateX(-50%);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--accent-color-two, #103B58);
+  background: var(--body-bg, #fff);
+  border: 1.5px solid var(--accent-color-two, #103B58);
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  z-index: 3;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+.rm-entry.rm-current .rm-year-badge {
+  color: var(--accent-color, #680c2c);
+  border-color: var(--accent-color, #680c2c);
+}
+
+// --- Typography ---
+.rm-period {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-color-two, #103B58);
+  margin: 0 0 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  &::before {
+    content: '◈';
+    font-size: 0.7em;
+    opacity: 0.7;
+  }
+}
+
+.rm-entry.rm-current .rm-period {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.rm-org {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--accent-color-two, #103B58);
+  margin: 0 0 0.2rem;
+}
+
+.rm-entry.rm-current .rm-org {
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.rm-role {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--body-color, #333);
+  margin: 0 0 0.65rem;
+}
+
+.rm-entry.rm-current .rm-role {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.rm-desc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    font-size: 0.74rem;
+    color: var(--gray-text, #555);
+    padding: 0.12rem 0;
+    line-height: 1.5;
+    display: flex;
+    gap: 0.4rem;
+
+    &::before {
+      content: '•';
+      color: var(--accent-color-two, #103B58);
+      flex-shrink: 0;
+    }
+  }
+}
+
+.rm-entry.rm-current .rm-desc-list li {
+  color: rgba(255, 255, 255, 0.82);
+
+  &::before {
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+// Mobile
+@media screen and (max-width: $break-point-1) {
+  .rm-wrap::before {
+    left: 2.5rem;
+  }
+
+  .rm-entry {
+    padding-left: 10.5rem !important;
+    padding-right: 0 !important;
+    justify-content: flex-start !important;
+  }
+
+  .rm-dot {
+    left: 2.5rem;
+  }
+
+  .rm-card {
+    max-width: 100%;
+  }
+
+  .rm-card::before,
+  .rm-card::after {
+    display: none;
+  }
+
+  .rm-year-badge {
+    left: 2.5rem;
+    transform: none;
+  }
+}

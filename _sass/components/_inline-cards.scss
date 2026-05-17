@@ -1,0 +1,117 @@
+// =============================================================================
+// Inline Cards: card components rendered from ```card fenced blocks.
+// All rules are scoped under .inline-cards-root so that theme link/button styles
+// do not bleed into card titles and CTAs; cards use their own borders and hover.
+// =============================================================================
+.inline-cards-root {
+  display: block;
+
+  .inline-cards {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .inline-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    &:has(.inline-card-link:hover) {
+      border-color: var(--accent-color);
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color) 18%, transparent);
+      background-color: color-mix(in srgb, var(--accent-color) 5%, transparent);
+    }
+  }
+
+  .inline-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+  }
+
+  .inline-card-link {
+    cursor: pointer;
+  }
+
+  .inline-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .inline-card-icon {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    line-height: 1;
+  }
+
+  .inline-card-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--accent-color);
+  }
+
+  .inline-card-external {
+    font-size: 0.7em;
+    margin-left: 0.25em;
+    color: var(--accent-color);
+    vertical-align: middle;
+    opacity: 0.7;
+  }
+
+  div.inline-card-desc {
+    margin: 0 0 0.6rem 0;
+    font-size: 0.875rem; /* 14px at 16px root */
+    color: var(--gray-text, #888);
+    line-height: 1.45;
+
+    p, ul, ol, li {
+      font-size: 0.875rem !important;
+      color: var(--gray-text, #888) !important;
+      line-height: 1.45 !important;
+    }
+
+    p {
+      margin: 0 !important;
+    }
+
+    ul, ol {
+      margin: 0 0 0.4rem 0 !important;
+      padding-left: 1.2em !important;
+    }
+
+    li {
+      margin: 0.2rem 0 0 !important;
+      padding: 0 !important;
+
+      &:first-child {
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  .inline-card-cta {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 0.25rem;
+  }
+}

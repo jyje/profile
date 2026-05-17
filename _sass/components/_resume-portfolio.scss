@@ -1,0 +1,169 @@
+// =============================================================================
+// Resume/Portfolio: Languages section – one row per language (same div)
+// =============================================================================
+.languages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.languages-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.languages-lang {
+  flex-shrink: 0;
+}
+
+// =============================================================================
+// Resume/Portfolio: keep footer below content instead of fixed at viewport bottom.
+// Theme uses position:absolute for footer; we use flex + static footer so the
+// footer sits under the main content and does not overlap when content is short.
+// =============================================================================
+@media screen {
+  main#_main.layout-resume,
+  main#_main.layout-portfolio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main#_main.layout-resume > article.page,
+  main#_main.layout-portfolio > article.page {
+    flex: 1 0 auto;
+  }
+  main#_main.layout-resume > footer.content,
+  main#_main.layout-portfolio > footer.content {
+    position: static;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1rem;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+}
+
+// =============================================================================
+// Resume/Portfolio/CV: contact row (basics + profiles) as 2 columns when width allows
+// Theme uses 86em for 2-col; we use a lower breakpoint so contact is 2-col earlier
+// =============================================================================
+@media screen and (min-width: 52em) {
+  body .layout-resume .columns.contact.columns-break,
+  body .layout-portfolio .columns.contact.columns-break,
+  body .layout-cv .columns.contact.columns-break {
+    > .column-3-5 {
+      width: 50%;
+    }
+    > .column-2-5 {
+      width: 50%;
+    }
+  }
+}
+
+// =============================================================================
+// Portfolio & Resume/CV: wrap each item in a thin rounded rect
+// =============================================================================
+body .layout-portfolio .column-3-0 .work-item,
+body .layout-portfolio .column-3-0 section > section,
+body .layout-portfolio .column-3-0 blockquote.reference,
+body .layout-resume .work-item,
+body .layout-resume section > section,
+body .layout-resume blockquote.reference,
+body .layout-cv .work-item,
+body .layout-cv section > section,
+body .layout-cv blockquote.reference {
+  border: 1px solid color-mix(in srgb, var(--accent-color) 20%, transparent);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.25rem;
+}
+
+// First item: emphasize with background fill
+body .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
+body .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
+body .layout-portfolio .column-3-0 .work-item:first-child,
+body .layout-portfolio .column-3-0 section > section:first-child,
+body .layout-resume .column-3-5 > section:first-child > section:first-of-type,
+body .layout-resume .column-3-5 > section:first-child > .work-item:first-of-type,
+body .layout-resume .work-item:first-child,
+body .layout-resume section > section:first-child,
+body .layout-cv .column-3-5 > section:first-child > section:first-of-type,
+body .layout-cv .column-3-5 > section:first-child > .work-item:first-of-type,
+body .layout-cv .work-item:first-child,
+body .layout-cv section > section:first-child {
+  background-color: color-mix(in srgb, var(--accent-color) 7.5%, transparent);
+}
+
+// Remove inner top spacing so content starts at box top
+body .layout-portfolio .column-3-0 .work-item > header,
+body .layout-portfolio .column-3-0 section > section > header,
+body .layout-resume .work-item > header,
+body .layout-resume section > section > header,
+body .layout-cv .work-item > header,
+body .layout-cv section > section > header {
+  margin-top: 0 !important;
+}
+
+// Space above box from the second item onwards
+body .layout-portfolio .column-3-0 .work-item:not(:first-child),
+body .layout-portfolio .column-3-0 section > section:not(:first-child),
+body .layout-portfolio .column-3-0 blockquote.reference:not(:first-child),
+body .layout-resume .work-item:not(:first-child),
+body .layout-resume section > section:not(:first-child),
+body .layout-resume blockquote.reference:not(:first-child),
+body .layout-cv .work-item:not(:first-child),
+body .layout-cv section > section:not(:first-child),
+body .layout-cv blockquote.reference:not(:first-child) {
+  margin-top: 0.75rem;
+}
+
+body .layout-portfolio .column-3-0 section > section:last-child,
+body .layout-portfolio .column-3-0 .work-item:last-child,
+body .layout-portfolio .column-3-0 blockquote.reference:last-child,
+body .layout-resume section > section:last-child,
+body .layout-resume .work-item:last-child,
+body .layout-resume blockquote.reference:last-child,
+body .layout-cv section > section:last-child,
+body .layout-cv .work-item:last-child,
+body .layout-cv blockquote.reference:last-child {
+  margin-bottom: 0;
+}
+
+// =============================================================================
+// Resume/CV: certifications section – display small (when in right column)
+// =============================================================================
+body .layout-resume section:has(h2#certificates) .certificates-item,
+body .layout-cv section:has(h2#certificates) .certificates-item {
+  font-size: 0.8125rem;
+  padding: 0.5rem 0.65rem;
+  margin-bottom: 0.5rem;
+}
+body .layout-resume section:has(h2#certificates) .certificates-item:not(:first-child),
+body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+// =============================================================================
+// Skill tags and work header tags
+// =============================================================================
+
+// Add left padding so the first skill tag is not clipped
+// (skill-tags container uses negative margin and can cut off the leading tag).
+body .layout-portfolio .skills .skill-tags,
+body .layout-resume .skills .skill-tags,
+body .layout-cv .skills .skill-tags {
+  padding-left: 0.375rem;
+}
+
+// Work role/result header tags – bold and vertically centered with adjacent text
+.work-header-role,
+.work-header-result {
+  font-weight: 700 !important;
+  vertical-align: middle;
+}

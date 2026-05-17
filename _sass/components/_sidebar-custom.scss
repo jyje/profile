@@ -1,0 +1,33 @@
+// =============================================================================
+// Sidebar: custom username and title styles.
+// =============================================================================
+
+.sidebar-about > .sidebar-title {
+  display: block;
+
+  h1 {
+    margin: 0;
+    padding-bottom: 0;
+
+    /* Match the original h2 style from Hydejack */
+    &.h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.sidebar-about .sidebar-username {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+.sidebar.invert .sidebar-about .sidebar-username {
+  color: rgba(32, 32, 32, 0.5);
+}

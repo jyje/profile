@@ -1,31 +1,31 @@
 ---
-layout: resume
-title: Résumé
+layout: portfolio
+title: 포트폴리오
+permalink: /ko/portfolio
 description: >
   This is the `description` of your resume page, as it will be seen by search engines.
   You'll probably want to modify it in `resume.md`, and maybe set `hide_description` to `true` in the front matter.
 hide_description: true
-data_file: resume-en
+data_file: portfolio-ko
 top_note: >
-  🇰🇷 한국어 버전은 [여기](/ko/profile/resume)에서 확인할 수 있습니다.
-left_column:
-  #- projects
+  🇬🇧 You can check the English version [here](/en/portfolio).
+sections:
   - work
+  - projects
   # - volunteer
+  - skills
   - education
   - awards
   - publications
-  # - references
-right_column:
-  - skills
   - certifications
+  # - references
   - interests
   - languages
 no_language_icons: true
 no_skill_icons: true
 buttons:
   print: true
-  pdf: /assets/jeayoungjeon-resume-en.pdf
+  pdf: /assets/jeayoungjeon-portfolio-ko.pdf
   # For the vCard you can either provide a link to a .vcf file in assets (see `pdf` above),
   # or use `h2vx.com` to generate a vCard on the fly based on the structured data of the resume page.
   # The later requires `hydejack.no_structured_data: false` and only works once the site is deployed to a public URL.

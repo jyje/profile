@@ -1,5 +1,9 @@
 @use "injected" as *;
 
+// =============================================================================
+// Global: basic image and layout utilities
+// =============================================================================
+
 .text-align-center {
   text-align: center;
 }
@@ -62,127 +66,9 @@ img.centered {
 }
 
 table.no-border {
-  border-collapse: collapse;  
+  border-collapse: collapse;
   td, th {
-    border: none!important;
- }
-}
-
-// =============================================================================
-// Inline Cards: card components rendered from ```card fenced blocks.
-// All rules are scoped under .inline-cards-root so that theme link/button styles
-// do not bleed into card titles and CTAs; cards use their own borders and hover.
-// =============================================================================
-.inline-cards-root {
-  display: block;
-
-  .inline-cards {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .inline-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.5rem;
-    border: 1px solid var(--border-color);
-    box-sizing: border-box;
-    overflow: hidden;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    &:has(.inline-card-link:hover) {
-      border-color: var(--accent-color);
-      box-shadow: 0 4px 16px color-mix(in srgb, var(--accent-color) 18%, transparent);
-      background-color: color-mix(in srgb, var(--accent-color) 5%, transparent);
-    }
-  }
-
-  .inline-card-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 1rem 1.25rem;
-    text-decoration: none;
-    color: inherit;
-    box-sizing: border-box;
-  }
-
-  .inline-card-link {
-    cursor: pointer;
-  }
-
-  .inline-card-header {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .inline-card-icon {
-    flex-shrink: 0;
-    font-size: 1.2rem;
-    color: var(--accent-color);
-    line-height: 1;
-  }
-
-  .inline-card-title {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--accent-color);
-  }
-
-  .inline-card-external {
-    font-size: 0.7em;
-    margin-left: 0.25em;
-    color: var(--accent-color);
-    vertical-align: middle;
-    opacity: 0.7;
-  }
-
-  div.inline-card-desc {
-    margin: 0 0 0.6rem 0;
-    font-size: 0.875rem; // 14px at 16px root
-    color: #888;
-    line-height: 1.45;
-
-    p, ul, ol, li {
-      font-size: 0.875rem !important;
-      color: #888 !important;
-      line-height: 1.45 !important;
-    }
-
-    p {
-      margin: 0 !important;
-    }
-
-    ul, ol {
-      margin: 0 0 0.4rem 0 !important;
-      padding-left: 1.2em !important;
-    }
-
-    li {
-      margin: 0.2rem 0 0 !important;
-      padding: 0 !important;
-
-      &:first-child {
-        margin-top: 0 !important;
-      }
-    }
-  }
-
-  .inline-card-cta {
-    display: inline-block;
-    font-size: 0.8rem;
-    color: var(--accent-color);
-    font-weight: 500;
-    text-decoration: none;
-    margin-top: 0.25rem;
+    border: none !important;
   }
 }
 
@@ -192,412 +78,6 @@ table.no-border {
 main:not(.layout-resume):not(.layout-portfolio):not(.layout-cv) .column {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-// =============================================================================
-// Resume/Portfolio: Languages section – one row per language (same div)
-// =============================================================================
-.languages-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.languages-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.35rem;
-  margin-bottom: 0.35rem;
-  &:last-child { margin-bottom: 0; }
-}
-
-.languages-lang {
-  flex-shrink: 0;
-}
-
-// =============================================================================
-// Resume/Portfolio: keep footer below content instead of fixed at viewport bottom.
-// Theme uses position:absolute for footer; we use flex + static footer so the
-// footer sits under the main content and does not overlap when content is short.
-// =============================================================================
-@media screen {
-  main#_main.layout-resume,
-  main#_main.layout-portfolio {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  main#_main.layout-resume > article.page,
-  main#_main.layout-portfolio > article.page {
-    flex: 1 0 auto;
-  }
-  main#_main.layout-resume > footer.content,
-  main#_main.layout-portfolio > footer.content {
-    position: static;
-    margin-top: auto;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 1rem;
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
-  }
-}
-
-// =============================================================================
-// Resume/Portfolio/CV: contact row (basics + profiles) as 2 columns when width allows
-// Theme uses 86em for 2-col; we use a lower breakpoint so contact is 2-col earlier
-// =============================================================================
-@media screen and (min-width: 52em) {
-  body .layout-resume .columns.contact.columns-break,
-  body .layout-portfolio .columns.contact.columns-break,
-  body .layout-cv .columns.contact.columns-break {
-    > .column-3-5 {
-      width: 50%;
-    }
-    > .column-2-5 {
-      width: 50%;
-    }
-  }
-}
-
-// Same 2-column contact row in print; 1rem space above contact (mail) section
-@media print {
-  body .layout-resume .columns.contact,
-  body .layout-portfolio .columns.contact,
-  body .layout-cv .columns.contact {
-    margin-top: 1rem;
-  }
-  body .layout-resume .columns.contact.columns-break,
-  body .layout-portfolio .columns.contact.columns-break,
-  body .layout-cv .columns.contact.columns-break {
-    > .column-3-5 {
-      width: 50%;
-    }
-    > .column-2-5 {
-      width: 50%;
-    }
-  }
-}
-
-// =============================================================================
-// Print styles for PDF generation (resume/portfolio).
-// Override Hydejack defaults so that: (1) Pretendard is used consistently without
-// fallback to DejaVu/WenQuanYi, (2) layout and colors render reliably in print.
-// =============================================================================
-@media print {
-  html, body {
-    font-family: 'Pretendard' !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
-
-  // Force all text in resume/portfolio/cv to Pretendard (no system fallback fonts)
-  body .layout-resume,
-  body .layout-portfolio,
-  body .layout-cv {
-    *, p, span, a, h1, h2, h3, h4, h5, h6, li, dt, dd, .bc, .faded, .h3, .h4, header, section {
-      font-family: 'Pretendard' !important;
-    }
-    code, pre, kbd {
-      font-family: var(--code-font-family) !important;
-    }
-    [class*="icon-"], .symbol {
-      font-family: 'icomoon' !important;
-    }
-  }
-
-  // Hide unnecessary elements for PDF
-  .sidebar,
-  .menu-btn,
-  .nav-btn,
-  .search-input,
-  .giscus,
-  .footer-col,
-  #comments,
-  .screen-only,
-  .no-print {
-    display: none !important;
-  }
-
-  // Ensure content fills the page
-  .content {
-    margin: 0 !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
-  // Remove shadows and backgrounds for cleaner print
-  * {
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  // Link display in print - URLs are shown by default for business etiquette
-  // To hide URL for specific links, add .no-print-link class
-  a[href].no-print-link::after {
-    content: none !important;
-  }
-
-  // Page break controls
-  h1, h2, h3 {
-    page-break-after: avoid;
-    break-after: avoid-page;
-  }
-
-  section, article, .work-item, .education-item {
-    page-break-inside: avoid;
-    break-inside: avoid-page;
-  }
-}
-
-// Resume/CV print: compact font and spacing so content fits on ~2 pages.
-// Selectors use body prefix so they override _resume.scss print rules.
-@media print {
-  body .layout-resume,
-  body .layout-cv {
-    font-size: 0.75rem;
-  }
-
-  // Resume/CV only: all h2 get small top margin in print
-  body .layout-resume h2,
-  body .layout-cv h2 {
-    margin-top: 1.0rem !important;
-  }
-
-  body .layout-resume,
-  body .layout-portfolio,
-  body .layout-cv {
-    section {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    ul {
-      margin-bottom: 0.5rem;
-    }
-
-    // Contact section adjustments
-    .contact {
-      margin-top: 0.2rem;
-    }
-
-    // Avatar size for print
-    .avatar {
-      width: 8rem;
-      height: 8rem;
-    }
-
-    // Tag styles: hardcoded colors and !important so print/PDF matches screen
-    // and overrides _resume.scss print styles (work/skill tag classes).
-
-    // Work result tags (blue background)
-    .work-header-result {
-      background-color: #103B58 !important;
-      color: #ffffff !important;
-      border: 1px solid #103B58 !important;
-      print-color-adjust: exact !important;
-      -webkit-print-color-adjust: exact !important;
-    }
-
-    // Work role tags (maroon/accent background)
-    .work-header-role {
-      background-color: #680C2C !important;
-      color: #ffffff !important;
-      border: 1px solid #680C2C !important;
-      font-weight: 700 !important;
-      print-color-adjust: exact !important;
-      -webkit-print-color-adjust: exact !important;
-    }
-
-    // Work skill tags (border only)
-    .work-header-skill {
-      background-color: transparent !important;
-      color: #333333 !important;
-      border: 1px solid #666666 !important;
-    }
-
-    // Skill tags (regular)
-    .skill-tag {
-      background-color: transparent !important;
-      color: #333333 !important;
-      border: 1px solid #cccccc !important;
-    }
-
-    // Highlighted skill tags (maroon/accent background)
-    .skill-tag-highlight {
-      background-color: #680C2C !important;
-      color: #ffffff !important;
-      border: 1px solid #680C2C !important;
-      print-color-adjust: exact !important;
-      -webkit-print-color-adjust: exact !important;
-    }
-
-    // Soft skill tags (gray background)
-    .skill-tag-soft {
-      background-color: #666666 !important;
-      color: #ffffff !important;
-      border: 1px solid #666666 !important;
-      print-color-adjust: exact !important;
-      -webkit-print-color-adjust: exact !important;
-    }
-  }
-
-  // Portfolio only: print content columns – make Work (and other) section content flow in 2 columns
-  body.print-2col .layout-portfolio .column-3-0 {
-    columns: 2;
-    column-gap: 1.5rem;
-    column-fill: balance;
-  }
-  body.print-2col .layout-portfolio .column-3-0 section > .npb,
-  body.print-2col .layout-portfolio .column-3-0 section > h2:first-child {
-    column-span: all;
-  }
-  body.print-2col .layout-portfolio .column-3-0 .work-item,
-  body.print-2col .layout-portfolio .column-3-0 section > section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-}
-
-// Portfolio & Resume/CV: wrap each item in a thin rounded rect
-body .layout-portfolio .column-3-0 .work-item,
-body .layout-portfolio .column-3-0 section > section,
-body .layout-portfolio .column-3-0 blockquote.reference,
-body .layout-resume .work-item,
-body .layout-resume section > section,
-body .layout-resume blockquote.reference,
-body .layout-cv .work-item,
-body .layout-cv section > section,
-body .layout-cv blockquote.reference {
-  border: 1px solid color-mix(in srgb, var(--accent-color) 20%, transparent);
-  border-radius: 0.5rem;
-  background-color: transparent;
-  padding: 0.75rem 1rem;
-  margin-bottom: 0.25rem;
-}
-// First item: emphasize with same border color as background fill
-// Portfolio: first card is first section inside first major section (work has div.npb before .work-item)
-body .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
-body .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
-body .layout-portfolio .column-3-0 .work-item:first-child,
-body .layout-portfolio .column-3-0 section > section:first-child,
-body .layout-resume .column-3-5 > section:first-child > section:first-of-type,
-body .layout-resume .column-3-5 > section:first-child > .work-item:first-of-type,
-body .layout-resume .work-item:first-child,
-body .layout-resume section > section:first-child,
-body .layout-cv .column-3-5 > section:first-child > section:first-of-type,
-body .layout-cv .column-3-5 > section:first-child > .work-item:first-of-type,
-body .layout-cv .work-item:first-child,
-body .layout-cv section > section:first-child {
-  background-color: color-mix(in srgb, var(--accent-color) 7.5%, transparent);
-}
-// Remove inner top spacing (header mt2 etc.) so content starts at box top
-body .layout-portfolio .column-3-0 .work-item > header,
-body .layout-portfolio .column-3-0 section > section > header,
-body .layout-resume .work-item > header,
-body .layout-resume section > section > header,
-body .layout-cv .work-item > header,
-body .layout-cv section > section > header {
-  margin-top: 0 !important;
-}
-// Space above box from the second item onwards
-body .layout-portfolio .column-3-0 .work-item:not(:first-child),
-body .layout-portfolio .column-3-0 section > section:not(:first-child),
-body .layout-portfolio .column-3-0 blockquote.reference:not(:first-child),
-body .layout-resume .work-item:not(:first-child),
-body .layout-resume section > section:not(:first-child),
-body .layout-resume blockquote.reference:not(:first-child),
-body .layout-cv .work-item:not(:first-child),
-body .layout-cv section > section:not(:first-child),
-body .layout-cv blockquote.reference:not(:first-child) {
-  margin-top: 0.75rem;
-}
-body .layout-portfolio .column-3-0 section > section:last-child,
-body .layout-portfolio .column-3-0 .work-item:last-child,
-body .layout-portfolio .column-3-0 blockquote.reference:last-child,
-body .layout-resume section > section:last-child,
-body .layout-resume .work-item:last-child,
-body .layout-resume blockquote.reference:last-child,
-body .layout-cv section > section:last-child,
-body .layout-cv .work-item:last-child,
-body .layout-cv blockquote.reference:last-child {
-  margin-bottom: 0;
-}
-@media print {
-  body .layout-portfolio .column-3-0 .work-item,
-  body .layout-portfolio .column-3-0 section > section,
-  body .layout-portfolio .column-3-0 blockquote.reference,
-  body .layout-resume .work-item,
-  body .layout-resume section > section,
-  body .layout-resume blockquote.reference,
-  body .layout-cv .work-item,
-  body .layout-cv section > section,
-  body .layout-cv blockquote.reference {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-}
-
-// Resume/CV: certifications section – display small (when in right column)
-body .layout-resume section:has(h2#certificates) .certificates-item,
-body .layout-cv section:has(h2#certificates) .certificates-item {
-  font-size: 0.8125rem;
-  padding: 0.5rem 0.65rem;
-  margin-bottom: 0.5rem;
-}
-body .layout-resume section:has(h2#certificates) .certificates-item:not(:first-child),
-body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child) {
-  margin-top: 0.5rem;
-}
-
-// Sidebar username style
-.sidebar-about > .sidebar-title {
-  display: block;
-  
-  h1 {
-    margin: 0;
-    padding-bottom: 0;
-    
-    // Match the original h2 style from Hydejack
-    &.h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-  }
-}
-
-.sidebar-about .sidebar-username {
-  display: block;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-  font-weight: normal;
-  letter-spacing: 0.1em;
-  text-transform: lowercase;
-}
-
-.sidebar.invert .sidebar-about .sidebar-username {
-  color: rgba(32, 32, 32, 0.5);
-}
-
-// Portfolio/Resume/CV: add left padding so the first skill tag is not clipped
-// (skill-tags container uses negative margin and can cut off the leading tag).
-body .layout-portfolio .skills .skill-tags,
-body .layout-resume .skills .skill-tags,
-body .layout-cv .skills .skill-tags {
-  padding-left: 0.375rem;
-}
-
-// Work role/result header tags – bold and vertically centered with adjacent text
-// (inline-block pills use baseline alignment by default, which makes them look shifted down/up)
-.work-header-role,
-.work-header-result {
-  font-weight: 700 !important;
-  vertical-align: middle;
 }
 
 // =============================================================================
@@ -628,6 +108,7 @@ body.dark-mode {
       color: #fff !important;
     }
   }
+
   // First-item card border and background: subtle light tint for dark bg
   .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
   .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
@@ -640,7 +121,9 @@ body.dark-mode {
   }
 }
 
-// Footer: commit hash next to GitHub (small font, gray background)
+// =============================================================================
+// Footer: commit hash badge
+// =============================================================================
 footer .commit-rev {
   font-size: 0.85em;
   padding: 0.1em 0.35em;
@@ -649,128 +132,13 @@ footer .commit-rev {
   text-decoration: none;
 }
 
-// Category layout: grid/list view toggle
-// Put toggle on same line as page title (header), right-aligned
-.page:has(> .category-view-toggle) {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 0 1rem;
-
-  > header {
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-
-  > .category-view-toggle {
-    flex: 0 0 auto;
-    margin-top: 0.15rem; // align with title baseline
-    position: relative;
-    z-index: 2; // above grid cards (fill-card overlay) at wide viewports
-  }
-
-  > #view-grid,
-  > #view-list {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-// Collection layout: toggle on same line as title (all tag pages), use grid so it never wraps
-.page:has(> .collection-toolbar) {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-auto-rows: auto;
-  gap: 0 1rem;
-
-  > header {
-    grid-column: 1;
-    grid-row: 1;
-    min-width: 0;
-  }
-
-  > .collection-toolbar {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: start;
-    margin-top: 0.15rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  /* All other direct children (body content, grid, list) span full width in following rows */
-  > *:not(header):not(.collection-toolbar) {
-    grid-column: 1 / -1;
-  }
-}
-
-.collection-toolbar {
-  display: flex;
-  gap: 0.25rem;
-  position: relative;
-  z-index: 2;
-}
-
-.category-view-toggle {
-  display: flex;
-  gap: 0.25rem;
-  position: relative;
-  z-index: 2; // stay above grid fill-card overlays at all viewport widths
-}
-
-.category-view-btn {
-  padding: 0.35em 0.75em;
-  font-size: 0.9rem;
-  border: 1px solid var(--border-color, rgba(0, 0, 0, 0.2));
-  border-radius: 0.25em;
-  background: var(--body-bg, #fff);
-  color: var(--body-color, #111);
-  cursor: pointer;
-  transition: background 0.15s, border-color 0.15s;
-
-  &:hover {
-    background: var(--gray-bg, rgba(0, 0, 0, 0.06));
-  }
-
-  &.active {
-    background: var(--accent-color, #2a7ae2);
-    border-color: var(--accent-color, #2a7ae2);
-    color: var(--accent-fg, #fff);
-  }
-}
-
-// Tag-collection layout: disable only language switch (no /ko/ or /en/ variants for tag pages)
-body.layout-tag-collection {
-  // Navbar language switch button
-  #_lang-switch {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.45;
-  }
-
-  // Sidebar language links
-  #lang-en,
-  #lang-ko {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.45;
-  }
-}
-
-// Force color printing (for colored tags and backgrounds)
-@media print {
-  * {
-    print-color-adjust: exact !important;
-    -webkit-print-color-adjust: exact !important;
-  }
-}
-
-// Mobile (< $break-point-1): when the sidebar drawer is closed, hide all
-// sidebar-related spacing so content fills the full viewport width.
+// =============================================================================
+// Mobile: hide sidebar peek strip and collapse drawer
 //  - body::before: the fixed left peek strip (.5rem wide, from _base.pre.scss)
 //  - hy-drawer height: collapsed to 0 so no 100vh blank area below content
 //  - --hy-drawer-peek-width: 0 removes the content offset; swipe still works
 //    because drawer.js getRange() uses a fixed [0,150] range on mobile
+// =============================================================================
 @media screen and (max-width: $break-point-1) {
   body::before {
     display: none !important;
@@ -783,3 +151,15 @@ body.layout-tag-collection {
     --hy-drawer-peek-width: 0px;
   }
 }
+
+// =============================================================================
+// Components
+// =============================================================================
+@import "components/inline-cards";
+@import "components/resume-portfolio";
+@import "components/print-styles";
+@import "components/category-view";
+@import "components/sidebar-custom";
+@import "components/roadmap";
+@import "components/gantt";
+@import "components/expertise";

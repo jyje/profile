@@ -6,15 +6,25 @@ cover: true
 
 > 🇰🇷 한국어 버전은 [여기](/ko)에서 확인할 수 있습니다.
 
-I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea.
-I work as an **AI Platform Engineer** at [Hyundai AutoEver]{:.heading.flip-title}, where I build and operate AI platforms that support automotive software development.
+A mid-level developer with **6 years of experience**, with the following expertise:
 
-My focus areas include **AI applications, LLM/MLOps platforms, hybrid Kubernetes clusters, and cloud-native AI/ML infrastructure**.
+🐳 **GenAI Development** — I can implement and operate GenAI workloads and LLMOps platforms in cloud-native environments.  
+🤝 **Team Leading** — I can lead collaboration, architecture, and platform engineering in projects with teams of up to 10 people.  
+🧑‍🔧 **Architecture** — I can develop and operate hybrid Kubernetes clusters for high performance, high availability, and GPU optimization.  
+🧑‍🎓 **Technical Knowledge** — I leverage experience as a computer vision and automotive research engineer to contribute to LLM, ML, and DevOps decision-making.
 
-Previously, I served as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title} (AR and digital twins), with a research background in computer vision, autonomous driving, and AI.
+I seek challenges across diverse fields including automotive technology and AI. If you have a team where I can contribute, feel free to reach out. For more details, please see my [Portfolio]{:.heading.flip-title}.
 
 ```card
 ---
+- title: Résumé
+  icon: icon-clipboard
+  description: Two-page career summary with experience and achievements.
+  link: /en/resume
+- title: Portfolio
+  icon: icon-briefcase
+  description: Project-focused career document.
+  link: /en/portfolio
 - title: Demo
   icon: icon-rocket
   description: Live demos (Raspberry Pi cluster).
@@ -26,11 +36,11 @@ Previously, I served as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-t
 - title: Achievements
   icon: icon-trophy
   description: Selected professional activities and works.
-  link: /tags/achievements
+  link: /en/posts/#tags=achievements
 - title: Certifications
   icon: icon-certificate
   description: Professional certifications and credentials.
-  link: /tags/certifications
+  link: /en/posts/#tags=certifications
 - title: Tags
   icon: icon-price-tags
   description: Browse content by tags.
@@ -51,37 +61,117 @@ For inquiries or collaboration, please contact me via [LinkedIn]{:.heading}.
 
 ## 💼 Career Details
 
-### 1. Timeline
+### 1. Organizations & Roles
 
-A brief summary of my career in chronological order:
+I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea.
+I work as an **AI Platform Engineer** at [Hyundai AutoEver]{:.heading.flip-title}, building and operating AI platforms that support automotive software development.
 
-<div class="timeline">
-  <style>
-    .timeline-header {
-      border: 1.5px solid var(--accent-color-two);
-      border-radius: .3rem;
-      display: inline-block;
-      margin: .25rem .125rem;
-      padding: .05rem .5rem;
-      color: #FFF;
-      background-color: var(--accent-color-two);
-      font-weight: 600;
-    }
-  </style>
-  <ul>
-    <li><span class="timeline-header">2025 - Present</span> Engineering in <b>AI Platforms</b></li>
-    <li><span class="timeline-header">2023 - Present</span> Engineering in <b>ML API, ML Pipelines</b></li>
-    <li><span class="timeline-header">2022 - Present</span> Engineering in <b>MLOps, DevOps, Hybrid Clusters</b></li>
-    <li><span class="timeline-header">2018 - 2023</span> Research in <b>Visual-SLAM, SfM and Digital Twins</b></li>
-    <li><span class="timeline-header">2012 - 2020</span> Research in <b>Automotive Computer Vision</b></li>
-    <li><span class="timeline-header">2012 - 2018</span> Research in <b>FPGA for Advanced Driver's Assistance Systems</b></li>
-    <li><span class="timeline-header">2008 - 2018</span> Research in <b>Digital Signal Processing and Machine Learning</b></li>
-    <li><span class="timeline-header">2008 - 2012</span> Study in <b>Analog and Digital Communications</b></li>
-  </ul>
-</div>
+My focus areas include **AI applications, LLM/MLOps platforms, hybrid Kubernetes clusters, and cloud-native AI/ML infrastructure**. Previously, I served as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title} (AR and digital twins), with a research background in computer vision, autonomous driving, and AI.
+
+```roadmap
+---
+- title: Hyundai AutoEver
+  img: /assets/img/logos/hae.png
+  current: true
+  period: 2025 – Present
+  subtitle: Lead AI Platform Engineer
+  description: Agentic AI Development Group Building · Automotive AI Harness Development & Architecture · Knowledge-based & Domain-specific Tool Development · LLM Serving & Optimization
+- title: MAXST Co., Ltd.
+  img: /assets/img/logos/maxst.png
+  period: 2021 – 2024
+  subtitle: Lead MLOps / DevOps Engineer
+  description: MLOps & LLMOps · Hybrid Clusters (AWS EKS + On-Premise) · Digital Twins
+- title: POSTECH (Pohang Univ. of Science & Technology)
+  img: /assets/img/logos/postech.png
+  period: 2012 – 2020
+  subtitle: Ph.D. Integrated, Electrical Engineering
+  description: Computer Vision · Autonomous ADAS · Visual-SLAM & SfM · FPGA
+- title: Kumoh National Institute of Technology
+  img: /assets/img/logos/kit.png
+  period: 2008 – 2012
+  subtitle: B.S. Electronic Communication Engineering
+  description: GPA 4.3/4.5 · Communications & DSP · LED Visible Light Thesis
+---
+```
+
+### 2. Career by Expertise
+
+```expertise
+---
+phases:
+  - id: 1
+    label: Academic Foundation
+    label_ko: 학술 역량
+  - id: 2
+    label: Applied Research
+    label_ko: 응용 연구
+  - id: 3
+    label: Field Engineering
+    label_ko: 엔지니어링 실무
+  - id: 4
+    label: Current
+    label_ko: 현재
+items:
+  - label: Comm. & DSP
+    from: 2008
+    to: 2018
+    phase: 1
+    skills: Signal Processing · Analog/Digital Comms · MATLAB
+  - label: Machine Learning
+    from: 2008
+    to: 2022
+    phase: 1
+    skills: Regression · Classification · Deep Learning
+  - label: Computer Vision
+    from: 2012
+    to: 2020
+    phase: 1
+    skills: Image Processing · CNN · Object Detection
+  - label: FPGA & ADAS
+    from: 2012
+    to: 2018
+    phase: 2
+    skills: Parallel Computing · SoC · VHDL · Real-time
+  - label: Autonomous Driving
+    from: 2012
+    to: 2020
+    phase: 2
+    skills: SLAM · Path Planning · Sensor Fusion
+  - label: Visual-SLAM & SfM
+    from: 2018
+    to: 2024
+    phase: 2
+    skills: 3D Reconstruction · Mapping · Localization
+  - label: Digital Twins & AR
+    from: 2018
+    to: 2024
+    phase: 2
+    skills: AR Platform · Scene Understanding · SDK
+  - label: MLOps & DevOps
+    from: 2021
+    to: 2026
+    phase: 3
+    skills: CI/CD · Kubernetes · Model Deployment
+  - label: Hybrid Clusters
+    from: 2022
+    to: 2026
+    phase: 3
+    skills: AWS EKS · On-Premise · GitOps · IaC
+  - label: ML API & Pipelines
+    from: 2023
+    to: 2026
+    phase: 3
+    skills: Data Pipelines · RAG · LLMOps · Vector DB
+  - label: AI Platforms
+    from: 2025
+    to: 2026
+    phase: 4
+    skills: Agentic AI · MCP · LLM Serving & Optimization
+---
+```
 
 
-### 2. Career Documents
+### 3. Career Documents
 
 Detailed career information is available in:
 
@@ -91,7 +181,7 @@ Detailed career information is available in:
 All documents are available in English and Korean and can be printed or exported to PDF.
 
 
-### 3. Portfolio on This Site
+### 4. Portfolio on This Site
 
 More on my projects and achievements:
 
@@ -100,21 +190,15 @@ More on my projects and achievements:
 - [Articles]{:.heading.flip-title}: All portfolio content
 
 
-<div style="margin-top: 5rem;">
-  {% include components/dingbat.html %}
-</div>
-
-
 <!-- profile -->
 [Jeayoung Jeon]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
 [Jeayoung Jeon (전제영)]: https://www.linkedin.com/in/jyje "LinkedIn Profile"
-[Profile]: /en/profile "my-profile --verbose"
 
 <!-- resume -->
-[Résumé]: /en/profile/resume "my-profile resume"
+[Résumé]: /en/resume "my-profile resume"
 
 <!-- portfolio -->
-[Portfolio]: /en/profile/portfolio "my-profile portfolio"
+[Portfolio]: /en/portfolio "my-profile portfolio"
 
 [Articles]: /en/posts
 [Certifications]: /certifications
@@ -130,8 +214,6 @@ More on my projects and achievements:
 [Demo]: https://app.jyje.online "Demo"
 [Hyundai AutoEver]: https://www.linkedin.com/company/hyundai-autoever "LinkedIn profile of Hyundai AutoEver"
 [LinkedIn]: https://www.linkedin.com/in/jyje "LinkedIn profile of Jeayoung Jeon"
-
-{% include components/author.html author=site.data.authors.jyje heading="About Author" %}
 
 <div style="margin-top: 7rem;">
   {% include components/dingbat.html %}

@@ -343,6 +343,23 @@ layout: page
   (function () {
     var selectedTags = new Set();
 
+    function tagsFromHash() {
+      var h = location.hash;
+      if (!h || h.indexOf('tags=') === -1) return [];
+      var raw = h.replace(/^#tags=/, '');
+      return raw.split(',').map(function(t) { return t.trim(); }).filter(Boolean);
+    }
+
+    function syncHash() {
+      var arr = [];
+      selectedTags.forEach(function(t) { arr.push(t); });
+      if (arr.length === 0) {
+        history.replaceState(null, '', location.pathname + location.search);
+      } else {
+        history.replaceState(null, '', '#tags=' + arr.join(','));
+      }
+    }
+
     function filterPosts() {
       ['grid', 'list'].forEach(function (view) {
         var container = document.getElementById('view-' + view);
@@ -367,7 +384,19 @@ layout: page
         var tag = btn.getAttribute('data-tag');
         btn.classList.toggle('active', tag === '' ? selectedTags.size === 0 : selectedTags.has(tag));
       });
+      syncHash();
     }
+
+    /* Restore from URL hash on load */
+    tagsFromHash().forEach(function(t) { selectedTags.add(t); });
+    if (selectedTags.size > 0) filterPosts();
+
+    /* Restore on browser back/forward */
+    window.addEventListener('hashchange', function() {
+      selectedTags.clear();
+      tagsFromHash().forEach(function(t) { selectedTags.add(t); });
+      filterPosts();
+    });
 
     document.querySelectorAll('.tag-filter-btn').forEach(function (btn) {
       btn.addEventListener('click', function (e) {
