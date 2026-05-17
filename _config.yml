@@ -50,6 +50,10 @@ sidebar_show_home:     false
 menu:
   - title:             Home
     url:               /
+  - title:             Résumé
+    url:               /en/resume
+  - title:             Portfolio
+    url:               /en/portfolio
   - title:             Posts
     url:               /en/posts
 
@@ -57,12 +61,20 @@ menu:
 menu_en:
   - title:             Home
     url:               /
+  - title:             Résumé
+    url:               /en/resume
+  - title:             Portfolio
+    url:               /en/portfolio
   - title:             Posts
     url:               /en/posts
 
 menu_ko:
   - title:             Home
     url:               /ko
+  - title:             Résumé
+    url:               /ko/resume
+  - title:             Portfolio
+    url:               /ko/portfolio
   - title:             Posts
     url:               /ko/posts
 
@@ -220,10 +232,13 @@ giscus:
 # tinyletter:            <username>
 
 # Setting a ChannelIO ID will enable the chat widget.
+# Active only when JEKYLL_ENV=production (GitHub Actions).
+# Set enabled: false to disable even in production.
 # https://docs.channel.io/help/en
 channel_io:
   plugin_key:  e99f88b7-5722-4f32-8771-08cff75455ee
   language:    en # en, ko, ja
+  enabled:     true
 
 
 # Hydejack Settings

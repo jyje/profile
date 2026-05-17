@@ -34,7 +34,7 @@ layout: compress
   {% include body/index.html %}
 </body>
 
-{% if site.channel_io %}
+{% if site.channel_io and site.channel_io.plugin_key and site.channel_io.enabled and jekyll.environment == 'production' %}
 <script>
 (function() {
   var w = window;
