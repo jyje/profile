@@ -33,10 +33,10 @@ pdf_options:
   prefer_css_page_size: true
   display_header_footer: false
   margin:
-    top: 16mm
-    right: 16mm
-    bottom: 16mm
-    left: 16mm
+    top: 8mm
+    right: 8mm
+    bottom: 8mm
+    left: 8mm
 
 # Browser viewport for rendering
 viewport:

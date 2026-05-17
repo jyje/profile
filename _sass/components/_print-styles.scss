@@ -4,6 +4,7 @@
 // =============================================================================
 
 @media print {
+
   // ── Force color printing (tags, backgrounds) ─────────────────────────────
   * {
     print-color-adjust: exact !important;
@@ -13,7 +14,8 @@
   // ── Font and base ─────────────────────────────────────────────────────────
   // Override Hydejack defaults: use Pretendard consistently without
   // fallback to DejaVu/WenQuanYi; layout and colors render reliably in print.
-  html, body {
+  html,
+  body {
     font-family: 'Pretendard' !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,13 +26,37 @@
   body .layout-resume,
   body .layout-portfolio,
   body .layout-cv {
-    *, p, span, a, h1, h2, h3, h4, h5, h6, li, dt, dd, .bc, .faded, .h3, .h4, header, section {
+
+    *,
+    p,
+    span,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    dt,
+    dd,
+    .bc,
+    .faded,
+    .h3,
+    .h4,
+    header,
+    section {
       font-family: 'Pretendard' !important;
     }
-    code, pre, kbd {
+
+    code,
+    pre,
+    kbd {
       font-family: var(--code-font-family) !important;
     }
-    [class*="icon-"], .symbol {
+
+    [class*="icon-"],
+    .symbol {
       font-family: 'icomoon' !important;
     }
   }
@@ -61,18 +87,160 @@
     text-shadow: none !important;
   }
 
-  // Link URLs: hidden for specific links via .no-print-link class
-  a[href].no-print-link::after {
+  // Hide ALL link URLs in print — hyperlink style is kept, text URL is not
+  a[href]::after {
     content: none !important;
   }
 
+  // Certifications: grouped by org, comma-separated within group ───────────
+  body .layout-resume section:has(h2#certificates),
+  body .layout-cv section:has(h2#certificates) {
+
+    // Group label — static since all current certs are from Linux Foundation
+    &::before {
+      content: 'The Linux Foundation:' !important;
+      display: block !important;
+      font-size: 0.65rem !important;
+      font-weight: 700 !important;
+      color: var(--gray-text, #555) !important;
+      margin-bottom: 0.15rem !important;
+    }
+  }
+
+  body .layout-resume section:has(h2#certificates) .certificates-item,
+  body .layout-cv section:has(h2#certificates) .certificates-item {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline !important;
+
+    /* header inside cert item must also be inline */
+    header {
+      display: inline !important;
+    }
+
+    p.from-to {
+      display: none !important;
+    }
+
+    /* font-size: 0 hides "from OrgName" text nodes without leaving space */
+    h3.h4,
+    h4,
+    h5 {
+      display: inline !important;
+      font-size: 0 !important;
+
+      a {
+        color: var(--body-color, #111827) !important;
+        font-weight: 600 !important;
+        font-size: 0.72rem !important;
+      }
+    }
+
+    &::after {
+      content: ', ' !important;
+      color: var(--body-color, #333) !important;
+      font-size: 0.72rem !important;
+    }
+
+    &:last-child::after {
+      content: '' !important;
+    }
+  }
+
+  // ── Contact info: icons + text, left-aligned, compact spacing ───────────
+  body .layout-resume .columns.contact,
+  body .layout-cv .columns.contact {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    overflow: visible !important;
+    /* reset Hydejack negative column margins */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    width: auto !important;
+
+    /* Each dl becomes its own flex row — avoids display:contents print bug */
+    dl.column {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      flex: 0 0 auto !important;
+      width: auto !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      float: none !important;
+    }
+
+    dt {
+      display: inline-flex !important;
+      align-items: center !important;
+      flex-shrink: 0 !important;
+      margin: 0 1px 0 3px !important;
+      padding: 0 !important;
+      width: 1.4rem;
+    }
+
+    dd {
+      display: inline-flex !important;
+      align-items: center !important;
+      margin: 0 8px 0 0 !important;
+      padding: 0 !important;
+      width: auto !important;
+      white-space: nowrap !important;
+    }
+  }
+
+  // ── Abstract: reduce gap between header and abstract text ────────────────
+  body .layout-resume article>.note.abstract,
+  body .layout-cv article>.note.abstract {
+    margin-top: 0.4rem !important;
+    padding-top: 0 !important;
+  }
+
+  // ── Resume/CV header: subtitle on same line as title, divider removed ────
+  body .layout-resume header,
+  body .layout-cv header {
+    display: flex !important;
+    align-items: baseline !important;
+    flex-wrap: wrap !important;
+    gap: 0 0.65em !important;
+
+    h1.page-title {
+      flex-shrink: 0 !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    p.subline {
+      flex: 1 1 auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .hr,
+    hr {
+      display: none !important;
+    }
+  }
+
   // ── Page breaks ───────────────────────────────────────────────────────────
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     page-break-after: avoid;
     break-after: avoid-page;
   }
 
-  section, article, .work-item, .education-item {
+  section,
+  article,
+  .work-item,
+  .education-item {
     page-break-inside: avoid;
     break-inside: avoid-page;
   }
@@ -83,13 +251,15 @@
   body .layout-cv .columns.contact {
     margin-top: 1rem;
   }
+
   body .layout-resume .columns.contact.columns-break,
   body .layout-portfolio .columns.contact.columns-break,
   body .layout-cv .columns.contact.columns-break {
-    > .column-3-5 {
+    >.column-3-5 {
       width: 50%;
     }
-    > .column-2-5 {
+
+    >.column-2-5 {
       width: 50%;
     }
   }
@@ -98,7 +268,7 @@
   // Selectors use body prefix to override _resume.scss print rules.
   body .layout-resume,
   body .layout-cv {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
   }
 
   body .layout-resume h2,
@@ -125,6 +295,18 @@
     .avatar {
       width: 8rem;
       height: 8rem;
+    }
+
+    // Tighten work/section item boxes for 1-page fit
+    .work-item,
+    section>section {
+      padding: 0.45rem 0.75rem !important;
+      margin-bottom: 0.2rem !important;
+    }
+
+    .work-item:not(:first-child),
+    section>section:not(:first-child) {
+      margin-top: 0.45rem !important;
     }
 
     // ── Tag colors: hardcoded for PDF accuracy ─────────────────────────────
@@ -182,25 +364,27 @@
     column-gap: 1.5rem;
     column-fill: balance;
   }
-  body.print-2col .layout-portfolio .column-3-0 section > .npb,
-  body.print-2col .layout-portfolio .column-3-0 section > h2:first-child {
+
+  body.print-2col .layout-portfolio .column-3-0 section>.npb,
+  body.print-2col .layout-portfolio .column-3-0 section>h2:first-child {
     column-span: all;
   }
+
   body.print-2col .layout-portfolio .column-3-0 .work-item,
-  body.print-2col .layout-portfolio .column-3-0 section > section {
+  body.print-2col .layout-portfolio .column-3-0 section>section {
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
   // ── Item card color-adjust ────────────────────────────────────────────────
   body .layout-portfolio .column-3-0 .work-item,
-  body .layout-portfolio .column-3-0 section > section,
+  body .layout-portfolio .column-3-0 section>section,
   body .layout-portfolio .column-3-0 blockquote.reference,
   body .layout-resume .work-item,
-  body .layout-resume section > section,
+  body .layout-resume section>section,
   body .layout-resume blockquote.reference,
   body .layout-cv .work-item,
-  body .layout-cv section > section,
+  body .layout-cv section>section,
   body .layout-cv blockquote.reference {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
