@@ -6,14 +6,17 @@ cover: true
 
 > 🇰🇷 한국어 버전은 [여기](/ko)에서 확인할 수 있습니다.
 
+I'm **Jeayoung Jeon [전제영]**, an AI Platform Engineer based in Seoul, South Korea.
+
+I develop and operate an AI platform that supports automotive software development at [Hyundai AutoEver]{:.heading.flip-title}.
 A mid-level developer with **6 years of experience**, with the following expertise:
 
-🐳 **GenAI Development** — I can implement and operate GenAI workloads and LLMOps platforms in cloud-native environments.  
-🤝 **Team Leading** — I can lead collaboration, architecture, and platform engineering in projects with teams of up to 10 people.  
-🧑‍🔧 **Architecture** — I can develop and operate hybrid Kubernetes clusters for high performance, high availability, and GPU optimization.  
-🧑‍🎓 **Technical Knowledge** — I leverage experience as a computer vision and automotive research engineer to contribute to LLM, ML, and DevOps decision-making.
+- 🐳 **GenAI Development** — I can implement and operate GenAI workloads and LLMOps platforms in cloud-native environments.
+- 🤝 **Team Leading** — I can build and lead collaboration, architecture, and platform engineering groups in projects with teams of up to 10 people.
+- 🧑‍🔧 **Architecture** — I can develop and operate hybrid Kubernetes clusters for high performance, high availability, and GPU optimization.
+- 🧑‍🎓 **Technical Knowledge** — I leverage experience as a computer vision and automotive research engineer to contribute to LLM, ML, and DevOps decision-making.
 
-I seek challenges across diverse fields including automotive technology and AI. If you have a team where I can contribute, feel free to reach out. For more details, please see my [Portfolio]{:.heading.flip-title}.
+I seek challenges across diverse fields including AI harness and platform. If you have a team where I can contribute, feel free to reach out. For more details, please see my [Portfolio]{:.heading.flip-title}.
 
 ```card
 ---
@@ -62,9 +65,6 @@ For inquiries or collaboration, please contact me via [LinkedIn]{:.heading}.
 ## 💼 Career Details
 
 ### 1. Organizations & Roles
-
-I'm **Jeayoung Jeon [전제영]**, a software engineer based in Seoul, South Korea.
-I work as an **AI Platform Engineer** at [Hyundai AutoEver]{:.heading.flip-title}, building and operating AI platforms that support automotive software development.
 
 My focus areas include **AI applications, LLM/MLOps platforms, hybrid Kubernetes clusters, and cloud-native AI/ML infrastructure**. Previously, I served as an **MLOps/DevOps Engineer** at [MAXST]{:.heading.flip-title} (AR and digital twins), with a research background in computer vision, autonomous driving, and AI.
 
@@ -171,23 +171,9 @@ items:
 ```
 
 
-### 3. Career Documents
+### 3. About This Site
 
-Detailed career information is available in:
-
-- [Résumé]{:.heading.flip-title}: Two-page summary (experience, education, achievements, certifications)
-- [Portfolio]{:.heading.flip-title}: Project-focused career document
-
-All documents are available in English and Korean and can be printed or exported to PDF.
-
-
-### 4. Portfolio on This Site
-
-More on my projects and achievements:
-
-- [Works]{:.heading.flip-title}: Work and project outcomes
-- [Certifications]{:.heading.flip-title}: Certifications and credentials
-- [Articles]{:.heading.flip-title}: All portfolio content
+This site is my professional profile page. It contains career documents such as [Résumé]{:.heading.flip-title} and [Portfolio]{:.heading.flip-title}, [Posts]{:.heading.flip-title} covering technical topics and experience, and records of [Certifications]{:.heading.flip-title}.
 
 
 <!-- profile -->
@@ -200,8 +186,8 @@ More on my projects and achievements:
 <!-- portfolio -->
 [Portfolio]: /en/portfolio "my-profile portfolio"
 
-[Articles]: /en/posts
-[Certifications]: /certifications
+[Posts]: /en/posts
+[Certifications]: /en/posts/#tags=certifications
 [Works]: /works
 
 [Blog]: https://blog.jyje.online "My blog"

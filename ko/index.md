@@ -2,17 +2,20 @@
 layout: welcome
 title: jyje.online
 cover: true
-permalink: /ko/
+permalink: /ko
 ---
 
 > 🇬🇧 You can check the English version [here](/).
 
+저는 서울에서 활동하는 **AI 플랫폼 엔지니어 전제영([Jeayoung Jeon])**입니다.
+
+[현대오토에버]{:.heading.flip-title}에서 차량 소프트웨어 개발을 지원하는 AI 플랫폼을 개발·운영하고 있습니다.
 **경력 6년차의 중간급 개발자**이며, 다음의 전문성을 가지고 있습니다:
 
-🐳 **GenAI 개발** — 클라우드 네이티브 환경의 GenAI 워크로드와 LLMOps 플랫폼을 구현/운영할 수 있습니다.  
-🤝 **팀 리딩** — 10인 내외 팀 프로젝트에서 협업, 아키텍트 및 플랫폼 엔지니어링을 리딩할 수 있습니다.  
-🧑‍🔧 **아키텍트** — 고성능, 고가용성, GPU 최적화를 위한 하이브리드 쿠버네티스 클러스터를 개발/운영할 수 있습니다.  
-🧑‍🎓 **기술지식** — 컴퓨터비전, 차량기술 연구원 경험을 활용하여 LLM, ML, DevOps 관련 의사 결정에 기여할 수 있습니다.
+- 🐳 **GenAI 개발** — 클라우드 네이티브 환경의 GenAI 워크로드와 LLMOps 플랫폼을 구현/운영할 수 있습니다.  
+- 🤝 **팀 리딩** — 10인 내외 팀 프로젝트에서 협업, 아키텍트 및 플랫폼 엔지니어링 그룹을 빌딩/리딩할 수 있습니다.  
+- 🧑‍🔧 **아키텍트** — 고성능, 고가용성, GPU 최적화를 위한 하이브리드 쿠버네티스 클러스터를 개발/운영할 수 있습니다.  
+- 🧑‍🎓 **기술지식** — 컴퓨터비전, 차량기술 연구원 경험을 활용하여 LLM, ML, DevOps 관련 의사 결정에 기여할 수 있습니다.
 
 차량기술 및 AI를 포함한 다양한 분야의 도전을 꿈꾸고 있습니다. 기여할 수 있는 팀이 있다면 편하게 연락 부탁드립니다. 자세한 경력은 [포트폴리오]{:.heading.flip-title}를 참고해 주세요.
 
@@ -66,9 +69,6 @@ permalink: /ko/
 ## 💼 상세 경력
 
 ### 1. 조직별 경력 및 역할
-
-저는 서울에서 활동하는 **AI 플랫폼 엔지니어 전제영 [Jeayoung Jeon]**입니다.
-[현대오토에버]{:.heading.flip-title}에서 차량 소프트웨어 개발을 지원하는 AI 플랫폼을 개발·운영하고 있습니다.
 
 현재 몰입하고 있는 분야는 **AI 애플리케이션, LLM/MLOps 플랫폼, 하이브리드 Kubernetes 클러스터, 클라우드 네이티브 AI/ML 인프라**입니다. 이전에는 **AR/디지털 트윈** 전문 기업 [MAXST]{:.heading.flip-title}에서 **MLOps/DevOps 엔지니어**로 근무하였으며, 컴퓨터 비전·자율주행·AI 분야의 연구 경험을 보유하고 있습니다.
 
@@ -175,23 +175,9 @@ items:
 ```
 
 
-### 3. 경력 문서
+### 3. 이 사이트에 대해
 
-제 경력에 대한 자세한 내용은 다음 문서에서 확인할 수 있습니다:
-
-- [이력서]{:.heading.flip-title}: 2페이지로 요약된 경력 문서 (이력, 학업, 성과, 자격 등)
-- [포트폴리오]{:.heading.flip-title}: 프로젝트 중심으로 기술된 최근 경력 문서
-
-위 모든 문서는 영어, 한국어로 각각 작성하였고 인쇄 및 PDF로 출력할 수 있습니다.
-
-
-### 4. 포트폴리오 문서
-
-이 사이트에서는 제 프로젝트와 성과들에 대한 자세한 내용을 확인할 수 있습니다:
-
-- [Works]{:.heading.flip-title}: 업무 및 프로젝트 성과
-- [Certifications]{:.heading.flip-title}: 인증 및 자격증
-- [Articles]{:.heading.flip-title}: 모든 포트폴리오 문서
+이 사이트는 저의 전문 프로필 페이지입니다. [이력서]{:.heading.flip-title}와 [포트폴리오]{:.heading.flip-title} 등 경력 문서, 기술과 경험을 담은 [포스트]{:.heading.flip-title}, 그리고 [자격증]{:.heading.flip-title} 기록 등을 담고 있습니다.
 
 
 <div style="margin-top: 5rem;">
@@ -209,8 +195,8 @@ items:
 <!-- portfolio -->
 [포트폴리오]: /ko/portfolio "my-profile portfolio --korean"
 
-[Articles]: /en/posts
-[Certifications]: /certifications
+[포스트]: /ko/posts
+[자격증]: /ko/posts/#tags=certifications
 [Works]: /works
 
 [Blog]: https://blog.jyje.online "My blog"
