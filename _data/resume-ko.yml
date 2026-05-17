@@ -7,7 +7,7 @@ basics:
   label: "AI Platform Engineer"
   # picture: "/assets/img/profile/jyje-o2024.jpg"
   email: "jyjeon@outlook.com"
-  linkedin: "jyje"
+  # linkedin: "jyje"  # moved to profiles for ordering
   website: "https://jyje.online"
   # github: "jyje"
   # googlescholar: "gwCPQM8AAAAJ"
@@ -18,28 +18,24 @@ basics:
     countryCode: "" # "KR"
     region: "" # "California"
   profiles:
+    - network: LinkedIn
+      username: LinkedIn
+      url: https://www.linkedin.com/in/jyje
     - network: Github
       username: Github
       url: http://github.com/jyje
-    - network: StackShare
-      username: StackShare
-      url: https://stackshare.io/jyje/jyje-pro-stack
+    # - network: StackShare
+    #   username: StackShare
+    #   url: https://stackshare.io/jyje/jyje-pro-stack
   contents:
-    skills:
-      note: "제 스킬 중 현업에 바로 쓸 수 있는 것은 강조하였습니다."
+    # skills:
+    #   note: "제 스킬 중 현업에 바로 쓸 수 있는 것은 강조하였습니다."
     publications:
       note: "제 논문 목록은 [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)에서 확인할 수 있습니다."
     resume-ko:
       title: 이력서
       abstract: >
-        저는 서울에서 활동하는 **AI 플랫폼 엔지니어** 전제영[Jeayoung Jeon]입니다. 경력 6년차의 중간급 개발자이며, 다음의 전문성을 가지고 있습니다:
-
-          - 🐳 **GenAI 개발:** 클라우드 네이티브 환경의 **GenAI 워크로드**와 **LLMOps 플랫폼**을 구현/운영할 수 있습니다.
-          - 🤝 **팀 리딩:** 10인 내외 팀 프로젝트에서 **협업, 아키텍트 및 플랫폼 엔지니어링**을 리딩할 수 있습니다.
-          - 🧑‍🔧 **아키텍트:** **고성능**, **고가용성**, **GPU 최적화**를 위한 **하이브리드 쿠버네티스 클러스터**를 개발/운영할 수 있습니다.
-          - 🧑‍🎓 **기술지식:** **컴퓨터비전, 차량기술** 연구원 경험을 활용하여 **LLM, ML, DevOps** 관련 의사 결정에 기여할 수 있습니다.
-        
-        저는 **차량기술** 및 **AI**를 포함한 다양한 분야의 도전을 꿈꾸고 있습니다. 제가 기여할 수 있는 팀이 있다면 편하게 연락 부탁드립니다.
+        현대오토에버 AI 플랫폼 리드 엔지니어 · 경력 6년 · GenAI, LLMOps, 하이브리드 Kubernetes · 차량기술·AI 분야 기회 모색 중.
         자세한 경력은 [**포트폴리오**](https://jyje.online/ko/portfolio)를 참고해 주세요.
 
 work:
@@ -78,27 +74,10 @@ work:
         - header: SRE
           content: >
             웹 서비스 안정성 엔지니어링과 컴퓨터비전/머신러닝 워크로드 안정성 엔지니어링 담당
-  -
-    company: "POSTECH"
-    position: "🧑‍🎓 Graduate Student Researcher [대학원 연구원, 컴퓨터 비전 전공]"
-    website: "https://eee.postech.ac.kr/"
-    startDate: "2012-03-01"
-    endDate: "2020-08-28"
-    roles:
-      description: >
-        통합박사과정 at 포항공과대학교 전기전자공학과
-      items:
-        - header: Computer Vision
-          content: >
-            고성능/고효율의 컴퓨터 비전 알고리즘을 위한 하이퍼파라미터 추정 연구
-        - header: Automotives
-          content: >
-            컴퓨터 비전 기술을 이용한 차량자율주행 기술 (ADAS, SLAM) 연구;
-            자율주행기술 및 인재양성을 지원하는 국가과제 다수 참여
-        - header: FPGA
-          content: >
-            실시간 동시 행렬계산을 이용한 컴퓨터 비전 및 머신러닝 알고리즘 효율적 구현;
-            GPU/NPU 가속을 위한 단일칩 시스템 (SoC) 개발
+  # -
+  #   company: "POSTECH"  — 연구 경험은 Skills에 표시 (Computer Vision, FPGA, SLAM)
+  #   startDate: "2012-03-01"
+  #   endDate: "2020-08-28"
   # -
   #   company: "GIST"
   #   position: "Undergraduate Internship"
@@ -120,7 +99,7 @@ education:
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    thesis: "실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법"
+    # thesis: "실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법"
     # courses:
     #   - Advanced Driver Assistance Systems (ADAS)
     #   - Simultaneous Localization and Mapping (SLAM)
@@ -133,7 +112,7 @@ education:
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    thesis: "LED 조명을 이용한 수중 환경에서의 가시광 통신 연구, 2011"
+    # thesis: "LED 조명을 이용한 수중 환경에서의 가시광 통신 연구, 2011"
     # courses:
     #   - Digital Signal Processing
     #   - Visual Light Communication
@@ -159,30 +138,18 @@ skills:
     name: DevOps & SRE
     keywords:
       - Kubernetes*
-      - On-Premise*
-      - AWS EKS*
-      - GCP GKE
       - Hybrid Clusters*
-      - ARM64*
+      - AWS EKS*
       - IaC*
-      - Kubespray*
-      - Terraform*
-      - Ansible*
-      - Istio*
       - Grafana Stack*
-      - Karpenter*
+      - Istio*
   -
-    name: CI/CD/CT/CT
+    name: CI/CD
     keywords:
       - Argo Projects*
-      - Bitbucket Pipelines*
-      - GitLab CI*
       - GitHub Actions*
+      - GitLab CI*
       - Self-Hosted Runner*
-      - Kaniko
-      - Buildah
-      - Locust
-      - Litmus
   -
     name: ML Backend
     keywords:
@@ -190,12 +157,9 @@ skills:
       - Python/LangGraph*
       - Ollama*
       - Milvus*
-      - PostgreSQL*
-      - Redis
   -
     name: Computer Vision
     keywords:
-      - Automotives*
       - SLAM*
       - PyTorch*
       - OpenCV*
@@ -204,12 +168,9 @@ skills:
     name: UI/UX
     keywords:
       - Slackbot*
-      - Python/FastUI*
       - Open WebUI*
       - Vercel AI SDK*
       - .NET/MAUI*
-      - .NET/WPF
-      - Unity
 
   -
     name: Programming languages
@@ -252,27 +213,12 @@ awards:
   #   date: "2014-05-01"
   #   awarder: "Intel-Altera Korea"
   #   summary: "[System] FPGA, Vision-Based Driver Support Navigation System"
-  - 
-    title: "🏅 워크샵 최우수 포스터 세션"
-    date: "2014-05-01"
-    awarder: "KYUTECH-POSTECH 연합 워크샵"
-    summary: "[Poster] Iterative Polygon Detection using Harris Corner Space Method for Finding Traffic Signs"
   # -
   #   title: "🥈 알테라 디자인 컨테스트 2013, 2위 입상"
   #   date: "2013-05-01"
   #   awarder: "Intel-Altera Korea"
   #   summary: "[System] FPGA, Vision-Based Traffic Sign Recognition System"
-  -
-    title: "🏅 학부 수석 졸업"
-    date: "2012-02-28"
-    awarder: "금오공과대학교"
-    summary: "[수석 졸업] 전자공학부 최우수 졸업"
-  -
-    title: "🏅 NAVER 파워지식iN 2011"
-    date: "2012-01-01"
-    awarder: "NAVER"
-    summary: "[Activity] 지식봉사활동 `전기전자공학, 수학, 프로그래밍 분야`. 2009-2011 활동, 2012 선정 / 답변수 723, 채택 98.1%"
-    website: "https://m.site.naver.com/1y6qP"
+  # - (이력서에서 수상 항목 생략)
 
 publications:
   -
@@ -314,52 +260,34 @@ publications:
 
 certificates:
   -
-    title: "🐳 KCSA: Kubernetes and Cloud Native Security Associate"
-    organization: The Linux Foundation
+    title: "KCSA"
+    # organization: The Linux Foundation
     verified: "2025-10-27"
     expired: "2027-10-27"
-    # description: >
-    #   A credential that verifies expertise in securing Kubernetes clusters.
     website: https://www.credly.com/badges/1206ad1c-e348-4328-934d-72e44ca434be
   -
-    title: "🐳 KCNA: Kubernetes and Cloud Native Associate"
-    organization: The Linux Foundation
+    title: "KCNA"
+    # organization: The Linux Foundation
     verified: "2025-10-22"
     expired: "2027-10-22"
-    # description: >
-    #   A credential that verifies expertise in managing Kubernetes clusters.
     website: https://www.credly.com/badges/759e92f0-7b3b-4788-8eff-c20ad1e2c645
-  # -
-  #   title: "🐈‍⬛ GitHub Foundations"
-  #   organization: GitHub
-  #   verified: "2024-11-20"
-  #   expired: "2027-11-20"
-  #   # description: >
-  #   #   A credential that verifies expertise in version control and collaboration tools using GitHub.
-  #   website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
   -
-    title: "🐙 CAPA: Certified Argo Project Associate"
-    organization: The Linux Foundation
+    title: "CAPA"
+    # organization: The Linux Foundation
     verified: "2024-09-13"
     expired: "2026-09-13"
-    # description: >
-    #   A credential that verifies expertise in the Kubernetes native DevOps tool, Argo Projects
     website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   -
-    title: "🐳 CKAD: Certified Kubernetes Application Developer"
-    organization: The Linux Foundation
+    title: "CKAD"
+    # organization: The Linux Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
-    # description: >
-    #   A credential that verifies expertise in developing cloud-native applications using Kubernetes.
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
   -
-    title: "🐳 CKA: Certified Kubernetes Administrator"
-    organization: The Linux Foundation
+    title: "CKA"
+    # organization: The Linux Foundation
     verified: "2024-03-16"
     expired: "2027-03-16"
-    # description: >
-    #   A credential that verifies expertise in managing Kubernetes clusters.
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
 languages:

@@ -7,7 +7,7 @@ basics:
   label: "AI Platform Engineer"
   # picture: "/assets/img/profile/jyje-o2024.jpg"
   email: "jyjeon@outlook.com"
-  linkedin: "jyje"
+  # linkedin: "jyje"  # moved to profiles for ordering
   website: "https://jyje.online"
   # github: "jyje"
   # googlescholar: "gwCPQM8AAAAJ"
@@ -18,29 +18,25 @@ basics:
     countryCode: "" # "KR"
     region: "" # "California"
   profiles:
+    - network: LinkedIn
+      username: LinkedIn
+      url: https://www.linkedin.com/in/jyje
     - network: Github
       username: Github
       url: http://github.com/jyje
-    - network: StackShare
-      username: StackShare
-      url: https://stackshare.io/jyje/jyje-pro-stack
+    # - network: StackShare
+    #   username: StackShare
+    #   url: https://stackshare.io/jyje/jyje-pro-stack
   contents:
     skills:
-      note: "Highlighted items are specialized in industry-ready."
+      # note: "Highlighted items are specialized in industry-ready."
     publications:
       note: "Full list is available on [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)."
     resume-en:
       title: Résumé
       abstract: >
-        I'm Jeayoung Jeon [전제영], an **AI Platform Engineer** in Seoul with about six years of experience. I specialize in:
-
-          - 🐳 **GenAI development:** Implementing and operating **GenAI workloads** and **LLMOps platforms** in cloud-native environments.
-          - 🤝 **Team leadership:** Leading **collaboration, architecture, and platform engineering** in teams of about ten.
-          - 🧑‍🔧 **Architecture:** Building **hybrid Kubernetes clusters** for **high performance**, **high availability**, and **GPU optimization**.
-          - 🧑‍🎓 **Technical expertise:** Contributing to **LLM, ML, DevOps** decisions with backgrounds in **Computer Visions and Automotives**.
-        
-        I'm open to new challenges in **automotive**, **AI**, and beyond. Please feel free to contact me if you have a team I can contribute to.
-        For details, see my [**portfolio**](https://jyje.online/en/portfolio).
+        Lead AI Platform Engineer at Hyundai AutoEver · 6 yrs exp · GenAI, LLMOps, Hybrid Kubernetes · Open to automotive & AI opportunities.
+        See my [**portfolio**](https://jyje.online/en/portfolio) for details.
 
 work:
   -
@@ -78,27 +74,10 @@ work:
         - header: SRE
           content: >
             Led site & service reliability engineering initiatives for web services and ML workloads
-  -
-    company: "POSTECH"
-    position: "🧑‍🎓 Graduate Student Researcher in Computer Vision"
-    website: "https://eee.postech.ac.kr/"
-    startDate: "2012-03-01"
-    endDate: "2020-08-28"
-    roles:
-      description: >
-        Ph.D Integrated Student at Department of Electrical Engineering, POSTECH
-      items:
-        - header: Computer Vision
-          content: >
-            Research on hyperparameters for accurate and efficient computer vision algorithms
-        - header: Automotives
-          content: >
-            Principal computer vision technologies for autonomous driving including ADAS and SLAM;
-            Participated in the development of the Korean government's incubation projects with various ADAS researches
-        - header: FPGA
-          content: >
-            Efficiently implemented computer vision and machine learning algorithms with real-time parallel matrix processing;
-            SoC-type GPU/NPU accelerator
+  # -
+  #   company: "POSTECH"  — research experience shown in skills (Computer Vision, FPGA, SLAM)
+  #   startDate: "2012-03-01"
+  #   endDate: "2020-08-28"
   # -
   #   company: "GIST"
   #   position: "Undergraduate Internship"
@@ -120,7 +99,7 @@ education:
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    thesis: "Virtual Visual-SLAM for Real-World Environments, 2020"
+    # thesis: "Virtual Visual-SLAM for Real-World Environments, 2020"
     # courses:
     #   - Advanced Driver Assistance Systems (ADAS)
     #   - Simultaneous Localization and Mapping (SLAM)
@@ -133,7 +112,7 @@ education:
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    thesis: "A Study on a Visible Light Communication using LED in Under-water Environment, 2011"
+    # thesis: "A Study on a Visible Light Communication using LED in Under-water Environment, 2011"
     # courses:
     #   - Digital Signal Processing
     #   - Visual Light Communication
@@ -159,30 +138,18 @@ skills:
     name: DevOps & SRE
     keywords:
       - Kubernetes*
-      - On-Premise*
-      - AWS EKS*
-      - GCP GKE
       - Hybrid Clusters*
-      - ARM64*
+      - AWS EKS*
       - IaC*
-      - Kubespray*
-      - Terraform*
-      - Ansible*
-      - Istio*
       - Grafana Stack*
-      - Karpenter*
+      - Istio*
   -
-    name: CI/CD/CT/CT
+    name: CI/CD
     keywords:
       - Argo Projects*
-      - Bitbucket Pipelines*
-      - GitLab CI*
       - GitHub Actions*
+      - GitLab CI*
       - Self-Hosted Runner*
-      - Kaniko
-      - Buildah
-      - Locust
-      - Litmus
   -
     name: ML Backend
     keywords:
@@ -190,12 +157,9 @@ skills:
       - Python/LangGraph*
       - Ollama*
       - Milvus*
-      - PostgreSQL*
-      - Redis
   -
     name: Computer Vision
     keywords:
-      - Automotives*
       - SLAM*
       - PyTorch*
       - OpenCV*
@@ -204,12 +168,9 @@ skills:
     name: UI/UX
     keywords:
       - Slackbot*
-      - Python/FastUI*
       - Open WebUI*
       - Vercel AI SDK*
       - .NET/MAUI*
-      - .NET/WPF
-      - Unity
 
   -
     name: Programming languages
@@ -247,32 +208,18 @@ skills:
 #       - "Awarded 'Teacher of the Month'"
 
 awards:
-  # - 
-  #   title: "🏅 Altera Design Contest 2014, Excellence Prize"
-  #   date: "2014-05-01"
-  #   awarder: "Intel-Altera Korea"
-  #   summary: "[System] FPGA, Vision-Based Driver Support Navigation System"
-  - 
-    title: "🏅 Best Poster Session"
-    date: "2014-05-01"
-    awarder: "KYUTECH-POSTECH Joint Workshop"
-    summary: "[Poster] Iterative Polygon Detection using Harris Corner Space Method for Finding Traffic Signs"
   # -
   #   title: "🥈 Altera Design Contest 2013, 2nd Prize"
   #   date: "2013-05-01"
   #   awarder: "Intel-Altera Korea"
   #   summary: "[System] FPGA, Vision-Based Traffic Sign Recognition System"
-  -
-    title: "🏅 Summa Cum Laude"
-    date: "2012-02-28"
-    awarder: "Kumoh National Institute of Technology"
-    summary: "Highest Honors in Undergraduate Electronic Engineering School, 2012"
-  -
-    title: "🏅 NAVER Power KiN 2011"
-    date: "2012-01-01"
-    awarder: "NAVER"
-    summary: "Knowledge Expert in `Electronics Engineering, Math and Programming`. 723 Answers, Accepted 98.1%"
-    website: "https://m.site.naver.com/1y6qP"
+  # - (awards omitted from resume for brevity)
+  # -
+  #   title: "🏅 NAVER Power KiN 2011"
+  #   date: "2012-01-01"
+  #   awarder: "NAVER"
+  #   summary: "Knowledge Expert in `Electronics Engineering, Math and Programming`. 723 Answers, Accepted 98.1%"
+  #   website: "https://m.site.naver.com/1y6qP"
 
 publications:
   -
@@ -314,52 +261,34 @@ publications:
 
 certificates:
   -
-    title: "🐳 KCSA: Kubernetes and Cloud Native Security Associate"
+    title: "KCSA"
     organization: The Linux Foundation
     verified: "2025-10-27"
     expired: "2027-10-27"
-    # description: >
-    #   A credential that verifies expertise in securing Kubernetes clusters.
     website: https://www.credly.com/badges/1206ad1c-e348-4328-934d-72e44ca434be
   -
-    title: "🐳 KCNA: Kubernetes and Cloud Native Associate"
+    title: "KCNA"
     organization: The Linux Foundation
     verified: "2025-10-22"
     expired: "2027-10-22"
-    # description: >
-    #   A credential that verifies expertise in managing Kubernetes clusters.
     website: https://www.credly.com/badges/759e92f0-7b3b-4788-8eff-c20ad1e2c645
-  # -
-  #   title: "🐈‍⬛ GitHub Foundations"
-  #   organization: GitHub
-  #   verified: "2024-11-20"
-  #   expired: "2027-11-20"
-  #   # description: >
-  #   #   A credential that verifies expertise in version control and collaboration tools using GitHub.
-  #   website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
   -
-    title: "🐙 CAPA: Certified Argo Project Associate"
+    title: "CAPA"
     organization: The Linux Foundation
     verified: "2024-09-13"
     expired: "2026-09-13"
-    # description: >
-    #   A credential that verifies expertise in the Kubernetes native DevOps tool, Argo Projects
     website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   -
-    title: "🐳 CKAD: Certified Kubernetes Application Developer"
+    title: "CKAD"
     organization: The Linux Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
-    # description: >
-    #   A credential that verifies expertise in developing cloud-native applications using Kubernetes.
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
   -
-    title: "🐳 CKA: Certified Kubernetes Administrator"
+    title: "CKA"
     organization: The Linux Foundation
     verified: "2024-03-16"
     expired: "2027-03-16"
-    # description: >
-    #   A credential that verifies expertise in managing Kubernetes clusters.
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
 
 languages:
