@@ -2,7 +2,7 @@
 layout: welcome
 title: jyje.online
 cover: true
-permalink: /ko
+permalink: /ko/
 ---
 
 > 🇬🇧 You can check the English version [here](/).

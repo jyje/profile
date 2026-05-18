@@ -3,7 +3,7 @@ type: category
 layout: post-collection
 title: Posts
 slug: posts
-permalink: /en/posts
+permalink: /en/posts/
 language: en
 description: >
   🎉 Articles for good news, achievements, and posts.
