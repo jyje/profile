@@ -48,7 +48,7 @@ author:
 # Set sidebar_show_home to false to hide "Home" from the sidebar (menu/menu_en/menu_ko do not control it).
 sidebar_show_home:     false
 menu:
-  - title:             Home
+  - title:             About
     url:               /
   - title:             Résumé
     url:               /en/resume
@@ -59,7 +59,7 @@ menu:
 
 # Multilingual menus (excluding Home which is handled separately)
 menu_en:
-  - title:             Home
+  - title:             About
     url:               /
   - title:             Résumé
     url:               /en/resume
@@ -69,7 +69,7 @@ menu_en:
     url:               /en/posts
 
 menu_ko:
-  - title:             Home
+  - title:             About
     url:               /ko
   - title:             Résumé
     url:               /ko/resume
@@ -81,7 +81,7 @@ menu_ko:
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
-  - title:             Home
+  - title:             About
     url:               /
   - title:             Tags
     url:               /tags
