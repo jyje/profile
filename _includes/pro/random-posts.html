@@ -2,7 +2,7 @@
 
 {% comment %}Determine current page language{% endcomment %}
 {% assign current_lang = 'en' %}
-{% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' %}
+{% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' or page.url == '/' or page.url == '/index.html' %}
   {% assign current_lang = 'ko' %}
 {% endif %}
 

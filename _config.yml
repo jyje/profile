@@ -14,7 +14,7 @@ encoding:                 utf-8
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en-US, ko-KR
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 jyje
@@ -51,16 +51,16 @@ menu:
   - title:             About
     url:               /
   - title:             Résumé
-    url:               /en/resume
+    url:               /ko/resume
   - title:             Portfolio
-    url:               /en/portfolio
+    url:               /ko/portfolio
   - title:             Posts
-    url:               /en/posts
+    url:               /ko/posts
 
 # Multilingual menus (excluding Home which is handled separately)
 menu_en:
   - title:             About
-    url:               /
+    url:               /en/
   - title:             Résumé
     url:               /en/resume
   - title:             Portfolio
@@ -70,7 +70,7 @@ menu_en:
 
 menu_ko:
   - title:             About
-    url:               /ko
+    url:               /
   - title:             Résumé
     url:               /ko/resume
   - title:             Portfolio
@@ -138,6 +138,14 @@ font_heading:          Pretendard, sans-serif
 font_code:             Nanum Gothic Coding, Fira Code, Menlo, Monaco, Consolas, monospace;
 
 defaults:
+  - scope:
+      path:            ""
+    values:
+      lang:            ko
+  - scope:
+      path:            en
+    values:
+      lang:            en
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
   - scope:

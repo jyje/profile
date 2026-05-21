@@ -4,7 +4,7 @@
 {% comment %} Detect language from URL, page.lang, or data_file {% endcomment %}
 {% assign current_lang = 'en' %}
 {% comment %} Check URL path first (most reliable) {% endcomment %}
-{% if page.url contains '/ko/' %}
+{% if page.url contains '/ko/' or page.url == '/' or page.url == '/index.html' %}
   {% assign current_lang = 'ko' %}
 {% elsif page.lang %}
   {% comment %} Check page.lang if set {% endcomment %}

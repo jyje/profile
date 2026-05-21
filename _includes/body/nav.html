@@ -3,7 +3,7 @@
   {% comment %}Language detection - use passed lang or detect from URL{% endcomment %}
   {% assign current_lang = include.lang | default:'en' %}
   {% if current_lang == blank or current_lang == '' %}
-    {% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' %}
+    {% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' or page.url == '/' or page.url == '/index.html' %}
       {% assign current_lang = 'ko' %}
     {% else %}
       {% assign current_lang = 'en' %}
@@ -14,7 +14,7 @@
   {% if site.sidebar_show_home != false %}
   <li>
     <a
-      href="{% if current_lang == 'ko' %}{{ '/ko/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"
+      href="{% if current_lang == 'ko' %}{{ '/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}"
       class="sidebar-nav-item"
     >
       {% if current_lang == 'ko' %}Home{% else %}Home{% endif %}
@@ -34,12 +34,16 @@
     {% comment %}Convert URL based on current language{% endcomment %}
     {% if current_lang == 'ko' %}
       {% comment %}Ensure Korean URLs are used{% endcomment %}
-      {% if url contains '/en/' %}
+      {% if url == '/en/' or url == '/en' %}
+        {% assign url = '/' %}
+      {% elsif url contains '/en/' %}
         {% assign url = url | replace: '/en/', '/ko/' %}
       {% endif %}
     {% else %}
       {% comment %}Ensure English URLs are used{% endcomment %}
-      {% if url contains '/ko/' %}
+      {% if url == '/' or url == '/ko/' or url == '/ko' %}
+        {% assign url = '/en/' %}
+      {% elsif url contains '/ko/' %}
         {% assign url = url | replace: '/ko/', '/en/' %}
       {% endif %}
     {% endif %}

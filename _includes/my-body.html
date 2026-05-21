@@ -52,44 +52,34 @@ Example code for using Matamo as alternative analytics solution.
       pathname = urlObj.pathname;
     }
     
+    // Normalize trailing slash or index.html for comparisons
+    var cleanPath = pathname;
+    if (cleanPath.endsWith('/index.html')) {
+      cleanPath = cleanPath.slice(0, -10);
+    }
+    
     if (targetLang === 'ko') {
-      /* Convert to Korean URL */
-      if (pathname === '/' || pathname === '') {
-        return '/ko/';
+      if (cleanPath === '/en/' || cleanPath === '/en') {
+        return '/';
       }
-      /* Replace /en/ with /ko/ or prepend /ko/ if no language prefix */
-      if (pathname.indexOf('/en/') === 0) {
+      if (cleanPath.indexOf('/en/') === 0) {
         return pathname.replace('/en/', '/ko/');
-      } else if (pathname.indexOf('/en') === 0) {
-        return pathname.replace('/en', '/ko');
-      } else if (pathname.indexOf('/ko/') !== 0 && pathname.indexOf('/ko') !== 0) {
-        /* No language prefix, add /ko/ */
-        return '/ko' + (pathname.startsWith('/') ? pathname : '/' + pathname);
       }
-      return pathname; /* Already Korean */
+      if (cleanPath.indexOf('/ko/') === 0 || cleanPath === '/') {
+        return pathname;
+      }
+      return '/ko' + (pathname.startsWith('/') ? pathname : '/' + pathname);
     } else {
-      /* Convert to English URL */
-      if (pathname === '/ko/' || pathname === '/ko') {
-        return '/';
+      if (cleanPath === '/' || cleanPath === '/ko/' || cleanPath === '/ko') {
+        return '/en/';
       }
-      /* Replace /ko/ with /en/ or remove /ko/ prefix */
-      if (pathname.indexOf('/ko/') === 0) {
-        var englishPath = pathname.replace('/ko/', '/en/');
-        /* If resulting path is /en/, return / instead */
-        return englishPath === '/en/' ? '/' : englishPath;
-      } else if (pathname.indexOf('/ko') === 0) {
-        var englishPath = pathname.replace('/ko', '/en');
-        return englishPath === '/en' ? '/' : englishPath;
+      if (cleanPath.indexOf('/ko/') === 0) {
+        return pathname.replace('/ko/', '/en/');
       }
-      /* Already English or no language prefix */
-      if (pathname === '/') {
-        return '/';
+      if (cleanPath.indexOf('/en/') === 0) {
+        return pathname;
       }
-      /* Add /en/ prefix if needed */
-      if (pathname.indexOf('/en/') !== 0 && pathname.indexOf('/en') !== 0) {
-        return '/en' + (pathname.startsWith('/') ? pathname : '/' + pathname);
-      }
-      return pathname;
+      return '/en' + (pathname.startsWith('/') ? pathname : '/' + pathname);
     }
   }
 
@@ -153,7 +143,7 @@ Example code for using Matamo as alternative analytics solution.
     if (!langSwitchEl) return;
 
     var currentPath = window.location.pathname;
-    var isKo = currentPath.indexOf('/ko/') === 0 || currentPath === '/ko' || currentPath === '/ko/';
+    var isKo = !(currentPath.indexOf('/en/') === 0 || currentPath === '/en' || currentPath === '/en/');
     var targetLang = isKo ? 'en' : 'ko';
     var targetUrl = switchLanguageUrl(currentPath, targetLang);
 

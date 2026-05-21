@@ -1,7 +1,7 @@
 <div class="sidebar-sticky">
   {% comment %}Language detection based on URL path{% endcomment %}
   {% assign lang = 'en' %}
-  {% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' %}
+  {% if page.url contains '/ko/' or page.url == '/ko' or page.url == '/ko/' or page.url == '/' or page.url == '/index.html' %}
     {% assign lang = 'ko' %}
   {% endif %}
 
@@ -9,7 +9,7 @@
 
   <div class="sidebar-about">
     {% if site.logo %}
-      <a class="no-hover" href="{% if lang == 'ko' %}{{ '/ko/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" tabindex="-1">
+      <a class="no-hover" href="{% if lang == 'ko' %}{{ '/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}" tabindex="-1">
         <img src="{% include_cached smart-url url=site.logo %}" class="avatar" alt="{{ site.short_title | default:site.title }}" width="120" height="120" loading="lazy" />
       </a>
       <small class="sidebar-username">@jyje</small>
