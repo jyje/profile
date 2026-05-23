@@ -8,7 +8,7 @@ permalink: /en/
 > 🇰🇷 한국어 버전은 [여기](/)에서 확인할 수 있습니다.
 
 I'm **Jeayoung Jeon [전제영]**, an AI Platform Engineer based in Seoul, South Korea.
-A **mid-level developer with 6 years of experience** who enjoys problem-solving with AI and clusters, immersed in collaboration and technical exploration.
+A **software engineer with 6 years of experience** who enjoys problem-solving with AI and clusters, immersed in collaboration and technical exploration.
 
 Currently, I develop and operate an AI platform that supports automotive software development at [Hyundai AutoEver]{:.heading.flip-title}.
 Here is my expertise:
