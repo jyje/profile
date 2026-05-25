@@ -387,6 +387,12 @@ exclude:
   - Gemfile.lock
   - node_modules
   - scripts
+  - assets/bower_components/**/*.md
+  - assets/bower_components/**/*.markdown
+  - assets/bower_components/katex/docs
+  - assets/bower_components/katex/src
+  - assets/bower_components/katex/test
+  - assets/bower_components/katex/website
   - assets/bower_components/katex/dockers
 include:
   - .well-known
