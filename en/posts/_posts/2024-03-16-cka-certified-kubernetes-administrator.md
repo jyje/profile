@@ -3,8 +3,7 @@ layout:     post
 categories: posts
 tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
-  Core skills for managing Kubernetes clusters.<br/>
-  <b>Valid: Mar 16, 2024 – Mar 15, 2027</b>
+  Core skills for managing Kubernetes clusters.
 image: /assets/img/certtifications/d151aaa0-4523-4caa-bbb9-d6dd9ca02938.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover

@@ -3,8 +3,7 @@ layout:     post
 categories: posts
 tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
-  Foundation knowledge for Kubernetes and cloud native technologies.<br/>
-  <b>Valid: Oct 22, 2025 – Oct 22, 2027</b>
+  Foundation knowledge for Kubernetes and cloud native technologies.
 image: /assets/img/certtifications/CNCF-Certification_-KCNA.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover

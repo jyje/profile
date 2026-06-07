@@ -3,8 +3,7 @@ layout:     post
 categories: posts
 tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
-  Kubernetes 클러스터 관리를 위한 핵심 역량.<br/>
-  <b>유효기간: 2024년 03월 16일 – 2027년 03월 15일</b>
+  Kubernetes 클러스터 관리를 위한 핵심 역량.
 image: /assets/img/certtifications/d151aaa0-4523-4caa-bbb9-d6dd9ca02938.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover

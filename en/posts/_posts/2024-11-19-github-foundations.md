@@ -3,8 +3,7 @@ layout:     post
 categories: posts
 tags:       [ "certifications", "github" ]
 description: >
-  Core skills for GitHub fundamentals and collaboration.<br/>
-  <b>Valid: Nov 19, 2024 – Nov 18, 2027</b>
+  Core skills for GitHub fundamentals and collaboration.
 image: /assets/img/certtifications/440abbf4-b6db-48ab-87cf-77d2e3cc616b.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover

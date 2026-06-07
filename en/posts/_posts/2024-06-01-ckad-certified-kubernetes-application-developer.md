@@ -3,8 +3,7 @@ layout:     post
 categories: posts
 tags:       [ "certifications", "kubernetes", "linux-foundation" ]
 description: >
-  Core skills for developing Kubernetes workloads.<br/>
-  <b>Valid: Jun 1, 2024 – May 31, 2026</b>
+  Core skills for developing Kubernetes workloads.
 image: /assets/img/certtifications/7682d5de-7c02-46cf-ac99-9ed52df25464.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover

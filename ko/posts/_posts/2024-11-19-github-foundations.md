@@ -3,8 +3,7 @@ layout:     post
 categories: posts
 tags:       [ "certifications", "github" ]
 description: >
-  GitHub 기본 구조와 협업을 위한 핵심 역량.<br/>
-  <b>유효기간: 2024년 11월 19일 – 2027년 11월 18일</b>
+  GitHub 기본 구조와 협업을 위한 핵심 역량.
 image: /assets/img/certtifications/440abbf4-b6db-48ab-87cf-77d2e3cc616b.png
 accent_image: 
   background: url('/assets/img/common/penguins-linux-foundation.jpg') center/cover
