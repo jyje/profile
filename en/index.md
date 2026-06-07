@@ -3,22 +3,21 @@ layout: welcome
 title: jyje.online
 cover: true
 permalink: /en/
+show_language_toggle: true
 ---
 
-> 🇰🇷 한국어 버전은 [여기](/)에서 확인할 수 있습니다.
-
 I'm **Jeayoung Jeon [전제영]**, an AI Platform Engineer based in Seoul, South Korea.
-I enjoy solving problems through technology and pursue growth alongside my team. **A software engineer with 6 years of experience**, with AI and clusters as my primary domain.
+I enjoy solving problems through technology and pursue growth alongside my team. **A software engineer with 6 years of hands-on experience**, with AI and clusters as my primary domain.
 
-Currently, I develop and operate an AI platform that supports automotive software development at [Hyundai AutoEver]{:.heading.flip-title}.
+Currently, I lead AI development on the Development Environment Platform Team at [Hyundai AutoEver]{:.heading.flip-title}.
 Here is my expertise:
 
-- 🐳 **GenAI Development** — I can implement and operate GenAI workloads and LLMOps platforms in cloud-native environments.
-- 🤝 **Team Leading** — I can build and lead collaboration, architecture, and platform engineering groups in projects with teams of up to 10 people.
-- 🧑‍🔧 **Architecture** — I can develop and operate hybrid Kubernetes clusters for high performance, high availability, and GPU optimization.
-- 🧑‍🎓 **Technical Knowledge** — I leverage experience as a computer vision and automotive research engineer to contribute to LLM, ML, and DevOps decision-making.
+- 🤖 **Agentic AI Development** — I can build Agentic AI apps and infrastructure from zero to product, fostering an AI-native culture rather than producing AI slop.
+- 🐳 **Cloud-Native Operations** — I can implement and operate Agentic AI apps, AIOps, and GPU platforms in cloud-native environments.
+- 🤝 **Team Leading** — I can lead development collaboration, architecture, and platform engineering in projects with teams of up to 10 people.
+- 🧑‍🎓 **Technical Knowledge** — I leverage experience as a machine learning, computer vision, and automotive research engineer to contribute to AIOps/MLOps/DevOps decision-making.
 
-I seek challenges across diverse fields including AI harness and platform. If you have a team where I can contribute, feel free to reach out. For more details, please see my [Portfolio]{:.heading.flip-title}.
+I seek challenges across AI and specialized domains. If you have a team where I can contribute, feel free to reach out. For more details, please see my [Portfolio]{:.heading.flip-title}.
 
 ```card
 ---

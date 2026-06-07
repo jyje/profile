@@ -7,8 +7,7 @@ description: >
   You'll probably want to modify it in `resume.md`, and maybe set `hide_description` to `true` in the front matter.
 hide_description: true
 data_file: portfolio-ko
-top_note: >
-  🇬🇧 You can check the English version [here](/en/portfolio).
+show_language_toggle: true
 sections:
   - work
   - projects

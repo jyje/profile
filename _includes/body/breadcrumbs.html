@@ -1,3 +1,113 @@
+{% assign show_lang_toggle = false %}
+{% assign current_lang = "" %}
+{% assign ko_state = "unavailable" %}
+{% assign en_state = "unavailable" %}
+{% assign ko_url = "" %}
+{% assign en_url = "" %}
+
+{% if page.show_language_toggle %}
+  {% assign show_lang_toggle = true %}
+  
+  {% comment %}Detect current language{% endcomment %}
+  {% if page.path contains "ko/" or page.url contains "/ko/" %}
+    {% assign current_lang = "ko" %}
+  {% elsif page.path contains "en/" or page.url contains "/en/" %}
+    {% assign current_lang = "en" %}
+  {% else %}
+    {% assign current_lang = "ko" %}
+  {% endif %}
+
+  {% comment %}Set current state{% endcomment %}
+  {% if current_lang == "ko" %}
+    {% assign ko_state = "current" %}
+    {% assign ko_url = page.url %}
+  {% else %}
+    {% assign en_state = "current" %}
+    {% assign en_url = page.url %}
+  {% endif %}
+
+  {% comment %}Check if it is a post{% endcomment %}
+  {% assign is_post = false %}
+  {% if page.layout == "post" and page.path contains "/posts/_posts/" %}
+    {% assign is_post = true %}
+  {% endif %}
+
+  {% if is_post %}
+    {% comment %}Post specific logic: only active if twin post actually exists{% endcomment %}
+    {% assign twin_path = "" %}
+    {% if current_lang == "ko" %}
+      {% assign twin_path = page.path | replace: "ko/posts/_posts/", "en/posts/_posts/" %}
+    {% else %}
+      {% assign twin_path = page.path | replace: "en/posts/_posts/", "ko/posts/_posts/" %}
+    {% endif %}
+    
+    {% assign twin_post = nil %}
+    {% for p in site.posts %}
+      {% if p.path == twin_path %}
+        {% assign twin_post = p %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if twin_post %}
+      {% if current_lang == "ko" %}
+        {% assign en_state = "link" %}
+        {% assign en_url = twin_post.url %}
+      {% else %}
+        {% assign ko_state = "link" %}
+        {% assign ko_url = twin_post.url %}
+      {% endif %}
+    {% else %}
+      {% if current_lang == "ko" %}
+        {% assign en_state = "unavailable" %}
+      {% else %}
+        {% assign ko_state = "unavailable" %}
+      {% endif %}
+    {% endif %}
+
+  {% else %}
+    {% comment %}Other pages logic: always active (both linkable/active){% endcomment %}
+    {% comment %}Find twin page in site.html_pages to get correct url{% endcomment %}
+    {% assign twin_cand_1 = "" %}
+    {% assign twin_cand_2 = "" %}
+    {% if current_lang == "en" %}
+      {% assign twin_cand_1 = page.url | replace_first: "/en/", "/ko/" %}
+      {% assign twin_cand_2 = page.url | replace_first: "/en/", "/" %}
+    {% else %}
+      {% if page.url contains "/ko/" %}
+        {% assign twin_cand_1 = page.url | replace_first: "/ko/", "/en/" %}
+      {% else %}
+        {% capture twin_cand_1 %}/en{{ page.url }}{% endcapture %}
+      {% endif %}
+    {% endif %}
+    
+    {% assign twin_post = nil %}
+    {% for p in site.html_pages %}
+      {% if p.path != page.path and p.layout != "redirect" and (p.url == twin_cand_1 or p.url == twin_cand_2) %}
+        {% assign twin_post = p %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if current_lang == "ko" %}
+      {% assign en_state = "link" %}
+      {% if twin_post %}
+        {% assign en_url = twin_post.url %}
+      {% else %}
+        {% assign en_url = twin_cand_1 %}
+      {% endif %}
+    {% else %}
+      {% assign ko_state = "link" %}
+      {% if twin_post %}
+        {% assign ko_url = twin_post.url %}
+      {% else %}
+        {% assign ko_url = twin_cand_1 %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+<div class="breadcrumbs-row">
 <nav id="breadcrumbs" class="screen-only"><ul>
   {% assign crumbs = include.url | remove:'/index.html' | split: '/' %}
   {% if crumbs.size > 1 %}
@@ -17,3 +127,7 @@
     {% endfor %}
   {% endif %}
 </ul></nav>
+{% if show_lang_toggle %}
+  {% include components/lang-toggle.html current_lang=current_lang ko_state=ko_state en_state=en_state ko_url=ko_url en_url=en_url %}
+{% endif %}
+</div>

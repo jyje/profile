@@ -1,0 +1,28 @@
+{%- assign current_lang = include.current_lang -%}
+{%- assign t = site.data.strings.lang_toggle[current_lang] -%}
+{%- assign ko_state = include.ko_state | default: "unavailable" -%}
+{%- assign en_state = include.en_state | default: "unavailable" -%}
+{%- assign ko_url = include.ko_url -%}
+{%- assign en_url = include.en_url -%}
+
+<div class="lang-toggle {% if current_lang == 'en' %}is-en{% else %}is-ko{% endif %}" role="group" aria-label="{{ site.data.strings.language | default: 'Language' }}">
+  <span class="lang-toggle-thumb" aria-hidden="true"></span>
+  {%- if ko_state == "link" -%}
+  <a href="{{ ko_url | relative_url }}" class="lang-toggle-opt no-push-state no-mark-external" title="{{ t.view_in_ko }}">
+  {%- elsif ko_state == "current" -%}
+  <span class="lang-toggle-opt is-active" aria-current="page" title="{{ t.current }}">
+  {%- else -%}
+  <span class="lang-toggle-opt is-disabled" aria-disabled="true" title="{{ t.unavailable }}">
+  {%- endif -%}
+    <span class="sr-only">한국어</span>🇰🇷
+  {%- if ko_state == "link" -%}</a>{%- else -%}</span>{%- endif -%}
+  {%- if en_state == "link" -%}
+  <a href="{{ en_url | relative_url }}" class="lang-toggle-opt no-push-state no-mark-external" title="{{ t.view_in_en }}">
+  {%- elsif en_state == "current" -%}
+  <span class="lang-toggle-opt is-active" aria-current="page" title="{{ t.current }}">
+  {%- else -%}
+  <span class="lang-toggle-opt is-disabled" aria-disabled="true" title="{{ t.unavailable }}">
+  {%- endif -%}
+    <span class="sr-only">English</span>🇬🇧
+  {%- if en_state == "link" -%}</a>{%- else -%}</span>{%- endif -%}
+</div>

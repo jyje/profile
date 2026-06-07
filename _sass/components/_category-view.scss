@@ -93,12 +93,6 @@
 
 // Tag-collection layout: disable language switch (no /ko/ or /en/ variants for tag pages)
 body.layout-tag-collection {
-  #_lang-switch {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.45;
-  }
-
   #lang-en,
   #lang-ko {
     pointer-events: none;

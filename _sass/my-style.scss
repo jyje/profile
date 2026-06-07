@@ -163,3 +163,82 @@ footer .commit-rev {
 @import "components/roadmap";
 @import "components/gantt";
 @import "components/expertise";
+
+// =============================================================================
+// Breadcrumbs and per-post/page language toggle alignment
+// =============================================================================
+.breadcrumbs-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  position: relative;
+
+  #breadcrumbs {
+    margin: 0;
+  }
+}
+
+
+// =============================================================================
+// Language Toggle (slider with flags)
+// =============================================================================
+.lang-toggle {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: var(--gray-bg);
+  border: 1px solid var(--border-color);
+  padding: 2px;
+  user-select: none;
+
+  .lang-toggle-thumb {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    width: calc(50% - 2px);
+    border-radius: 999px;
+    background: var(--accent-color-fill);
+    transition: transform 0.2s ease;
+  }
+
+  &.is-en .lang-toggle-thumb {
+    transform: translateX(100%);
+  }
+
+  &.is-partial .lang-toggle-thumb {
+    display: none;
+  }
+}
+
+.lang-toggle-opt {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  line-height: 1.4;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.is-active {
+    opacity: 1;
+    cursor: default;
+  }
+
+  &.is-disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+}

@@ -176,6 +176,13 @@ defaults:
   #   values:
   #     comments:        true
 
+  # Show the per-post KO/EN language toggle by default; set
+  # `show_language_toggle: false` in a post's front matter to opt out.
+  - scope:
+      type:            posts
+    values:
+      show_language_toggle: true
+
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
   - scope:

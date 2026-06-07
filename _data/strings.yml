@@ -101,6 +101,20 @@ from_to_separator:     '–'
 breadcrumbs_home:      'home'
 breadcrumbs_separator: '/'
 
+# Per-post/page language toggle tooltips (text matches the language being read)
+# ---------------------------------------------------------------------------------------
+lang_toggle:
+  ko:
+    current:     '현재 보고 있는 언어'
+    view_in_ko:  '한국어로 보기'
+    view_in_en:  '영어로 보기'
+    unavailable: '이 페이지는 다른 언어로 제공되지 않습니다'
+  en:
+    current:     'Current language'
+    view_in_ko:  'View in Korean'
+    view_in_en:  'View in English'
+    unavailable: 'This page is not available in another language'
+
 # Date formats
 # ---------------------------------------------------------------------------------------
 date_formats:

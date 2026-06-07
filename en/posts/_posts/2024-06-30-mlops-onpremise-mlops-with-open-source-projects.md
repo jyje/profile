@@ -16,9 +16,6 @@ comments: true
 
 > Photo by <a href="https://unsplash.com/@nampoh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Maxim Hopman</a> on <a href="https://unsplash.com/photos/a-group-of-people-standing-around-a-display-of-video-screens-IayKLkmz6g0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-한국어 버전은 [이 링크](/ko/posts/mlops-onpremise-mlops-with-open-source-projects)를 참고해주세요.
-{:.note title="Korean"}
-
 * toc
 {:toc .large-only}
 

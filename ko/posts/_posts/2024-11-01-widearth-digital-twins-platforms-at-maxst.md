@@ -17,8 +17,6 @@ image: /assets/img/works/00ef7950-3bb3-4865-82b0-e160b092412c.png
 comments: true
 ---
 
-> 영어 버전은 [이 링크](/en/posts/widearth-digital-twins-platforms-at-maxst)를 참고해주세요.
-
 * toc
 {:toc .large-only}
 

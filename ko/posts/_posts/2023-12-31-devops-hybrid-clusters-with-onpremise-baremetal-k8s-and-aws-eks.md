@@ -14,8 +14,6 @@ image: /assets/img/works/286a79d6-5433-4315-9309-61f6a6235f4c.jpg
 comments: true
 ---
 
-> 영어 버전은 [이 링크](/en/posts/devops-hybrid-clusters-with-onpremise-baremetal-k8s-and-aws-eks)를 참고해주세요.
-
 * toc
 {:toc .large-only}
 

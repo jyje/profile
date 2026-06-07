@@ -83,58 +83,6 @@ Example code for using Matamo as alternative analytics solution.
     }
   }
 
-  /* Save drawer state before page reload */
-  function saveDrawerState() {
-    var drawer = document.getElementById('_drawer');
-    if (drawer) {
-      var isOpen = drawer.hasAttribute('opened');
-      sessionStorage.setItem('drawerState', isOpen ? 'opened' : 'closed');
-    }
-  }
-
-  /* Restore drawer state after page load */
-  function restoreDrawerState() {
-    var drawerState = sessionStorage.getItem('drawerState');
-    if (drawerState) {
-      var drawer = document.getElementById('_drawer');
-      if (drawer) {
-        if (drawerState === 'opened' && !drawer.hasAttribute('opened')) {
-          drawer.setAttribute('opened', '');
-        } else if (drawerState === 'closed' && drawer.hasAttribute('opened')) {
-          drawer.removeAttribute('opened');
-        }
-      }
-      sessionStorage.removeItem('drawerState');
-    }
-  }
-
-  /* Setup language switch links */
-  function setupLanguageSwitches() {
-    var langEnLink = document.getElementById('lang-en');
-    var langKoLink = document.getElementById('lang-ko');
-    
-    if (langEnLink && langKoLink) {
-      var currentPath = window.location.pathname;
-      var enUrl = switchLanguageUrl(currentPath, 'en');
-      var koUrl = switchLanguageUrl(currentPath, 'ko');
-      
-      langEnLink.href = enUrl;
-      langKoLink.href = koUrl;
-      
-      /* Force full page reload on language switch to update sidebar */
-      langEnLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        saveDrawerState();
-        window.location.href = enUrl;
-      });
-      
-      langKoLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        saveDrawerState();
-        window.location.href = koUrl;
-      });
-    }
-  }
 
   /* Setup top navbar language switch button (single toggle: en <-> ko) */
   var navbarLangSwitchInitialized = false;
@@ -154,7 +102,6 @@ Example code for using Matamo as alternative analytics solution.
       navbarLangSwitchInitialized = true;
       langSwitchEl.addEventListener('click', function(e) {
         e.preventDefault();
-        saveDrawerState();
         window.location.href = langSwitchEl.href;
       });
     }
@@ -164,7 +111,6 @@ Example code for using Matamo as alternative analytics solution.
   var pushStateEl = document.getElementById('_pushState');
   if (pushStateEl) {
     pushStateEl.addEventListener('hy-push-state-after', function() {
-      setupLanguageSwitches();
       setupNavbarLangSwitch();
     });
   }
@@ -172,14 +118,10 @@ Example code for using Matamo as alternative analytics solution.
   /* Initial setup */
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
-      setupLanguageSwitches();
       setupNavbarLangSwitch();
-      restoreDrawerState();
     });
   } else {
-    setupLanguageSwitches();
     setupNavbarLangSwitch();
-    restoreDrawerState();
   }
 })();
 </script>
