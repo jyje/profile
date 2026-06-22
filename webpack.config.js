@@ -43,8 +43,6 @@ const envConfig = (() => {
 
 const sharedPreset = {
   modules: false,
-  useBuiltIns: "entry",
-  corejs: 3,
 }
 
 const babelPresetModern = {
@@ -54,6 +52,20 @@ const babelPresetModern = {
       "@babel/preset-env",
       {
         ...sharedPreset,
+        targets: {
+          esmodules: true,
+        },
+      },
+    ],
+  ],
+  // @babel/preset-env 8 removed `useBuiltIns`/`corejs`; wire the same
+  // polyfill-corejs3 plugin it used internally, with matching targets.
+  plugins: [
+    [
+      "babel-plugin-polyfill-corejs3",
+      {
+        method: "entry-global",
+        version: "3.49",
         targets: {
           esmodules: true,
         },
