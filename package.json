@@ -40,7 +40,7 @@
     "babel-plugin-polyfill-corejs3": "^1.0.0",
     "bower": "^1.8.14",
     "dedent": "^1.7.2",
-    "js-yaml": "^5.1.0",
+    "js-yaml": "^5.2.0",
     "json2yaml": "^1.1.0",
     "null-loader": "^4.0.1",
     "onchange": "^7.1.0",
