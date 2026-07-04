@@ -261,31 +261,31 @@ publications:
 certificates:
   -
     title: "KCSA"
-    # organization: The Linux Foundation
+    organization: The Linux Foundation
     verified: "2025-10-27"
     expired: "2027-10-27"
     website: https://www.credly.com/badges/1206ad1c-e348-4328-934d-72e44ca434be
   -
     title: "KCNA"
-    # organization: The Linux Foundation
+    organization: The Linux Foundation
     verified: "2025-10-22"
     expired: "2027-10-22"
     website: https://www.credly.com/badges/759e92f0-7b3b-4788-8eff-c20ad1e2c645
   -
     title: "CAPA"
-    # organization: The Linux Foundation
+    organization: The Linux Foundation
     verified: "2024-09-13"
     expired: "2026-09-13"
     website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   -
     title: "CKAD"
-    # organization: The Linux Foundation
+    organization: The Linux Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
   -
     title: "CKA"
-    # organization: The Linux Foundation
+    organization: The Linux Foundation
     verified: "2024-03-16"
     expired: "2027-03-16"
     website: https://www.credly.com/badges/d944bde7-222a-4ce5-b4e6-4e6c84df0ef8
