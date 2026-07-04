@@ -67,10 +67,11 @@ This renders as `🤖 ci(deps): bump <package> from X to Y` for production depen
 
 ## 3. Workflow Requirements
 1. **Analyze changes**: Review staged and unstaged changes to understand the scope and purpose of the work.
-2. **Review history**: Search the most recent 10 commits in the `git log` to help determine the appropriate `Type` and `Domain`. After identifying a potential `Domain`, search up to 10 recent commits specifically for that domain to ensure consistency and gain context for writing the commit message.
-3. **Propose message**: Present the drafted commit message to the user in a markdown code block.
-4. **Wait for confirmation**: Ask the user if they want to proceed with the proposed commit message. Do not proceed with committing or pushing until explicit approval is given.
-5. **Commit & Push**:
+2. **Split by concern**: If the changes span multiple semantically distinct concerns (e.g. different `Type`, different `Domain`, or otherwise unrelated purposes), split them into separate commits instead of bundling them into one. Stage and commit each concern individually, each with its own message following this policy. Do not split a single concern across multiple commits just to make diffs smaller.
+3. **Review history**: Search the most recent 10 commits in the `git log` to help determine the appropriate `Type` and `Domain`. After identifying a potential `Domain`, search up to 10 recent commits specifically for that domain to ensure consistency and gain context for writing the commit message.
+4. **Propose message**: Present the drafted commit message to the user in a markdown code block. If split into multiple commits, present all of them together before proceeding.
+5. **Wait for confirmation**: Ask the user if they want to proceed with the proposed commit message(s). Do not proceed with committing or pushing until explicit approval is given.
+6. **Commit & Push**:
    - Only execute `git commit` after explicit user approval. Do NOT auto-commit.
    - After committing, ask the user if they want to push to the remote repository.
    - Only execute `git push` after receiving explicit user approval. Do NOT auto-push.
