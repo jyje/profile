@@ -22,6 +22,9 @@ All commit messages must strictly follow this format:
 - **Title**: A concise summary of the change in imperative mood. Must start with a lowercase letter directly after the colon and space.
 - **Description**: (Optional) Use this to explain "why" the change was made or provide further context.
 
+### Skill-File Changes
+`SKILL.md` files define agent behavior, not just documentation — use `fix` (corrections/refinements to an existing skill) or `feat` (new capability/rule added to a skill), never `docs`, for changes to them. Set the domain to `skills/<skill-name>` (e.g. `(skills/git-commit-helper)`) so it reads distinctly from other domains in a repo where skills live alongside other project code. In a repo dedicated entirely to skills (e.g. `jyje/skills`), the bare skill name (e.g. `(git-commit-helper)`) is sufficient since there's no ambiguity.
+
 ---
 
 ## 2. Gitmoji & Type Mapping
