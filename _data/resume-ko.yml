@@ -47,7 +47,7 @@ work:
     endDate: {}
     roles:
       description: >
-        리드 AI 플랫폼 엔지니어 at 현대오토에버 개발환경플랫폼팀
+        현대오토에버 개발환경플랫폼팀 소속 리드 AI 플랫폼 엔지니어
       items:
         - header: AI/LLM Platform
           content: >
@@ -63,7 +63,7 @@ work:
     endDate: "2024-10-31"
     roles:
       description: >
-        리드 MLOps/DevOps 엔지니어 at 맥스트 기술사업부
+        맥스트 기술사업부 소속 리드 MLOps/DevOps 엔지니어
       items:
         - header: MLOps/LLMOps
           content: >
