@@ -636,7 +636,7 @@ publications:
 certificates:
   -
     title: "🐳 KCSA: Kubernetes and Cloud Native Security Associate"
-    organization: The Linux Foundation
+    organization: Cloud Native Computing Foundation
     verified: "2025-10-27"
     expired: "2027-10-27"
     # description: >
@@ -644,7 +644,7 @@ certificates:
     website: https://www.credly.com/badges/1206ad1c-e348-4328-934d-72e44ca434be
   -
     title: "🐳 KCNA: Kubernetes and Cloud Native Associate"
-    organization: The Linux Foundation
+    organization: Cloud Native Computing Foundation
     verified: "2025-10-22"
     expired: "2027-10-22"
     # description: >
@@ -660,7 +660,7 @@ certificates:
     website: https://www.credly.com/badges/876fa6b3-0b27-4ddf-bbb3-a9d853918566
   -
     title: "🐙 CAPA: Certified Argo Project Associate"
-    organization: The Linux Foundation
+    organization: Cloud Native Computing Foundation
     verified: "2024-09-13"
     expired: "2026-09-13"
     # description: >
@@ -668,7 +668,7 @@ certificates:
     website: https://www.credly.com/badges/ee42c2c7-2ac3-411f-8713-cc26cbec8022
   -
     title: "🐳 CKAD: Certified Kubernetes Application Developer"
-    organization: The Linux Foundation
+    organization: Cloud Native Computing Foundation
     verified: "2024-06-01"
     expired: "2026-06-01"
     # description: >
@@ -676,7 +676,7 @@ certificates:
     website: https://www.credly.com/badges/9e072a3a-57d0-403e-8bef-5831d618675c
   -
     title: "🐳 CKA: Certified Kubernetes Administrator"
-    organization: The Linux Foundation
+    organization: Cloud Native Computing Foundation
     verified: "2024-03-16"
     expired: "2027-03-16"
     # description: >
