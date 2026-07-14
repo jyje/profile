@@ -7,7 +7,12 @@
   </h2>
   </div>
   {% for cert in resume.certificates %}
-  <section class="certificates-item">
+  {% if data_file contains 'resume' %}
+    {% assign cert_org = cert.organization_short | default: cert.organization %}
+  {% else %}
+    {% assign cert_org = cert.organization %}
+  {% endif %}
+  <section class="certificates-item"{% if forloop.first %} data-org-short="{{ cert_org }}"{% endif %}>
     <header class="{% unless forloop.first %}mt1{% endunless %}">
       {% if cert.verified.size > 0 %}
         <p class="faded from-to">
@@ -20,7 +25,7 @@
         {% else %}
           {% capture title %}<span class="bc">{{ cert.title }}</span>{% endcapture %}
         {% endif %}
-        {% capture organization %}<span class="bc">{{ cert.organization }}</span>{% endcapture %}
+        {% capture organization %}<span class="bc">{{ cert_org }}</span>{% endcapture %}
         {{ strings.resume.certifications_title
           | default:"<!--title--> from <!--organization-->"
           | replace:"<!--title-->", title

@@ -97,11 +97,13 @@
   body .layout-resume section:has(h2#certificates) .certificates-item:first-of-type,
   body .layout-cv section:has(h2#certificates) .certificates-item:first-of-type {
 
-    // Group label — static since all current certs are from Linux Foundation.
+    // Group label — reads the first cert's short org name from the
+    // data-org-short attribute (set from organization_short in the data
+    // file), so it stays correct if certs from another org are ever added.
     // Attached to the first cert item (not the outer section) so it renders
     // after the "Certifications" heading instead of before it.
     &::before {
-      content: 'The Linux Foundation:' !important;
+      content: attr(data-org-short) ':' !important;
       display: block !important;
       font-size: 0.65rem !important;
       font-weight: 700 !important;
