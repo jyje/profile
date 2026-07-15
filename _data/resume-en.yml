@@ -38,6 +38,53 @@ basics:
         Lead AI Platform Engineer at Hyundai AutoEver · 6 yrs exp · GenAI, LLMOps, Hybrid Kubernetes · Open to automotive & AI opportunities.
         See my [**portfolio**](https://jyje.online/en/portfolio) for details.
 
+projects:
+  -
+    position: "🤖 Codebeamer AI Assistant [PoC]"
+    company: Hyundai AutoEver
+    startDate: "2025-02-24"
+    endDate: "2025-10-30"
+    roles:
+      description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
+      items:
+        - header: Agentic AI Development
+          content: >
+            Built conversational Agentic AI in-house using RAG and Tools
+        - header: Tool Integration
+          content: >
+            Integrated MCP and domain-specific tools with the in-house toolchain
+    skills:
+      description: Skill Stack for Codebeamer AI Assistant [PoC]
+      items:
+        - RAG
+        - LLM
+        - MCP
+        - Agentic AI
+  -
+    position: "🧑‍🔬 MLOps: On-Premise MLOps with Open Source Projects"
+    company: MAXST
+    website: https://maxst.com/ENG/main
+    startDate: "2024-01-01"
+    endDate: "2024-06-30"
+    roles:
+      description: "Lead MLOps Engineer ~ Planning + VoC + PoC + ML Workloads/Infra + Operation [contrib 90%]"
+      items:
+        - header: Kubeflow
+          content: >
+            AutoML, distributed training, model registry via Argo Workflows; GPU usage up <b>3x</b>
+        - header: VectorDB
+          content: >
+            Milvus, ChromaDB, RAG+LLM chatbot
+    skills:
+      description: Skill Stack for On-Premise MLOps
+      items:
+        - Kubeflow
+        - Milvus
+        - Ollama
+        - Open WebUI
+        - JupyterHub
+        - Grafana Stack
+
 work:
   -
     company: Hyundai AutoEver

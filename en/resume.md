@@ -9,7 +9,7 @@ hide_description: true
 data_file: resume-en
 show_language_toggle: true
 left_column:
-  #- projects
+  - projects
   - work
   # - volunteer
   - education

@@ -38,6 +38,53 @@ basics:
         현대오토에버 AI 플랫폼 리드 엔지니어 · 경력 6년 · GenAI, LLMOps, 하이브리드 Kubernetes · 차량기술·AI 분야 기회 모색 중.
         자세한 경력은 [**포트폴리오**](https://jyje.online/ko/portfolio)를 참고해 주세요.
 
+projects:
+  -
+    position: "🤖 Codebeamer AI Assistant [PoC]"
+    company: 현대오토에버
+    startDate: "2025-02-24"
+    endDate: "2025-10-30"
+    roles:
+      description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ RAG, Tool를 이용한 대화형 Agentic AI 개발"
+      items:
+        - header: Agentic AI 개발
+          content: >
+            RAG, Tool를 이용한 대화형 Agentic AI 자체개발
+        - header: 도구 연동
+          content: >
+            MCP 도구, 도메인 특화 도구를 활용하여 현대오토에버 툴체인 연동, 실행
+    skills:
+      description: Codebeamer AI Assistant [PoC]를 위한 기술 스택
+      items:
+        - RAG
+        - LLM
+        - MCP
+        - Agentic AI
+  -
+    position: "🧑‍🔬 MLOps: 오픈소스 기반 온프레미스 MLOps 도입"
+    company: 맥스트
+    website: https://maxst.com
+    startDate: "2024-01-01"
+    endDate: "2024-06-30"
+    roles:
+      description: "리드 MLOps 담당 ~ 기획 + VoC + ML Workloads/Infra + PoC + 운영 [기여도 90%]"
+      items:
+        - header: Kubeflow
+          content: >
+            Argo Workflows와 통합; AutoML, 분산학습, 모델 레지스트리 지원, GPU 사용률 <b>3배 증가</b>
+        - header: VectorDB
+          content: >
+            Milvus, ChromaDB 등 고가용 벡터 데이터베이스 구현, RAG+LLM 챗봇 개발
+    skills:
+      description: 온프레미스 MLOps 도입을 위한 기술 스택
+      items:
+        - Kubeflow
+        - Milvus
+        - Ollama
+        - Open WebUI
+        - JupyterHub
+        - Grafana Stack
+
 work:
   -
     company: Hyundai AutoEver

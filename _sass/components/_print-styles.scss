@@ -209,8 +209,11 @@
   }
 
   // ── Resume/CV header: subtitle on same line as title, divider removed ────
-  body .layout-resume header,
-  body .layout-cv header {
+  // Scoped to the page-level header only (direct child of the article) —
+  // the bare "header" selector also matched every nested work/project item
+  // header, forcing their date + title onto one flex line instead of two.
+  body .layout-resume > article > header,
+  body .layout-cv > article > header {
     display: flex !important;
     align-items: baseline !important;
     flex-wrap: wrap !important;
