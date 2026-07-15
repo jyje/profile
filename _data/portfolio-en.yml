@@ -170,10 +170,35 @@ work:
 
 projects:
   -
+    position: "🚙 Vehicle SW Verification Agentic AI Platform"
+    company: Hyundai AutoEver
+    startDate: "2026-04-01"
+    endDate: {}
+    roles:
+      description: "AI/MLOps Engineer at Development Environment Platform Team ~ Built an Agentic AI platform for vehicle SW verification using Deep Agents"
+      items:
+        - header: Deep Agents Development
+          content: >
+            Developed a vehicle SW verification AI platform integrated with various toolchains using Deep Agents
+        - header: Platform Engineering
+          content: >
+            Designed a scalable agent platform architecture based on LangChain and Kubernetes
+    skills:
+      description: Skill Stack for Vehicle SW Verification Agentic AI Platform
+      items:
+        - Deep Agents
+        - Platform Engineering
+        - LangChain
+        - Kubernetes
+        - Agentic AI
+        - RAG
+        - MCP
+        - LLMOps
+  -
     position: "🤖 Codebeamer AI Assistant [PoC]"
     company: Hyundai AutoEver
     startDate: "2025-02-24"
-    endDate: "2025-10-30"
+    endDate: "2025-11-30"
     roles:
       description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
       items:
@@ -185,7 +210,7 @@ projects:
             Configured knowledge base with various strategic vector stores for context augmentation
         - header: Tool Integration
           content: >
-            Integrated and executed with Hyundai AutoEver's toolchain using MCP tools and domain-specific tools
+            Integrated and executed with Hyundai AutoEver's toolchain using MCP tools and domain-specific tools (ALM usage guidance, CBQL query debugging support)
     results:
       description: >
         AI Template Acquisition and AI Planning Direction Acquisition

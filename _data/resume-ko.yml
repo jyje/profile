@@ -40,10 +40,24 @@ basics:
 
 projects:
   -
+    position: "🚙 차량SW 검증 Agentic AI 플랫폼"
+    company: 현대오토에버
+    startDate: "2026-04-01"
+    endDate: {}
+    roles:
+      description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ Deep Agents를 이용한 차량SW 검증 AI 플랫폼 개발"
+    skills:
+      description: 차량SW 검증 Agentic AI 플랫폼을 위한 기술 스택
+      items:
+        - Deep Agents
+        - LangChain
+        - Kubernetes
+        - Agentic AI
+  -
     position: "🤖 Codebeamer AI Assistant [PoC]"
     company: 현대오토에버
     startDate: "2025-02-24"
-    endDate: "2025-10-30"
+    endDate: "2025-11-30"
     roles:
       description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ RAG, Tool를 이용한 대화형 Agentic AI 개발"
       items:
@@ -115,12 +129,9 @@ work:
         - header: MLOps/LLMOps
           content: >
             ML API, 데이터 파이프라인, AI 플랫폼, RAG+LLM 시스템 개발
-        - header: DevOps
+        - header: DevOps & SRE
           content: >
-            고가용/고효율의 디지털 트윈 플랫폼을 위한 하이브리드 클러스터(AWS EKS + 온프레미스) 구현
-        - header: SRE
-          content: >
-            웹 서비스 안정성 엔지니어링과 컴퓨터비전/머신러닝 워크로드 안정성 엔지니어링 담당
+            고가용/고효율의 디지털 트윈 플랫폼을 위한 하이브리드 클러스터(AWS EKS + 온프레미스) 구현 및 안정성 엔지니어링
   # -
   #   company: "POSTECH"  — 연구 경험은 Skills에 표시 (Computer Vision, FPGA, SLAM)
   #   startDate: "2012-03-01"

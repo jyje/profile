@@ -170,10 +170,35 @@ work:
 
 projects:
   -
+    position: "🚙 차량SW 검증 Agentic AI 플랫폼"
+    company: 현대오토에버
+    startDate: "2026-04-01"
+    endDate: {}
+    roles:
+      description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ Deep Agents 기반 차량SW 검증 AI 플랫폼 개발"
+      items:
+        - header: Deep Agents 개발
+          content: >
+            Deep Agents를 이용하여 다양한 툴체인과 연동된 차량SW검증 AI 플랫폼 개발
+        - header: 플랫폼 엔지니어링
+          content: >
+            LangChain, Kubernetes 기반의 확장가능한 에이전트 플랫폼 아키텍처 설계
+    skills:
+      description: 차량SW 검증 Agentic AI 플랫폼을 위한 기술 스택
+      items:
+        - Deep Agents
+        - Platform Engineering
+        - LangChain
+        - Kubernetes
+        - Agentic AI
+        - RAG
+        - MCP
+        - LLMOps
+  -
     position: "🤖 Codebeamer AI Assistant [PoC]"
     company: 현대오토에버
     startDate: "2025-02-24"
-    endDate: "2025-10-30"
+    endDate: "2025-11-30"
     roles:
       description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ RAG, Tool를 이용한 대화형 Agentic AI 개발"
       items:
@@ -185,7 +210,7 @@ projects:
             다양한 전략의 벡터스토어 지식기반을 구성하여 문맥증강
         - header: 도구 연동
           content: >
-            MCP 도구, 도메인 특화 도구를 활용하여 현대오토에버 툴체인 연동, 실행
+            MCP 도구, 도메인 특화 도구를 활용하여 현대오토에버 툴체인 연동, 실행 (ALM 사용법 자문, CBQL 쿼리 디버깅 지원)
     results:
       description: >
         AI 템플릿 확보 및 AI 기획 방향성 확보

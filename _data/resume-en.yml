@@ -40,10 +40,24 @@ basics:
 
 projects:
   -
+    position: "🚙 Vehicle SW Verification Agentic AI Platform"
+    company: Hyundai AutoEver
+    startDate: "2026-04-01"
+    endDate: {}
+    roles:
+      description: "AI/MLOps Engineer at Development Environment Platform Team ~ Vehicle SW verification platform using Deep Agents"
+    skills:
+      description: Skill Stack for Vehicle SW Verification Agentic AI Platform
+      items:
+        - Deep Agents
+        - LangChain
+        - Kubernetes
+        - Agentic AI
+  -
     position: "🤖 Codebeamer AI Assistant [PoC]"
     company: Hyundai AutoEver
     startDate: "2025-02-24"
-    endDate: "2025-10-30"
+    endDate: "2025-11-30"
     roles:
       description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
       items:
@@ -115,12 +129,9 @@ work:
         - header: MLOps/LLMOps
           content: >
             Designed ML APIs and data pipelines. Built RAG+LLM systems for enterprise solutions
-        - header: Infrastructure
+        - header: Infra & SRE
           content: >
-            Architected hybrid clusters (AWS EKS + On-Premise) for digital twin platform
-        - header: SRE
-          content: >
-            Led site & service reliability engineering initiatives for web services and ML workloads
+            Architected hybrid clusters (AWS EKS + On-Premise) for digital twin platform, plus site reliability engineering
   # -
   #   company: "POSTECH"  — research experience shown in skills (Computer Vision, FPGA, SLAM)
   #   startDate: "2012-03-01"
