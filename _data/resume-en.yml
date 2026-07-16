@@ -46,13 +46,7 @@ projects:
     endDate: {}
     roles:
       description: "AI/MLOps Engineer at Development Environment Platform Team ~ Vehicle SW verification platform using Deep Agents"
-    skills:
-      description: Skill Stack for Vehicle SW Verification Agentic AI Platform
-      items:
-        - Deep Agents
-        - LangChain
-        - Kubernetes
-        - Agentic AI
+
   -
     position: "🤖 Codebeamer AI Assistant [PoC]"
     company: Hyundai AutoEver
@@ -67,13 +61,7 @@ projects:
         - header: Tool Integration
           content: >
             Integrated MCP and domain-specific tools with the in-house toolchain
-    skills:
-      description: Skill Stack for Codebeamer AI Assistant [PoC]
-      items:
-        - RAG
-        - LLM
-        - MCP
-        - Agentic AI
+
   -
     position: "🧑‍🔬 MLOps: On-Premise MLOps with Open Source Projects"
     company: MAXST
@@ -89,26 +77,16 @@ projects:
         - header: VectorDB
           content: >
             Milvus, ChromaDB, RAG+LLM chatbot
-    skills:
-      description: Skill Stack for On-Premise MLOps
-      items:
-        - Kubeflow
-        - Milvus
-        - Ollama
-        - Open WebUI
-        - JupyterHub
-        - Grafana Stack
+
 
 work:
   -
     company: Hyundai AutoEver
-    position: "🧑‍💻 Intermediate Software Engineer [책임, Professional]"
+    position: "🧑‍💻 Lead AI Platform Engineer"
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
     roles:
-      description: >
-        Lead AI Platform Engineer at Development Environment Platform Team, Hyundai AutoEver
       items:
         - header: AI/LLM Platform
           content: >
@@ -118,13 +96,11 @@ work:
             Applying k8s+AI in practice and advising team members
   -
     company: MAXST
-    position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원, Senior-Principal Researcher]"
+    position: "🧑‍🔬 Lead MLOps & DevOps Engineer"
     website: https://maxst.com/ENG/main
     startDate: "2021-01-16"
     endDate: "2024-10-31"
     roles:
-      description: >
-        Lead MLOps/DevOps Engineer at Technology Division, MAXST
       items:
         - header: MLOps/LLMOps
           content: >

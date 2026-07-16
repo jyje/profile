@@ -46,13 +46,7 @@ projects:
     endDate: {}
     roles:
       description: "개발환경플랫폼팀의 AI/MLOps 엔지니어 ~ Deep Agents를 이용한 차량SW 검증 AI 플랫폼 개발"
-    skills:
-      description: 차량SW 검증 Agentic AI 플랫폼을 위한 기술 스택
-      items:
-        - Deep Agents
-        - LangChain
-        - Kubernetes
-        - Agentic AI
+
   -
     position: "🤖 Codebeamer AI Assistant [PoC]"
     company: 현대오토에버
@@ -67,13 +61,7 @@ projects:
         - header: 도구 연동
           content: >
             MCP 도구, 도메인 특화 도구를 활용하여 현대오토에버 툴체인 연동, 실행
-    skills:
-      description: Codebeamer AI Assistant [PoC]를 위한 기술 스택
-      items:
-        - RAG
-        - LLM
-        - MCP
-        - Agentic AI
+
   -
     position: "🧑‍🔬 MLOps: 오픈소스 기반 온프레미스 MLOps 도입"
     company: 맥스트
@@ -89,26 +77,16 @@ projects:
         - header: VectorDB
           content: >
             Milvus, ChromaDB 등 고가용 벡터 데이터베이스 구현, RAG+LLM 챗봇 개발
-    skills:
-      description: 온프레미스 MLOps 도입을 위한 기술 스택
-      items:
-        - Kubeflow
-        - Milvus
-        - Ollama
-        - Open WebUI
-        - JupyterHub
-        - Grafana Stack
+
 
 work:
   -
     company: Hyundai AutoEver
-    position: "🧑‍💻 Intermediate Software Engineer [책임]"
+    position: "🧑‍💻 Lead AI Platform Engineer"
     website: https://www.hyundai-autoever.com
     startDate: "2025-02-24"
     endDate: {}
     roles:
-      description: >
-        현대오토에버 개발환경플랫폼팀 소속 리드 AI 플랫폼 엔지니어
       items:
         - header: AI/LLM Platform
           content: >
@@ -118,13 +96,11 @@ work:
             K8s+AI를 실무에 적용하고 팀원들에게 자문하는 역할 담당
   -
     company: MAXST
-    position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
+    position: "🧑‍🔬 Lead MLOps & DevOps Engineer"
     website: https://maxst.com
     startDate: "2021-01-16"
     endDate: "2024-10-31"
     roles:
-      description: >
-        맥스트 기술사업부 소속 리드 MLOps/DevOps 엔지니어
       items:
         - header: MLOps/LLMOps
           content: >
