@@ -192,6 +192,7 @@ skills:
       - AutoML Katib*
       - Training Operator*
       - JupyterHub*
+      - Run:ai
   -
     name: DevOps & SRE
     keywords:
