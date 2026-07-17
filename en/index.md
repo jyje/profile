@@ -81,7 +81,7 @@ My focus areas include **AI applications, LLM/MLOps platforms, hybrid Kubernetes
   img: /assets/img/logos/maxst.png
   period: 2021 – 2024
   subtitle: Lead MLOps / DevOps Engineer
-  description: MLOps & LLMOps · Hybrid Clusters (AWS EKS + On-Premise) · Digital Twins
+  description: MLOps & AIOps · Hybrid Clusters (AWS EKS + On-Premise) · Digital Twins
 - title: POSTECH (Pohang Univ. of Science & Technology)
   img: /assets/img/logos/postech.png
   period: 2012 – 2020
@@ -162,7 +162,7 @@ items:
     from: 2023
     to: 2026
     phase: 3
-    skills: Data Pipelines · RAG · LLMOps · Vector DB
+    skills: Data Pipelines · RAG · AIOps · Vector DB
   - label: AI Platforms
     from: 2025
     to: 2026

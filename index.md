@@ -83,7 +83,7 @@ show_language_toggle: true
   img: /assets/img/logos/maxst.png
   period: 2021 – 2024
   subtitle: 리드 MLOps / DevOps 엔지니어
-  description: MLOps & LLMOps · 하이브리드 클러스터 (AWS EKS + 온프레미스) · 디지털 트윈
+  description: MLOps & AIOps · 하이브리드 클러스터 (AWS EKS + 온프레미스) · 디지털 트윈
 - title: 포항공과대학교 (POSTECH)
   img: /assets/img/logos/postech.png
   period: 2012 – 2020
@@ -164,7 +164,7 @@ items:
     from: 2023
     to: 2026
     phase: 4
-    skills: 데이터 파이프라인 · RAG · LLMOps · Vector DB
+    skills: 데이터 파이프라인 · RAG · AIOps · Vector DB
   - label: AI 플랫폼
     from: 2025
     to: 2026
