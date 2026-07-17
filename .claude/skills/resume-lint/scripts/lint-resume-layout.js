@@ -14,12 +14,19 @@ const views = [
   { name: 'print', suffix: '?print=1' },
   { name: 'print-2col', suffix: '?print=1&cols=2', portfolioOnly: true, allowWrapping: true },
 ];
+const printPreviewViewportWidths = [900, 1200, 1920, 2560];
 
 const rowTypes = [
   {
     selector: '.resume-project-item .resume-meta-row, .resume-work-item .resume-meta-row, .resume-education-item .resume-meta-row',
     textSelector: '.resume-meta-text',
     labelSelector: '.resume-meta-label',
+  },
+  {
+    selector: '.resume-volunteer-item .resume-meta-row',
+    textSelector: '.resume-meta-text',
+    labelSelector: null,
+    fallbackLabel: 'Highlight',
   },
   {
     selector: '.resume-project-item .resume-results-list li',
@@ -35,7 +42,7 @@ const rowTypes = [
 
 async function inspectIndentation(page) {
   return page.evaluate(() => {
-    const level3Selector = '.resume-project-item .resume-role-row, .resume-project-item .resume-results-heading, .resume-work-item .resume-meta-row, .resume-education-item .resume-meta-row';
+    const level3Selector = '.resume-project-item .resume-role-row, .resume-project-item .resume-results-heading, .resume-work-item .resume-meta-row, .resume-education-item .resume-meta-row, .resume-volunteer-item .resume-meta-row';
     const level3Rows = [...document.querySelectorAll(level3Selector)];
     const reference = document.querySelector('.resume-project-item .resume-role-row');
     if (level3Rows.length === 0 || !reference) return [];
@@ -43,7 +50,7 @@ async function inspectIndentation(page) {
     const metric = (row) => {
       const style = getComputedStyle(row);
       const rect = row.getBoundingClientRect();
-      const card = row.closest('.resume-project-item, .resume-work-item, .resume-education-item');
+      const card = row.closest('.resume-project-item, .resume-work-item, .resume-education-item, .resume-volunteer-item');
       return {
         card: card?.querySelector('.resume-card-title')?.innerText.trim() || 'Unknown card',
         label: row.innerText.trim().split('\n')[0],
@@ -109,6 +116,133 @@ async function inspectContactSpacing(page) {
   });
 }
 
+async function inspectPrintPreviewBounds(page, target, viewportWidth) {
+  await page.setViewportSize({ width: viewportWidth, height: 900 });
+  const response = await page.goto(`${baseUrl}${target.path}?print=1`, { waitUntil: 'domcontentloaded' });
+  if (!response || !response.ok()) {
+    throw new Error(`${target.path}?print=1 returned HTTP ${response?.status() || 'unknown'}`);
+  }
+  try {
+    await page.waitForFunction(() => (
+      document.body.classList.contains('print-preview')
+      && document.getElementById('_printPreviewStyles')?.sheet
+    ));
+  } catch {
+    throw new Error(`${target.path}?print=1 did not activate print preview styles`);
+  }
+
+  return page.evaluate((width) => {
+    const sheet = document.getElementById('_main')?.getBoundingClientRect();
+    if (!sheet) return [];
+
+    const tolerance = 1;
+    return [...document.querySelectorAll('#_main .columns-break')].flatMap((columns, index) => {
+      const rect = columns.getBoundingClientRect();
+      const leftOverflow = sheet.left - rect.left;
+      const rightOverflow = rect.right - sheet.right;
+      if (leftOverflow <= tolerance && rightOverflow <= tolerance) return [];
+
+      return [{
+        kind: 'print-preview-bounds',
+        card: index === 0 ? 'Contact columns' : 'Content columns',
+        label: `${width}px viewport`,
+        mismatches: [
+          `columns [${rect.left.toFixed(1)}, ${rect.right.toFixed(1)}] exceed A4 sheet [${sheet.left.toFixed(1)}, ${sheet.right.toFixed(1)}]`,
+        ],
+      }];
+    });
+  }, viewportWidth);
+}
+
+async function inspectPrintPreviewPagination(page, allowCardCrossing = false) {
+  try {
+    await page.waitForFunction(() => Number(document.getElementById('_main')?.dataset.printPreviewPages) > 0);
+  } catch {
+    return [{
+      kind: 'print-preview-pagination',
+      card: 'A4 preview',
+      label: 'page sheets',
+      mismatches: ['print preview pagination did not finish'],
+    }];
+  }
+
+  return page.evaluate((allowCardCrossing) => {
+    const main = document.getElementById('_main');
+    const sheets = [...document.querySelectorAll('.print-preview-page-sheet')];
+    if (!main || sheets.length === 0) {
+      return [{
+        kind: 'print-preview-pagination',
+        card: 'A4 preview',
+        label: 'page sheets',
+        mismatches: ['no A4 page sheets rendered'],
+      }];
+    }
+
+    const mainRect = main.getBoundingClientRect();
+    const scale = main.offsetWidth > 0 ? mainRect.width / main.offsetWidth : 1;
+    const geometry = (element) => {
+      const rect = element.getBoundingClientRect();
+      return {
+        top: (rect.top - mainRect.top) / scale,
+        bottom: (rect.bottom - mainRect.top) / scale,
+        height: rect.height / scale,
+      };
+    };
+    const sheetGeometry = sheets.map(geometry);
+    const pageHeight = sheetGeometry[0].height;
+    const pageGap = sheetGeometry.length > 1 ? sheetGeometry[1].top - sheetGeometry[0].bottom : 24;
+    const pagePeriod = pageHeight + pageGap;
+    const mainStyle = getComputedStyle(main);
+    const paddingTop = Number.parseFloat(mainStyle.paddingTop) || 0;
+    const paddingBottom = Number.parseFloat(mainStyle.paddingBottom) || 0;
+    const contentHeight = pageHeight - paddingTop - paddingBottom;
+    const expectedPageCount = Number(main.dataset.printPreviewPages);
+    const violations = [];
+
+    if (expectedPageCount !== sheets.length) {
+      violations.push({
+        kind: 'print-preview-pagination',
+        card: 'A4 preview',
+        label: 'page count',
+        mismatches: [`data page count ${expectedPageCount} != ${sheets.length} rendered sheets`],
+      });
+    }
+
+    if (allowCardCrossing) return violations;
+
+    const selector = [
+      '.resume-project-item',
+      '.resume-work-item',
+      '.resume-education-item',
+      '.resume-volunteer-item',
+      '.awards-item',
+      '.certificates-item',
+      'blockquote.reference',
+      '.layout-portfolio .column-3-0 > section > section',
+    ].join(',');
+
+    [...new Set(document.querySelectorAll(selector))].forEach((card) => {
+      const rect = geometry(card);
+      if (rect.height > contentHeight) return;
+
+      const pageIndex = Math.max(0, Math.floor(rect.top / pagePeriod));
+      const pageStart = pageIndex * pagePeriod;
+      const contentTop = pageStart + paddingTop;
+      const contentBottom = pageStart + pageHeight - paddingBottom;
+      if (rect.top >= contentTop - 1 && rect.bottom <= contentBottom + 1) return;
+
+      violations.push({
+        kind: 'print-preview-pagination',
+        card: card.querySelector('.resume-card-title')?.innerText.trim() || card.innerText.trim().slice(0, 60) || 'Unknown card',
+        label: `page ${pageIndex + 1}`,
+        mismatches: [`card [${rect.top.toFixed(1)}, ${rect.bottom.toFixed(1)}] crosses printable area [${contentTop.toFixed(1)}, ${contentBottom.toFixed(1)}]`],
+      });
+    });
+
+    return violations;
+  }, allowCardCrossing);
+}
+
 async function inspectTarget(page, target, view) {
   const response = await page.goto(`${baseUrl}${target.path}${view.suffix}`, { waitUntil: 'domcontentloaded' });
   if (!response || !response.ok()) {
@@ -137,7 +271,7 @@ async function inspectTarget(page, target, view) {
   }
   await page.evaluate(() => document.fonts.ready);
 
-  const cardCount = await page.locator('.resume-project-item, .resume-work-item, .resume-education-item').count();
+  const cardCount = await page.locator('.resume-project-item, .resume-work-item, .resume-education-item, .resume-volunteer-item').count();
   const referenceCount = await page.locator('.resume-project-item .resume-role-row').count();
   if (cardCount === 0 || referenceCount === 0) {
     throw new Error(`${target.path}${view.suffix} did not render the expected resume cards`);
@@ -153,10 +287,10 @@ async function inspectTarget(page, target, view) {
     const maxLines = view.name === 'web' ? 2 : 1;
     const rows = await page.locator(rowType.selector).evaluateAll((elements, config) => elements.flatMap((row) => {
       const text = config.textSelector ? row.querySelector(config.textSelector) : row;
-      const label = row.querySelector(config.labelSelector);
-      const card = row.closest('.resume-project-item, .resume-work-item, .resume-education-item');
+      const label = config.labelSelector ? row.querySelector(config.labelSelector) : null;
+      const card = row.closest('.resume-project-item, .resume-work-item, .resume-education-item, .resume-volunteer-item');
 
-      if (!text || !label || !card) return [];
+      if (!text || !card || (config.labelSelector && !label)) return [];
 
       const textStyle = getComputedStyle(text);
       const lineHeight = Number.parseFloat(textStyle.lineHeight);
@@ -167,7 +301,7 @@ async function inspectTarget(page, target, view) {
 
       return [{
         card: card.querySelector('.resume-card-title')?.innerText.trim() || 'Unknown card',
-        label: label.innerText.trim(),
+        label: label?.innerText.trim() || config.fallbackLabel || 'Content',
         text: text.innerText.trim(),
         lines: Math.round(textHeight / lineHeight),
       }];
@@ -198,25 +332,32 @@ async function main() {
         if (view.name.startsWith('print')) {
           const contactSpacing = await inspectContactSpacing(page);
           contactSpacing.forEach((violation) => violations.push({ ...target, view: view.name, ...violation }));
+          const pagination = await inspectPrintPreviewPagination(page, view.allowWrapping);
+          pagination.forEach((violation) => violations.push({ ...target, view: view.name, ...violation }));
         }
         if (!view.allowWrapping) {
           const indentation = await inspectIndentation(page);
           indentation.forEach((violation) => violations.push({ ...target, view: view.name, ...violation }));
         }
       }
+      for (const viewportWidth of printPreviewViewportWidths) {
+        const bounds = await inspectPrintPreviewBounds(page, target, viewportWidth);
+        bounds.forEach((violation) => violations.push({ ...target, view: 'print', ...violation }));
+      }
+      await page.setViewportSize({ width: 1200, height: 900 });
     }
   } finally {
     await browser.close();
   }
 
   if (violations.length === 0) {
-    console.log('resume-lint: no wrapped or misindented Resume or Portfolio content rows found.');
+    console.log('resume-lint: no wrapped, misindented, or out-of-bounds Resume or Portfolio content found.');
     return;
   }
 
   console.error(`resume-lint: ${violations.length} Resume or Portfolio layout violation(s) found.`);
   for (const violation of violations) {
-    if (violation.kind === 'level3-indentation' || violation.kind === 'level4-indentation' || violation.kind === 'contact-spacing') {
+    if (violation.kind === 'level3-indentation' || violation.kind === 'level4-indentation' || violation.kind === 'contact-spacing' || violation.kind === 'print-preview-bounds' || violation.kind === 'print-preview-pagination') {
       console.error(`- [${violation.locale}/${violation.view}] ${violation.card} | ${violation.label} | ${violation.mismatches.join(', ')}`);
       continue;
     }
