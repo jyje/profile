@@ -3,6 +3,12 @@
 // Covers PDF generation for resume/portfolio, color accuracy, and layout.
 // =============================================================================
 
+// Keep the real browser/PDF page box aligned with the local A4 preview and
+// Playwright PDF options. This overrides Hydejack's default 16mm page margin.
+@page {
+  margin: 8mm;
+}
+
 @media print {
 
   // ── Force color printing (tags, backgrounds) ─────────────────────────────
@@ -246,12 +252,42 @@
     break-after: avoid-page;
   }
 
-  section,
-  article,
-  .work-item,
-  .education-item {
-    page-break-inside: avoid;
-    break-inside: avoid-page;
+  // Allow a section to continue across pages while keeping each card intact.
+  // Hydejack marks nested sections as unbreakable, so reset the page-level
+  // containers before applying the card-specific contract below.
+  body .layout-resume section,
+  body .layout-resume article,
+  body .layout-portfolio section,
+  body .layout-portfolio article,
+  body .layout-cv section,
+  body .layout-cv article {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  body .layout-resume .resume-project-item,
+  body .layout-resume .resume-work-item,
+  body .layout-resume .resume-education-item,
+  body .layout-resume .resume-volunteer-item,
+  body .layout-portfolio .resume-project-item,
+  body .layout-portfolio .resume-work-item,
+  body .layout-portfolio .resume-education-item,
+  body .layout-portfolio .resume-volunteer-item,
+  body .layout-cv .resume-project-item,
+  body .layout-cv .resume-work-item,
+  body .layout-cv .resume-education-item,
+  body .layout-cv .resume-volunteer-item,
+  body .layout-resume .work-item,
+  body .layout-portfolio .work-item,
+  body .layout-cv .work-item,
+  body .layout-resume .education-item,
+  body .layout-portfolio .education-item,
+  body .layout-cv .education-item,
+  body .layout-resume .no-page-break,
+  body .layout-portfolio .no-page-break,
+  body .layout-cv .no-page-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid-page !important;
   }
 
   // ── Contact row: 2 columns ────────────────────────────────────────────────
