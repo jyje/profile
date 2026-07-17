@@ -195,12 +195,25 @@ education:
 
 skills:
   -
-    name: Agentic AI
+    name: AI Tool
     keywords:
       - Claude Code
       - Hermes Agent
       - Codex
       - GitHub Copilot
+      - n8n
+      - Dify
+      - OpenWebUI
+  -
+    name: Agentic AI (FE & BE)
+    keywords:
+      - Python/FastAPI
+      - LangGraph & DeepAgents
+      - RAG & MCP
+      - Agent Protocol & A2A
+      - Vercel AI SDK
+      - TUI (Ink)
+      - Slackbot
   -
     name: AIOps & MLOps
     keywords:
@@ -212,16 +225,6 @@ skills:
       - AutoML (Katib)
       - Distributed (DDP)
       - JupyterHub
-  -
-    name: AI BE & FE
-    keywords:
-      - Python/FastAPI
-      - LangGraph & DeepAgents
-      - RAG & MCP
-      - Agent Protocol & A2A
-      - Vercel AI SDK
-      - TUI (Ink)
-      - Slackbot
   -
     name: DevOps
     keywords:
@@ -253,6 +256,7 @@ skills:
     keywords:
       - Python
       - .NET/C#
+      - Go
       - C/C++
       # - MATLAB
 
