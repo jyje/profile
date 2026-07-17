@@ -53,6 +53,8 @@ labels:
   area: 전공
   keywords: 키워드
   gpa: GPA
+  volunteer: Other Activities
+  present: present
 
 
 work:
@@ -276,16 +278,42 @@ skills:
   #     - AMD64/Bare Metal
   #     - FPGA
 
-# volunteer:
-#   -
-#     organization: "CoderDojo"
-#     position: "Teacher"
-#     website: "https://coderdojo.com/"
-#     startDate: "2012-01-01"
-#     endDate: "2013-01-01"
-#     summary: "Global movement of free coding clubs for young people."
-#     highlights:
-#       - "Awarded 'Teacher of the Month'"
+volunteer:
+  -
+    organization: "GitHub"
+    position: "AIOps 오픈소스 프로젝트 운영"
+    website: "https://github.com/jyje"
+    startDate: "2024-08-21"
+    endDate: {}
+    highlights:
+      - title: "jyje/cluster"
+        website: "https://github.com/jyje/cluster"
+        description: "AI: 라즈베리 파이 쿠버네티스 클러스터; AIOps 및 Agentic AI 실험"
+      - title: "jyje/hermes-agent-helm"
+        website: "https://github.com/jyje/hermes-agent-helm"
+        description: "DevOps: 에이전트 팀을 구성할 수 있는 헤르메스 에이전트 헬름 차트"
+      # - title: "jyje/ansible"
+      #   website: "https://github.com/jyje/ansible"
+      # - title: "jyje/claude-docker"
+      #   website: "https://github.com/jyje/claude-docker"
+  # -
+  #   organization: "LangChain OpenWiki"
+  #   position: "AI 오픈소스 기여"
+  #   website: "https://github.com/langchain-ai/openwiki/releases/tag/0.1.2"
+  #   startDate: "2026-07-13"
+  #   endDate: "2026-07-13"
+  #   highlights:
+  #     - "OpenWiki 0.1.2 릴리스 기여"
+  -
+    organization: "한빛앤·한빛미디어"
+    position: "도서 베타리더, 저자 박나연, 『만들면서 배우는 AI 에이전트 개발 입문+실전』"
+    website: "https://www.linkedin.com/company/hanbit-media-%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/"
+    startDate: "2026-03-01"
+    endDate: "2026-03-31"
+    highlights:
+      - title: "박나연, AI 전문가"
+        website: "https://www.linkedin.com/in/parknayeon/"
+        description: "베타리딩: 도서 리뷰·교정·추천사 작성"
 
 awards:
   # - 

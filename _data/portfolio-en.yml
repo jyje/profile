@@ -179,6 +179,8 @@ labels:
   area: Field
   keywords: Keywords
   gpa: GPA
+  volunteer: Other Activities
+  present: present
 
 projects:
   -
@@ -610,16 +612,48 @@ skills:
   #     - AMD64/Bare Metal
   #     - FPGA
 
-# volunteer:
-#   -
-#     organization: "CoderDojo"
-#     position: "Teacher"
-#     website: "https://coderdojo.com/"
-#     startDate: "2012-01-01"
-#     endDate: "2013-01-01"
-#     summary: "Global movement of free coding clubs for young people."
-#     highlights:
-#       - "Awarded 'Teacher of the Month'"
+volunteer:
+  -
+    organization: "GitHub"
+    position: "AIOps Open Source Engineering and Operations"
+    website: "https://github.com/jyje"
+    startDate: "2024-08-21"
+    endDate: {}
+    highlights:
+      - title: "jyje/hermes-agent-helm"
+        website: "https://github.com/jyje/hermes-agent-helm"
+      - title: "jyje/ansible"
+        website: "https://github.com/jyje/ansible"
+      - title: "jyje/claude-docker"
+        website: "https://github.com/jyje/claude-docker"
+      - title: "jyje/cluster"
+        website: "https://github.com/jyje/cluster"
+  -
+    organization: "LangChain OpenWiki"
+    position: "AI Open Source Contribution"
+    website: "https://github.com/langchain-ai/openwiki/releases/tag/0.1.2"
+    startDate: "2026-07-13"
+    endDate: "2026-07-13"
+    highlights:
+      - "Contributed to the OpenWiki 0.1.2 release"
+  -
+    organization: "Hanbit N / Hanbit Media"
+    position: "Beta Reader: Building AI Agents from Fundamentals to Practice"
+    website: "https://www.hanbit.co.kr/"
+    startDate: "2026-03-01"
+    endDate: "2026-03-31"
+    highlights:
+      - "Science & Technology · Reviewed and proofread Park Nayeon's IT book; wrote an endorsement"
+  -
+    organization: "CoderDojo"
+    position: "Teacher"
+    website: "https://coderdojo.com/"
+    startDate: "2012-01-01"
+    endDate: "2013-01-01"
+    summary: "Global movement of free coding clubs for young people."
+    highlights:
+      - "Taught programming at a free coding club for young people"
+      - "Awarded 'Teacher of the Month'"
 
 awards:
   - 

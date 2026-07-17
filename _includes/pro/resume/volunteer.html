@@ -2,37 +2,47 @@
 <section>
   <div class="npb">
   <h2 id="volunteer" class="h3 hr-bottom">
-    {{ strings.resume.volunteer | default:"Volunteer" }}
+    {{ resume.labels.volunteer | default:strings.resume.volunteer | default:"Volunteer" }}
     <span class="symbol {{ icons.volunteer | default:'icon-earth' }}"></span>
   </h2>
   </div>
   {% for vol in resume.volunteer %}
-  <section class="no-page-break">
+  <section class="no-page-break resume-volunteer-item">
     <header class="{% unless forloop.first %}mt2{% endunless %}">
       {% if vol.startDate.size > 0 %}
         <p class="faded">
-          {% include components/from-to.html from=vol.startDate to=vol.endDate format=from_to_format %}
+          {% include components/from-to.html from=vol.startDate to=vol.endDate format=from_to_format duration=vol.duration %}
         </p>
       {% endif %}
-      <h3 class="h4 faded">
-        {% capture position %}<span class="bc">{{ vol.position }}</span>{% endcapture %}
-        {% capture organization %}{% include components/link.html title=vol.organization href=vol.website span_class="bc" %}{% endcapture %}
-        {{ strings.resume.volunteer_title
-          | default:"<!--position--> at <!--organization-->"
-          | replace:"<!--position-->", position
-          | replace:"<!--organization-->", organization
-        }}
+      <h3 class="h4 faded resume-card-title">
+        {% capture position %}<span class="bc resume-card-secondary">{{ vol.position }}</span>{% endcapture %}
+        {% capture organization_class %}resume-card-title-link resume-card-primary{% endcapture %}
+        {% capture organization %}{% include components/link.html title=vol.organization href=vol.website class=organization_class span_class="bc" %}{% endcapture %}
+        {{ position }} <span class="resume-title-separator" aria-hidden="true">·</span> {{ organization }}
       </h3>
     </header>
 
+    {% comment %}
     {% include components/message.html class="note" text=vol.summary alt="" %}
+    {% endcomment %}
 
+    {% if vol.highlights.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
-    <ul>
+    <div class="resume-detail-group resume-volunteer-highlights">
       {% for highlight in vol.highlights %}
-        <li>{{ highlight }}</li>
+        <div class="resume-meta-row tiny {% if forloop.first %}resume-detail-row--first{% else %}resume-detail-row--tight{% endif %}">
+          <span class="resume-meta-icon icon-checkmark" aria-hidden="true"></span>
+          <span class="resume-meta-text">
+            {% if highlight.website %}
+              {% include components/link.html title=highlight.title href=highlight.website class="resume-card-title-link" %}{% if highlight.description %}<span aria-hidden="true"> — </span>{{ highlight.description }}{% endif %}
+            {% else %}
+              {{ highlight.text | default:highlight }}
+            {% endif %}
+          </span>
+        </div>
       {% endfor %}
-    </ul>
+    </div>
+    {% endif %}
   </section>
   {% endfor %}
 </section>

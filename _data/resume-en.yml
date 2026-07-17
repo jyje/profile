@@ -14,8 +14,8 @@ basics:
   location:
     address: "" # "2712 Broadway St"
     postalCode: "" # "CA 94115"
-    city: "" # "Seoul"
-    countryCode: "" # "KR"
+    city: "Seoul" # "Seoul"
+    countryCode: "KR" # "KR"
     region: "" # "California"
   profiles:
     - network: LinkedIn
@@ -28,16 +28,22 @@ basics:
     #   username: StackShare
     #   url: https://stackshare.io/jyje/jyje-pro-stack
   contents:
-    skills:
-      # note: "Highlighted items are specialized in industry-ready."
+    # skills:
+    #   note: "Highlighted items are specialized in industry-ready."
     publications:
       note: "Full list is available on [Google Scholar](https://scholar.google.com/citations?user=gwCPQM8AAAAJ&hl=ko)."
     resume-en:
       title: Résumé
       abstract: >
-        Lead AI Platform Engineer at Hyundai AutoEver · 6 yrs exp · GenAI, AIOps, Hybrid Kubernetes · Open to automotive & AI opportunities.
+        I am a software engineer with six years of industry experience, balancing performance and efficiency for production. I am developing my Agentic AI and cloud expertise to build AI platforms, with the following strengths:
+
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🐳</span> **Cloud AI Development:** I can develop **agent harnesses and workflows** for production and introduce **AIOps** to deploy and operate them.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🤝</span> **Team Building:** I can plan and lead **collaboration, architecture, and platform engineering** in project teams of around ten.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🧑‍🔧</span> **Architecture:** I can build and operate **hybrid Kubernetes clusters** for **high performance**, **high availability**, and **GPU optimization**.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🧑‍🎓</span> **Technical Expertise:** Drawing on my research experience in **computer vision and automotive technology**, I can contribute to decisions involving **Agentic AI, ML, and DevOps**.
+
+        With this experience, I can help build a team from the ground up and quickly adapt to a mature team. I seek challenges across diverse fields, including **automotive technology** and **AI**.
         See my [**portfolio**](https://jyje.online/en/portfolio) for details.
-        This résumé summarizes the areas I currently focus on. For an application, I can provide a tailored résumé in the required format.
 
 labels:
   role: Role
@@ -47,6 +53,8 @@ labels:
   area: Field
   keywords: Keywords
   gpa: GPA
+  volunteer: Other Activities
+  present: present
 
 projects:
   -
@@ -56,12 +64,12 @@ projects:
     startDate: "2026-04-01"
     endDate: {}
     roles:
-      description: "Agentic AI Platform Architect · Tech Lead"
+      description: "Agentic AI platform project · Agent integration and evaluation environment · Architect & Tech Lead"
     results:
       items:
         - header: Architecture & Development
           content: >
-            Led a Deep Agents vehicle SW verification platform
+            Led a Deep Agents-based vehicle SW verification platform
 
   -
     headerIcon: "🤖"
@@ -78,7 +86,7 @@ projects:
             Built a conversational Agentic AI Assistant using RAG and domain tools
         - header: Toolchain Integration
           content: >
-            Integrated MCP/domain tools; validated in-house execution
+            Integrated MCP/domain tools; validated toolchain execution
 
   -
     headerIcon: "🧑‍🔬"
@@ -111,10 +119,10 @@ work:
       items:
         - header: AI/LLM Platform
           content: >
-            Built extensible AI agents and LLMOps for in-house toolchains
+            Develop extensible AI agents and configure LLMOps for in-house toolchains
         - header: Cloud-Native AI
           content: >
-            Applying K8s+AI in practice and advising team members
+            Apply K8s+AI in practice and advise team members
   -
     company: MAXST
     headerIcon: "🧑‍🔬"
@@ -126,10 +134,10 @@ work:
       items:
         - header: DevOps
           content: >
-            Introduced hybrid Kubernetes, led onboarding, and provided development environments
+            Introduced hybrid Kubernetes, onboarded teams, and provided development environments
         - header: MLOps
           content: >
-            Introduced Kubernetes-based research environments and launched a digital twin product
+            Introduced K8s research environments; supported a digital twin launch
   # -
   #   company: "POSTECH"  — research experience shown in skills (Computer Vision, FPGA, SLAM)
   #   startDate: "2012-03-01"
@@ -154,8 +162,8 @@ education:
     headerIcon: "🎓"
     studyType: "Master's Degree (Integrated Program)"
     keywords:
-      - Computer Vision
-      - Digital Signal Processing
+      - Edge Computer Vision
+      - Digital Twins
       - SLAM
       - ADAS
     startDate: "2012-03-01"
@@ -169,7 +177,7 @@ education:
   -
     institution: "kit"
     website: "https://eng.kumoh.ac.kr/eng"
-    area: "Electronic Communication"
+    area: "Electronics & Communications"
     headerIcon: "🎓"
     studyType: "Bachelor's Degree"
     keywords:
@@ -180,7 +188,7 @@ education:
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    thesis: "Underwater LED Visible Light Communication, 2011"
+    thesis: "Underwater LED VLC, 2011"
     # courses:
     #   - Digital Signal Processing
     #   - Visual Light Communication
@@ -270,16 +278,42 @@ skills:
   #     - AMD64/Bare Metal
   #     - FPGA
 
-# volunteer:
-#   -
-#     organization: "CoderDojo"
-#     position: "Teacher"
-#     website: "https://coderdojo.com/"
-#     startDate: "2012-01-01"
-#     endDate: "2013-01-01"
-#     summary: "Global movement of free coding clubs for young people."
-#     highlights:
-#       - "Awarded 'Teacher of the Month'"
+volunteer:
+  -
+    organization: "GitHub"
+    position: "AIOps Open Source Project Operations"
+    website: "https://github.com/jyje"
+    startDate: "2024-08-21"
+    endDate: {}
+    highlights:
+      - title: "jyje/cluster"
+        website: "https://github.com/jyje/cluster"
+        description: "AI: Raspberry Pi Kubernetes cluster for AIOps and Agentic AI experiments"
+      - title: "jyje/hermes-agent-helm"
+        website: "https://github.com/jyje/hermes-agent-helm"
+        description: "DevOps: Helm chart for building Hermes agent teams"
+      # - title: "jyje/ansible"
+      #   website: "https://github.com/jyje/ansible"
+      # - title: "jyje/claude-docker"
+      #   website: "https://github.com/jyje/claude-docker"
+  # -
+  #   organization: "LangChain OpenWiki"
+  #   position: "AI Open Source Contribution"
+  #   website: "https://github.com/langchain-ai/openwiki/releases/tag/0.1.2"
+  #   startDate: "2026-07-13"
+  #   endDate: "2026-07-13"
+  #   highlights:
+  #     - "Contributed to the OpenWiki 0.1.2 release"
+  -
+    organization: "Hanbit N · Hanbit Media"
+    position: "Book Beta Reader · Nayeon Park · 『Learning AI Agent Development by Building: From Introduction to Practice』"
+    website: "https://www.linkedin.com/company/hanbit-media-%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/"
+    startDate: "2026-03-01"
+    endDate: "2026-03-31"
+    highlights:
+      - title: "Nayeon Park, AI Expert"
+        website: "https://www.linkedin.com/in/parknayeon/"
+        description: "Beta reading: reviewed, proofread, and wrote an endorsement"
 
 awards:
   # -

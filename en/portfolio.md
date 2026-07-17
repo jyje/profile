@@ -16,6 +16,7 @@ sections:
   - education
   - awards
   - publications
+  - volunteer
   - certifications
   # - references
   - interests

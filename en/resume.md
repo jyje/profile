@@ -11,8 +11,8 @@ show_language_toggle: true
 left_column:
   - work
   - projects
-  # - volunteer
   - education
+  - volunteer
   # - awards
   # - publications
   # - references

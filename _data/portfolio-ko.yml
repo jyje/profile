@@ -179,6 +179,8 @@ labels:
   area: 전공
   keywords: 키워드
   gpa: GPA
+  volunteer: Other Activities
+  present: present
 
 projects:
   -
@@ -610,16 +612,50 @@ skills:
   #     - AMD64/Bare Metal
   #     - FPGA
 
-# volunteer:
-#   -
-#     organization: "CoderDojo"
-#     position: "Teacher"
-#     website: "https://coderdojo.com/"
-#     startDate: "2012-01-01"
-#     endDate: "2013-01-01"
-#     summary: "Global movement of free coding clubs for young people."
-#     highlights:
-#       - "Awarded 'Teacher of the Month'"
+volunteer:
+  -
+    organization: "GitHub"
+    position: "AIOps 오픈소스 구성 및 운영"
+    website: "https://github.com/jyje"
+    startDate: "2024-08-21"
+    endDate: {}
+    highlights:
+      - title: "jyje/hermes-agent-helm"
+        website: "https://github.com/jyje/hermes-agent-helm"
+      - title: "jyje/ansible"
+        website: "https://github.com/jyje/ansible"
+      - title: "jyje/claude-docker"
+        website: "https://github.com/jyje/claude-docker"
+      - title: "jyje/cluster"
+        website: "https://github.com/jyje/cluster"
+  -
+    organization: "LangChain OpenWiki"
+    position: "AI 오픈소스 기여"
+    website: "https://github.com/langchain-ai/openwiki/releases/tag/0.1.2"
+    startDate: "2026-07-13"
+    endDate: "2026-07-13"
+    highlights:
+      - "OpenWiki 0.1.2 릴리스 기여"
+  -
+    organization: "Hanbit N(한빛앤) / Hanbit Media(한빛미디어)"
+    position: "『만들면서 배우는 AI 에이전트 개발 입문+실전』 베타리더"
+    website: "https://www.linkedin.com/company/hanbit-media-%ED%95%9C%EB%B9%9B%EB%AF%B8%EB%94%94%EC%96%B4/"
+    startDate: "2026-03-01"
+    endDate: "2026-03-31"
+    highlights:
+      - title: "Nayeon Park"
+        website: "https://www.linkedin.com/in/parknayeon/"
+        description: "저자 / 과학기술 IT 도서 리뷰·교정·추천사 작성"
+  -
+    organization: "CoderDojo"
+    position: "교사"
+    website: "https://coderdojo.com/"
+    startDate: "2012-01-01"
+    endDate: "2013-01-01"
+    summary: "청소년을 위한 무료 코딩 클럽의 글로벌 운동."
+    highlights:
+      - "청소년 대상 무료 코딩 클럽에서 프로그래밍 교육"
+      - "이달의 교사 선정"
 
 awards:
   - 
