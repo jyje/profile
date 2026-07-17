@@ -32,14 +32,14 @@ on section composition, column layout, and typical data density.
 
 ## Component hierarchy
 
-Every card-based section (`Projects`, `Work`, `Education`) follows the same four levels.
+Every card-based section (`Projects`, `Work`, `Education`, `Other Activities`) follows the same four levels.
 `Projects` is the reference implementation; `Work` and `Education` are kept in sync with it.
 
 | Level | Meaning | Example | Markup |
 |---|---|---|---|
-| 1 | Section | `Projects` / `Work` / `Education` heading | `<section><h2>` |
+| 1 | Section | `Projects` / `Work` / `Education` / `Other Activities` heading | `<section><h2>` |
 | 2 | Card header | Date range + position/company, or degree/institution/GPA | `.resume-card-title` inside `<header>` |
-| 3 | Semantic row | Project `Role`/`Results`, Work `Roles`, Education `Field`/`Keywords` | `.resume-meta-row` (icon + label + text) |
+| 3 | Semantic row | Project `Role`/`Results`, Work `Roles`, Education `Field`/`Keywords`, Other Activities highlights | `.resume-meta-row` (icon + optional label + text) |
 | 4 | Detail item under a level-3 row | A Project result or Work role item | `.resume-detail-list li` |
 
 Level 3 is always a `.resume-meta-row`: a flex row of `.resume-meta-icon` (fixed width),
@@ -50,7 +50,8 @@ synchronized by construction instead of by manually matched pixel values.
 
 Level 4 exists under `Projects → Results` and `Work → Roles`, rendered as
 `.resume-detail-list li` and indented one step deeper than level 3. Education has no
-level-4 items.
+level-4 items; Other Activities also stops at icon-led level-3 highlight rows. Its legacy
+summary Note remains in data but is intentionally not rendered.
 
 Card-header emojis are stored separately in the optional `headerIcon` field and rendered
 inside `.resume-card-emoji.no-print`. They remain as visual cues on the web but are omitted
@@ -155,6 +156,12 @@ Resume pages support a **local-only** print preview:
     match a printed page's physical size. Displayed as a signed millimeter correction
     (`-1mm`, `+2mm`, or `0mm` to reset), not a raw computed width.
 - `Ctrl+A` / `Cmd+A` selects only `#_main` (the printable content), excluding the toolbar.
+- Content longer than one A4 page renders as numbered sheets stacked vertically with a visible
+  gap. Cards that would cross the printable bottom margin move intact to the next sheet. These
+  screen-only sheets and spacers are removed on `beforeprint`, then restored on `afterprint`, so
+  real browser/PDF pagination remains governed by `@media print`. Portfolio `cols=2` displays the
+  sheet boundaries without synthetic card movement because CSS multi-column flow is repaginated
+  by the real print engine.
 
 Real PDF generation (`scripts/generate-pdf.js`, driven by `pdf-config.yml`) targets
 `/en/resume` and `/ko/resume` directly (A4, `16mm` margin, `prefer_css_page_size: true`) and
