@@ -37,10 +37,10 @@ basics:
       abstract: >
         I'm Jeayoung Jeon [전제영], an **AI Platform Engineer** in Seoul. I enjoy solving problems through technology and pursue growth alongside my team. As a software engineer with 6 years of experience, with AI and clusters as my primary domain, I specialize in:
 
-          - 🐳 **GenAI development:** Implementing and operating **GenAI workloads** and **LLMOps platforms** in cloud-native environments.
-          - 🤝 **Team leadership:** Leading **collaboration, architecture, and platform engineering** in teams of about ten.
-          - 🧑‍🔧 **Architecture:** Building **hybrid Kubernetes clusters** for **high performance**, **high availability**, and **GPU optimization**.
-          - 🧑‍🎓 **Technical expertise:** Contributing to **LLM, ML, DevOps** decisions with backgrounds in **Computer Visions and Automotives**.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🐳</span> **GenAI development:** Implementing and operating **GenAI workloads** and **AIOps platforms** in cloud-native environments.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🤝</span> **Team leadership:** Leading **collaboration, architecture, and platform engineering** in teams of about ten.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🧑‍🔧</span> **Architecture:** Building **hybrid Kubernetes clusters** for **high performance**, **high availability**, and **GPU optimization**.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🧑‍🎓</span> **Technical expertise:** Contributing to **Agentic AI, ML, DevOps** decisions with backgrounds in **Computer Visions and Automotives**.
         
         I'm open to new challenges in **automotive**, **AI**, and beyond. Please feel free to contact me if you have a team I can contribute to.
         See my [**resume**](https://jyje.online/en/resume) for my background and achievements.
@@ -48,7 +48,8 @@ basics:
 work:
   -
     company: Hyundai AutoEver
-    position: 🧑‍💻 Intermediate Software Engineer [책임, Professional]
+    headerIcon: "🧑‍💻"
+    position: Intermediate Software Engineer [책임, Professional]
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
@@ -58,21 +59,22 @@ work:
       items:
         - header: AI/LLM Platform
           content: >
-            Developing extensible AI agents for in-house toolchains and LLMOps configuration
+            Developing extensible AI agents for in-house toolchains and AIOps configuration
         - header: Cloud-Native AI
           content: >
             Applying k8s+AI in practice and advising team members
   -
     company: MAXST
-    position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
-    website: https://maxst.com/ENG/main
+    headerIcon: "🧑‍🔬"
+    position: "Intermediate Software Engineer [선임-책임연구원]"
+    website: https://www.linkedin.com/company/maxst
     startDate: "2021-01-16"
     endDate: "2024-10-31"
     roles:
       description: >
         Lead MLOps/DevOps Engineer at Technology Division, MAXST
       items:
-        - header: MLOps/LLMOps
+        - header: MLOps/AIOps
           content: >
             Designed ML APIs and data pipelines. Built RAG+LLM systems for enterprise solutions
         - header: SRE
@@ -87,7 +89,7 @@ work:
   # -
   #   company: MAXST
   #   position: "🧑‍🔬 Intermediate Software Engineer [책임연구원]"
-  #   website: https://maxst.com/ENG/main
+  #   website: https://www.linkedin.com/company/maxst
   #   startDate: "2024-03-01"
   #   endDate: "2024-11-01"
   #   duration: 9 Months
@@ -98,7 +100,7 @@ work:
   #       - header: MLOps
   #         content: >
   #           Developing ML APIs, data pipelines, and AI Platforms using open sources.
-  #       - header: LLMOps
+  #       - header: AIOps
   #         content: >
   #           Building chatbots using self-hosted RAG+LLM systems for internal documents.
   #       - header: SRE
@@ -107,7 +109,7 @@ work:
   # -
   #   company: MAXST
   #   position: "🧑‍💻 Intermediate Software Engineer [선임연구원]"
-  #   website: https://maxst.com/ENG/main
+  #   website: https://www.linkedin.com/company/maxst
   #   startDate: "2021-01-16"
   #   endDate: "2024-02-28"
   #   duration: 3 Years and 2 Months
@@ -126,7 +128,8 @@ work:
   #           Building on-premise clusters and data pipelines for company's inbound/outbound projects
   - # -
     company: "POSTECH"
-    position: "🧑‍🎓 Graduate Student Researcher in Computer Vision"
+    headerIcon: "🧑‍🎓"
+    position: "Graduate Student Researcher in Computer Vision"
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-03-01"
     endDate: "2020-08-28"
@@ -168,14 +171,24 @@ work:
   #     - Study on BioMEMSs equivarant to Electronic RLC circuits
   #     - Preview of Graduate Program and Experiments
 
+labels:
+  role: Role
+  roles: Roles
+  results: Results
+  growth: Growth
+  area: Field
+  keywords: Keywords
+  gpa: GPA
+
 projects:
   -
-    position: "🚙 Vehicle SW Verification Agentic AI Platform"
+    headerIcon: "🚙"
+    position: "Vehicle SW Verification Agentic AI Platform"
     company: Hyundai AutoEver
     startDate: "2026-04-01"
     endDate: {}
     roles:
-      description: "AI/MLOps Engineer at Development Environment Platform Team ~ Built an Agentic AI platform for vehicle SW verification using Deep Agents"
+      description: "Built a Deep Agents vehicle SW verification platform as an AI/MLOps Engineer"
       items:
         - header: Deep Agents Development
           content: >
@@ -193,14 +206,15 @@ projects:
         - Agentic AI
         - RAG
         - MCP
-        - LLMOps
+        - AIOps
   -
-    position: "🤖 Codebeamer AI Assistant [PoC]"
+    headerIcon: "🤖"
+    position: "Codebeamer AI Assistant"
     company: Hyundai AutoEver
     startDate: "2025-02-24"
     endDate: "2025-11-30"
     roles:
-      description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
+      description: "Built an in-house RAG and tool-based conversational Agentic AI assistant"
       items:
         - header: Agentic AI Development
           content: >
@@ -217,21 +231,22 @@ projects:
       items:
         - header: AI Template
           content: >
-            Concept verification project for AI full stack, knowledge base, and LLMOps for horizontal expansion of AI projects
+            PoC for reusable AI full stack, knowledge base, and AIOps
         - header: AI Planning
           content: >
             Promoted agent productization and agent factory initiatives
     skills:
-      description: Skill Stack for Codebeamer AI Assistant [PoC]
+      description: Skill Stack for Codebeamer AI Assistant
       items:
         - RAG
         - LLM
         - VectorDB
         - MCP
         - Agentic AI
-        - LLMOps
+        - AIOps
   -
-    position: "🧑‍💻 Widearth: Digital Twin & AR Content Platform"
+    headerIcon: "🧑‍💻"
+    position: "Widearth: Digital Twin & AR Content Platform"
     company: Widearth, MAXST
     website: https://widearth.world
     startDate: "2024-01-01"
@@ -257,11 +272,11 @@ projects:
         Service Launch ~ Small Team, Full Features, More Availability, Less Cost
       items:
         - header: Launch  
-          content: Launched/Operated a platform as <b>1 infra engineer</b> with 15 people, 8 developers in 10 months.
+          content: Launched and operated a platform with 15 people, 8 developers, and <b>1 infra engineer</b>.
         - header: Low Cost
           content: Reduced cloud costs by <b>15M KRW (70%)</b> by using hybrid clusters for <b>300+ maps</b>.
         - header: Robust Infra
-          content: Achieved <b>96% availability/year and 14d downtime</b> using hybrid clusters and damage control.
+          content: Achieved <b>96% annual availability and 14-day downtime</b> with hybrid clusters.
     skills:
       description: Skill Stack for Project Widearth
       items:
@@ -273,9 +288,10 @@ projects:
         - Bitbucket Pipelines
         - Karpenter
   -
-    position: "🧑‍🔬 MLOps: On-Premise MLOps with Open Source Projects"
+    headerIcon: "🧑‍🔬"
+    position: "MLOps: On-Premise MLOps with Open Source Projects"
     company: MAXST
-    website: https://maxst.com/ENG/main
+    website: https://www.linkedin.com/company/maxst
     startDate: "2024-01-01"
     endDate: "2024-06-30"
     roles:
@@ -295,17 +311,17 @@ projects:
             Setup CI/CD, NAS, Data Lake, Image Registry for ML Workloads
     results:
       description: >
-        Improved research environment and resource management ~ Increased availability and capacity by merging resources and automating management.
+        Improved research capacity and availability through resource consolidation and automation.
       items:
         - header: Improved Env.
           content: >
-            Consolidated servers managed by researchers into k8s to stable infra capacity and stability; Decision-making using PoC.
+            Consolidated research servers on K8s to improve capacity, stability, and adoption.
         - header: AI Platform
           content: >
-            Expanded from VoC of 2 researchers, gradually increased users to 10. Resolved technical debt through continuous MLOps upgrades.
+            Expanded from 2 to 10 users and reduced technical debt through MLOps upgrades.
         - header: GPU Utilization
           content: >
-            GPU usage increased by <b>3 times</b> and successfully commercialized as a result of performing over <b>800</b> AutoML experiments
+            Ran <b>800+</b> AutoML experiments, tripled GPU use, and commercialized the platform.
     skills:
       description: Skill Stack for On-Premise MLOps
       items:
@@ -322,9 +338,10 @@ projects:
         - Grafana Stack
         - TensorBoard
   -
-    position: "🧑‍🔧 DevOps: Hybrid Clusters for Internal/External Projects"
+    headerIcon: "🧑‍🔧"
+    position: "DevOps: Hybrid Clusters for Internal/External Projects"
     company: MAXST
-    website: https://maxst.com/ENG/main
+    website: https://www.linkedin.com/company/maxst
     startDate: "2022-12-01"
     endDate: "2023-12-31"
     roles:
@@ -341,17 +358,17 @@ projects:
             Data Pipelines for ML Research, Production Pipelines for ML Inference
     results:
       description: >
-        Hybrid Cluster Initiation ~ Increased On-Premise Resource Utilization + Reduced Public Resource Costs + DevOps Culture Propagation
+        Launched hybrid clusters to raise on-prem use, cut cloud costs, and spread DevOps.
       items:
         - header: Cost Reduction
           content: >
-            Maintained public availability while reducing costs by <b>50%</b> compared to pure cloud infrastructure using on-premises cost-effectiveness.
+            Maintained availability while cutting costs <b>50%</b> versus pure cloud infrastructure.
         - header: Resource Utilization
           content: >
-            Utilized <b>90% of idle on-premises resources</b>, provided multi-cluster for prototyping in other departments
+            Used <b>90%</b> of idle on-prem resources and enabled multi-cluster prototyping.
         - header: DevOps Culture
           content: >
-            Introduced cloud-native development environment. Propagated DevOps culture including app modernization and CI/CD. Decision support through monitoring.
+            Introduced cloud-native CI/CD, modernization, and monitoring.
     skills:
       description: Skill Stack for DevOps and Hybrid Cluster
       items:
@@ -367,9 +384,10 @@ projects:
         - Python/FastAPI
         - Python/Bolt (Slack)
   -
-    position: 📸 Computer Vision Engineer
+    headerIcon: "📸"
+    position: Computer Vision Engineer
     company: MAXST
-    website: https://maxst.com/ENG/main
+    website: https://www.linkedin.com/company/maxst
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     roles:
@@ -392,7 +410,7 @@ projects:
         Development of computer vision algorithms and construction of digital twin systems
       items:
         - header: Digital Twins
-          content: Research and development of Visual-SLAM and ICP algorithms for digital twin systems
+          content: Developed Visual-SLAM and ICP algorithms for digital twin systems.
         - header: Automation
           content: Development of automated pipelines for data acquisition and analysis
     skills:
@@ -407,7 +425,8 @@ projects:
         - .NET/C#
         - Unity
   -
-    position: 🧑‍🎓 Computer Vision and ADAS Researcher (Integrated Program)
+    headerIcon: "🧑‍🎓"
+    position: Computer Vision and ADAS Researcher (Integrated Program)
     company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
@@ -437,7 +456,7 @@ projects:
             </ul>
     results:
       description: >
-        Proejcts and Research Papers ~ Studying on Automotive Simulations in Virtual Environments and ADAS On-Edge.
+        Researched automotive simulation in virtual environments and edge ADAS.
       items:
         - header: Digital Twins
           content: Virtual Visual-SLAM for Real-World Environments
@@ -461,12 +480,17 @@ education:
   -
     institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
-    area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-    studyType: "🎓 Master's Degree (Integrated Program)"
+    area: "Electrical Engineering · Computer Vision & Signal Processing"
+    studyType: "Integrated Ph.D. Program Coursework Completed"
+    keywords:
+      - Computer Vision
+      - Digital Signal Processing
+      - SLAM
+      - ADAS
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    thesis: "Virtual Visual-SLAM for Real-World Environments, 2020"
+    thesis: "Virtual Visual-SLAM, 2020"
     # courses:
     #   - Advanced Driver Assistance Systems (ADAS)
     #   - Simultaneous Localization and Mapping (SLAM)
@@ -474,12 +498,17 @@ education:
   -
     institution: "Kumoh National Institute of Technology (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
-    area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "🎓 Bachelor's Degree"
+    area: "Electronic Communication"
+    studyType: "Bachelor's Degree"
+    keywords:
+      - Digital Signal Processing
+      - Electronic Communication
+      - Visible Light Communication
+      - FPGA
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    thesis: "A Study on a Visible Light Communication using LED in Under-water Environment, 2011"
+    thesis: "Underwater LED Visible Light Communication, 2011"
     # courses:
     #   - Digital Signal Processing
     #   - Visual Light Communication
@@ -488,43 +517,43 @@ education:
 
 skills:
   -
-    name: GenAI & LLMOps
+    name: GenAI & AIOps
     keywords:
-      - Public/On-Premise LLM*
-      - RAG*
-      - MCP*
-      - Agentic AI*
+      - Public/On-Premise LLM
+      - RAG
+      - MCP
+      - Agentic AI
   -
     name: MLOps
     keywords:
-      - Kubeflow*
-      - AutoML Katib*
-      - Training Operator*
-      - JupyterHub*
+      - Kubeflow
+      - AutoML Katib
+      - Training Operator
+      - JupyterHub
   -
     name: DevOps & SRE
     keywords:
-      - Kubernetes*
-      - On-Premise*
-      - AWS EKS*
+      - Kubernetes
+      - On-Premise
+      - AWS EKS
       - GCP GKE
-      - Hybrid Clusters*
-      - ARM64*
-      - IaC*
-      - Kubespray*
-      - Terraform*
-      - Ansible*
-      - Istio*
-      - Grafana Stack*
-      - Karpenter*
+      - Hybrid Clusters
+      - ARM64
+      - IaC
+      - Kubespray
+      - Terraform
+      - Ansible
+      - Istio
+      - Grafana Stack
+      - Karpenter
   -
     name: CI/CD/CT/CT
     keywords:
-      - Argo Projects*
-      - Bitbucket Pipelines*
-      - GitLab CI*
-      - GitHub Actions*
-      - Self-Hosted Runner*
+      - Argo Projects
+      - Bitbucket Pipelines
+      - GitLab CI
+      - GitHub Actions
+      - Self-Hosted Runner
       - Kaniko
       - Buildah
       - Locust
@@ -532,53 +561,53 @@ skills:
   -
     name: ML Backend
     keywords:
-      - Python/FastAPI*
-      - Python/LangGraph*
-      - Ollama*
-      - Milvus*
-      - PostgreSQL*
+      - Python/FastAPI
+      - Python/LangGraph
+      - Ollama
+      - Milvus
+      - PostgreSQL
       - Redis
   -
     name: Computer Vision
     keywords:
-      - Automotives*
-      - SLAM*
-      - PyTorch*
-      - OpenCV*
-      - FPGA*
+      - Automotives
+      - SLAM
+      - PyTorch
+      - OpenCV
+      - FPGA
   -
     name: UI/UX
     keywords:
-      - Slackbot*
-      - Python/FastUI*
-      - Open WebUI*
-      - Vercel AI SDK*
-      - .NET/MAUI*
+      - Slackbot
+      - Python/FastUI
+      - Open WebUI
+      - Vercel AI SDK
+      - .NET/MAUI
       - .NET/WPF
       - Unity
 
   -
     name: Programming languages
     keywords:
-      - Python*
-      - .NET/C#*
+      - Python
+      - .NET/C#
       - C/C++
       - MATLAB
 
   # -
   #  name: Tool, OS and Hardware
   #   keywords:
-  #     - Visual Studio Code*
-  #     - Visual Studio*
+  #     - Visual Studio Code
+  #     - Visual Studio
   #     - Jupyter Notebook
   #     - MATLAB/Simulink
-  #     - Windows*
-  #     - WSL2*
-  #     - Ubuntu*
-  #     - Alpine*
-  #     - MacOS*
-  #     - ARM64/Raspberry Pi*
-  #     - AMD64/Bare Metal*
+  #     - Windows
+  #     - WSL2
+  #     - Ubuntu
+  #     - Alpine
+  #     - MacOS
+  #     - ARM64/Raspberry Pi
+  #     - AMD64/Bare Metal
   #     - FPGA
 
 # volunteer:

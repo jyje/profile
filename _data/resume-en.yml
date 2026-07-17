@@ -35,54 +35,75 @@ basics:
     resume-en:
       title: Résumé
       abstract: >
-        Lead AI Platform Engineer at Hyundai AutoEver · 6 yrs exp · GenAI, LLMOps, Hybrid Kubernetes · Open to automotive & AI opportunities.
+        Lead AI Platform Engineer at Hyundai AutoEver · 6 yrs exp · GenAI, AIOps, Hybrid Kubernetes · Open to automotive & AI opportunities.
         See my [**portfolio**](https://jyje.online/en/portfolio) for details.
+        This résumé summarizes the areas I currently focus on. For an application, I can provide a tailored résumé in the required format.
+
+labels:
+  role: Role
+  roles: Roles
+  results: Results
+  growth: Growth
+  area: Field
+  keywords: Keywords
+  gpa: GPA
 
 projects:
   -
-    position: "🚙 Vehicle SW Verification Agentic AI Platform"
+    headerIcon: "🚙"
+    position: "Agentic AI Platform for Vehicle SW Verification"
     company: Hyundai AutoEver
     startDate: "2026-04-01"
     endDate: {}
     roles:
-      description: "AI/MLOps Engineer at Development Environment Platform Team ~ Vehicle SW verification platform using Deep Agents"
+      description: "Agentic AI Platform Architect · Tech Lead"
+    results:
+      items:
+        - header: Architecture & Development
+          content: >
+            Led a Deep Agents vehicle SW verification platform
 
   -
-    position: "🤖 Codebeamer AI Assistant [PoC]"
+    headerIcon: "🤖"
+    position: "Codebeamer AI Assistant"
     company: Hyundai AutoEver
     startDate: "2025-02-24"
     endDate: "2025-11-30"
     roles:
-      description: "AI/MLOps Engineer at Development Environment Platform Team ~ In-house development of conversational Agentic AI using RAG and Tools"
+      description: "Agentic AI Development · Tech Lead"
+    results:
       items:
-        - header: Agentic AI Development
+        - header: In-house PoC
           content: >
-            Built conversational Agentic AI in-house using RAG and Tools
-        - header: Tool Integration
+            Built a conversational Agentic AI Assistant using RAG and domain tools
+        - header: Toolchain Integration
           content: >
-            Integrated MCP and domain-specific tools with the in-house toolchain
+            Integrated MCP/domain tools; validated in-house execution
 
   -
-    position: "🧑‍🔬 MLOps: On-Premise MLOps with Open Source Projects"
+    headerIcon: "🧑‍🔬"
+    position: "MLOps: On-Premise MLOps with Open Source Projects"
     company: MAXST
-    website: https://maxst.com/ENG/main
+    website: https://www.linkedin.com/company/maxst
     startDate: "2024-01-01"
     endDate: "2024-06-30"
     roles:
-      description: "Lead MLOps Engineer ~ Planning + VoC + PoC + ML Workloads/Infra + Operation [contrib 90%]"
+      description: "MLOps Platform Architect · Tech Lead [90% contribution]"
+    results:
       items:
-        - header: Kubeflow
+        - header: 3x GPU Utilization
           content: >
-            AutoML, distributed training, model registry via Argo Workflows; GPU usage up <b>3x</b>
-        - header: VectorDB
+            Unified GPUs cloud-natively for 24/7 operation and scalability
+        - header: Digital Twin Launch
           content: >
-            Milvus, ChromaDB, RAG+LLM chatbot
+            Kubeflow training optimization helped launch the digital twin product
 
 
 work:
   -
     company: Hyundai AutoEver
-    position: "🧑‍💻 Lead AI Platform Engineer"
+    headerIcon: "🧑‍💻"
+    position: "Lead AI Platform Engineer"
     website: https://www.hyundai-autoever.com/eng
     startDate: "2025-02-24"
     endDate: {}
@@ -90,24 +111,25 @@ work:
       items:
         - header: AI/LLM Platform
           content: >
-            Developing extensible AI agents for in-house toolchains and LLMOps configuration
+            Built extensible AI agents and LLMOps for in-house toolchains
         - header: Cloud-Native AI
           content: >
-            Applying k8s+AI in practice and advising team members
+            Applying K8s+AI in practice and advising team members
   -
     company: MAXST
-    position: "🧑‍🔬 Lead MLOps & DevOps Engineer"
-    website: https://maxst.com/ENG/main
+    headerIcon: "🧑‍🔬"
+    position: "Lead MLOps & DevOps Engineer"
+    website: https://www.linkedin.com/company/maxst
     startDate: "2021-01-16"
     endDate: "2024-10-31"
     roles:
       items:
-        - header: MLOps/LLMOps
+        - header: DevOps
           content: >
-            Designed ML APIs and data pipelines. Built RAG+LLM systems for enterprise solutions
-        - header: Infra & SRE
+            Introduced hybrid Kubernetes, led onboarding, and provided development environments
+        - header: MLOps
           content: >
-            Architected hybrid clusters (AWS EKS + On-Premise) for digital twin platform, plus site reliability engineering
+            Introduced Kubernetes-based research environments and launched a digital twin product
   # -
   #   company: "POSTECH"  — research experience shown in skills (Computer Vision, FPGA, SLAM)
   #   startDate: "2012-03-01"
@@ -126,27 +148,39 @@ work:
 
 education:
   -
-    institution: "Pohang University of Science and Technology (POSTECH)"
+    institution: "POSTECH"
     website: "https://eee.postech.ac.kr/"
-    area: "Department of Electrical Engineering, Signal Processing & Computer Vision"
-    studyType: "🎓 Master's Degree (Integrated Program)"
+    area: "Electrical Engineering · Computer Vision & Signal Processing"
+    headerIcon: "🎓"
+    studyType: "Master's Degree (Integrated Program)"
+    keywords:
+      - Computer Vision
+      - Digital Signal Processing
+      - SLAM
+      - ADAS
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    # thesis: "Virtual Visual-SLAM for Real-World Environments, 2020"
+    thesis: "Virtual Visual-SLAM, 2020"
     # courses:
     #   - Advanced Driver Assistance Systems (ADAS)
     #   - Simultaneous Localization and Mapping (SLAM)
     #   - Computer Vision Algorithms
   -
-    institution: "Kumoh National Institute of Technology (kit)"
+    institution: "kit"
     website: "https://eng.kumoh.ac.kr/eng"
-    area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "🎓 Bachelor's Degree"
+    area: "Electronic Communication"
+    headerIcon: "🎓"
+    studyType: "Bachelor's Degree"
+    keywords:
+      - Digital Signal Processing
+      - Electronic Communication
+      - Visible Light Communication
+      - FPGA
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
-    # thesis: "A Study on a Visible Light Communication using LED in Under-water Environment, 2011"
+    thesis: "Underwater LED Visible Light Communication, 2011"
     # courses:
     #   - Digital Signal Processing
     #   - Visual Light Communication
@@ -155,80 +189,81 @@ education:
 
 skills:
   -
-    name: GenAI & LLMOps
+    name: Agentic AI
     keywords:
-      - Public/On-Premise LLM*
-      - RAG*
-      - MCP*
-      - Agentic AI*
+      - Claude Code
+      - Hermes Agent
+      - Codex
+      - GitHub Copilot
   -
-    name: MLOps
+    name: AIOps & MLOps
     keywords:
-      - Kubeflow*
-      - AutoML Katib*
-      - Training Operator*
-      - JupyterHub*
-      - Run:ai
+      - Public/Private LLM
+      - vLLM
+      - LiteLLM
+      - Vector Store (Milvus/Qdrant/pgVector)
+      - Kubeflow (Run:ai)
+      - AutoML (Katib)
+      - Distributed (DDP)
+      - JupyterHub
   -
-    name: DevOps & SRE
+    name: AI BE & FE
     keywords:
-      - Kubernetes*
-      - Hybrid Clusters*
-      - AWS EKS*
-      - IaC*
-      - Grafana Stack*
-      - Istio*
+      - Python/FastAPI
+      - LangGraph & DeepAgents
+      - RAG & MCP
+      - Agent Protocol & A2A
+      - Vercel AI SDK
+      - TUI (Ink)
+      - Slackbot
+  -
+    name: DevOps
+    keywords:
+      - Kubernetes
+      - Hybrid Clusters
+      - AWS EKS
+      - On-Premise
+      - IaC
+      - Grafana (LGTM)
   -
     name: CI/CD
     keywords:
-      - Argo Projects*
-      - GitHub Actions*
-      - GitLab CI*
-      - Self-Hosted Runner*
+      - Argo Projects
+      - GitHub Actions
+      - GitLab CI
+      - Sealed Secrets
   -
-    name: ML Backend
+    name: Computer Vision (EE)
     keywords:
-      - Python/FastAPI*
-      - Python/LangGraph*
-      - Ollama*
-      - Milvus*
-  -
-    name: Computer Vision
-    keywords:
-      - SLAM*
-      - PyTorch*
-      - OpenCV*
-      - FPGA*
-  -
-    name: UI/UX
-    keywords:
-      - Slackbot*
-      - Open WebUI*
-      - Vercel AI SDK*
-      - .NET/MAUI*
-
+      - Digital Twins
+      - SLAM
+      - PyTorch
+      - DSP
+      - OpenCV
+      - FPGA
+      - Raspberry Pi
   -
     name: Programming languages
     keywords:
-      - Python*
-      - .NET/C#*
+      - Python
+      - .NET/C#
       - C/C++
-      - MATLAB
+      # - MATLAB
 
   # -
   #  name: Tool, OS and Hardware
   #   keywords:
-  #     - Visual Studio Code*
-  #     - Visual Studio*
+  #     - Visual Studio Code
+  #     - Visual Studio
   #     - Jupyter Notebook
   #     - MATLAB/Simulink
-  #     - Windows*
-  #     - WSL2*
-  #     - Ubuntu*
-  #     - Alpine*
-  #     - MacOS*
-  #     - ARM64/Raspberry Pi*
-  #     - AMD64/Bare Metal*
+  #     - Windows
+  #     - WSL2
+  #     - Ubuntu
+  #     - Alpine
+  #     - MacOS
+  #     - ARM64/Raspberry Pi
+  #     - AMD64/Bare Metal
   #     - FPGA
 
 # volunteer:

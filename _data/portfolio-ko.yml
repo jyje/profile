@@ -37,10 +37,10 @@ basics:
       abstract: >
         저는 서울에서 활동하는 **AI 플랫폼 엔지니어** 전제영[Jeayoung Jeon]입니다. 기술로 문제를 풀고, 팀과 함께 성장하는 것을 추구합니다. AI와 클러스터를 주력 도메인으로 활동하는 경력 6년차 소프트웨어 엔지니어로서, 다음의 전문성을 가지고 있습니다:
 
-          - 🐳 **GenAI 개발:** 클라우드 네이티브 환경의 **GenAI 워크로드**와 **LLMOps 플랫폼**을 구현/운영할 수 있습니다.
-          - 🤝 **팀 리딩:** 10인 내외 팀 프로젝트에서 **협업, 아키텍트 및 플랫폼 엔지니어링**을 리딩할 수 있습니다.
-          - 🧑‍🔧 **아키텍트:** **고성능**, **고가용성**, **GPU 최적화**를 위한 **하이브리드 쿠버네티스 클러스터**를 개발/운영할 수 있습니다.
-          - 🧑‍🎓 **기술지식:** **컴퓨터비전, 차량기술** 연구원 경험을 활용하여 **LLM, ML, DevOps** 관련 의사 결정에 기여할 수 있습니다.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🐳</span> **GenAI 개발:** 클라우드 네이티브 환경의 **GenAI 워크로드**와 **AIOps 플랫폼**을 구현/운영할 수 있습니다.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🤝</span> **팀 리딩:** 10인 내외 팀 프로젝트에서 **협업, 아키텍트 및 플랫폼 엔지니어링**을 리딩할 수 있습니다.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🧑‍🔧</span> **아키텍트:** **고성능**, **고가용성**, **GPU 최적화**를 위한 **하이브리드 쿠버네티스 클러스터**를 개발/운영할 수 있습니다.
+          - <span class="resume-abstract-emoji no-print" aria-hidden="true">🧑‍🎓</span> **기술지식:** **컴퓨터비전, 차량기술** 연구원 경험을 활용하여 **Agentic AI, ML, DevOps** 관련 의사 결정에 기여할 수 있습니다.
         
         저는 **차량기술** 및 **AI**를 포함한 다양한 분야의 도전을 꿈꾸고 있습니다. 제가 기여할 수 있는 팀이 있다면 편하게 연락 부탁드립니다.
         저의 이력서와 성과는 [**이력서**](https://jyje.online/ko/resume)를 참고해 주세요.
@@ -48,7 +48,8 @@ basics:
 work:
   -
     company: Hyundai AutoEver
-    position: "🧑‍💻 Intermediate Software Engineer [책임]"
+    headerIcon: "🧑‍💻"
+    position: "Intermediate Software Engineer [책임]"
     website: https://www.hyundai-autoever.com
     startDate: "2025-02-24"
     endDate: {}
@@ -58,21 +59,22 @@ work:
       items:
         - header: AI/LLM Platform
           content: >
-            사내 툴체인에 확장가능한 AI 에이전트 개발 및 LLMOps 구성
+            사내 툴체인에 확장가능한 AI 에이전트 개발 및 AIOps 구성
         - header: Cloud-Native AI
           content: >
             K8s+AI를 실무에 적용하고 팀원들에게 자문하는 역할 담당
   -
     company: MAXST
-    position: "🧑‍🔬 Intermediate Software Engineer [선임-책임연구원]"
-    website: https://maxst.com
+    headerIcon: "🧑‍🔬"
+    position: "Intermediate Software Engineer [선임-책임연구원]"
+    website: https://www.linkedin.com/company/maxst
     startDate: "2021-01-16"
     endDate: "2024-10-31"
     roles:
       description: >
         리드 MLOps/DevOps 엔지니어 at 맥스트 기술사업부
       items:
-        - header: MLOps/LLMOps
+        - header: MLOps/AIOps
           content: >
             ML API, 데이터 파이프라인, AI 플랫폼, RAG+LLM 시스템 개발
         - header: SRE
@@ -87,7 +89,7 @@ work:
   # -
   #   company: MAXST
   #   position: "🧑‍🔬 Intermediate Software Engineer [책임연구원]"
-  #   website: https://maxst.com
+  #   website: https://www.linkedin.com/company/maxst
   #   startDate: "2024-03-01"
   #   endDate: "2024-11-01"
   #   duration: 9개월
@@ -98,7 +100,7 @@ work:
   #       - header: MLOps
   #         content: >
   #           오픈 소스를 활용하여 ML API, 데이터 파이프라인, AI 플랫폼 개발
-  #       - header: LLMOps
+  #       - header: AIOps
   #         content: >
   #           사내에 자체 구축한 RAG+LLM 시스템을 활용하여 사내 문서를 학습한 챗봇 개발
   #       - header: SRE
@@ -107,7 +109,7 @@ work:
   # -
   #   company: MAXST
   #   position: "🧑‍💻 Intermediate Software Engineer [선임연구원]"
-  #   website: https://maxst.com
+  #   website: https://www.linkedin.com/company/maxst
   #   startDate: "2021-01-16"
   #   endDate: "2024-02-28"
   #   duration: 3년 2개월
@@ -126,7 +128,8 @@ work:
   #           사내외 프로젝트를 위한 온프레미스 쿠버네티스 클러스터와 데이터 파이프라인 개발
   -
     company: "POSTECH"
-    position: "🧑‍🎓 Graduate Student Researcher [대학원 연구원, 컴퓨터 비전 전공]"
+    headerIcon: "🧑‍🎓"
+    position: "Graduate Student Researcher [대학원 연구원, 컴퓨터 비전 전공]"
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-03-01"
     endDate: "2020-08-28"
@@ -168,9 +171,19 @@ work:
   #     - Study on BioMEMSs equivarant to Electronic RLC circuits
   #     - Preview of Graduate Program and Experiments
 
+labels:
+  role: 역할
+  roles: 역할
+  results: 성과
+  growth: 성장
+  area: 전공
+  keywords: 키워드
+  gpa: GPA
+
 projects:
   -
-    position: "🚙 차량SW 검증 Agentic AI 플랫폼"
+    headerIcon: "🚙"
+    position: "차량SW 검증 Agentic AI 플랫폼"
     company: 현대오토에버
     startDate: "2026-04-01"
     endDate: {}
@@ -193,9 +206,10 @@ projects:
         - Agentic AI
         - RAG
         - MCP
-        - LLMOps
+        - AIOps
   -
-    position: "🤖 Codebeamer AI Assistant [PoC]"
+    headerIcon: "🤖"
+    position: "Codebeamer AI Assistant"
     company: 현대오토에버
     startDate: "2025-02-24"
     endDate: "2025-11-30"
@@ -217,21 +231,22 @@ projects:
       items:
         - header: AI 템플릿 확보
           content: >
-            AI 프로젝트 수평확장을 위한 AI 풀스택, 지식기반, LLMOps 개념증명 프로젝트
+            AI 프로젝트 수평확장을 위한 AI 풀스택, 지식기반, AIOps 개념증명 프로젝트
         - header: AI 기획 방향성
           content: >
             에이전트 상품화, 에이전트 팩토리 추진
     skills:
-      description: Codebeamer AI Assistant [PoC]를 위한 기술 스택
+      description: Codebeamer AI Assistant를 위한 기술 스택
       items:
         - RAG
         - LLM
         - VectorDB
         - MCP
         - Agentic AI
-        - LLMOps
+        - AIOps
   -
-    position: "🧑‍💻 프로젝트 와이더스: 디지털 트윈 & AR 콘텐츠 플랫폼"
+    headerIcon: "🧑‍💻"
+    position: "프로젝트 와이더스: 디지털 트윈 & AR 콘텐츠 플랫폼"
     company: 와이더스, 맥스트
     website: https://widearth.world
     startDate: "2024-01-01"
@@ -259,9 +274,9 @@ projects:
         - header: 서비스 출시
           content: 15인 총원, 8인 개발, <b>1인 인프라 담당</b>으로 기획과 개발에 참여하여 플랫폼 출시와 운영에 기여
         - header: 고효율 ML
-          content: 하이브리드 인프라로 <b>300+개 공간맵</b>을 생성하였고, 기존 서비스 대비 클라우드 비용을 <b>1.5천만원(70%)</b> 절약
+          content: 하이브리드 인프라로 <b>공간맵 300+개</b> 생성, 클라우드 비용 <b>70%(1.5천만원)</b> 절감
         - header: 고가용 인프라
-          content: 하이브리드 클러스터 및 장애 대응으로 서비스 <b>연간 가용성 96%, 다운타임 14일</b>의 원만한 서비스를 구현
+          content: 하이브리드 클러스터·장애 대응으로 <b>연간 가용성 96%, 다운타임 14일</b> 달성
     skills:
       description: 프로젝트 와이더스를 위한 기술 스택
       items:
@@ -273,9 +288,10 @@ projects:
         - Bitbucket Pipelines
         - Karpenter
   -
-    position: "🧑‍🔬 MLOps: 오픈소스 기반 온프레미스 MLOps 도입"
+    headerIcon: "🧑‍🔬"
+    position: "MLOps: 오픈소스 기반 온프레미스 MLOps 도입"
     company: 맥스트
-    website: https://maxst.com
+    website: https://www.linkedin.com/company/maxst
     startDate: "2024-01-01"
     endDate: "2024-06-30"
     roles:
@@ -299,10 +315,10 @@ projects:
       items:
         - header: 연구환경 개선
           content: >
-            연구원들이 개별 관리하던 분산 서버들을 쿠버네티스로 통합하여 인프라 용량 및 안정성 확보. PoC를 통해 구성원의 MLOps 도입 의사결정 성공
+            분산 연구 서버를 Kubernetes로 통합해 용량·안정성 확보, PoC로 MLOps 도입 결정
         - header: AI 플랫폼
           content: >
-            Kubeflow, JupyterHub 등 연구원 2명의 VoC에서 10명으로 점차 사용자 및 규모 확대. 지속적 MLOps 고도화로 연구환경 개선 및 기술부채 해소
+            Kubeflow·JupyterHub 도입으로 사용자 2명→10명 확대, MLOps 고도화로 기술부채 해소
         - header: GPU 활용성 개선
           content: >
             GPU 사용률 <b>3배 증가</b> 및 <b>800건 이상</b>의 AutoML 실험 수행 결과로 상품화 성공
@@ -322,9 +338,10 @@ projects:
         - Grafana Stack
         - TensorBoard
   -
-    position: "🧑‍🔧 DevOps: 사내외 프로젝트를 위한 하이브리드 클러스터 개발"
+    headerIcon: "🧑‍🔧"
+    position: "DevOps: 사내외 프로젝트를 위한 하이브리드 클러스터 개발"
     company: 맥스트
-    website: https://maxst.com
+    website: https://www.linkedin.com/company/maxst
     startDate: "2022-12-01"
     endDate: "2023-12-31"
     roles:
@@ -351,7 +368,7 @@ projects:
             유휴 온프레미스 리소스의 <b>90% 활용</b>, 타부서 프로토타이핑을 위한 멀티클러스터 공급
         - header: DevOps 문화
           content: >
-            클라우드 네이티브 개발환경 도입. 앱 현대화 및 CI/CD를 포함한 DevOps 문화 전파. 모니터링을 통한 의사결정 지원
+            클라우드 네이티브 환경·CI/CD 도입과 모니터링 기반 의사결정 지원
     skills:
       description: DevOps 및 하이브리드 클러스터를 위한 기술 스택
       items:
@@ -367,9 +384,10 @@ projects:
         - Python/FastAPI
         - Python/Bolt (Slack)
   -
-    position: 📸 컴퓨터 비전 엔지니어
+    headerIcon: "📸"
+    position: 컴퓨터 비전 엔지니어
     company: 맥스트
-    website: https://maxst.com
+    website: https://www.linkedin.com/company/maxst
     startDate: "2021-01-16"
     endDate: "2022-12-31"
     roles:
@@ -407,7 +425,8 @@ projects:
         - .NET/C#
         - Unity
   -
-    position: 🧑‍🎓 컴퓨터 비전 및 ADAS 연구원 (통합박사과정)
+    headerIcon: "🧑‍🎓"
+    position: 컴퓨터 비전 및 ADAS 연구원 (통합박사과정)
     company: POSTECH
     website: "https://eee.postech.ac.kr/"
     startDate: "2012-01-03"
@@ -461,12 +480,17 @@ education:
   -
     institution: "Pohang University of Science and Technology (POSTECH)"
     website: "https://eee.postech.ac.kr/"
-    area: "전기전자공학과, 컴퓨터비전 및 신호처리"
-    studyType: "🎓 석사학위(통합과정수료)"
+    area: "전기전자공학 · 컴퓨터비전·신호처리"
+    studyType: "통합박사과정 수료"
+    keywords:
+      - 컴퓨터비전
+      - 디지털신호처리
+      - SLAM
+      - ADAS
     startDate: "2012-03-01"
     endDate: "2020-08-31"
     gpa: "3.2/4.3"
-    thesis: "실제 환경과 가상 환경을 위한 동시적 위치 추정 및 지도 작성 방법"
+    thesis: "Virtual Visual-SLAM, 2020"
     # courses:
     #   - Advanced Driver Assistance Systems (ADAS)
     #   - Simultaneous Localization and Mapping (SLAM)
@@ -475,7 +499,12 @@ education:
     institution: "Kumoh National Institute of Technology (kit)"
     website: "https://eng.kumoh.ac.kr/eng"
     area: "School of Electronic Engineering, Electronic Communication"
-    studyType: "🎓 학사학위"
+    studyType: "학사학위"
+    keywords:
+      - 디지털신호처리
+      - 전자통신
+      - 가시광통신
+      - FPGA
     startDate: "2008-03-01"
     endDate: "2012-02-28"
     gpa: "4.3/4.5"
@@ -488,43 +517,43 @@ education:
 
 skills:
   -
-    name: GenAI & LLMOps
+    name: GenAI & AIOps
     keywords:
-      - Public/On-Premise LLM*
-      - RAG*
-      - MCP*
-      - Agentic AI*
+      - Public/On-Premise LLM
+      - RAG
+      - MCP
+      - Agentic AI
   -
     name: MLOps
     keywords:
-      - Kubeflow*
-      - AutoML Katib*
-      - Training Operator*
-      - JupyterHub*
+      - Kubeflow
+      - AutoML Katib
+      - Training Operator
+      - JupyterHub
   -
     name: DevOps & SRE
     keywords:
-      - Kubernetes*
-      - On-Premise*
-      - AWS EKS*
+      - Kubernetes
+      - On-Premise
+      - AWS EKS
       - GCP GKE
-      - Hybrid Clusters*
-      - ARM64*
-      - IaC*
-      - Kubespray*
-      - Terraform*
-      - Ansible*
-      - Istio*
-      - Grafana Stack*
-      - Karpenter*
+      - Hybrid Clusters
+      - ARM64
+      - IaC
+      - Kubespray
+      - Terraform
+      - Ansible
+      - Istio
+      - Grafana Stack
+      - Karpenter
   -
     name: CI/CD/CT/CT
     keywords:
-      - Argo Projects*
-      - Bitbucket Pipelines*
-      - GitLab CI*
-      - GitHub Actions*
-      - Self-Hosted Runner*
+      - Argo Projects
+      - Bitbucket Pipelines
+      - GitLab CI
+      - GitHub Actions
+      - Self-Hosted Runner
       - Kaniko
       - Buildah
       - Locust
@@ -532,53 +561,53 @@ skills:
   -
     name: ML Backend
     keywords:
-      - Python/FastAPI*
-      - Python/LangGraph*
-      - Ollama*
-      - Milvus*
-      - PostgreSQL*
+      - Python/FastAPI
+      - Python/LangGraph
+      - Ollama
+      - Milvus
+      - PostgreSQL
       - Redis
   -
     name: Computer Vision
     keywords:
-      - Automotives*
-      - SLAM*
-      - PyTorch*
-      - OpenCV*
-      - FPGA*
+      - Automotives
+      - SLAM
+      - PyTorch
+      - OpenCV
+      - FPGA
   -
     name: UI/UX
     keywords:
-      - Slackbot*
-      - Python/FastUI*
-      - Open WebUI*
-      - Vercel AI SDK*
-      - .NET/MAUI*
+      - Slackbot
+      - Python/FastUI
+      - Open WebUI
+      - Vercel AI SDK
+      - .NET/MAUI
       - .NET/WPF
       - Unity
 
   -
     name: Programming languages
     keywords:
-      - Python*
-      - .NET/C#*
+      - Python
+      - .NET/C#
       - C/C++
       - MATLAB
 
   # -
   #  name: Tool, OS and Hardware
   #   keywords:
-  #     - Visual Studio Code*
-  #     - Visual Studio*
+  #     - Visual Studio Code
+  #     - Visual Studio
   #     - Jupyter Notebook
   #     - MATLAB/Simulink
-  #     - Windows*
-  #     - WSL2*
-  #     - Ubuntu*
-  #     - Alpine*
-  #     - MacOS*
-  #     - ARM64/Raspberry Pi*
-  #     - AMD64/Bare Metal*
+  #     - Windows
+  #     - WSL2
+  #     - Ubuntu
+  #     - Alpine
+  #     - MacOS
+  #     - ARM64/Raspberry Pi
+  #     - AMD64/Bare Metal
   #     - FPGA
 
 # volunteer:
