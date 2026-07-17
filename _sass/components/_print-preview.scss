@@ -3,13 +3,13 @@
 
 @media screen {
   html:has(body.print-preview) {
-    background: #ffffff !important;
+    background: #eef0f2 !important;
   }
 
   body.print-preview {
     min-width: 0 !important;
     margin: 0 !important;
-    background: #ffffff !important;
+    background: #eef0f2 !important;
 
     &::before {
       display: none !important;
@@ -20,7 +20,7 @@
     hy-push-state {
       display: block !important;
       width: 100% !important;
-      background: #ffffff !important;
+      background: #eef0f2 !important;
     }
 
     #_navbar,
@@ -38,9 +38,11 @@
       max-width: calc(100vw - 2rem) !important;
       margin: 4.5rem auto 1rem !important;
       padding: 8mm !important;
-      overflow: hidden !important;
-      background: #ffffff !important;
-      border: 1px solid #c7cbd1 !important;
+      overflow: visible !important;
+      position: relative !important;
+      isolation: isolate;
+      background: transparent !important;
+      border: 0 !important;
     }
 
     .sidebar,
@@ -68,6 +70,43 @@
       max-width: calc(100vw - 2rem) !important;
       margin: 4.5rem auto 1rem !important;
       padding: 8mm !important;
+    }
+
+    #_main > article,
+    #_main > footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .print-preview-page-sheet {
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      width: 100%;
+      height: 297mm;
+      box-sizing: border-box;
+      background: #ffffff;
+      border: 1px solid #c7cbd1;
+      pointer-events: none;
+
+      &::after {
+        content: attr(data-page-label);
+        position: absolute;
+        top: 0.35rem;
+        right: 0.5rem;
+        color: #8a9097;
+        font: 500 0.65rem/1 sans-serif;
+      }
+    }
+
+    .print-preview-page-break-spacer {
+      display: block !important;
+      width: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      pointer-events: none;
     }
 
     .print-preview-toolbar {
@@ -166,6 +205,18 @@
 
     a[href]::after {
       content: none !important;
+    }
+  }
+
+  // Hydejack widens `.columns-break` from the browser viewport once its
+  // desktop breakpoint is reached. A print preview must instead stay bound
+  // to the A4 sheet, regardless of the surrounding browser width.
+  body.print-preview .layout-resume,
+  body.print-preview .layout-portfolio,
+  body.print-preview .layout-cv {
+    .columns-break {
+      width: auto !important;
+      max-width: none !important;
     }
   }
 

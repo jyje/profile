@@ -139,6 +139,9 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
 (function() {
   var printPreviewScale = 1;
   var printPreviewCalibration = 1;
+  var printPreviewPaginationFrame = null;
+  var printPreviewResizeTimer = null;
+  var printPreviewPageGap = 24;
 
   function getPrintPreviewCalibrationKey() {
     return [
@@ -196,6 +199,147 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
     toolbar.querySelector('[data-print-zoom-value]').textContent = Math.round(printPreviewScale * 100) + '%';
     toolbar.querySelector('[data-print-zoom="out"]').disabled = printPreviewScale <= 0.5;
     toolbar.querySelector('[data-print-zoom="in"]').disabled = printPreviewScale >= 2;
+  }
+
+  function clearPrintPreviewPagination() {
+    document.querySelectorAll('.print-preview-page-sheet, .print-preview-page-break-spacer').forEach(function(element) {
+      element.remove();
+    });
+
+    var main = document.getElementById('_main');
+    if (!main) return;
+    main.style.removeProperty('height');
+    main.removeAttribute('data-print-preview-pages');
+  }
+
+  function measurePrintPreviewPageHeight() {
+    var measure = document.createElement('div');
+    measure.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none;height:297mm;width:1px;';
+    document.body.appendChild(measure);
+    var height = measure.offsetHeight;
+    measure.remove();
+    return height;
+  }
+
+  function getPrintPreviewGeometry(element, main, scale) {
+    var rect = element.getBoundingClientRect();
+    var mainRect = main.getBoundingClientRect();
+    return {
+      top: (rect.top - mainRect.top) / scale,
+      bottom: (rect.bottom - mainRect.top) / scale,
+      height: rect.height / scale
+    };
+  }
+
+  function getPrintPreviewBreakTarget(card) {
+    var previous = card.previousElementSibling;
+    if (previous && previous.classList.contains('npb')) return previous;
+    return card;
+  }
+
+  function addPrintPreviewBreakBefore(target, offset) {
+    if (!target || !target.parentNode || offset <= 0) return;
+    var spacer = document.createElement('div');
+    spacer.className = 'print-preview-page-break-spacer';
+    spacer.setAttribute('aria-hidden', 'true');
+    spacer.style.height = Math.ceil(offset) + 'px';
+    target.parentNode.insertBefore(spacer, target);
+  }
+
+  function renderPrintPreviewPageSheets(main, pageCount, pageHeight, pageGap) {
+    var totalHeight = (pageCount * pageHeight) + ((pageCount - 1) * pageGap);
+    main.style.height = Math.ceil(totalHeight) + 'px';
+    main.setAttribute('data-print-preview-pages', String(pageCount));
+
+    for (var pageIndex = pageCount - 1; pageIndex >= 0; pageIndex -= 1) {
+      var sheet = document.createElement('div');
+      sheet.className = 'print-preview-page-sheet';
+      sheet.setAttribute('aria-hidden', 'true');
+      sheet.setAttribute('data-page-label', (pageIndex + 1) + ' / ' + pageCount);
+      sheet.style.top = (pageIndex * (pageHeight + pageGap)) + 'px';
+      main.insertBefore(sheet, main.firstChild);
+    }
+  }
+
+  function paginatePrintPreview() {
+    if (!document.body.classList.contains('print-preview')) return;
+
+    clearPrintPreviewPagination();
+    var main = document.getElementById('_main');
+    if (!main) return;
+
+    var pageHeight = measurePrintPreviewPageHeight();
+    var pageGap = printPreviewPageGap;
+    var pagePeriod = pageHeight + pageGap;
+    var mainRect = main.getBoundingClientRect();
+    var scale = main.offsetWidth > 0 ? mainRect.width / main.offsetWidth : 1;
+    var mainStyle = window.getComputedStyle(main);
+    var paddingTop = parseFloat(mainStyle.paddingTop) || 0;
+    var paddingBottom = parseFloat(mainStyle.paddingBottom) || 0;
+    var contentHeight = pageHeight - paddingTop - paddingBottom;
+    var selector = [
+      '.resume-project-item',
+      '.resume-work-item',
+      '.resume-education-item',
+      '.resume-volunteer-item',
+      '.awards-item',
+      '.certificates-item',
+      'blockquote.reference',
+      '.layout-portfolio .column-3-0 > section > section'
+    ].join(',');
+    var cards = Array.prototype.slice.call(document.querySelectorAll(selector));
+
+    cards.sort(function(a, b) {
+      var aRect = getPrintPreviewGeometry(a, main, scale);
+      var bRect = getPrintPreviewGeometry(b, main, scale);
+      return aRect.top - bRect.top || a.getBoundingClientRect().left - b.getBoundingClientRect().left;
+    });
+
+    // CSS multi-column layout reflows the whole Portfolio independently of
+    // DOM spacers. Show its A4 boundaries, but leave card placement to the
+    // browser's real paged-media engine. Single-column previews can safely
+    // move an entire card to the next synthetic sheet.
+    if (!document.body.classList.contains('print-2col')) {
+      cards.forEach(function(card) {
+        var target = getPrintPreviewBreakTarget(card);
+        var targetGeometry = getPrintPreviewGeometry(target, main, scale);
+        var cardGeometry = getPrintPreviewGeometry(card, main, scale);
+        if (cardGeometry.height > contentHeight) return;
+
+        var pageIndex = Math.max(0, Math.floor(targetGeometry.top / pagePeriod));
+        var pageStart = pageIndex * pagePeriod;
+        var contentBottom = pageStart + pageHeight - paddingBottom;
+        var nextContentTop = pageStart + pagePeriod + paddingTop;
+
+        if (cardGeometry.bottom > contentBottom + 0.5) {
+          addPrintPreviewBreakBefore(target, nextContentTop - targetGeometry.top);
+        }
+      });
+    }
+
+    var contentBottom = 0;
+    Array.prototype.forEach.call(main.querySelectorAll('article, article *, footer, footer *'), function(element) {
+      if (element.classList.contains('print-preview-page-sheet')) return;
+      var geometry = getPrintPreviewGeometry(element, main, scale);
+      if (geometry.height > 0) contentBottom = Math.max(contentBottom, geometry.bottom);
+    });
+    var pageCount = Math.max(1, Math.floor(Math.max(0, contentBottom - 0.5) / pagePeriod) + 1);
+    renderPrintPreviewPageSheets(main, pageCount, pageHeight, pageGap);
+  }
+
+  function schedulePrintPreviewPagination(enabled) {
+    if (!enabled) {
+      clearPrintPreviewPagination();
+      return;
+    }
+
+    if (printPreviewPaginationFrame) window.cancelAnimationFrame(printPreviewPaginationFrame);
+    printPreviewPaginationFrame = window.requestAnimationFrame(function() {
+      var fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+      fontsReady.then(function() {
+        printPreviewPaginationFrame = window.requestAnimationFrame(paginatePrintPreview);
+      });
+    });
   }
 
   function selectPrintPreviewContent(event) {
@@ -326,6 +470,7 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
     } else {
       document.body.classList.remove('print-2col');
     }
+    schedulePrintPreviewPagination(printPreviewEnabled);
   }
 
   if (document.readyState === 'loading') {
@@ -338,6 +483,24 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
   if (pushState) {
     pushState.addEventListener('hy-push-state-load', applyPrintQueryOptions);
   }
+
+  window.addEventListener('resize', function() {
+    if (!document.body.classList.contains('print-preview')) return;
+    window.clearTimeout(printPreviewResizeTimer);
+    printPreviewResizeTimer = window.setTimeout(function() {
+      schedulePrintPreviewPagination(true);
+    }, 100);
+  });
+
+  window.addEventListener('beforeprint', function() {
+    clearPrintPreviewPagination();
+  });
+
+  window.addEventListener('afterprint', function() {
+    if (document.body.classList.contains('print-preview')) {
+      schedulePrintPreviewPagination(true);
+    }
+  });
 })();
 </script>
 
