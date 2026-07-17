@@ -1,0 +1,206 @@
+// Screen-only print preview mode for local development.
+// Activated by query parameter ?print=1 through body.print-preview.
+
+@media screen {
+  html:has(body.print-preview) {
+    background: #ffffff !important;
+  }
+
+  body.print-preview {
+    min-width: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+
+    &::before {
+      display: none !important;
+      width: 0 !important;
+      background: transparent !important;
+    }
+
+    hy-push-state {
+      display: block !important;
+      width: 100% !important;
+      background: #ffffff !important;
+    }
+
+    #_navbar,
+    .navbar,
+    #_drawer,
+    .drawer {
+      display: none !important;
+    }
+
+    #_main {
+      display: block !important;
+      box-sizing: border-box !important;
+      width: 210mm !important;
+      min-height: 297mm !important;
+      max-width: calc(100vw - 2rem) !important;
+      margin: 4.5rem auto 1rem !important;
+      padding: 8mm !important;
+      overflow: hidden !important;
+      background: #ffffff !important;
+      border: 1px solid #c7cbd1 !important;
+    }
+
+    .sidebar,
+    .menu-btn,
+    .nav-btn,
+    .search-input,
+    .giscus,
+    .footer-col,
+    #comments,
+    .screen-only,
+    .breadcrumbs-row,
+    .no-print {
+      display: none !important;
+    }
+
+    .content {
+      margin: 0 !important;
+      padding: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    #_main.content {
+      width: 210mm !important;
+      max-width: calc(100vw - 2rem) !important;
+      margin: 4.5rem auto 1rem !important;
+      padding: 8mm !important;
+    }
+
+    .print-preview-toolbar {
+      position: fixed;
+      z-index: 1000;
+      top: 1rem;
+      left: 50%;
+      display: flex !important;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0;
+      transform: translateX(-50%);
+      background: transparent;
+      user-select: none;
+      -webkit-user-select: none;
+
+      .print-preview-control-group {
+        display: inline-flex;
+        align-items: center;
+        gap: 0;
+        min-height: 2.5rem;
+        padding: 0.25rem;
+        background: #ffffff;
+        border: 1px solid #c7cbd1;
+        border-radius: 6px;
+      }
+
+      button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2rem;
+        height: 2rem;
+        margin: 0;
+        padding: 0;
+        color: #24272b;
+        font: 600 1rem/1 sans-serif;
+        background: transparent;
+        border: 0;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background: #eef0f2;
+        }
+
+        &:focus-visible {
+          outline: 2px solid #245b8a;
+          outline-offset: 1px;
+        }
+
+        &:disabled {
+          color: #a0a4aa;
+          cursor: default;
+        }
+      }
+
+      .print-preview-zoom-value {
+        min-width: 3.5rem;
+        font-size: 0.75rem;
+      }
+
+      .print-preview-control-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        color: #555b62;
+        font-size: 0.9rem;
+      }
+
+      .print-preview-calibration-measurement {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.15rem;
+        min-width: 3.5rem;
+        font-size: 0.75rem;
+      }
+
+      .print-preview-calibration-group {
+        gap: 0.3rem;
+        color: #555b62;
+        font: 500 0.7rem/1 sans-serif;
+      }
+
+    }
+
+    * {
+      box-shadow: none !important;
+      text-shadow: none !important;
+      print-color-adjust: exact !important;
+      -webkit-print-color-adjust: exact !important;
+    }
+
+    a[href]::after {
+      content: none !important;
+    }
+  }
+
+  // Resume/CV preview uses print-like column sizing.
+  body.print-preview .layout-resume,
+  body.print-preview .layout-cv {
+    .fr { float: right; }
+    .column-3-5 { width: 70%; }
+    .column-3-0 { width: 100%; }
+    .column-2-5 { width: 30%; }
+  }
+
+  // Portfolio preview defaults to 1 column unless cols=2 is requested.
+  body.print-preview .layout-portfolio .column-3-0 {
+    columns: 1;
+    column-gap: 1.5rem;
+    column-fill: balance;
+  }
+
+  body.print-preview.print-2col .layout-portfolio .column-3-0 {
+    columns: 2;
+  }
+
+  body.print-preview .layout-portfolio .column-3-0 section > .npb,
+  body.print-preview .layout-portfolio .column-3-0 section > h2:first-child,
+  body.print-preview.print-2col .layout-portfolio .column-3-0 section > .npb,
+  body.print-preview.print-2col .layout-portfolio .column-3-0 section > h2:first-child {
+    column-span: all;
+  }
+
+  body.print-preview .layout-portfolio .column-3-0 .work-item,
+  body.print-preview .layout-portfolio .column-3-0 section > section,
+  body.print-preview.print-2col .layout-portfolio .column-3-0 .work-item,
+  body.print-preview.print-2col .layout-portfolio .column-3-0 section > section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

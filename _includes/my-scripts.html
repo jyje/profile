@@ -134,6 +134,213 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
 })();
 </script>
 
+<!-- Query-based print helper: ?print=1 and optional ?cols=2 -->
+<script>
+(function() {
+  var printPreviewScale = 1;
+  var printPreviewCalibration = 1;
+
+  function getPrintPreviewCalibrationKey() {
+    return [
+      'printPreviewCalibration',
+      window.screen.width + 'x' + window.screen.height,
+      window.devicePixelRatio || 1
+    ].join(':');
+  }
+
+  function loadPrintPreviewCalibration() {
+    var value = parseFloat(window.localStorage.getItem(getPrintPreviewCalibrationKey()));
+    return Number.isFinite(value) && value >= 0.5 && value <= 1.5 ? value : 1;
+  }
+
+  function getPrintPreviewCalibrationOffset() {
+    return Math.round(210 - (210 / printPreviewCalibration));
+  }
+
+  function updatePrintPreviewCalibrationValue() {
+    var value = document.querySelector('[data-print-calibration-number]');
+    if (!value) return;
+
+    var offset = getPrintPreviewCalibrationOffset();
+    value.textContent = offset > 0 ? '+' + offset : String(offset);
+  }
+
+  function adjustCalibrationValue(direction) {
+    var offset = getPrintPreviewCalibrationOffset();
+    offset += direction === 'down' ? -1 : 1;
+    offset = Math.max(-210, Math.min(70, offset));
+
+    printPreviewCalibration = 210 / (210 - offset);
+    window.localStorage.setItem(getPrintPreviewCalibrationKey(), printPreviewCalibration);
+    updatePrintPreviewCalibrationValue();
+    setPrintPreviewScale(1);
+  }
+
+  function resetPrintPreviewCalibration() {
+    printPreviewCalibration = 1;
+    window.localStorage.removeItem(getPrintPreviewCalibrationKey());
+
+    updatePrintPreviewCalibrationValue();
+    setPrintPreviewScale(1);
+  }
+
+  function setPrintPreviewScale(scale) {
+    printPreviewScale = Math.max(0.5, Math.min(2, Math.round(scale * 10) / 10));
+
+    var main = document.getElementById('_main');
+    if (main) main.style.zoom = printPreviewScale * printPreviewCalibration;
+
+    var toolbar = document.getElementById('_printPreviewToolbar');
+    if (!toolbar) return;
+
+    toolbar.querySelector('[data-print-zoom-value]').textContent = Math.round(printPreviewScale * 100) + '%';
+    toolbar.querySelector('[data-print-zoom="out"]').disabled = printPreviewScale <= 0.5;
+    toolbar.querySelector('[data-print-zoom="in"]').disabled = printPreviewScale >= 2;
+  }
+
+  function selectPrintPreviewContent(event) {
+    if (!(event.ctrlKey || event.metaKey) || event.key.toLowerCase() !== 'a') return;
+
+    var activeElement = document.activeElement;
+    if (activeElement && /^(INPUT|TEXTAREA|SELECT)$/.test(activeElement.tagName)) return;
+
+    var main = document.getElementById('_main');
+    if (!main) return;
+
+    event.preventDefault();
+    var selection = window.getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(main);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+
+  function syncPrintPreviewToolbar(enabled) {
+    var toolbar = document.getElementById('_printPreviewToolbar');
+
+    if (!enabled) {
+      if (toolbar) {
+        toolbar.remove();
+        document.removeEventListener('keydown', selectPrintPreviewContent);
+      }
+      var main = document.getElementById('_main');
+      if (main) main.style.removeProperty('zoom');
+      return;
+    }
+
+    if (!toolbar) {
+      toolbar = document.createElement('div');
+      toolbar.id = '_printPreviewToolbar';
+      toolbar.className = 'print-preview-toolbar';
+      toolbar.setAttribute('role', 'toolbar');
+      toolbar.setAttribute('aria-label', '인쇄 미리보기 확대 및 축소');
+      toolbar.innerHTML =
+        '<div class="print-preview-control-group" aria-label="확대 및 축소">' +
+          '<span class="print-preview-control-icon icon-search" aria-hidden="true" title="확대 및 축소"></span>' +
+          '<button type="button" data-print-zoom="out" aria-label="축소" title="축소">&minus;</button>' +
+          '<button type="button" class="print-preview-zoom-value" data-print-zoom-value aria-label="100%로 초기화" title="100%로 초기화">100%</button>' +
+          '<button type="button" data-print-zoom="in" aria-label="확대" title="확대">+</button>' +
+        '</div>' +
+        '<div class="print-preview-control-group print-preview-calibration-group" aria-label="실측 보정">' +
+          '<span class="print-preview-control-icon icon-file-empty" aria-hidden="true" title="실측 보정"></span>' +
+          '<button type="button" data-print-calibration-adjust="down" aria-label="화면 크기를 1mm 줄임" title="화면 크기를 1mm 줄임">&minus;</button>' +
+          '<button type="button" class="print-preview-calibration-measurement" data-print-calibration-value aria-label="실측 보정을 0mm로 초기화" title="실측 보정을 0mm로 초기화">' +
+            '<span data-print-calibration-number>0</span>' +
+            '<span>mm</span>' +
+          '</button>' +
+          '<button type="button" data-print-calibration-adjust="up" aria-label="화면 크기를 1mm 늘림" title="화면 크기를 1mm 늘림">+</button>' +
+        '</div>';
+      document.body.appendChild(toolbar);
+      document.addEventListener('keydown', selectPrintPreviewContent);
+
+      toolbar.addEventListener('click', function(event) {
+        var action = event.target.getAttribute('data-print-zoom');
+        var calibrationAction = event.target.getAttribute('data-print-calibration-adjust');
+        if (action === 'out') setPrintPreviewScale(printPreviewScale - 0.1);
+        if (action === 'in') setPrintPreviewScale(printPreviewScale + 0.1);
+        if (calibrationAction) adjustCalibrationValue(calibrationAction);
+        if (event.target.hasAttribute('data-print-zoom-value')) setPrintPreviewScale(1);
+        if (event.target.closest('[data-print-calibration-value]')) resetPrintPreviewCalibration();
+      });
+    }
+
+    printPreviewCalibration = loadPrintPreviewCalibration();
+    updatePrintPreviewCalibrationValue();
+    setPrintPreviewScale(printPreviewScale);
+  }
+
+  function syncPrintPreviewStyles(enabled) {
+    var styleId = '_printPreviewStyles';
+    var existingStyle = document.getElementById(styleId);
+
+    if (!enabled) {
+      if (existingStyle) existingStyle.remove();
+      return;
+    }
+
+    var printRules = [];
+    Array.prototype.forEach.call(document.styleSheets, function(styleSheet) {
+      if (existingStyle && styleSheet === existingStyle.sheet) return;
+
+      try {
+        Array.prototype.forEach.call(styleSheet.cssRules || [], function(rule) {
+          if (rule.type === CSSRule.MEDIA_RULE && rule.media.mediaText.indexOf('print') !== -1) {
+            Array.prototype.forEach.call(rule.cssRules, function(printRule) {
+              printRules.push(printRule.cssText);
+            });
+          }
+        });
+      } catch (error) {
+        // Cross-origin stylesheets do not expose cssRules.
+      }
+    });
+
+    if (!existingStyle) {
+      existingStyle = document.createElement('style');
+      existingStyle.id = styleId;
+      document.head.appendChild(existingStyle);
+    }
+    existingStyle.textContent = printRules.join('\n');
+  }
+
+  function applyPrintQueryOptions() {
+    var isLocalHost = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost';
+    if (!isLocalHost) return;
+
+    var params = new URLSearchParams(window.location.search || '');
+    var printParam = (params.get('print') || '').toLowerCase();
+    var colsParam = (params.get('cols') || '').toLowerCase();
+    var printPreviewEnabled = printParam === '1' || printParam === 'true' || printParam === 'yes';
+
+    if (printPreviewEnabled) {
+      document.body.classList.add('print-preview');
+    } else {
+      document.body.classList.remove('print-preview');
+    }
+    syncPrintPreviewStyles(printPreviewEnabled);
+    syncPrintPreviewToolbar(printPreviewEnabled);
+
+    // Optional: force portfolio print to 2 columns at runtime.
+    if (colsParam === '2' && document.body) {
+      document.body.classList.add('print-2col');
+    } else {
+      document.body.classList.remove('print-2col');
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyPrintQueryOptions);
+  } else {
+    applyPrintQueryOptions();
+  }
+
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-load', applyPrintQueryOptions);
+  }
+})();
+</script>
+
 {% include my-scripts/roadmap.html %}
 {% include my-scripts/gantt.html %}
 {% include my-scripts/expertise.html %}
