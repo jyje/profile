@@ -7,7 +7,7 @@
   </h2>
   </div>
   {% for work in resume.work %}
-  <section class="work-item resume-work-item">
+  <section class="work-item resume-work-item{% unless work.endDate.size > 0 %} resume-current-item{% endunless %}">
     <header class="{% unless forloop.first %}mt2{% endunless %}"
             property="{% if work.endDate.size > 0 %}alumniOf{% else %}worksFor{% endif %}"
             typeof="Organization" >

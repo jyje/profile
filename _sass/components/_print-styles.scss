@@ -330,16 +330,17 @@
       margin-top: 0.45rem !important;
     }
 
-    // Project/Work/Education cards share one class-based padding rule in
+    // Project/Work/Education/Other Activities cards share one class-based padding rule in
     // _resume-portfolio.scss, but Work items also carry the plain
     // ".work-item" class above, which ties in specificity with
     // ".resume-work-item" and — by import order — quietly won out, giving
     // Work a different (looser) padding than Project/Education. Pin all
-    // three explicitly to the same, tighter, bottom-weighted padding so
+    // four explicitly to the same, tighter, bottom-weighted padding so
     // spacing is even across every card type.
     .resume-project-item,
     .resume-work-item,
-    .resume-education-item {
+    .resume-education-item,
+    .resume-volunteer-item {
       padding: 0.45rem 0.75rem 0.3rem !important;
       margin-bottom: 0.2rem !important;
     }

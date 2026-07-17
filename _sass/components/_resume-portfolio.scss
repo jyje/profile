@@ -87,7 +87,8 @@ body .layout-cv blockquote.reference {
 // Resume projects use rounded cards with a compact title → role → results hierarchy.
 body .layout-resume .resume-project-item,
 body .layout-resume .resume-work-item,
-body .layout-resume .resume-education-item {
+body .layout-resume .resume-education-item,
+body .layout-resume .resume-volunteer-item {
   border: 1px solid color-mix(in srgb, var(--accent-color) 20%, transparent) !important;
   border-radius: 0.5rem !important;
   padding: 0.55rem 0.75rem !important;
@@ -96,7 +97,8 @@ body .layout-resume .resume-education-item {
 
 body .layout-resume .resume-project-item:not(:first-child),
 body .layout-resume .resume-work-item:not(:first-child),
-body .layout-resume .resume-education-item:not(:first-child) {
+body .layout-resume .resume-education-item:not(:first-child),
+body .layout-resume .resume-volunteer-item:not(:first-child) {
   margin-top: 0.45rem !important;
 }
 
@@ -164,9 +166,11 @@ body .layout-resume .resume-detail-list li {
 body .layout-resume .resume-project-item .tiny,
 body .layout-resume .resume-work-item .tiny,
 body .layout-resume .resume-education-item .tiny,
+body .layout-resume .resume-volunteer-item .tiny,
 body .layout-resume .resume-project-item ul.work,
 body .layout-resume .resume-work-item ul.work,
-body .layout-resume .resume-education-item ul {
+body .layout-resume .resume-education-item ul,
+body .layout-resume .resume-volunteer-item ul {
   font-size: 0.9375rem !important;
 }
 
@@ -198,7 +202,8 @@ body .layout-resume .resume-card-role {
 
 body .layout-resume .resume-project-item > header > p.faded,
 body .layout-resume .resume-work-item > header > p.faded,
-body .layout-resume .resume-education-item > header > p.faded {
+body .layout-resume .resume-education-item > header > p.faded,
+body .layout-resume .resume-volunteer-item > header > p.faded {
   margin: 0 0 0.1rem !important;
   font-size: 0.72rem !important;
   line-height: 1.2 !important;
@@ -241,20 +246,12 @@ body .layout-resume a:not(.btn):not(.no-hover) {
   }
 }
 
-// First item: emphasize with background fill
-body .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
-body .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
-body .layout-portfolio .column-3-0 .work-item:first-child,
-body .layout-portfolio .column-3-0 section > section:first-child,
-body .layout-resume .column-3-5 > section:first-child > section:first-of-type,
-body .layout-resume .column-3-5 > section:first-child > .work-item:first-of-type,
-body .layout-resume .work-item:first-child,
-body .layout-resume section > section:first-child,
-body .layout-cv .column-3-5 > section:first-child > section:first-of-type,
-body .layout-cv .column-3-5 > section:first-child > .work-item:first-of-type,
-body .layout-cv .work-item:first-child,
-body .layout-cv section > section:first-child {
-  background-color: color-mix(in srgb, var(--accent-color) 7.5%, transparent);
+// Emphasize only ongoing Work and Project cards. Keep the wash subtle enough
+// that dense resume text remains the visual priority in both screen and print.
+body .layout-portfolio .resume-current-item,
+body .layout-resume .resume-current-item,
+body .layout-cv .resume-current-item {
+  background-color: color-mix(in srgb, var(--accent-color) 4%, transparent);
 }
 
 // Remove inner top spacing so content starts at box top
