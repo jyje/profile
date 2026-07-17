@@ -9,8 +9,8 @@ hide_description: true
 data_file: resume-ko
 show_language_toggle: true
 left_column:
-  - projects
   - work
+  - projects
   # - volunteer
   - education
   # - awards

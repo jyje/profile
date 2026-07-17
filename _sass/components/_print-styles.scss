@@ -69,6 +69,7 @@
   .giscus,
   .footer-col,
   #comments,
+  .print-preview-toolbar,
   .screen-only,
   .breadcrumbs-row,
   .no-print {
@@ -258,6 +259,7 @@
   body .layout-portfolio .columns.contact,
   body .layout-cv .columns.contact {
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   body .layout-resume .columns.contact.columns-break,
@@ -282,6 +284,17 @@
   body .layout-resume h2,
   body .layout-cv h2 {
     margin-top: 1.0rem !important;
+  }
+
+  // ── Section heading rule: the underline is a faint 1px hairline that can
+  // render as a visible band at print/PDF scale; drop it and tighten the
+  // heading's own bottom spacing so the first card sits close beneath it.
+  body .layout-resume .hr-bottom,
+  body .layout-portfolio .hr-bottom,
+  body .layout-cv .hr-bottom {
+    border-bottom: none !important;
+    padding-bottom: 0.15rem !important;
+    margin-bottom: 0.15rem !important;
   }
 
   body .layout-resume,
@@ -315,6 +328,20 @@
     .work-item:not(:first-child),
     section>section:not(:first-child) {
       margin-top: 0.45rem !important;
+    }
+
+    // Project/Work/Education cards share one class-based padding rule in
+    // _resume-portfolio.scss, but Work items also carry the plain
+    // ".work-item" class above, which ties in specificity with
+    // ".resume-work-item" and — by import order — quietly won out, giving
+    // Work a different (looser) padding than Project/Education. Pin all
+    // three explicitly to the same, tighter, bottom-weighted padding so
+    // spacing is even across every card type.
+    .resume-project-item,
+    .resume-work-item,
+    .resume-education-item {
+      padding: 0.45rem 0.75rem 0.3rem !important;
+      margin-bottom: 0.2rem !important;
     }
 
     // ── Tag colors: hardcoded for PDF accuracy ─────────────────────────────

@@ -84,6 +84,163 @@ body .layout-cv blockquote.reference {
   margin-bottom: 0.25rem;
 }
 
+// Resume projects use rounded cards with a compact title → role → results hierarchy.
+body .layout-resume .resume-project-item,
+body .layout-resume .resume-work-item,
+body .layout-resume .resume-education-item {
+  border: 1px solid color-mix(in srgb, var(--accent-color) 20%, transparent) !important;
+  border-radius: 0.5rem !important;
+  padding: 0.55rem 0.75rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+body .layout-resume .resume-project-item:not(:first-child),
+body .layout-resume .resume-work-item:not(:first-child),
+body .layout-resume .resume-education-item:not(:first-child) {
+  margin-top: 0.45rem !important;
+}
+
+body .layout-resume .resume-role-row,
+body .layout-resume .resume-results,
+body .layout-resume .resume-detail-group {
+  margin-left: 0.4rem;
+}
+
+body .layout-resume .resume-meta-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 0.9375rem !important;
+  line-height: 1.35 !important;
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem;
+}
+
+body .layout-resume .resume-role-row,
+body .layout-resume .resume-detail-row--first {
+  margin-top: calc(0.05rem + 1pt) !important;
+  margin-bottom: 0 !important;
+}
+
+body .layout-resume .resume-results {
+  margin-top: 0 !important;
+}
+
+body .layout-resume .resume-results-heading,
+body .layout-resume .resume-detail-row--tight {
+  margin-top: 0.0625rem !important;
+  margin-bottom: 0 !important;
+}
+
+body .layout-resume .resume-meta-icon {
+  flex: 0 0 0.9rem;
+  width: 0.9rem;
+  color: var(--accent-color-fill);
+  text-align: center;
+}
+
+body .layout-resume .resume-meta-label {
+  flex: 0 0 auto;
+  color: var(--body-color);
+}
+
+body .layout-resume .resume-meta-text {
+  min-width: 0;
+}
+
+body .layout-resume .resume-detail-list {
+  font-size: 0.9375rem !important;
+  margin: 0 0 0.15rem 1.25rem;
+  padding-left: 0.85rem;
+  line-height: 1.35;
+}
+
+body .layout-resume .resume-detail-list li {
+  font-size: inherit !important;
+  line-height: inherit;
+  margin-bottom: 0.06rem;
+}
+
+body .layout-resume .resume-project-item .tiny,
+body .layout-resume .resume-work-item .tiny,
+body .layout-resume .resume-education-item .tiny,
+body .layout-resume .resume-project-item ul.work,
+body .layout-resume .resume-work-item ul.work,
+body .layout-resume .resume-education-item ul {
+  font-size: 0.9375rem !important;
+}
+
+body .layout-resume .resume-result-title {
+  color: var(--body-color);
+}
+
+body .layout-resume .resume-title-separator {
+  display: inline-block;
+  margin: 0 0.2rem;
+  color: var(--accent-color-border-dark);
+  font-weight: 400;
+}
+
+body .layout-resume .resume-card-title {
+  font-size: 0.9342rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2917rem !important;
+}
+
+body .layout-resume .resume-card-role {
+  color: var(--body-color);
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+body .layout-resume .resume-project-item > header > p.faded,
+body .layout-resume .resume-work-item > header > p.faded,
+body .layout-resume .resume-education-item > header > p.faded {
+  margin: 0 0 0.1rem !important;
+  font-size: 0.72rem !important;
+  line-height: 1.2 !important;
+}
+
+body .layout-resume .resume-card-title .resume-card-primary {
+  color: var(--body-color) !important;
+  font-weight: 800 !important;
+}
+
+body .layout-resume .resume-card-title .resume-card-secondary {
+  color: var(--body-color) !important;
+  font-weight: 650 !important;
+}
+
+body .layout-resume .resume-card-title a,
+body .layout-resume .resume-card-title .resume-card-title-link {
+  border-bottom: 0 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+// Hydejack defaults to a large 0.35rem underline offset. Keep resume links
+// visually compact while preserving their 2px underline for discoverability.
+body .layout-resume a:not(.btn):not(.no-hover) {
+  text-underline-offset: 0.14rem !important;
+}
+
+@media screen {
+  body .layout-resume .resume-card-title a:hover,
+  body .layout-resume .resume-card-title a:focus {
+    color: var(--accent-color) !important;
+  }
+}
+
+@media print {
+  body .layout-resume .resume-card-title {
+    font-size: 0.9342rem !important;
+    line-height: 1.3 !important;
+  }
+}
+
 // First item: emphasize with background fill
 body .layout-portfolio .column-3-0 > section:first-child > section:first-of-type,
 body .layout-portfolio .column-3-0 > section:first-child > .work-item:first-of-type,
@@ -155,6 +312,44 @@ body .layout-cv section:has(h2#certificates) .certificates-item:not(:first-child
 .layout-portfolio article > .note.abstract::before,
 .layout-cv article > .note.abstract::before {
   display: none !important;
+}
+
+// Abstract Markdown can contain paragraphs and lists. Keep it in a valid block
+// container and give every generated child the same readable type metrics.
+.layout-resume article > .note.abstract,
+.layout-portfolio article > .note.abstract,
+.layout-cv article > .note.abstract {
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
+
+  > p,
+  > ul,
+  > ol,
+  > ul > li,
+  > ol > li {
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  > p {
+    margin: 0 0 0.65rem;
+  }
+
+  > ul,
+  > ol {
+    margin: 0.45rem 0 0.65rem;
+    padding-left: 1.4rem;
+  }
+
+  > ul > li,
+  > ol > li {
+    margin-bottom: 0.2rem;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 // =============================================================================

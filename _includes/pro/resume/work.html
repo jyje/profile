@@ -7,7 +7,7 @@
   </h2>
   </div>
   {% for work in resume.work %}
-  <section class="work-item">
+  <section class="work-item resume-work-item">
     <header class="{% unless forloop.first %}mt2{% endunless %}"
             property="{% if work.endDate.size > 0 %}alumniOf{% else %}worksFor{% endif %}"
             typeof="Organization" >
@@ -16,16 +16,12 @@
           {% include components/from-to.html from=work.startDate to=work.endDate format=from_to_format duration=work.duration %}
         </p>
       {% endif %}
-      <h3 class="h4 faded">
+      <h3 class="h4 faded resume-card-title">
         <meta property="name" content="{{ work.company }}"/>
-        {% capture position %}<span class="bc">{{ work.position }}</span>{% endcapture %}
-        {% capture company_class %}{% if work.endDate.size > 0 %}{% else %}org p-org h-card{% endif %}{% endcapture %}
+        {% capture position %}<span class="bc resume-card-secondary">{% if work.headerIcon %}<span class="resume-card-emoji no-print" aria-hidden="true">{{ work.headerIcon }}</span> {% endif %}{{ work.position }}</span>{% endcapture %}
+        {% capture company_class %}resume-card-title-link resume-card-primary {% if work.endDate.size > 0 %}{% else %}org p-org h-card{% endif %}{% endcapture %}
         {% capture company %}{% include components/link.html title=work.company href=work.website class=company_class span_class="bc" property="sameAs" %}{% endcapture %}
-        {{ strings.resume.work_title
-          | default:"<!--position--> at <!--company-->"
-          | replace:"<!--position-->", position
-          | replace:"<!--company-->", company
-        }}
+        {{ position }} <span class="resume-title-separator" aria-hidden="true">·</span> {{ company }}{% if work.role %} <span class="resume-card-role">({{ work.role }})</span>{% endif %}
       </h3>
     </header>
 
@@ -40,39 +36,47 @@
     </ul>
     {% endif %}
 
-    <!-- results -->
-    {% if work.results.description or work.results.items.size > 0 %}
-    <!-- <div class="work-hr"></div> -->
-    <div class="tiny">
-      <b>
-        {{ strings.resume.results | default:"Results" }}{% if work.results.description %}{{ site.data.strings.colon }} {{ work.results.description | markdownify }}{% endif %}
-      </b>
-      <ul class="work">
-        {% for result_item in work.results.items %}
-          <li>
-            {% if result_item.header %}<span class="work-header-result">{{ result_item.header }}</span>{% endif %}
-            {% if result_item.content %}{{ result_item.content }}{% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+    {% if work.results or work.growth %}
+    {% assign work_detail_order = "" %}
+    {% if work.results %}{% assign work_detail_order = work_detail_order | append: "results," %}{% endif %}
+    {% if work.growth %}{% assign work_detail_order = work_detail_order | append: "growth," %}{% endif %}
+    {% assign work_first_detail = work_detail_order | split: "," | first %}
+    <div class="resume-detail-group">
+      {% if work.results %}
+      <div class="resume-meta-row tiny {% if work_first_detail == 'results' %}resume-detail-row--first{% else %}resume-detail-row--tight{% endif %}">
+        <span class="resume-meta-icon icon-trophy" aria-hidden="true"></span>
+        <b class="resume-meta-label">{{ resume.labels.results | default:"Results" }}</b>
+        <span class="resume-meta-text">{{ work.results }}</span>
+      </div>
+      {% endif %}
+      {% if work.growth %}
+      <div class="resume-meta-row tiny {% if work_first_detail == 'growth' %}resume-detail-row--first{% else %}resume-detail-row--tight{% endif %}">
+        <span class="resume-meta-icon icon-rocket" aria-hidden="true"></span>
+        <b class="resume-meta-label">{{ resume.labels.growth | default:"Growth" }}</b>
+        <span class="resume-meta-text">{{ work.growth }}</span>
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
-
-    <!-- roles -->
-    {% if work.roles.description or work.roles.items.size > 0 %}
-    <!-- <div class="work-hr"></div> -->
-    <div class="tiny">
-      <b>
-        {{ strings.resume.roles | default:"Roles" }}{% if work.roles.description %}{{ site.data.strings.colon }} {{ work.roles.description }}{% endif %}
-      </b>
-      <ul class="work">
+    {% elsif work.roles.description or work.roles.items.size > 0 %}
+    <!-- structured roles shape shared by Resume and Portfolio -->
+    <div class="resume-detail-group">
+      <div class="resume-meta-row tiny resume-detail-row--first">
+        <span class="resume-meta-icon icon-user-tie" aria-hidden="true"></span>
+        <b class="resume-meta-label">{{ resume.labels.roles | default:resume.labels.role | default:"Roles" }}</b>
+        {% if work.roles.description %}
+        <span class="resume-meta-text">{{ work.roles.description }}</span>
+        {% endif %}
+      </div>
+      {% if work.roles.items.size > 0 %}
+      <ul class="resume-detail-list resume-work-roles-list">
         {% for role_item in work.roles.items %}
           <li>
-            {% if role_item.header %}<span class="work-header-role">{{ role_item.header }}</span>{% endif %}
+            {% if role_item.header %}<strong class="resume-result-title">{{ role_item.header }}</strong>{% if role_item.content %}<span aria-hidden="true"> — </span>{% endif %}{% endif %}
             {% if role_item.content %}{{ role_item.content }}{% endif %}
           </li>
         {% endfor %}
       </ul>
+      {% endif %}
     </div>
     {% endif %}
 

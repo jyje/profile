@@ -353,7 +353,6 @@
   // 2-column print: always for resume/cv; for portfolio when body.print-2col (print_columns: 2)
   @media print {
     body.print-2col & {
-      article > .note { padding-right: 11rem }
       .fr { float: right }
       .column-3-5 { width: 70% }
       .column-3-0 { width: 100% }
@@ -366,7 +365,6 @@
 @media print {
   body .layout-resume,
   body .layout-cv {
-    article > .note { padding-right: 11rem }
     .fr { float: right }
     .column-3-5 { width: 70% }
     .column-3-0 { width: 100% }

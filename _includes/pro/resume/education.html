@@ -7,32 +7,42 @@
   </h2>
   </div>
   {% for edu in resume.education %}
-  <section>
+  <section class="education-item resume-education-item">
     <header class="{% unless forloop.first %}mt2{% endunless %}">
       {% if edu.startDate.size > 0 %}
         <p class="faded">
           {% include components/from-to.html from=edu.startDate to=edu.endDate format=from_to_format %}
         </p>
       {% endif %}
-      <h3 class="h4 faded" {% if edu.endDate.size > 0 %}property="alumniOf" typeof="EducationalOrganization"{% endif %}>
-        {% capture study_type %}<span class="bc">{{ edu.studyType }}</span>{% endcapture %}
-        {% capture area %}<span class="bc">{{ edu.area }}</span>{% endcapture %}
-        {% capture institution %}<span class="bc" {% if edu.endDate.size > 0 %}property="name"{% endif %}>{{ edu.institution }}</span>{% endcapture %}
-        {% capture gpa %}<span class="bc">{{ edu.gpa }}</span>{% endcapture %}
-        {{ strings.resume.education_title
-          | default:"<!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->"
-          | replace:"<!--study_type-->", study_type
-          | replace:"<!--area-->", area
-          | replace:"<!--institution-->", institution
-          | replace:"<!--gpa-->", gpa
-        }}
+      <h3 class="h4 faded resume-card-title" {% if edu.endDate.size > 0 %}property="alumniOf" typeof="EducationalOrganization"{% endif %}>
+        {% capture institution_class %}resume-card-title-link resume-card-primary{% endcapture %}
+        {% capture institution %}{% include components/link.html title=edu.institution href=edu.website class=institution_class span_class="bc" property="name" %}{% endcapture %}
+        {% if edu.studyType and edu.studyType != '' %}<span class="bc resume-card-secondary">{% if edu.headerIcon %}<span class="resume-card-emoji no-print" aria-hidden="true">{{ edu.headerIcon }}</span> {% endif %}{{ edu.studyType }}</span> <span class="resume-title-separator" aria-hidden="true">·</span> {% endif %}{{ institution }}{% if edu.gpa and edu.gpa != '' %} <span class="resume-title-separator" aria-hidden="true">·</span> <span class="bc resume-card-secondary">{{ edu.gpa }}</span>{% endif %}
       </h3>
     </header>
 
-    {% if edu.thesis.size > 0 %}
-    <h4 class="sr-only">{{ strings.resume.thesis | default:"Thesis" }}</h4>
-    <i class="faded">- Thesis: {{ edu.thesis }}</i>
-    {% endif %}
+    {% assign edu_has_area = false %}
+    {% if edu.area and edu.area != '' %}{% assign edu_has_area = true %}{% endif %}
+    {% assign edu_has_keywords = false %}
+    {% if edu.keywords and edu.keywords.size > 0 %}{% assign edu_has_keywords = true %}{% endif %}
+    {% assign edu_first_detail = '' %}
+    {% if edu_has_area %}{% assign edu_first_detail = 'area' %}{% elsif edu_has_keywords %}{% assign edu_first_detail = 'keywords' %}{% endif %}
+    <div class="resume-detail-group">
+      {% if edu_has_area %}
+      <div class="resume-meta-row tiny {% if edu_first_detail == 'area' %}resume-detail-row--first{% else %}resume-detail-row--tight{% endif %}">
+        <span class="resume-meta-icon icon-book" aria-hidden="true"></span>
+        <b class="resume-meta-label">{{ resume.labels.area | default:"Field" }}</b>
+        <span class="resume-meta-text">{{ edu.area }}{% if edu.thesis.size > 0 %} ({{ edu.thesis }}){% endif %}</span>
+      </div>
+      {% endif %}
+      {% if edu_has_keywords %}
+      <div class="resume-meta-row tiny {% if edu_first_detail == 'keywords' %}resume-detail-row--first{% else %}resume-detail-row--tight{% endif %}">
+        <span class="resume-meta-icon icon-key" aria-hidden="true"></span>
+        <b class="resume-meta-label">{{ resume.labels.keywords | default:"Keywords" }}</b>
+        <span class="resume-meta-text">{{ edu.keywords | join: " · " }}</span>
+      </div>
+      {% endif %}
+    </div>
 
     {% if edu.courses.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.courses | default:"Courses" }}</h4>
