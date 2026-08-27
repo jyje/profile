@@ -691,7 +691,6 @@ publications:
     contribution: "1st"
     releaseDate: "2020-07-24"
     website: "http://postech.dcollection.net/common/orgView/200000341295"
-    summary: "Innovative middle-out compression algorithm that changes the way we store data."
   # -
   #   name: "📄 Advanced Dehazing Method using Halo Map Based on Dark Channel Prior"
   #   publisher: "ITC-CSCC"
