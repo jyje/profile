@@ -384,6 +384,8 @@ collections:
 
 exclude:
   - temp
+  - .claude
+  - .agents
   - ./#jekyll-theme-hydejack/node_modules
   - ./#jekyll-theme-hydejack/.git
   - .jekyll-cache
