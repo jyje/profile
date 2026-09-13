@@ -383,6 +383,7 @@ collections:
 # ----------------------------------------------------------------------------------------
 
 exclude:
+  - temp
   - ./#jekyll-theme-hydejack/node_modules
   - ./#jekyll-theme-hydejack/.git
   - .jekyll-cache
