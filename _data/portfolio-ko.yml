@@ -646,16 +646,7 @@ volunteer:
       - title: "Nayeon Park"
         website: "https://www.linkedin.com/in/parknayeon/"
         description: "저자 / 과학기술 IT 도서 리뷰·교정·추천사 작성"
-  -
-    organization: "CoderDojo"
-    position: "교사"
-    website: "https://coderdojo.com/"
-    startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "청소년을 위한 무료 코딩 클럽의 글로벌 운동."
-    highlights:
-      - "청소년 대상 무료 코딩 클럽에서 프로그래밍 교육"
-      - "이달의 교사 선정"
+
 
 awards:
   - 

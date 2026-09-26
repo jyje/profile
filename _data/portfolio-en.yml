@@ -644,16 +644,7 @@ volunteer:
     endDate: "2026-03-31"
     highlights:
       - "Science & Technology · Reviewed and proofread Park Nayeon's IT book; wrote an endorsement"
-  -
-    organization: "CoderDojo"
-    position: "Teacher"
-    website: "https://coderdojo.com/"
-    startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "Global movement of free coding clubs for young people."
-    highlights:
-      - "Taught programming at a free coding club for young people"
-      - "Awarded 'Teacher of the Month'"
+
 
 awards:
   - 
