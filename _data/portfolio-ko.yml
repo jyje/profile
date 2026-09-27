@@ -79,7 +79,7 @@ work:
             ML API, 데이터 파이프라인, AI 플랫폼, RAG+LLM 시스템 개발
         - header: SRE
           content: >
-            웹 서비스 안정성 엔지니어링과 컴퓨터비전/머신러닝 워크로드 안정성 엔지니어링 담당
+            웹 서비스와 컴퓨터비전/머신러닝 워크로드 안정성 엔지니어링 담당
         - header: DevOps
           content: >
             고가용/고효율의 디지털 트윈 플랫폼을 위한 하이브리드 클러스터(AWS EKS + 온프레미스) 구현
@@ -105,7 +105,7 @@ work:
   #           사내에 자체 구축한 RAG+LLM 시스템을 활용하여 사내 문서를 학습한 챗봇 개발
   #       - header: SRE
   #         content: >
-  #           웹 서비스 안정성 엔지니어링과 머신러닝 워크로드 안정성 엔지니어링 담당
+  #           웹 서비스와 머신러닝 워크로드 안정성 엔지니어링 담당
   # -
   #   company: MAXST
   #   position: "🧑‍💻 Intermediate Software Engineer [선임연구원]"
