@@ -233,7 +233,7 @@ projects:
       items:
         - header: AI 템플릿 확보
           content: >
-            AI 프로젝트 수평확장을 위한 AI 풀스택, 지식기반, AIOps 개념증명 프로젝트
+            재사용 가능한 AI 풀스택·지식기반·AIOps 템플릿 PoC, 사내 문서 답변률 80%+
         - header: AI 기획 방향성
           content: >
             에이전트 상품화, 에이전트 팩토리 추진

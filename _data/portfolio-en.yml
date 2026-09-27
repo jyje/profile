@@ -233,7 +233,7 @@ projects:
       items:
         - header: AI Template
           content: >
-            PoC for reusable AI full stack, knowledge base, and AIOps
+            PoC of a reusable AI full-stack template (knowledge base, AIOps) with 80%+ answer rate on internal docs
         - header: AI Planning
           content: >
             Promoted agent productization and agent factory initiatives
