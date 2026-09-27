@@ -226,7 +226,7 @@ projects:
             Configured knowledge base with various strategic vector stores for context augmentation
         - header: Tool Integration
           content: >
-            Integrated and executed with Hyundai AutoEver's toolchain using MCP tools and domain-specific tools (ALM usage guidance, CBQL query debugging support)
+            Integrated and executed with Hyundai AutoEver's toolchain using MCP tools and domain-specific tools
     results:
       description: >
         AI Template Acquisition and AI Planning Direction Acquisition
