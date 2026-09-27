@@ -525,6 +525,8 @@ skills:
       - RAG
       - MCP
       - Agentic AI
+      - Claude Code
+      - vLLM
   -
     name: MLOps
     keywords:
@@ -565,7 +567,6 @@ skills:
     keywords:
       - Python/FastAPI
       - Python/LangGraph
-      - Ollama
       - Milvus
       - PostgreSQL
       - Redis
