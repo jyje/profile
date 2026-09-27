@@ -47,7 +47,7 @@
       <ul class="work">
         {% for role_item in project.roles.items %}
           <li>
-            {% if role_item.header %}<strong>{{ role_item.header }}</strong>{% endif %}
+            {% if role_item.header %}<strong>{{ role_item.header }}</strong>{% if role_item.content %}<span aria-hidden="true"> — </span>{% endif %}{% endif %}
             {% if role_item.content %}{{ role_item.content }}{% endif %}
           </li>
         {% endfor %}
