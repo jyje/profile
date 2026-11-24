@@ -19,7 +19,8 @@ This project is the official portfolio site for developer Jeayoung Jeon (전제�
 - **Jekyll**: 3.9.2 (Ruby-based static site generator)
 - **Webpack**: JavaScript/CSS bundling
 - **Ruby**: 3.3
-- **Node.js**: 20
+- **Node.js**: 26.13.1 (`.nvmrc`)
+- **Package manager**: pnpm 12.23.0 (`packageManager` in package.json)
 
 ### Theme and Framework
 - **Hydejack**: 9.2.0 (Jekyll theme, fork of Hyde)
@@ -118,9 +119,9 @@ Defines Ruby gem dependencies:
 #### `package.json`
 Defines Node.js dependencies and build scripts:
 - Webpack and related loaders
-- Build scripts: `npm run build`, `npm run watch`
+- Build scripts: `pnpm run build`, `pnpm run watch`
 - JavaScript/CSS bundling configuration
-- PDF generation: `npm run generate-pdf`
+- PDF generation: `pnpm run generate-pdf`
 - Playwright for headless browser PDF rendering
 
 ### Data Files
@@ -154,7 +155,7 @@ Stores portfolio data:
    bundle install
    
    # Install Node.js dependencies
-   npm install
+   pnpm install
    ```
 
 2. **Run Local Server**
@@ -166,13 +167,13 @@ Stores portfolio data:
    Or watch JavaScript/CSS in development mode:
    ```bash
    # In a separate terminal
-   npm run watch
+   pnpm run watch
    ```
 
 3. **Production Build**
    ```bash
    # Build JavaScript/CSS
-   npm run build
+   pnpm run build
    
    # Build Jekyll
    bundle exec jekyll build
@@ -185,8 +186,8 @@ Deployment is performed automatically via GitHub Actions:
 1. **Trigger**: Automatically runs on push to `main` branch
 2. **Build Step**:
    - Setup Ruby 3.3 environment
-   - Setup Node.js 20 environment
-   - Run `bundle install` and `npm ci`
+   - Setup pnpm and Node.js (from `.nvmrc`) environment
+   - Run `bundle install` and `pnpm install --frozen-lockfile`
    - Run `bundle exec jekyll build` (production mode)
 3. **Conditional PDF Generation** (when relevant files change):
    - Install Playwright browser and Korean fonts
@@ -290,10 +291,10 @@ timeout:
 bundle exec jekyll build
 
 # 2. Install Playwright browser (first time only)
-npx playwright install chromium
+pnpm exec playwright install chromium
 
 # 3. Generate PDFs
-npm run generate-pdf
+pnpm run generate-pdf
 ```
 
 #### Environment Variables
@@ -423,16 +424,16 @@ bundle exec jekyll serve --force_polling --livereload
 JEKYLL_ENV=production bundle exec jekyll build
 
 # Build JavaScript/CSS
-npm run build
+pnpm run build
 
 # Watch mode for JavaScript/CSS
-npm run watch
+pnpm run watch
 
 # Generate PDF files (requires Jekyll build first)
-bundle exec jekyll build && npm run generate-pdf
+bundle exec jekyll build && pnpm run generate-pdf
 
 # Install Playwright browser (first time only)
-npx playwright install chromium
+pnpm exec playwright install chromium
 
 # Create new post
 bundle exec jekyll post "Post Title"
@@ -442,7 +443,7 @@ bundle exec jekyll work "Work Title"
 
 # Update dependencies
 bundle update
-npm update
+pnpm update
 ```
 
 ## References

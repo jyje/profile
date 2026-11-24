@@ -18,7 +18,8 @@ Personal portfolio website powered by Jekyll with Hydejack theme.
 ### Prerequisites
 
 - Ruby 3.3+
-- Node.js 20+
+- Node.js 26.13.1 (see `.nvmrc`)
+- pnpm 12.23.0 (via Corepack, pinned by `packageManager`)
 - Bundler
 
 ### Setup
@@ -31,13 +32,13 @@ bundle install
 bundle update --bundler
 
 # Install Node.js dependencies
-npm install
+pnpm install
 
 # Update Node.js dependencies
-npm update
+pnpm update
 
 # Install Bower dependencies (for KaTeX and MathJax)
-cd assets && npx bower install && cd ..
+cd assets && pnpm exec bower install && cd ..
 
 # Start local development server
 bundle exec jekyll serve --force_polling --livereload
@@ -103,10 +104,10 @@ To generate PDFs locally:
 bundle exec jekyll build
 
 # 2. Install Playwright browser (first time only)
-npx playwright install chromium
+pnpm exec playwright install chromium
 
 # 3. Generate PDFs
-npm run generate-pdf
+pnpm run generate-pdf
 ```
 
 PDFs will be created in the `assets/` directory (as configured in `pdf-config.yml`).
@@ -131,7 +132,7 @@ To force PDF regeneration, use the "Run workflow" button in GitHub Actions with 
 JEKYLL_ENV=production bundle exec jekyll build
 
 # Build JavaScript/CSS assets
-npm run build
+pnpm run build
 ```
 
 ## Dependency Management
@@ -142,11 +143,11 @@ This project uses Bower to manage frontend dependencies (KaTeX, MathJax). These 
 
 ```bash
 # Install Bower dependencies
-cd assets && npx bower install && cd ..
+cd assets && pnpm exec bower install && cd ..
 
 # Or from project root
 cd assets
-npx bower install
+pnpm exec bower install
 cd ..
 ```
 

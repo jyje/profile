@@ -50,21 +50,24 @@ jobs:
         bundle lock --add-platform x86_64-linux
         bundle install --no-cache
 
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v6.1.1
+
     - name: Setup Node
       uses: actions/setup-node@v7
       with:
-        node-version: "20"
-        cache: 'npm'
+        node-version-file: .nvmrc
+        cache: pnpm
 
     - name: Install Node dependencies
-      run: npm ci
+      run: pnpm install --frozen-lockfile
 
     - name: Install Bower dependencies
-      run: npx bower install
+      run: pnpm exec bower install
       working-directory: assets
 
     - name: Build JavaScript and CSS assets
-      run: npm run build
+      run: pnpm run build
 
     - name: Setup Pages
       id: pages
@@ -83,7 +86,7 @@ jobs:
 
     # PDF Generation Steps (always executed)
     - name: Install Playwright browsers
-      run: npx playwright install chromium --with-deps
+      run: pnpm exec playwright install chromium --with-deps
 
     - name: Install Pretendard font for PDF
       run: |
@@ -94,7 +97,7 @@ jobs:
         sudo fc-cache -fv
 
     - name: Generate PDF files
-      run: npm run generate-pdf
+      run: pnpm run generate-pdf
       env:
         PDF_OUTPUT_DIR: _site/assets
 
