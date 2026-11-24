@@ -18,9 +18,9 @@ function genHeader(filename) {
     //
     // To change the contents of this file,
     // edit \`${filename}\`
-    // and run \`npm run build:css\`.
+    // and run \`pnpm run build:css\`.
     //
-    // During development you can run \`npm run watch:css\`
+    // During development you can run \`pnpm run watch:css\`
     // to continuosly rebuild this file.
   `;
 }

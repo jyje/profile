@@ -3,8 +3,8 @@
 # 
 # To generate PDFs locally:
 #   1. bundle exec jekyll build
-#   2. npx playwright install chromium
-#   3. npm run generate-pdf
+#   2. pnpm exec playwright install chromium
+#   3. pnpm run generate-pdf
 
 # PDF targets to generate
 # Each target specifies a page to convert to PDF

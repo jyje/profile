@@ -25,10 +25,10 @@
  * 
  * Examples:
  *   # Local development
- *   npm run generate-pdf
+ *   pnpm run generate-pdf
  * 
  *   # CI environment (output to _site/assets)
- *   PDF_OUTPUT_DIR=_site/assets npm run generate-pdf
+ *   PDF_OUTPUT_DIR=_site/assets pnpm run generate-pdf
  */
 
 const { chromium } = require('playwright');
