@@ -83,6 +83,8 @@ const sharedConfig = {
   resolve: {
     modules: [
       resolve("./_js"),
+      // Hierarchical lookup so pnpm's nested (non-hoisted) dependencies resolve.
+      "node_modules",
       resolve("./node_modules"),
       ...process.env.NODE_PATH ? [resolve(process.env.NODE_PATH)] : [],
     ],

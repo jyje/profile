@@ -6,22 +6,22 @@
     "clean": "rm -f assets/js/hydejack-*.js",
     "test": "exit 0",
     "format": "prettier --write \"_js/src/**/*.js\"",
-    "build": "npm run build:js & npm run build:css & npm run build:scripts & wait",
+    "build": "pnpm run build:js & pnpm run build:css & pnpm run build:scripts & wait",
     "generate-pdf": "node scripts/generate-pdf.js",
     "generate-pdf:resume": "node scripts/generate-pdf.js --targets=resume",
     "build:js": "webpack --mode production --color",
     "build:js:stats": "webpack --mode production --progress --color --json > stats.json",
     "build:css": ".scripts/build-css.js",
     "build:scripts": " for f in $(find _includes/scripts -type f ! -name '*.min.js'); do g=${f%.js}; uglifyjs $f -c -m > $g.min.js; done",
-    "watch": "npm run watch:js & npm run watch:css",
+    "watch": "pnpm run watch:js & pnpm run watch:css",
     "watch:js": "webpack --watch --mode development --progress --color",
-    "watch:css": "npm run build:css && onchange '_sass/**/*.scss' -e '_sass/**/__*/*' -- npm run build:css '{{changed}}'",
-    "dev": "npm run watch",
-    "preversion": "npm run preversion:js && npm run preversion:css",
+    "watch:css": "pnpm run build:css && onchange '_sass/**/*.scss' -e '_sass/**/__*/*' -- pnpm run build:css '{{changed}}'",
+    "dev": "pnpm run watch",
+    "preversion": "pnpm run preversion:js && pnpm run preversion:css",
     "preversion:js": "sed -i '' 's:/assets/js/\\*hydejack-\\*:#<removed/js>:' .gitignore",
     "preversion:css": "sed -i '' 's:/_sass/\\*/__\\*__:#<removed/css>:' .gitignore",
-    "version": ".scripts/version.js && npm run format && npm run build && git add .",
-    "postversion": "(npm run postversion:js && npm run postversion:css) && git add . && git ci -m 'Restore pre-version .gitignore' && npm run postversion:tagfix && npm run postversion:forward",
+    "version": ".scripts/version.js && pnpm run format && pnpm run build && git add .",
+    "postversion": "(pnpm run postversion:js && pnpm run postversion:css) && git add . && git ci -m 'Restore pre-version .gitignore' && pnpm run postversion:tagfix && pnpm run postversion:forward",
     "postversion:tagfix": "git tag -s pro/v$npm_package_version HEAD^1 -m '$npm_package_version' && git tag -d v$npm_package_version",
     "postversion:forward": "git branch -f pro/v9 pro/v$npm_package_version",
     "postversion:js": "sed -i '' 's:#<removed/js>:/assets/js/*hydejack-*:' .gitignore && git rm --cached assets/js/*hydejack-*",
@@ -33,6 +33,7 @@
   "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
   "license": "GPL-3.0",
   "private": true,
+  "packageManager": "pnpm@12.23.0",
   "devDependencies": {
     "@babel/core": "^8.0.5",
     "@babel/preset-env": "^8.0.6",
@@ -92,6 +93,6 @@
   },
   "homepage": "https://hydejack.com/",
   "engines": {
-    "node": ">=11"
+    "node": ">=26 <27"
   }
 }
