@@ -62,7 +62,7 @@
     "@juggle/resize-observer": "^3.4.0",
     "@webcomponents/custom-elements": "^1.6.0",
     "@webcomponents/shadycss": "^1.11.2",
-    "@webcomponents/shadydom": "^1.11.0",
+    "@webcomponents/shadydom": "^1.11.1",
     "@webcomponents/template": "^1.5.1",
     "@webcomponents/url": "^0.7.9",
     "@webcomponents/webcomponents-platform": "^1.0.1",
