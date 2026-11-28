@@ -60,7 +60,7 @@
     "@hydecorp/drawer": "^1.0.0",
     "@hydecorp/push-state": "^1.0.0",
     "@juggle/resize-observer": "^3.4.0",
-    "@webcomponents/custom-elements": "^1.6.0",
+    "@webcomponents/custom-elements": "^1.6.1",
     "@webcomponents/shadycss": "^1.11.2",
     "@webcomponents/shadydom": "^1.11.1",
     "@webcomponents/template": "^1.5.1",
